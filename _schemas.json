@@ -1,0 +1,30 @@
+{
+	"combos": {
+		"regular": {
+			"main": ["ID","combo_name","combo_effect_ID","combo_size_ID"],
+			"units": ["ID","cat_1","cat_2","cat_3","cat_4","cat_5"],
+			"effects": ["combo_effect_ID","combo_effect"],
+			"sizes": ["combo_size_ID","combo_size"]
+		},
+		"catbot": {
+			"units": ["combo_name","required_id","accepted_id"],
+			"main": ["combo_name","combo_effect"]
+		}
+	},
+	"talents":{
+		"main":["unit_id","talent_id","max_level","min_first_parameter","max_first_parameter","min_second_parameter","max_second_parameter","min_third_parameter","max_third_parameter","min_fourth_parameter","max_fourth_parameter","description","cost_curve"],
+		"descriptions":["description_id","description_text"]
+	},
+	"units":{
+		"name":["unit_ID","name_f","name_c","name_s"]
+	},
+	"gatya":{
+		"main":["banner_ID","banner_name","exclusives","rate_ups","diff","enabled","series_ID"],
+		"series":["series_ID","series_name"],
+		"units":["banner_ID","units_in_banner"]
+	},
+	"sales":{
+		"itempack":["ID","severID"],
+		"localisable":["ID","name"]
+	}
+}

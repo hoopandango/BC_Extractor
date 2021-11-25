@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Crazed Festival",
+		"stages":["The Crazed Cat","The Crazed Gross","The Crazed Fish","Cat Maniac","Gross Maniac","Fish Maniac","The Crazed Tank","The Crazed Cow","The Crazed Lizard","Tank Maniac","Cow Maniac","Lizard Maniac","The Crazed Axe","The Crazed Bird","The Crazed Titan","Axe Maniac","Bird Maniac","Titan Maniac"],
+		"visible": true
+	},{
+		"name": "Li'l Festival",
+		"stages":["Li'l Cat Awakens!","Li'l Gross Awakens!","Li'l Fish Awakens!","Li'l Tank Awakens!","Li'l Cow Awakens!","Li'l Lizard Awakens!","Li'l Axe Awakens!","Li'l Bird Awakens!","Li'l Titan Awakens!"],
+		"visible": true
+	},{
+		"name": "All-Stars Stages",
+		"stages":["Monthly Event All-Stars Special Celebration!","Monthly Event All-Stars Ultra Celebration!","Monthly Event All-Stars Miracle Celebration!","Monthly Event All-Stars Wonderful Celebration!","Event All-Stars Excellent Celebration!","Event All-Stars Grand Jubilee!"],
+		"visible": true
+	},{
+		"name": "Monthlies Festival",
+		"stages":["Adult Cat Awakes!","Evil Cat Awakes!","Doll Cats Awake!","Maiden Awakes!","Koi Awakens!","Bride Awakens!","Vacation Awakens!","Vengeance Awakes!","Kung-Fu X Awakes!","Sports Day Awakens!","Salaryman Awakes!","Reindeer Fish Awakens!"],
+		"visible": true
+	},{
+		"name": "Catfruit Festival",
+		"stages": ["Growing Yellow","Growing Blue","Growing Red","Growing Purple","Growing Green"],
+		"visible":true
+	},{
+		"name": "Items Sale",
+		"stages": ["Speed Up Sale","Treasure Radar Sale","Rich Cat Sale","Cat CPU Sale","Cat Jobs Sale","Sniper Cat Sale","XP Pack A Sale","XP Pack B Sale","XP Pack C Sale","XP Pack D Sale","XP Pack E Sale","Catamin A Sale","Catamin B Sale","Catamin C Sale"],
+		"visible":false
+	},
+	{
+		"name": "XP Festival",
+		"stages": ["XP Stage","XP Megablitz!","XP Colosseum","Merciless XP!"],
+		"visible":true
+	},{
+		"name": "Metal Festival",
+		"stages": ["Facing Danger","Siege of Hippoe!","Cat Ticket Chance!"],
+		"visible":true
+	},{
+		"name": "Gamatoto XP Harvest",
+		"stages": ["Gamatoto XP Festival I","Gamatoto XP Festival II","Gamatoto XP Festival III"],
+		"visible":true
+	},{
+		"name": "Treasure Festival",
+		"stages": ["EoC Treasure Festival","ItF Treasure Festival","CotC Treasure Festival"],
+		"visible":true
+	},{
+		"name": "Builder Festival",
+		"stages": ["Cavern of Comets","Strait of Wings","Island of Ash"],
+		"visible":true
+	},{
+		"name": "Advent Festival",
+		"stages": ["River Styx","River Acheron","Dead on Debut","Dead by Encore","Blue Impact","Clionel Ascendant","Clionel Dominant","Deeply Dreaming","A Deeper Dream","King Wahwah's Revenge","King Wahwah's Return","Blue Impact","Queen's Coronation","Queen's Condemnation"],
+		"visible":true
+	}
+]

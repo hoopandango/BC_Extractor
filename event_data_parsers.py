@@ -1,0 +1,374 @@
+import csv
+import json 
+import datetime
+import sqlite3
+from z_downloaders import Downloaders
+import pandas as pd
+import ast
+
+# region setup
+with open('_config.json') as fl:
+	config = json.load(fl)
+
+
+# endregion
+
+class UniversalParsers:
+	eventNames = {}
+	itemdata = []
+
+	with open(config['outputs']['stages'], encoding='utf-8', newline = '') as csvfile:
+		eventNames = pd.read_csv(csvfile, delimiter='\t',index_col='ID')
+	
+	with open("extras\\events.tsv", encoding='utf-8', newline = '') as csvfile:
+		eventNames = eventNames.append(pd.read_csv(csvfile, delimiter='\t',index_col='ID'))
+
+	with open(config['outputs']['items'], encoding = 'utf-8', newline='') as csvfile:
+		itemdata = pd.read_csv(csvfile, delimiter='\t',index_col='ID')
+
+	@staticmethod
+	def fancyDate(datesall: list):
+		toret = "- "
+		for dates in zip(datesall[0::2],datesall[1::2]):
+			
+			if (dates[1] - dates[0]).days > 365:   # Forever Events
+				toret += f"{dates[0].strftime('%d %b').lstrip('0')}~..."
+
+			elif dates[0].month == dates[1].month:   # Events that don't cross months
+				if dates[0].day == dates[1].day:   # Events that only last one day or less
+					toret += dates[1].strftime('%d %b').lstrip('0')
+				else:
+					toret += '~'.join([dates[0].strftime('%d').lstrip('0'),dates[1].strftime('%d %b').lstrip('0')])
+
+			else:  # Events that cross months
+				toret += '~'.join([x.strftime('%d %b').lstrip('0') for x in dates])
+		
+			toret += ', '
+
+		return toret[:-2] + ": "
+
+	@staticmethod
+	def fancyTimes(timesall: list):
+		toret = ""
+		if len(timesall) == 0:
+			return "All Day"
+		for time in timesall:
+			if(time['end'].hour == 23 and time['start'].hour == 0): 
+				return "All Day"
+			toret += f"{time['start'].strftime('%I%p').lstrip('0')}~{time['end'].strftime('%I%p').lstrip('0')}"
+			toret += ', '
+
+		return toret[:-2]
+		
+	@staticmethod
+	def areValidDates(dates: list,filters :list,date0 = datetime.datetime.today()):
+		if len(filters) > 0:
+			if 'N' in filters:
+				if ((dates[1] - dates[0]).days > 31 and not (dates[0]-date0).days >= 1):
+					return False
+			elif 'M' in filters:
+				if (dates[1] - dates[0]).days > 31:  # If event lasts longer than a month
+					return False
+			if 'Y' in filters:  
+				if (date0-dates[0]).days > -1:  # If event started today or earlier
+					return False
+		if (date0 - dates[1]).days > 365:  # Default Filter - Ignore (most) discontinued events
+			return False
+		return True
+
+	@classmethod
+	def getdates(cls,data):
+		return [cls.formatDate(data[0]+data[1]),cls.formatDate(data[2]+data[3])]
+
+	@staticmethod
+	def getversions(data):
+		return data[4], data[5]
+
+	@staticmethod
+	def formatDate(s):
+		return datetime.datetime.strptime(s, '%Y%m%d%H%M')
+	
+	@classmethod
+	def getEventName(cls,ID:int,lng:str='en'):
+		# not used by gatya
+		try:
+			name = cls.eventNames.loc[ID,"name"]
+			if (25000 > int(ID) > 24000 or 28000 > int(ID) > 27000):
+				name += ' (Baron)'
+			return name
+		except:
+			name = Downloaders.requestStage(ID,'en')
+			if name != 'Unknown':
+				# updates name
+				cls.eventNames.loc[ID,"name"] = name
+			return name
+	
+	@classmethod
+	def getItem(cls,ID:int):
+		try:
+			return cls.itemdata.loc[ID,"name"]
+		except KeyError:
+			return 'Unknown'
+
+	@classmethod
+	def updateEventNames(cls):
+		with open(config['outputs']['stages'], 'w', encoding='utf-8', newline = '') as fil:
+			pd.write_csv(fil, delimiter='\t',indexing=True)
+
+class GatyaParsers(UniversalParsers):
+	def __init__():
+		UniversalParsers.__init__()
+	
+	gatyaLocal = pd.read_json(config["outputs"]["gatya_json"],orient='index')
+
+	@staticmethod
+	def getCategory(banner: list)->str:
+		# tells which category of capsule is in this banner
+		p = banner[8]
+		if p == "0":
+			return "Cat Capsule" #Normal, lucky, G, catseye, catfruit, etc : uses GatyaDataSetN1.csv
+		if p == "1":
+			return "Rare Capsule" #Rare, platinum : uses GatyaDataSetR1.csv
+
+		return "Event Capsule" #Some other page like bikkuri choco shit, etc, or some old-ass banners that don't exist now idk
+
+	@staticmethod
+	def getValueAtOffset(banner: list, i: int):
+		slot = int(banner[9])-1
+		# each slot is 15 columns wide
+		offset = 15*slot
+		return banner[i + offset]
+
+	@staticmethod
+	def getGatyaRates(banner: list):
+		rates = []
+		for i in range(5):
+			rates.append(GatyaParsers.getValueAtOffset(banner, 14 + 2*i)) #14,16,18,20,22
+		return rates
+
+	@staticmethod
+	def getGuarantees(banner: list):
+		G = []
+		for i in range(5):
+			G.append(GatyaParsers.getValueAtOffset(banner, 15 + 2*i)) #15,17,19,21,23
+		return G
+	
+	@classmethod
+	def getGatyaLocal(cls,ID:int,category:str)->tuple:
+		toret = {"banner_name":"","exclusives":[],"rate_ups":{},"diff":[[],[]]}
+
+		try:
+			# breaks very very rarely
+			ID = int(ID)
+		except ValueError:
+			ID = 0
+			return toret
+
+		if (category == "Rare Capsule"):
+			try:
+				toret = cls.gatyaLocal.loc[ID].to_dict()
+			except KeyError:
+				pass
+		
+		else:
+			# set to unknown if not found
+			requested = Downloaders.requestGatya(ID, 'en', category)
+			if requested.startswith("Request Failed"):
+				requested = "Unknown"
+			toret["banner_name"] = requested			
+		return toret
+
+	@classmethod
+	def getExtras(cls,banner: list)->list:
+		toret = []
+		extras = int(cls.getValueAtOffset(banner,13))
+		severID = (extras >> 4) & 1023
+		
+		if extras & 4:
+			toret.append('S')  # Step-up
+		if extras & 16384:
+			toret.append('P')  # Platinum Shard
+
+		if not extras & 8:
+			return toret # No item drops
+		# if it has item drops:
+		item = cls.itemdata.loc[cls.itemdata["severID"] == severID,"name"]
+		if item.to_list()[0] == 'Lucky Ticket':
+			toret.append('L')  # Has lucky ticket
+		return toret
+
+	@staticmethod
+	def getString(banner)->tuple:
+		# tuple (datestring, reststring)
+
+		gtd = ' (Guaranteed)' if banner["guarantee"][3] == '1' else ''
+
+		gtd += ' (Step-Up)' if 'S' in banner['extras'] else ''
+		gtd += ' (Lucky Tickets)' if 'L' in banner['extras'] else ''
+		gtd += ' (Platinum Shard)' if 'P' in banner['extras'] else ''
+
+		exclusives = ' ('+')('.join(banner['exclusives'])+')' if len(banner['exclusives']) > 0 else ''
+
+		diff = f' (+ {", ".join(banner["diff"][0])})' if len(banner["diff"][0]) > 0 else ''
+
+		rate_ups = " {"+", ".join([f"{K}x rate on {', '.join(V)}" for (K,V) in banner["rate_ups"].items()])+"}" if len(banner["rate_ups"]) > 0 else ''
+
+		name = banner['banner_name'] if banner['banner_name'] != 'Unknown' else banner['text']
+		return (GatyaParsers.fancyDate(banner['dates']),'%s%s%s%s%s'%(name,gtd,exclusives,diff,rate_ups))
+
+
+class StageParsers(UniversalParsers):
+	def __init__():
+		UniversalParsers.__init__()
+
+	@staticmethod
+	def formatTime(t):
+		if t == "2400":
+			t = "2359"
+		if t == "0":
+			t = "0000"
+		if len(t) == 3:  #fixes time if hour is < 10am
+			t = '0' + t
+		dt = datetime.datetime.strptime(t, '%H%M')
+		return datetime.time(dt.hour,dt.minute)
+
+	@staticmethod
+	def formatMDHM(s,t):
+		if t == "2400":
+			t = "2359"
+		if t == "0":
+			t = "0000"
+		if len(s) == 3:  # fixes date if month isn't nov or dec
+			s = '0' + s
+
+		return datetime.datetime.strptime(s+t, '%m%d%H%M')
+	
+	@staticmethod
+	def binaryweekday(N):
+		list_to_return = [int(x) for x in list(bin(N))[2:][::-1]]
+		while len(list_to_return)<7:
+			list_to_return.append(0)
+		return list_to_return
+
+	@classmethod
+	def yearly(cls,data):
+		numberOfPeriods = int(data[7])
+		n = 8
+		output = [dict() for x in range(numberOfPeriods)]
+		IDs = []
+		for i in range(numberOfPeriods):
+			
+			times, n = int(data[n]), n+1
+			output[i]["times"] = [dict() for x in range(times)]
+			
+			for j in range(times):
+				startDate, n = data[n], n+1
+				startTime, n = data[n], n+1
+				endDate, n = data[n], n+1
+				endTime, n = data[n], n+1
+				output[i]["times"][j]["start"] = cls.formatMDHM(startDate,startTime)
+				output[i]["times"][j]["end"] = cls.formatMDHM(endDate,endTime)
+				if output[i]["times"][j]["end"] < output[i]["times"][j]["start"]:  
+					# this means the event ends the next year, like it starts on christmas and lasts for 2 weeks
+					output[i]["times"][j]["end"] = output[i]["times"][j]["end"].replace(year=1901)
+					
+			
+			n = n + 3 #trailing zeros
+		
+		nIDs, n = int(data[n]), n+1
+		for k in range(max(nIDs,1)):
+			ID, n = int(data[n]), n+1
+			if nIDs > 0:
+				IDs.append(ID)
+				
+		return output, IDs
+
+	@classmethod
+	def monthly(cls,data):
+		numberOfPeriods = int(data[7])
+		n = 9
+		output = [dict() for x in range(numberOfPeriods)]
+		IDs = []
+		for i in range(numberOfPeriods):
+			
+			dates, n = int(data[n]), n+1
+			output[i]["dates"] = [""]*int(dates)
+			for u in range(int(dates)):
+				output[i]["dates"][u], n = data[n], n+1
+			
+			n = n+1 #Trailing zero
+			
+			times, n = int(data[n]), n+1
+			output[i]["times"] = [dict() for x in range(times)]
+			
+			
+			for j in range(times):
+				start, n = data[n], n+1
+				end, n = data[n], n+1
+				output[i]["times"][j]["start"] = cls.formatTime(start)
+				output[i]["times"][j]["end"] = cls.formatTime(end)
+		
+			nIDs, n = int(data[n]), n+1
+			for k in range(nIDs):
+				ID, n = int(data[n]), n+1
+				if nIDs > 0:
+					IDs.append(ID)
+				
+		return output, IDs
+
+	@classmethod
+	def weekly(cls,data):
+		numberOfPeriods = int(data[7])
+		n = 10
+		output = [dict() for x in range(numberOfPeriods)]
+		IDs = []
+		for i in range(numberOfPeriods):
+			
+			weekdays, n = cls.binaryweekday(int(data[n])), n+1
+			output[i]["weekdays"] = weekdays
+			times, n = int(data[n]), n+1
+			output[i]["times"] = [dict() for x in range(times)]
+			
+			for j in range(times):
+				start, n = data[n], n+1
+				end, n = data[n], n+1
+				output[i]["times"][j]["start"] = cls.formatTime(start)
+				output[i]["times"][j]["end"] = cls.formatTime(end)
+			
+			nIDs, n = int(data[n]), n+1
+			
+			for k in range(max(nIDs,1)):
+				ID, n = int(data[n]), n+1
+				if nIDs > 0:
+					IDs.append(ID)
+		
+		return output, IDs
+
+	@classmethod
+	def daily(cls,data):
+		numberOfPeriods = int(data[7])
+		n = 11
+		output = [dict() for x in range(numberOfPeriods)]
+		IDs = []
+		for i in range(numberOfPeriods):
+			
+			times, n = int(data[n]), n+1
+			output[i]["times"] = [dict() for x in range(times)]
+			
+			for j in range(times):
+				startTime, n = data[n], n+1
+				endTime, n = data[n], n+1
+				output[i]["times"][j]["start"] = cls.formatTime(startTime)
+				output[i]["times"][j]["end"] = cls.formatTime(endTime)
+		
+		nIDs, n = int(data[n]), n+1
+		for k in range(max(nIDs,1)):
+			ID, n = int(data[n]), n+1
+			if nIDs > 0:
+				IDs.append(ID)
+		
+		return output, IDs
+
+class ItemParsers(UniversalParsers):
+	def __init__():
+		UniversalParsers.__init__()

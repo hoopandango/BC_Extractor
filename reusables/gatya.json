@@ -1,0 +1,11492 @@
+{
+  "0": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Papaluga",
+        "Asiluga",
+        "Kubiluga",
+        "Tecoluga",
+        "Balaluga",
+        "Vaulter Cat",
+        "Nobiluga",
+        "Gardener Cat",
+        "Welterweight Cat",
+        "Onmyoji Cat",
+        "Surfer Cat",
+        "Psychocat",
+        "Legeluga",
+        "Matador Cat",
+        "Togeluga",
+        "Furiluga",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "1": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Welterweight Cat",
+        "Onmyoji Cat",
+        "Lasvoss",
+        "Wonder MOMOCO",
+        "Surfer Cat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Cat Clan Heroes",
+        "Psychocat",
+        "Summoner Satoru",
+        "Matador Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "2": {
+    "banner_name": "Princess Punt, Merc Storia, Million Arthur, Dragon Poker",
+    "enabled": false,
+    "series_ID": 17,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "プリンセスケリ姫号",
+        "エルメ",
+        "カレット",
+        "ひな"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "3": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Musashi Miyamoto",
+        "Welterweight Cat",
+        "Onmyoji Cat",
+        "Surfer Cat",
+        "Psychocat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Shiro Amakusa",
+        "Matador Cat",
+        "Narita Kaihime",
+        "Imagawa Yoshimoto",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "4": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Headmistress Jeanne",
+        "Welterweight Cat",
+        "Onmyoji Cat",
+        "Surfer Cat",
+        "Psychocat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Lilin",
+        "Matador Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Myrcia",
+        "Rover Cat",
+        "Fencer Cat",
+        "Twinstars"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "5": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "6": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "7": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "8": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "9": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      [
+        "High Lord Babel",
+        "Welterweight Cat",
+        "Onmyoji Cat",
+        "Surfer Cat",
+        "Psychocat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Ganglion",
+        "Hevijak the Wicked",
+        "Relentless Gladios",
+        "Matador Cat",
+        "Dioramos",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "10": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "11": {
+    "banner_name": "Princess Punt, Merc Storia, Million Arthur, Dragon Poker",
+    "enabled": false,
+    "series_ID": 17,
+    "exclusives": [],
+    "diff": [
+      [
+        "Cat Gunslinger",
+        "Stilts Cat",
+        "Tin Cat",
+        "Rocker Cat",
+        "Mer-Cat",
+        "Juliet Cat",
+        "Weightlifter Cat",
+        "Figure Skating Cats",
+        "Cat Toaster",
+        "Bodhisattva Cat",
+        "Delinquent Cat",
+        "Hip Hop Cat",
+        "Kotatsu Cat",
+        "Nerd Cat",
+        "Swimmer Cat",
+        "Pogo Cat",
+        "Wheel Cat",
+        "Apple Cat",
+        "Bath Cat",
+        "Salon Cat",
+        "Jurassic Cat",
+        "Viking Cat",
+        "Pirate Cat",
+        "Thief Cat",
+        "Bishop Cat",
+        "Fortune Teller Cat",
+        "Shaman Cat",
+        "Witch Cat",
+        "Archer Cat",
+        "Swordsman Cat",
+        "Sushi Cat",
+        "ニムエ"
+      ],
+      [
+        "ユーリンチー",
+        "狂乱のケリ姫",
+        "KHM48",
+        "剣士",
+        "ウシ姫",
+        "チビガウ",
+        "執行者"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "12": {
+    "banner_name": "Princess Punt, Merc Storia, Million Arthur, Dragon Poker",
+    "enabled": false,
+    "series_ID": 17,
+    "exclusives": [],
+    "diff": [
+      [
+        "猿王"
+      ],
+      [
+        "ニムエ"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "13": {
+    "banner_name": "Princess Punt, Merc Storia, Million Arthur, Dragon Poker",
+    "enabled": false,
+    "series_ID": 17,
+    "exclusives": [],
+    "diff": [
+      [
+        "Celesse",
+        "Nono",
+        "Olga",
+        "Norn",
+        "Yoichi",
+        "Serum",
+        "Fuu",
+        "Aura",
+        "Rei",
+        "Wyvern"
+      ],
+      [
+        "Cat Gunslinger",
+        "Stilts Cat",
+        "Tin Cat",
+        "Rocker Cat",
+        "Mer-Cat",
+        "Juliet Cat",
+        "Weightlifter Cat",
+        "Figure Skating Cats",
+        "Cat Toaster",
+        "Bodhisattva Cat",
+        "Delinquent Cat",
+        "Hip Hop Cat",
+        "Kotatsu Cat",
+        "Nerd Cat",
+        "Swimmer Cat",
+        "Pogo Cat",
+        "Wheel Cat",
+        "Apple Cat",
+        "Bath Cat",
+        "Salon Cat",
+        "Jurassic Cat",
+        "Viking Cat",
+        "Pirate Cat",
+        "Thief Cat",
+        "Bishop Cat",
+        "Fortune Teller Cat",
+        "Shaman Cat",
+        "Witch Cat",
+        "Archer Cat",
+        "Swordsman Cat",
+        "Sushi Cat",
+        "猿王"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "14": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Welterweight Cat",
+        "Onmyoji Cat",
+        "Surfer Cat",
+        "Psychocat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "Mighty Drednot",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "The White Rabbit",
+        "Rover Cat",
+        "Fencer Cat",
+        "Pai-Pai"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "15": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Sarukani",
+        "Ushiwakamaru",
+        "Welterweight Cat",
+        "Onmyoji Cat",
+        "Surfer Cat",
+        "Psychocat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Kachi-Kachi",
+        "Kintaro",
+        "Matador Cat",
+        "舌切りすずめ",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "16": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "17": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [],
+    "diff": [
+      [
+        "Asiluga",
+        "Kubiluga",
+        "Tecoluga",
+        "Balaluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "18": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "19": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [],
+    "diff": [
+      [
+        "Dioramos"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "20": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "21": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "22": {
+    "banner_name": "Survive! Mola Mola! Collab",
+    "enabled": false,
+    "series_ID": 14,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      [
+        "Psychocat",
+        "Welterweight Cat",
+        "Onmyoji Cat",
+        "Surfer Cat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "23": {
+    "banner_name": "Annihilation City Collab",
+    "enabled": false,
+    "series_ID": 15,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      [
+        "Benevolent Souma",
+        "Psychocat",
+        "Welterweight Cat",
+        "Onmyoji Cat",
+        "Surfer Cat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Souma Cat",
+        "Otaku Geek Cat",
+        "Crazed Yuki",
+        "Matador Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Lost World Yuki",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "24": {
+    "banner_name": "Merc Storia Collab",
+    "enabled": false,
+    "series_ID": 13,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Orthos",
+        "Michelia",
+        "Todomeki",
+        "Eyewaltz"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "25": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [],
+    "diff": [
+      [
+        "Psychocat",
+        "Onmyoji Cat",
+        "Surfer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "26": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "27": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [],
+    "diff": [
+      [
+        "Psychocat",
+        "Onmyoji Cat",
+        "Surfer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "28": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "29": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [],
+    "diff": [
+      [
+        "Psychocat",
+        "Onmyoji Cat",
+        "Surfer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "30": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "31": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [],
+    "diff": [
+      [
+        "Psychocat",
+        "Onmyoji Cat",
+        "Surfer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "32": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "33": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [],
+    "diff": [
+      [
+        "Psychocat",
+        "Onmyoji Cat",
+        "Surfer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "34": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "35": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [],
+    "diff": [
+      [
+        "Psychocat",
+        "Onmyoji Cat",
+        "Surfer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "36": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "37": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [],
+    "diff": [
+      [
+        "Psychocat",
+        "Onmyoji Cat",
+        "Surfer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "38": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "39": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Doktor Heaven",
+        "Warlock and Pierre",
+        "Hayabusa",
+        "Welterweight Cat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Detective Vigler",
+        "Matador Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Sharpshooter Saki",
+        "The White Rabbit",
+        "Rover Cat",
+        "Fencer Cat",
+        "白騎士キュクロプス"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "40": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "41": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kachi-Kachi"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "42": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "43": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [],
+    "diff": [
+      [
+        "The White Rabbit"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "44": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "45": {
+    "banner_name": "Metal Slug Defense Collab",
+    "enabled": true,
+    "series_ID": 12,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "46": {
+    "banner_name": "Halloween Gatya",
+    "enabled": false,
+    "series_ID": 8,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Welterweight Cat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Lilith Cat",
+        "Matador Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Brainwashed Cat",
+        "Rover Cat",
+        "Fencer Cat",
+        "Skull Rider Vars"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "47": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [],
+    "diff": [
+      [
+        "Warlock and Pierre"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "48": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "49": {
+    "banner_name": "Yurudrasil Collab",
+    "enabled": true,
+    "series_ID": 11,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "50": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [],
+    "diff": [
+      [
+        "Togeluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "51": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "52": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "53": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "54": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "55": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "56": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "57": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [],
+    "diff": [
+      [
+        "The White Rabbit"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "58": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "59": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "60": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "61": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "62": {
+    "banner_name": "Survive! Mola Mola! Collab",
+    "enabled": false,
+    "series_ID": 14,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [
+        "Psychocat",
+        "Onmyoji Cat",
+        "Surfer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "63": {
+    "banner_name": "Survive! Mola Mola! Collab",
+    "enabled": false,
+    "series_ID": 14,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "64": {
+    "banner_name": "Xmas Gals",
+    "enabled": false,
+    "series_ID": 9,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Welterweight Cat",
+        "Keiji Claus",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Snow Angel Twinstars",
+        "Matador Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Yuletide Nurse",
+        "Rover Cat",
+        "Fencer Cat",
+        "洗脳されしタンクネコ"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "65": {
+    "banner_name": "Goodbye <year>!",
+    "enabled": false,
+    "series_ID": 10,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [
+        "Warlock and Pierre",
+        "Kachi-Kachi",
+        "Nurse Cat",
+        "Togeluga",
+        "Dioramos",
+        "Uesugi Kenshin",
+        "Kalisa"
+      ],
+      [
+        "Momotaro",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Shining Amaterasu",
+        "Strike Unit R.E.I.",
+        "Tecoluga",
+        "Cat Clan Heroes",
+        "Mighty Bomburr",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Waverider Kuu",
+        "Years-End Neneko",
+        "Headmistress Jeanne",
+        "Ushiwakamaru",
+        "Welterweight Cat",
+        "Wonder MOMOCO",
+        "The White Rabbit",
+        "Lumina",
+        "Twinstars",
+        "Aer",
+        "Fencer Cat",
+        "Gaia the Creator",
+        "Matador Cat",
+        "Narita Kaihime",
+        "Rover Cat",
+        "Relentless Gladios"
+      ]
+    ],
+    "rate_ups": {
+      "2": [
+        "Metal Cat",
+        "Cat Base Mini",
+        "Neneko",
+        "Gold Cat"
+      ]
+    }
+  },
+  "66": {
+    "banner_name": "Welcome <year>!",
+    "enabled": false,
+    "series_ID": 16,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [
+        "The Grateful Crane",
+        "Sanada Yukimura",
+        "Kubiluga",
+        "Kuu",
+        "The White Rabbit",
+        "Kamukura",
+        "Marauder Cat"
+      ],
+      [
+        "Lasvoss",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Kintaro",
+        "Sharpshooter Saki",
+        "Hades the Punisher",
+        "Kyosaka Nanaho",
+        "Mighty Thermae D-Lux",
+        "Papaluga",
+        "Hell Warden Emma",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Gravi",
+        "Years-End Neneko",
+        "Welterweight Cat",
+        "Lumina",
+        "Gaia the Creator",
+        "Relentless Gladios",
+        "Matador Cat",
+        "Narita Kaihime",
+        "Myrcia",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {
+      "2": [
+        "Sniper the Recruit",
+        "Rich Cat III",
+        "Freshman Cat Jobs"
+      ]
+    }
+  },
+  "67": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Welterweight Cat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Gaia the Creator",
+        "Shining Amaterasu",
+        "Splendid Ganesha",
+        "Matador Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Hades the Punisher",
+        "Empress Chronos",
+        "Rover Cat",
+        "Fencer Cat",
+        "Wrathful Poseidon"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "68": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "69": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "70": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hayabusa"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "71": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "72": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "73": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [],
+      [
+        "Hayabusa",
+        "Lasvoss",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Ganglion",
+        "Kintaro",
+        "Baby Gao",
+        "Shining Amaterasu",
+        "Splendid Ganesha",
+        "Kasli the Scourge",
+        "Voli",
+        "Sharpshooter Saki",
+        "Hades the Punisher",
+        "Mighty Thermae D-Lux",
+        "Papaluga",
+        "Cat Clan Heroes",
+        "Detective Vigler",
+        "Mighty Kat-A-Pult",
+        "Mighty Drednot",
+        "Mighty Bomburr",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Nobiluga",
+        "Empress Chronos",
+        "Gravi",
+        "Wrathful Poseidon",
+        "Miko Mitama",
+        "Sarukani",
+        "Welterweight Cat",
+        "Baby Garu",
+        "Mighty Aethur Ltd.",
+        "Imagawa Yoshimoto",
+        "Twinstars",
+        "Mighty Rekon Korps",
+        "Rover Cat",
+        "Bora",
+        "Mizli",
+        "Summoner Satoru",
+        "Shiro Amakusa",
+        "Lilin",
+        "Hevijak the Wicked",
+        "Aer",
+        "Fencer Cat",
+        "Matador Cat",
+        "Narita Kaihime",
+        "Furiluga",
+        "Relentless Gladios",
+        "Myrcia",
+        "Yamii",
+        "Mighty Deth-Troy-R",
+        "舌切りすずめ",
+        "白騎士キュクロプス",
+        "D'artanyan"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "74": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Hayabusa"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "75": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Baby Gao"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "76": {
+    "banner_name": "Annihilation City Collab",
+    "enabled": false,
+    "series_ID": 15,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [
+        "Crazed Yuki",
+        "Psychocat",
+        "Onmyoji Cat",
+        "Surfer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "77": {
+    "banner_name": "Annihilation City Collab",
+    "enabled": false,
+    "series_ID": 15,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "78": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [],
+    "diff": [
+      [
+        "Shining Amaterasu"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "79": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "80": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "81": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Shining Amaterasu"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "82": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [],
+    "diff": [
+      [
+        "Splendid Ganesha"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "83": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "84": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "85": {
+    "banner_name": "Gals of Summer",
+    "enabled": false,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Seashore Kai",
+        "Welterweight Cat",
+        "Kaguya of the Coast",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Seabreeze Coppermine",
+        "Matador Cat",
+        "Squirtgun Saki",
+        "Summerluga",
+        "Suntan Cat",
+        "Lifeguard Cats",
+        "Waverider Kuu",
+        "Rover Cat",
+        "Fencer Cat",
+        "Vaulter Cat",
+        "Gardener Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "86": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Lasvoss",
+        "Ganglion",
+        "Kintaro",
+        "Sakura Sonic",
+        "Kasli the Scourge",
+        "Voli",
+        "Sharpshooter Saki",
+        "Hades the Punisher",
+        "Strike Unit R.E.I.",
+        "Kasli the Bane",
+        "Mighty Thermae D-Lux",
+        "Papaluga",
+        "Cat Clan Heroes",
+        "Hell Warden Emma",
+        "Mighty Kat-A-Pult",
+        "Mighty Drednot",
+        "Mighty Bomburr",
+        "Detective Vigler",
+        "Nobiluga",
+        "Empress Chronos",
+        "Gravi",
+        "D'arktanyan",
+        "Wrathful Poseidon",
+        "Miko Mitama",
+        "Sarukani",
+        "Baby Garu",
+        "Shadow Gao",
+        "Mighty Aethur Ltd.",
+        "Imagawa Yoshimoto",
+        "Twinstars",
+        "Dark Aegis Garu",
+        "Mighty Rekon Korps",
+        "Princess Cat",
+        "Bora",
+        "Mizli",
+        "Summoner Satoru",
+        "Shiro Amakusa",
+        "Lilin",
+        "Hevijak the Wicked",
+        "Aer",
+        "Narita Kaihime",
+        "Furiluga",
+        "舌切りすずめ",
+        "Myrcia",
+        "Yamii",
+        "Mighty Deth-Troy-R",
+        "Relentless Gladios",
+        "Dark Mitama",
+        "白騎士キュクロプス",
+        "D'artanyan"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "87": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Strike Unit R.E.I."
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "88": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Splendid Ganesha"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "89": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [],
+    "diff": [
+      [
+        "Pai-Pai"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "90": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "91": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "92": {
+    "banner_name": "Air Busters",
+    "enabled": false,
+    "series_ID": 22,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [],
+      [
+        "Welterweight Cat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "93": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "94": {
+    "banner_name": "Puella Magi Madoka Magica Collab",
+    "enabled": false,
+    "series_ID": 23,
+    "exclusives": [],
+    "diff": [
+      [
+        "Thunder God Zeus",
+        "Anubis the Protector",
+        "Radiant Aphrodite",
+        "Hayabusa",
+        "Urashima Taro",
+        "The Grateful Crane",
+        "Momotaro",
+        "Kasa Jizo",
+        "Princess Kaguya",
+        "Nurse Cat",
+        "Shining Amaterasu",
+        "Splendid Ganesha",
+        "Uesugi Kenshin",
+        "Kalisa",
+        "Nekoluga",
+        "Asiluga",
+        "Kubiluga",
+        "Ice Cat",
+        "Cat Machine",
+        "Lesser Demon Cat",
+        "Tecoluga",
+        "Balaluga",
+        "Dioramos",
+        "Marauder Cat",
+        "Baby Cat",
+        "Akira",
+        "Mekako Saionji",
+        "Catman",
+        "Sanada Yukimura",
+        "Maeda Keiji",
+        "Oda Nobunaga",
+        "Windy",
+        "Thundia",
+        "Kachi-Kachi",
+        "Sodom",
+        "Megidora",
+        "Vars",
+        "Kamukura",
+        "Raiden",
+        "The White Rabbit",
+        "Warlock and Pierre",
+        "Kuu",
+        "Kai",
+        "Coppermine",
+        "Togeluga",
+        "Date Masamune",
+        "Takeda Shingen"
+      ],
+      [
+        "Welterweight Cat",
+        "Bebe",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {
+      "4": [
+        "Madoka Kaname"
+      ],
+      "8": [
+        "Homura Akemi",
+        "Sayaka Miki",
+        "Mami Tomoe",
+        "Kyoko Sakura"
+      ],
+      "6": [
+        "Kyubey"
+      ],
+      "3": [
+        "Madoka Cat",
+        "Homura Cat",
+        "Sayaka Cat",
+        "Mami Cat",
+        "Kyoko Cat"
+      ]
+    }
+  },
+  "95": {
+    "banner_name": "Puella Magi Madoka Magica Collab",
+    "enabled": false,
+    "series_ID": 23,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "8": [
+        "Madoka Kaname",
+        "Homura Akemi",
+        "Sayaka Miki",
+        "Mami Tomoe",
+        "Kyoko Sakura"
+      ],
+      "6": [
+        "Kyubey"
+      ],
+      "3": [
+        "Madoka Cat",
+        "Homura Cat",
+        "Sayaka Cat",
+        "Mami Cat",
+        "Kyoko Cat"
+      ]
+    }
+  },
+  "96": {
+    "banner_name": "Halloween Gatya",
+    "enabled": false,
+    "series_ID": 8,
+    "exclusives": [],
+    "diff": [
+      [
+        "Lilith Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "97": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "98": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "99": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "100": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "101": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "102": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "103": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "104": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "105": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "106": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "107": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "108": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "109": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "110": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "111": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "112": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "113": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "114": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "115": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "116": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "117": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "118": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "119": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "120": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "121": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Mighty Thermae D-Lux",
+        "Mighty Rekon Korps",
+        "Welterweight Cat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Mighty Deth-Troy-R",
+        "Mighty Kristul Muu",
+        "Matador Cat",
+        "Mighty Aethur Ltd.",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "122": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "123": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "124": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "125": {
+    "banner_name": "Air Busters",
+    "enabled": false,
+    "series_ID": 22,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "126": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Mighty Kat-A-Pult",
+        "Mighty Drednot",
+        "Mighty Bomburr",
+        "Vaulter Cat",
+        "Gardener Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "127": {
+    "banner_name": "Xmas Gals",
+    "enabled": false,
+    "series_ID": 9,
+    "exclusives": [],
+    "diff": [
+      [
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Yuletide Nurse"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "128": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Kat-A-Pult",
+        "Mighty Drednot",
+        "Mighty Bomburr"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "129": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [],
+    "diff": [
+      [
+        "Wrathful Poseidon"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "130": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "131": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "132": {
+    "banner_name": "Goodbye <year>!",
+    "enabled": false,
+    "series_ID": 10,
+    "exclusives": [],
+    "diff": [
+      [
+        "Akira",
+        "Radiant Aphrodite",
+        "Momotaro",
+        "Tecoluga",
+        "Cat Machine",
+        "Windy",
+        "Lilith Cat",
+        "Mighty Kat-A-Pult",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Megidora",
+        "Years-End Neneko",
+        "Pai-Pai",
+        "Date Masamune"
+      ],
+      [
+        "Warlock and Pierre",
+        "Kachi-Kachi",
+        "Nurse Cat",
+        "Togeluga",
+        "Dioramos",
+        "Uesugi Kenshin",
+        "Kalisa"
+      ]
+    ],
+    "rate_ups": {
+      "4": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "133": {
+    "banner_name": "Welcome <year>!",
+    "enabled": false,
+    "series_ID": 16,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nekoluga",
+        "Mekako Saionji",
+        "Maeda Keiji",
+        "Princess Kaguya",
+        "Thundia",
+        "Shining Amaterasu",
+        "Tropical Kalisa",
+        "Mighty Bomburr",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Vars",
+        "Years-End Neneko",
+        "Baby Cat",
+        "Strike Unit R.E.I."
+      ],
+      [
+        "The Grateful Crane",
+        "Sanada Yukimura",
+        "Kubiluga",
+        "Kuu",
+        "The White Rabbit",
+        "Kamukura",
+        "Marauder Cat"
+      ]
+    ],
+    "rate_ups": {
+      "4": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "134": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Wrathful Poseidon"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "135": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Wrathful Poseidon"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "136": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Mighty Drednot"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "137": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Miko Mitama"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "138": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Miko Mitama"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "139": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [],
+    "diff": [
+      [
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "140": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "141": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "142": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [],
+    "diff": [
+      [
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "143": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "144": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "145": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [],
+    "diff": [
+      [
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "146": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "147": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "148": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [],
+    "diff": [
+      [
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "149": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "150": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "151": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [],
+    "diff": [
+      [
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "152": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "153": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "154": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [],
+    "diff": [
+      [
+        "Sarukani",
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "155": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "156": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "157": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [],
+    "diff": [
+      [
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "158": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "159": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "160": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [],
+    "diff": [
+      [
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "161": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "162": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "163": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [],
+    "diff": [
+      [
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "164": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "165": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "166": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "167": {
+    "banner_name": "Air Busters",
+    "enabled": false,
+    "series_ID": 22,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "168": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Sarukani",
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "169": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Sarukani"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "170": {
+    "banner_name": "Crash Fever Collab",
+    "enabled": false,
+    "series_ID": 25,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {
+      "7": [
+        "Belial"
+      ]
+    }
+  },
+  "171": {
+    "banner_name": "Crash Fever Collab",
+    "enabled": false,
+    "series_ID": 25,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "7": [
+        "Belial"
+      ]
+    }
+  },
+  "172": {
+    "banner_name": "Easter Carnival",
+    "enabled": false,
+    "series_ID": 26,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "Blooming Kamukura",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {
+      "4": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "173": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [],
+      [
+        "Lasvoss",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Ganglion",
+        "Kintaro",
+        "Voli",
+        "Sharpshooter Saki",
+        "Hades the Punisher",
+        "Kasli the Bane",
+        "Mighty Thermae D-Lux",
+        "Papaluga",
+        "Cat Clan Heroes",
+        "Detective Vigler",
+        "Nobiluga",
+        "Empress Chronos",
+        "D'arktanyan",
+        "Gravi",
+        "Mighty Aethur Ltd.",
+        "Imagawa Yoshimoto",
+        "Twinstars",
+        "Dark Aegis Garu",
+        "Mighty Rekon Korps",
+        "Bora",
+        "Mizli",
+        "Summoner Satoru",
+        "Shiro Amakusa",
+        "Lilin",
+        "Hevijak the Wicked",
+        "Aer",
+        "Mighty Deth-Troy-R",
+        "Matador Cat",
+        "Narita Kaihime",
+        "Furiluga",
+        "Fencer Cat",
+        "Myrcia",
+        "Yamii",
+        "Rover Cat",
+        "Relentless Gladios",
+        "Dark Mitama",
+        "白騎士キュクロプス"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "174": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Shadow Gao"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "175": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Kyosaka Nanaho",
+        "Wolfchild Deale",
+        "Graveflower Verbena",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "Rover Cat",
+        "Fencer Cat",
+        "Adventurer Kanna"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "176": {
+    "banner_name": "Princess Punt, Merc Storia, Million Arthur, Dragon Poker",
+    "enabled": false,
+    "series_ID": 17,
+    "exclusives": [],
+    "diff": [
+      [
+        "ユーリンチー",
+        "狂乱のケリ姫",
+        "KHM48",
+        "剣士",
+        "ウシ姫",
+        "チビガウ",
+        "執行者",
+        "プリンセスケリ姫号"
+      ],
+      [
+        "Celesse",
+        "Nono",
+        "Olga",
+        "Norn",
+        "Yoichi",
+        "Serum",
+        "Fuu",
+        "Aura",
+        "Rei",
+        "Wyvern"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "177": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [],
+    "diff": [
+      [
+        "Imagawa Yoshimoto"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "178": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "179": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "180": {
+    "banner_name": "Annihilation City Collab",
+    "enabled": false,
+    "series_ID": 15,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [
+        "Welterweight Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Lost World Yuki"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "181": {
+    "banner_name": "Annihilation City Collab",
+    "enabled": false,
+    "series_ID": 15,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "182": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Imagawa Yoshimoto"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "183": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Imagawa Yoshimoto"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "184": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Imagawa Yoshimoto"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "185": {
+    "banner_name": "Merc Storia Collab",
+    "enabled": false,
+    "series_ID": 13,
+    "exclusives": [],
+    "diff": [
+      [
+        "Orthos",
+        "Michelia",
+        "Todomeki"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "186": {
+    "banner_name": "Gudetama Collab",
+    "enabled": false,
+    "series_ID": 29,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      [
+        "Rover Cat",
+        "Fencer Cat",
+        "ぐでネコマシン"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "187": {
+    "banner_name": "Gudetama Collab",
+    "enabled": false,
+    "series_ID": 29,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "188": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [],
+    "diff": [
+      [
+        "Twinstars"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "189": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "190": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "191": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [
+        "Gloomy Neneko",
+        "Hayabusa",
+        "Spooky Thundia",
+        "Kai",
+        "Bunny & Canard",
+        "Kachi-Kachi",
+        "Trickster Himeyuri",
+        "Togeluga",
+        "Mighty Drednot",
+        "Imagawa Yoshimoto",
+        "Santa Kuu",
+        "Vars",
+        "Pai-Pai",
+        "Wrathful Poseidon"
+      ],
+      [
+        "Thunder God Zeus",
+        "The Grateful Crane",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Ganglion",
+        "Strike Unit R.E.I.",
+        "Kyosaka Nanaho",
+        "Gravi",
+        "Musashi Miyamoto",
+        "Akira",
+        "Wonder MOMOCO",
+        "Valentine's Neneko",
+        "Adventurer Kanna",
+        "Mighty Rekon Korps",
+        "Kaguya of the Coast",
+        "Lilin",
+        "Matador Cat",
+        "Narita Kaihime",
+        "Furiluga",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Gloomy Neneko"
+      ]
+    }
+  },
+  "192": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [
+        "Thunder God Zeus",
+        "Sarukani",
+        "Catman",
+        "Hallowindy",
+        "Sanada Yukimura",
+        "Ice Cat",
+        "Balaluga",
+        "Springtime Kenshin",
+        "Easter Neneko",
+        "Queen Reika",
+        "Mighty Bomburr",
+        "Yuletide Nurse",
+        "Raiden",
+        "Strike Unit R.E.I.",
+        "Twinstars"
+      ],
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Shining Amaterasu",
+        "Sunny Neneko",
+        "Pai-Pai",
+        "Mighty Thermae D-Lux",
+        "Kubiluga",
+        "Marauder Cat",
+        "High Lord Babel",
+        "Ushiwakamaru",
+        "Kachi-Kachi",
+        "Mighty Kristul Muu",
+        "Sea Maiden Ruri",
+        "Blooming Kamukura",
+        "The White Rabbit",
+        "Bora",
+        "Shiro Amakusa",
+        "Coppermine",
+        "Hevijak the Wicked",
+        "Gaia the Creator",
+        "Matador Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "193": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Twinstars"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "194": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Twinstars"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "195": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Twinstars"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "196": {
+    "banner_name": "Gudetama Collab",
+    "enabled": false,
+    "series_ID": 29,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "20": [
+        "ぐでぐでプリン"
+      ],
+      "18": [
+        "ぐでたまプレート"
+      ]
+    }
+  },
+  "197": {
+    "banner_name": "Gals of Summer",
+    "enabled": false,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
+      [
+        "Seashore Kai",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "198": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Rekon Korps"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "199": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "200": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "201": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Mighty Rekon Korps"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "202": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Mighty Rekon Korps"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "203": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Rekon Korps"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "204": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [],
+    "diff": [
+      [
+        "Wolfchild Deale",
+        "Graveflower Verbena"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "205": {
+    "banner_name": "Metal Busters",
+    "enabled": false,
+    "series_ID": 32,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [],
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Sakura Sonic",
+        "Matador Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ]
+    ],
+    "rate_ups": {
+      "3": [
+        "Easter Neneko",
+        "Years-End Neneko",
+        "Sunny Neneko",
+        "Gloomy Neneko",
+        "Neneko"
+      ]
+    }
+  },
+  "206": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "207": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "208": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "Gravi",
+        "Voli",
+        "Yamii",
+        "Rover Cat",
+        "Fencer Cat",
+        "Lumina"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "209": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "210": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "211": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Mizli",
+        "Aer",
+        "Bora"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "212": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Mizli",
+        "Aer",
+        "Bora"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "213": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mizli",
+        "Aer",
+        "Bora"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "214": {
+    "banner_name": "Fate/Stay Night Collab",
+    "enabled": false,
+    "series_ID": 34,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Sakura Matou",
+        "Archer the Cat",
+        "Rider the Cat",
+        "Kotomine & Gilgamesh Cats"
+      ]
+    ],
+    "rate_ups": {
+      "4": [
+        "Sakura the Cat",
+        "Rin the Cat",
+        "Illya the Cat"
+      ]
+    }
+  },
+  "215": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "216": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "217": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "218": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "219": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "220": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "221": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "222": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "223": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "224": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "225": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "226": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "227": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "228": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "229": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "230": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "231": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "232": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "233": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "234": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "235": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "236": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "237": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "238": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "239": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "240": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "241": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "242": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "243": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "244": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "245": {
+    "banner_name": "Red Busters",
+    "enabled": false,
+    "series_ID": 5,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "246": {
+    "banner_name": "Air Busters",
+    "enabled": false,
+    "series_ID": 22,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "247": {
+    "banner_name": "Metal Busters",
+    "enabled": false,
+    "series_ID": 32,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Easter Neneko",
+        "Years-End Neneko",
+        "Sunny Neneko",
+        "Gloomy Neneko",
+        "Neneko"
+      ]
+    }
+  },
+  "248": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "249": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "250": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "251": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "5": [
+        "Gloomy Neneko"
+      ]
+    }
+  },
+  "252": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "5": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "253": {
+    "banner_name": "Best of the Best",
+    "enabled": false,
+    "series_ID": 35,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Shadow Gao"
+      ],
+      [
+        "Good-Luck Ebisu",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "Voli",
+        "Li'l Valkyrie",
+        "Miko Mitama"
+      ]
+    ],
+    "rate_ups": {
+      "2": [
+        "Mighty Bomburr",
+        "Radiant Aphrodite",
+        "Catman",
+        "Kasa Jizo",
+        "Megidora",
+        "Thundia",
+        "Sanada Yukimura",
+        "Cat Machine",
+        "Togeluga"
+      ]
+    }
+  },
+  "254": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "255": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat",
+        "Dark Mitama"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "256": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Dark Mitama"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "257": {
+    "banner_name": "Halloween Gatya",
+    "enabled": false,
+    "series_ID": 8,
+    "exclusives": [],
+    "diff": [
+      [
+        "Welterweight Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Gloomy Neneko"
+      ]
+    }
+  },
+  "258": {
+    "banner_name": "Xmas Gals",
+    "enabled": false,
+    "series_ID": 9,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat",
+        "Welterweight Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "259": {
+    "banner_name": "Easter Carnival",
+    "enabled": false,
+    "series_ID": 26,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "260": {
+    "banner_name": "Gals of Summer",
+    "enabled": false,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "261": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "D'artanyan"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "262": {
+    "banner_name": "Goodbye <year>!",
+    "enabled": false,
+    "series_ID": 10,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Rekon Korps",
+        "Mekako Saionji",
+        "Welterweight Cat",
+        "Urashima Taro",
+        "Mizli",
+        "Kubiluga",
+        "Bunny & Canard",
+        "Nurse Cat",
+        "Splendid Ganesha",
+        "Dioramos",
+        "Imagawa Yoshimoto",
+        "Rover Cat",
+        "Fencer Cat",
+        "Strike Unit R.E.I.",
+        "Twinstars"
+      ],
+      [
+        "Akira",
+        "Radiant Aphrodite",
+        "Momotaro",
+        "Tecoluga",
+        "Cat Machine",
+        "Windy",
+        "Lilith Cat",
+        "Mighty Kat-A-Pult",
+        "Megidora",
+        "Pai-Pai",
+        "Date Masamune"
+      ]
+    ],
+    "rate_ups": {
+      "4": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "263": {
+    "banner_name": "Welcome <year>!",
+    "enabled": false,
+    "series_ID": 16,
+    "exclusives": [],
+    "diff": [
+      [
+        "Anubis the Protector",
+        "Warlock and Pierre",
+        "Sarukani",
+        "Welterweight Cat",
+        "Seashore Kai",
+        "Bora",
+        "Asiluga",
+        "Lesser Demon Cat",
+        "Mighty Kat-A-Pult",
+        "Megidora",
+        "Rover Cat",
+        "Fencer Cat",
+        "Pai-Pai",
+        "Takeda Shingen",
+        "Kalisa"
+      ],
+      [
+        "Nekoluga",
+        "Mekako Saionji",
+        "Maeda Keiji",
+        "Princess Kaguya",
+        "Thundia",
+        "Shining Amaterasu",
+        "Tropical Kalisa",
+        "Mighty Bomburr",
+        "Vars",
+        "Baby Cat",
+        "Strike Unit R.E.I."
+      ]
+    ],
+    "rate_ups": {
+      "4": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "264": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "D'artanyan"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "265": {
+    "banner_name": "PowerPro Baseball Collab",
+    "enabled": false,
+    "series_ID": 36,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "266": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [],
+    "diff": [
+      [
+        "Ganglion"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "267": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "268": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "269": {
+    "banner_name": "Metal Busters",
+    "enabled": false,
+    "series_ID": 32,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Sakura Sonic"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Easter Neneko",
+        "Years-End Neneko",
+        "Sunny Neneko",
+        "Gloomy Neneko",
+        "Neneko"
+      ]
+    }
+  },
+  "270": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Ganglion"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "271": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Ganglion"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "272": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Ganglion"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "273": {
+    "banner_name": "Metal Busters",
+    "enabled": false,
+    "series_ID": 32,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "2": [
+        "Wrathful Poseidon",
+        "Hayabusa",
+        "Tecoluga",
+        "Princess Kaguya",
+        "Marauder Cat"
+      ],
+      "3": [
+        "Easter Neneko",
+        "Years-End Neneko",
+        "Sunny Neneko",
+        "Gloomy Neneko",
+        "Neneko"
+      ]
+    }
+  },
+  "274": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Sakura Sonic"
+      ],
+      [
+        "Ganglion"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "275": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Ganglion"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "276": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [],
+    "diff": [
+      [
+        "Voli"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "277": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "278": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "279": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Voli"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "280": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Voli"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "281": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Voli"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "282": {
+    "banner_name": "Evangelion [Set 1]",
+    "enabled": false,
+    "series_ID": 37,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Eva Unit-08",
+        "Kaworu Cat",
+        "AAA Wunder",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Misato Katsuragi",
+        "Ritsuko Akagi",
+        "Rei Ayanami (???)",
+        "Matador Cat"
+      ]
+    ],
+    "rate_ups": {
+      "2": [
+        "Mari Illustrious",
+        "Asuka Langley",
+        "Rei Ayanami"
+      ],
+      "4": [
+        "Mari Cat",
+        "Asuka Cat",
+        "Rei Cat"
+      ]
+    }
+  },
+  "283": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Thermae D-Lux"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "284": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "285": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "286": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Mighty Thermae D-Lux"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "287": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Mighty Thermae D-Lux"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "288": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Thermae D-Lux"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "289": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [],
+    "diff": [
+      [
+        "Cat Clan Heroes"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "290": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "291": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "292": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Cat Clan Heroes"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "293": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Cat Clan Heroes"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "294": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Cat Clan Heroes"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "295": {
+    "banner_name": "Annihilation City Collab",
+    "enabled": false,
+    "series_ID": 15,
+    "exclusives": [],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat",
+        "Souma Cat",
+        "Otaku Geek Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "8": [
+        "Otaku Geek Cat"
+      ],
+      "11": [
+        "Souma Cat"
+      ]
+    }
+  },
+  "296": {
+    "banner_name": "Gudetama Collab",
+    "enabled": false,
+    "series_ID": 29,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat",
+        "ぐでネコマシン"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "10": [
+        "ぐでぐでプリン"
+      ],
+      "11": [
+        "ぐでたまプレート"
+      ]
+    }
+  },
+  "297": {
+    "banner_name": "Gudetama Collab",
+    "enabled": false,
+    "series_ID": 29,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "10": [
+        "ぐでぐでプリン"
+      ],
+      "11": [
+        "ぐでたまプレート"
+      ]
+    }
+  },
+  "298": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [],
+    "diff": [
+      [
+        "Detective Vigler"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "299": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "300": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "301": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Detective Vigler"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "302": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Detective Vigler"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "303": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Detective Vigler"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "304": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nobiluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "305": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "306": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "307": {
+    "banner_name": "Best of the Best",
+    "enabled": false,
+    "series_ID": 35,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Li'l Valkyrie"
+      ],
+      [
+        "Shadow Gao"
+      ]
+    ],
+    "rate_ups": {
+      "6": [
+        "Li'l Valkyrie"
+      ]
+    }
+  },
+  "308": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Nobiluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "309": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Nobiluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "310": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nobiluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "311": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [],
+    "diff": [
+      [
+        "Empress Chronos"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "312": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "313": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "314": {
+    "banner_name": "Gals of Summer",
+    "enabled": false,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
+      [
+        "Waverider Kuu"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "315": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Empress Chronos"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "316": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Empress Chronos"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "317": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Empress Chronos"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "318": {
+    "banner_name": "Puella Magi Madoka Magica Collab",
+    "enabled": false,
+    "series_ID": 23,
+    "exclusives": [],
+    "diff": [
+      [
+        "Welterweight Cat",
+        "Bebe",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      [
+        "Thunder God Zeus",
+        "Anubis the Protector",
+        "Radiant Aphrodite",
+        "Hayabusa",
+        "Urashima Taro",
+        "The Grateful Crane",
+        "Momotaro",
+        "Kasa Jizo",
+        "Princess Kaguya",
+        "Nurse Cat",
+        "Shining Amaterasu",
+        "Splendid Ganesha",
+        "Uesugi Kenshin",
+        "Kalisa",
+        "Nekoluga",
+        "Asiluga",
+        "Kubiluga",
+        "Ice Cat",
+        "Cat Machine",
+        "Lesser Demon Cat",
+        "Tecoluga",
+        "Balaluga",
+        "Dioramos",
+        "Marauder Cat",
+        "Baby Cat",
+        "Akira",
+        "Mekako Saionji",
+        "Catman",
+        "Sanada Yukimura",
+        "Maeda Keiji",
+        "Oda Nobunaga",
+        "Windy",
+        "Thundia",
+        "Kachi-Kachi",
+        "Sodom",
+        "Megidora",
+        "Vars",
+        "Kamukura",
+        "Raiden",
+        "The White Rabbit",
+        "Warlock and Pierre",
+        "Kuu",
+        "Kai",
+        "Coppermine",
+        "Togeluga",
+        "Date Masamune",
+        "Takeda Shingen"
+      ]
+    ],
+    "rate_ups": {
+      "6": [
+        "Kyubey"
+      ],
+      "4": [
+        "Madoka Cat",
+        "Homura Cat",
+        "Sayaka Cat",
+        "Mami Cat",
+        "Kyoko Cat"
+      ]
+    }
+  },
+  "319": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "D'arktanyan"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "320": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "D'arktanyan"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "321": {
+    "banner_name": "Crash Fever Collab",
+    "enabled": false,
+    "series_ID": 25,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "7": [
+        "Belial"
+      ]
+    }
+  },
+  "322": {
+    "banner_name": "Crash Fever Collab",
+    "enabled": false,
+    "series_ID": 25,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "7": [
+        "Belial"
+      ]
+    }
+  },
+  "323": {
+    "banner_name": "Puella Magi Madoka Magica Collab",
+    "enabled": false,
+    "series_ID": 23,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Bebe",
+        "Kyoko Sakura",
+        "Mami Tomoe",
+        "Sayaka Miki",
+        "Homura Akemi"
+      ],
+      "2": [
+        "Madoka Kaname"
+      ],
+      "6": [
+        "Kyubey"
+      ],
+      "4": [
+        "Madoka Cat",
+        "Homura Cat",
+        "Sayaka Cat",
+        "Mami Cat",
+        "Kyoko Cat"
+      ]
+    }
+  },
+  "324": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "325": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "326": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "327": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "328": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "329": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "330": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Musashi Miyamoto"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "331": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "332": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "333": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Headmistress Jeanne"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "334": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "335": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "336": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "High Lord Babel"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "337": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "338": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "339": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "340": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "341": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "342": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "343": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "344": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "345": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "346": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "347": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "348": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "349": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "350": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "351": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "352": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "353": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "354": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "355": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "356": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "357": {
+    "banner_name": "Best of the Best",
+    "enabled": false,
+    "series_ID": 35,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mizli"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "358": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [
+        "Warlock and Pierre",
+        "Mighty Rekon Korps",
+        "Momotaro",
+        "Maeda Keiji",
+        "Springtime Kenshin",
+        "Ganglion",
+        "Easter Neneko",
+        "Sea Maiden Ruri",
+        "Voli",
+        "Nobiluga",
+        "Empress Chronos",
+        "Marauder Cat",
+        "Strike Unit R.E.I.",
+        "Twinstars"
+      ],
+      [
+        "Gloomy Neneko",
+        "Hayabusa",
+        "Spooky Thundia",
+        "Kai",
+        "Bunny & Canard",
+        "Kachi-Kachi",
+        "Trickster Himeyuri",
+        "Togeluga",
+        "Mighty Drednot",
+        "Imagawa Yoshimoto",
+        "Santa Kuu",
+        "Pai-Pai",
+        "Vars",
+        "Baby Cat",
+        "Wrathful Poseidon"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "359": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Thermae D-Lux",
+        "Wolfchild Deale",
+        "Urashima Taro",
+        "Oda Nobunaga",
+        "Tecoluga",
+        "Cat Clan Heroes",
+        "Aer",
+        "Sakura Sonic",
+        "Shining Amaterasu",
+        "Detective Vigler",
+        "Sunny Neneko",
+        "Waverider Kuu",
+        "Kamukura",
+        "Kalisa"
+      ],
+      [
+        "Thunder God Zeus",
+        "Sarukani",
+        "Catman",
+        "Hallowindy",
+        "Sanada Yukimura",
+        "Ice Cat",
+        "Balaluga",
+        "Springtime Kenshin",
+        "Easter Neneko",
+        "Queen Reika",
+        "Mighty Bomburr",
+        "Yuletide Nurse",
+        "Raiden",
+        "Strike Unit R.E.I.",
+        "Twinstars"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "360": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "361": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "362": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Ushiwakamaru"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "363": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "364": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "365": {
+    "banner_name": "Goodbye <year>!",
+    "enabled": false,
+    "series_ID": 10,
+    "exclusives": [],
+    "diff": [
+      [
+        "Thunder God Zeus",
+        "Akira",
+        "Seashore Kai",
+        "Bora",
+        "Asiluga",
+        "Princess Kaguya",
+        "Ice Cat",
+        "Thundia",
+        "Sakura Sonic",
+        "Mighty Kat-A-Pult",
+        "Sodom",
+        "Takeda Shingen"
+      ],
+      [
+        "Mighty Rekon Korps",
+        "Mekako Saionji",
+        "Urashima Taro",
+        "Mizli",
+        "Kubiluga",
+        "Bunny & Canard",
+        "Nurse Cat",
+        "Splendid Ganesha",
+        "Dioramos",
+        "Imagawa Yoshimoto",
+        "Strike Unit R.E.I.",
+        "Twinstars"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "366": {
+    "banner_name": "Welcome <year>!",
+    "enabled": false,
+    "series_ID": 16,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hayabusa",
+        "Oda Nobunaga",
+        "Windy",
+        "Balaluga",
+        "Kachi-Kachi",
+        "Splendid Ganesha",
+        "Voli",
+        "Mighty Drednot",
+        "Midsummer Rabbit"
+      ],
+      [
+        "Anubis the Protector",
+        "Warlock and Pierre",
+        "Sarukani",
+        "Seashore Kai",
+        "Bora",
+        "Asiluga",
+        "Mighty Kat-A-Pult",
+        "Takeda Shingen",
+        "Kalisa"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "367": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Li'l Valkyrie"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "368": {
+    "banner_name": "Fate/Stay Night Collab",
+    "enabled": false,
+    "series_ID": 34,
+    "exclusives": [],
+    "diff": [
+      [
+        "Sakura Matou",
+        "Archer the Cat",
+        "Rider the Cat",
+        "Kotomine & Gilgamesh Cats"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "6": [
+        "Kotomine & Gilgamesh Cats"
+      ],
+      "3": [
+        "Rider the Cat",
+        "Archer the Cat",
+        "Sakura the Cat",
+        "Rin the Cat",
+        "Illya the Cat"
+      ]
+    }
+  },
+  "369": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Wonder MOMOCO"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "370": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "371": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "372": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Legeluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "373": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "374": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "375": {
+    "banner_name": "Survive! Mola Mola! Collab",
+    "enabled": false,
+    "series_ID": 14,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [
+        "Welterweight Cat",
+        "Vaulter Cat",
+        "Gardener Cat",
+        "Rover Cat",
+        "Fencer Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "6": [
+        "Baby Mola"
+      ]
+    }
+  },
+  "376": {
+    "banner_name": "Survive! Mola Mola! Collab",
+    "enabled": false,
+    "series_ID": 14,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "6": [
+        "Baby Mola"
+      ]
+    }
+  },
+  "377": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Mighty Kristul Muu"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "378": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "379": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "380": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Lumina"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "381": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "382": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "383": {
+    "banner_name": "Bikkuriman Collab",
+    "enabled": false,
+    "series_ID": 38,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Shaman Khan",
+        "Holy Knight Alibaba",
+        "Matador Cat"
+      ]
+    ],
+    "rate_ups": {
+      "6": [
+        "Fiendish Nero"
+      ]
+    }
+  },
+  "384": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Doktor Heaven"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "385": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "386": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "387": {
+    "banner_name": "Annihilation City Collab",
+    "enabled": false,
+    "series_ID": 15,
+    "exclusives": [],
+    "diff": [
+      [
+        "Benevolent Souma"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "8": [
+        "Otaku Geek Cat"
+      ],
+      "11": [
+        "Souma Cat"
+      ]
+    }
+  },
+  "388": {
+    "banner_name": "NEO Best of the Best",
+    "enabled": false,
+    "series_ID": 39,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nekoluga",
+        "Hayabusa",
+        "Maeda Keiji",
+        "Aer",
+        "Nurse Cat"
+      ],
+      [
+        "Catman",
+        "Sanada Yukimura",
+        "Good-Luck Ebisu",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Cat Machine",
+        "Matador Cat",
+        "Togeluga",
+        "Voli",
+        "Dark Mitama"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "389": {
+    "banner_name": "Best of the Best",
+    "enabled": false,
+    "series_ID": 35,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Thermae D-Lux",
+        "The Grateful Crane",
+        "Windy",
+        "Vars",
+        "Empress Chronos"
+      ],
+      [
+        "Radiant Aphrodite",
+        "Kasa Jizo",
+        "Thundia",
+        "Mighty Bomburr",
+        "Megidora"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "390": {
+    "banner_name": "Princess Punt, Merc Storia, Million Arthur, Dragon Poker",
+    "enabled": false,
+    "series_ID": 17,
+    "exclusives": [],
+    "diff": [
+      [
+        "カレット",
+        "ひな"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "391": {
+    "banner_name": "Evangelion [Set 1]",
+    "enabled": false,
+    "series_ID": 37,
+    "exclusives": [],
+    "diff": [
+      [
+        "Eva Unit-08",
+        "AAA Wunder",
+        "Misato Katsuragi",
+        "Ritsuko Akagi",
+        "Rei Ayanami (???)"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Mari Cat",
+        "Asuka Cat",
+        "Rei Cat"
+      ]
+    }
+  },
+  "392": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Gaia the Creator"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "393": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "394": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "395": {
+    "banner_name": "Gals of Summer",
+    "enabled": false,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
+      [
+        "Seabreeze Coppermine"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "396": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Narita Kaihime"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "397": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "398": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "399": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Narita Kaihime"
+      ],
+      [
+        "Li'l Valkyrie"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "400": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Narita Kaihime"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "401": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Narita Kaihime"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "402": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Myrcia"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "403": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "404": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "405": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Myrcia"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "406": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Myrcia"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "407": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Myrcia"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "408": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Relentless Gladios"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "409": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "410": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "411": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Relentless Gladios"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "412": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Relentless Gladios"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "413": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Relentless Gladios"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "414": {
+    "banner_name": "Merc Storia Collab",
+    "enabled": true,
+    "series_ID": 13,
+    "exclusives": [],
+    "diff": [
+      [
+        "Eyewaltz"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "415": {
+    "banner_name": "Street Fighter Collab",
+    "enabled": false,
+    "series_ID": 40,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "C. Honda",
+        "Balrog Cat",
+        "Vega Cat",
+        "Sagat Cat",
+        "M. Bison Cat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "E. Honda",
+        "Balrog",
+        "Vega",
+        "Sagat",
+        "M. Bison"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "416": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Lasvoss"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "417": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "418": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "419": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Lasvoss"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "420": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Lasvoss"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "421": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "422": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "423": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "424": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "425": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "426": {
+    "banner_name": "Dynamites",
+    "enabled": false,
+    "series_ID": 1,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "427": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "428": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "429": {
+    "banner_name": "Vajiras",
+    "enabled": false,
+    "series_ID": 2,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "430": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "431": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "432": {
+    "banner_name": "Galaxy Gals",
+    "enabled": false,
+    "series_ID": 3,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "433": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "434": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "435": {
+    "banner_name": "Dragon Emperors",
+    "enabled": false,
+    "series_ID": 4,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "436": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "437": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "438": {
+    "banner_name": "Ultra Souls",
+    "enabled": false,
+    "series_ID": 6,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "439": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "440": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "441": {
+    "banner_name": "Dark Heroes",
+    "enabled": false,
+    "series_ID": 7,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "442": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "443": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "444": {
+    "banner_name": "Almighties",
+    "enabled": false,
+    "series_ID": 18,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "445": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "446": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "447": {
+    "banner_name": "Iron Legion",
+    "enabled": false,
+    "series_ID": 24,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "448": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "449": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "450": {
+    "banner_name": "Elemental Pixies",
+    "enabled": false,
+    "series_ID": 33,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "451": {
+    "banner_name": "Red Busters",
+    "enabled": true,
+    "series_ID": 5,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "452": {
+    "banner_name": "Air Busters",
+    "enabled": true,
+    "series_ID": 22,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "453": {
+    "banner_name": "Metal Busters",
+    "enabled": true,
+    "series_ID": 32,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Easter Neneko",
+        "Years-End Neneko",
+        "Sunny Neneko",
+        "Gloomy Neneko",
+        "Neneko"
+      ]
+    }
+  },
+  "454": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "455": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "456": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "457": {
+    "banner_name": "Halloween Gatya",
+    "enabled": false,
+    "series_ID": 8,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Gloomy Neneko"
+      ]
+    }
+  },
+  "458": {
+    "banner_name": "Easter Carnival",
+    "enabled": false,
+    "series_ID": 26,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "459": {
+    "banner_name": "Gals of Summer",
+    "enabled": false,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "460": {
+    "banner_name": "Best of the Best",
+    "enabled": false,
+    "series_ID": 35,
+    "exclusives": [],
+    "diff": [
+      [
+        "Radiant Aphrodite",
+        "Good-Luck Ebisu",
+        "Kasa Jizo",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Thundia",
+        "Matador Cat",
+        "Voli",
+        "Mighty Bomburr",
+        "Megidora"
+      ],
+      [
+        "Mighty Thermae D-Lux",
+        "The Grateful Crane",
+        "Mizli",
+        "Windy",
+        "Vars",
+        "Empress Chronos"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "461": {
+    "banner_name": "NEO Best of the Best",
+    "enabled": false,
+    "series_ID": 39,
+    "exclusives": [],
+    "diff": [
+      [
+        "Catman",
+        "Sanada Yukimura",
+        "Good-Luck Ebisu",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Cat Machine",
+        "Matador Cat",
+        "Togeluga",
+        "Voli"
+      ],
+      [
+        "Nekoluga",
+        "Hayabusa",
+        "Maeda Keiji",
+        "Aer",
+        "Nurse Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "462": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [
+        "Gloomy Neneko",
+        "Hayabusa",
+        "Spooky Thundia",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Bunny & Canard",
+        "Kachi-Kachi",
+        "Trickster Himeyuri",
+        "Kai",
+        "Matador Cat",
+        "Mighty Drednot",
+        "Imagawa Yoshimoto",
+        "Togeluga",
+        "Santa Kuu",
+        "Vars",
+        "Pai-Pai",
+        "Baby Cat",
+        "Wrathful Poseidon"
+      ],
+      [
+        "Warlock and Pierre",
+        "Mighty Rekon Korps",
+        "Momotaro",
+        "Maeda Keiji",
+        "Springtime Kenshin",
+        "Ganglion",
+        "Easter Neneko",
+        "Sea Maiden Ruri",
+        "Voli",
+        "Nobiluga",
+        "Empress Chronos",
+        "Marauder Cat",
+        "Strike Unit R.E.I.",
+        "Twinstars"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Gloomy Neneko"
+      ]
+    }
+  },
+  "463": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [
+        "Thunder God Zeus",
+        "Sarukani",
+        "Catman",
+        "Hallowindy",
+        "Sanada Yukimura",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Ice Cat",
+        "Balaluga",
+        "Springtime Kenshin",
+        "Easter Neneko",
+        "Queen Reika",
+        "Matador Cat",
+        "Mighty Bomburr",
+        "Yuletide Nurse",
+        "Raiden",
+        "Strike Unit R.E.I.",
+        "Twinstars"
+      ],
+      [
+        "Mighty Thermae D-Lux",
+        "Wolfchild Deale",
+        "Urashima Taro",
+        "Oda Nobunaga",
+        "Tecoluga",
+        "Cat Clan Heroes",
+        "Aer",
+        "Sakura Sonic",
+        "Shining Amaterasu",
+        "Detective Vigler",
+        "Sunny Neneko",
+        "Waverider Kuu",
+        "Kamukura",
+        "Kalisa"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "464": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [
+        "Warlock and Pierre",
+        "Mighty Rekon Korps",
+        "Momotaro",
+        "Maeda Keiji",
+        "Springtime Kenshin",
+        "Ganglion",
+        "Easter Neneko",
+        "Sea Maiden Ruri",
+        "Voli",
+        "Nobiluga",
+        "Empress Chronos",
+        "Marauder Cat",
+        "Strike Unit R.E.I.",
+        "Twinstars"
+      ],
+      [
+        "Gloomy Neneko",
+        "Hayabusa",
+        "Spooky Thundia",
+        "Kai",
+        "Bunny & Canard",
+        "Kachi-Kachi",
+        "Trickster Himeyuri",
+        "Togeluga",
+        "Mighty Drednot",
+        "Imagawa Yoshimoto",
+        "Santa Kuu",
+        "Pai-Pai",
+        "Vars",
+        "Baby Cat",
+        "Wrathful Poseidon"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "465": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Thermae D-Lux",
+        "Wolfchild Deale",
+        "Urashima Taro",
+        "Oda Nobunaga",
+        "Tecoluga",
+        "Cat Clan Heroes",
+        "Aer",
+        "Sakura Sonic",
+        "Shining Amaterasu",
+        "Detective Vigler",
+        "Sunny Neneko",
+        "Waverider Kuu",
+        "Kamukura",
+        "Kalisa"
+      ],
+      [
+        "Thunder God Zeus",
+        "Sarukani",
+        "Catman",
+        "Hallowindy",
+        "Sanada Yukimura",
+        "Ice Cat",
+        "Balaluga",
+        "Springtime Kenshin",
+        "Easter Neneko",
+        "Queen Reika",
+        "Mighty Bomburr",
+        "Yuletide Nurse",
+        "Raiden",
+        "Strike Unit R.E.I.",
+        "Twinstars"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "466": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [
+        "High Lord Babel",
+        "Urashima Taro",
+        "Wonder MOMOCO",
+        "Aer",
+        "Tecoluga",
+        "Ice Cat",
+        "Gaia the Creator",
+        "Queen Reika",
+        "Narita Kaihime",
+        "Sodom",
+        "The White Rabbit",
+        "Yuletide Nurse",
+        "Years-End Neneko",
+        "Pai-Pai",
+        "Kalisa"
+      ],
+      [
+        "Warlock and Pierre",
+        "Momotaro",
+        "Maeda Keiji",
+        "Springtime Kenshin",
+        "Ganglion",
+        "Easter Neneko",
+        "Sea Maiden Ruri",
+        "Voli",
+        "Nobiluga",
+        "Marauder Cat",
+        "Strike Unit R.E.I.",
+        "Twinstars"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "467": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [
+        "Headmistress Jeanne",
+        "Nekoluga",
+        "Doktor Heaven",
+        "Bora",
+        "Maeda Keiji",
+        "Kachi-Kachi",
+        "Trickster Himeyuri",
+        "Mighty Kristul Muu",
+        "Splendid Ganesha",
+        "Dioramos",
+        "Mighty Drednot",
+        "Seabreeze Coppermine",
+        "Myrcia"
+      ],
+      [
+        "Mighty Thermae D-Lux",
+        "Wolfchild Deale",
+        "Urashima Taro",
+        "Oda Nobunaga",
+        "Tecoluga",
+        "Aer",
+        "Shining Amaterasu",
+        "Waverider Kuu",
+        "Kamukura",
+        "Kalisa"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "468": {
+    "banner_name": "Excellent Selection",
+    "enabled": false,
+    "series_ID": 41,
+    "exclusives": [],
+    "diff": [
+      [
+        "Musashi Miyamoto",
+        "Mighty Thermae D-Lux",
+        "Akira",
+        "Ushiwakamaru",
+        "Twinstars",
+        "Mizli",
+        "Bunny & Canard",
+        "Shining Amaterasu",
+        "Sea Maiden Ruri",
+        "Imagawa Yoshimoto",
+        "Nobiluga",
+        "Relentless Gladios",
+        "Strike Unit R.E.I.",
+        "Marauder Cat"
+      ],
+      [
+        "Headmistress Jeanne",
+        "Warlock and Pierre",
+        "Doktor Heaven",
+        "Wolfchild Deale",
+        "Summoner Satoru",
+        "Tecoluga",
+        "Windy",
+        "First-Love Myrcia",
+        "Sakura Sonic",
+        "Splendid Ganesha",
+        "Dioramos",
+        "Mighty Aethur Ltd.",
+        "Yamii",
+        "Takeda Shingen"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "469": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "470": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "471": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Lasvoss"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "472": {
+    "banner_name": "Xmas Gals",
+    "enabled": false,
+    "series_ID": 9,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Snow Angel Twinstars",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "473": {
+    "banner_name": "Goodbye <year>!",
+    "enabled": true,
+    "series_ID": 10,
+    "exclusives": [],
+    "diff": [
+      [
+        "Momotaro",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Shining Amaterasu",
+        "Strike Unit R.E.I.",
+        "Tecoluga",
+        "Cat Clan Heroes",
+        "Mighty Bomburr",
+        "Waverider Kuu",
+        "Headmistress Jeanne",
+        "Ushiwakamaru",
+        "Wonder MOMOCO",
+        "The White Rabbit",
+        "Lumina",
+        "Twinstars",
+        "Aer",
+        "Gaia the Creator",
+        "Matador Cat",
+        "Narita Kaihime",
+        "Relentless Gladios"
+      ],
+      [
+        "Thunder God Zeus",
+        "Akira",
+        "Seashore Kai",
+        "Bora",
+        "Asiluga",
+        "Princess Kaguya",
+        "Ice Cat",
+        "Thundia",
+        "Sakura Sonic",
+        "Mighty Kat-A-Pult",
+        "Sodom",
+        "Takeda Shingen"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "474": {
+    "banner_name": "Welcome <year>!",
+    "enabled": false,
+    "series_ID": 16,
+    "exclusives": [],
+    "diff": [
+      [
+        "Anubis the Protector",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Sakura Sonic",
+        "Uesugi Kenshin",
+        "Mighty Thermae D-Lux",
+        "Nekoluga",
+        "Cat Machine",
+        "Musashi Miyamoto",
+        "Sarukani",
+        "High Lord Babel",
+        "Catman",
+        "Legeluga",
+        "Mighty Kristul Muu",
+        "Kamukura",
+        "Doktor Heaven",
+        "Mizli",
+        "Seabreeze Coppermine",
+        "Matador Cat",
+        "Myrcia"
+      ],
+      [
+        "Hayabusa",
+        "Oda Nobunaga",
+        "Balaluga",
+        "Lesser Demon Cat",
+        "Kachi-Kachi",
+        "Windy",
+        "Splendid Ganesha",
+        "Voli",
+        "Mighty Drednot",
+        "Midsummer Rabbit",
+        "Megidora",
+        "Pai-Pai"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "475": {
+    "banner_name": "Ultra Souls",
+    "enabled": true,
+    "series_ID": 6,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Kintaro"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "476": {
+    "banner_name": "Ultra Souls",
+    "enabled": true,
+    "series_ID": 6,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "477": {
+    "banner_name": "Ultra Souls",
+    "enabled": true,
+    "series_ID": 6,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "478": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kintaro"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "479": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kintaro"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "480": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kintaro"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "481": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Good-Luck Ebisu",
+        "Li'l Valkyrie",
+        "Li'l Valkyrie Dark"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "482": {
+    "banner_name": "Princess Punt, Merc Storia, Million Arthur, Dragon Poker",
+    "enabled": true,
+    "series_ID": 17,
+    "exclusives": [],
+    "diff": [
+      [
+        "エルメ"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "483": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kasli the Scourge"
+      ],
+      [
+        "Good-Luck Ebisu",
+        "Li'l Valkyrie",
+        "Li'l Valkyrie Dark"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "484": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kasli the Scourge"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "485": {
+    "banner_name": "Survive! Mola Mola! Collab",
+    "enabled": false,
+    "series_ID": 14,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "486": {
+    "banner_name": "Survive! Mola Mola! Collab",
+    "enabled": false,
+    "series_ID": 14,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "487": {
+    "banner_name": "Dark Heroes",
+    "enabled": true,
+    "series_ID": 7,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Sharpshooter Saki"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "488": {
+    "banner_name": "Dark Heroes",
+    "enabled": true,
+    "series_ID": 7,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "489": {
+    "banner_name": "Dark Heroes",
+    "enabled": true,
+    "series_ID": 7,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "490": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Sharpshooter Saki"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "491": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Sharpshooter Saki"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "492": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Sharpshooter Saki"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "493": {
+    "banner_name": "Superfest",
+    "enabled": false,
+    "series_ID": 42,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Dark Aegis Garu",
+        "Papaluga",
+        "Baby Garu",
+        "Lilin",
+        "Mighty Aethur Ltd.",
+        "Sharpshooter Saki",
+        "Hades the Punisher",
+        "Gravi",
+        "Kasli the Bane"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "494": {
+    "banner_name": "Hatsune Miku Collab",
+    "enabled": false,
+    "series_ID": 43,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Hatsune Miku: MM2020 Osaka",
+        "Hatsune Miku: MM2020 Tokyo",
+        "Snow Miku 2021",
+        "Kaito & Cat",
+        "Megurine Luka",
+        "MEIKO & Cat",
+        "Luka Cat",
+        "Neko Rin",
+        "Neko Len"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "495": {
+    "banner_name": "Survive! Mola Mola! Collab",
+    "enabled": true,
+    "series_ID": 14,
+    "exclusives": [
+      "N"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "6": [
+        "Baby Mola"
+      ]
+    }
+  },
+  "496": {
+    "banner_name": "Survive! Mola Mola! Collab",
+    "enabled": true,
+    "series_ID": 14,
+    "exclusives": [
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "6": [
+        "Baby Mola"
+      ]
+    }
+  },
+  "497": {
+    "banner_name": "Almighties",
+    "enabled": true,
+    "series_ID": 18,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Hades the Punisher"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "498": {
+    "banner_name": "Almighties",
+    "enabled": true,
+    "series_ID": 18,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "499": {
+    "banner_name": "Almighties",
+    "enabled": true,
+    "series_ID": 18,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "500": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hades the Punisher"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "501": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hades the Punisher"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "502": {
+    "banner_name": "Easter Carnival",
+    "enabled": false,
+    "series_ID": 26,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "503": {
+    "banner_name": "Superfest",
+    "enabled": false,
+    "series_ID": 42,
+    "exclusives": [],
+    "diff": [
+      [
+        "Sharpshooter Saki",
+        "Hades the Punisher"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "504": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hades the Punisher"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "505": {
+    "banner_name": "Annihilation City Collab",
+    "enabled": true,
+    "series_ID": 15,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "6": [
+        "Otaku Geek Cat"
+      ],
+      "10": [
+        "Souma Cat"
+      ]
+    }
+  },
+  "506": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Kyosaka Nanaho"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "507": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "508": {
+    "banner_name": "Girls & Monsters",
+    "enabled": false,
+    "series_ID": 28,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "509": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kasli the Bane"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "510": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kasli the Bane"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "511": {
+    "banner_name": "Annihilation City Collab",
+    "enabled": false,
+    "series_ID": 15,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "512": {
+    "banner_name": "Superfest",
+    "enabled": false,
+    "series_ID": 42,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kasli the Bane"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "513": {
+    "banner_name": "Evangelion [Set 1]",
+    "enabled": false,
+    "series_ID": 37,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Mari Cat",
+        "Asuka Cat",
+        "Rei Cat"
+      ]
+    }
+  },
+  "514": {
+    "banner_name": "Evangelion [Set 2]",
+    "enabled": true,
+    "series_ID": 44,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Kaworu Cat",
+        "Mari Cat",
+        "Asuka Cat",
+        "Rei Cat"
+      ]
+    }
+  },
+  "515": {
+    "banner_name": "Evangelion [Set 1]",
+    "enabled": false,
+    "series_ID": 37,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "516": {
+    "banner_name": "Evangelion [Set 2]",
+    "enabled": false,
+    "series_ID": 44,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "517": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Papaluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "518": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "519": {
+    "banner_name": "Nekolugas",
+    "enabled": false,
+    "series_ID": 0,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "520": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Papaluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "521": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Papaluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "522": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Papaluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "523": {
+    "banner_name": "Wave Busters",
+    "enabled": true,
+    "series_ID": 45,
+    "exclusives": [
+      "N",
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "524": {
+    "banner_name": "Bikkuriman Collab",
+    "enabled": true,
+    "series_ID": 38,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Shaman Khan",
+        "Holy Knight Alibaba",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Holy Knight Alibaba",
+        "Fiendish Nero"
+      ]
+    }
+  },
+  "525": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hell Warden Emma"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "526": {
+    "banner_name": "Best of the Best",
+    "enabled": false,
+    "series_ID": 35,
+    "exclusives": [],
+    "diff": [
+      [
+        "Wolfchild Deale",
+        "Bora",
+        "Lasvoss",
+        "Detective Vigler",
+        "Mighty Kat-A-Pult",
+        "Hades the Punisher",
+        "Relentless Gladios",
+        "Date Masamune",
+        "Kalisa"
+      ],
+      [
+        "Radiant Aphrodite",
+        "Catman",
+        "Sanada Yukimura",
+        "Cat Machine",
+        "Thundia",
+        "Voli",
+        "Mighty Bomburr",
+        "Megidora"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "527": {
+    "banner_name": "NEO Best of the Best",
+    "enabled": false,
+    "series_ID": 39,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Rekon Korps",
+        "Coppermine",
+        "Ganglion",
+        "Kintaro",
+        "Sea Maiden Ruri",
+        "Imagawa Yoshimoto",
+        "Nobiluga",
+        "Sharpshooter Saki",
+        "Empress Chronos",
+        "Marauder Cat"
+      ],
+      [
+        "Radiant Aphrodite",
+        "Catman",
+        "Sanada Yukimura",
+        "Kasa Jizo",
+        "Cat Machine",
+        "Thundia",
+        "Togeluga",
+        "Mighty Bomburr",
+        "Megidora"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "528": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [
+        "Musashi Miyamoto",
+        "Thunder God Zeus",
+        "Nekoluga",
+        "Mighty Thermae D-Lux",
+        "Sarukani",
+        "Catman",
+        "Doktor Heaven",
+        "Graveflower Verbena",
+        "Mizli",
+        "Cat Machine",
+        "Legeluga",
+        "Seabreeze Coppermine",
+        "Mighty Kristul Muu",
+        "Sunny Neneko",
+        "Kamukura",
+        "Myrcia",
+        "Uesugi Kenshin",
+        "Strike Unit R.E.I."
+      ],
+      [
+        "Mighty Rekon Korps",
+        "Urashima Taro",
+        "Wonder MOMOCO",
+        "Aer",
+        "Tecoluga",
+        "Ice Cat",
+        "Gaia the Creator",
+        "Queen Reika",
+        "Narita Kaihime",
+        "Sodom",
+        "The White Rabbit",
+        "Yuletide Nurse",
+        "Empress Chronos",
+        "Years-End Neneko",
+        "Pai-Pai",
+        "Kalisa"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "529": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [
+        "Ushiwakamaru",
+        "Wonder MOMOCO",
+        "Momotaro",
+        "Aer",
+        "Tecoluga",
+        "Easter Neneko",
+        "Gaia the Creator",
+        "Shining Amaterasu",
+        "Narita Kaihime",
+        "Mighty Bomburr",
+        "The White Rabbit",
+        "Waverider Kuu",
+        "Lumina",
+        "Twinstars"
+      ],
+      [
+        "Doktor Heaven",
+        "Nekoluga",
+        "Bora",
+        "Maeda Keiji",
+        "Kachi-Kachi",
+        "Seabreeze Coppermine",
+        "Detective Vigler",
+        "Splendid Ganesha",
+        "Mighty Drednot",
+        "Mighty Kristul Muu",
+        "Sunny Neneko",
+        "Myrcia"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "530": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "531": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "532": {
+    "banner_name": "Hatsune Miku Collab",
+    "enabled": false,
+    "series_ID": 43,
+    "exclusives": [],
+    "diff": [
+      [
+        "Megurine Luka",
+        "MEIKO & Cat",
+        "Luka Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "10": [
+        "Luka Cat"
+      ],
+      "6": [
+        "MEIKO & Cat"
+      ]
+    }
+  },
+  "533": {
+    "banner_name": "Gals of Summer",
+    "enabled": false,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
+      [
+        "Squirtgun Saki",
+        "Summerluga",
+        "Suntan Cat",
+        "Lifeguard Cats"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Lifeguard Cats",
+        "Suntan Cat",
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "534": {
+    "banner_name": "Gals of Summer",
+    "enabled": false,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "535": {
+    "banner_name": "Hatsune Miku Collab",
+    "enabled": false,
+    "series_ID": 43,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "536": {
+    "banner_name": "Superfest",
+    "enabled": false,
+    "series_ID": 42,
+    "exclusives": [],
+    "diff": [
+      [
+        "Papaluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "537": {
+    "banner_name": "Bikkuriman Collab",
+    "enabled": false,
+    "series_ID": 38,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "538": {
+    "banner_name": "Elemental Pixies",
+    "enabled": true,
+    "series_ID": 33,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Gravi"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "539": {
+    "banner_name": "Elemental Pixies",
+    "enabled": true,
+    "series_ID": 33,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "540": {
+    "banner_name": "Elemental Pixies",
+    "enabled": true,
+    "series_ID": 33,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "541": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Gravi"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "542": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Gravi"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "543": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Gravi"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "544": {
+    "banner_name": "Halloween Gatya",
+    "enabled": true,
+    "series_ID": 8,
+    "exclusives": [],
+    "diff": [
+      [
+        "Skull Rider Vars"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Gloomy Neneko"
+      ]
+    }
+  },
+  "545": {
+    "banner_name": "Halloween Gatya",
+    "enabled": false,
+    "series_ID": 8,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "546": {
+    "banner_name": "Crash Fever Collab",
+    "enabled": false,
+    "series_ID": 25,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "547": {
+    "banner_name": "Best of the Best",
+    "enabled": true,
+    "series_ID": 35,
+    "exclusives": [],
+    "diff": [
+      [
+        "Radiant Aphrodite",
+        "Catman",
+        "Sanada Yukimura",
+        "Cat Machine",
+        "Thundia",
+        "Baby Gao",
+        "Voli",
+        "Mighty Bomburr",
+        "Megidora"
+      ],
+      [
+        "Wolfchild Deale",
+        "Bora",
+        "Lasvoss",
+        "Detective Vigler",
+        "Mighty Kat-A-Pult",
+        "Hades the Punisher",
+        "Relentless Gladios",
+        "Date Masamune",
+        "Kalisa"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "548": {
+    "banner_name": "NEO Best of the Best",
+    "enabled": true,
+    "series_ID": 39,
+    "exclusives": [],
+    "diff": [
+      [
+        "Radiant Aphrodite",
+        "Catman",
+        "Sanada Yukimura",
+        "Kasa Jizo",
+        "Cat Machine",
+        "Thundia",
+        "Shadow Gao",
+        "Togeluga",
+        "Mighty Bomburr",
+        "Megidora"
+      ],
+      [
+        "Mighty Rekon Korps",
+        "Coppermine",
+        "Ganglion",
+        "Kintaro",
+        "Sea Maiden Ruri",
+        "Imagawa Yoshimoto",
+        "Nobiluga",
+        "Sharpshooter Saki",
+        "Empress Chronos",
+        "Marauder Cat"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "549": {
+    "banner_name": "Street Fighter Collab",
+    "enabled": true,
+    "series_ID": 40,
+    "exclusives": [],
+    "diff": [
+      [
+        "C. Honda",
+        "Balrog Cat",
+        "Vega Cat",
+        "Sagat Cat",
+        "M. Bison Cat",
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat",
+        "E. Honda",
+        "Balrog",
+        "Vega",
+        "Sagat",
+        "M. Bison"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "M. Bison Cat",
+        "Sagat Cat",
+        "Vega Cat",
+        "Balrog Cat"
+      ],
+      "6": [
+        "C. Honda"
+      ]
+    }
+  },
+  "550": {
+    "banner_name": "Street Fighter Collab",
+    "enabled": false,
+    "series_ID": 40,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "551": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": false,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Dark Aegis Garu",
+        "Princess Cat",
+        "Baby Garu",
+        "Emperor Cat",
+        "Summoner Satoru",
+        "Shiro Amakusa",
+        "Lilin",
+        "Hevijak the Wicked",
+        "Furiluga",
+        "Mighty Aethur Ltd.",
+        "Yamii",
+        "Mighty Deth-Troy-R",
+        "舌切りすずめ",
+        "白騎士キュクロプス"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "552": {
+    "banner_name": "Ultra Selection",
+    "enabled": true,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [
+        "Headmistress Jeanne",
+        "Papaluga",
+        "Ushiwakamaru",
+        "Gloomy Neneko",
+        "Wolfchild Deale",
+        "Lasvoss",
+        "Kai",
+        "Kachi-Kachi",
+        "Detective Vigler",
+        "Mighty Kat-A-Pult",
+        "Imagawa Yoshimoto",
+        "Summerluga",
+        "Empress Chronos",
+        "Relentless Gladios",
+        "Pai-Pai"
+      ],
+      [
+        "Thunder God Zeus",
+        "Nekoluga",
+        "Mighty Thermae D-Lux",
+        "Sarukani",
+        "High Lord Babel",
+        "Catman",
+        "Doktor Heaven",
+        "Graveflower Verbena",
+        "Cat Machine",
+        "Legeluga",
+        "Seabreeze Coppermine",
+        "Mighty Kristul Muu",
+        "Sunny Neneko",
+        "Kamukura",
+        "Myrcia",
+        "Uesugi Kenshin",
+        "Strike Unit R.E.I."
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Gloomy Neneko"
+      ]
+    }
+  },
+  "553": {
+    "banner_name": "Miracle Chance",
+    "enabled": true,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kyosaka Nanaho",
+        "Doktor Heaven",
+        "Anubis the Protector",
+        "Sarukani",
+        "High Lord Babel",
+        "Graveflower Verbena",
+        "Springtime Kenshin",
+        "Ganglion",
+        "Lesser Demon Cat",
+        "Hell Warden Emma",
+        "Mighty Drednot",
+        "Sunny Neneko",
+        "Sharpshooter Saki",
+        "Nobiluga",
+        "Myrcia",
+        "Gravi",
+        "Date Masamune"
+      ],
+      [
+        "Headmistress Jeanne",
+        "Ushiwakamaru",
+        "Wonder MOMOCO",
+        "Momotaro",
+        "Aer",
+        "Tecoluga",
+        "Cat Clan Heroes",
+        "Easter Neneko",
+        "Sakura Sonic",
+        "Trickster Himeyuri",
+        "Shining Amaterasu",
+        "Narita Kaihime",
+        "Dioramos",
+        "Mighty Bomburr",
+        "The White Rabbit",
+        "Waverider Kuu",
+        "Lumina",
+        "Twinstars"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "554": {
+    "banner_name": "Excellent Selection",
+    "enabled": true,
+    "series_ID": 41,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hayabusa",
+        "Bora",
+        "Asiluga",
+        "Wonder MOMOCO",
+        "Cat Clan Heroes",
+        "Kintaro",
+        "Trickster Himeyuri",
+        "Mighty Kristul Muu",
+        "Narita Kaihime",
+        "Sodom",
+        "Hades the Punisher",
+        "Skull Rider Vars",
+        "Kalisa"
+      ],
+      [
+        "Musashi Miyamoto",
+        "Akira",
+        "Ushiwakamaru",
+        "Twinstars",
+        "Mizli",
+        "Momotaro",
+        "Bunny & Canard",
+        "Shining Amaterasu",
+        "Sea Maiden Ruri",
+        "Imagawa Yoshimoto",
+        "Nobiluga",
+        "Relentless Gladios",
+        "Marauder Cat"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "555": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Baby Garu"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "556": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Baby Garu"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "557": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": false,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Emperor Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "558": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": false,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Baby Garu"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "559": {
+    "banner_name": "Superfest",
+    "enabled": false,
+    "series_ID": 42,
+    "exclusives": [],
+    "diff": [
+      [
+        "Li'l Valkyrie Dark",
+        "Good-Luck Ebisu",
+        "Baby Garu",
+        "Li'l Valkyrie",
+        "Gravi"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "560": {
+    "banner_name": "Welcome <year>!",
+    "enabled": true,
+    "series_ID": 16,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kyosaka Nanaho",
+        "Papaluga",
+        "Lasvoss",
+        "Gaia the Creator",
+        "Kintaro",
+        "Hell Warden Emma",
+        "Narita Kaihime",
+        "Gravi",
+        "Sharpshooter Saki",
+        "Hades the Punisher",
+        "Relentless Gladios",
+        "Lumina"
+      ],
+      [
+        "Musashi Miyamoto",
+        "Doktor Heaven",
+        "Anubis the Protector",
+        "Nekoluga",
+        "Sarukani",
+        "High Lord Babel",
+        "Catman",
+        "Mizli",
+        "Cat Machine",
+        "Sakura Sonic",
+        "Legeluga",
+        "Mighty Kristul Muu",
+        "Seabreeze Coppermine",
+        "Kamukura",
+        "Uesugi Kenshin"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "561": {
+    "banner_name": "Welcome <year>!",
+    "enabled": false,
+    "series_ID": 16,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "562": {
+    "banner_name": "DynastyFest",
+    "enabled": false,
+    "series_ID": 47,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Kaguya of the Coast",
+        "Sweet Aphrodite",
+        "First-Love Myrcia",
+        "Valentine's Neneko",
+        "Blooming Kamukura"
+      ]
+    ],
+    "rate_ups": {
+      "3": [
+        "Lifeguard Cats",
+        "Suntan Cat",
+        "Easter Neneko",
+        "Years-End Neneko",
+        "Sunny Neneko",
+        "Gloomy Neneko"
+      ]
+    }
+  },
+  "563": {
+    "banner_name": "Hatsune Miku Collab",
+    "enabled": false,
+    "series_ID": 43,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hatsune Miku: MM2020 Osaka",
+        "Hatsune Miku: MM2020 Tokyo"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "10": [
+        "Luka Cat"
+      ],
+      "6": [
+        "MEIKO & Cat"
+      ]
+    }
+  },
+  "564": {
+    "banner_name": "Hatsune Miku Collab",
+    "enabled": false,
+    "series_ID": 43,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "565": {
+    "banner_name": "Xmas Gals",
+    "enabled": true,
+    "series_ID": 9,
+    "exclusives": [],
+    "diff": [
+      [
+        "Keiji Claus"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "566": {
+    "banner_name": "DynastyFest",
+    "enabled": false,
+    "series_ID": 47,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "567": {
+    "banner_name": "Valentine's Gals",
+    "enabled": true,
+    "series_ID": 48,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Valentine's Neneko"
+      ]
+    }
+  },
+  "568": {
+    "banner_name": "Valentine's Gals",
+    "enabled": false,
+    "series_ID": 48,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "569": {
+    "banner_name": "Evangelion [Set 1]",
+    "enabled": true,
+    "series_ID": 37,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kaworu Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Kaworu Cat",
+        "Mari Cat",
+        "Asuka Cat",
+        "Rei Cat"
+      ]
+    }
+  },
+  "570": {
+    "banner_name": "Evangelion [Set 1]",
+    "enabled": false,
+    "series_ID": 37,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "571": {
+    "banner_name": "Superfest",
+    "enabled": false,
+    "series_ID": 42,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Good-Luck Ebisu",
+        "Li'l Valkyrie",
+        "Li'l Valkyrie Dark"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "572": {
+    "banner_name": "Iron Legion",
+    "enabled": true,
+    "series_ID": 24,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Mighty Aethur Ltd."
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "573": {
+    "banner_name": "Iron Legion",
+    "enabled": true,
+    "series_ID": 24,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "574": {
+    "banner_name": "Iron Legion",
+    "enabled": true,
+    "series_ID": 24,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "575": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Aethur Ltd."
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "576": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Aethur Ltd."
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "577": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Aethur Ltd."
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "578": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": false,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Aethur Ltd."
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "579": {
+    "banner_name": "Easter Carnival",
+    "enabled": true,
+    "series_ID": 26,
+    "exclusives": [],
+    "diff": [
+      [
+        "Blooming Kamukura"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "580": {
+    "banner_name": "Easter Carnival",
+    "enabled": false,
+    "series_ID": 26,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "581": {
+    "banner_name": "DynastyFest",
+    "enabled": false,
+    "series_ID": 47,
+    "exclusives": [],
+    "diff": [
+      [
+        "Sweet Aphrodite",
+        "First-Love Myrcia",
+        "Valentine's Neneko"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "582": {
+    "banner_name": "DynastyFest",
+    "enabled": false,
+    "series_ID": 47,
+    "exclusives": [],
+    "diff": [
+      [
+        "Blooming Kamukura"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "583": {
+    "banner_name": "Hatsune Miku Collab",
+    "enabled": true,
+    "series_ID": 43,
+    "exclusives": [],
+    "diff": [
+      [
+        "Neko Rin",
+        "Neko Len",
+        "Snow Miku 2021",
+        "Kaito & Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Neko Len",
+        "Neko Rin",
+        "Kaito & Cat",
+        "Luka Cat",
+        "MEIKO & Cat"
+      ]
+    }
+  },
+  "584": {
+    "banner_name": "Hatsune Miku Collab",
+    "enabled": false,
+    "series_ID": 43,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "585": {
+    "banner_name": "Girls & Monsters",
+    "enabled": true,
+    "series_ID": 28,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Adventurer Kanna"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "586": {
+    "banner_name": "Girls & Monsters",
+    "enabled": true,
+    "series_ID": 28,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "587": {
+    "banner_name": "Girls & Monsters",
+    "enabled": true,
+    "series_ID": 28,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "588": {
+    "banner_name": "Ranma 1/2 Collab",
+    "enabled": true,
+    "series_ID": 49,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {
+      "2": [
+        "Happosai",
+        "Ukyo Kuonji (GR)",
+        "Tatewaki Kuno (Gi)"
+      ],
+      "10": [
+        "Akane Cat"
+      ]
+    }
+  },
+  "589": {
+    "banner_name": "Ranma 1/2 Collab",
+    "enabled": false,
+    "series_ID": 49,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "590": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Dark Aegis Garu"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "591": {
+    "banner_name": "Superfest",
+    "enabled": true,
+    "series_ID": 42,
+    "exclusives": [],
+    "diff": [
+      [
+        "Dark Aegis Garu",
+        "Mighty Aethur Ltd."
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "592": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Dark Aegis Garu"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "593": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": false,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Dark Aegis Garu"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "594": {
+    "banner_name": "Best of the Best",
+    "enabled": false,
+    "series_ID": 35,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hell Warden Emma"
+      ],
+      [
+        "Baby Gao"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "595": {
+    "banner_name": "NEO Best of the Best",
+    "enabled": false,
+    "series_ID": 39,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hell Warden Emma"
+      ],
+      [
+        "Shadow Gao"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "596": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [
+        "Squirtgun Saki",
+        "Sakura Sonic"
+      ],
+      [
+        "Pai-Pai",
+        "Summerluga"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "597": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [
+        "Keiji Claus",
+        "Strike Unit R.E.I."
+      ],
+      [
+        "Springtime Kenshin",
+        "Hell Warden Emma"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "598": {
+    "banner_name": "Excellent Selection",
+    "enabled": false,
+    "series_ID": 41,
+    "exclusives": [],
+    "diff": [
+      [
+        "Pai-Pai"
+      ],
+      [
+        "Strike Unit R.E.I."
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "599": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "600": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "601": {
+    "banner_name": "Excellent Selection",
+    "enabled": false,
+    "series_ID": 41,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "602": {
+    "banner_name": "Royalfest",
+    "enabled": true,
+    "series_ID": 50,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "603": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Princess Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "604": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": false,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Princess Cat"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "605": {
+    "banner_name": "Gals of Summer",
+    "enabled": true,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kaguya of the Coast"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Lifeguard Cats",
+        "Suntan Cat",
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "606": {
+    "banner_name": "DynastyFest",
+    "enabled": true,
+    "series_ID": 47,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "607": {
+    "banner_name": "Gals of Summer",
+    "enabled": false,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "608": {
+    "banner_name": "Vajiras",
+    "enabled": true,
+    "series_ID": 2,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Shiro Amakusa"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "609": {
+    "banner_name": "Vajiras",
+    "enabled": true,
+    "series_ID": 2,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "610": {
+    "banner_name": "Vajiras",
+    "enabled": true,
+    "series_ID": 2,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "611": {
+    "banner_name": "Galaxy Gals",
+    "enabled": true,
+    "series_ID": 3,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Lilin"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "612": {
+    "banner_name": "Galaxy Gals",
+    "enabled": true,
+    "series_ID": 3,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "613": {
+    "banner_name": "Galaxy Gals",
+    "enabled": true,
+    "series_ID": 3,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "614": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Shiro Amakusa",
+        "Lilin"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "615": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Lilin"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "616": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Lilin"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "617": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": false,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Shiro Amakusa"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "618": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": false,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Lilin"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "619": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": false,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Shiro Amakusa"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "620": {
+    "banner_name": "Kunio",
+    "enabled": true,
+    "series_ID": 51,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "621": {
+    "banner_name": "Puella Magi Madoka Magica Collab",
+    "enabled": true,
+    "series_ID": 23,
+    "exclusives": [],
+    "diff": [
+      [
+        "Nymph Cat",
+        "Wushu Cat",
+        "Matador Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Bebe",
+        "Kyoko Sakura",
+        "Mami Tomoe",
+        "Sayaka Miki",
+        "Homura Akemi"
+      ],
+      "2": [
+        "Madoka Kaname"
+      ],
+      "6": [
+        "Kyubey"
+      ],
+      "4": [
+        "Kyoko Cat",
+        "Mami Cat",
+        "Sayaka Cat",
+        "Homura Cat",
+        "Madoka Cat"
+      ]
+    }
+  },
+  "622": {
+    "banner_name": "Superfest",
+    "enabled": false,
+    "series_ID": 42,
+    "exclusives": [],
+    "diff": [
+      [
+        "Lilin"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "623": {
+    "banner_name": "DynastyFest",
+    "enabled": false,
+    "series_ID": 47,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kaguya of the Coast"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "624": {
+    "banner_name": "Nekolugas",
+    "enabled": true,
+    "series_ID": 0,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Furiluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "625": {
+    "banner_name": "Nekolugas",
+    "enabled": true,
+    "series_ID": 0,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "626": {
+    "banner_name": "Nekolugas",
+    "enabled": true,
+    "series_ID": 0,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "627": {
+    "banner_name": "Dynamites",
+    "enabled": true,
+    "series_ID": 1,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Summoner Satoru"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "628": {
+    "banner_name": "Dynamites",
+    "enabled": true,
+    "series_ID": 1,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "629": {
+    "banner_name": "Dynamites",
+    "enabled": true,
+    "series_ID": 1,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "630": {
+    "banner_name": "Dragon Emperors",
+    "enabled": true,
+    "series_ID": 4,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Hevijak the Wicked"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "631": {
+    "banner_name": "Dragon Emperors",
+    "enabled": true,
+    "series_ID": 4,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "632": {
+    "banner_name": "Dragon Emperors",
+    "enabled": true,
+    "series_ID": 4,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "633": {
+    "banner_name": "Uberfest",
+    "enabled": true,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Summoner Satoru",
+        "Hevijak the Wicked",
+        "Furiluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "634": {
+    "banner_name": "Epicfest",
+    "enabled": true,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Summoner Satoru",
+        "Shiro Amakusa",
+        "Hevijak the Wicked"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "635": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Summoner Satoru"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "636": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hevijak the Wicked"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "637": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Furiluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "638": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Summoner Satoru"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "639": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Hevijak the Wicked"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "640": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Furiluga"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "641": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Hevijak the Wicked"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "642": {
+    "banner_name": "Puella Magi Madoka Magica Collab",
+    "enabled": false,
+    "series_ID": 23,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "643": {
+    "banner_name": "Iron Legion",
+    "enabled": true,
+    "series_ID": 24,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Mighty Deth-Troy-R"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "644": {
+    "banner_name": "Iron Legion",
+    "enabled": true,
+    "series_ID": 24,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "645": {
+    "banner_name": "Iron Legion",
+    "enabled": true,
+    "series_ID": 24,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "646": {
+    "banner_name": "Elemental Pixies",
+    "enabled": true,
+    "series_ID": 33,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "Yamii"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "647": {
+    "banner_name": "Elemental Pixies",
+    "enabled": true,
+    "series_ID": 33,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "648": {
+    "banner_name": "Elemental Pixies",
+    "enabled": true,
+    "series_ID": 33,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "649": {
+    "banner_name": "Halloween Gatya",
+    "enabled": true,
+    "series_ID": 8,
+    "exclusives": [],
+    "diff": [
+      [
+        "Brainwashed Cat"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "4": [
+        "Gloomy Neneko"
+      ]
+    }
+  },
+  "650": {
+    "banner_name": "Halloween Gatya",
+    "enabled": false,
+    "series_ID": 8,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "651": {
+    "banner_name": "Uberfest",
+    "enabled": true,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Deth-Troy-R",
+        "Yamii"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "652": {
+    "banner_name": "Epicfest",
+    "enabled": true,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Furiluga",
+        "Hevijak the Wicked",
+        "Yamii"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "653": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Yamii"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "654": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Deth-Troy-R"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "655": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Yamii"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "656": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Deth-Troy-R"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "657": {
+    "banner_name": "Ultra Souls",
+    "enabled": true,
+    "series_ID": 6,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "舌切りすずめ"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "658": {
+    "banner_name": "Ultra Souls",
+    "enabled": true,
+    "series_ID": 6,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "659": {
+    "banner_name": "Ultra Souls",
+    "enabled": true,
+    "series_ID": 6,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "660": {
+    "banner_name": "Dark Heroes",
+    "enabled": true,
+    "series_ID": 7,
+    "exclusives": [
+      "G"
+    ],
+    "diff": [
+      [
+        "白騎士キュクロプス"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "661": {
+    "banner_name": "Dark Heroes",
+    "enabled": true,
+    "series_ID": 7,
+    "exclusives": [
+      "N",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "662": {
+    "banner_name": "Dark Heroes",
+    "enabled": true,
+    "series_ID": 7,
+    "exclusives": [
+      "R",
+      "G"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "663": {
+    "banner_name": "Ultra Selection",
+    "enabled": true,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [
+        "Kyosaka Nanaho",
+        "Thunder God Zeus",
+        "Akira",
+        "Mighty Rekon Korps",
+        "Kaguya of the Coast",
+        "The Grateful Crane",
+        "Wonder MOMOCO",
+        "Lilin",
+        "Ganglion",
+        "Valentine's Neneko",
+        "Narita Kaihime",
+        "Furiluga",
+        "Gravi",
+        "Baby Cat",
+        "Strike Unit R.E.I.",
+        "Adventurer Kanna"
+      ],
+      [
+        "Headmistress Jeanne",
+        "Papaluga",
+        "Ushiwakamaru",
+        "Gloomy Neneko",
+        "Wolfchild Deale",
+        "Lasvoss",
+        "Mizli",
+        "Kai",
+        "Kachi-Kachi",
+        "Sakura Sonic",
+        "Detective Vigler",
+        "Mighty Kat-A-Pult",
+        "Imagawa Yoshimoto",
+        "Squirtgun Saki",
+        "Empress Chronos",
+        "Relentless Gladios"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Valentine's Neneko"
+      ]
+    }
+  },
+  "664": {
+    "banner_name": "Miracle Chance",
+    "enabled": true,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Thermae D-Lux",
+        "Ushiwakamaru",
+        "Bora",
+        "Kubiluga",
+        "Shiro Amakusa",
+        "Kachi-Kachi",
+        "Coppermine",
+        "Hevijak the Wicked",
+        "Shining Amaterasu",
+        "Mighty Kristul Muu",
+        "Sea Maiden Ruri",
+        "Blooming Kamukura",
+        "The White Rabbit",
+        "Marauder Cat",
+        "Pai-Pai"
+      ],
+      [
+        "Kyosaka Nanaho",
+        "Doktor Heaven",
+        "Anubis the Protector",
+        "Sarukani",
+        "Graveflower Verbena",
+        "Keiji Claus",
+        "Ganglion",
+        "Lesser Demon Cat",
+        "Mighty Drednot",
+        "Nobiluga",
+        "Sharpshooter Saki",
+        "Myrcia",
+        "Gravi",
+        "Date Masamune",
+        "Strike Unit R.E.I."
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "665": {
+    "banner_name": "Excellent Selection",
+    "enabled": true,
+    "series_ID": 41,
+    "exclusives": [],
+    "diff": [
+      [
+        "Headmistress Jeanne",
+        "Warlock and Pierre",
+        "Doktor Heaven",
+        "Wolfchild Deale",
+        "Momotaro",
+        "Summoner Satoru",
+        "Tecoluga",
+        "Windy",
+        "First-Love Myrcia",
+        "Sakura Sonic",
+        "Splendid Ganesha",
+        "Dioramos",
+        "Mighty Aethur Ltd.",
+        "Yamii",
+        "Takeda Shingen"
+      ],
+      [
+        "Mighty Thermae D-Lux",
+        "Hayabusa",
+        "Bora",
+        "Asiluga",
+        "Wonder MOMOCO",
+        "Cat Clan Heroes",
+        "Kintaro",
+        "Trickster Himeyuri",
+        "Mighty Kristul Muu",
+        "Narita Kaihime",
+        "Sodom",
+        "Hades the Punisher",
+        "Skull Rider Vars",
+        "Pai-Pai",
+        "Kalisa"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Easter Neneko"
+      ]
+    }
+  },
+  "666": {
+    "banner_name": "Best of the Best",
+    "enabled": true,
+    "series_ID": 35,
+    "exclusives": [],
+    "diff": [
+      [
+        "Miko Mitama"
+      ],
+      [
+        "Hell Warden Emma"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "667": {
+    "banner_name": "NEO Best of the Best",
+    "enabled": true,
+    "series_ID": 39,
+    "exclusives": [],
+    "diff": [
+      [
+        "Dark Mitama"
+      ],
+      [
+        "Hell Warden Emma"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "668": {
+    "banner_name": "Xmas Gals",
+    "enabled": true,
+    "series_ID": 9,
+    "exclusives": [],
+    "diff": [
+      [
+        "洗脳されしタンクネコ"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "669": {
+    "banner_name": "Uberfest",
+    "enabled": true,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "舌切りすずめ",
+        "白騎士キュクロプス"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "670": {
+    "banner_name": "Epicfest",
+    "enabled": true,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Deth-Troy-R",
+        "白騎士キュクロプス"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "671": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "白騎士キュクロプス"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "672": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "舌切りすずめ"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "673": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "白騎士キュクロプス"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "674": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "舌切りすずめ"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  }
+}

@@ -1,0 +1,82 @@
+{
+	"setup": {
+		"LNG": "jp",
+		"combos": {
+			"catbotmode": true,
+			"loadmode": false
+		}
+	},
+	"inputs": {
+		"en": {
+			"combos": {
+				"names": "latest_en\\resLocal\\Nyancombo_en.csv",
+				"effects": "latest_en\\resLocal\\Nyancombo1_en.csv",
+				"sizes": "latest_en\\resLocal\\Nyancombo2_en.csv",
+				"data": "latest_en\\DataLocal\\NyancomboData.csv"
+			},
+			"talents": {
+				"main": "latest_en\\DataLocal\\SkillAcquisition.csv",
+				"curves": "latest_en\\DataLocal\\SkillLevel.csv",
+				"descriptions": "latest_en\\resLocal\\SkillDescriptions.csv"
+			},
+			"items": {
+				"main": "latest_en\\resLocal\\GatyaitemName.csv",
+				"gib": "latest_en\\DataLocal\\Gatyaitembuy.csv"
+			},
+			"gatya":{
+				"option": "latest_en\\DataLocal\\GatyaData_Option_SetR.tsv",
+				"data": "latest_en\\DataLocal\\GatyaDataSetR1.csv"
+			},
+			"units":{
+				"name": "latest_en\\resLocal\\"
+			},
+			"sales":{
+				"itempack": "latest_en\\DataLocal\\itemPack.tsv",
+				"localisable": "latest_en\\resLocal\\localizable.tsv"
+			}
+		},
+		"jp": {
+			"combos": {
+				"names": "latest_jp\\resLocal\\Nyancombo_ja.csv",
+				"effects": "latest_jp\\resLocal\\Nyancombo1_ja.csv",
+				"sizes": "latest_jp\\resLocal\\Nyancombo2_ja.csv",
+				"data": "latest_jp\\DataLocal\\NyancomboData.csv"
+			},
+			"talents": {
+				"main": "latest_jp\\DataLocal\\SkillAcquisition.csv",
+				"levels": "latest_jp\\DataLocal\\SkillLevel.csv",
+				"descriptions": "latest_jp\\resLocal\\SkillDescriptions.csv"
+			},
+			"items": {
+				"main": "latest_jp\\resLocal\\GatyaitemName.csv",
+				"gib": "latest_jp\\DataLocal\\Gatyaitembuy.csv"
+			},
+			"gatya":{
+				"option": "latest_jp\\DataLocal\\GatyaData_Option_SetR.tsv",
+				"data": "latest_jp\\DataLocal\\GatyaDataSetR1.csv"
+			},
+			"units":{
+				"name": "latest_jp\\resLocal\\"
+			},
+			"sales":{
+				"itempack": "latest_jp\\DataLocal\\itemPack.tsv",
+				"localisable": "latest_jp\\resLocal\\localizable.tsv"
+			}
+		}
+	},
+	"intermediates": {
+		"combos": "out_intermediates\\catcombos.db"
+	},
+	"outputs": {
+		"combos": "outputs\\catcombos.db",
+		"talents": "outputs\\talents.db",
+		"items": "reusables\\items.tsv",
+		"units": "reusables\\units.tsv",
+		"gatya": "outputs\\gatya.db",
+		"gatya_text": "reusables\\gatya.txt",
+		"gatya_json": "reusables\\gatya.json",
+		"sales": "reusables\\sales.tsv",
+		"stages": "reusables\\stages.tsv",
+		"eventdata": "outputs\\eventdata\\"
+	}
+}
