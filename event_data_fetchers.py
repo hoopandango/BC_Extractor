@@ -44,7 +44,6 @@ class UniversalFetcher:
 				pass
 			finalEvents.append(dic)
 			
-
 		def flushGroup(groupname):
 			if not group_history_2[groupname]['visible']:
 				return
@@ -107,6 +106,7 @@ class UniversalFetcher:
 		groupEvents()
 
 class GatyaFetcher(UniversalFetcher):
+	# SETUP
 	def __init__(self,v='en',f=['M'],d0 = datetime.datetime.today()):
 		UniversalFetcher.__init__(self,v,f)
 		self.rawGatya = []
@@ -114,6 +114,7 @@ class GatyaFetcher(UniversalFetcher):
 		self.rejectedGatya = []
 		self.date0 = d0
 
+	# ACQUISITION TOOLS
 	def fetchLocalData(self,date):
 		# TODO make datewise import a separate command later
 		"""
@@ -153,6 +154,7 @@ class GatyaFetcher(UniversalFetcher):
 				self.rawGatya.append(row)
 				row[1],row[3] = (row[1]+'000')[0:3],(row[3]+'000')[0:3]
 
+	# PROCESSING TOOLS
 	def readRawData(self):
 		for banner in self.rawGatya:
 			dates = GatyaParsers.getdates(banner)
@@ -185,6 +187,7 @@ class GatyaFetcher(UniversalFetcher):
 			toput |= glocal
 			goto.append(toput)
 
+	# OUTPUT TOOLS
 	def printGatya(self):
 		print('```\nGatya:')
 		for event in self.refinedGatya:
@@ -249,6 +252,7 @@ class GatyaFetcher(UniversalFetcher):
 		df_rej.astype(str).to_sql('rejected', conn, if_exists = 'replace')
 		
 class StageFetcher(UniversalFetcher):
+	# SETUP
 	def __init__(self,v='en',f=['M'], d0 = datetime.datetime.today()):
 		UniversalFetcher.__init__(self,v,f)
 		self.rawStages = []
@@ -258,6 +262,7 @@ class StageFetcher(UniversalFetcher):
 		self.sales = []
 		self.date0 = d0
 
+	# ACQUISITION TOOLS
 	def fetchLocalData(self,date):
 		"""
 		d0 = int(date.strftime('%Y%m%d')+'000000')
@@ -285,9 +290,10 @@ class StageFetcher(UniversalFetcher):
 
 	def fetchRawData(self):		
 		if (datetime.datetime.today() - self.date0).days > 60:
+			# if the data is being reuqested from two months ago or further get archived data
 			self.fetchLocalData(self.date0)
 			return
-		url = 'https://bc-seek.godfat.org/seek/%s/sale.tsv'%(self.ver)
+		url = 'https://clamchowder.pythonanywhere.com/event_data/battlecats%s_production/sale.tsv'%(self.ver)
 		response = urllib.request.urlopen(url)
 		lines = [l.decode('utf-8') for l in response.readlines()]
 		cr = csv.reader(lines, delimiter="\t")
@@ -296,9 +302,7 @@ class StageFetcher(UniversalFetcher):
 				self.rawStages.append(row)
 				row[1],row[3] = (row[1]+'000')[0:4],(row[3]+'000')[0:4]
 
-	def printRawData(self):
-		print (self.rawStages)
-
+	# PROCESSING TOOLS
 	def readRawData(self, storeRejects = False):
 		for data in self.rawStages:
 			goto = self.refinedStages
@@ -358,8 +362,49 @@ class StageFetcher(UniversalFetcher):
 					})
 
 	def getStageData(self):
+		# use this AFTER grouping and BEFORE printing / export
 		return (self.finalStages,self.sales)
 
+	def finalProcessing(self):
+		def miscProcess(sd):
+			sd.sort(key=itemgetter('dates'))
+
+			to_del = []
+			
+			for i,event in enumerate(sd):
+				if (i in to_del): continue
+				# Groups Barons, Duels, Dark Descent, etc.
+				if any([x in event['name'] for x in groupable_events]):
+					for j,e in enumerate(sd[i+1:]):
+						# Can't use two words because Duel stages
+						if (e['name'].split(' ')[0] == event['name'].split(' ')[0] or e['name'].split(' ')[-1] == event['name'].split(' ')[-1]) and e['dates'][1] == event['dates'][1]:   # If they share the same first word and end on the same date
+							sd.insert(i+1)   # Put them together
+							to_del.append(i+j+1)
+							break
+
+				# Groups repetetive events [all of which are identical] like catfood discounts and cybear
+				if event['name'] == 'Catfood Discount Reset (30)':
+					for j,e in enumerate(sd[i+1:]):
+						if e['name'] == 'Catfood Discount Reset (750)':
+							sd[i]['name'] = 'Catfood Discount Reset (30/750)'
+							to_del.append(i+j+1)
+							break
+
+				for j,e in enumerate(sd[i+1:]):
+					try:
+						if e['IDs'] == event['IDs']:
+							sd[i]['dates'].extend(e['dates'])
+							to_del.append(i+j+1)
+					except:
+						pass  # Ignore events that are already grouped like Festivals, that doesn't have "IDs"
+			
+			# using [:] to mutate list without resetting pointer
+			sd[:] = [elem for i,elem in enumerate(sd) if i not in to_del]
+
+		miscProcess(self.finalStages)
+		miscProcess(self.sales)
+
+	# OUTPUT TOOLS
 	def printFestivalData(self,lng = 'en'):
 		permanentLog = []
 		for event in self.refinedStages:
@@ -386,7 +431,7 @@ class StageFetcher(UniversalFetcher):
 				elif event['schedule'] == 'monthly':
 					for setting in event['data']:
 						if len(setting['times']) == 0:
-							print(' - Date '+'/'.join(setting['dates']))
+							print('- Date '+'/'.join(setting['dates']))
 						else:
 							print('- Date '+'/'.join(setting['dates'])+ ': ' + f"{setting['times'][0]['start'].strftime('%I%p').lstrip('0')}~{setting['times'][0]['end'].strftime('%I%p').lstrip('0')}")
 
@@ -434,7 +479,7 @@ class StageFetcher(UniversalFetcher):
 						else:
 							X = [int(x) for x in setting['dates']]
 							E = ['Date '+'/'.join(setting['dates']),'Odd Days','Even Days'][OddEven(np.array(X))]
-							# TODO : Every third day logic
+							# TODO : Every third day logic this. doesnt even work for cross-month events lol
 							#if np.bincount(np.diff(X))[-1] >= len(X)-2 and np.diff(X)[0] == 3:
 							#	E = 'Every 3rd Day from '+setting['dates'][0]
 
@@ -484,46 +529,11 @@ class StageFetcher(UniversalFetcher):
 		df.to_csv('scheduling.tsv',sep='\t')
 
 	def printStages(self, stagedata = 'x',saledata = 'x'):
-		def groupBaronsAndOtherStuff(events):			
-			# TODO: perform this in a better way, if possible
-			for i,event in enumerate(events):
-				if any([x in event['name'] for x in groupable_events]):
-					for j,e in enumerate(events[i+1:]):
-						# Can't use two words because Duel stages
-						if (e['name'].split(' ')[0] == event['name'].split(' ')[0] or e['name'].split(' ')[-1] == event['name'].split(' ')[-1]) and e['dates'][1] == event['dates'][1]:   # If they share the same first word and end on the same date
-							events.insert(i+1,events.pop(i+j+1))   # Put them together
-							break
-
-				
-		def dupeCheck(events):
-			for i,event in enumerate(events):
-				if event['name'] == 'Catfood Discount Reset (30)':
-					for j,e in enumerate(events[i+1:]):
-						if e['name'] == 'Catfood Discount Reset (750)':
-							events[i]['name'] = 'Catfood Discount Reset (30/750)'
-							events.pop(i+j+1)
-							break
-				for j,e in enumerate(events[i+1:]):
-					try:
-						if e['IDs'] == event['IDs']:
-							events[i]['dates'].extend(e['dates'])
-							events.pop(i+j+1)
-					except:
-						pass  # Ignore events that are already grouped like Festivals
-				
-				
 		if stagedata == 'x':
 			stagedata = self.finalStages
 		if saledata == 'x':
 			saledata = self.sales
 
-		stagedata.sort(key=itemgetter('dates'))
-		saledata.sort(key=itemgetter('dates'))
-		groupBaronsAndOtherStuff(stagedata)
-		dupeCheck(stagedata)
-		dupeCheck(saledata)
-
-		
 		print('```\nEvents:')
 		for group in stagedata:
 			print (StageParsers.fancyDate(group['dates'])+group['name'])
@@ -535,42 +545,10 @@ class StageFetcher(UniversalFetcher):
 		print('```')
 
 	def printStagesHTML(self, stagedata = 'x',saledata = 'x'):
-		def groupBaronsAndOtherStuff(events):			
-			for i,event in enumerate(events):
-				if any([x in event['name'] for x in groupable_events]):
-					for j,e in enumerate(events[i+1:]):
-						# Can't use two words because Duel stages
-						if (e['name'].split(' ')[0] == event['name'].split(' ')[0] or e['name'].split(' ')[-1] == event['name'].split(' ')[-1]) and e['dates'][1] == event['dates'][1]:   # If they share the same first word and end on the same date
-							events.insert(i+1,events.pop(i+j+1))   # Put them together
-							break
-				
-		def dupeCheck(events):
-			for i,event in enumerate(events):
-				if event['name'] == 'Catfood Discount Reset (30)':
-					for j,e in enumerate(events[i+1:]):
-						if e['name'] == 'Catfood Discount Reset (750)':
-							events[i]['name'] = 'Catfood Discount Reset (30/750)'
-							events.pop(i+j+1)
-							break
-				for j,e in enumerate(events[i+1:]):
-					try:
-						if e['IDs'] == event['IDs']:
-							events[i]['dates'].extend(e['dates'])
-							events.pop(i+j+1)
-					except:
-						pass  # Ignore events that are already grouped like Festivals
-								
 		if stagedata == 'x':
 			stagedata = self.finalStages
 		if saledata == 'x':
 			saledata = self.sales
-
-		stagedata.sort(key=itemgetter('dates'))
-		saledata.sort(key=itemgetter('dates'))
-		groupBaronsAndOtherStuff(stagedata)
-		dupeCheck(stagedata)
-		dupeCheck(saledata)
-
 		
 		print('<h4>Events:</h4><ul>')
 		for group in stagedata:
@@ -600,20 +578,6 @@ class StageFetcher(UniversalFetcher):
 		df_fin["dates"] = df_ref["dates"].apply(lambda x: [d.strftime('%Y/%m/%d') for d in x])
 		df_ref["dates"] = df_ref["dates"].apply(lambda x: [d.strftime('%Y/%m/%d') for d in x])
 		df_rej["dates"] = df_rej["dates"].apply(lambda x: [d.strftime('%Y/%m/%d') for d in x])
-
-		df_fin.insert(1,"start",df_fin["dates"].str[0])
-		df_fin.insert(2,"end",df_fin["dates"].str[1])
-		df_ref.insert(1,"start",df_ref["dates"].str[0])
-		df_ref.insert(2,"end",df_ref["dates"].str[1])
-		df_rej.insert(1,"start",df_rej["dates"].str[0])
-		df_rej.insert(2,"end",df_rej["dates"].str[1])
-
-		df_ref.insert(3,"names", df_ref["IDs"].apply(lambda x: [StageParsers.getEventName(z) for z in x]))
-		df_rej.insert(3,"names", df_rej["IDs"].apply(lambda x: [StageParsers.getEventName(z) for z in x]))
-
-		df_fin = df_fin.drop(["dates"], axis = 1)
-		df_ref = df_ref.drop(["dates"], axis = 1)
-		df_rej = df_rej.drop(["dates"], axis = 1)
 
 		df_fin = df_fin.astype(str)
 		df_ref = df_ref.astype(str)
@@ -763,12 +727,15 @@ def test():
 	gf.printGatya()
 	gf.printGatyaHTML()
 
-	sf = StageFetcher(f=['Y'])
-	sf.fetchLocalData(0)
+	sf = StageFetcher(f=['N'],v='jp')
+	sf.fetchRawData()
 	sf.readRawData(storeRejects=True)
-	sf.exportStages()
-	sf.printStages()
+	sf.groupData()
+	sf.finalProcessing()
+	sf.printStages(*sf.getStageData())
 	sf.printFestivalData()
+	sf.exportStages()
+	StageParsers.updateEventNames()
 	
 	print("hello")
 

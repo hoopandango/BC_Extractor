@@ -14,15 +14,16 @@ with open('_config.json') as fl:
 # endregion
 
 class UniversalParsers:
-	eventNames = {}
 	itemdata = []
 
 	with open(config['outputs']['stages'], encoding='utf-8', newline = '') as csvfile:
-		eventNames = pd.read_csv(csvfile, delimiter='\t',index_col='ID')
+		autoEventNames = pd.read_csv(csvfile, delimiter='\t',index_col='ID')
 	
 	with open("extras\\events.tsv", encoding='utf-8', newline = '') as csvfile:
-		eventNames = eventNames.append(pd.read_csv(csvfile, delimiter='\t',index_col='ID'))
-
+		manualEventNames = pd.read_csv(csvfile, delimiter='\t',index_col='ID')
+		allEventNames = autoEventNames.append(manualEventNames)
+		
+		
 	with open(config['outputs']['items'], encoding = 'utf-8', newline='') as csvfile:
 		itemdata = pd.read_csv(csvfile, delimiter='\t',index_col='ID')
 
@@ -92,7 +93,7 @@ class UniversalParsers:
 	def getEventName(cls,ID:int,lng:str='en'):
 		# not used by gatya
 		try:
-			name = cls.eventNames.loc[ID,"name"]
+			name = cls.allEventNames.loc[ID,"name"]
 			if (25000 > int(ID) > 24000 or 28000 > int(ID) > 27000):
 				name += ' (Baron)'
 			return name
@@ -100,7 +101,7 @@ class UniversalParsers:
 			name = Downloaders.requestStage(ID,'en')
 			if name != 'Unknown':
 				# updates name
-				cls.eventNames.loc[ID,"name"] = name
+				cls.autoEventNames.loc[ID,"name"] = name
 			return name
 	
 	@classmethod
@@ -113,7 +114,7 @@ class UniversalParsers:
 	@classmethod
 	def updateEventNames(cls):
 		with open(config['outputs']['stages'], 'w', encoding='utf-8', newline = '') as fil:
-			pd.write_csv(fil, delimiter='\t',indexing=True)
+			cls.autoEventNames.to_csv(fil, sep='\t',index=True)
 
 class GatyaParsers(UniversalParsers):
 	def __init__():

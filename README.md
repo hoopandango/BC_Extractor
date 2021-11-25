@@ -48,3 +48,4 @@ The rest should hopefully have self-explanatory titles.
 
 * **v 0.1** - just added the code here for the sake of it. Only a few TODOs in here. More will follow. Planning on a lot more comments too.
 * **v 0.1.1** - added this README.
+* **v 0.1.2** - patched duplicate merging bug, caused by popping elements in the container that I'm iterating over.

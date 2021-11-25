@@ -1,13 +1,17 @@
 import requests
 import regex as re
 
+
 class Downloaders:
-	#TODO: 9 = missions i think
-	prefixes = {0:'N', 1:'S', 2:'C', 6:'T', 7:'V',9:'MiTODO', 11:'R', 12:'M', 13:'NA', 14:'B', 24:'A', 25:'H', 27:'A'}
+	#TODO: 9 = missions, 18 = slots, 19 = talking cat rewards
+	prefixes = {0:'N', 1:'S', 2:'C', 6:'T', 7:'V', 11:'R', 12:'M', 13:'NA', 14:'B', 24:'A', 25:'H', 27:'A'}
 	@staticmethod
 	def requestStage(ID:int, lng:str):
 		prefix = "https://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/stage/"
-		file = '%s%03d.html' % (Downloaders.prefixes[ID // 1000], ID % 1000)
+		pre = Downloaders.prefixes.get(ID // 1000)
+		if pre == None:
+			return "Unknown"
+		file = '%s%03d.html' % (pre, ID % 1000)
 		level = ""
 		for country in [lng+'/',""]:
 			try:
@@ -20,7 +24,7 @@ class Downloaders:
 					level = c.split(b'<h2>')[1].split(b"<span")[0].decode('utf-8')
 					return level
 				except IndexError: pass
-		return f"Unknown"
+		return "Unknown"
 
 	@staticmethod
 	def requestGatya(ID:int, lng:str, cat:str = 'R') -> str:
