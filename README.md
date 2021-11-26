@@ -1,6 +1,6 @@
 # BC Extractors
 
-## **v 0.1.1**
+## **v 0.1.3**
 
 This repository contains the files and code that I use to produce automated event data.
 
@@ -49,3 +49,4 @@ The rest should hopefully have self-explanatory titles.
 * **v 0.1** - just added the code here for the sake of it. Only a few TODOs in here. More will follow. Planning on a lot more comments too.
 * **v 0.1.1** - added this README.
 * **v 0.1.2** - patched duplicate merging bug, caused by popping elements in the container that I'm iterating over.
+* **v 0.1.3** - fixed duplicate merging shenanigans for good. Added improved interpretation for monthly and weekly recurring events.
