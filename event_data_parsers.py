@@ -1,10 +1,8 @@
-import csv
 import json 
 import datetime
-import sqlite3
 from z_downloaders import Downloaders
 import pandas as pd
-import ast
+import numpy as np
 
 # region setup
 with open('_config.json') as fl:
@@ -115,6 +113,7 @@ class UniversalParsers:
 	def updateEventNames(cls):
 		with open(config['outputs']['stages'], 'w', encoding='utf-8', newline = '') as fil:
 			cls.autoEventNames.to_csv(fil, sep='\t',index=True)
+
 
 class GatyaParsers(UniversalParsers):
 	def __init__():
@@ -369,6 +368,27 @@ class StageParsers(UniversalParsers):
 				IDs.append(ID)
 		
 		return output, IDs
+
+	@staticmethod
+	def interpretDates(dates: np.array) -> tuple:
+		# takes in dates array and the number of days in the month in which they start
+		# returns a 3-tuple -> (group_size, starting_date, ending_date)
+		if len(dates) < 4: # don't group these
+			return (0,0,0)
+		diffs = list(np.diff(dates))
+		mode = max(set(diffs), key=diffs.count)
+		outliers = [i for i,x in enumerate(diffs) if x != mode]
+		if len(outliers) > 1:
+			# there can be at most one gap in any patterned data
+			return (0,0,0)
+		elif len(outliers) == 0:
+			# there is no gap, assume all events to be happening in the same month
+			return (mode, min(dates), max(dates))
+		else:
+			# there is a gap, repetition started after it and ended at it
+			return (mode, dates[outliers[0]+1], dates[outliers[0]])
+		# this algorithm ignores month rollover diff [-1->0], and can give false positives, but they are not expected
+
 
 class ItemParsers(UniversalParsers):
 	def __init__():

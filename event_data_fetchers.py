@@ -245,8 +245,10 @@ class GatyaFetcher(UniversalFetcher):
 			df.insert(2,"end",df["dates"].str[1])
 			df.drop(["dates","versions","slot"], axis = 1, inplace=True)
 
-		process(df_ref)
-		process(df_rej)
+		if len(df_ref) != 0:
+			process(df_ref)
+		if len(df_rej) != 0:
+			process(df_rej)
 
 		df_ref.astype(str).to_sql('refined', conn, if_exists = 'replace')
 		df_rej.astype(str).to_sql('rejected', conn, if_exists = 'replace')
@@ -377,11 +379,14 @@ class StageFetcher(UniversalFetcher):
 				if any([x in event['name'] for x in groupable_events]):
 					for j,e in enumerate(sd[i+1:]):
 						# Can't use two words because Duel stages
-						if (e['name'].split(' ')[0] == event['name'].split(' ')[0] or e['name'].split(' ')[-1] == event['name'].split(' ')[-1]) and e['dates'][1] == event['dates'][1]:   # If they share the same first word and end on the same date
-							sd.insert(i+1)   # Put them together
-							to_del.append(i+j+1)
+						if (e['name'].split(' ')[0] == event['name'].split(' ')[0] 
+						or e['name'].split(' ')[-1] == event['name'].split(' ')[-1]):
+							# and (e['dates'][1] == event['dates'][1]: # used to check this before, add back if there are errors
+							# If they share the same first / last word and end on the same date
+							sd.insert(i+1,sd.pop(i+j+1))   # Put them together
 							break
 
+			for i,event in enumerate(sd):
 				# Groups repetetive events [all of which are identical] like catfood discounts and cybear
 				if event['name'] == 'Catfood Discount Reset (30)':
 					for j,e in enumerate(sd[i+1:]):
@@ -430,18 +435,42 @@ class StageFetcher(UniversalFetcher):
 					
 				elif event['schedule'] == 'monthly':
 					for setting in event['data']:
+						X = [int(x) for x in setting['dates']]
+						parsed = StageParsers.interpretDates(np.array(X))
+						E = ''
+						mstart = event["dates"][0].strftime("%b")
+						mend = event["dates"][-1].strftime("%b")
+						if parsed[0] == 0: E = '- Date '+'/'.join(setting['dates'])
+						elif parsed[0] == 2: E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Alternate Day'
+						elif parsed[0] == 3: E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Third Day'
+						else: E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every {parsed[0]}th Day' # wont be above 10 so it's okay
+
 						if len(setting['times']) == 0:
-							print('- Date '+'/'.join(setting['dates']))
+							print(E)
 						else:
-							print('- Date '+'/'.join(setting['dates'])+ ': ' + f"{setting['times'][0]['start'].strftime('%I%p').lstrip('0')}~{setting['times'][0]['end'].strftime('%I%p').lstrip('0')}")
+							print(f"{E}: {setting['times'][0]['start'].strftime('%I%p').lstrip('0')}~{setting['times'][0]['end'].strftime('%I%p').lstrip('0')}")
 
 				elif event['schedule'] == 'daily':
 					for setting in event['data']:
 						print(f"{StageParsers.fancyDate(event['dates'])}{StageParsers.fancyTimes(setting['times'])}")
 
 				elif event['schedule'] == 'weekly':
+					dayscheds = [[],[],[],[],[],[],[]]
 					for setting in event['data']:
-						print(f" - {'/'.join([weekdays[i] for i,val in enumerate(setting['weekdays']) if val == 1])}: {StageParsers.fancyTimes(setting['times'])}")
+						for i,val in enumerate(setting['weekdays']):
+							if val == 1: dayscheds[i].append(StageParsers.fancyTimes(setting['times']))
+					ignored = []
+					for i, day1 in enumerate(dayscheds):
+						buf = []
+						if (i in ignored or day1 == []): continue
+						buf.append(weekdays[i])
+						for j, day2 in enumerate(dayscheds[i+1:]):
+							if (i+j+1 in ignored): continue
+							if(set(day1) == set(day2)):
+								ignored.append(i+j+1)
+								buf.append(weekdays[i+j+1])
+						print( f"{'/'.join(buf)}: {', '.join(day1)}")		
+
 
 				elif event['schedule'] == 'yearly':
 					print(f"{StageParsers.fancyDate([event['data'][0]['times'][0]['start'],event['data'][0]['times'][0]['end']])[:-2]}")
@@ -450,8 +479,6 @@ class StageFetcher(UniversalFetcher):
 				print('```')
 
 	def printFestivalDataHTML(self):
-		def OddEven(numlist):
-			return math.prod(1-numlist%2)*2 + math.prod(numlist%2)
 		print('<h4>Festivals:</h4>')
 		permanentLog = []
 		for event in self.refinedStages:
@@ -474,14 +501,13 @@ class StageFetcher(UniversalFetcher):
 				elif event['schedule'] == 'monthly':
 					print(f'<h5>{StageParsers.getEventName(ID)} ({StageParsers.fancyDate(event["dates"])[2:-2]})</h5><ul>')
 					for setting in event['data']:
-						if len(setting['dates']) < 4:
-							E = 'Date '+('/'.join(setting['dates']))
-						else:
-							X = [int(x) for x in setting['dates']]
-							E = ['Date '+'/'.join(setting['dates']),'Odd Days','Even Days'][OddEven(np.array(X))]
-							# TODO : Every third day logic this. doesnt even work for cross-month events lol
-							#if np.bincount(np.diff(X))[-1] >= len(X)-2 and np.diff(X)[0] == 3:
-							#	E = 'Every 3rd Day from '+setting['dates'][0]
+						X = [int(x) for x in setting['dates']]
+						parsed = StageParsers.interpretDates(np.array(X))
+						E = ''
+						if parsed[0] == 0: E = 'Date '+'/'.join(setting['dates'])
+						elif parsed[0] == 2: E = f'{parsed[1]} ~ {parsed[2]} - Every Alternate Day'
+						elif parsed[0] == 3: E = f'{parsed[1]} ~ {parsed[2]} - Every Third Day'
+						else: E = f'{parsed[1]} ~ {parsed[2]} - Every {parsed[0]}th Day' # wont be above 10 so it's okay
 
 						if len(setting['times']) == 0:
 							print(f'<li><b>{E}</b></li>')
@@ -494,6 +520,7 @@ class StageFetcher(UniversalFetcher):
 						print(f"<li><b>{StageParsers.fancyDate(event['dates'])[2:]}</b>{StageParsers.fancyTimes(setting['times'])}</li>")
 
 				elif event['schedule'] == 'weekly':
+					# TODO: carry over improved weekly / monthly event parsing to HTML format
 					print(f'<h5>{StageParsers.getEventName(ID)} ({StageParsers.fancyDate(event["dates"])[2:-2]})</h5><ul>')
 					for setting in event['data']:
 						print(f"<li><b>{'/'.join([weekdays[i] for i,val in enumerate(setting['weekdays']) if val == 1])}</b>: {StageParsers.fancyTimes(setting['times'])}</li>")
@@ -720,14 +747,14 @@ class ItemFetcher(UniversalFetcher):
 
 def test():
 	
-	gf = GatyaFetcher(f=['N'],v='en')	
-	gf.fetchLocalData(0)
+	gf = GatyaFetcher(f=['N','Y'],v='en')	
+	gf.fetchRawData()
 	gf.readRawData()
 	gf.exportGatya()
 	gf.printGatya()
 	gf.printGatyaHTML()
 
-	sf = StageFetcher(f=['N'],v='jp')
+	sf = StageFetcher(f=['N'],v='en')
 	sf.fetchRawData()
 	sf.readRawData(storeRejects=True)
 	sf.groupData()
