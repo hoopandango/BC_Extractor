@@ -56,3 +56,6 @@ names[1:] = sorted(names[1:])
 with open(config['outputs']['units'], 'w', encoding='utf-8', newline='') as fl:
 	w = csv.writer(fl, delimiter = '\t')
 	w.writerows(names)
+
+print("Finished Writing")
+input()

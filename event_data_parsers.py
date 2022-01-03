@@ -185,9 +185,9 @@ class GatyaParsers(UniversalParsers):
 		severID = (extras >> 4) & 1023
 		
 		if extras & 4:
-			toret.append('S')  # Step-up
+			toret.append('SU')  # Step-up
 		if extras & 16384:
-			toret.append('P')  # Platinum Shard
+			toret.append('PS')  # Platinum Shard
 
 		if not extras & 8:
 			return toret # No item drops
@@ -200,21 +200,19 @@ class GatyaParsers(UniversalParsers):
 	@staticmethod
 	def getString(banner)->tuple:
 		# tuple (datestring, reststring)
+		bonuses = []
 
-		gtd = ' (Guaranteed)' if banner["guarantee"][3] == '1' else ''
+		if banner["guarantee"][3] == '1': bonuses.append('G')
+		bonuses.extend(banner["extras"])
+		bonuses.extend([x for x in banner["exclusives"] if x != 'D'])
+		bonusesStr = f" [{'/'.join(bonuses)}]" if len(bonuses) > 0 else ''
 
-		gtd += ' (Step-Up)' if 'S' in banner['extras'] else ''
-		gtd += ' (Lucky Tickets)' if 'L' in banner['extras'] else ''
-		gtd += ' (Platinum Shard)' if 'P' in banner['extras'] else ''
-
-		exclusives = ' ('+')('.join(banner['exclusives'])+')' if len(banner['exclusives']) > 0 else ''
-
-		diff = f' (+ {", ".join(banner["diff"][0])})' if len(banner["diff"][0]) > 0 else ''
+		diff = f' (+ {", ".join(banner["diff"][0])})' if 5 > len(banner["diff"][0]) > 0 else ''
 
 		rate_ups = " {"+", ".join([f"{K}x rate on {', '.join(V)}" for (K,V) in banner["rate_ups"].items()])+"}" if len(banner["rate_ups"]) > 0 else ''
-
+		
 		name = banner['banner_name'] if banner['banner_name'] != 'Unknown' else banner['text']
-		return (GatyaParsers.fancyDate(banner['dates']),'%s%s%s%s%s'%(name,gtd,exclusives,diff,rate_ups))
+		return (GatyaParsers.fancyDate(banner['dates']),'%s%s%s%s'%(name,bonusesStr,diff,rate_ups))
 
 
 class StageParsers(UniversalParsers):
@@ -373,7 +371,7 @@ class StageParsers(UniversalParsers):
 	def interpretDates(dates: np.array) -> tuple:
 		# takes in dates array and the number of days in the month in which they start
 		# returns a 3-tuple -> (group_size, starting_date, ending_date)
-		if len(dates) < 4: # don't group these
+		if len(dates) <= 4: # don't group these
 			return (0,0,0)
 		diffs = list(np.diff(dates))
 		mode = max(set(diffs), key=diffs.count)
@@ -386,6 +384,7 @@ class StageParsers(UniversalParsers):
 			return (mode, min(dates), max(dates))
 		else:
 			# there is a gap, repetition started after it and ended at it
+			# a better algorithm would check whether or not there is an actual rollover taking in the number of days in the month as a parameter
 			return (mode, dates[outliers[0]+1], dates[outliers[0]])
 		# this algorithm ignores month rollover diff [-1->0], and can give false positives, but they are not expected
 

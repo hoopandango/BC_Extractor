@@ -388,7 +388,7 @@
         "Kachi-Kachi",
         "Kintaro",
         "Matador Cat",
-        "舌切りすずめ",
+        "Shitakiri Sparrow",
         "Vaulter Cat",
         "Gardener Cat",
         "Rover Cat",
@@ -767,7 +767,7 @@
         "The White Rabbit",
         "Rover Cat",
         "Fencer Cat",
-        "白騎士キュクロプス"
+        "White Knight Cyclops"
       ]
     ],
     "rate_ups": {}
@@ -1113,7 +1113,7 @@
         "Yuletide Nurse",
         "Rover Cat",
         "Fencer Cat",
-        "洗脳されしタンクネコ"
+        "Brainwashed Tank Cat"
       ]
     ],
     "rate_ups": {}
@@ -1187,33 +1187,31 @@
         "Kubiluga",
         "Kuu",
         "The White Rabbit",
-        "Kamukura",
         "Marauder Cat"
       ],
       [
-        "Lasvoss",
         "Nymph Cat",
         "Wushu Cat",
         "Kintaro",
-        "Sharpshooter Saki",
-        "Hades the Punisher",
-        "Kyosaka Nanaho",
-        "Mighty Thermae D-Lux",
-        "Papaluga",
-        "Hell Warden Emma",
+        "Nurse Cat",
+        "Nekoluga",
         "Vaulter Cat",
         "Gardener Cat",
-        "Gravi",
         "Years-End Neneko",
+        "Wrathful Poseidon",
+        "Musashi Miyamoto",
+        "High Lord Babel",
         "Welterweight Cat",
         "Lumina",
-        "Gaia the Creator",
-        "Relentless Gladios",
-        "Matador Cat",
-        "Narita Kaihime",
-        "Myrcia",
+        "Adventurer Kanna",
         "Rover Cat",
-        "Fencer Cat"
+        "Aer",
+        "Kai",
+        "Matador Cat",
+        "Mighty Deth-Troy-R",
+        "Fencer Cat",
+        "White Knight Cyclops",
+        "Date Masamune"
       ]
     ],
     "rate_ups": {
@@ -1232,6 +1230,7 @@
     "diff": [
       [],
       [
+        "堕天神ルシファー",
         "Welterweight Cat",
         "Nymph Cat",
         "Wushu Cat",
@@ -1320,8 +1319,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [],
@@ -1360,7 +1359,6 @@
         "Imagawa Yoshimoto",
         "Twinstars",
         "Mighty Rekon Korps",
-        "Rover Cat",
         "Bora",
         "Mizli",
         "Summoner Satoru",
@@ -1372,12 +1370,10 @@
         "Matador Cat",
         "Narita Kaihime",
         "Furiluga",
-        "Relentless Gladios",
         "Myrcia",
         "Yamii",
-        "Mighty Deth-Troy-R",
-        "舌切りすずめ",
-        "白騎士キュクロプス",
+        "Rover Cat",
+        "Relentless Gladios",
         "D'artanyan"
       ]
     ],
@@ -1388,8 +1384,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -1404,8 +1400,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -1490,8 +1486,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -1576,6 +1572,8 @@
     "diff": [
       [],
       [
+        "踊り子イズ",
+        "堕天神ルシファー",
         "Lasvoss",
         "Ganglion",
         "Kintaro",
@@ -1616,15 +1614,15 @@
         "Lilin",
         "Hevijak the Wicked",
         "Aer",
+        "Dark Mitama",
+        "Relentless Gladios",
         "Narita Kaihime",
         "Furiluga",
-        "舌切りすずめ",
         "Myrcia",
         "Yamii",
         "Mighty Deth-Troy-R",
-        "Relentless Gladios",
-        "Dark Mitama",
-        "白騎士キュクロプス",
+        "Shitakiri Sparrow",
+        "White Knight Cyclops",
         "D'artanyan"
       ]
     ],
@@ -1648,8 +1646,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -1703,8 +1701,8 @@
     "enabled": false,
     "series_ID": 22,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [],
@@ -1726,8 +1724,8 @@
     "enabled": false,
     "series_ID": 5,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [],
@@ -2240,8 +2238,8 @@
     "enabled": false,
     "series_ID": 5,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -2257,8 +2255,8 @@
     "enabled": false,
     "series_ID": 22,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -2274,8 +2272,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -2439,8 +2437,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -2468,8 +2466,8 @@
     "enabled": false,
     "series_ID": 5,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -2484,8 +2482,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -2865,8 +2863,8 @@
     "enabled": false,
     "series_ID": 5,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -2881,8 +2879,8 @@
     "enabled": false,
     "series_ID": 22,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -2897,8 +2895,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -2989,8 +2987,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [],
@@ -3024,17 +3022,18 @@
         "Lilin",
         "Hevijak the Wicked",
         "Aer",
-        "Mighty Deth-Troy-R",
+        "Relentless Gladios",
         "Matador Cat",
         "Narita Kaihime",
         "Furiluga",
-        "Fencer Cat",
+        "Mighty Deth-Troy-R",
+        "Shitakiri Sparrow",
         "Myrcia",
         "Yamii",
         "Rover Cat",
-        "Relentless Gladios",
+        "Fencer Cat",
         "Dark Mitama",
-        "白騎士キュクロプス"
+        "White Knight Cyclops"
       ]
     ],
     "rate_ups": {}
@@ -3179,8 +3178,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -3195,8 +3194,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -3415,8 +3414,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -3431,8 +3430,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -3539,8 +3538,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -3555,8 +3554,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -3598,8 +3597,8 @@
     "enabled": false,
     "series_ID": 32,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [],
@@ -3700,8 +3699,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -3718,8 +3717,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4173,8 +4172,8 @@
     "enabled": false,
     "series_ID": 5,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4190,8 +4189,8 @@
     "enabled": false,
     "series_ID": 22,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4207,8 +4206,8 @@
     "enabled": false,
     "series_ID": 32,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4308,8 +4307,8 @@
     "enabled": false,
     "series_ID": 35,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4344,8 +4343,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4361,8 +4360,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4464,8 +4463,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4629,8 +4628,8 @@
     "enabled": false,
     "series_ID": 32,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4653,8 +4652,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4669,8 +4668,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4698,8 +4697,8 @@
     "enabled": false,
     "series_ID": 32,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [],
@@ -4794,8 +4793,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4810,8 +4809,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4910,8 +4909,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4926,8 +4925,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -4994,8 +4993,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -5010,8 +5009,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -5145,8 +5144,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -5161,8 +5160,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -5229,8 +5228,8 @@
     "enabled": false,
     "series_ID": 35,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -5251,8 +5250,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -5267,8 +5266,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -5352,8 +5351,8 @@
     "enabled": false,
     "series_ID": 19,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -5368,8 +5367,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -5474,8 +5473,8 @@
     "enabled": false,
     "series_ID": 27,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -5572,7 +5571,7 @@
     "enabled": false,
     "series_ID": 0,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5586,7 +5585,7 @@
     "series_ID": 0,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5600,7 +5599,7 @@
     "series_ID": 0,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5613,7 +5612,7 @@
     "enabled": false,
     "series_ID": 1,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5627,7 +5626,7 @@
     "series_ID": 1,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5641,7 +5640,7 @@
     "series_ID": 1,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5654,7 +5653,7 @@
     "enabled": false,
     "series_ID": 2,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -5670,7 +5669,7 @@
     "series_ID": 2,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5684,7 +5683,7 @@
     "series_ID": 2,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5697,7 +5696,7 @@
     "enabled": false,
     "series_ID": 3,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -5713,7 +5712,7 @@
     "series_ID": 3,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5727,7 +5726,7 @@
     "series_ID": 3,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5740,7 +5739,7 @@
     "enabled": false,
     "series_ID": 4,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -5756,7 +5755,7 @@
     "series_ID": 4,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5770,7 +5769,7 @@
     "series_ID": 4,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5783,7 +5782,7 @@
     "enabled": false,
     "series_ID": 6,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5797,7 +5796,7 @@
     "series_ID": 6,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5811,7 +5810,7 @@
     "series_ID": 6,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5824,7 +5823,7 @@
     "enabled": false,
     "series_ID": 7,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5838,7 +5837,7 @@
     "series_ID": 7,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5852,7 +5851,7 @@
     "series_ID": 7,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5865,7 +5864,7 @@
     "enabled": false,
     "series_ID": 18,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5879,7 +5878,7 @@
     "series_ID": 18,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5893,7 +5892,7 @@
     "series_ID": 18,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5906,7 +5905,7 @@
     "enabled": false,
     "series_ID": 24,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5920,7 +5919,7 @@
     "series_ID": 24,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5934,7 +5933,7 @@
     "series_ID": 24,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5947,7 +5946,7 @@
     "enabled": false,
     "series_ID": 33,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5961,7 +5960,7 @@
     "series_ID": 33,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5975,7 +5974,7 @@
     "series_ID": 33,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -5988,7 +5987,7 @@
     "enabled": false,
     "series_ID": 28,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6002,7 +6001,7 @@
     "series_ID": 28,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6016,7 +6015,7 @@
     "series_ID": 28,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6156,7 +6155,7 @@
     "enabled": false,
     "series_ID": 6,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -6172,7 +6171,7 @@
     "series_ID": 6,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6186,7 +6185,7 @@
     "series_ID": 6,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6315,7 +6314,7 @@
     "enabled": false,
     "series_ID": 1,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -6331,7 +6330,7 @@
     "series_ID": 1,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6345,7 +6344,7 @@
     "series_ID": 1,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6358,7 +6357,7 @@
     "enabled": false,
     "series_ID": 0,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -6374,7 +6373,7 @@
     "series_ID": 0,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6388,7 +6387,7 @@
     "series_ID": 0,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6441,7 +6440,7 @@
     "enabled": false,
     "series_ID": 24,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -6457,7 +6456,7 @@
     "series_ID": 24,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6471,7 +6470,7 @@
     "series_ID": 24,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6484,7 +6483,7 @@
     "enabled": false,
     "series_ID": 33,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -6500,7 +6499,7 @@
     "series_ID": 33,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6514,7 +6513,7 @@
     "series_ID": 33,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6548,7 +6547,7 @@
     "enabled": false,
     "series_ID": 7,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -6564,7 +6563,7 @@
     "series_ID": 7,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6578,7 +6577,7 @@
     "series_ID": 7,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6699,7 +6698,7 @@
     "enabled": false,
     "series_ID": 18,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -6715,7 +6714,7 @@
     "series_ID": 18,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6729,7 +6728,7 @@
     "series_ID": 18,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6759,7 +6758,7 @@
     "enabled": false,
     "series_ID": 2,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -6775,7 +6774,7 @@
     "series_ID": 2,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6789,7 +6788,7 @@
     "series_ID": 2,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6843,7 +6842,7 @@
     "enabled": false,
     "series_ID": 3,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -6859,7 +6858,7 @@
     "series_ID": 3,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6873,7 +6872,7 @@
     "series_ID": 3,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6925,7 +6924,7 @@
     "enabled": false,
     "series_ID": 4,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -6941,7 +6940,7 @@
     "series_ID": 4,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -6955,7 +6954,7 @@
     "series_ID": 4,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7045,7 +7044,7 @@
     "enabled": false,
     "series_ID": 1,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7061,7 +7060,7 @@
     "series_ID": 1,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7075,7 +7074,7 @@
     "series_ID": 1,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7114,7 +7113,7 @@
     "enabled": false,
     "series_ID": 0,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7132,7 +7131,7 @@
     "series_ID": 0,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7146,7 +7145,7 @@
     "series_ID": 0,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7159,7 +7158,7 @@
     "enabled": false,
     "series_ID": 1,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7177,7 +7176,7 @@
     "series_ID": 1,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7191,7 +7190,7 @@
     "series_ID": 1,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7204,7 +7203,7 @@
     "enabled": false,
     "series_ID": 2,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7222,7 +7221,7 @@
     "series_ID": 2,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7236,7 +7235,7 @@
     "series_ID": 2,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7249,7 +7248,7 @@
     "enabled": false,
     "series_ID": 3,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7267,7 +7266,7 @@
     "series_ID": 3,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7281,7 +7280,7 @@
     "series_ID": 3,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7294,7 +7293,7 @@
     "enabled": false,
     "series_ID": 4,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7312,7 +7311,7 @@
     "series_ID": 4,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7326,7 +7325,7 @@
     "series_ID": 4,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7339,7 +7338,7 @@
     "enabled": false,
     "series_ID": 6,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7357,7 +7356,7 @@
     "series_ID": 6,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7371,7 +7370,7 @@
     "series_ID": 6,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7384,7 +7383,7 @@
     "enabled": false,
     "series_ID": 7,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7402,7 +7401,7 @@
     "series_ID": 7,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7416,7 +7415,7 @@
     "series_ID": 7,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7429,7 +7428,7 @@
     "enabled": false,
     "series_ID": 18,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7447,7 +7446,7 @@
     "series_ID": 18,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7461,7 +7460,7 @@
     "series_ID": 18,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7474,7 +7473,7 @@
     "enabled": false,
     "series_ID": 24,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7492,7 +7491,7 @@
     "series_ID": 24,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7506,7 +7505,7 @@
     "series_ID": 24,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7519,7 +7518,7 @@
     "enabled": false,
     "series_ID": 33,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7537,7 +7536,7 @@
     "series_ID": 33,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7551,7 +7550,7 @@
     "series_ID": 33,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7564,8 +7563,8 @@
     "enabled": true,
     "series_ID": 5,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -7582,8 +7581,8 @@
     "enabled": true,
     "series_ID": 22,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -7600,8 +7599,8 @@
     "enabled": true,
     "series_ID": 32,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [
@@ -7626,7 +7625,7 @@
     "enabled": false,
     "series_ID": 28,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -7644,7 +7643,7 @@
     "series_ID": 28,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -7658,7 +7657,7 @@
     "series_ID": 28,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8260,7 +8259,7 @@
     "enabled": true,
     "series_ID": 6,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -8276,7 +8275,7 @@
     "series_ID": 6,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8290,7 +8289,7 @@
     "series_ID": 6,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8430,7 +8429,7 @@
     "enabled": true,
     "series_ID": 7,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -8446,7 +8445,7 @@
     "series_ID": 7,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8460,7 +8459,7 @@
     "series_ID": 7,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8515,15 +8514,28 @@
     "diff": [
       [],
       [
-        "Dark Aegis Garu",
-        "Papaluga",
-        "Baby Garu",
-        "Lilin",
-        "Mighty Aethur Ltd.",
+        "踊り子イズ",
+        "堕天神ルシファー",
+        "Good-Luck Ebisu",
         "Sharpshooter Saki",
         "Hades the Punisher",
+        "Kasli the Bane",
+        "Papaluga",
+        "Li'l Valkyrie",
         "Gravi",
-        "Kasli the Bane"
+        "Baby Garu",
+        "Mighty Aethur Ltd.",
+        "Dark Aegis Garu",
+        "Li'l Valkyrie Dark",
+        "Summoner Satoru",
+        "Shiro Amakusa",
+        "Lilin",
+        "Hevijak the Wicked",
+        "Furiluga",
+        "Yamii",
+        "Mighty Deth-Troy-R",
+        "Shitakiri Sparrow",
+        "White Knight Cyclops"
       ]
     ],
     "rate_ups": {}
@@ -8588,7 +8600,7 @@
     "enabled": true,
     "series_ID": 18,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -8604,7 +8616,7 @@
     "series_ID": 18,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8618,7 +8630,7 @@
     "series_ID": 18,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8717,7 +8729,7 @@
     "enabled": false,
     "series_ID": 28,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -8733,7 +8745,7 @@
     "series_ID": 28,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8747,7 +8759,7 @@
     "series_ID": 28,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8871,7 +8883,7 @@
     "enabled": false,
     "series_ID": 0,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -8887,7 +8899,7 @@
     "series_ID": 0,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8901,7 +8913,7 @@
     "series_ID": 0,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -8953,8 +8965,8 @@
     "enabled": true,
     "series_ID": 45,
     "exclusives": [
-      "N",
-      "R"
+      "R",
+      "N"
     ],
     "diff": [
       [],
@@ -9259,10 +9271,10 @@
   },
   "538": {
     "banner_name": "Elemental Pixies",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 33,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -9274,11 +9286,11 @@
   },
   "539": {
     "banner_name": "Elemental Pixies",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 33,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -9288,11 +9300,11 @@
   },
   "540": {
     "banner_name": "Elemental Pixies",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 33,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -9341,7 +9353,7 @@
   },
   "544": {
     "banner_name": "Halloween Gatya",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 8,
     "exclusives": [],
     "diff": [
@@ -9501,6 +9513,8 @@
       [],
       [
         "Dark Aegis Garu",
+        "踊り子イズ",
+        "堕天神ルシファー",
         "Princess Cat",
         "Baby Garu",
         "Emperor Cat",
@@ -9512,8 +9526,8 @@
         "Mighty Aethur Ltd.",
         "Yamii",
         "Mighty Deth-Troy-R",
-        "舌切りすずめ",
-        "白騎士キュクロプス"
+        "Shitakiri Sparrow",
+        "White Knight Cyclops"
       ]
     ],
     "rate_ups": {}
@@ -9942,10 +9956,10 @@
   },
   "572": {
     "banner_name": "Iron Legion",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 24,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -9957,11 +9971,11 @@
   },
   "573": {
     "banner_name": "Iron Legion",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 24,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -9971,11 +9985,11 @@
   },
   "574": {
     "banner_name": "Iron Legion",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 24,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10131,7 +10145,7 @@
     "enabled": true,
     "series_ID": 28,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -10147,7 +10161,7 @@
     "series_ID": 28,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10161,7 +10175,7 @@
     "series_ID": 28,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10448,7 +10462,7 @@
     "enabled": true,
     "series_ID": 2,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -10464,7 +10478,7 @@
     "series_ID": 2,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10478,7 +10492,7 @@
     "series_ID": 2,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10491,7 +10505,7 @@
     "enabled": true,
     "series_ID": 3,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -10507,7 +10521,7 @@
     "series_ID": 3,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10521,7 +10535,7 @@
     "series_ID": 3,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10686,7 +10700,7 @@
     "enabled": true,
     "series_ID": 0,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -10702,7 +10716,7 @@
     "series_ID": 0,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10716,7 +10730,7 @@
     "series_ID": 0,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10729,7 +10743,7 @@
     "enabled": true,
     "series_ID": 1,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -10745,7 +10759,7 @@
     "series_ID": 1,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10759,7 +10773,7 @@
     "series_ID": 1,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10772,7 +10786,7 @@
     "enabled": true,
     "series_ID": 4,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -10788,7 +10802,7 @@
     "series_ID": 4,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10802,7 +10816,7 @@
     "series_ID": 4,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10812,7 +10826,7 @@
   },
   "633": {
     "banner_name": "Uberfest",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 19,
     "exclusives": [],
     "diff": [
@@ -10827,7 +10841,7 @@
   },
   "634": {
     "banner_name": "Epicfest",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 27,
     "exclusives": [],
     "diff": [
@@ -10842,7 +10856,7 @@
   },
   "635": {
     "banner_name": "Platinum Ticket Banner",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 21,
     "exclusives": [],
     "diff": [
@@ -10855,7 +10869,7 @@
   },
   "636": {
     "banner_name": "Platinum Ticket Banner",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 21,
     "exclusives": [],
     "diff": [
@@ -10868,7 +10882,7 @@
   },
   "637": {
     "banner_name": "Platinum Ticket Banner",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 21,
     "exclusives": [],
     "diff": [
@@ -10881,7 +10895,7 @@
   },
   "638": {
     "banner_name": "Legend Ticket Banner",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 46,
     "exclusives": [],
     "diff": [
@@ -10894,7 +10908,7 @@
   },
   "639": {
     "banner_name": "Legend Ticket Banner",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 46,
     "exclusives": [],
     "diff": [
@@ -10907,7 +10921,7 @@
   },
   "640": {
     "banner_name": "Legend Ticket Banner",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 46,
     "exclusives": [],
     "diff": [
@@ -10947,7 +10961,7 @@
     "enabled": true,
     "series_ID": 24,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -10963,7 +10977,7 @@
     "series_ID": 24,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10977,7 +10991,7 @@
     "series_ID": 24,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -10990,7 +11004,7 @@
     "enabled": true,
     "series_ID": 33,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
@@ -11006,7 +11020,7 @@
     "series_ID": 33,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -11020,7 +11034,7 @@
     "series_ID": 33,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -11087,7 +11101,7 @@
   },
   "653": {
     "banner_name": "Platinum Ticket Banner",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 21,
     "exclusives": [],
     "diff": [
@@ -11113,7 +11127,7 @@
   },
   "655": {
     "banner_name": "Legend Ticket Banner",
-    "enabled": true,
+    "enabled": false,
     "series_ID": 46,
     "exclusives": [],
     "diff": [
@@ -11142,11 +11156,11 @@
     "enabled": true,
     "series_ID": 6,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
-        "舌切りすずめ"
+        "Shitakiri Sparrow"
       ],
       []
     ],
@@ -11158,7 +11172,7 @@
     "series_ID": 6,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -11172,7 +11186,7 @@
     "series_ID": 6,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -11185,11 +11199,11 @@
     "enabled": true,
     "series_ID": 7,
     "exclusives": [
-      "G"
+      "D"
     ],
     "diff": [
       [
-        "白騎士キュクロプス"
+        "White Knight Cyclops"
       ],
       []
     ],
@@ -11201,7 +11215,7 @@
     "series_ID": 7,
     "exclusives": [
       "N",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -11215,7 +11229,7 @@
     "series_ID": 7,
     "exclusives": [
       "R",
-      "G"
+      "D"
     ],
     "diff": [
       [],
@@ -11403,7 +11417,7 @@
     "exclusives": [],
     "diff": [
       [
-        "洗脳されしタンクネコ"
+        "Brainwashed Tank Cat"
       ],
       []
     ],
@@ -11416,8 +11430,8 @@
     "exclusives": [],
     "diff": [
       [
-        "舌切りすずめ",
-        "白騎士キュクロプス"
+        "Shitakiri Sparrow",
+        "White Knight Cyclops"
       ],
       []
     ],
@@ -11431,7 +11445,7 @@
     "diff": [
       [
         "Mighty Deth-Troy-R",
-        "白騎士キュクロプス"
+        "White Knight Cyclops"
       ],
       []
     ],
@@ -11444,7 +11458,7 @@
     "exclusives": [],
     "diff": [
       [
-        "白騎士キュクロプス"
+        "White Knight Cyclops"
       ],
       []
     ],
@@ -11457,7 +11471,7 @@
     "exclusives": [],
     "diff": [
       [
-        "舌切りすずめ"
+        "Shitakiri Sparrow"
       ],
       []
     ],
@@ -11470,7 +11484,7 @@
     "exclusives": [],
     "diff": [
       [
-        "白騎士キュクロプス"
+        "White Knight Cyclops"
       ],
       []
     ],
@@ -11483,7 +11497,225 @@
     "exclusives": [],
     "diff": [
       [
-        "舌切りすずめ"
+        "Shitakiri Sparrow"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "675": {
+    "banner_name": "Uberfest",
+    "enabled": false,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Mighty Deth-Troy-R",
+        "Shitakiri Sparrow",
+        "White Knight Cyclops"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "676": {
+    "banner_name": "Epicfest",
+    "enabled": false,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [],
+      [
+        "Mighty Deth-Troy-R",
+        "White Knight Cyclops",
+        "Yamii"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "677": {
+    "banner_name": "Almighties",
+    "enabled": true,
+    "series_ID": 18,
+    "exclusives": [
+      "D"
+    ],
+    "diff": [
+      [
+        "堕天神ルシファー"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "678": {
+    "banner_name": "Almighties",
+    "enabled": true,
+    "series_ID": 18,
+    "exclusives": [
+      "N",
+      "D"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "679": {
+    "banner_name": "Almighties",
+    "enabled": true,
+    "series_ID": 18,
+    "exclusives": [
+      "R",
+      "D"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "680": {
+    "banner_name": "Welcome <year>!",
+    "enabled": true,
+    "series_ID": 16,
+    "exclusives": [],
+    "diff": [
+      [
+        "Musashi Miyamoto",
+        "High Lord Babel",
+        "Nekoluga",
+        "Aer",
+        "Kai",
+        "Nurse Cat",
+        "Kamukura",
+        "Wrathful Poseidon",
+        "Mighty Deth-Troy-R",
+        "White Knight Cyclops",
+        "Date Masamune",
+        "Adventurer Kanna"
+      ],
+      [
+        "Kyosaka Nanaho",
+        "Mighty Thermae D-Lux",
+        "Papaluga",
+        "Lasvoss",
+        "Gaia the Creator",
+        "Hell Warden Emma",
+        "Narita Kaihime",
+        "Gravi",
+        "Sharpshooter Saki",
+        "Hades the Punisher",
+        "Myrcia",
+        "Relentless Gladios"
+      ]
+    ],
+    "rate_ups": {
+      "5": [
+        "Years-End Neneko"
+      ]
+    }
+  },
+  "681": {
+    "banner_name": "Superfest",
+    "enabled": true,
+    "series_ID": 42,
+    "exclusives": [],
+    "diff": [
+      [
+        "踊り子イズ",
+        "堕天神ルシファー",
+        "Li'l Valkyrie Dark",
+        "Good-Luck Ebisu",
+        "Summoner Satoru",
+        "Shiro Amakusa",
+        "Hevijak the Wicked",
+        "Furiluga",
+        "Li'l Valkyrie",
+        "Yamii",
+        "Mighty Deth-Troy-R",
+        "Shitakiri Sparrow",
+        "White Knight Cyclops"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "682": {
+    "banner_name": "Epicfest",
+    "enabled": true,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "Mighty Deth-Troy-R",
+        "Shitakiri Sparrow",
+        "White Knight Cyclops",
+        "Yamii"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "683": {
+    "banner_name": "DynastyFest",
+    "enabled": true,
+    "series_ID": 47,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "684": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "堕天神ルシファー"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "685": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "踊り子イズ"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "686": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "堕天神ルシファー"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "687": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "踊り子イズ"
       ],
       []
     ],
