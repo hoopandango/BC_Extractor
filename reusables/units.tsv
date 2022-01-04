@@ -15,7 +15,7 @@ unit_ID	name_f	name_c	name_s
 13	Dom Cat	Executioner	Dark Lazer
 14	Cats in a Box	Cat Gang	Heavy Assault C.A.T.
 15	Panties Cat	Leaf Cat	Lollycat
-16	Moneko	Miss MONEKO	
+16	Moneko	Miss MONEKO	Superstar MONEKO
 17	Tricycle Cat	Biker Cat	Unicycle Cat
 18	Ninja Cat	Ninja Frog Cat	Flying Ninja Cat
 19	Zombie Cat	Devil Cat	Skelecat
@@ -306,7 +306,7 @@ unit_ID	name_f	name_c	name_s
 307	Vaulter Cat	Polevaulter Cat	Housewife Cat
 308	Gardener Cat	Lumbercat	Weedwacker Cat
 309	ネコ博士	ネコ博士＆ネコ	
-310	Yuletide Nurse	Yule Knight Nurse	
+310	Yuletide Nurse	Yule Knight Nurse	Xmas Spirit Nurse
 311	Li'l Fish Cat	Li'l Whale Cat	Li'l Island Cat
 312	Li'l Lizard Cat	Li'l Dragon Cat	Li'l King Dragon Cat
 313	Li'l Titan Cat	Li'l Mythical Titan	Li'l Jamiera Cat
@@ -346,7 +346,7 @@ unit_ID	name_f	name_c	name_s
 349	ぐでぐでプリン	ぐでぐでアラモード	
 350	ニセたま軍団	ネコニセたま軍団	
 351	Twinstars	Twinstars, type Φ	Divine Twinstars
-352	Hermit Cat	Grandmaster Cat	
+352	Hermit Cat	Grandmaster Cat	Masked Grandmaster Cat
 353	チョコレート	チョコレート進化	354_3
 354	Seashore Kai	Seashore Kai, type μ	
 355	Mighty Rekon Korps	Orbital Platform Armageddon	Orbital Annihilator Ragnarok
@@ -577,7 +577,7 @@ unit_ID	name_f	name_c	name_s
 581	Stone Cat	Boulder Cat	
 582	Hatsune Miku: MM2020 Osaka	Hatsune Miku CC: MM2020 Osaka	
 583	Hatsune Miku: MM2020 Tokyo	Hatsune Miku CC: MM2020 Tokyo	
-584	Keiji Claus	Maeda Christmas	
+584	Keiji Claus	Maeda Christmas	Maeda Christmas DX
 585	Baby Garu	Mighty Aegis Garu	
 586	Emperor Cat	Tyrant Cat	
 587	Sweet Aphrodite	Chocoladite	
@@ -623,10 +623,17 @@ unit_ID	name_f	name_c	name_s
 627	ネコノトリッキー	天馬ネコノトリッキー	
 628	ネコノドラゴーン	名馬ネコノドラゴーン	
 629	Brainwashed Cat	Brainwashed Macho Cat	
-630	ネコ書道	ネコ茶道	
+630	Calligraphy Cat	Tea Master Cat	
 631	Yamii	Yaminoir	
 632	Mighty Deth-Troy-R	Siege Walker Diabolosa	
-633	舌切りすずめ	妖怪結社チュンチュン	
-634	白騎士キュクロプス	黒騎士キュクロプス	
+633	Shitakiri Sparrow	Chunchun Haunters	
+634	White Knight Cyclops	Black Knight Kyklops	
 635	100万ドルのネコ	1億ドルのネコ	
-636	洗脳されしタンクネコ	洗脳されしネコカベ	
+636	Brainwashed Tank Cat	Brainwashed Wall Cat	
+637	シャオチョン＆ネコ	シャオチョン＆ネコCC	
+638	ナナ＆ネコ	ナナ＆ネコCC	
+639	エミリア＆ネコ	エミリア&ネコCC	
+640	ジェアー＆ネコ	ジェアー＆ネコCC	
+641	踊り子イズ	魅惑の舞姫イズ	
+642	堕天神ルシファー	グランドルシファー	
+643	ネコ超人	ネコ超人Ⅱ	

@@ -23,14 +23,14 @@
 				"main": "latest_en\\resLocal\\GatyaitemName.csv",
 				"gib": "latest_en\\DataLocal\\Gatyaitembuy.csv"
 			},
-			"gatya":{
+			"gatya": {
 				"option": "latest_en\\DataLocal\\GatyaData_Option_SetR.tsv",
 				"data": "latest_en\\DataLocal\\GatyaDataSetR1.csv"
 			},
-			"units":{
+			"units": {
 				"name": "latest_en\\resLocal\\"
 			},
-			"sales":{
+			"sales": {
 				"itempack": "latest_en\\DataLocal\\itemPack.tsv",
 				"localisable": "latest_en\\resLocal\\localizable.tsv"
 			}
@@ -51,14 +51,14 @@
 				"main": "latest_jp\\resLocal\\GatyaitemName.csv",
 				"gib": "latest_jp\\DataLocal\\Gatyaitembuy.csv"
 			},
-			"gatya":{
+			"gatya": {
 				"option": "latest_jp\\DataLocal\\GatyaData_Option_SetR.tsv",
 				"data": "latest_jp\\DataLocal\\GatyaDataSetR1.csv"
 			},
-			"units":{
+			"units": {
 				"name": "latest_jp\\resLocal\\"
 			},
-			"sales":{
+			"sales": {
 				"itempack": "latest_jp\\DataLocal\\itemPack.tsv",
 				"localisable": "latest_jp\\resLocal\\localizable.tsv"
 			}

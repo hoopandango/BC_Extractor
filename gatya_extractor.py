@@ -73,7 +73,7 @@ def name_of(ID:int)->str:
 default_units = {"Cutter Cat":"Grandon","Neneko":"Neneko&Friends","Freshman Cat Jobs":"Reinforcements"}
 blacklist = {"Freshman Cat Jobs", "Rich Cat III", "Sniper the Recruit", "Cat Base Mini", "Gold Cat", "Neneko", "Metal Cat", "Driller Cat", "Piledriver Cat", "Cutter Cat", "Backhoe Cat", "Miter Saw Cat"}
 """
-default_units = {445: 'G', 131: 'N', 237: 'R'}
+default_units = {445: 'D', 131: 'N', 237: 'R'}
 blacklist = {129, 131, 200, 237, 238, 239, 144, 443, 444, 445, 446, 447}
 headbackups = [-1]*len(series)
 
@@ -192,7 +192,7 @@ def process_all():
 		# END OF PRINTING
 		#"banner_ID" -> "banner_name","exclusives","rate_ups","diff+","diff-","enabled","series_ID"
 		#"banner_ID" -> "units_in_banner"
-		row = [serie,str(excl),str(dict(bonuses)),str(diff),is_enabled(ID), s_ID]
+		row = [serie,str(excl),str(dict(bonuses)),str([list(diff[0]),list(diff[1])]),is_enabled(ID), s_ID]
 
 		df_main.loc[ID] = row
 		

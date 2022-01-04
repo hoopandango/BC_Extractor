@@ -4,7 +4,7 @@ import regex as re
 
 class Downloaders:
 	#TODO: 9 = missions, 18 = slots, 19 = talking cat rewards
-	prefixes = {0:'N', 1:'S', 2:'C', 6:'T', 7:'V', 11:'R', 12:'M', 13:'NA', 14:'B', 24:'A', 25:'H', 27:'A'}
+	prefixes = {0:'N', 1:'S', 2:'C', 6:'T', 7:'V', 11:'R', 12:'M', 13:'NA', 14:'B', 24:'A', 25:'H', 27:'CA'}
 	@staticmethod
 	def requestStage(ID:int, lng:str):
 		prefix = "https://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/stage/"

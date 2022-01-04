@@ -196,6 +196,7 @@ class GatyaFetcher(UniversalFetcher):
 			if event['page'] in ('Rare Capsule','Event Capsule') and int(event["ID"]) > 0:
 				print('%s%s'%(GatyaParsers.getString(event)))
 		print('```')
+		print("Legend for Gatya:\nG = Guaranteed, SU = Step-Up, PS = Platinum Shard, L = Lucky Ticket, N = Neneko and Friends, R = Reinforcement, D = Grandons")
 
 	def printGatyaHTML(self):
 		print('<h4>Gatya:</h4><ul>')
@@ -752,9 +753,8 @@ def test():
 	gf.readRawData()
 	gf.exportGatya()
 	gf.printGatya()
-	gf.printGatyaHTML()
 
-	sf = StageFetcher(f=['N'],v='en')
+	sf = StageFetcher(f=['N','Y'],v='en')
 	sf.fetchRawData()
 	sf.readRawData(storeRejects=True)
 	sf.groupData()
