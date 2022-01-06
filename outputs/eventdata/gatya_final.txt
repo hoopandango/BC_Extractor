@@ -1,23 +1,19 @@
-- 27 Dec~1 Jan: Royalfest [L]
-- 27~29 Dec: Nekolugas [PS/L] (+ Furiluga)
-- 29 Dec~1 Jan: Galaxy Gals [PS/L] (+ Lilin)
-- 1~4 Jan: Uberfest [L]
-- 4~6 Jan: Dark Heroes [PS/L] (+ Sharpshooter Saki)
-- 6~10 Jan: DynastyFest [L] (+ Kaguya of the Coast)
-- 6~8 Jan: Dynamites [PS/L] (+ Summoner Satoru)
-- 8~10 Jan: Ultra Souls [PS/L] (+ Kintaro)
+- 9~17 Jan: 高確率でキャッツアイが手に入るイベント限定特別ガチャ！
+- 6~8 Jan: Iron Legion [PS/L/N]
+- 8~11 Jan: Welcome <year>! [G/L] {5x rate on Years-End Neneko}
+- 8~11 Jan: Dynamites [G/L/R]
+- 11~14 Jan: Nekolugas [PS/L/N]
+- 14~17 Jan:  [L]
 
-- 3 May~...: 『＋４キャラ』生きろ！マンボウ！
-- 16 Apr~...: 『支援隊入り』生きろ！マンボウ！
-- 22 Oct~...: Platinum Ticket Banner (+ Shiro Amakusa)
-- 5 Nov~...: Platinum Ticket Banner (+ Summoner Satoru)
-- 19 Nov~...: Platinum Ticket Banner (+ Hevijak the Wicked)
-- 22 Nov~...: Legend Ticket Banner (+ Hevijak the Wicked)
-- 26 Nov~...: Platinum Ticket Banner (+ Furiluga)
-- 26 Nov~...: Legend Ticket Banner (+ Furiluga)
-- 13~27 Dec: Xmas Gals [PS] (+ Brainwashed Tank Cat)
-- 22~24 Dec: Almighties [PS/N]
-- 24~27 Dec: Elemental Pixies [G/N]
-- 24~27 Dec: Xmas Gals [G] (+ Brainwashed Tank Cat)
-- 24 Dec~...: Legend Ticket Banner (+ Yamii)
-- 24 Dec~...: Platinum Ticket Banner (+ Yamii)
+- 26 Apr~...: 『＋４キャラ』生きろ！マンボウ！
+- 16 Mar~...: 『支援隊入り』生きろ！マンボウ！
+- 8 Dec~...: クリスマスギャルズ
+- 26 Nov~...: Legend Ticket Banner (+ Shitakiri Sparrow)
+- 26 Nov~...: Platinum Ticket Banner (+ Shitakiri Sparrow)
+- 24 Dec~...: Legend Ticket Banner (+ 堕天神ルシファー)
+- 24 Dec~...: Platinum Ticket Banner (+ 堕天神ルシファー)
+- 1~9 Jan: 高確率でマタタビが手に入るイベント限定特別ガチャ！
+- 1 Jan~...: Legend Ticket Banner (+ 踊り子イズ)
+- 1 Jan~...: Platinum Ticket Banner (+ 踊り子イズ)
+- 4~11 Jan: Welcome <year>! [L] {5x rate on Years-End Neneko}
+- 4~6 Jan: Ultra Souls [PS/L/R]

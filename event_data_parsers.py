@@ -1,4 +1,4 @@
-import json 
+import json
 import datetime
 from z_downloaders import Downloaders
 import pandas as pd
@@ -12,158 +12,154 @@ with open('_config.json') as fl:
 # endregion
 
 class UniversalParsers:
-	itemdata = []
-
-	with open(config['outputs']['stages'], encoding='utf-8', newline = '') as csvfile:
-		autoEventNames = pd.read_csv(csvfile, delimiter='\t',index_col='ID')
+	with open(config['outputs']['stages'], encoding='utf-8', newline='') as csvfile:
+		autoEventNames = pd.read_csv(csvfile, delimiter='\t', index_col='ID')
 	
-	with open("extras\\events.tsv", encoding='utf-8', newline = '') as csvfile:
-		manualEventNames = pd.read_csv(csvfile, delimiter='\t',index_col='ID')
+	with open("extras\\events.tsv", encoding='utf-8', newline='') as csvfile:
+		manualEventNames = pd.read_csv(csvfile, delimiter='\t', index_col='ID')
 		allEventNames = autoEventNames.append(manualEventNames)
-		
-		
-	with open(config['outputs']['items'], encoding = 'utf-8', newline='') as csvfile:
-		itemdata = pd.read_csv(csvfile, delimiter='\t',index_col='ID')
-
+	
+	with open(config['outputs']['items'], encoding='utf-8', newline='') as csvfile:
+		itemdata = pd.read_csv(csvfile, delimiter='\t', index_col='ID')
+	
 	@staticmethod
 	def fancyDate(datesall: list):
 		toret = "- "
-		for dates in zip(datesall[0::2],datesall[1::2]):
+		for dates in zip(datesall[0::2], datesall[1::2]):
 			
-			if (dates[1] - dates[0]).days > 365:   # Forever Events
+			if (dates[1] - dates[0]).days > 365:  # Forever Events
 				toret += f"{dates[0].strftime('%d %b').lstrip('0')}~..."
-
-			elif dates[0].month == dates[1].month:   # Events that don't cross months
-				if dates[0].day == dates[1].day:   # Events that only last one day or less
+			
+			elif dates[0].month == dates[1].month:  # Events that don't cross months
+				if dates[0].day == dates[1].day:  # Events that only last one day or less
 					toret += dates[1].strftime('%d %b').lstrip('0')
 				else:
-					toret += '~'.join([dates[0].strftime('%d').lstrip('0'),dates[1].strftime('%d %b').lstrip('0')])
-
+					toret += '~'.join([dates[0].strftime('%d').lstrip('0'), dates[1].strftime('%d %b').lstrip('0')])
+			
 			else:  # Events that cross months
 				toret += '~'.join([x.strftime('%d %b').lstrip('0') for x in dates])
-		
+			
 			toret += ', '
-
+		
 		return toret[:-2] + ": "
-
+	
 	@staticmethod
 	def fancyTimes(timesall: list):
 		toret = ""
 		if len(timesall) == 0:
 			return "All Day"
 		for time in timesall:
-			if(time['end'].hour == 23 and time['start'].hour == 0): 
+			if (time['end'].hour == 23 and time['start'].hour == 0):
 				return "All Day"
 			toret += f"{time['start'].strftime('%I%p').lstrip('0')}~{time['end'].strftime('%I%p').lstrip('0')}"
 			toret += ', '
-
-		return toret[:-2]
 		
+		return toret[:-2]
+	
 	@staticmethod
-	def areValidDates(dates: list,filters :list,date0 = datetime.datetime.today()):
+	def areValidDates(dates: list, filters: list, date0=datetime.datetime.today()):
 		if len(filters) > 0:
 			if 'N' in filters:
-				if ((dates[1] - dates[0]).days > 31 and not (dates[0]-date0).days >= 1):
+				if ((dates[1] - dates[0]).days > 31 and not (dates[0] - date0).days >= 1):
 					return False
 			elif 'M' in filters:
 				if (dates[1] - dates[0]).days > 31:  # If event lasts longer than a month
 					return False
-			if 'Y' in filters:  
-				if (date0-dates[0]).days > -1:  # If event started today or earlier
+			if 'Y' in filters:
+				if (date0 - dates[0]).days > -1:  # If event started today or earlier
 					return False
 		if (date0 - dates[1]).days > 365:  # Default Filter - Ignore (most) discontinued events
 			return False
 		return True
-
+	
 	@classmethod
-	def getdates(cls,data):
-		return [cls.formatDate(data[0]+data[1]),cls.formatDate(data[2]+data[3])]
-
+	def getdates(cls, data):
+		return [cls.formatDate(data[0] + data[1]), cls.formatDate(data[2] + data[3])]
+	
 	@staticmethod
 	def getversions(data):
 		return data[4], data[5]
-
+	
 	@staticmethod
 	def formatDate(s):
 		return datetime.datetime.strptime(s, '%Y%m%d%H%M')
 	
 	@classmethod
-	def getEventName(cls,ID:int,lng:str='en'):
+	def getEventName(cls, ID: int):
 		# not used by gatya
 		try:
-			name = cls.allEventNames.loc[ID,"name"]
+			name = cls.allEventNames.loc[ID, "name"]
 			if (25000 > int(ID) > 24000 or 28000 > int(ID) > 27000):
 				name += ' (Baron)'
 			return name
-		except:
-			name = Downloaders.requestStage(ID,'en')
+		except KeyError:
+			name = Downloaders.requestStage(ID, 'en')
 			if name != 'Unknown':
 				# updates name
-				cls.autoEventNames.loc[ID,"name"] = name
+				cls.autoEventNames.loc[ID, "name"] = name
 			return name
 	
 	@classmethod
-	def getItem(cls,ID:int):
+	def getItem(cls, ID: int):
 		try:
-			return cls.itemdata.loc[ID,"name"]
+			return cls.itemdata.loc[ID, "name"]
 		except KeyError:
 			return 'Unknown'
-
+	
 	@classmethod
 	def updateEventNames(cls):
-		with open(config['outputs']['stages'], 'w', encoding='utf-8', newline = '') as fil:
-			cls.autoEventNames.to_csv(fil, sep='\t',index=True)
+		with open(config['outputs']['stages'], 'w', encoding='utf-8', newline='') as fil:
+			cls.autoEventNames.to_csv(fil, sep='\t', index=True)
 
 
 class GatyaParsers(UniversalParsers):
-	def __init__():
-		UniversalParsers.__init__()
+	def __init__(self):
+		UniversalParsers.__init__(self)
 	
-	gatyaLocal = pd.read_json(config["outputs"]["gatya_json"],orient='index')
-
+	gatyaLocal = pd.read_json(config["outputs"]["gatya_json"], orient='index')
+	
 	@staticmethod
-	def getCategory(banner: list)->str:
+	def getCategory(banner: list) -> str:
 		# tells which category of capsule is in this banner
 		p = banner[8]
 		if p == "0":
-			return "Cat Capsule" #Normal, lucky, G, catseye, catfruit, etc : uses GatyaDataSetN1.csv
+			return "Cat Capsule"  # Normal, lucky, G, catseye, catfruit, etc : uses GatyaDataSetN1.csv
 		if p == "1":
-			return "Rare Capsule" #Rare, platinum : uses GatyaDataSetR1.csv
-
-		return "Event Capsule" #Some other page like bikkuri choco shit, etc, or some old-ass banners that don't exist now idk
-
+			return "Rare Capsule"  # Rare, platinum : uses GatyaDataSetR1.csv
+		
+		return "Event Capsule"  # bikkuri, etc.
+	
 	@staticmethod
 	def getValueAtOffset(banner: list, i: int):
-		slot = int(banner[9])-1
+		slot = int(banner[9]) - 1
 		# each slot is 15 columns wide
-		offset = 15*slot
+		offset = 15 * slot
 		return banner[i + offset]
-
+	
 	@staticmethod
 	def getGatyaRates(banner: list):
 		rates = []
 		for i in range(5):
-			rates.append(GatyaParsers.getValueAtOffset(banner, 14 + 2*i)) #14,16,18,20,22
+			rates.append(GatyaParsers.getValueAtOffset(banner, 14 + 2 * i))  # 14,16,18,20,22
 		return rates
-
+	
 	@staticmethod
 	def getGuarantees(banner: list):
 		G = []
 		for i in range(5):
-			G.append(GatyaParsers.getValueAtOffset(banner, 15 + 2*i)) #15,17,19,21,23
+			G.append(GatyaParsers.getValueAtOffset(banner, 15 + 2 * i))  # 15,17,19,21,23
 		return G
 	
 	@classmethod
-	def getGatyaLocal(cls,ID:int,category:str)->tuple:
-		toret = {"banner_name":"","exclusives":[],"rate_ups":{},"diff":[[],[]]}
-
+	def getGatyaLocal(cls, ID: int, category: str) -> dict:
+		toret = {"banner_name": "", "exclusives": [], "rate_ups": {}, "diff": [[], []]}
+		
 		try:
 			# breaks very very rarely
 			ID = int(ID)
 		except ValueError:
-			ID = 0
 			return toret
-
+		
 		if (category == "Rare Capsule"):
 			try:
 				toret = cls.gatyaLocal.loc[ID].to_dict()
@@ -175,220 +171,220 @@ class GatyaParsers(UniversalParsers):
 			requested = Downloaders.requestGatya(ID, 'en', category)
 			if requested.startswith("Request Failed"):
 				requested = "Unknown"
-			toret["banner_name"] = requested			
+			toret["banner_name"] = requested
 		return toret
-
+	
 	@classmethod
-	def getExtras(cls,banner: list)->list:
+	def getExtras(cls, banner: list) -> list:
 		toret = []
-		extras = int(cls.getValueAtOffset(banner,13))
+		extras = int(cls.getValueAtOffset(banner, 13))
 		severID = (extras >> 4) & 1023
 		
 		if extras & 4:
 			toret.append('SU')  # Step-up
 		if extras & 16384:
 			toret.append('PS')  # Platinum Shard
-
+		
 		if not extras & 8:
-			return toret # No item drops
+			return toret  # No item drops
 		# if it has item drops:
-		item = cls.itemdata.loc[cls.itemdata["severID"] == severID,"name"]
+		item = cls.itemdata.loc[cls.itemdata["severID"] == severID, "name"]
 		if item.to_list()[0] == 'Lucky Ticket':
 			toret.append('L')  # Has lucky ticket
 		return toret
-
+	
 	@staticmethod
-	def getString(banner)->tuple:
+	def getString(banner) -> tuple:
 		# tuple (datestring, reststring)
 		bonuses = []
-
+		
 		if banner["guarantee"][3] == '1': bonuses.append('G')
 		bonuses.extend(banner["extras"])
 		bonuses.extend([x for x in banner["exclusives"] if x != 'D'])
 		bonusesStr = f" [{'/'.join(bonuses)}]" if len(bonuses) > 0 else ''
-
+		
 		diff = f' (+ {", ".join(banner["diff"][0])})' if 5 > len(banner["diff"][0]) > 0 else ''
-
-		rate_ups = " {"+", ".join([f"{K}x rate on {', '.join(V)}" for (K,V) in banner["rate_ups"].items()])+"}" if len(banner["rate_ups"]) > 0 else ''
+		
+		rate_ups = " {" + ", ".join([f"{K}x rate on {', '.join(V)}" for (K, V) in banner["rate_ups"].items()]) + "}" if len(
+			banner["rate_ups"]) > 0 else ''
 		
 		name = banner['banner_name'] if banner['banner_name'] != 'Unknown' else banner['text']
-		return (GatyaParsers.fancyDate(banner['dates']),'%s%s%s%s'%(name,bonusesStr,diff,rate_ups))
+		return (GatyaParsers.fancyDate(banner['dates']), '%s%s%s%s' % (name, bonusesStr, diff, rate_ups))
 
 
 class StageParsers(UniversalParsers):
-	def __init__():
-		UniversalParsers.__init__()
-
+	def __init__(self):
+		UniversalParsers.__init__(self)
+	
 	@staticmethod
 	def formatTime(t):
 		if t == "2400":
 			t = "2359"
 		if t == "0":
 			t = "0000"
-		if len(t) == 3:  #fixes time if hour is < 10am
+		if len(t) == 3:  # fixes time if hour is < 10am
 			t = '0' + t
 		dt = datetime.datetime.strptime(t, '%H%M')
-		return datetime.time(dt.hour,dt.minute)
-
+		return datetime.time(dt.hour, dt.minute)
+	
 	@staticmethod
-	def formatMDHM(s,t):
+	def formatMDHM(s, t):
 		if t == "2400":
 			t = "2359"
 		if t == "0":
 			t = "0000"
 		if len(s) == 3:  # fixes date if month isn't nov or dec
 			s = '0' + s
-
-		return datetime.datetime.strptime(s+t, '%m%d%H%M')
+		
+		return datetime.datetime.strptime(s + t, '%m%d%H%M')
 	
 	@staticmethod
 	def binaryweekday(N):
 		list_to_return = [int(x) for x in list(bin(N))[2:][::-1]]
-		while len(list_to_return)<7:
+		while len(list_to_return) < 7:
 			list_to_return.append(0)
 		return list_to_return
-
+	
 	@classmethod
-	def yearly(cls,data):
+	def yearly(cls, data):
 		numberOfPeriods = int(data[7])
 		n = 8
-		output = [dict() for x in range(numberOfPeriods)]
+		output = [dict() for _ in range(numberOfPeriods)]
 		IDs = []
 		for i in range(numberOfPeriods):
 			
-			times, n = int(data[n]), n+1
-			output[i]["times"] = [dict() for x in range(times)]
+			times, n = int(data[n]), n + 1
+			output[i]["times"] = [dict() for _ in range(times)]
 			
 			for j in range(times):
-				startDate, n = data[n], n+1
-				startTime, n = data[n], n+1
-				endDate, n = data[n], n+1
-				endTime, n = data[n], n+1
-				output[i]["times"][j]["start"] = cls.formatMDHM(startDate,startTime)
-				output[i]["times"][j]["end"] = cls.formatMDHM(endDate,endTime)
-				if output[i]["times"][j]["end"] < output[i]["times"][j]["start"]:  
+				startDate, n = data[n], n + 1
+				startTime, n = data[n], n + 1
+				endDate, n = data[n], n + 1
+				endTime, n = data[n], n + 1
+				output[i]["times"][j]["start"] = cls.formatMDHM(startDate, startTime)
+				output[i]["times"][j]["end"] = cls.formatMDHM(endDate, endTime)
+				if output[i]["times"][j]["end"] < output[i]["times"][j]["start"]:
 					# this means the event ends the next year, like it starts on christmas and lasts for 2 weeks
 					output[i]["times"][j]["end"] = output[i]["times"][j]["end"].replace(year=1901)
-					
 			
-			n = n + 3 #trailing zeros
+			n = n + 3  # trailing zeros
 		
-		nIDs, n = int(data[n]), n+1
-		for k in range(max(nIDs,1)):
-			ID, n = int(data[n]), n+1
+		nIDs, n = int(data[n]), n + 1
+		for k in range(max(nIDs, 1)):
+			ID, n = int(data[n]), n + 1
 			if nIDs > 0:
 				IDs.append(ID)
-				
+		
 		return output, IDs
-
+	
 	@classmethod
-	def monthly(cls,data):
+	def monthly(cls, data):
 		numberOfPeriods = int(data[7])
 		n = 9
-		output = [dict() for x in range(numberOfPeriods)]
+		output = [dict() for _ in range(numberOfPeriods)]
 		IDs = []
 		for i in range(numberOfPeriods):
 			
-			dates, n = int(data[n]), n+1
-			output[i]["dates"] = [""]*int(dates)
+			dates, n = int(data[n]), n + 1
+			output[i]["dates"] = [""] * int(dates)
 			for u in range(int(dates)):
-				output[i]["dates"][u], n = data[n], n+1
+				output[i]["dates"][u], n = data[n], n + 1
 			
-			n = n+1 #Trailing zero
+			n = n + 1  # Trailing zero
 			
-			times, n = int(data[n]), n+1
-			output[i]["times"] = [dict() for x in range(times)]
-			
+			times, n = int(data[n]), n + 1
+			output[i]["times"] = [dict() for _ in range(times)]
 			
 			for j in range(times):
-				start, n = data[n], n+1
-				end, n = data[n], n+1
+				start, n = data[n], n + 1
+				end, n = data[n], n + 1
 				output[i]["times"][j]["start"] = cls.formatTime(start)
 				output[i]["times"][j]["end"] = cls.formatTime(end)
-		
-			nIDs, n = int(data[n]), n+1
+			
+			nIDs, n = int(data[n]), n + 1
 			for k in range(nIDs):
-				ID, n = int(data[n]), n+1
+				ID, n = int(data[n]), n + 1
 				if nIDs > 0:
 					IDs.append(ID)
-				
+		
 		return output, IDs
-
+	
 	@classmethod
-	def weekly(cls,data):
+	def weekly(cls, data):
 		numberOfPeriods = int(data[7])
 		n = 10
-		output = [dict() for x in range(numberOfPeriods)]
+		output = [dict() for _ in range(numberOfPeriods)]
 		IDs = []
 		for i in range(numberOfPeriods):
 			
-			weekdays, n = cls.binaryweekday(int(data[n])), n+1
+			weekdays, n = cls.binaryweekday(int(data[n])), n + 1
 			output[i]["weekdays"] = weekdays
-			times, n = int(data[n]), n+1
-			output[i]["times"] = [dict() for x in range(times)]
+			times, n = int(data[n]), n + 1
+			output[i]["times"] = [dict() for _ in range(times)]
 			
 			for j in range(times):
-				start, n = data[n], n+1
-				end, n = data[n], n+1
+				start, n = data[n], n + 1
+				end, n = data[n], n + 1
 				output[i]["times"][j]["start"] = cls.formatTime(start)
 				output[i]["times"][j]["end"] = cls.formatTime(end)
 			
-			nIDs, n = int(data[n]), n+1
+			nIDs, n = int(data[n]), n + 1
 			
-			for k in range(max(nIDs,1)):
-				ID, n = int(data[n]), n+1
+			for k in range(max(nIDs, 1)):
+				ID, n = int(data[n]), n + 1
 				if nIDs > 0:
 					IDs.append(ID)
 		
 		return output, IDs
-
+	
 	@classmethod
-	def daily(cls,data):
+	def daily(cls, data):
 		numberOfPeriods = int(data[7])
 		n = 11
-		output = [dict() for x in range(numberOfPeriods)]
+		output = [dict() for _ in range(numberOfPeriods)]
 		IDs = []
 		for i in range(numberOfPeriods):
 			
-			times, n = int(data[n]), n+1
-			output[i]["times"] = [dict() for x in range(times)]
+			times, n = int(data[n]), n + 1
+			output[i]["times"] = [dict() for _ in range(times)]
 			
 			for j in range(times):
-				startTime, n = data[n], n+1
-				endTime, n = data[n], n+1
+				startTime, n = data[n], n + 1
+				endTime, n = data[n], n + 1
 				output[i]["times"][j]["start"] = cls.formatTime(startTime)
 				output[i]["times"][j]["end"] = cls.formatTime(endTime)
 		
-		nIDs, n = int(data[n]), n+1
-		for k in range(max(nIDs,1)):
-			ID, n = int(data[n]), n+1
+		nIDs, n = int(data[n]), n + 1
+		for k in range(max(nIDs, 1)):
+			ID, n = int(data[n]), n + 1
 			if nIDs > 0:
 				IDs.append(ID)
 		
 		return output, IDs
-
+	
 	@staticmethod
 	def interpretDates(dates: np.array) -> tuple:
 		# takes in dates array and the number of days in the month in which they start
 		# returns a 3-tuple -> (group_size, starting_date, ending_date)
-		if len(dates) <= 4: # don't group these
-			return (0,0,0)
+		if len(dates) <= 4:  # don't group these
+			return (0, 0, 0)
 		diffs = list(np.diff(dates))
 		mode = max(set(diffs), key=diffs.count)
-		outliers = [i for i,x in enumerate(diffs) if x != mode]
+		outliers = [i for i, x in enumerate(diffs) if x != mode]
 		if len(outliers) > 1:
 			# there can be at most one gap in any patterned data
-			return (0,0,0)
+			return (0, 0, 0)
 		elif len(outliers) == 0:
 			# there is no gap, assume all events to be happening in the same month
 			return (mode, min(dates), max(dates))
 		else:
 			# there is a gap, repetition started after it and ended at it
-			# a better algorithm would check whether or not there is an actual rollover taking in the number of days in the month as a parameter
-			return (mode, dates[outliers[0]+1], dates[outliers[0]])
-		# this algorithm ignores month rollover diff [-1->0], and can give false positives, but they are not expected
+			# a better algorithm would check whether or not there is an actual rollover
+			# taking in the number of days in the month as a parameter
+			return (mode, dates[outliers[0] + 1], dates[outliers[0]])
+			# this algorithm ignores month rollover diff [-1->0], and can give false positives, but they are not expected
 
 
 class ItemParsers(UniversalParsers):
-	def __init__():
-		UniversalParsers.__init__()
+	def __init__(self):
+		UniversalParsers.__init__(self)
