@@ -87,6 +87,13 @@ class UniversalParsers:
 	@classmethod
 	def getEventName(cls, ID: int):
 		# not used by gatya
+		if (18000 <= ID < 18100):
+			if(ID == 18000):
+				return "Anniversary Slots"
+			return "Unknown Slots"
+		elif (ID >= 18100):
+			return "Scratch Cards Event"
+		
 		try:
 			name = cls.allEventNames.loc[ID, "name"]
 			if (25000 > int(ID) > 24000 or 28000 > int(ID) > 27000):
@@ -152,7 +159,7 @@ class GatyaParsers(UniversalParsers):
 	
 	@classmethod
 	def getGatyaLocal(cls, ID: int, category: str) -> dict:
-		toret = {"banner_name": "", "exclusives": [], "rate_ups": {}, "diff": [[], []]}
+		toret = {"banner_name": "Unknown", "exclusives": [], "rate_ups": {}, "diff": [[], []]}
 		
 		try:
 			# breaks very very rarely
@@ -388,3 +395,12 @@ class StageParsers(UniversalParsers):
 class ItemParsers(UniversalParsers):
 	def __init__(self):
 		UniversalParsers.__init__(self)
+
+class MissionParsers(UniversalParsers):
+	def __init__(self):
+		UniversalParsers.__init__(self)
+	
+	@classmethod
+	def IDtoMission(cls, ID: int):
+		return 10
+	

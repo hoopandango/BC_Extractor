@@ -33,7 +33,12 @@
 			"sales": {
 				"itempack": "latest_en\\DataLocal\\itemPack.tsv",
 				"localisable": "latest_en\\resLocal\\localizable.tsv"
-			}
+			},
+            "missions": {
+                "text": "latest_en\\resLocal\\Mission_Name.csv",
+                "prize": "latest_en\\DataLocal\\Mission_Data.csv",
+                "fill": "latest_en\\DataLocal\\Mission_Condition.csv"
+            }
 		},
 		"jp": {
 			"combos": {
@@ -61,10 +66,15 @@
 			"sales": {
 				"itempack": "latest_jp\\DataLocal\\itemPack.tsv",
 				"localisable": "latest_jp\\resLocal\\localizable.tsv"
-			}
-		}
-	},
-	"intermediates": {
+			},
+            "missions": {
+                "text": "latest_jp\\resLocal\\Mission_Name.csv",
+                "prize": "latest_jp\\DataLocal\\Mission_Data.csv",
+                "fill": "latest_jp\\DataLocal\\Mission_Condition.csv"
+            }
+        }
+    },
+  "intermediates": {
 		"combos": "out_intermediates\\catcombos.db"
 	},
 	"outputs": {
@@ -77,6 +87,7 @@
 		"gatya_json": "reusables\\gatya.json",
 		"sales": "reusables\\sales.tsv",
 		"stages": "reusables\\stages.tsv",
-		"eventdata": "outputs\\eventdata\\"
+		"eventdata": "outputs\\eventdata\\",
+        "missions": "reusables\\missions.tsv"
 	}
 }

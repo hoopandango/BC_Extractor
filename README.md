@@ -51,3 +51,4 @@ The rest should hopefully have self-explanatory titles.
 * **v 0.1.2** - patched duplicate merging bug, caused by popping elements in the container that I'm iterating over.
 * **v 0.1.3** - fixed duplicate merging shenanigans for good. Added improved interpretation for monthly and weekly recurring events.
 * **v 0.1.4** - reformatted code, removed unnecessary variables.
+* **v 0.2.0** - ItemFetcher is now functional, added a draft of missions extractor[WIP]

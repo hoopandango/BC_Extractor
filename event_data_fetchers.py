@@ -674,7 +674,7 @@ class ItemFetcher(UniversalFetcher):
 		if (datetime.datetime.today() - self.date0).days > 60:
 			self.fetchLocalData(self.date0)
 			return
-		url = 'https://bc-seek.godfat.org/seek/%s/item.tsv' % (self.ver)
+		url = 'https://clamchowder.pythonanywhere.com/event_data/battlecats%s_production/item.tsv' % (self.ver)
 		response = urllib.request.urlopen(url)
 		lines = [l.decode('utf-8') for l in response.readlines()]
 		cr = csv.reader(lines, delimiter="\t")
@@ -685,6 +685,7 @@ class ItemFetcher(UniversalFetcher):
 	
 	def fetchLocalData(self, date):
 		# d0 = int(date.strftime('%Y%m%d')+'000000')
+		# TODO : not working, replace with test suite
 		d0 = int(date + '000000')
 		mypath = 'Archive\\en\\item\\'
 		arr = os.listdir(mypath)
@@ -715,7 +716,7 @@ class ItemFetcher(UniversalFetcher):
 				dic = {
 					'dates': ItemParsers.getdates(data),
 					'versions': ItemParsers.getversions(data),
-					'IDs': [data[9]],
+					'IDs': [int(data[9])],
 					'qty': data[10],
 					'text': data[11],
 					'recurring': int('0' + data[15])
@@ -740,7 +741,7 @@ class ItemFetcher(UniversalFetcher):
 		return (self.finalStages, self.sales)
 	
 	def printItemData(self):
-		print('```Items:')
+		print('```\nItems:')
 		for pt, item in enumerate(self.refinedItems):
 			if item['name'] in ['Leadership', 'Rare Ticket'] and item['dates'][0].day == 22 and item['dates'][
 				1].day == 22:
@@ -798,7 +799,18 @@ def test():
 	sf.readRawData(storeRejects=True)
 	sf.groupData()
 	sf.finalProcessing()
-	sf.printStages(*sf.getStageData())
+	sd0 = sf.getStageData()
+	
+	itf = ItemFetcher(fls=['N', 'Y'], v='jp')
+	itf.fetchRawData()
+	itf.readRawData()
+	itf.groupData()
+	
+	sd1 = itf.getStageData()
+	
+	sd0[0].extend(sd1[0])
+	sd0[1].extend(sd1[1])
+	sf.printStages(*sd0)
 	sf.printFestivalData()
 	sf.exportStages()
 	StageParsers.updateEventNames()
