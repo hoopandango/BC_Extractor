@@ -54,7 +54,8 @@
 			},
 			"items": {
 				"main": "latest_jp\\resLocal\\GatyaitemName.csv",
-				"gib": "latest_jp\\DataLocal\\Gatyaitembuy.csv"
+				"gib": "latest_jp\\DataLocal\\Gatyaitembuy.csv",
+                "dropchara": "latest_jp\\DataLocal\\drop_chara.csv"
 			},
 			"gatya": {
 				"option": "latest_jp\\DataLocal\\GatyaData_Option_SetR.tsv",
@@ -88,6 +89,9 @@
 		"sales": "reusables\\sales.tsv",
 		"stages": "reusables\\stages.tsv",
 		"eventdata": "outputs\\eventdata\\",
-        "missions": "reusables\\missions.tsv"
+        "missions": "reusables\\missions.tsv",
+        "substages": "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-StageName.txt",
+        "enemies": "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-EnemyName.txt",
+        "combos2": "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-ComboName.txt"
 	}
 }

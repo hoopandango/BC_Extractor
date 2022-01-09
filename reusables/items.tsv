@@ -164,6 +164,7 @@ ID	name	severID
 162	伝説のにんじん	415
 163	はてなボックス	416
 164	Gold Catfruit Seed	517
+1000	10式戦車	-1
 1001	Sports Day Cat	-1
 1003	Salaryman Cat	-1
 1004	Reindeer Fish Cat	-1
@@ -173,11 +174,13 @@ ID	name	severID
 1008	Evil Cat	-1
 1009	Doll Cats	-1
 1010	Maiden Cat	-1
+1011	歌謡にゃんこ	-1
 1012	Koi Cat	-1
 1013	Madam Bride	-1
 1014	Vacation Queen	-1
 1015	Vengeful Cat	-1
 1016	Kung Fu Cat X	-1
+1017	ネコンドー	-1
 1018	Marshmallow Cat	-1
 1019	Cat Kart R	-1
 1020	Baozi Cat	-1
@@ -215,6 +218,8 @@ ID	name	severID
 1053	Stone Cat	-1
 1054	Elder Mask Doron	-1
 1055	悪魔研究家	-1
+1056	Pied Piper Cat	-1
+1057	Calligraphy Cat	-1
 1100	Bronze Cat	-1
 1101	Space Cat	-1
 1102	Rope Jump Cat	-1
@@ -230,19 +235,32 @@ ID	name	severID
 1112	Healer	-1
 1113	Ururun Wolf	-1
 1114	Clockwork Cat	-1
+1115	ドラリー剣士	-1
 1116	Hoop Cat	-1
+1117	ネコヤンキー	-1
 1118	Li'l Nyandam	-1
 1119	Takuya ＆ Yuki	-1
 1120	Drumcorps Cat	-1
 1121	HYAKUTARO	-1
+1122	眠れるケリの美女	-1
+1123	剣士	-1
+1124	騎馬兵	-1
+1125	アシュラ	-1
+1126	バトルバルーン	-1
+1127	ドラゴンライダー	-1
+1128	プリティキャット	-1
+1129	サイクロプス	-1
 1130	Catornado	-1
 1131	Red Riding Mina	-1
 1132	Funghi	-1
+1133	ふてニャン	-1
 1134	Li'l Madoka	-1
 1135	Kyubey Cat	-1
 1137	PIKOTARO	-1
+1138	Unknown	-1
 1139	Miyamoku Musashi	-1
 1140	Redhead Yuki Cat	-1
+1141	チョコレート	-1
 1142	Li'l Shirou	-1
 1143	Akio Yabe	-1
 1144	Karin Nekozuka	-1
@@ -255,17 +273,29 @@ ID	name	severID
 1151	Pokota	-1
 1152	Ovis	-1
 1153	Coco	-1
+1154	太秦萌＆ネコ	-1
+1155	松賀咲＆ネコ	-1
+1156	小野ミサ＆ネコ	-1
 1157	Mecha-Bun	-1
 1158	Betakkuma	-1
+1159	ヒカキン	-1
 1160	Meowla Meowla	-1
+1161	majimeow（仮）	-1
 1162	Prince Yamato	-1
+1163	ねこ娘	-1
 1164	Kano ＆ Souma	-1
+1165	Unknown	-1
+1166	ネコ２Ｄ	-1
 1167	Ryu Cat	-1
 1168	Akuma Giraffe	-1
+1169	ソラカラちゃん	-1
 1170	Miku Cat	-1
+1171	ネコU.F.O.	-1
 1172	Idi:N	-1
 1173	Ranma Cat (M)	-1
 1174	Godzilla Cat	-1
+1175	ナナ＆ネコ	-1
+1176	エミリア＆ネコ	-1
 10010	Beefcake Cat	-1
 10011	Dancer Cat	-1
 10012	Hyper Mr.	-1

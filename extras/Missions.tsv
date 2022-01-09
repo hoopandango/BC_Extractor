@@ -1,23 +1,35 @@
 ID	template
 0	Beat the stage "{1:s}" {0:d} times
-1	Beat any of these stages {0:d} times: "{1:s}"
-2	Acquire the cat "{:s}"
+1000	Beat "{1:s}"
+10000	Beat "{1:s}" stages {0:d} times
+11000	Beat "{1:s}" stages {0:d} times
+1	Beat all of these stages: "{1:s}"
+1001	Beat "{1:s}"
+2001	Beat any of these stages {:d} times: {:s}
+10001	Beat all of these stages {:d} times: {:s}
+11001	Beat any "{1:s}" stage
+12001	Beat "{1:s}" stages {0:d} times
+2	Acquire the cat/s "{:s}"
 3	Clear all Level {:d} SoL stages
 5	Acquire the True Form of any normal cat
-6	Clear all missions from the following: {:s}
+6	Clear any {:d} missions from the following: {:s}
 7	Finish {:d} Gamatoto Expeditions
-8	Level up the cat "{:s}" to Level {:d}
-9	Finish a stage in any of the {:s} group
+8	Level up {:s} to Level {:d}
+9	Clear any {:s} stage
+1009	Clear any {1:s} stage {0:d} times
 10	Draw a Cat Capsule
 11	Activate all of the following treasures: {:s}
 15	Clear a stage using {:s} CatCombo
 16	Recruit a Gamatoto Assistant
 17	Get a User Rank of {:d}
-18	Score {:d} or more on a timed stage
-19	Invite {:d} Friend/s
-20	Clear a stage from {1:s} category {0:d} times
+18	Get a timed score of {:d} or higher on {:s}
+19	Invite a Friend
+20	Clear any {1:s} stage {0:d} times
 21	Score {:d} or higher on the Dojo stage, "{:s}"
 22	Defeat {:s} in any of the following stages: {:s}
+1022	Defeat {1:s} in any Level {0:d} SoL stage
+2022	Defeat {:s} in any {:s} stage
+3022	Defeat {:s} at {:s}
 23	Clear {:d} monthly missions
 24	Clear the stage {:s} with restriction {:s}
 25	Get all treasures from {:s}

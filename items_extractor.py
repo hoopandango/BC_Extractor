@@ -14,12 +14,22 @@ fl_out = config['outputs']['items']
 
 # endregion
 
+catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, index_col=0)
+def getCat(ID: int):
+	if(ID == -1): return "any cat"
+	try:
+		return catdata.loc[ID, 'name_f']
+	except KeyError:
+		return 'Unknown'
+
 def isvalid(ID: int, s: str) -> bool:
 	return len(s) == len(s.encode()) and ID < 999
 
 def updateItems():
 	items_jp = pd.read_csv(flnames_jp['main'], sep=',', header=None, usecols=[0]).dropna().to_dict()[0]
 	items_en = pd.read_csv(flnames_en['main'], sep='|', header=None, usecols=[0]).dropna().to_dict()[0]
+	dcjp = pd.read_csv(flnames_jp['dropchara'], header=0, usecols=[0,2], index_col=0).dropna()
+	drop_chara_jp = dcjp[dcjp.index != -1].to_dict("index")
 	sever_jp = pd.read_csv(flnames_jp['gib'], sep=',').dropna().to_dict()['SeverID']
 	
 	out = pd.read_csv(fl_out, sep='\t', index_col='ID').to_dict()['name']
@@ -43,6 +53,13 @@ def updateItems():
 				out[i] = items_en[i]
 			except KeyError:
 				out[i] = items_jp[i]
+				
+	for i in drop_chara_jp:
+		try:
+			out[i]
+		except KeyError:
+			out[i] = getCat(drop_chara_jp[i]["charaID"])
+			
 	
 	out = dict(sorted(out.items()))
 	
