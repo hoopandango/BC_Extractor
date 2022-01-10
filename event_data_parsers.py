@@ -1,6 +1,7 @@
 import json
 import datetime
 
+from containers import Gatya
 from local_readers import Readers
 from z_downloaders import Downloaders
 import pandas as pd
@@ -18,7 +19,7 @@ class UniversalParsers:
 		allEventNames = autoEventNames.append(manualEventNames)
 	
 	@staticmethod
-	def fancyDate(datesall: list):
+	def fancyDate(datesall: list[datetime.datetime])->str:
 		toret = "- "
 		for dates in zip(datesall[0::2], datesall[1::2]):
 			
@@ -39,7 +40,7 @@ class UniversalParsers:
 		return toret[:-2] + ": "
 	
 	@staticmethod
-	def fancyTimes(timesall: list):
+	def fancyTimes(timesall: list[dict[str, datetime.datetime]])->str:
 		toret = ""
 		if len(timesall) == 0:
 			return "All Day"
@@ -52,7 +53,8 @@ class UniversalParsers:
 		return toret[:-2]
 	
 	@staticmethod
-	def areValidDates(dates: list, filters: list, date0=datetime.datetime.today()):
+	def areValidDates(dates: list[datetime.datetime], filters: list[str],
+	                  date0: datetime.datetime = datetime.datetime.today()) -> bool:
 		if len(filters) > 0:
 			if 'N' in filters:  # if event lasts longer than a month or starts after today
 				if ((dates[1] - dates[0]).days > 31 and not (dates[0] - date0).days >= 1):
@@ -68,22 +70,22 @@ class UniversalParsers:
 		return True
 	
 	@classmethod
-	def getdates(cls, data):
+	def getdates(cls, data: list[str]) -> list[datetime.datetime, datetime.datetime]:
 		return [cls.formatDate(data[0] + data[1]), cls.formatDate(data[2] + data[3])]
 	
 	@staticmethod
-	def getversions(data):
-		return data[4], data[5]
+	def getversions(data: list[str]) -> tuple[str, str]:
+		return (data[4], data[5])
 	
 	@staticmethod
-	def formatDate(s):
+	def formatDate(s: str) -> datetime.datetime:
 		return datetime.datetime.strptime(s, '%Y%m%d%H%M')
 	
 	@classmethod
-	def getEventName(cls, ID: int):
+	def getEventName(cls, ID: int) -> str:
 		# not used by gatya
 		if (18000 <= ID < 18100):
-			if(ID == 18000):
+			if (ID == 18000):
 				return "Anniversary Slots"
 			return "Unknown Slots"
 		elif (ID >= 18100):
@@ -108,7 +110,6 @@ class UniversalParsers:
 		with open(config['outputs']['stages'], 'w', encoding='utf-8', newline='') as fil:
 			cls.autoEventNames.to_csv(fil, sep='\t', index=True)
 
-
 class GatyaParsers(UniversalParsers):
 	def __init__(self):
 		UniversalParsers.__init__(self)
@@ -116,7 +117,7 @@ class GatyaParsers(UniversalParsers):
 	gatyaLocal = pd.read_json(config["outputs"]["gatya_json"], orient='index')
 	
 	@staticmethod
-	def getCategory(banner: list) -> str:
+	def getCategory(banner: list[str]) -> str:
 		# tells which category of capsule is in this banner
 		p = banner[8]
 		if p == "0":
@@ -127,52 +128,54 @@ class GatyaParsers(UniversalParsers):
 		return "Event Capsule"  # bikkuri, etc.
 	
 	@staticmethod
-	def getValueAtOffset(banner: list, i: int):
-		slot = int(banner[9]) - 1
+	def getValueAtOffset(banner: list[str], i: int) -> str:
+		slot: int = int(banner[9]) - 1
 		# each slot is 15 columns wide
-		offset = 15 * slot
+		offset: int = 15 * slot
 		return banner[i + offset]
 	
 	@staticmethod
-	def getGatyaRates(banner: list):
-		rates = []
+	def getGatyaRates(banner: list[str]) -> list[int]:
+		rates: list[int] = []
 		for i in range(5):
-			rates.append(GatyaParsers.getValueAtOffset(banner, 14 + 2 * i))  # 14,16,18,20,22
+			rates.append(int(GatyaParsers.getValueAtOffset(banner, 14 + 2 * i)))  # 14,16,18,20,22
 		return rates
 	
 	@staticmethod
-	def getGuarantees(banner: list):
-		G = []
+	def getGuarantees(banner: list[str])->list[bool]:
+		G: list[bool] = []
 		for i in range(5):
-			G.append(GatyaParsers.getValueAtOffset(banner, 15 + 2 * i))  # 15,17,19,21,23
+			G.append(GatyaParsers.getValueAtOffset(banner, 15 + 2 * i) == '1')  # 15,17,19,21,23
 		return G
 	
 	@classmethod
-	def getGatyaLocal(cls, ID: int, category: str) -> dict:
-		toret = {"banner_name": "Unknown", "exclusives": [], "rate_ups": {}, "diff": [[], []]}
+	def appendGatyaLocal(cls, gatya: Gatya) -> None:
+		toret = {"name": "Unknown", "exclusives": [], "rate_ups": {}, "diff": [[], []]}
 		
-		try:
-			# breaks very very rarely
-			ID = int(ID)
-		except ValueError:
-			return toret
-		
-		if (category == "Rare Capsule"):
+		if (gatya.page == "Rare Capsule"):
 			try:
-				toret = cls.gatyaLocal.loc[ID].to_dict()
+				obj = cls.gatyaLocal.loc[gatya.ID].to_dict()
+				toret["name"] = obj["banner_name"]
+				toret["exclusives"] = obj["exclusives"]
+				toret["rate_ups"] = obj["rate_ups"]
+				toret["diff"] = obj["diff"]
 			except KeyError:
 				pass
 		
 		else:
 			# set to unknown if not found
-			requested = Downloaders.requestGatya(ID, 'en', category)
+			requested = Downloaders.requestGatya(gatya.ID, 'en', gatya.page)
 			if requested.startswith("Request Failed"):
 				requested = "Unknown"
-			toret["banner_name"] = requested
-		return toret
+			toret["name"] = requested
+		
+		gatya.name = toret["name"]
+		gatya.exclusives = toret["exclusives"]
+		gatya.rate_ups = toret["rate_ups"]
+		gatya.diff = toret["diff"]
 	
 	@classmethod
-	def getExtras(cls, banner: list) -> list:
+	def getExtras(cls, banner: list[str]) -> list[str]:
 		toret = []
 		extras = int(cls.getValueAtOffset(banner, 13))
 		severID = (extras >> 4) & 1023
@@ -191,23 +194,22 @@ class GatyaParsers(UniversalParsers):
 		return toret
 	
 	@staticmethod
-	def getString(banner) -> tuple:
+	def getString(banner: Gatya) -> tuple[str, str]:
 		# tuple (datestring, reststring)
-		bonuses = []
+		bonuses: list[str] = []
 		
-		if banner["guarantee"][3] == '1': bonuses.append('G')
-		bonuses.extend(banner["extras"])
-		bonuses.extend([x for x in banner["exclusives"] if x != 'D'])
-		bonusesStr = f" [{'/'.join(bonuses)}]" if len(bonuses) > 0 else ''
+		if banner.guarantee[3] == 1:  bonuses.append('G')
+		bonuses.extend(banner.extras)
+		bonuses.extend([x for x in banner.exclusives if x != 'D'])
+		bonusesStr: str = f" [{'/'.join(bonuses)}]" if len(bonuses) > 0 else ''
 		
-		diff = f' (+ {", ".join(banner["diff"][0])})' if 5 > len(banner["diff"][0]) > 0 else ''
+		diff: str = f' (+ {", ".join(banner.diff[0])})' if 5 > len(banner.diff[0]) > 0 else ''
 		
-		rate_ups = " {" + ", ".join([f"{K}x rate on {', '.join(V)}" for (K, V) in banner["rate_ups"].items()]) + "}" if len(
-			banner["rate_ups"]) > 0 else ''
+		rate_ups: str = " {" + ", ".join([f"{K}x rate on {', '.join(V)}" for (K, V) in banner.rate_ups.items()]) + "}" \
+			if len(banner.rate_ups) > 0 else ''
 		
-		name = banner['banner_name'] if banner['banner_name'] != 'Unknown' else banner['text']
-		return (GatyaParsers.fancyDate(banner['dates']), '%s%s%s%s' % (name, bonusesStr, diff, rate_ups))
-
+		name = banner.name if banner.name != 'Unknown' else banner.text
+		return (GatyaParsers.fancyDate(banner.dates), '%s%s%s%s' % (name, bonusesStr, diff, rate_ups))
 
 class StageParsers(UniversalParsers):
 	def __init__(self):
@@ -379,8 +381,7 @@ class StageParsers(UniversalParsers):
 			# a better algorithm would check whether or not there is an actual rollover
 			# taking in the number of days in the month as a parameter
 			return (mode, dates[outliers[0] + 1], dates[outliers[0]])
-			# this algorithm ignores month rollover diff [-1->0], and can give false positives, but they are not expected
-
+		# this algorithm ignores month rollover diff [-1->0], and can give false positives, but they are not expected
 
 class ItemParsers(UniversalParsers):
 	def __init__(self):

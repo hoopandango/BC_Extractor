@@ -7,6 +7,8 @@ import urllib.request
 from operator import itemgetter
 import numpy as np
 import pandas as pd
+
+from containers import Gatya
 from event_data_parsers import GatyaParsers, ItemParsers, StageParsers
 from local_readers import Readers
 
@@ -118,9 +120,9 @@ class GatyaFetcher(UniversalFetcher):
 	# SETUP
 	def __init__(self, v='en', fls=['M'], d0=datetime.datetime.today()):
 		UniversalFetcher.__init__(self, v, fls)
-		self.rawGatya = []
-		self.refinedGatya = []
-		self.rejectedGatya = []
+		self.rawGatya: list[list[str]] = []
+		self.refinedGatya: list[Gatya] = []
+		self.rejectedGatya: list[Gatya] = []
 		self.date0 = d0
 	
 	# ACQUISITION TOOLS
@@ -167,44 +169,40 @@ class GatyaFetcher(UniversalFetcher):
 	# PROCESSING TOOLS
 	def readRawData(self):
 		for banner in self.rawGatya:
-			dates = GatyaParsers.getdates(banner)
+			dates: list[datetime.datetime] = GatyaParsers.getdates(banner)
 			if GatyaParsers.areValidDates(dates, self.filters, self.date0):
 				goto = self.refinedGatya
 			else:
 				goto = self.rejectedGatya
 			
+			ID: int = -1
 			try:
 				ID = int(GatyaParsers.getValueAtOffset(banner, 10))
 			except ValueError:
-				ID = -1
 				print(f"weirdo at {banner}")
 			
-			# stuff in the event data
-			toput = {
-				"dates": dates,
-				"versions": GatyaParsers.getversions(banner),
-				"page": GatyaParsers.getCategory(banner),  # Is it on rare gacha page or silver ticket page
-				"slot": banner[9],  # affects how to read rest of data
-				"ID": ID,  # The ID in the relevant GatyaDataSet csv
-				"rates": GatyaParsers.getGatyaRates(banner),  # [Normal, Rare, Super, Uber, Legend]
-				"guarantee": GatyaParsers.getGuarantees(banner),  # [Normal, Rare, Super, Uber, Legend] - (0:no,1:yes)
-				"text": GatyaParsers.getValueAtOffset(banner, 24),
-				"extras": GatyaParsers.getExtras(banner)
-			}
+			toput = Gatya()
+			toput.dates = dates
+			toput.versions = GatyaParsers.getversions(banner)
+			toput.page = GatyaParsers.getCategory(banner)
+			toput.slot = banner[9]
+			toput.ID = ID
+			toput.rates = GatyaParsers.getGatyaRates(banner)
+			toput.guarantee = GatyaParsers.getGuarantees(banner)
+			toput.text = GatyaParsers.getValueAtOffset(banner, 24)
+			toput.extras = GatyaParsers.getExtras(banner)
 			
-			glocal = GatyaParsers.getGatyaLocal(ID, toput["page"])
+			GatyaParsers.appendGatyaLocal(toput)
 			
-			# stuf from the local file
-			toput |= glocal
 			goto.append(toput)
 	
 	# OUTPUT TOOLS
 	def printGatya(self):
 		print('```\nGatya:')
 		for event in self.refinedGatya:
-			if event['rates'][3] in ('10000', '9500'):  # Platinum / Legend Ticket Event
+			if event.rates[3] in ('10000', '9500'):  # Platinum / Legend Ticket Event
 				continue
-			if event['page'] in ('Rare Capsule', 'Event Capsule') and int(event["ID"]) > 0:
+			if event.page in ('Rare Capsule', 'Event Capsule') and event.ID > 0:
 				print('%s%s' % (GatyaParsers.getString(event)))
 		print('```')
 		print(
@@ -214,28 +212,28 @@ class GatyaFetcher(UniversalFetcher):
 	def printGatyaHTML(self):
 		print('<h4>Gatya:</h4><ul>')
 		for event in self.refinedGatya:
-			if event['rates'][3] in ('10000', '9500'):  # Platinum / Legend Ticket Event
+			if event.rates[3] in ('10000', '9500'):  # Platinum / Legend Ticket Event
 				continue
-			if event['page'] in ('Rare Capsule', 'Event Capsule') and int(event["ID"]) > 0:
+			if event.page in ('Rare Capsule', 'Event Capsule') and event.ID > 0:
 				print('<li><b>%s</b>%s</li>' % GatyaParsers.getString(event))
 		print('</ul>')
 	
-	def storeGatyaUncut(self):
+	def storeGatyaUncut(self) -> None:
 		buf = ""
 		for event in self.refinedGatya:
-			if int(event["ID"]) > 0:
+			if int(event.ID) > 0:
 				buf += '%s%s\n' % GatyaParsers.getString(event)
 		
 		buf += '\n'
 		
 		for event in self.rejectedGatya:
-			if int(event["ID"]) > 0:
+			if int(event.ID) > 0:
 				buf += '%s%s\n' % GatyaParsers.getString(event)
 		
 		with open(inm_loc + "gatya_final.txt", "w", encoding='utf-8') as text_file:
 			text_file.write(buf)
 	
-	def exportGatya(self):
+	def exportGatya(self) -> None:
 		# 1) save uncut final data
 		self.storeGatyaUncut()
 		
@@ -799,7 +797,7 @@ class ItemFetcher(UniversalFetcher):
 
 
 def test():
-	gf = GatyaFetcher(fls=['N', 'Y'], v='jp')
+	gf = GatyaFetcher(fls=[], v='jp')
 	gf.fetchRawData()
 	gf.readRawData()
 	gf.exportGatya()

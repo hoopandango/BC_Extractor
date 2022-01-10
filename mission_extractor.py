@@ -78,7 +78,7 @@ def readCondition(text: str) -> dict:
 	return toret
 
 def updateItems() -> None:
-	decoded = {} # dict with all read missions
+	decoded = {}  # dict with all read missions
 	
 	text_jp = pd.read_csv(flnames_jp['text'], sep=',', header=None, usecols=[0, 1],
 	                      index_col=0, encoding="utf-8").dropna().to_dict("index")
