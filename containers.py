@@ -16,8 +16,8 @@ class Event:
 @dataclass
 class EventGroup:
 	events: list[Event]
-	dates: list[int]
-	group_name: str
+	dates: list[datetime.datetime]
+	name: str
 
 @dataclass
 class Gatya(Event):
@@ -29,3 +29,26 @@ class Gatya(Event):
 	guarantee: list[bool] = None
 	extras: list[str] = None
 	exclusives: list[str] = None
+
+@dataclass
+class Stage(Event):
+	@staticmethod
+	def fromEvent(e: Event) -> Stage:
+		return Stage(**e.__dict__)
+
+@dataclass
+class Sale(Event):
+	@staticmethod
+	def fromEvent(e: Event) -> Sale:
+		return Sale(**e.__dict__)
+
+@dataclass
+class Mission(Event):
+	@staticmethod
+	def fromEvent(e: Event) -> Mission:
+		return Mission(**e.__dict__)
+
+@dataclass
+class RawStageGroup(Event):
+	IDs: list[int] = None
+	

@@ -19,7 +19,7 @@ class UniversalParsers:
 		allEventNames = autoEventNames.append(manualEventNames)
 	
 	@staticmethod
-	def fancyDate(datesall: list[datetime.datetime])->str:
+	def fancyDate(datesall: list[datetime.datetime]) -> str:
 		toret = "- "
 		for dates in zip(datesall[0::2], datesall[1::2]):
 			
@@ -40,7 +40,7 @@ class UniversalParsers:
 		return toret[:-2] + ": "
 	
 	@staticmethod
-	def fancyTimes(timesall: list[dict[str, datetime.datetime]])->str:
+	def fancyTimes(timesall: list[dict[str, datetime.datetime]]) -> str:
 		toret = ""
 		if len(timesall) == 0:
 			return "All Day"
@@ -107,7 +107,7 @@ class UniversalParsers:
 	
 	@classmethod
 	def updateEventNames(cls):
-		with open(config['outputs']['stages'], 'w', encoding='utf-8', newline='') as fil:
+		with open(config['outputs']['events'], 'w', encoding='utf-8', newline='') as fil:
 			cls.autoEventNames.to_csv(fil, sep='\t', index=True)
 
 class GatyaParsers(UniversalParsers):
@@ -142,7 +142,7 @@ class GatyaParsers(UniversalParsers):
 		return rates
 	
 	@staticmethod
-	def getGuarantees(banner: list[str])->list[bool]:
+	def getGuarantees(banner: list[str]) -> list[bool]:
 		G: list[bool] = []
 		for i in range(5):
 			G.append(GatyaParsers.getValueAtOffset(banner, 15 + 2 * i) == '1')  # 15,17,19,21,23
@@ -216,7 +216,7 @@ class StageParsers(UniversalParsers):
 		UniversalParsers.__init__(self)
 	
 	@staticmethod
-	def formatTime(t):
+	def formatTime(t: str) -> datetime.time:
 		if t == "2400":
 			t = "2359"
 		if t == "0":
@@ -227,7 +227,7 @@ class StageParsers(UniversalParsers):
 		return datetime.time(dt.hour, dt.minute)
 	
 	@staticmethod
-	def formatMDHM(s, t):
+	def formatMDHM(s: str, t: str) -> datetime.datetime:
 		if t == "2400":
 			t = "2359"
 		if t == "0":
@@ -238,18 +238,18 @@ class StageParsers(UniversalParsers):
 		return datetime.datetime.strptime(s + t, '%m%d%H%M')
 	
 	@staticmethod
-	def binaryweekday(N):
-		list_to_return = [int(x) for x in list(bin(N))[2:][::-1]]
+	def binaryweekday(N: int) -> list[int]:
+		list_to_return: list[int] = [int(x) for x in list(bin(N))[2:][::-1]]
 		while len(list_to_return) < 7:
 			list_to_return.append(0)
 		return list_to_return
 	
 	@classmethod
-	def yearly(cls, data):
-		numberOfPeriods = int(data[7])
-		n = 8
-		output = [dict() for _ in range(numberOfPeriods)]
-		IDs = []
+	def yearly(cls, data: list[str]) -> tuple[list[dict[str, list[dict[str, datetime.datetime]]]], list[int]]:
+		numberOfPeriods: int = int(data[7])
+		n: int = 8
+		output: list[dict[str, list[dict[str, datetime.datetime]]]] = [dict() for _ in range(numberOfPeriods)]
+		IDs: list[int] = []
 		for i in range(numberOfPeriods):
 			
 			times, n = int(data[n]), n + 1
@@ -277,10 +277,10 @@ class StageParsers(UniversalParsers):
 		return output, IDs
 	
 	@classmethod
-	def monthly(cls, data):
-		numberOfPeriods = int(data[7])
-		n = 9
-		output = [dict() for _ in range(numberOfPeriods)]
+	def monthly(cls, data: list[str]) -> tuple[list[dict[str, list[str | dict[str, datetime.datetime]]]], list[int]]:
+		numberOfPeriods: int = int(data[7])
+		n: int = 9
+		output: list[dict[str, list[str | dict[str, datetime.time]]]] = [dict() for _ in range(numberOfPeriods)]
 		IDs = []
 		for i in range(numberOfPeriods):
 			
@@ -309,11 +309,11 @@ class StageParsers(UniversalParsers):
 		return output, IDs
 	
 	@classmethod
-	def weekly(cls, data):
-		numberOfPeriods = int(data[7])
-		n = 10
-		output = [dict() for _ in range(numberOfPeriods)]
-		IDs = []
+	def weekly(cls, data: list[str]) -> tuple[list[dict[str, list[int | dict[str, datetime.time]]]], list[int]]:
+		numberOfPeriods: int = int(data[7])
+		n: int = 10
+		output: list[dict[str, list[int | dict[str, datetime.time]]]] = [dict() for _ in range(numberOfPeriods)]
+		IDs: list[int] = []
 		for i in range(numberOfPeriods):
 			
 			weekdays, n = cls.binaryweekday(int(data[n])), n + 1
@@ -337,10 +337,10 @@ class StageParsers(UniversalParsers):
 		return output, IDs
 	
 	@classmethod
-	def daily(cls, data):
-		numberOfPeriods = int(data[7])
-		n = 11
-		output = [dict() for _ in range(numberOfPeriods)]
+	def daily(cls, data: list[str]) -> tuple[list[dict[str, list[dict[str, datetime.time]]]], list[int]]:
+		numberOfPeriods: int = int(data[7])
+		n: int = 11
+		output: list[dict[str, list[dict[str, datetime.time]]]] = [dict() for _ in range(numberOfPeriods)]
 		IDs = []
 		for i in range(numberOfPeriods):
 			
@@ -362,7 +362,7 @@ class StageParsers(UniversalParsers):
 		return output, IDs
 	
 	@staticmethod
-	def interpretDates(dates: np.array) -> tuple:
+	def interpretDates(dates: np.array) -> tuple[int, int, int]:
 		# takes in dates array and the number of days in the month in which they start
 		# returns a 3-tuple -> (group_size, starting_date, ending_date)
 		if len(dates) <= 4:  # don't group these
