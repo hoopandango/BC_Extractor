@@ -2,7 +2,6 @@ import json
 import csv
 import os
 
-# region setup
 with open('_config.json') as fl:
 	config = json.load(fl)
 
@@ -13,7 +12,6 @@ LNG = config['setup']['LNG']
 
 flnames_en = config['inputs']['en']['units']
 flnames_jp = config['inputs']['jp']['units']
-# endregion
 
 names = [schema['name']]
 
@@ -56,4 +54,3 @@ with open(config['outputs']['units'], 'w', encoding='utf-8', newline='') as fl:
 	w.writerows(names)
 
 print("Finished Writing")
-input()

@@ -1,15 +1,13 @@
 import json
 import datetime
+
+from local_readers import Readers
 from z_downloaders import Downloaders
 import pandas as pd
 import numpy as np
 
-# region setup
 with open('_config.json') as fl:
 	config = json.load(fl)
-
-
-# endregion
 
 class UniversalParsers:
 	with open(config['outputs']['stages'], encoding='utf-8', newline='') as csvfile:
@@ -18,9 +16,6 @@ class UniversalParsers:
 	with open("extras\\events.tsv", encoding='utf-8', newline='') as csvfile:
 		manualEventNames = pd.read_csv(csvfile, delimiter='\t', index_col='ID')
 		allEventNames = autoEventNames.append(manualEventNames)
-	
-	with open(config['outputs']['items'], encoding='utf-8', newline='') as csvfile:
-		itemdata = pd.read_csv(csvfile, delimiter='\t', index_col='ID')
 	
 	@staticmethod
 	def fancyDate(datesall: list):
@@ -59,7 +54,7 @@ class UniversalParsers:
 	@staticmethod
 	def areValidDates(dates: list, filters: list, date0=datetime.datetime.today()):
 		if len(filters) > 0:
-			if 'N' in filters:
+			if 'N' in filters:  # if event lasts longer than a month or starts after today
 				if ((dates[1] - dates[0]).days > 31 and not (dates[0] - date0).days >= 1):
 					return False
 			elif 'M' in filters:
@@ -93,6 +88,8 @@ class UniversalParsers:
 			return "Unknown Slots"
 		elif (ID >= 18100):
 			return "Scratch Cards Event"
+		elif (9000 <= ID < 10000):
+			return Readers.getMission(ID)
 		
 		try:
 			name = cls.allEventNames.loc[ID, "name"]
@@ -105,13 +102,6 @@ class UniversalParsers:
 				# updates name
 				cls.autoEventNames.loc[ID, "name"] = name
 			return name
-	
-	@classmethod
-	def getItem(cls, ID: int):
-		try:
-			return cls.itemdata.loc[ID, "name"]
-		except KeyError:
-			return 'Unknown'
 	
 	@classmethod
 	def updateEventNames(cls):
@@ -195,8 +185,8 @@ class GatyaParsers(UniversalParsers):
 		if not extras & 8:
 			return toret  # No item drops
 		# if it has item drops:
-		item = cls.itemdata.loc[cls.itemdata["severID"] == severID, "name"]
-		if item.to_list()[0] == 'Lucky Ticket':
+		item = Readers.getItemBySever(severID)
+		if item == 'Lucky Ticket':
 			toret.append('L')  # Has lucky ticket
 		return toret
 	
@@ -399,8 +389,3 @@ class ItemParsers(UniversalParsers):
 class MissionParsers(UniversalParsers):
 	def __init__(self):
 		UniversalParsers.__init__(self)
-	
-	@classmethod
-	def IDtoMission(cls, ID: int):
-		return 10
-	

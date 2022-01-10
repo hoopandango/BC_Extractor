@@ -252,4 +252,3 @@ def run():
 
 
 run()
-input()  # Stops terminal from closing

@@ -7,6 +7,8 @@ from collections import Counter, defaultdict
 import sys
 
 # region setup
+from local_readers import Readers
+
 with open('_config.json') as fl:
 	config = json.load(fl)
 
@@ -19,10 +21,6 @@ LNG = config['setup']['LNG']
 
 flnames_jp = config['inputs']['jp']['gatya']
 fl_out = config['outputs']['gatya']
-fl_units = config['outputs']['units']
-
-with open(fl_units, encoding='utf-8') as fl:
-	unit_names = pd.read_csv(fl, delimiter='\t', index_col=0)
 
 with open(flnames_jp["data"], encoding='utf-8') as fl:
 	rd = csv.reader(fl)
@@ -35,6 +33,7 @@ try:
 	conn = sqlite3.connect(fl_out)
 except sqlite3.OperationalError:
 	print("db not found")
+	raise Exception
 
 series = pd.read_sql('SELECT * FROM series', conn, index_col='series_ID')
 
@@ -51,15 +50,6 @@ def lookup(searched:str)->int:
 			return unit[0]  # unit ID
 	return -1
 """
-
-def name_of(ID: int) -> str:
-	try:
-		toret = unit_names.loc[ID, "name_f"]
-		# assert len(toret) <= 1
-		return toret
-	except KeyError:
-		return "Unknown"
-
 """
 default_units = {"Cutter Cat":"Grandon","Neneko":"Neneko&Friends","Freshman Cat Jobs":"Reinforcements"}
 blacklist = {"Freshman Cat Jobs", "Rich Cat III", "Sniper the Recruit", "Cat Base Mini", "Gold Cat", "Neneko",
@@ -161,21 +151,21 @@ def process_all():
 		
 		# Diff from previous banner:
 		if (len(diff[0]) > 0):
-			diff[0] = [name_of(i) for i in diff[0]]
+			diff[0] = [Readers.getCat(i, 0) for i in diff[0]]
 			if (len(diff[0]) < 6):
 				
 				print(f" (+ {', '.join(diff[0])})", end='')
 			else:
 				print(f" (+ a lot)", end='')
 		if (len(diff[1]) > 0):
-			diff[1] = [name_of(i) for i in diff[1]]
+			diff[1] = [Readers.getCat(i, 0) for i in diff[1]]
 			if (len(diff[1]) < 6):
 				print(f" (- {', '.join(diff[1])})", end='')
 			else:
 				print(f" (- a lot)", end='')
 		
 		bonuses = bonus_check(gatya)
-		bonuses = {K: [name_of(X) for X in V] for (K, V) in bonuses.items()}
+		bonuses = {K: [Readers.getCat(X, 0) for X in V] for (K, V) in bonuses.items()}
 		if (len(bonuses) > 0):
 			print(" {" + ", ".join([f"{K}x rate on {', '.join(V)}" for (K, V) in bonuses.items()]) + "}", end='')
 		
@@ -198,7 +188,7 @@ def process_all():
 		
 		json_data[ID] = row_comp
 		
-		row = str([name_of(x) for x in gatya])
+		row = str([Readers.getCat(x, 0) for x in gatya])
 		df_units.loc[ID] = row
 
 process_all()

@@ -8,6 +8,7 @@ from operator import itemgetter
 import numpy as np
 import pandas as pd
 from event_data_parsers import GatyaParsers, ItemParsers, StageParsers
+from local_readers import Readers
 
 groupable_events = ['Seeing Red', 'Tag Arena', 'Dark', 'Duel', '(Baron)', 'Citadel']
 weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
@@ -21,17 +22,18 @@ with open('extras\\EventGroups.json', encoding='utf-8') as f:
 	y = json.loads(f)
 	event_groups = y
 
-
 class UniversalFetcher:
 	def __init__(self, v: str, fls: list):
 		self.refinedStages = []
 		self.ver = v if v != 'jp' else ''
 		self.filters = fls
+		self.missions = []
 	
 	def groupData(self):
 		group_history_2 = {}
 		finalEvents = []
 		sales = []
+		missions = []
 		
 		def pushEventOrSale(dic):
 			if dic['dates'][1].hour == 0:
@@ -39,6 +41,9 @@ class UniversalFetcher:
 			try:
 				if 900 > int(dic['IDs'][0]) > 799 or int(dic['IDs'][0]) < 100:
 					sales.append(dic)
+					return
+				if 10000 > int(dic['IDs'][0]) >= 9000:
+					missions.append(dic)
 					return
 			except KeyError:
 				pass
@@ -104,6 +109,7 @@ class UniversalFetcher:
 				flushGroup(groupname)
 			self.finalStages = finalEvents
 			self.sales = sales
+			self.missions = missions
 		
 		groupEvents()
 
@@ -603,6 +609,11 @@ class StageFetcher(UniversalFetcher):
 		for group in saledata:
 			print(StageParsers.fancyDate(group['dates']) + group['name'])
 		print('```')
+		
+		print('```\nMissions:')
+		for group in self.missions:
+			print(StageParsers.fancyDate(group['dates']) + group['name'])
+		print('```')
 	
 	def printStagesHTML(self, stagedata=None, saledata=None):
 		if stagedata is None:
@@ -730,7 +741,7 @@ class ItemFetcher(UniversalFetcher):
 				if 900 <= int(ID) <= 999:  # Login Stamp
 					name = dic['text'] + ' (Login Stamp)'
 				else:
-					name = ItemParsers.getItem(ID)
+					name = Readers.getItem(ID)
 					if name == 'Unknown':
 						continue
 				x = dic.copy()
@@ -794,14 +805,14 @@ def test():
 	gf.exportGatya()
 	gf.printGatya()
 	
-	sf = StageFetcher(fls=['N', 'Y'], v='jp')
+	sf = StageFetcher(fls=['N'], v='jp')
 	sf.fetchRawData()
 	sf.readRawData(storeRejects=True)
 	sf.groupData()
 	sf.finalProcessing()
 	sd0 = sf.getStageData()
 	
-	itf = ItemFetcher(fls=['N', 'Y'], v='jp')
+	itf = ItemFetcher(fls=['N'], v='jp')
 	itf.fetchRawData()
 	itf.readRawData()
 	itf.groupData()

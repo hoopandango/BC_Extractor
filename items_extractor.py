@@ -2,7 +2,6 @@ import json
 import pandas as pd
 import csv
 
-# region setup
 with open('_config.json') as fl:
 	config = json.load(fl)
 
@@ -11,8 +10,6 @@ LNG = config['setup']['LNG']
 flnames_jp = config['inputs']['jp']['items']
 flnames_en = config['inputs']['en']['items']
 fl_out = config['outputs']['items']
-
-# endregion
 
 catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, index_col=0)
 def getCat(ID: int):
@@ -60,7 +57,6 @@ def updateItems():
 		except KeyError:
 			out[i] = getCat(drop_chara_jp[i]["charaID"])
 			
-	
 	out = dict(sorted(out.items()))
 	
 	with open(fl_out, encoding='utf-8', mode='w', newline='') as fl1:
@@ -74,4 +70,3 @@ def updateItems():
 	print("done")
 
 updateItems()
-input()
