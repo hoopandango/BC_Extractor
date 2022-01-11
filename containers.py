@@ -32,21 +32,34 @@ class Gatya(Event):
 
 @dataclass
 class Stage(Event):
-	@staticmethod
-	def fromEvent(e: Event) -> Stage:
-		return Stage(**e.__dict__)
+	@classmethod
+	def fromEvent(cls, e: Event) -> Stage:
+		return cls(**e.__dict__)
+	
+	@classmethod
+	def fromItem(cls, i: Item) -> Stage:
+		return cls(ID=i.ID, dates=i.dates, versions=i.versions, name=i.name, text=i.text)
 
 @dataclass
 class Sale(Event):
-	@staticmethod
-	def fromEvent(e: Event) -> Sale:
-		return Sale(**e.__dict__)
+	@classmethod
+	def fromEvent(cls, e: Event) -> Sale:
+		return cls(**e.__dict__)
 
 @dataclass
 class Mission(Event):
-	@staticmethod
-	def fromEvent(e: Event) -> Mission:
-		return Mission(**e.__dict__)
+	@classmethod
+	def fromEvent(cls, e: Event) -> Mission:
+		return cls(**e.__dict__)
+
+@dataclass
+class Item(Event):
+	recurring: bool = False
+	qty: int = 0
+	
+	@classmethod
+	def fromEvent(cls, e: Event) -> Item:
+		return cls(**e.__dict__)
 
 @dataclass
 class RawStageGroup(Event):

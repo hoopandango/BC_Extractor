@@ -88,7 +88,7 @@ class UniversalParsers:
 			if (ID == 18000):
 				return "Anniversary Slots"
 			return "Unknown Slots"
-		elif (ID >= 18100):
+		elif (18100 <= ID < 18200):
 			return "Scratch Cards Event"
 		elif (9000 <= ID < 10000):
 			return Readers.getMission(ID)
@@ -107,7 +107,7 @@ class UniversalParsers:
 	
 	@classmethod
 	def updateEventNames(cls):
-		with open(config['outputs']['events'], 'w', encoding='utf-8', newline='') as fil:
+		with open(config['outputs']['stages'], 'w', encoding='utf-8', newline='') as fil:
 			cls.autoEventNames.to_csv(fil, sep='\t', index=True)
 
 class GatyaParsers(UniversalParsers):

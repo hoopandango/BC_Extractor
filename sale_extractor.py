@@ -45,7 +45,7 @@ def load_localisable():
 	torep = set(df_jp.index).intersection(set(df_en.index))
 	df_jp.loc[torep, :] = df_en.loc[torep, :]
 	df = df_jp
-	df.dropna('rows', inplace=True)
+	df = df.dropna(axis='rows')
 	return df
 
 # Ungrouped Sales

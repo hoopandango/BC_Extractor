@@ -10,6 +10,7 @@ catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, inde
 combodata = pd.read_csv(config['outputs']['combos2'], delimiter='\t', header=0, index_col=0)
 itemdata = pd.read_csv(config['outputs']['items'], delimiter='\t', header=0, index_col=0)
 missiondata = pd.read_csv(config['outputs']['missions'], delimiter='\t', header=0, index_col=0)
+saledata = pd.read_csv("extras/Events.tsv", delimiter='\t', header=0, index_col=0)
 
 forms = ['name_f', 'name_c', 'name_s']
 
@@ -32,8 +33,18 @@ class Readers:
 	
 	@staticmethod
 	def getItemBySever(ID: int) -> str:
-		item = itemdata.loc[itemdata["severID"] == ID, "name"]
-		return item.to_list()[0]
+		try:
+			item = itemdata.loc[itemdata["severID"] == ID, "name"]
+			return item.to_list()[0]
+		except IndexError:
+			return 'Unknown'
+
+	@staticmethod
+	def getSaleBySever(ID: int) -> str:
+		try:
+			return saledata.loc[ID, "name"]
+		except KeyError:
+			return 'Unknown'
 
 	@staticmethod
 	def getEnemy(ID: int) -> str:
