@@ -4,18 +4,17 @@ from event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StagePa
 import asyncio
 import aiohttp
 
-CASE = 2
+CASE = 1
 
 """TODO:
 1 gatya event grouping
 4 combos tsv
 5 better gatya "new" uber checking
-6 single day event recognition
 7 more test cases
 8 meow meow day grouping
 9 proper text for rare ticket drops / updates / etc.
 10  proper exporting
-11  polish sorting
+12 modularise everything
 """
 
 def fetch_test(lang: str, num: int) -> dict[str, str]:
@@ -45,9 +44,9 @@ async def fetch_all(ver: str) -> dict[str, str]:
 
 start = time.time()
 # print(f"started at {start}")
-gf = GatyaFetcher(fls=['N'], v='en')
-sf = StageFetcher(fls=['N'], v='en')
-itf = ItemFetcher(fls=['N'], v='en')
+gf = GatyaFetcher(fls=['N'])
+sf = StageFetcher(fls=['N'])
+itf = ItemFetcher(fls=['N'])
 
 # texts = asyncio.run(fetch_all(gf.ver))
 texts = fetch_test('en', CASE)
@@ -66,20 +65,20 @@ sf.readRawData(storeRejects=True)
 # print(f"reading raw items - {time.time() - start}")
 itf.readRawData()
 
-# print(f"grouping stages - {time.time() - start}")
-sf.finalStages, sf.sales, sf.missions = sf.groupData(sf.refinedStages)
-sf.finalProcessing()
 
 # print(f"merging items and stages - {time.time() - start}")
-sd0 = sf.getStageData()
-sd1 = itf.getStageData()
+sd0 = sf.refinedStages
+sd1 = itf.refinedData
 
-sd0[0].extend(sd1[0])
-sd0[1].extend(sd1[1])
+sd0.extend(sd1)
 
+# print(f"grouping stages - {time.time() - start}")
+sf.finalStages, sf.sales, sf.missions = sf.groupData(sf.refinedStages)
+sf.sortAll()
 # print(f"printing stuff - {time.time() - start}")
+
 gf.printGatya()
-sf.printStages(*sd0)
+sf.printStages()
 itf.printItemData()
 sf.printFestivalData()
 

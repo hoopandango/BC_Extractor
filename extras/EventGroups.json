@@ -20,7 +20,9 @@
       "Bird Maniac",
       "Titan Maniac"
     ],
-    "visible": true
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   },
   "Li'l Festival": {
     "stages": [
@@ -34,7 +36,9 @@
       "Li'l Bird Awakens!",
       "Li'l Titan Awakens!"
     ],
-    "visible": true
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   },
   "All-Stars Stages": {
     "stages": [
@@ -45,7 +49,9 @@
       "Event All-Stars Excellent Celebration!",
       "Event All-Stars Grand Jubilee!"
     ],
-    "visible": true
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   },
   "Monthlies Festival": {
     "stages": [
@@ -62,7 +68,9 @@
       "Salaryman Awakes!",
       "Reindeer Fish Awakens!"
     ],
-    "visible": true
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   },
   "Catfruit Festival": {
     "stages": [
@@ -72,7 +80,9 @@
       "Growing Purple",
       "Growing Green"
     ],
-    "visible": true
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   },
   "Items Sale": {
     "stages": [
@@ -91,7 +101,9 @@
       "Catamin B Sale",
       "Catamin C Sale"
     ],
-    "visible": false
+    "visible": false,
+    "split": false,
+    "compare_substring": false
   },
   "XP Festival": {
     "stages": [
@@ -100,7 +112,9 @@
       "XP Colosseum",
       "Merciless XP!"
     ],
-    "visible": true
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   },
   "Metal Festival": {
     "stages": [
@@ -108,7 +122,9 @@
       "Siege of Hippoe!",
       "Cat Ticket Chance!"
     ],
-    "visible": true
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   },
   "Gamatoto XP Harvest": {
     "stages": [
@@ -116,7 +132,9 @@
       "Gamatoto XP Festival II",
       "Gamatoto XP Festival III"
     ],
-    "visible": true
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   },
   "Treasure Festival": {
     "stages": [
@@ -124,7 +142,9 @@
       "ItF Treasure Festival",
       "CotC Treasure Festival"
     ],
-    "visible": true
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   },
   "Builder Festival": {
     "stages": [
@@ -132,7 +152,9 @@
       "Strait of Wings",
       "Island of Ash"
     ],
-    "visible": true
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   },
   "Advent Festival": {
     "stages": [
@@ -151,6 +173,49 @@
       "Queen's Coronation",
       "Queen's Condemnation"
     ],
-    "visible": true
+    "visible": true,
+    "split": true,
+    "compare_substring": false
+  },
+  "Baron": {
+    "stages":[
+      "(Baron)"
+    ],
+    "visible": true,
+    "split": true,
+    "compare_substring": true
+  },
+  "Duel": {
+    "stages":[
+      "Duel"
+    ],
+    "visible": true,
+    "split": true,
+    "compare_substring": true
+  },
+  "Tag Arena": {
+    "stages":[
+      "Tag Arena"
+    ],
+    "visible": true,
+    "split": true,
+    "compare_substring": true
+  },
+  "Citadel": {
+    "stages":[
+      "Citadel"
+    ],
+    "visible": true,
+    "split": true,
+    "compare_substring": true
+  },
+  "Catfood Discount Reset (30/750)": {
+    "stages": [
+      "Catfood Discount Reset (30)",
+      "Catfood Discount Reset (750)"
+    ],
+    "visible": true,
+    "split": false,
+    "compare_substring": false
   }
 }

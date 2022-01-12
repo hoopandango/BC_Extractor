@@ -7,7 +7,7 @@ from operator import itemgetter
 import numpy as np
 import pandas as pd
 
-from containers import Gatya, Event, Stage, EventGroup, Mission, Sale, RawStageGroup, Item
+from containers import Gatya, Event, Stage, EventGroup, Mission, Sale, RawEventGroup, Item
 from event_data_parsers import GatyaParsers, ItemParsers, StageParsers
 from local_readers import Readers
 
@@ -27,27 +27,43 @@ class UniversalFetcher:
 	ver: str
 	filters: list[str]
 	
-	def __init__(self, v: str, fls: list):
-		self.ver = v if v != 'jp' else ''
+	def __init__(self, fls: list):
 		self.filters = fls
 	
 	@staticmethod
-	def groupData(refinedStages: list[RawStageGroup]) -> tuple[list[Stage], list[Sale], list[Mission]]:
+	def groupData(refinedStages: list[RawEventGroup]) -> tuple[list[Stage], list[Sale], list[Mission]]:
 		# stage, festival, sale, mission
 		group_history_2: dict[str, EventGroup] = {}
+		ungrouped_history: dict[str, Event] = {}
 		finalEvents: list[Stage | EventGroup] = []
 		finalEventGroups: list[EventGroup] = []
-		sales: list[Sale] = []
+		sales: list[Sale | EventGroup] = []
 		missions: list[Mission] = []
 		
+		def presentInGroup(grp: dict[str, str | bool], name: str) -> bool:
+			if grp["compare_substring"]:
+				for stage in grp["stages"]:
+					if stage in name:
+						return True
+				return False
+			
+			else:
+				for stage in grp["stages"]:
+					if stage == name:
+						return True
+				return False
+		
 		def pushEventOrSale(e: Event | EventGroup):
+			
 			if (isinstance(e, EventGroup)):
 				finalEventGroups.append(e)
-				finalEvents.append(e)
+				
+				if 900 > e.events[0].ID > 799 or e.events[0].ID < 0:
+					sales.append(e)
+				else:
+					finalEvents.append(e)
 				return
 			
-			if e.dates[1].hour == 0:
-				e.dates[1] -= datetime.timedelta(days=1)
 			try:
 				if 900 > e.ID > 799 or e.ID < 100:
 					sales.append(Sale.fromEvent(e))
@@ -76,7 +92,7 @@ class UniversalFetcher:
 		
 		def addGroup(group_name: str, event: Event):
 			group_history_2[group_name] = EventGroup(**{'name': group_name, 'events': [event],
-			                                            'dates': event.dates})
+			                                            'dates': event.dates, 'split': event_groups[group_name]["split"]})
 		
 		def extendGroup(groupname: str, event: Event):
 			group = group_history_2[groupname]
@@ -87,7 +103,6 @@ class UniversalFetcher:
 		def groupEvents():
 			# Also flattens ungrouped events by ID
 			for event in refinedStages:
-				buffer: list[Stage] = []
 				for ID in event.IDs:
 					eventname = StageParsers.getEventName(ID)
 					if eventname == 'Unknown':
@@ -100,7 +115,7 @@ class UniversalFetcher:
 					grouped = False
 					
 					for groupname, group in event_groups.items():
-						if curr.name in group['stages']:
+						if presentInGroup(group, curr.name):
 							grouped = True
 							if groupname in group_history_2:
 								if needsReset(groupname, curr):
@@ -110,20 +125,32 @@ class UniversalFetcher:
 									extendGroup(groupname, curr)
 							else:
 								addGroup(groupname, curr)
+					
+					toadd: Event
+					
+					if (toadd := ungrouped_history.get(curr.name)) is not None:
+						grouped = True
+						if toadd.ID == curr.ID:
+							toadd.dates.extend(curr.dates)
+						else:
+							ungrouped_history.pop(curr.name)
+							group_history_2[curr.name] = EventGroup(events=[toadd, curr], dates=toadd.dates, name=curr.name,
+							                                        split=True)
 					if not grouped:
-						buffer.append(curr)
-				for ev in buffer:
-					pushEventOrSale(ev)
+						ungrouped_history[curr.name] = curr
+			
 			for groupname in group_history_2.copy():
 				flushGroup(groupname)
+			for e in ungrouped_history.values():
+				pushEventOrSale(e)
 		
 		groupEvents()
 		return (finalEvents, sales, missions)
 
 class GatyaFetcher(UniversalFetcher):
 	# SETUP
-	def __init__(self, v='en', fls=['M'], d0=datetime.datetime.today()):
-		UniversalFetcher.__init__(self, v, fls)
+	def __init__(self, fls=['M'], d0=datetime.datetime.today()):
+		UniversalFetcher.__init__(self, fls)
 		self.rawGatya: list[list[str]] = []
 		self.refinedGatya: list[Gatya] = []
 		self.rejectedGatya: list[Gatya] = []
@@ -240,16 +267,16 @@ class GatyaFetcher(UniversalFetcher):
 
 class StageFetcher(UniversalFetcher):
 	rawStages: list[list[str]]
-	refinedStages: list[RawStageGroup]
-	rejectedStages: list[RawStageGroup]
+	refinedStages: list[RawEventGroup]
+	rejectedStages: list[RawEventGroup]
 	finalStages: list[Stage | EventGroup]
 	sales: list[Sale]
 	missions: list[Mission]
 	date0: datetime.datetime
 	
 	# SETUP
-	def __init__(self, v='en', fls=None, d0=datetime.datetime.today()):
-		UniversalFetcher.__init__(self, v, fls)
+	def __init__(self, fls=None, d0=datetime.datetime.today()):
+		UniversalFetcher.__init__(self, fls)
 		self.rawStages = []
 		self.refinedStages = []
 		self.rejectedStages = []
@@ -279,7 +306,7 @@ class StageFetcher(UniversalFetcher):
 			
 			# permanent - just ID - all day
 			if data[7] == '0':
-				goto.append(RawStageGroup(**{
+				goto.append(RawEventGroup(**{
 					"dates": StageParsers.getdates(data),
 					"versions": StageParsers.getversions(data),
 					"sched": "permanent",
@@ -288,7 +315,7 @@ class StageFetcher(UniversalFetcher):
 			# Yearly repeat XY - starts and ends at a date+time
 			elif data[8] != '0':
 				ydata, yIDs = StageParsers.yearly(data)
-				goto.append(RawStageGroup(**{
+				goto.append(RawEventGroup(**{
 					"dates": StageParsers.getdates(data),
 					"versions": StageParsers.getversions(data),
 					"sched": "yearly",
@@ -298,7 +325,7 @@ class StageFetcher(UniversalFetcher):
 			# Monthly repeat X0Y - list of days of month, may have time range
 			elif data[9] != '0':
 				mdata, mIDs = StageParsers.monthly(data)
-				goto.append(RawStageGroup(**{
+				goto.append(RawEventGroup(**{
 					"dates": StageParsers.getdates(data),
 					"versions": StageParsers.getversions(data),
 					"sched": "monthly",
@@ -308,7 +335,7 @@ class StageFetcher(UniversalFetcher):
 			# Weekly repeat X00Y - list of weekdays, may have time ranges
 			elif data[10] != '0':
 				wdata, wIDs = StageParsers.weekly(data)
-				goto.append(RawStageGroup(**{
+				goto.append(RawEventGroup(**{
 					"dates": StageParsers.getdates(data),
 					"versions": StageParsers.getversions(data),
 					"sched": "weekly",
@@ -318,7 +345,7 @@ class StageFetcher(UniversalFetcher):
 			# Daily repeat X000Y - list of time ranges every day in interval
 			elif data[11] != '0':
 				ddata, dIDs = StageParsers.daily(data)
-				goto.append(RawStageGroup(**{
+				goto.append(RawEventGroup(**{
 					"dates": StageParsers.getdates(data),
 					"versions": StageParsers.getversions(data),
 					"sched": "daily",
@@ -326,56 +353,9 @@ class StageFetcher(UniversalFetcher):
 					"IDs": dIDs
 				}))
 	
-	def getStageData(self)-> tuple[list[Stage | EventGroup], list[Sale]]:
-		# use this AFTER grouping and BEFORE printing / export
-		return self.finalStages, self.sales
-	
-	def finalProcessing(self) -> None:
-		def miscProcess(sd: list[Stage | EventGroup] | list[Sale]):
-			sd.sort(key=lambda x: x.dates[0])
-			
-			to_del: list[int] = []
-			
-			for i, event in enumerate(sd):
-				if isinstance(event, EventGroup) or i in to_del:
-					continue
-				# Groups Barons, Duels, Dark Descent, etc.
-				if any([x in event.name for x in groupable_events]):
-					for j, e in enumerate(sd[i + 1:]):
-						# Can't use two words because Duel stages
-						if (e.name.split(' ')[0] == event.name.split(' ')[0]
-								or e.name.split(' ')[-1] == event.name.split(' ')[-1]):
-							# and (e['dates'][1] == event['dates'][1]: # used to check this before, add back if there are errors
-							# If they share the same first / last word and end on the same date
-							sd.insert(i + 1, sd.pop(i + j + 1))  # Put them together
-							break
-			
-			for i, event in enumerate(sd):
-				if(isinstance(event, EventGroup)):
-					continue
-				# Groups repetetive events [all of which are identical] like catfood discounts and cybear
-				if event.name == 'Catfood Discount Reset (30)':
-					for j, e in enumerate(sd[i + 1:]):
-						if e.name == 'Catfood Discount Reset (750)':
-							sd[i].name = 'Catfood Discount Reset (30/750)'
-							to_del.append(i + j + 1)
-							break
-				
-				for j, e in enumerate(sd[i + 1:]):
-					if(isinstance(e, EventGroup)):
-						continue
-					try:
-						if e.ID == event.ID:
-							sd[i].dates.extend(e.dates)
-							to_del.append(i + j + 1)
-					except KeyError:
-						pass  # Ignore events that are already grouped like Festivals, that doesn't have "IDs"
-			
-			# using [:] to mutate list without resetting pointer
-			sd[:] = [elem for i, elem in enumerate(sd) if i not in to_del]
-		
-		miscProcess(self.finalStages)
-		miscProcess(self.sales)
+	def sortAll(self) -> None:
+		for x in [self.finalStages, self.sales, self.missions]:
+			x.sort(key=lambda elem: elem.dates[0])
 	
 	# OUTPUT TOOLS
 	def printFestivalData(self):
@@ -384,7 +364,7 @@ class StageFetcher(UniversalFetcher):
 			for ID in event.IDs:
 				# Checks come here
 				
-				if event.sched == 'permanent' and (
+				if event.sched is None or event.sched == 'permanent' and (
 						ID not in (1028, 1059, 1124, 1155, 1078, 1007, 1006) or ID in permanentLog):
 					continue
 				
@@ -546,25 +526,20 @@ class StageFetcher(UniversalFetcher):
 		
 		df.to_csv('scheduling.tsv', sep='\t')
 	
-	def printStages(self, stagedata: list[Stage | EventGroup] = None, saledata: list[Sale] = None)-> None:
-		if stagedata is None:
-			stagedata = self.finalStages
-		if saledata is None:
-			saledata = self.sales
-		
+	def printStages(self)-> None:
 		print('```\nEvents:')
-		for group in stagedata:
-			print(StageParsers.fancyDate(group.dates) + group.name)
+		for element in self.finalStages:
+			print(element)
 		print('```')
 		
 		print('```\nSales:')
-		for sl in saledata:
-			print(StageParsers.fancyDate(sl.dates) + sl.name)
+		for element in self.sales:
+			print(element)
 		print('```')
 		
 		print('```\nMissions:')
-		for msn in self.missions:
-			print(StageParsers.fancyDate(msn.dates) + msn.name)
+		for element in self.missions:
+			print(element)
 		print('```')
 	
 	def printStagesHTML(self, stagedata=None, saledata=None):
@@ -622,17 +597,14 @@ class StageFetcher(UniversalFetcher):
 			rej_groups[grp].to_sql('rej ' + grp, conn, if_exists='replace')
 
 class ItemFetcher(UniversalFetcher):
-	def __init__(self, v='en', fls=['M'], d0=datetime.datetime.today()):
-		UniversalFetcher.__init__(self, v, fls)
+	def __init__(self, fls=['M'], d0=datetime.datetime.today()):
+		UniversalFetcher.__init__(self, fls)
 		self.rawData: list[list[str]] = []
-		self.refinedData: list[Event] = []
-		self.refinedStages: list[Stage] = []
-		self.finalStages: list[Stage] = []
-		self.refinedItems: list[Item] = []
-		self.sales: list[Sale] = []
+		self.refinedData: list[RawEventGroup] = []
+		self.finalItems: list[Item] = []
 		self.date0: datetime.datetime = d0
 	
-	def fetchRawData(self, data: str):
+	def fetchRawData(self, data: str) -> None:
 		lines = data.split('\n')
 		cr = csv.reader(lines, delimiter="\t")
 		for row in cr:
@@ -640,7 +612,7 @@ class ItemFetcher(UniversalFetcher):
 				self.rawData.append(row)
 				row[1], row[3] = (row[1] + '000')[0:3], (row[3] + '000')[0:3]
 	
-	def readRawData(self):
+	def readRawData(self) -> None:
 		for data in self.rawData:
 			if not ItemParsers.areValidDates(ItemParsers.getdates(data), self.filters, self.date0):
 				continue
@@ -651,44 +623,43 @@ class ItemFetcher(UniversalFetcher):
 				i.versions = ItemParsers.getversions(data)
 				i.ID = int(data[9])
 				i.text = data[11]
-				self.refinedData.append(i)
 				
 				if 900 <= i.ID < 1000:  # Login Stamp
 					i.name = i.text + ' (Login Stamp)'
-					self.refinedItems.append(Item.fromEvent(i))
+					self.finalItems.append(Item.fromEvent(i))
 				elif 800 <= i.ID < 900:
 					i.name = Readers.getSaleBySever(i.ID)
-					self.sales.append(Sale.fromEvent(i))
+					self.refinedData.append(RawEventGroup.makeSingleton(i))
 				elif i.ID > 1000:
 					i.name = Readers.getStageOrMap(i.ID)
-					self.refinedStages.append(Stage.fromEvent(i))
+					self.refinedData.append(RawEventGroup.makeSingleton(i))
 				else:
 					it = Item.fromEvent(i)
 					it.name = Readers.getItemBySever(it.ID)
 					it.recurring = int('0' + data[15])
 					it.qty = int(data[10])
-					self.refinedItems.append(it)
+					self.finalItems.append(it)
 	
-	def getStageData(self):
-		return (self.refinedStages, self.sales)
+	def getStageData(self) -> list[RawEventGroup]:
+		return self.refinedData
 	
-	def printItemData(self):
+	def printItemData(self) -> None:
 		print('```\nItems:')
-		for pt, item in enumerate(self.refinedItems):
+		for pt, item in enumerate(self.finalItems):
 			if item.name in ['Leadership', 'Rare Ticket'] and item.dates[0].day == 22 and item.dates[
 				1].day == 22:
-				for ps, i in enumerate(self.refinedItems[pt + 1:]):
+				for ps, i in enumerate(self.finalItems[pt + 1:]):
 					if i.name in ['Leadership', 'Rare Ticket'] and item.dates[0].day == 22 and item.dates[
 						1].day == 22 and item.name != i.name:
-						self.refinedItems.pop(ps + pt + 1)
-						self.refinedItems[pt].name += f' + {i.name} (Meow Meow Day)'
+						self.finalItems.pop(ps + pt + 1)
+						self.finalItems[pt].name += f' + {i.name} (Meow Meow Day)'
 						break
 			elif item.name == 'Rare Ticket':
 				v = item.versions[0][0:2] + '.' + str(int(item.versions[0][2:4]))
 				if v in item.text:
-					self.refinedItems[pt].name += f' (for {v} Update)'
+					self.finalItems[pt].name += f' (for {v} Update)'
 		
-		for item in self.refinedItems:
+		for item in self.finalItems:
 			qty = (' x ' + str(item.qty)) if int(item.qty) > 1 else ''
 			if item.name in ['Cat Food', 'Rare Ticket'] and (item.dates[1] - item.dates[0]).days >= 2:
 				qty += ' (Daily)' if item.recurring else ' (Only Once)'
@@ -698,21 +669,21 @@ class ItemFetcher(UniversalFetcher):
 	"""
 	def printItemDataHTML(self):
 		print('<h4>Items:</h4><ul>')
-		for pt, item in enumerate(self.refinedItems):
+		for pt, item in enumerate(self.finalItems):
 			if item.name in ['Leadership', 'Rare Ticket'] and item.dates[0].day == 22 and item.dates[
 				1].day == 22:
-				for ps, i in enumerate(self.refinedItems[pt + 1:]):
+				for ps, i in enumerate(self.finalItems[pt + 1:]):
 					if i.name in ['Leadership', 'Rare Ticket'] and item.dates[0].day == 22 and item.dates[
 						1].day == 22 and item.name != i.name:
-						self.refinedItems.pop(ps + pt + 1)
-						self.refinedItems[pt].name += f' + {i["name"]} (Meow Meow Day)'
+						self.finalItems.pop(ps + pt + 1)
+						self.finalItems[pt].name += f' + {i["name"]} (Meow Meow Day)'
 						break
 			elif item.name == 'Rare Ticket':
 				v = item['versions'][0][0:2] + '.' + str(int(item['versions'][0][2:4]))
 				if v in item['text']:
-					self.refinedItems[pt].name += f' (for {v} Update)'
+					self.finalItems[pt].name += f' (for {v} Update)'
 		
-		for item in self.refinedItems:
+		for item in self.finalItems:
 			qty = (' x ' + item.qty) if int(item.qty) > 1 else ''
 			if item.name in ['Cat Food', 'Rare Ticket'] and (item.dates[1] - item.dates[0]).days >= 2:
 				qty += ' (Daily)' if item['recurring'] else ' (Only Once)'

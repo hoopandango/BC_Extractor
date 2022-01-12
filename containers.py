@@ -3,6 +3,8 @@ from __future__ import annotations
 import datetime
 from dataclasses import dataclass
 
+from event_data_parsers_universal import UniversalParsers
+
 @dataclass
 class Event:
 	ID: int = None
@@ -12,12 +14,22 @@ class Event:
 	sched_data: dict = None
 	name: str = None
 	text: str = None
+	
+	def __str__(self) -> str:
+		return UniversalParsers.fancyDate(self.dates) + self.name
 
 @dataclass
 class EventGroup:
 	events: list[Event]
 	dates: list[datetime.datetime]
 	name: str
+	split: bool
+	
+	def __str__(self) -> str:
+		if self.split:
+			return '\n'.join([UniversalParsers.fancyDate(x.dates) + x.name for x in self.events])
+		else:
+			return UniversalParsers.fancyDate(self.dates) + self.name
 
 @dataclass
 class Gatya(Event):
@@ -62,6 +74,11 @@ class Item(Event):
 		return cls(**e.__dict__)
 
 @dataclass
-class RawStageGroup(Event):
+class RawEventGroup(Event):
 	IDs: list[int] = None
 	
+	@classmethod
+	def makeSingleton(cls, e: Event) -> RawEventGroup:
+		toret: RawEventGroup = RawEventGroup(**e.__dict__)
+		toret.IDs = [e.ID]
+		return toret
