@@ -1,11 +1,8 @@
 import csv
 import datetime
 import json
-import os
 import sqlite3
-import urllib.request
 from operator import itemgetter
-from typing import Type
 
 import numpy as np
 import pandas as pd
@@ -38,7 +35,7 @@ class UniversalFetcher:
 	def groupData(refinedStages: list[RawStageGroup]) -> tuple[list[Stage], list[Sale], list[Mission]]:
 		# stage, festival, sale, mission
 		group_history_2: dict[str, EventGroup] = {}
-		finalEvents: list[Stage] = []
+		finalEvents: list[Stage | EventGroup] = []
 		finalEventGroups: list[EventGroup] = []
 		sales: list[Sale] = []
 		missions: list[Mission] = []
@@ -46,6 +43,7 @@ class UniversalFetcher:
 		def pushEventOrSale(e: Event | EventGroup):
 			if (isinstance(e, EventGroup)):
 				finalEventGroups.append(e)
+				finalEvents.append(e)
 				return
 			
 			if e.dates[1].hour == 0:
@@ -132,40 +130,8 @@ class GatyaFetcher(UniversalFetcher):
 		self.date0 = d0
 	
 	# ACQUISITION TOOLS
-	def fetchLocalData(self, date):
-		# TODO make datewise import a separate command later
-		"""
-		d0 = int(date.strftime('%Y%m%d')+'000000')
-		#d0 = int(date+'000000')
-		mypath = 'Archive\\en\\gatya\\'
-		arr = os.listdir(mypath)
-		fname = 0
-		for file in arr:
-			f = int(file.replace('.tsv',''))
-			if f - d0 > 0:
-				break
-			fname = f
-		"""
-		
-		with open("tests/gatyastub2.tsv", 'r', encoding='utf-8') as response:
-			# with open(mypath+str(fname)+'.tsv','r', encoding='utf-8') as response:
-			lines = response.readlines()
-		cr = csv.reader(lines, delimiter="\t")
-		for row in cr:
-			if len(row) > 1:
-				self.rawGatya.append(row)
-				if len(row) > 1 and row[1] == "0":
-					row[1] = "0000"
-				if len(row) > 3 and row[3] == "0":
-					row[3] = "0000"
-	
-	def fetchRawData(self):
-		if (datetime.datetime.today() - self.date0).days > 60:
-			self.fetchLocalData(self.date0)
-			return
-		url = 'https://clamchowder.pythonanywhere.com/event_data/battlecats%s_production/gatya.tsv' % self.ver
-		response = urllib.request.urlopen(url)
-		lines = [l.decode('utf-8') for l in response.readlines()]
+	def fetchRawData(self, data: str):
+		lines = data.split('\n')
 		cr = csv.reader(lines, delimiter="\t")
 		for row in cr:
 			if len(row) > 1:
@@ -197,8 +163,9 @@ class GatyaFetcher(UniversalFetcher):
 			toput.guarantee = GatyaParsers.getGuarantees(banner)
 			toput.text = GatyaParsers.getValueAtOffset(banner, 24)
 			toput.extras = GatyaParsers.getExtras(banner)
-			
-			GatyaParsers.appendGatyaLocal(toput)
+		
+			if(goto == self.refinedGatya):
+				GatyaParsers.appendGatyaLocal(toput)
 			
 			goto.append(toput)
 	
@@ -292,39 +259,8 @@ class StageFetcher(UniversalFetcher):
 		self.date0 = d0
 	
 	# ACQUISITION TOOLS
-	def fetchLocalData(self, date) -> None:
-		"""
-		d0 = int(date.strftime('%Y%m%d')+'000000')
-		#$d0 = int(date+'000000')
-		mypath = 'Archive\\en\\sale\\'
-		arr = os.listdir(mypath)
-		fname = 0
-		for file in arr:
-			f = int(file.replace('.tsv',''))
-			if f - d0 > 0:
-				break
-			fname = f
-			
-		with open(mypath+str(fname)+'.tsv','r', encoding='utf-8') as response:"""
-		with open('tests/sale.tsv', 'r', encoding='utf-8') as response:
-			lines: list[str] = response.readlines()
-		cr = csv.reader(lines, delimiter="\t")
-		for row in cr:
-			if len(row) > 1:
-				self.rawStages.append(row)
-				if len(row) > 1 and row[1] == "0":
-					row[1] = "0000"
-				if len(row) > 3 and row[3] == "0":
-					row[3] = "0000"
-	
-	def fetchRawData(self) -> None:
-		if (datetime.datetime.today() - self.date0).days > 60:
-			# if the data is being reuqested from two months ago or further get archived data
-			self.fetchLocalData(self.date0)
-			return
-		url = 'https://clamchowder.pythonanywhere.com/event_data/battlecats%s_production/sale.tsv' % (self.ver)
-		response = urllib.request.urlopen(url)
-		lines = [l.decode('utf-8') for l in response.readlines()]
+	def fetchRawData(self, data: str) -> None:
+		lines = data.split('\n')
 		cr = csv.reader(lines, delimiter="\t")
 		for row in cr:
 			if len(row) > 1:
@@ -472,16 +408,14 @@ class StageFetcher(UniversalFetcher):
 						parsed = StageParsers.interpretDates(np.array(X))
 						mstart = event.dates[0].strftime("%b")
 						mend = event.dates[-1].strftime("%b")
-						if parsed[0] == 0:
-							E = '- Date ' + '/'.join(setting['dates'])
-						elif parsed[0] == 2:
-							E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Alternate Day'
-						elif parsed[0] == 3:
-							E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Third Day'
-						else:
-							E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every {parsed[0]}th Day'
-						# wont be above 10 so it's okay
 						
+						E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every {parsed[0]}th Day'
+						match (parsed[0]):
+							case 0: E = '- Date ' + '/'.join(setting['dates'])
+							case 2:	E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Alternate Day'
+							case 3:	E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Third Day'
+						# wont be above 10 so it's okay
+						# TODO: lookup how to put default case
 						if len(setting['times']) == 0:
 							print(E)
 						else:
@@ -698,42 +632,13 @@ class ItemFetcher(UniversalFetcher):
 		self.sales: list[Sale] = []
 		self.date0: datetime.datetime = d0
 	
-	def fetchRawData(self):
-		if (datetime.datetime.today() - self.date0).days > 60:
-			self.fetchLocalData(self.date0)
-			return
-		url = 'https://clamchowder.pythonanywhere.com/event_data/battlecats%s_production/item.tsv' % (self.ver)
-		response = urllib.request.urlopen(url)
-		lines = [l.decode('utf-8') for l in response.readlines()]
+	def fetchRawData(self, data: str):
+		lines = data.split('\n')
 		cr = csv.reader(lines, delimiter="\t")
 		for row in cr:
 			if len(row) > 1:
 				self.rawData.append(row)
 				row[1], row[3] = (row[1] + '000')[0:3], (row[3] + '000')[0:3]
-	
-	def fetchLocalData(self, date):
-		# d0 = int(date.strftime('%Y%m%d')+'000000')
-		# TODO : not working, replace with test suite
-		d0 = int(date + '000000')
-		mypath = 'Archive\\en\\item\\'
-		arr = os.listdir(mypath)
-		fname = 0
-		for file in arr:
-			tmp = int(file.replace('.tsv', ''))
-			if tmp - d0 > 0:
-				break
-			fname = tmp
-		
-		with open(mypath + str(fname) + '.tsv', 'r', encoding='utf-8') as response:
-			lines = response.readlines()
-		cr = csv.reader(lines, delimiter="\t")
-		for row in cr:
-			if len(row) > 1:
-				self.rawData.append(row)
-				if len(row) > 1 and row[1] == "0":
-					row[1] = "0000"
-				if len(row) > 3 and row[3] == "0":
-					row[3] = "0000"
 	
 	def readRawData(self):
 		for data in self.rawData:
@@ -750,7 +655,7 @@ class ItemFetcher(UniversalFetcher):
 				
 				if 900 <= i.ID < 1000:  # Login Stamp
 					i.name = i.text + ' (Login Stamp)'
-					self.refinedStages.append(Stage.fromEvent(i))
+					self.refinedItems.append(Item.fromEvent(i))
 				elif 800 <= i.ID < 900:
 					i.name = Readers.getSaleBySever(i.ID)
 					self.sales.append(Sale.fromEvent(i))
@@ -814,36 +719,3 @@ class ItemFetcher(UniversalFetcher):
 			print('<li><b>' + ItemParsers.fancyDate(item.dates)[2:] + '</b>' + item.name + qty + '</li>')
 		print('</ul>')
 	"""
-def test():
-	
-	gf = GatyaFetcher(fls=['N'], v='jp')
-	gf.fetchRawData()
-	gf.readRawData()
-	# gf.exportGatya()
-	gf.printGatya()
-	
-	sf = StageFetcher(fls=['N'], v='jp')
-	sf.fetchRawData()
-	sf.readRawData(storeRejects=True)
-	sf.finalStages, sf.sales, sf.missions = sf.groupData(sf.refinedStages)
-	sf.finalProcessing()
-	sd0 = sf.getStageData()
-
-	itf = ItemFetcher(fls=['N'], v='jp')
-	itf.fetchRawData()
-	itf.readRawData()
-	itf.printItemData()
-	
-	sd1 = itf.getStageData()
-	
-	sd0[0].extend(sd1[0])
-	sd0[1].extend(sd1[1])
-	
-	sf.printStages(*sd0)
-	sf.printFestivalData()
-	# sf.exportStages()
-	StageParsers.updateEventNames()
-	
-	print("hello")
-
-test()

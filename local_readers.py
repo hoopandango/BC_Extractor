@@ -68,35 +68,41 @@ class Readers:
 			return 'Unknown'
 
 	@staticmethod
-	def getStageOrMap(ID: int):
-		if (ID >= 100000):
-			if (ID == 300147):
-				ID = 300949
-			elif (ID == 300247):
-				ID = 300950
-			elif (300300 > ID >= 300000):
-				ID += 900
-			
-			i = str(ID).zfill(6)
-			
-			i1 = i[:-5].zfill(3)
-			i2 = i[-5:-2]
-			i3 = i[-2:].zfill(3)
-			
-			try:
-				return f"{stagedata.loc[f'{i1}-{i2}-{i3}', 1]} [{stagedata.loc[f'{i1}-{i2}', 2]}]"
-			except KeyError:
-				return "Unknown"
-		else:
-			match ID:
-				case 3000:
-					return "EoC Ch.1"
-				case 3001:
-					return "EoC Ch.2"
-				case 3002:
-					return "EoC Ch.3"
-			i = str(ID).zfill(6)
-			try:
-				return stagedata.loc[f"{i[0:3]}-{i[3:6]}", 2]
-			except KeyError:
-				return "Unknown"
+	def getMap(ID: int) -> str:
+		match ID:
+			case 3000:
+				return "EoC Ch.1"
+			case 3001:
+				return "EoC Ch.2"
+			case 3002:
+				return "EoC Ch.3"
+		i = str(ID).zfill(6)
+		try:
+			return stagedata.loc[f"{i[0:3]}-{i[3:6]}", 2]
+		except KeyError:
+			return "Unknown"
+
+	@staticmethod
+	def getStage(ID: int) -> str:
+		if (ID == 300147):
+			ID = 300949
+		elif (ID == 300247):
+			ID = 300950
+		elif (300300 > ID >= 300000):
+			ID += 900
+		
+		i = str(ID).zfill(6)
+		
+		i1 = i[:-5].zfill(3)
+		i2 = i[-5:-2]
+		i3 = i[-2:].zfill(3)
+		
+		try:
+			return f"{stagedata.loc[f'{i1}-{i2}-{i3}', 1]} [{stagedata.loc[f'{i1}-{i2}', 2]}]"
+		except KeyError:
+			return "Unknown"
+	
+	@classmethod
+	def getStageOrMap(cls, ID: int) -> str:
+		if (ID >= 100000): return cls.getStage(ID)
+		else: return cls.getMap(ID)

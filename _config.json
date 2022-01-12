@@ -90,8 +90,8 @@
 		"stages": "reusables\\stages.tsv",
 		"eventdata": "outputs\\eventdata\\",
         "missions": "reusables\\missions.tsv",
-        "substages": "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-StageName.txt",
-        "enemies": "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-EnemyName.txt",
-        "combos2": "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-ComboName.txt"
+        "substages": "reusables\\substages.tsv",
+        "enemies": "reusables\\enemies.tsv",
+        "combos2": "reusables\\combos.tsv"
 	}
 }

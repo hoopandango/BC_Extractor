@@ -1,5 +1,6 @@
 import json
 import datetime
+import string
 
 from containers import Gatya
 from local_readers import Readers
@@ -87,7 +88,7 @@ class UniversalParsers:
 		if (18000 <= ID < 18100):
 			if (ID == 18000):
 				return "Anniversary Slots"
-			return "Unknown Slots"
+			return "Slots"
 		elif (18100 <= ID < 18200):
 			return "Scratch Cards Event"
 		elif (9000 <= ID < 10000):
@@ -95,15 +96,20 @@ class UniversalParsers:
 		
 		try:
 			name = cls.allEventNames.loc[ID, "name"]
-			if (25000 > int(ID) > 24000 or 28000 > int(ID) > 27000):
-				name += ' (Baron)'
-			return name
+			eng = len([0 for x in name if x in string.ascii_letters])
+			full = len([0 for x in name if x.isalpha()])
+			if(full < 2*eng):
+				if (25000 > ID > 24000 or 28000 > ID > 27000):
+					name += ' (Baron)'
+				return name
 		except KeyError:
-			name = Downloaders.requestStage(ID, 'en')
-			if name != 'Unknown':
-				# updates name
-				cls.autoEventNames.loc[ID, "name"] = name
-			return name
+			pass
+			
+		name = Downloaders.requestStage(ID, 'en')
+		if name != 'Unknown':
+			# updates name
+			cls.autoEventNames.loc[ID, "name"] = name
+		return name
 	
 	@classmethod
 	def updateEventNames(cls):
