@@ -34,11 +34,11 @@
 				"itempack": "latest_en\\DataLocal\\itemPack.tsv",
 				"localisable": "latest_en\\resLocal\\localizable.tsv"
 			},
-            "missions": {
-                "text": "latest_en\\resLocal\\Mission_Name.csv",
-                "prize": "latest_en\\DataLocal\\Mission_Data.csv",
-                "fill": "latest_en\\DataLocal\\Mission_Condition.csv"
-            }
+			"missions": {
+				"text": "latest_en\\resLocal\\Mission_Name.csv",
+				"prize": "latest_en\\DataLocal\\Mission_Data.csv",
+				"fill": "latest_en\\DataLocal\\Mission_Condition.csv"
+			}
 		},
 		"jp": {
 			"combos": {
@@ -55,7 +55,7 @@
 			"items": {
 				"main": "latest_jp\\resLocal\\GatyaitemName.csv",
 				"gib": "latest_jp\\DataLocal\\Gatyaitembuy.csv",
-                "dropchara": "latest_jp\\DataLocal\\drop_chara.csv"
+				"dropchara": "latest_jp\\DataLocal\\drop_chara.csv"
 			},
 			"gatya": {
 				"option": "latest_jp\\DataLocal\\GatyaData_Option_SetR.tsv",
@@ -68,14 +68,14 @@
 				"itempack": "latest_jp\\DataLocal\\itemPack.tsv",
 				"localisable": "latest_jp\\resLocal\\localizable.tsv"
 			},
-            "missions": {
-                "text": "latest_jp\\resLocal\\Mission_Name.csv",
-                "prize": "latest_jp\\DataLocal\\Mission_Data.csv",
-                "fill": "latest_jp\\DataLocal\\Mission_Condition.csv"
-            }
-        }
-    },
-  "intermediates": {
+			"missions": {
+				"text": "latest_jp\\resLocal\\Mission_Name.csv",
+				"prize": "latest_jp\\DataLocal\\Mission_Data.csv",
+				"fill": "latest_jp\\DataLocal\\Mission_Condition.csv"
+			}
+		}
+	},
+	"intermediates": {
 		"combos": "out_intermediates\\catcombos.db"
 	},
 	"outputs": {
@@ -89,9 +89,9 @@
 		"sales": "reusables\\sales.tsv",
 		"stages": "reusables\\stages.tsv",
 		"eventdata": "outputs\\eventdata\\",
-        "missions": "reusables\\missions.tsv",
-        "substages": "reusables\\substages.tsv",
-        "enemies": "reusables\\enemies.tsv",
-        "combos2": "reusables\\combos.tsv"
+		"missions": "reusables\\missions.tsv",
+		"substages": "reusables\\substages.tsv",
+		"enemies": "reusables\\enemies.tsv",
+		"combos2": "reusables\\combos.tsv"
 	}
 }

@@ -4,24 +4,25 @@ from event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StagePa
 import asyncio
 import aiohttp
 
-CASE = 1
+CASE = 0
+LANG = 'en'
+f = ['N', 'Y']  # ['N', 'Y']
 
 """TODO:
-1 gatya event grouping
 4 combos tsv
 5 better gatya "new" uber checking
 7 more test cases
-8 meow meow day grouping
 9 proper text for rare ticket drops / updates / etc.
 10  proper exporting
-12 modularise everything
+13  date stuff could include month even for lower number of dates
+14  ranking dojo stage not found bug
 """
 
 def fetch_test(lang: str, num: int) -> dict[str, str]:
 	toret = {}
 	for cat in ["Gatya", "Sale", "Item"]:
 		text = ""
-		with open(f"tests/in/{lang}{num}{cat[0]}.tsv") as fl:
+		with open(f"tests/in/{lang}{num}{cat[0]}.tsv", encoding='utf-8') as fl:
 			rows = fl.read().split('\n')
 			for row in rows:
 				if row.startswith('+ '):
@@ -44,12 +45,14 @@ async def fetch_all(ver: str) -> dict[str, str]:
 
 start = time.time()
 # print(f"started at {start}")
-gf = GatyaFetcher(fls=['N'])
-sf = StageFetcher(fls=['N'])
-itf = ItemFetcher(fls=['N'])
+gf = GatyaFetcher(fls=f)
+sf = StageFetcher(fls=f)
+itf = ItemFetcher(fls=f)
 
-# texts = asyncio.run(fetch_all(gf.ver))
-texts = fetch_test('en', CASE)
+if CASE <= 0:
+	texts = asyncio.run(fetch_all(LANG))
+else:
+	texts = fetch_test(LANG, CASE)
 print(f"got at {time.time() - start}")
 
 gf.fetchRawData(texts["Gatya"])
@@ -73,7 +76,9 @@ sd1 = itf.refinedData
 sd0.extend(sd1)
 
 # print(f"grouping stages - {time.time() - start}")
-sf.finalStages, sf.sales, sf.missions = sf.groupData(sf.refinedStages)
+sf.finalStages, sf.sales, sf.missions = sf.groupData(sf.refinedStages.copy())
+gf.refinedGatya = gf.groupData(gf.refinedGatya)[0]
+itf.finalItems = gf.groupData(itf.finalItems)[0]
 sf.sortAll()
 # print(f"printing stuff - {time.time() - start}")
 

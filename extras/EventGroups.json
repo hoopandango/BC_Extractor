@@ -22,7 +22,7 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "Li'l Festival": {
     "stages": [
@@ -38,7 +38,7 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "All-Stars Stages": {
     "stages": [
@@ -51,7 +51,7 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "Monthlies Festival": {
     "stages": [
@@ -70,7 +70,7 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "Catfruit Festival": {
     "stages": [
@@ -82,7 +82,7 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "Items Sale": {
     "stages": [
@@ -103,7 +103,7 @@
     ],
     "visible": false,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "XP Festival": {
     "stages": [
@@ -114,7 +114,7 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "Metal Festival": {
     "stages": [
@@ -124,7 +124,7 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "Gamatoto XP Harvest": {
     "stages": [
@@ -134,7 +134,7 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "Treasure Festival": {
     "stages": [
@@ -144,7 +144,7 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "Builder Festival": {
     "stages": [
@@ -154,7 +154,7 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "Advent Festival": {
     "stages": [
@@ -175,39 +175,39 @@
     ],
     "visible": true,
     "split": true,
-    "compare_substring": false
+    "compare_mode": 0
   },
   "Baron": {
-    "stages":[
+    "stages": [
       "(Baron)"
     ],
     "visible": true,
     "split": true,
-    "compare_substring": true
+    "compare_mode": 1
   },
   "Duel": {
-    "stages":[
+    "stages": [
       "Duel"
     ],
     "visible": true,
     "split": true,
-    "compare_substring": true
+    "compare_mode": 1
   },
   "Tag Arena": {
-    "stages":[
+    "stages": [
       "Tag Arena"
     ],
     "visible": true,
     "split": true,
-    "compare_substring": true
+    "compare_mode": 1
   },
   "Citadel": {
-    "stages":[
+    "stages": [
       "Citadel"
     ],
     "visible": true,
     "split": true,
-    "compare_substring": true
+    "compare_mode": 1
   },
   "Catfood Discount Reset (30/750)": {
     "stages": [
@@ -216,6 +216,42 @@
     ],
     "visible": true,
     "split": false,
-    "compare_substring": false
+    "compare_mode": 0
+  },
+  "Rare Ticket + Leadership (Meow Meow Day)": {
+    "stages": [
+      "Rare Ticket",
+      "Leadership"
+    ],
+    "visible": true,
+    "split": false,
+    "compare_mode": 2,
+    "date": 22
+  },
+  "Tornado Festival": {
+    "stages": [
+      "Crimson Catastrophe",
+      "Peerless",
+      "Sweet Irony",
+      "Red Sky at Morning",
+      "The 2nd Dimension",
+      "Crimson Vengeance",
+      "Peerless Too",
+      "Bitter Irony",
+      "Red Sky at Night",
+      "The 3rd Dimension",
+      "Heaven of Darkness",
+      "Wrath of Heaven",
+      "Dimension of Despair",
+      "The Rolling Dead",
+      "NEO Darkness Heaven",
+      "Wrath of the Divine",
+      "Typhoon Nemo",
+      "Dimension of Delirium",
+      "The Dead Keep Rolling"
+    ],
+    "visible": true,
+    "split": false,
+    "compare_mode": 0
   }
 }

@@ -33,7 +33,7 @@ def getStageCat(catID: int) -> str:
 
 def getCombo(ID: int) -> str:
 	if (ID == -1): return "any"
-	Readers.getCombo(ID)
+	return Readers.getCombo(ID)
 
 def getItem(cat: int, ID: int) -> str:
 	if cat == 0:
@@ -94,7 +94,6 @@ def updateItems() -> None:
 	
 	for t in text_en.keys():
 		if (text_en[t][1] in ["<br>", "|"]):
-			del (text_en[t])  # ignore empty rows
 			continue
 		# fancy shit that somehow works, only tested for en text
 		

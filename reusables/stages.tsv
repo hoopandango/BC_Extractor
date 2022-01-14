@@ -292,11 +292,11 @@ ID	name
 1252	The Queen & The Dead
 1253	The King & The Maiden
 1254	60M Celebration Gifts Galore!
-1255	魔導書の示す場所
-1256	異界のしもべ
-1257	ネコの解放
-1258	タンクネコの解放
-1259	メガサターン
+1255	Arcane Confluence
+1256	Servant of Darkness
+1257	Wicked Cat
+1258	Wicked Tank
+1259	The Great Diablo
 1265	Demon's Park
 1266	Wicked Axe
 1268	Unleashing the Cats
@@ -307,20 +307,20 @@ ID	name
 1273	Rashomon
 1274	Growing Evil
 1275	Empress' Report 4
-1276	女王の研究報告５
+1276	Empress' Report 5
 1282	Q1.箱の中身クイズ
 1283	Q5.時の運クイズ
 1284	バースデープレゼント！
-1285	2021年最多出演敵ベスト５！
-1286	お年玉襲来！
-1287	闇討ちの戦い
+1285	Top 5 Most Seen Enemies, 2021!
+1286	New Year's Bling
+1287	Cover of Darkness
 2000	ふるさと自衛隊
 2001	魅惑のプリンセス
 2002	ケリ姫ステージ
 2003	To the Future
 2004	拡散性ミリオンアーサー
 2005	ドラゴンポーカー
-2006	ラスボス降臨!?
+2006	Lasvoss Strikes?!
 2007	Merc Storia: Inferno
 2008	Merc Storia: Showdown
 2009	ドラゴンリーグ
@@ -351,7 +351,7 @@ ID	name
 2034	Witch's Labyrinth
 2035	Walpurgisnacht
 2036	突撃！キャットバスターズ
-2037	開眼の歌謡にゃんこ襲来！
+2037	Cabaret Cat Awakens!
 2038	PIKOTARO
 2039	追逐夢想男偶像
 2040	ナゾのウサギ登場!?
@@ -542,7 +542,7 @@ ID	name
 7004	Alien Citadel
 7005	Zombie Citadel
 7006	Infernal Tower
-7007	にゃんこ別塔【無】
+7007	Traitless Citadel
 11005	Arena of Honor
 11015	Arena of Honor
 11016	Arena of Honor
@@ -644,19 +644,19 @@ ID	name
 24017	July Gauntlet
 24018	July Gauntlet II
 24019	Summer Break Cats
-24020	ヒュージゴマ強襲 !
+24020	Baron Seal Strikes
 24021	August Gauntlet
 24022	August Gauntlet II
 24023	9月強襲！
 24024	続・9月強襲！
 24027	Le'Grim Strikes
 24029	November Gauntlet II
-24030	12月強襲！
+24030	December Gauntlet
 24031	December Gauntlet II
 24032	January Gauntlet
 24033	January Gauntlet II
 24034	ギガガガ強襲
-24036	ことよろにゃ強襲！(ΦωΦ)
+24036	A Colossal New Year!
 24037	大天使エクスエル強襲
 24038	ビッグペンZ強襲
 25000	Aitum Fields
@@ -730,3 +730,4 @@ ID	name
 27009	Horrorpotamus!
 27010	めざせＧＩ にゃんこ競馬
 24035	Horrorpotamus
+27011	強襲！城とドラゴン

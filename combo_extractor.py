@@ -84,11 +84,11 @@ gaps = []
 def get_combo_units_table() -> DataFrame:
 	if LNG == 'en':
 		with open(flnames_en['data']) as fl1:
-			df = pd.read_csv(fl1, header=None, delimiter=',', usecols=range(0, 15))
+			df = pd.read_csv(fl1, header=None, delimiter=',', usecols=range(0, 15)).dropna()
 	# elif LNG == 'jp':
 	else:
 		with open(flnames_jp['data']) as fl1:
-			df = pd.read_csv(fl1, header=None, delimiter=',', usecols=range(0, 15))
+			df = pd.read_csv(fl1, header=None, delimiter=',', usecols=range(0, 15)).dropna()
 		
 		df = df.append(df[gaps], ignore_index=True)
 	
@@ -116,7 +116,7 @@ def get_combo_table() -> DataFrame:
 		names = names.iloc[:, 0:1]
 		
 		with open(flnames_en['data']) as fl_data:
-			data = pd.read_csv(fl_data, header=None, delimiter=',', usecols=range(0, 15))
+			data = pd.read_csv(fl_data, header=None, delimiter=',', usecols=range(0, 15)).dropna()
 	
 	# elif LNG == 'jp':
 	else:
@@ -136,7 +136,7 @@ def get_combo_table() -> DataFrame:
 		names = test['0en']
 		
 		with open(flnames_jp['data']) as fl_data:
-			data = pd.read_csv(fl_data, header=None, delimiter=',', usecols=range(0, 15))
+			data = pd.read_csv(fl_data, header=None, delimiter=',', usecols=range(0, 15)).dropna()
 		data = data.append(data[gaps], ignore_index=True)
 	
 	# Removes unused combos

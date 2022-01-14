@@ -1,6 +1,8 @@
 import pandas as pd
 import json
 
+from z_downloaders import Downloaders
+
 with open('_config.json') as fl:
 	config = json.load(fl)
 
@@ -80,7 +82,7 @@ class Readers:
 		try:
 			return stagedata.loc[f"{i[0:3]}-{i[3:6]}", 2]
 		except KeyError:
-			return "Unknown"
+			return Downloaders.requestStage(ID, 'en')
 
 	@staticmethod
 	def getStage(ID: int) -> str:

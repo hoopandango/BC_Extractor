@@ -37,9 +37,7 @@ except sqlite3.OperationalError:
 
 series = pd.read_sql('SELECT * FROM series', conn, index_col='series_ID')
 
-""" for backchecker version
 series["head"] = [-1]*len(series)
-"""
 
 conn.close()
 
@@ -130,6 +128,7 @@ def process_all():
 			if len(diff[0]) == len(diff[1]) == 0:
 				print(f"(≅ {prev})", end='')
 			else:
+				json_data[prev]["diff"] = [[], []]
 				set_head(s_ID, ID)
 				print(f"(> {prev})", end='')
 		

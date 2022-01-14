@@ -17,7 +17,7 @@ class Downloaders:
 			except requests.exceptions.RequestException as e:
 				return f'Request Failed - {e}'
 			c = r.content
-			if b"<Code>AccessDenied</Code>" not in c and b'<h2><span' not in c:
+			if b"<Code>AccessDenied</Code>" not in c and b'<h2><span' not in c and r.status_code != 404:
 				try:
 					level = c.split(b'<h2>')[1].split(b"<span")[0].decode('utf-8')
 					return level
@@ -33,9 +33,9 @@ class Downloaders:
 		else:
 			l = ''
 		
-		if (cat == 'N'):
+		if (cat == 'N' or cat == 'Cat Capsule'):
 			file = 'normal/%sN%03d.html' % (l, ID)
-		elif (cat == 'E'):
+		elif (cat == 'E' or cat == 'Event Capsule'):
 			file = 'event/%sE%03d.html' % (l, ID)
 		else:
 			file = 'rare/%sR%03d.html' % (l, ID)
