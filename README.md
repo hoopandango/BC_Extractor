@@ -1,6 +1,6 @@
 # BC Extractors
 
-## **v 0.1.4**
+## **v 0.5.1**
 
 This repository contains the files and code that I use to produce automated event data.
 
@@ -52,3 +52,14 @@ The rest should hopefully have self-explanatory titles.
 * **v 0.1.3** - fixed duplicate merging shenanigans for good. Added improved interpretation for monthly and weekly recurring events.
 * **v 0.1.4** - reformatted code, removed unnecessary variables.
 * **v 0.2.0** - ItemFetcher is now functional, added a draft of missions extractor[WIP]
+* **v 0.2.1** - prepared templates for mission information.
+* **v 0.2.2** - first draft of mission parsing, prepared, templates were functional. improved item_extractor to pick up item IDs of cats.
+* **v 0.2.3** - shifted local file readers to their own file for cleaner organisation.
+* **v 0.3.0** - heavy type hinting implemented for gatya.
+* **v 0.3.1** - type hinting also added to stages, although not fully functional.
+* **v 0.3.2** - patched data grouping bug. finished type hinting for ItemFetcher
+* **v 0.3.3** - added local cache of foreign dependencies. Implemented aiohttp for faster queries.
+* **v 0.4.0** - transferred print method to container classes to make printing easier. migrated all grouping to the groupData() function.
+* **v 0.4.1** - bug fixes. added feature to API call for fetching name to not send a query to web if it's more appropriate that way.
+* **v 0.5.0** - implemented basic data exporting as JSON file. not ironed out yet.
+* **v 0.5.1** - improved festival data printing to rely on grouped festival data rather than guessing from refinedData.

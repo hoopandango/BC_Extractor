@@ -10,12 +10,13 @@ CASE = 0
 LANG = 'en'
 f = ['N']
 
+with open("_config.json") as fl:
+	config = json.load(fl)
+
 """TODO:
 4 combos tsv
-5 better gatya "new" uber checking
 9 proper text for update ticket / update event
-10  proper exporting
-13  date stuff could include month even for lower number of dates
+10  all barons are grouped together
 """
 
 def fetch_test(lang: str, num: int) -> dict[str, str]:
@@ -97,7 +98,7 @@ def unfuck_dates(obj):
 	else:
 		return str(obj)
 
-with open("export.json", mode='w') as fl:
+with open(config["outputs"]["eventdata"]+"export.json", mode='w') as fl:
 	json.dump(for_export, fl, indent=2, default=unfuck_dates)
 
 print(f"over - {time.time() - start}")
