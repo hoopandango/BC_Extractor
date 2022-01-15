@@ -177,7 +177,7 @@ def process_all():
 		
 		df_main.loc[ID] = row
 		
-		row_comp = {"banner_name": str(serie), "enabled": bool(is_enabled(ID)), "series_ID": int(s_ID)}
+		row_comp = {"banner_name": str(serie), "enabled": bool(is_enabled(ID)), "series_ID": s_ID}
 		if (len(excl) | 1):
 			row_comp["exclusives"] = excl
 		if (len(diff) | 1):

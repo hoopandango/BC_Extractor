@@ -1,0 +1,248 @@
+{
+  "gatya": [
+    {
+      "ID": 610,
+      "dates": [
+        "2021-11-22T11:00:00",
+        "2021-11-24T10:59:00"
+      ],
+      "versions": [
+        "101000",
+        "999999"
+      ],
+      "name": "Vajiras",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "3",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [
+        "PS",
+        "L"
+      ],
+      "exclusives": [
+        "R",
+        "D"
+      ],
+      "text": "Mighty NEW hero Shiro Amakusa, good against Black & Aku! \u2605Tap banner for info!",
+      "printable": "- 22~24 Nov: Vajiras [PS/L/R]"
+    },
+    {
+      "ID": 499,
+      "dates": [
+        "2021-11-24T11:00:00",
+        "2021-11-26T10:59:00"
+      ],
+      "versions": [
+        "101000",
+        "999999"
+      ],
+      "name": "Almighties",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "3",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [
+        "PS",
+        "L"
+      ],
+      "exclusives": [
+        "R",
+        "D"
+      ],
+      "text": "The Almighties, supreme beings of Catkind! \u2605 Tap banner for info!",
+      "printable": "- 24~26 Nov: Almighties [PS/L/R]"
+    },
+    {
+      "ID": 626,
+      "dates": [
+        "2021-11-26T11:00:00",
+        "2021-11-29T10:59:00"
+      ],
+      "versions": [
+        "101000",
+        "999999"
+      ],
+      "name": "Nekolugas",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "3",
+      "guarantee": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "extras": [
+        "L"
+      ],
+      "exclusives": [
+        "R",
+        "D"
+      ],
+      "text": "NEW Barrier and Shield destroying hero Furiluga appears! \u2605Tap banner for info!",
+      "printable": "- 26~29 Nov: Nekolugas [G/L/R]"
+    },
+    {
+      "ID": 613,
+      "dates": [
+        "2021-11-29T11:00:00",
+        "2021-12-01T10:59:00"
+      ],
+      "versions": [
+        "101000",
+        "999999"
+      ],
+      "name": "Galaxy Gals",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "3",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [
+        "PS",
+        "L"
+      ],
+      "exclusives": [
+        "R",
+        "D"
+      ],
+      "text": "New Hero LILIN joins the fight to crush the Aku! \u2605 Tap for more info!",
+      "printable": "- 29 Nov~1 Dec: Galaxy Gals [PS/L/R]"
+    },
+    {
+      "ID": 489,
+      "dates": [
+        "2021-12-01T11:00:00",
+        "2021-12-03T10:59:00"
+      ],
+      "versions": [
+        "101000",
+        "999999"
+      ],
+      "name": "Dark Heroes",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "3",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [
+        "PS",
+        "L"
+      ],
+      "exclusives": [
+        "R",
+        "D"
+      ],
+      "text": "For Justice and Cats! The Dark Heroes! \u2605 Tap banner for info!",
+      "printable": "- 1~3 Dec: Dark Heroes [PS/L/R]"
+    }
+  ],
+  "stages": [
+    [
+      {
+        "name": "XP Festival",
+        "events": [
+          {
+            "ID": 1028,
+            "dates": [
+              "2021-11-22T11:00:00",
+              "2021-12-06T10:59:00"
+            ],
+            "versions": [
+              "101000",
+              "999999"
+            ],
+            "name": "XP Stage",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  2,
+                  4,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": [
+                  {
+                    "start": 

@@ -1,21 +1,20 @@
+import json
 import time
 
 from event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StageParsers
 import asyncio
 import aiohttp
 
-CASE = 0
+CASE = 3
 LANG = 'en'
-f = ['N', 'Y']  # ['N', 'Y']
+f = ['N']
 
 """TODO:
 4 combos tsv
 5 better gatya "new" uber checking
-7 more test cases
-9 proper text for rare ticket drops / updates / etc.
+9 proper text for update ticket / update event
 10  proper exporting
 13  date stuff could include month even for lower number of dates
-14  ranking dojo stage not found bug
 """
 
 def fetch_test(lang: str, num: int) -> dict[str, str]:
@@ -76,7 +75,7 @@ sd1 = itf.refinedData
 sd0.extend(sd1)
 
 # print(f"grouping stages - {time.time() - start}")
-sf.finalStages, sf.sales, sf.missions = sf.groupData(sf.refinedStages.copy())
+sf.finalStages, sf.festivals, sf.sales, sf.missions = sf.groupData(sf.refinedStages.copy())
 gf.refinedGatya = gf.groupData(gf.refinedGatya)[0]
 itf.finalItems = gf.groupData(itf.finalItems)[0]
 sf.sortAll()
@@ -86,6 +85,13 @@ gf.printGatya()
 sf.printStages()
 itf.printItemData()
 sf.printFestivalData()
+
+for_export = {"gatya": gf.package(),
+              "stages": sf.package(),
+              "items": itf.package()}
+
+with open("export.json", mode='w') as fl:
+	json.dump(for_export, fl, indent=2)
 
 print(f"over - {time.time() - start}")
 StageParsers.updateEventNames()

@@ -2,8 +2,8 @@ import csv
 import datetime
 import json
 import sqlite3
+from itertools import groupby
 
-import numpy as np
 import pandas as pd
 
 from containers import Gatya, Event, Stage, EventGroup, Mission, Sale, RawEventGroup, Item
@@ -30,7 +30,8 @@ class UniversalFetcher:
 		self.filters = fls
 	
 	@staticmethod
-	def groupData(waitingqueue: list[RawEventGroup] | list[Event]) -> tuple[list[Event], list[Sale], list[Mission]]:
+	def groupData(waitingqueue: list[RawEventGroup] | list[Event]) -> tuple[list[Event], list[EventGroup],
+	                                                                        list[Sale], list[Mission]]:
 		# stage, festival, sale, mission
 		group_history_2: dict[str, EventGroup] = {}
 		ungrouped_history: dict[str, Event] = {}
@@ -103,7 +104,8 @@ class UniversalFetcher:
 		def addGroup(group_name: str, event: Event):
 			group_history_2[group_name] = EventGroup(**{'name': group_name, 'events': [event],
 			                                            'visible': event_groups[group_name]["visible"],
-			                                            'dates': event.dates.copy(), 'split': event_groups[group_name]["split"]})
+			                                            'dates': event.dates.copy(),
+			                                            'split': event_groups[group_name]["split"]})
 		
 		def extendGroup(groupname: str, event: Event):
 			group = group_history_2[groupname]
@@ -137,7 +139,7 @@ class UniversalFetcher:
 					                                        split=True, visible=True)
 			if not grouped:
 				ungrouped_history[curr.name] = curr
-				
+		
 		def groupEvents():
 			for event in flatqueue:
 				processForGrouping(event)
@@ -145,7 +147,7 @@ class UniversalFetcher:
 				flushGroup(groupname)
 			for e in ungrouped_history.values():
 				pushEventOrSale(e)
-	
+		
 		def flatten(toflatten: list[RawEventGroup]) -> list[Event]:
 			# flatten RawEventGroup if that's how the data was given
 			newqueue = []
@@ -157,16 +159,17 @@ class UniversalFetcher:
 					if eventname == 'Unknown':
 						continue
 					
-					curr0: Event = Event(name=eventname, ID=ID, dates=grp0.dates)
+					curr0: Event = Stage(name=eventname, ID=ID, dates=grp0.dates, versions=grp0.versions, sched=grp0.sched,
+					                     sched_data=grp0.sched_data)
 					newqueue.append(curr0)
 			return newqueue
-	
-		if(isinstance(waitingqueue[0], RawEventGroup)):
+		
+		if (isinstance(waitingqueue[0], RawEventGroup)):
 			flatqueue = flatten(waitingqueue)
 		else:
 			flatqueue = waitingqueue
 		groupEvents()
-		return (finalEvents, sales, missions)
+		return (finalEvents, finalEventGroups, sales, missions)
 
 class GatyaFetcher(UniversalFetcher):
 	# SETUP
@@ -211,11 +214,11 @@ class GatyaFetcher(UniversalFetcher):
 			toput.guarantee = GatyaParsers.getGuarantees(banner)
 			toput.text = GatyaParsers.getValueAtOffset(banner, 24)
 			toput.extras = GatyaParsers.getExtras(banner)
-		
+			
 			if toput.page == "Cat Capsule":
 				goto = self.rejectedGatya
-		
-			if(goto == self.refinedGatya):
+			
+			if (goto == self.refinedGatya):
 				GatyaParsers.appendGatyaLocal(toput)
 			
 			goto.append(toput)
@@ -248,13 +251,13 @@ class GatyaFetcher(UniversalFetcher):
 	def storeGatyaUncut(self) -> None:
 		buf = ""
 		for event in self.refinedGatya:
-			if int(event.ID) > 0:
+			if event.ID > 0:
 				buf += '%s%s\n' % GatyaParsers.getString(event)
 		
 		buf += '\n'
 		
 		for event in self.rejectedGatya:
-			if int(event.ID) > 0:
+			if event.ID > 0:
 				buf += '%s%s\n' % GatyaParsers.getString(event)
 		
 		with open(inm_loc + "gatya_final.txt", "w", encoding='utf-8') as text_file:
@@ -291,12 +294,16 @@ class GatyaFetcher(UniversalFetcher):
 		
 		df_ref.astype(str).to_sql('refined', conn, if_exists='replace')
 		df_rej.astype(str).to_sql('rejected', conn, if_exists='replace')
+	
+	def package(self):
+		return [X.package() for X in self.refinedGatya]
 
 class StageFetcher(UniversalFetcher):
 	rawStages: list[list[str]]
 	refinedStages: list[RawEventGroup]
 	rejectedStages: list[RawEventGroup]
 	finalStages: list[Stage | EventGroup]
+	festivals: list[EventGroup]
 	sales: list[Sale]
 	missions: list[Mission]
 	date0: datetime.datetime
@@ -308,6 +315,7 @@ class StageFetcher(UniversalFetcher):
 		self.refinedStages = []
 		self.rejectedStages = []
 		self.finalStages = []
+		self.festivals = []
 		self.sales = []
 		self.missions = []
 		self.date0 = d0
@@ -331,131 +339,112 @@ class StageFetcher(UniversalFetcher):
 				else:
 					goto = self.rejectedStages
 			
+			toadd = {
+				"dates": StageParsers.getdates(data),
+				"versions": StageParsers.getversions(data)
+			}
+			
 			# permanent - just ID - all day
 			if data[7] == '0':
-				goto.append(RawEventGroup(**{
-					"dates": StageParsers.getdates(data),
-					"versions": StageParsers.getversions(data),
-					"sched": "permanent",
-					"IDs": [int(x) for x in data[9:9 + int(data[8])]]
-				}))
+				toadd |= {"sched": "permanent", "IDs": [int(x) for x in data[9:9 + int(data[8])]]}
 			# Yearly repeat XY - starts and ends at a date+time
 			elif data[8] != '0':
 				ydata, yIDs = StageParsers.yearly(data)
-				goto.append(RawEventGroup(**{
-					"dates": StageParsers.getdates(data),
-					"versions": StageParsers.getversions(data),
-					"sched": "yearly",
-					"sched_data": ydata,
-					"IDs": yIDs
-				}))
+				toadd |= {"sched": "yearly", "sched_data": ydata, "IDs": yIDs}
 			# Monthly repeat X0Y - list of days of month, may have time range
 			elif data[9] != '0':
 				mdata, mIDs = StageParsers.monthly(data)
-				goto.append(RawEventGroup(**{
-					"dates": StageParsers.getdates(data),
-					"versions": StageParsers.getversions(data),
-					"sched": "monthly",
-					"sched_data": mdata,
-					"IDs": mIDs
-				}))
+				toadd |= {"sched": "monthly", "sched_data": mdata, "IDs": mIDs}
 			# Weekly repeat X00Y - list of weekdays, may have time ranges
 			elif data[10] != '0':
 				wdata, wIDs = StageParsers.weekly(data)
-				goto.append(RawEventGroup(**{
-					"dates": StageParsers.getdates(data),
-					"versions": StageParsers.getversions(data),
-					"sched": "weekly",
-					"sched_data": wdata,
-					"IDs": wIDs
-				}))
+				toadd |= {"sched": "weekly", "sched_data": wdata, "IDs": wIDs}
 			# Daily repeat X000Y - list of time ranges every day in interval
 			elif data[11] != '0':
 				ddata, dIDs = StageParsers.daily(data)
-				goto.append(RawEventGroup(**{
-					"dates": StageParsers.getdates(data),
-					"versions": StageParsers.getversions(data),
-					"sched": "daily",
-					"sched_data": ddata,
-					"IDs": dIDs
-				}))
+				toadd |= {"sched": "daily", "sched_data": ddata, "IDs": dIDs}
+			
+			goto.append(RawEventGroup(**toadd))
 	
 	def sortAll(self) -> None:
 		for x in [self.finalStages, self.sales, self.missions]:
 			x.sort(key=lambda elem: elem.dates[0])
 	
 	# OUTPUT TOOLS
+	# noinspection PyUnresolvedReferences
 	def printFestivalData(self):
-		permanentLog = []
-		for event in self.refinedStages:
-			for ID in event.IDs:
-				# Checks come here
-				
-				if event.sched is None or event.sched == 'permanent' and (
-						ID not in (1028, 1059, 1124, 1155, 1078, 1007, 1006) or ID in permanentLog):
-					continue
-				
+		for festival in [X for X in self.festivals if not (X.split or not X.visible)]:
+			if not isinstance(festival.events[0], Stage) or festival.events[0].sched is None:
+				continue
+			
+			print(f'```\n{festival.name} {StageParsers.fancyDate(festival.dates)}\n')
+			
+			groups = []
+			if(festival.events[0].sched_data is not None):
+				obj = groupby(festival.events, lambda x: x.sched_data)
+				for k, group in obj:
+					groups.append(list(group))
+			else:
+				obj = groupby(festival.events, lambda x: x.dates)
+				for k, group in obj:
+					groups.append(list(group))
+			
+			for event_set in groups:
 				# Starts printing here
-				if StageParsers.getEventName(ID) == 'Unknown':
-					print(f'```\n{ID}')
+				print(f'{", ".join([event.name for event in event_set])}: ')
+				rep = event_set[0]  # representative event of the set
+				if rep.sched == 'permanent':
+					print(f"- {rep.dates[0].strftime('%d')}: {StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}")
 				
-				else:
-					print(f'```\n{StageParsers.getEventName(ID)}')
-				
-				if event.sched == 'permanent':
-					permanentLog.append(ID)
-					# Merges ALL instances of this event!!
-					for e in [x for x in self.refinedStages if ID in x.IDs]:
-						print(
-							f"- {e.dates[0].strftime('%d')}: {e.dates[0].strftime('%I%p')}~{e.dates[1].strftime('%I%p')}")
-				
-				elif event.sched == 'monthly':
-					for setting in event.sched_data:
-						X = [int(x) for x in setting['dates']]
-						parsed = StageParsers.interpretDates(np.array(X))
-						mstart = event.dates[0].strftime("%b")
-						mend = event.dates[-1].strftime("%b")
+				elif rep.sched == 'monthly':
+					for setting in rep.sched_data:
+						parsed = StageParsers.interpretDates(setting['dates'])
+						mstart = rep.dates[0].strftime("%b")
+						mend = rep.dates[-1].strftime("%b")
 						
 						match (parsed[0]):
-							case 0: E = '- Date ' + '/'.join(setting['dates'])
-							case 2:	E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Alternate Day'
-							case 3:	E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Third Day'
-							case _: E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every {parsed[0]}th Day'
+							case 0:
+								E = '- Date ' + '/'.join([str(x) for x in setting['dates']])
+							case 2:
+								E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Alternate Day'
+							case 3:
+								E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Third Day'
+							case _:
+								E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every {parsed[0]}th Day'
 						# wont be above 10 so it's okay
 						if len(setting['times']) == 0:
 							print(E)
 						else:
-							print(
-								f"{E}: {setting['times'][0]['start'].strftime('%I%p').lstrip('0')}~"
-								f"{setting['times'][0]['end'].strftime('%I%p').lstrip('0')}")
+							print(f"{E}: {StageParsers.fancyTimes(setting['times'])}")
 				
-				elif event.sched == 'daily':
-					for setting in event.sched_data:
-						print(f"{StageParsers.fancyDate(event.dates)}{StageParsers.fancyTimes(setting['times'])}")
+				elif rep.sched == 'daily':
+					for setting in rep.sched_data:
+						print(f"{StageParsers.fancyDate(rep.dates)}{StageParsers.fancyTimes(setting['times'])}")
 				
-				elif event.sched == 'weekly':
+				elif rep.sched == 'weekly':
 					dayscheds = [[], [], [], [], [], [], []]
-					for setting in event.sched_data:
+					for setting in rep.sched_data:
 						for i, val in enumerate(setting['weekdays']):
-							if val == 1: dayscheds[i].append(StageParsers.fancyTimes(setting['times']))
+							if val: dayscheds[i].append(StageParsers.fancyTimes(setting['times']))
 					ignored: list[int] = []
 					for i, day1 in enumerate(dayscheds):
 						buf = []
 						if (i in ignored or day1 == []): continue
 						buf.append(weekdays[i])
+						day2 = j = None
 						for j, day2 in enumerate(dayscheds[i + 1:]):
 							if (i + j + 1 in ignored): continue
-							if (set(day1) == set(day2)):
-								ignored.append(i + j + 1)
-								buf.append(weekdays[i + j + 1])
+						if (set(day1) == set(day2)):
+							ignored.append(i + j + 1)
+						buf.append(weekdays[i + j + 1])
 						print(f"{'/'.join(buf)}: {', '.join(day1)}")
 				
-				elif event.sched == 'yearly':
-					print(StageParsers.fancyDate([event.sched_data[0]['times'][0]['start'],
-																				event.sched_data[0]['times'][0]['end']])[:-2])
+				elif rep.sched == 'yearly':
+					print(StageParsers.fancyDate([rep.sched_data[0]['times'][0]['start'],
+					                              rep.sched_data[0]['times'][0]['end']])[:-2])
 				
 				# End printing
-				print('```')
+			print('```')
 	
 	def schedulingTable(self):
 		hashmap = {'yearly': 'Yearly', 'monthly': 'Monthly', 'weekly': 'Weekly', 'daily': 'Daily',
@@ -482,7 +471,7 @@ class StageFetcher(UniversalFetcher):
 		
 		df.to_csv('scheduling.tsv', sep='\t')
 	
-	def printStages(self)-> None:
+	def printStages(self) -> None:
 		print('```\nEvents:')
 		for element in self.finalStages:
 			print(element)
@@ -513,6 +502,9 @@ class StageFetcher(UniversalFetcher):
 		for group in saledata:
 			print(f"<li><b>{StageParsers.fancyDate(group['dates'])[2:]}</b>{group['name']}</li>")
 		print('</ul>')
+	
+	def package(self):
+		return [[X.package() for X in Y] for Y in [self.finalStages, self.sales, self.missions]]
 	
 	def exportStages(self):
 		grps = ["permanent", "yearly", "monthly", "weekly", "daily"]
@@ -585,14 +577,16 @@ class ItemFetcher(UniversalFetcher):
 					self.finalItems.append(Item.fromEvent(i))
 				elif 800 <= i.ID < 900:
 					i.name = Readers.getSaleBySever(i.ID)
+					del (i.text)
 					self.refinedData.append(RawEventGroup.makeSingleton(i))
 				elif x := StageParsers.getEventName(i.ID, lookup=False) != "Unknown":
 					i.name = x
+					del (i.text)
 					self.refinedData.append(RawEventGroup.makeSingleton(i))
 				else:
 					it = Item.fromEvent(i)
 					it.name = Readers.getItemBySever(it.ID)
-					it.recurring = int('0' + data[15])
+					it.recurring = bool(int(('0' + data[15])))
 					it.qty = int(data[10])
 					self.finalItems.append(it)
 	
@@ -606,3 +600,5 @@ class ItemFetcher(UniversalFetcher):
 			print(item)
 		print('```')
 	
+	def package(self) -> list[dict[str, any]]:
+		return [X.package() for X in self.finalItems]

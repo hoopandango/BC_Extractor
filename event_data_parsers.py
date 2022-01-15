@@ -12,10 +12,10 @@ with open('_config.json') as fl:
 
 class UniversalParsers:
 	with open(config['outputs']['stages'], encoding='utf-8', newline='') as csvfile:
-		autoEventNames = pd.read_csv(csvfile, delimiter='\t', index_col='ID')
+		autoEventNames = pd.read_csv(csvfile, delimiter='\t', index_col='ID', header=0)
 	
 	with open("extras\\events.tsv", encoding='utf-8', newline='') as csvfile:
-		manualEventNames = pd.read_csv(csvfile, delimiter='\t', index_col='ID')
+		manualEventNames = pd.read_csv(csvfile, delimiter='\t', index_col='ID', header=0)
 		allEventNames = autoEventNames.append(manualEventNames)
 	
 	@staticmethod
@@ -250,10 +250,10 @@ class StageParsers(UniversalParsers):
 		return datetime.datetime.strptime(s + t, '%m%d%H%M')
 	
 	@staticmethod
-	def binaryweekday(N: int) -> list[int]:
-		list_to_return: list[int] = [int(x) for x in list(bin(N))[2:][::-1]]
+	def binaryweekday(N: int) -> list[bool]:
+		list_to_return: list[bool] = [bool(int(x)) for x in list(bin(N))[2:][::-1]]
 		while len(list_to_return) < 7:
-			list_to_return.append(0)
+			list_to_return.append(False)
 		return list_to_return
 	
 	@classmethod
@@ -289,17 +289,17 @@ class StageParsers(UniversalParsers):
 		return output, IDs
 	
 	@classmethod
-	def monthly(cls, data: list[str]) -> tuple[list[dict[str, list[str | dict[str, datetime.datetime]]]], list[int]]:
+	def monthly(cls, data: list[str]) -> tuple[list[dict[str, list[int | dict[str, datetime.datetime]]]], list[int]]:
 		numberOfPeriods: int = int(data[7])
 		n: int = 9
-		output: list[dict[str, list[str | dict[str, datetime.time]]]] = [dict() for _ in range(numberOfPeriods)]
+		output: list[dict[str, list[int | dict[str, datetime.time]]]] = [dict() for _ in range(numberOfPeriods)]
 		IDs = []
 		for i in range(numberOfPeriods):
 			
 			dates, n = int(data[n]), n + 1
-			output[i]["dates"] = [""] * int(dates)
+			output[i]["dates"] = [-1] * dates
 			for u in range(int(dates)):
-				output[i]["dates"][u], n = data[n], n + 1
+				output[i]["dates"][u], n = int(data[n]), n + 1
 			
 			n = n + 1  # Trailing zero
 			

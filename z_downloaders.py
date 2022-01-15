@@ -2,7 +2,7 @@ import requests
 import regex as re
 
 class Downloaders:
-	prefixes = {0: 'N', 1: 'S', 2: 'C', 6: 'T', 7: 'V', 11: 'R', 12: 'M', 13: 'NA', 14: 'B', 24: 'A', 25: 'H', 27: 'CA'}
+	prefixes = {1: 'S', 2: 'C', 6: 'T', 7: 'V', 11: 'R', 12: 'M', 13: 'NA', 14: 'B', 24: 'A', 25: 'H', 27: 'CA'}
 	
 	@staticmethod
 	def requestStage(ID: int, lng: str):

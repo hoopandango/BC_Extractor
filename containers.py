@@ -10,19 +10,22 @@ class Event:
 	ID: int = None
 	dates: list[datetime.datetime] = None
 	versions: tuple[int] = None
-	sched: str = None
-	sched_data: dict = None
 	name: str = None
-	text: str = None
 	
 	def __str__(self) -> str:
 		return UniversalParsers.fancyDate(self.dates) + self.name
+	
+	def package(self):
+		toret = self.__dict__.copy()
+		toret["dates"] = [x.isoformat() for x in self.dates]
+		toret["printable"] = str(self)
+		return toret
 
 @dataclass
 class EventGroup:
+	name: str
 	events: list[Event]
 	dates: list[datetime.datetime]
-	name: str
 	split: bool
 	visible: bool
 	
@@ -35,6 +38,13 @@ class EventGroup:
 			return '\n'.join([str(x) for x in self.events])
 		else:
 			return UniversalParsers.fancyDate(self.dates) + self.name
+	
+	def package(self):
+		toret = self.__dict__.copy()
+		toret["dates"] = [x.isoformat() for x in self.dates]
+		toret["events"] = [X.package() for X in self.events]
+		toret["printable"] = str(self)
+		return toret
 
 @dataclass
 class Gatya(Event):
@@ -46,38 +56,63 @@ class Gatya(Event):
 	guarantee: list[bool] = None
 	extras: list[str] = None
 	exclusives: list[str] = None
+	text: str = None
 	
 	def __str__(self):
 		self.dates = [self.dates[0], self.dates[-1]]
 		return (("%s%s" % GatyaParsers.getString(self)))\
 			.format(oldyear=self.dates[0].year, newyear=self.dates[1].year)
-
+	
 @dataclass
 class Stage(Event):
+	sched: str = None
+	sched_data: dict = None
+	
 	@classmethod
 	def fromEvent(cls, e: Event) -> Stage:
 		return cls(**e.__dict__)
 	
 	@classmethod
 	def fromItem(cls, i: Item) -> Stage:
-		return cls(ID=i.ID, dates=i.dates, versions=i.versions, name=i.name, text=i.text)
-
+		return cls(ID=i.ID, dates=i.dates, versions=i.versions, name=i.name)
+	
+	def package(self):
+		toret = self.__dict__.copy()
+		toret["dates"] = [x.isoformat() for x in self.dates]
+		toret["printable"] = str(self)
+		
+		if toret["sched_data"] is None:
+			return toret
+		
+		for setting in toret["sched_data"]:
+			y = setting.get("times")
+			if not (y == [] or y is None):
+				for i, typing in enumerate(y):
+					y[i] = {"start": typing["start"].isoformat(), "end": typing["end"].isoformat()}
+		
+		return toret
+	
 @dataclass
 class Sale(Event):
 	@classmethod
 	def fromEvent(cls, e: Event) -> Sale:
-		return cls(**e.__dict__)
+		toret = cls()
+		toret.__dict__ = {K: e.__dict__[K] for K in toret.__dict__.keys() & e.__dict__.keys()}
+		return toret
 
 @dataclass
 class Mission(Event):
 	@classmethod
 	def fromEvent(cls, e: Event) -> Mission:
-		return cls(**e.__dict__)
+		toret = cls()
+		toret.__dict__ = {K: e.__dict__[K] for K in toret.__dict__.keys() & e.__dict__.keys()}
+		return toret
 
 @dataclass
 class Item(Event):
 	recurring: bool = False
 	qty: int = 0
+	text: str = None
 	
 	@classmethod
 	def fromEvent(cls, e: Event) -> Item:
@@ -94,6 +129,8 @@ class Item(Event):
 @dataclass
 class RawEventGroup(Event):
 	IDs: list[int] = None
+	sched: str = None
+	sched_data: dict = None
 	
 	@classmethod
 	def makeSingleton(cls, e: Event) -> RawEventGroup:
