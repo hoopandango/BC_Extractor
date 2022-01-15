@@ -17,7 +17,6 @@ class Event:
 	
 	def package(self):
 		toret = self.__dict__.copy()
-		toret["dates"] = [x.isoformat() for x in self.dates]
 		toret["printable"] = str(self)
 		return toret
 
@@ -41,7 +40,6 @@ class EventGroup:
 	
 	def package(self):
 		toret = self.__dict__.copy()
-		toret["dates"] = [x.isoformat() for x in self.dates]
 		toret["events"] = [X.package() for X in self.events]
 		toret["printable"] = str(self)
 		return toret
@@ -78,18 +76,7 @@ class Stage(Event):
 	
 	def package(self):
 		toret = self.__dict__.copy()
-		toret["dates"] = [x.isoformat() for x in self.dates]
 		toret["printable"] = str(self)
-		
-		if toret["sched_data"] is None:
-			return toret
-		
-		for setting in toret["sched_data"]:
-			y = setting.get("times")
-			if not (y == [] or y is None):
-				for i, typing in enumerate(y):
-					y[i] = {"start": typing["start"].isoformat(), "end": typing["end"].isoformat()}
-		
 		return toret
 	
 @dataclass

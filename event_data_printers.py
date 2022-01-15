@@ -1,3 +1,4 @@
+import datetime
 import json
 import time
 
@@ -5,7 +6,7 @@ from event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StagePa
 import asyncio
 import aiohttp
 
-CASE = 3
+CASE = 0
 LANG = 'en'
 f = ['N']
 
@@ -90,8 +91,14 @@ for_export = {"gatya": gf.package(),
               "stages": sf.package(),
               "items": itf.package()}
 
+def unfuck_dates(obj):
+	if isinstance(obj, datetime.datetime):
+		return obj.isoformat()
+	else:
+		return str(obj)
+
 with open("export.json", mode='w') as fl:
-	json.dump(for_export, fl, indent=2)
+	json.dump(for_export, fl, indent=2, default=unfuck_dates)
 
 print(f"over - {time.time() - start}")
 StageParsers.updateEventNames()

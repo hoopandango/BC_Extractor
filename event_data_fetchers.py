@@ -163,11 +163,11 @@ class UniversalFetcher:
 					                     sched_data=grp0.sched_data)
 					newqueue.append(curr0)
 			return newqueue
-		
-		if (isinstance(waitingqueue[0], RawEventGroup)):
-			flatqueue = flatten(waitingqueue)
-		else:
-			flatqueue = waitingqueue
+	
+		flatqueue = waitingqueue
+		if len(waitingqueue) > 0:
+			if (isinstance(waitingqueue[0], RawEventGroup)):
+				flatqueue = flatten(waitingqueue)
 		groupEvents()
 		return (finalEvents, finalEventGroups, sales, missions)
 
@@ -373,6 +373,23 @@ class StageFetcher(UniversalFetcher):
 	# OUTPUT TOOLS
 	# noinspection PyUnresolvedReferences
 	def printFestivalData(self):
+		def unique(sample: list):
+			seen = set()
+			toret = []
+			for s in sample:
+				if s not in seen:
+					toret.append(s)
+					seen.add(s)
+		
+			return toret
+		
+		def get_actual(check: list[datetime.datetime], d: int) -> datetime.datetime:
+			toret = check[0].replace(day=d)
+			if (check[0] <= toret < check[1]):
+				return toret
+			else:
+				return toret.replace(month=(toret.month+1) % 12, year=toret.year+(toret.month+1)//12)
+		
 		for festival in [X for X in self.festivals if not (X.split or not X.visible)]:
 			if not isinstance(festival.events[0], Stage) or festival.events[0].sched is None:
 				continue
@@ -391,20 +408,23 @@ class StageFetcher(UniversalFetcher):
 			
 			for event_set in groups:
 				# Starts printing here
-				print(f'{", ".join([event.name for event in event_set])}: ')
+				print(f'{", ".join(unique([event.name for event in event_set]))}: ')
 				rep = event_set[0]  # representative event of the set
+				mstart = rep.dates[0].strftime("%b")
+				mend = rep.dates[-1].strftime("%b")
+				
 				if rep.sched == 'permanent':
-					print(f"- {rep.dates[0].strftime('%d')}: {StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}")
+					print(f"- {rep.dates[0].day} {mstart}: "
+					      f"{StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}")
 				
 				elif rep.sched == 'monthly':
 					for setting in rep.sched_data:
 						parsed = StageParsers.interpretDates(setting['dates'])
-						mstart = rep.dates[0].strftime("%b")
-						mend = rep.dates[-1].strftime("%b")
 						
 						match (parsed[0]):
 							case 0:
-								E = '- Date ' + '/'.join([str(x) for x in setting['dates']])
+								dates = sorted([get_actual(rep.dates, x) for x in setting['dates']])
+								E = '- ' + ', '.join([x.strftime("%d %b").lstrip("0") for x in dates])
 							case 2:
 								E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Alternate Day'
 							case 3:
