@@ -7,15 +7,14 @@ import asyncio
 import aiohttp
 
 CASE = 0
-LANG = 'en'
-f = ['N']
+LANG = 'jp'
+f = ['N', 'Y']
 
 with open("_config.json") as fl:
 	config = json.load(fl)
 
 """TODO:
 4 combos tsv
-9 proper text for update ticket / update event
 10  all barons are grouped together
 """
 
@@ -83,10 +82,15 @@ itf.finalItems = gf.groupData(itf.finalItems)[0]
 sf.sortAll()
 # print(f"printing stuff - {time.time() - start}")
 
-gf.printGatya()
-sf.printStages()
-itf.printItemData()
-sf.printFestivalData()
+toprint = gf.printGatya()
+toprint += sf.printStages()
+toprint += itf.printItemData()
+toprint += sf.printFestivalData()
+
+with open(config["outputs"]["eventdata"]+"gatya_final.txt", "w", encoding='utf-8') as fl:
+	fl.write(toprint)
+
+print(toprint)
 
 for_export = {"gatya": gf.package(),
               "stages": sf.package(),

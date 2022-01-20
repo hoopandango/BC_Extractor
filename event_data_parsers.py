@@ -162,7 +162,7 @@ class GatyaParsers(UniversalParsers):
 		return G
 	
 	@classmethod
-	def appendGatyaLocal(cls, gatya: 'Gatya') -> None:
+	def appendGatyaLocal(cls, gatya) -> None:
 		toret = {"name": "Unknown", "exclusives": [], "rate_ups": {}, "diff": [[], []]}
 		
 		if (gatya.page == "Rare Capsule"):
@@ -205,8 +205,9 @@ class GatyaParsers(UniversalParsers):
 			toret.append('L')  # Has lucky ticket
 		return toret
 	
+	# DEPRECATED
 	@staticmethod
-	def getString(banner: 'Gatya') -> tuple[str, str]:
+	def getString(banner) -> tuple[str, str]:
 		# tuple (datestring, reststring)
 		bonuses: list[str] = []
 		

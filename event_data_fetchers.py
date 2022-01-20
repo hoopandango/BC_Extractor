@@ -202,8 +202,7 @@ class GatyaFetcher(UniversalFetcher):
 			try:
 				ID = int(GatyaParsers.getValueAtOffset(banner, 10))
 			except ValueError:
-				print(f"weirdo at {banner}")
-			
+				pass
 			toput = Gatya()
 			toput.dates = dates
 			toput.versions = GatyaParsers.getversions(banner)
@@ -224,29 +223,32 @@ class GatyaFetcher(UniversalFetcher):
 			goto.append(toput)
 	
 	# OUTPUT TOOLS
-	def printGatya(self):
-		print('```\nGatya:')
+	def printGatya(self)->str:
+		toret = ""
+		toret +=('```ansi\n[0m[32mGatya[0m\n')
 		for event in self.refinedGatya:
 			if not isinstance(event, EventGroup):
 				if event.rates[3] in (10000, 9500):  # Platinum / Legend Ticket Event
 					continue
 				if event.page in ('Rare Capsule', 'Event Capsule') and event.ID > 0:
-					print(event)
+					toret += event.__str__()+"\n"
 			else:
-				print(event)
-		print('```')
-		print(
-			"Legend for Gatya:\nG = Guaranteed, SU = Step-Up, PS = Platinum Shard, L = Lucky Ticket,"
-			" N = Neneko and Friends, R = Reinforcement, D = Grandons")
+				toret += event.__str__()+"\n"
+		toret +=('```\n')
+		toret +=(
+			"Legend for Gatya:\nSU = Step-Up, PS = Platinum Shard, L = Lucky Ticket,"
+			" N = Neneko and Friends, R = Reinforcement, D = Grandons\n")
+		return toret
 	
+	"""
 	def printGatyaHTML(self):
-		print('<h4>Gatya:</h4><ul>')
+		toret +=('<h4>Gatya:</h4><ul>')
 		for event in self.refinedGatya:
 			if event.rates[3] in ('10000', '9500'):  # Platinum / Legend Ticket Event
 				continue
 			if event.page in ('Rare Capsule', 'Event Capsule') and event.ID > 0:
-				print('<li><b>%s</b>%s</li>' % GatyaParsers.getString(event))
-		print('</ul>')
+				toret +=('<li><b>%s</b>%s</li>' % GatyaParsers.getString(event))
+		toret +=('</ul>')
 	
 	def storeGatyaUncut(self) -> None:
 		buf = ""
@@ -278,7 +280,7 @@ class GatyaFetcher(UniversalFetcher):
 		try:
 			conn = sqlite3.connect(inm_loc + 'gatya_processed.db')
 		except sqlite3.OperationalError:
-			print('Database for gatya not found')
+			toret +=('Database for gatya not found')
 			return
 		
 		def process(df: pd.DataFrame):
@@ -294,7 +296,7 @@ class GatyaFetcher(UniversalFetcher):
 		
 		df_ref.astype(str).to_sql('refined', conn, if_exists='replace')
 		df_rej.astype(str).to_sql('rejected', conn, if_exists='replace')
-	
+	"""
 	def package(self):
 		return [X.package() for X in self.refinedGatya]
 
@@ -372,30 +374,30 @@ class StageFetcher(UniversalFetcher):
 	
 	# OUTPUT TOOLS
 	# noinspection PyUnresolvedReferences
-	def printFestivalData(self):
+	def printFestivalData(self) -> str:
 		def unique(sample: list):
 			seen = set()
-			toret = []
+			tort = []
 			for s in sample:
 				if s not in seen:
-					toret.append(s)
+					tort.append(s)
 					seen.add(s)
 		
-			return toret
+			return tort
 		
 		def get_actual(check: list[datetime.datetime], d: int) -> datetime.datetime:
-			toret = check[0].replace(day=d)
-			if (check[0] <= toret < check[1]):
-				return toret
+			tort = check[0].replace(day=d)
+			if (check[0] <= tort < check[1]):
+				return tort
 			else:
-				return toret.replace(month=(toret.month+1) % 12, year=toret.year+(toret.month+1)//12)
+				return tort.replace(month=(tort.month + 1) % 12, year=tort.year + (tort.month + 1) // 12)
 		
 		for festival in [X for X in self.festivals if not (X.split or not X.visible)]:
+			toret = ""
 			if not isinstance(festival.events[0], Stage) or festival.events[0].sched is None:
 				continue
 			
-			print(f'```\n{festival.name} {StageParsers.fancyDate(festival.dates)}\n')
-			
+			toret +=(f'```ansi\n[0m[32m{festival.name}[0m {StageParsers.fancyDate(festival.dates)}\n\n')
 			groups = []
 			if(festival.events[0].sched_data is not None):
 				obj = groupby(festival.events, lambda x: x.sched_data)
@@ -408,14 +410,14 @@ class StageFetcher(UniversalFetcher):
 			
 			for event_set in groups:
 				# Starts printing here
-				print(f'{", ".join(unique([event.name for event in event_set]))}: ')
+				toret +=(f'[0m[33m{", ".join(unique([event.name for event in event_set]))}[0m\n')
 				rep = event_set[0]  # representative event of the set
 				mstart = rep.dates[0].strftime("%b")
 				mend = rep.dates[-1].strftime("%b")
 				
 				if rep.sched == 'permanent':
-					print(f"- {rep.dates[0].day} {mstart}: "
-					      f"{StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}")
+					toret +=(f"[0m[34m- {rep.dates[0].day} {mstart}:[0m "
+					      f"{StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}\n")
 				
 				elif rep.sched == 'monthly':
 					for setting in rep.sched_data:
@@ -424,22 +426,22 @@ class StageFetcher(UniversalFetcher):
 						match (parsed[0]):
 							case 0:
 								dates = sorted([get_actual(rep.dates, x) for x in setting['dates']])
-								E = '- ' + ', '.join([x.strftime("%d %b").lstrip("0") for x in dates])
+								E = f'- {", ".join([x.strftime("%d %b").lstrip("0") for x in dates])}'
 							case 2:
-								E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Alternate Day'
+								E = f'[0m[34m- {parsed[1]} {mstart}~{parsed[2]} {mend}[0m: Every Alternate Day'
 							case 3:
-								E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every Third Day'
+								E = f'[0m[34m- {parsed[1]} {mstart}~{parsed[2]} {mend}[0m: Every Third Day'
 							case _:
-								E = f'- {parsed[1]} {mstart}~{parsed[2]} {mend}: Every {parsed[0]}th Day'
+								E = f'[0m[34m- {parsed[1]} {mstart}~{parsed[2]} {mend}[0m: Every {parsed[0]}th Day'
 						# wont be above 10 so it's okay
 						if len(setting['times']) == 0:
-							print(E)
+							toret +=(E)+"\n"
 						else:
-							print(f"{E}: {StageParsers.fancyTimes(setting['times'])}")
+							toret +=(f"[0m[34m{E}[0m: {StageParsers.fancyTimes(setting['times'])}+\n")
 				
 				elif rep.sched == 'daily':
 					for setting in rep.sched_data:
-						print(f"{StageParsers.fancyDate(rep.dates)}{StageParsers.fancyTimes(setting['times'])}")
+						toret +=(f"[0m[34m{StageParsers.fancyDate(rep.dates)}[0m{StageParsers.fancyTimes(setting['times'])}\n")
 				
 				elif rep.sched == 'weekly':
 					dayscheds = [[], [], [], [], [], [], []]
@@ -457,14 +459,15 @@ class StageFetcher(UniversalFetcher):
 						if (set(day1) == set(day2)):
 							ignored.append(i + j + 1)
 						buf.append(weekdays[i + j + 1])
-						print(f"{'/'.join(buf)}: {', '.join(day1)}")
+						toret +=(f"[0m[34m{'/'.join(buf)}:[0m {', '.join(day1)}\n")
 				
 				elif rep.sched == 'yearly':
-					print(StageParsers.fancyDate([rep.sched_data[0]['times'][0]['start'],
-					                              rep.sched_data[0]['times'][0]['end']])[:-2])
+					toret +=("[0m[34m"+StageParsers.fancyDate([rep.sched_data[0]['times'][0]['start']+"[0m"+
+					                              rep.sched_data[0]['times'][0]['end']])[:-2]+"\n")
 				
 				# End printing
-			print('```')
+			toret +=('```\n')
+			return toret
 	
 	def schedulingTable(self):
 		hashmap = {'yearly': 'Yearly', 'monthly': 'Monthly', 'weekly': 'Weekly', 'daily': 'Daily',
@@ -491,41 +494,44 @@ class StageFetcher(UniversalFetcher):
 		
 		df.to_csv('scheduling.tsv', sep='\t')
 	
-	def printStages(self) -> None:
-		print('```\nEvents:')
+	def printStages(self) -> str:
+		toret = ""
+		toret +=('```ansi\n[0m[32mEvents[0m\n')
 		for element in self.finalStages:
-			print(element)
-		print('```')
+			toret +=(element).__str__()+"\n"
+		toret +=('```\n')
 		
-		print('```\nSales:')
+		toret +=('```ansi\n[0m[32mSales[0m\n')
 		for element in self.sales:
-			print(element)
-		print('```')
+			toret +=(element).__str__()+"\n"
+		toret +=('```\n')
 		
-		print('```\nMissions:')
+		toret +=('```ansi\n[0m[32mMissions[0m\n')
 		for element in self.missions:
-			print(element)
-		print('```')
+			toret +=(element).__str__()+"\n"
+		toret +=('```\n')
+		return toret
 	
+	"""
 	def printStagesHTML(self, stagedata=None, saledata=None):
 		if stagedata is None:
 			stagedata = self.finalStages
 		if saledata is None:
 			saledata = self.sales
 		
-		print('<h4>Events:</h4><ul>')
+		toret +=('<h4>Events:</h4><ul>')
 		for group in stagedata:
-			print(f"<li><b>{StageParsers.fancyDate(group['dates'])[2:]}</b>{group['name']}</li>")
-		print('</ul>')
+			toret +=(f"<li><b>{StageParsers.fancyDate(group['dates'])[2:]}</b>{group['name']}</li>")
+		toret +=('</ul>')
 		
-		print('<h4>Sales:</h4><ul>')
+		toret +=('<h4>Sales:</h4><ul>')
 		for group in saledata:
-			print(f"<li><b>{StageParsers.fancyDate(group['dates'])[2:]}</b>{group['name']}</li>")
-		print('</ul>')
-	
+			toret +=(f"<li><b>{StageParsers.fancyDate(group['dates'])[2:]}</b>{group['name']}</li>")
+		toret +=('</ul>')
+	"""
 	def package(self):
 		return [[X.package() for X in Y] for Y in [self.finalStages, self.sales, self.missions]]
-	
+	"""
 	def exportStages(self):
 		grps = ["permanent", "yearly", "monthly", "weekly", "daily"]
 		with open(inm_loc + 'stages_raw.json', 'w', encoding='utf-8') as raw:
@@ -538,7 +544,7 @@ class StageFetcher(UniversalFetcher):
 		try:
 			conn = sqlite3.connect(inm_loc + 'events_processed.db')
 		except sqlite3.OperationalError:
-			print('Database for events / stages not found')
+			toret +=('Database for events / stages not found')
 			return
 		
 		df_fin["dates"] = df_ref["dates"].apply(lambda x: [d.strftime('%Y/%m/%d') for d in x])
@@ -563,7 +569,7 @@ class StageFetcher(UniversalFetcher):
 			ref_groups[grp].to_sql('ref ' + grp, conn, if_exists='replace')
 		for grp in rej_groups:
 			rej_groups[grp].to_sql('rej ' + grp, conn, if_exists='replace')
-
+	"""
 class ItemFetcher(UniversalFetcher):
 	def __init__(self, fls=['M'], d0=datetime.datetime.today()):
 		UniversalFetcher.__init__(self, fls)
@@ -613,12 +619,14 @@ class ItemFetcher(UniversalFetcher):
 	def getStageData(self) -> list[RawEventGroup]:
 		return self.refinedData
 	
-	def printItemData(self) -> None:
+	def printItemData(self) -> str:
+		toret = ""
 		self.finalItems.sort(key=lambda x: x.dates[0])
-		print('```\nItems:')
+		toret +=('```ansi\n[0m[32mItems[0m\n')
 		for item in self.finalItems:
-			print(item)
-		print('```')
+			toret +=(item).__str__()+"\n"
+		toret +=('```\n')
+		return toret
 	
 	def package(self) -> list[dict[str, any]]:
 		return [X.package() for X in self.finalItems]
