@@ -4,7 +4,8 @@
 		"combos": {
 			"catbotmode": true,
 			"loadmode": false
-		}
+		},
+        "credentials": "_credentials.json"
 	},
 	"inputs": {
 		"en": {
