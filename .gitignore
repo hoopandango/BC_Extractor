@@ -1,6 +1,6 @@
 app/
 .vscode/
-_credentials.json
+Procfile.ps1
 _new/
 _data/
 latest_en/

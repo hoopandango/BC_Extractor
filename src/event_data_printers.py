@@ -2,6 +2,7 @@ import datetime
 import json
 import time
 import platform
+import os
 
 import flask_restful
 
@@ -26,14 +27,14 @@ with open("_config.json") as fl:
 
 auth = HTTPBasicAuth()
 
-with open(config["setup"]["credentials"]) as cr:
-	credentials = json.load(cr)
-	
+credentials = os.environ
+
 @auth.verify_password
 def verify_password(username, password):
-	for row in credentials:
-		if row["username"] == username and row["password"] == password:
-			return username
+	if credentials["USER"] == username and credentials["PASS"] == password:
+		return username
+	elif credentials["SUPERUSER"] == username and credentials["SUPERPASS"] == password:
+		return username
 
 def fetch_test(lang: str, num: int) -> dict[str, str]:
 	toret = {}
