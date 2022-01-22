@@ -3,7 +3,7 @@ from __future__ import annotations
 import datetime
 from dataclasses import dataclass
 
-from event_data_parsers import UniversalParsers
+from .event_data_parsers import UniversalParsers
 
 @dataclass
 class Event:

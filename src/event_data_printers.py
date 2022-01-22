@@ -4,7 +4,7 @@ import time
 
 import flask_restful
 
-from event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StageParsers
+from .event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StageParsers
 import asyncio
 import aiohttp
 import flask

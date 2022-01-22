@@ -4,8 +4,8 @@ import string
 
 import numpy as np
 import pandas as pd
-from local_readers import Readers
-from z_downloaders import Downloaders
+from .local_readers import Readers
+from .z_downloaders import Downloaders
 
 with open('_config.json') as fl:
 	config = json.load(fl)
