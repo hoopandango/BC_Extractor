@@ -15,7 +15,7 @@ flnames_en = config['inputs']['en']['missions']
 fl_out = config['outputs']['missions']
 # endregion
 
-with open("../../extras/Missions.tsv", encoding='utf-8', newline='') as csvfile:
+with open("../extras/Missions.tsv", encoding='utf-8', newline='') as csvfile:
 	mission_templates = pd.read_csv(csvfile, delimiter='\t', index_col=0)
 
 # TODO: generate combodata table myself
