@@ -5,6 +5,7 @@ import platform
 import os
 
 import flask_restful
+import requests
 
 from .event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StageParsers
 import asyncio
@@ -15,7 +16,7 @@ from flask_httpauth import HTTPBasicAuth
 
 CASE = 0
 LANG = 'jp'
-f = ['N', 'Y']
+f = ['N']
 
 with open("_config.json") as fl:
 	config = json.load(fl)
@@ -66,7 +67,7 @@ async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 
 class Funky(Resource):
 	@auth.login_required
-	def get(self) -> str:
+	def post(self) -> str:
 		start = time.time()
 		# print(f"started at {start}")
 		gf = GatyaFetcher(fls=f)
@@ -74,7 +75,14 @@ class Funky(Resource):
 		itf = ItemFetcher(fls=f)
 
 		if CASE <= 0:
-			texts = asyncio.run(fetch_all(LANG))
+			texts = flask_restful.request.get_json()["diffs"]
+			for key in texts:
+				rows = texts[key].split("\n")
+				toput = ""
+				for row in rows:
+					if row.startswith('+ '):
+						toput += row[2:]+'\n'
+				texts[key] = toput
 		else:
 			texts = fetch_test(LANG, CASE)
 		print(f"got at {time.time() - start}")
@@ -132,6 +140,8 @@ class Funky(Resource):
 		StageParsers.updateEventNames()
 		# gf.exportGatya()
 		# sf.exportStages()
+		if auth.username() == credentials["SUPERUSER"]:
+			requests.post(credentials["HOOKURL"], {"content": toprint})
 		return toprint
 
 app = flask.Flask(__name__)

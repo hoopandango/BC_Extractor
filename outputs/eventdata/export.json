@@ -1,16 +1,16 @@
 {
   "gatya": [
     {
-      "ID": 609,
+      "ID": 680,
       "dates": [
-        "2022-01-24T11:00:00",
-        "2022-01-26T10:59:00"
+        "2022-01-04T11:00:00",
+        "2022-01-11T10:59:00"
       ],
       "versions": [
-        "110200",
+        "110100",
         "999999"
       ],
-      "name": "Vajiras",
+      "name": "Welcome {newyear:d}!",
       "rates": [
         0,
         6970,
@@ -18,10 +18,40 @@
         500,
         30
       ],
-      "rate_ups": {},
+      "rate_ups": {
+        "5": [
+          "Years-End Neneko"
+        ]
+      },
       "diff": [
-        [],
-        []
+        [
+          "Musashi Miyamoto",
+          "High Lord Babel",
+          "Nekoluga",
+          "Aer",
+          "Kai",
+          "Nurse Cat",
+          "Kamukura",
+          "Wrathful Poseidon",
+          "Mighty Deth-Troy-R",
+          "White Knight Cyclops",
+          "Date Masamune",
+          "Adventurer Kanna"
+        ],
+        [
+          "Kyosaka Nanaho",
+          "Mighty Thermae D-Lux",
+          "Papaluga",
+          "Lasvoss",
+          "Gaia the Creator",
+          "Hell Warden Emma",
+          "Narita Kaihime",
+          "Gravi",
+          "Sharpshooter Saki",
+          "Hades the Punisher",
+          "Myrcia",
+          "Relentless Gladios"
+        ]
       ],
       "page": "Rare Capsule",
       "slot": "1",
@@ -33,404 +63,133 @@
         false
       ],
       "extras": [
-        "PS"
+        "L"
       ],
-      "exclusives": [
-        "D",
-        "N"
-      ],
-      "text": "\u9ed2\u3044\u6575\u3068\u60aa\u9b54\u306b\u5f37\u3044\u65b0\u30ad\u30e3\u30e9\u30af\u30bf\u30fc\u300c\u5929\u8349\u56db\u90ce\u300d\u53c2\u6226\uff01\u2605\u8a73\u7d30\u306f\u30d0\u30ca\u30fc\u3092\u30bf\u30c3\u30d7!!",
-      "printable": "\u001b[0m\u001b[34m- 24~26 Jan: \u001b[0mVajiras\u001b[0m\u001b[33m [PS/D/N]\u001b[0m"
-    },
-    {
-      "ID": 632,
-      "dates": [
-        "2022-01-26T11:00:00",
-        "2022-01-28T10:59:00"
-      ],
-      "versions": [
-        "110200",
-        "999999"
-      ],
-      "name": "Dragon Emperors",
-      "rates": [
-        0,
-        6970,
-        2500,
-        500,
-        30
-      ],
-      "rate_ups": {},
-      "diff": [
-        [],
-        []
-      ],
-      "page": "Rare Capsule",
-      "slot": "1",
-      "guarantee": [
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "extras": [
-        "PS"
-      ],
-      "exclusives": [
-        "R",
-        "D"
-      ],
-      "text": "\u8d64\u3044\u6575\u3068\u60aa\u9b54\u5c5e\u6027\u306b\u5f37\u3044\u65b0\u30ad\u30e3\u30e9\u300c\u90aa\u9f8d\u30d8\u30f4\u30a3\u30b8\u30e3\u30fc\u30af\u300d\u53c2\u6226\uff01\u2605\u8a73\u7d30\u306f\u30d0\u30ca\u30fc\u3092\u30bf\u30c3\u30d7!!",
-      "printable": "\u001b[0m\u001b[34m- 26~28 Jan: \u001b[0mDragon Emperors\u001b[0m\u001b[33m [PS/R/D]\u001b[0m"
-    },
-    {
-      "ID": 602,
-      "dates": [
-        "2022-01-28T11:00:00",
-        "2022-01-31T10:59:00"
-      ],
-      "versions": [
-        "110200",
-        "999999"
-      ],
-      "name": "Royalfest",
-      "rates": [
-        0,
-        6940,
-        2500,
-        500,
-        60
-      ],
-      "rate_ups": {},
-      "diff": [
-        [],
-        []
-      ],
-      "page": "Rare Capsule",
-      "slot": "1",
-      "guarantee": [
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "extras": [],
       "exclusives": [],
-      "text": "\u9650\u5b9a\u8d85\u6fc0\u30ec\u30a2\u300c\u30cd\u30b3\u738b\u5973\u300d\u542b\u3080\u5973\u6027\u30ad\u30e3\u30e9\u4e2d\u5fc3\u306e\u7279\u5225\u30ac\u30c1\u30e3! \u4f1d\u8aac\u30ec\u30a2\u306e\u307f\u51fa\u73fe\u73872\u500d!!",
-      "printable": "\u001b[0m\u001b[34m- 28~31 Jan: \u001b[0mRoyalfest"
+      "text": "\u671f\u9593\u9650\u5b9a\u30ad\u30e3\u30e9\u3082\u767b\u5834\u3059\u308b\u3001\u7279\u5225\u4ed5\u69d8\u306e\u65b0\u5e74\u30ac\u30c1\u30e3\uff01\u2605\u8a73\u7d30\u306f\u30d0\u30ca\u30fc\u3092\u30bf\u30c3\u30d7!n+ 20220104",
+      "printable": "\u001b[0m\u001b[34m- 4~11 Jan: \u001b[0mWelcome 2022!\u001b[0m\u001b[33m [L]\u001b[0m {5x rate on Years-End Neneko}"
     }
   ],
   "stages": [
     [
       {
-        "name": "Catfruit Festival",
+        "name": "Baron",
         "events": [
           {
-            "ID": 1100,
+            "ID": 24027,
             "dates": [
-              "2022-01-23T00:00:00",
-              "2022-01-23T23:59:00"
+              "2022-01-07T11:00:00",
+              "2022-01-14T10:59:00"
             ],
             "versions": [
-              "110200",
+              "110100",
               "999999"
             ],
-            "name": "Growing Blue",
+            "name": "Le'Grim Strikes (Baron)",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "\u001b[0m\u001b[34m- 23 Jan: \u001b[0mGrowing Blue"
-          },
-          {
-            "ID": 1101,
-            "dates": [
-              "2022-01-23T00:00:00",
-              "2022-01-23T23:59:00"
-            ],
-            "versions": [
-              "110200",
-              "999999"
-            ],
-            "name": "Growing Yellow",
-            "sched": "permanent",
-            "sched_data": null,
-            "printable": "\u001b[0m\u001b[34m- 23 Jan: \u001b[0mGrowing Yellow"
+            "printable": "\u001b[0m\u001b[34m- 7~14 Jan: \u001b[0mLe'Grim Strikes (Baron)"
           }
         ],
         "dates": [
-          "2022-01-23T00:00:00",
-          "2022-01-23T23:59:00"
-        ],
-        "split": false,
-        "visible": true,
-        "printable": "\u001b[0m\u001b[34m- 23 Jan: \u001b[0mCatfruit Festival"
-      },
-      {
-        "name": "Metal Festival",
-        "events": [
-          {
-            "ID": 1006,
-            "dates": [
-              "2022-01-26T11:00:00",
-              "2022-01-28T23:59:00"
-            ],
-            "versions": [
-              "110200",
-              "999999"
-            ],
-            "name": "Cat Ticket Chance!",
-            "sched": "daily",
-            "sched_data": [
-              {
-                "times": [
-                  {
-                    "start": "11:00:00",
-                    "end": "14:00:00"
-                  },
-                  {
-                    "start": "21:00:00",
-                    "end": "23:59:00"
-                  }
-                ]
-              }
-            ],
-            "printable": "\u001b[0m\u001b[34m- 26~28 Jan: \u001b[0mCat Ticket Chance!"
-          },
-          {
-            "ID": 1007,
-            "dates": [
-              "2022-01-26T11:00:00",
-              "2022-01-28T23:59:00"
-            ],
-            "versions": [
-              "110200",
-              "999999"
-            ],
-            "name": "Siege of Hippoe!",
-            "sched": "daily",
-            "sched_data": [
-              {
-                "times": [
-                  {
-                    "start": "11:00:00",
-                    "end": "14:00:00"
-                  },
-                  {
-                    "start": "21:00:00",
-                    "end": "23:59:00"
-                  }
-                ]
-              }
-            ],
-            "printable": "\u001b[0m\u001b[34m- 26~28 Jan: \u001b[0mSiege of Hippoe!"
-          },
-          {
-            "ID": 1078,
-            "dates": [
-              "2022-01-27T12:00:00",
-              "2022-01-27T23:59:00"
-            ],
-            "versions": [
-              "110200",
-              "999999"
-            ],
-            "name": "Facing Danger",
-            "sched": "permanent",
-            "sched_data": null,
-            "printable": "\u001b[0m\u001b[34m- 27 Jan: \u001b[0mFacing Danger"
-          },
-          {
-            "ID": 1078,
-            "dates": [
-              "2022-01-28T00:00:00",
-              "2022-01-28T11:59:00"
-            ],
-            "versions": [
-              "110200",
-              "999999"
-            ],
-            "name": "Facing Danger",
-            "sched": "permanent",
-            "sched_data": null,
-            "printable": "\u001b[0m\u001b[34m- 28 Jan: \u001b[0mFacing Danger"
-          }
-        ],
-        "dates": [
-          "2022-01-26T11:00:00",
-          "2022-01-28T23:59:00"
-        ],
-        "split": false,
-        "visible": true,
-        "printable": "\u001b[0m\u001b[34m- 26~28 Jan: \u001b[0mMetal Festival"
-      },
-      {
-        "name": "Advent Festival",
-        "events": [
-          {
-            "ID": 1117,
-            "dates": [
-              "2022-01-28T11:00:00",
-              "2022-01-31T10:59:00"
-            ],
-            "versions": [
-              "110200",
-              "999999"
-            ],
-            "name": "River Styx",
-            "sched": "permanent",
-            "sched_data": null,
-            "printable": "\u001b[0m\u001b[34m- 28~31 Jan: \u001b[0mRiver Styx"
-          },
-          {
-            "ID": 1199,
-            "dates": [
-              "2022-01-28T11:00:00",
-              "2022-01-31T10:59:00"
-            ],
-            "versions": [
-              "110200",
-              "999999"
-            ],
-            "name": "River Acheron",
-            "sched": "permanent",
-            "sched_data": null,
-            "printable": "\u001b[0m\u001b[34m- 28~31 Jan: \u001b[0mRiver Acheron"
-          }
-        ],
-        "dates": [
-          "2022-01-28T11:00:00",
-          "2022-01-31T10:59:00"
+          "2022-01-07T11:00:00",
+          "2022-01-14T10:59:00"
         ],
         "split": true,
         "visible": true,
-        "printable": "\u001b[0m\u001b[34m- 28~31 Jan: \u001b[0mRiver Styx\n\u001b[0m\u001b[34m- 28~31 Jan: \u001b[0mRiver Acheron"
+        "printable": "\u001b[0m\u001b[34m- 7~14 Jan: \u001b[0mLe'Grim Strikes (Baron)"
       },
       {
-        "ID": 1217,
-        "dates": [
-          "2022-01-28T11:00:00",
-          "2022-01-31T10:59:00"
-        ],
-        "versions": [
-          "110200",
-          "999999"
-        ],
-        "name": "Courts of Torment",
-        "sched": "permanent",
-        "sched_data": null,
-        "printable": "\u001b[0m\u001b[34m- 28~31 Jan: \u001b[0mCourts of Torment"
-      },
-      {
-        "ID": 1296,
-        "dates": [
-          "2022-01-28T11:00:00",
-          "2022-01-31T10:59:00"
-        ],
-        "versions": [
-          "110200",
-          "999999"
-        ],
-        "name": "\u7d76\u30fb\u5948\u843d\u9580",
-        "sched": "permanent",
-        "sched_data": null,
-        "printable": "\u001b[0m\u001b[34m- 28~31 Jan: \u001b[0m\u7d76\u30fb\u5948\u843d\u9580"
-      },
-      {
-        "ID": 1118,
-        "dates": [
-          "2022-01-29T00:00:00",
-          "2022-01-30T23:59:00"
-        ],
-        "versions": [
-          "110200",
-          "999999"
-        ],
-        "name": "Catfruit Buffet",
-        "sched": "daily",
-        "sched_data": [
+        "name": "Catfruit Festival",
+        "events": [
           {
-            "times": [
-              {
-                "start": "08:00:00",
-                "end": "10:00:00"
-              },
-              {
-                "start": "12:00:00",
-                "end": "14:00:00"
-              },
-              {
-                "start": "19:00:00",
-                "end": "21:00:00"
-              }
-            ]
+            "ID": 1097,
+            "dates": [
+              "2022-01-08T00:00:00",
+              "2022-01-08T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Growing Green",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "\u001b[0m\u001b[34m- 8 Jan: \u001b[0mGrowing Green"
+          },
+          {
+            "ID": 1098,
+            "dates": [
+              "2022-01-08T00:00:00",
+              "2022-01-08T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Growing Purple",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "\u001b[0m\u001b[34m- 8 Jan: \u001b[0mGrowing Purple"
+          },
+          {
+            "ID": 1099,
+            "dates": [
+              "2022-01-08T00:00:00",
+              "2022-01-08T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Growing Red",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "\u001b[0m\u001b[34m- 8 Jan: \u001b[0mGrowing Red"
           }
         ],
-        "printable": "\u001b[0m\u001b[34m- 29~30 Jan: \u001b[0mCatfruit Buffet"
+        "dates": [
+          "2022-01-08T00:00:00",
+          "2022-01-08T23:59:00"
+        ],
+        "split": false,
+        "visible": true,
+        "printable": "\u001b[0m\u001b[34m- 8 Jan: \u001b[0mCatfruit Festival"
       }
     ],
     [
       {
-        "ID": 821,
+        "name": "Item Bargain Sale",
         "dates": [
-          "2022-01-28T04:00:00",
-          "2022-02-03T03:59:00"
+          "2021-12-27T11:00:00",
+          "2021-12-31T23:59:00"
         ],
-        "name": "Beginner Sale",
+        "ID": 800,
         "versions": [
-          "110200",
+          "110100",
           "999999"
         ],
-        "printable": "\u001b[0m\u001b[34m- 28 Jan~3 Feb: \u001b[0mBeginner Sale"
-      },
-      {
-        "ID": 801,
-        "dates": [
-          "2022-01-28T04:00:00",
-          "2022-02-03T03:59:00"
-        ],
-        "name": "Catfruit Bargain Sale",
-        "versions": [
-          "110200",
-          "999999"
-        ],
-        "printable": "\u001b[0m\u001b[34m- 28 Jan~3 Feb: \u001b[0mCatfruit Bargain Sale"
+        "printable": "\u001b[0m\u001b[34m- 27~31 Dec: \u001b[0mItem Bargain Sale"
       }
     ],
     []
   ],
   "items": [
     {
-      "ID": 926,
+      "ID": 905,
       "dates": [
-        "2022-01-24T00:00:00",
-        "2022-01-31T10:04:00"
+        "2021-12-27T11:00:00",
+        "2022-01-03T10:59:00"
       ],
       "versions": [
-        "110200",
+        "110100",
         "999999"
       ],
-      "name": "\u300c\u57ce\u3068\u30c9\u30e9\u30b4\u30f3\u300d\u30b3\u30e9\u30dc\u8a18\u5ff5\u2606 (Login Stamp)",
+      "name": "\u5e74\u672b\u5e74\u59cb\u30a4\u30d9\u30f3\u30c8\u958b\u50ac\u8a18\u5ff5\u30b9\u30bf\u30f3\u30d7 (Login Stamp)",
       "recurring": false,
       "qty": 0,
-      "text": "\u300c\u57ce\u3068\u30c9\u30e9\u30b4\u30f3\u300d\u30b3\u30e9\u30dc\u8a18\u5ff5\u2606",
-      "printable": "\u001b[0m\u001b[34m- 24~31 Jan: \u001b[0m\u300c\u57ce\u3068\u30c9\u30e9\u30b4\u30f3\u300d\u30b3\u30e9\u30dc\u8a18\u5ff5\u2606 (Login Stamp)"
-    },
-    {
-      "ID": 200,
-      "dates": [
-        "2022-01-24T00:00:00",
-        "2022-01-31T10:04:00"
-      ],
-      "versions": [
-        "80200",
-        "999999"
-      ],
-      "name": "Cat Food",
-      "recurring": true,
-      "qty": 20,
-      "text": "\u300c\u57ce\u3068\u30c9\u30e9\u30b4\u30f3\u300d\u30b3\u30e9\u30dc\u8a18\u5ff5\u2606",
-      "printable": "\u001b[0m\u001b[34m- 24~31 Jan: \u001b[0mCat Food x 20 (Daily)"
+      "text": "\u5e74\u672b\u5e74\u59cb\u30a4\u30d9\u30f3\u30c8\u958b\u50ac\u8a18\u5ff5\u30b9\u30bf\u30f3\u30d7",
+      "printable": "\u001b[0m\u001b[34m- 27 Dec~3 Jan: \u001b[0m\u5e74\u672b\u5e74\u59cb\u30a4\u30d9\u30f3\u30c8\u958b\u50ac\u8a18\u5ff5\u30b9\u30bf\u30f3\u30d7 (Login Stamp)"
     }
   ]
 }

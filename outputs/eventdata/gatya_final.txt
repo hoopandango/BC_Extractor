@@ -1,37 +1,28 @@
 ```ansi
 [0m[32mGatya[0m
-[0m[34m- 24~26 Jan: [0mVajiras[0m[33m [PS/D/N][0m
-[0m[34m- 26~28 Jan: [0mDragon Emperors[0m[33m [PS/R/D][0m
-[0m[34m- 28~31 Jan: [0mRoyalfest
+[0m[34m- 4~11 Jan: [0mWelcome 2022![0m[33m [L][0m {5x rate on Years-End Neneko}
 ```
 Legend for Gatya:
 SU = Step-Up, PS = Platinum Shard, L = Lucky Ticket, N = Neneko and Friends, R = Reinforcement, D = Grandons
 ```ansi
 [0m[32mEvents[0m
-[0m[34m- 23 Jan: [0mCatfruit Festival
-[0m[34m- 26~28 Jan: [0mMetal Festival
-[0m[34m- 28~31 Jan: [0mRiver Styx
-[0m[34m- 28~31 Jan: [0mRiver Acheron
-[0m[34m- 28~31 Jan: [0mCourts of Torment
-[0m[34m- 28~31 Jan: [0m絶・奈落門
-[0m[34m- 29~30 Jan: [0mCatfruit Buffet
+[0m[34m- 7~14 Jan: [0mLe'Grim Strikes (Baron)
+[0m[34m- 8 Jan: [0mCatfruit Festival
 ```
 ```ansi
 [0m[32mSales[0m
-[0m[34m- 28 Jan~3 Feb: [0mBeginner Sale
-[0m[34m- 28 Jan~3 Feb: [0mCatfruit Bargain Sale
+[0m[34m- 27~31 Dec: [0mItem Bargain Sale
 ```
 ```ansi
 [0m[32mMissions[0m
 ```
 ```ansi
 [0m[32mItems[0m
-[0m[34m- 24~31 Jan: [0m「城とドラゴン」コラボ記念☆ (Login Stamp)
-[0m[34m- 24~31 Jan: [0mCat Food x 20 (Daily)
+[0m[34m- 27 Dec~3 Jan: [0m年末年始イベント開催記念スタンプ (Login Stamp)
 ```
 ```ansi
-[0m[32mCatfruit Festival[0m - 23 Jan: 
+[0m[32mCatfruit Festival[0m - 8 Jan: 
 
-[0m[33mGrowing Blue, Growing Yellow[0m
-[0m[34m- 23 Jan:[0m All Day
+[0m[33mGrowing Green, Growing Purple, Growing Red[0m
+[0m[34m- 8 Jan:[0m All Day
 ```
