@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-from z_downloaders import Downloaders
+from .z_downloaders import Downloaders
 
 with open('_config.json') as fl:
 	config = json.load(fl)
