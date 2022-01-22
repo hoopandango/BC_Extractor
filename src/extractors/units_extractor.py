@@ -2,10 +2,10 @@ import json
 import csv
 import os
 
-with open('_config.json') as fl:
+with open('../_config.json') as fl:
 	config = json.load(fl)
 
-with open('_schemas.json') as fl:
+with open('../_schemas.json') as fl:
 	schema = json.load(fl)['units']
 
 LNG = config['setup']['LNG']

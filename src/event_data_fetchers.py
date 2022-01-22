@@ -17,7 +17,7 @@ with open('_config.json') as fl:
 	config = json.load(fl)
 inm_loc: str = config["outputs"]["eventdata"]
 
-with open('extras\\EventGroups.json', encoding='utf-8') as f:
+with open('../extras/EventGroups.json', encoding='utf-8') as f:
 	f = f.read()
 	y = json.loads(f)
 	event_groups: dict[str, dict[str, str | bool]] = y
