@@ -2,11 +2,11 @@ app/
 .vscode/
 _new/
 _data/
-src/latest_en/
-src/latest_jp/
+latest_en/
+latest_jp/
 archives/
-src/outputs/
-src/tests/
+outputs/
+tests/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -146,4 +146,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-/src/outputs/
+/outputs/
+/latest_en/
+/latest_jp/

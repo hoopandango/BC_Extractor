@@ -26,7 +26,7 @@ def fetch_test(lang: str, num: int) -> dict[str, str]:
 	toret = {}
 	for cat in ["Gatya", "Sale", "Item"]:
 		text = ""
-		with open(f"tests/in/{lang}{num}{cat[0]}.tsv", encoding='utf-8') as fl0:
+		with open(f"../tests/in/{lang}{num}{cat[0]}.tsv", encoding='utf-8') as fl0:
 			rows = fl0.read().split('\n')
 			for row in rows:
 				if row.startswith('+ '):
