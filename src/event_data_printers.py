@@ -121,5 +121,5 @@ api = flask_restful.Api(app)
 
 api.add_resource(Funky, '/funky')
 
-if __name__ == '__main__':
-	app.run()
+# if __name__ == '__main__':
+# 	app.run()

@@ -1,1 +1,1 @@
-web: gunicorn event_data_printers:app
+web: gunicorn src:app
