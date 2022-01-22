@@ -371,29 +371,29 @@
     ],
     [
       {
+        "ID": 821,
         "dates": [
           "2022-01-28T04:00:00",
           "2022-02-03T03:59:00"
         ],
-        "ID": 821,
+        "name": "Beginner Sale",
         "versions": [
           "110200",
           "999999"
         ],
-        "name": "Beginner Sale",
         "printable": "\u001b[0m\u001b[34m- 28 Jan~3 Feb: \u001b[0mBeginner Sale"
       },
       {
+        "ID": 801,
         "dates": [
           "2022-01-28T04:00:00",
           "2022-02-03T03:59:00"
         ],
-        "ID": 801,
+        "name": "Catfruit Bargain Sale",
         "versions": [
           "110200",
           "999999"
         ],
-        "name": "Catfruit Bargain Sale",
         "printable": "\u001b[0m\u001b[34m- 28 Jan~3 Feb: \u001b[0mCatfruit Bargain Sale"
       }
     ],
