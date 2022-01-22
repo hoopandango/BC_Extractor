@@ -14,7 +14,7 @@ class UniversalParsers:
 	with open(config['outputs']['stages'], encoding='utf-8', newline='') as csvfile:
 		autoEventNames = pd.read_csv(csvfile, delimiter='\t', index_col='ID', header=0)
 	
-	with open("../extras/Events.tsv", encoding='utf-8', newline='') as csvfile:
+	with open(config['outputs']['extras'], encoding='utf-8', newline='') as csvfile:
 		manualEventNames = pd.read_csv(csvfile, delimiter='\t', index_col='ID', header=0)
 		allEventNames = autoEventNames.append(manualEventNames)
 	

@@ -12,7 +12,7 @@ catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, inde
 combodata = pd.read_csv(config['outputs']['combos2'], delimiter='\t', header=0, index_col=0)
 itemdata = pd.read_csv(config['outputs']['items'], delimiter='\t', header=0, index_col=0)
 missiondata = pd.read_csv(config['outputs']['missions'], delimiter='\t', header=0, index_col=0)
-saledata = pd.read_csv("../extras/Events.tsv", delimiter='\t', header=0, index_col=0)
+saledata = pd.read_csv(config['outputs']['extras'], delimiter='\t', header=0, index_col=0)
 
 forms = ['name_f', 'name_c', 'name_s']
 

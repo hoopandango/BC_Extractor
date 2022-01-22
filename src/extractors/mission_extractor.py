@@ -5,7 +5,7 @@ import csv
 # region setup
 from local_readers import Readers
 
-with open('../_config.json') as fl:
+with open('../../_config.json') as fl:
 	config = json.load(fl)
 
 LNG = config['setup']['LNG']

@@ -9,12 +9,12 @@ import sys
 # region setup
 from local_readers import Readers
 
-with open('../_config.json') as fl:
+with open('../../_config.json') as fl:
 	config = json.load(fl)
 
 sys.stdout = open(config["outputs"]["gatya_text"], 'w', encoding='utf-8')
 
-with open('../_schemas.json') as fl:
+with open('../../_schemas.json') as fl:
 	schema = json.load(fl)['gatya']
 
 LNG = config['setup']['LNG']

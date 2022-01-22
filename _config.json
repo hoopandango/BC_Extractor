@@ -92,6 +92,8 @@
 		"missions": "reusables\\missions.tsv",
 		"substages": "reusables\\substages.tsv",
 		"enemies": "reusables\\enemies.tsv",
-		"combos2": "reusables\\combos.tsv"
+		"combos2": "reusables\\combos.tsv",
+        "extras": "extras\\Events.tsv",
+        "groups": "extras\\EventGroups.json"
 	}
 }
