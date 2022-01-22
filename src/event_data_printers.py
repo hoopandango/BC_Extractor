@@ -37,7 +37,7 @@ def fetch_test(lang: str, num: int) -> dict[str, str]:
 URLs = {"Gatya": "https://bc-seek.godfat.org/seek/%s/gatya.tsv",
 				"Sale": "https://bc-seek.godfat.org/seek/%s/sale.tsv",
 				"Item": "https://bc-seek.godfat.org/seek/%s/item.tsv"}
-asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+# asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 	toret = {}
 	async with aiohttp.ClientSession() as session:
