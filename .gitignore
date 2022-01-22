@@ -1,5 +1,6 @@
 app/
 .vscode/
+_credentials.json
 _new/
 _data/
 latest_en/

@@ -1,6 +1,7 @@
 import datetime
 import json
 import time
+import platform
 
 import flask_restful
 
@@ -9,6 +10,7 @@ import asyncio
 import aiohttp
 import flask
 from flask_restful import Resource
+from flask_httpauth import HTTPBasicAuth
 
 CASE = 0
 LANG = 'jp'
@@ -21,6 +23,17 @@ with open("_config.json") as fl:
 4 combos tsv
 10  all barons are grouped together
 """
+
+auth = HTTPBasicAuth()
+
+with open(config["setup"]["credentials"]) as cr:
+	credentials = json.load(cr)
+	
+@auth.verify_password
+def verify_password(username, password):
+	for row in credentials:
+		if row["username"] == username and row["password"] == password:
+			return username
 
 def fetch_test(lang: str, num: int) -> dict[str, str]:
 	toret = {}
@@ -37,7 +50,10 @@ def fetch_test(lang: str, num: int) -> dict[str, str]:
 URLs = {"Gatya": "https://bc-seek.godfat.org/seek/%s/gatya.tsv",
 				"Sale": "https://bc-seek.godfat.org/seek/%s/sale.tsv",
 				"Item": "https://bc-seek.godfat.org/seek/%s/item.tsv"}
-# asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+if platform.system() == "Windows":
+	asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+	
 async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 	toret = {}
 	async with aiohttp.ClientSession() as session:
@@ -48,6 +64,7 @@ async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 	return toret
 
 class Funky(Resource):
+	@auth.login_required
 	def get(self) -> str:
 		start = time.time()
 		# print(f"started at {start}")
@@ -107,8 +124,8 @@ class Funky(Resource):
 			else:
 				return str(obj)
 
-		with open(config["outputs"]["eventdata"]+"export.json", mode='w') as fl:
-			json.dump(for_export, fl, indent=2, default=unfuck_dates)
+		with open(config["outputs"]["eventdata"]+"export.json", mode='w') as fl0:
+			json.dump(for_export, fl0, indent=2, default=unfuck_dates)
 
 		print(f"over - {time.time() - start}")
 		StageParsers.updateEventNames()
@@ -120,6 +137,3 @@ app = flask.Flask(__name__)
 api = flask_restful.Api(app)
 
 api.add_resource(Funky, '/funky')
-
-# if __name__ == '__main__':
-# 	app.run()
