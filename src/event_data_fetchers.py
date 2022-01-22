@@ -6,9 +6,9 @@ from itertools import groupby
 
 import pandas as pd
 
-from containers import Gatya, Event, Stage, EventGroup, Mission, Sale, RawEventGroup, Item
-from event_data_parsers import GatyaParsers, ItemParsers, StageParsers
-from local_readers import Readers
+from .containers import Gatya, Event, Stage, EventGroup, Mission, Sale, RawEventGroup, Item
+from .event_data_parsers import GatyaParsers, ItemParsers, StageParsers
+from .local_readers import Readers
 
 groupable_events: list[str] = ['Seeing Red', 'Tag Arena', 'Dark', 'Duel', '(Baron)', 'Citadel']
 weekdays: list[str] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
