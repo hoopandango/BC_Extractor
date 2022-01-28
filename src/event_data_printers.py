@@ -120,7 +120,8 @@ class Funky(Resource):
 		toprint += gf.printGatya()
 		toprint += sf.printStages()
 		toprint += itf.printItemData()
-		toprint += sf.printFestivalData()
+		print(sf.printFestivalData())
+		toprint += sf.printFestivalData() if sf.printFestivalData() else ""
 
 		with open(config["outputs"]["eventdata"]+"gatya_final.txt", "w", encoding='utf-8') as fl0:
 			fl0.write(toprint)

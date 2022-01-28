@@ -393,7 +393,6 @@ class StageFetcher(UniversalFetcher):
 	
 		toret = "Festival Data:\n"
 		for festival in [X for X in self.festivals if not (X.split or not X.visible)]:
-			toret = "Festival Data:\n"
 			if not isinstance(festival.events[0], Stage) or festival.events[0].sched is None:
 				continue
 			
@@ -467,7 +466,7 @@ class StageFetcher(UniversalFetcher):
 				
 				# End printing
 			toret +=('```\n')
-			return toret if toret else "No Festivals available"
+		return toret if toret else "No Festivals available"
 	
 	def schedulingTable(self):
 		hashmap = {'yearly': 'Yearly', 'monthly': 'Monthly', 'weekly': 'Weekly', 'daily': 'Daily',
