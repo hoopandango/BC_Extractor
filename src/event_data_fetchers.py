@@ -467,7 +467,7 @@ class StageFetcher(UniversalFetcher):
 				
 				# End printing
 			toret +=('```\n')
-			return toret
+			return toret if toret else "No Festivals available"
 	
 	def schedulingTable(self):
 		hashmap = {'yearly': 'Yearly', 'monthly': 'Monthly', 'weekly': 'Weekly', 'daily': 'Daily',
