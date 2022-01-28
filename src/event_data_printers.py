@@ -75,7 +75,9 @@ class Funky(Resource):
 		itf = ItemFetcher(fls=f)
 
 		if CASE <= 0:
-			texts = flask_restful.request.get_json()["diffs"]
+			js = flask_restful.request.get_json()
+			texts = js["diffs"]
+			ver = "BC"+(js["version"][:2]).upper()
 			for key in texts:
 				rows = texts[key].split("\n")
 				toput = ""
@@ -84,6 +86,7 @@ class Funky(Resource):
 						toput += row[2:]+'\n'
 				texts[key] = toput
 		else:
+			ver = ""
 			texts = fetch_test(LANG, CASE)
 		print(f"got at {time.time() - start}")
 
@@ -113,7 +116,8 @@ class Funky(Resource):
 		sf.sortAll()
 		# print(f"printing stuff - {time.time() - start}")
 
-		toprint = gf.printGatya()
+		toprint = ver+" EVENT DATA\n"
+		toprint += gf.printGatya()
 		toprint += sf.printStages()
 		toprint += itf.printItemData()
 		toprint += sf.printFestivalData()

@@ -1,7 +1,6 @@
 import csv
 import datetime
 import json
-import sqlite3
 from itertools import groupby
 
 import pandas as pd
@@ -391,9 +390,10 @@ class StageFetcher(UniversalFetcher):
 				return tort
 			else:
 				return tort.replace(month=(tort.month + 1) % 12, year=tort.year + (tort.month + 1) // 12)
-		
+	
+		toret = "Festival Data:\n"
 		for festival in [X for X in self.festivals if not (X.split or not X.visible)]:
-			toret = ""
+			toret = "Festival Data:\n"
 			if not isinstance(festival.events[0], Stage) or festival.events[0].sched is None:
 				continue
 			
