@@ -1,16 +1,345 @@
 {
   "gatya": [
     {
-      "ID": 627,
+      "ID": 599,
       "dates": [
-        "2021-12-06T11:00:00",
-        "2021-12-08T10:59:00"
+        "2022-01-17T11:00:00",
+        "2022-01-21T10:59:00"
       ],
       "versions": [
-        "110000",
+        "110100",
+        "999999"
+      ],
+      "name": "Ultra Selection",
+      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "1",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [],
+      "exclusives": [],
+      "text": "Ultra Selection! \u2605 Tap banner for info!",
+      "printable": "- 17~21 Jan: Ultra Selection"
+    },
+    {
+      "ID": 608,
+      "dates": [
+        "2022-01-17T11:00:00",
+        "2022-01-19T10:59:00"
+      ],
+      "versions": [
+        "110100",
+        "999999"
+      ],
+      "name": "Vajiras",
+      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [
+          "Shiro Amakusa"
+        ],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "2",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [
+        "PS"
+      ],
+      "exclusives": [
+        "D"
+      ],
+      "text": "Mighty NEW hero Shiro Amakusa, good against Black & Aku! \u2605Tap banner for info!",
+      "printable": "- 17~19 Jan: Vajiras [PS/D] (+ Shiro Amakusa)"
+    },
+    {
+      "ID": 497,
+      "dates": [
+        "2022-01-19T11:00:00",
+        "2022-01-21T10:59:00"
+      ],
+      "versions": [
+        "110100",
+        "999999"
+      ],
+      "name": "Almighties",
+      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "2",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [
+        "PS"
+      ],
+      "exclusives": [
+        "D"
+      ],
+      "text": "The Almighties, supreme beings of Catkind! \u2605 Tap banner for info!",
+      "printable": "- 19~21 Jan: Almighties [PS/D]"
+    },
+    {
+      "ID": 643,
+      "dates": [
+        "2022-01-21T11:00:00",
+        "2022-01-24T10:59:00"
+      ],
+      "versions": [
+        "110100",
+        "999999"
+      ],
+      "name": "Iron Legion",
+      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [
+          "Mighty Deth-Troy-R"
+        ],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "1",
+      "guarantee": [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "extras": [],
+      "exclusives": [
+        "D"
+      ],
+      "text": "Tear through Zombies/Aku with Mighty Deth-Troy-R! \u2605 Tap banner for info!",
+      "printable": "- 21~24 Jan: Iron Legion (Guaranteed) [D] (+ Mighty Deth-Troy-R)"
+    },
+    {
+      "ID": 600,
+      "dates": [
+        "2022-01-24T11:00:00",
+        "2022-01-28T10:59:00"
+      ],
+      "versions": [
+        "110100",
+        "999999"
+      ],
+      "name": "Miracle Chance",
+      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "1",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [],
+      "exclusives": [],
+      "text": "Miracle Selection! \u2605 Tap banner for info!",
+      "printable": "- 24~28 Jan: Miracle Chance"
+    },
+    {
+      "ID": 624,
+      "dates": [
+        "2022-01-24T11:00:00",
+        "2022-01-26T10:59:00"
+      ],
+      "versions": [
+        "110100",
+        "999999"
+      ],
+      "name": "Nekolugas",
+      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [
+          "Furiluga"
+        ],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "2",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [
+        "PS"
+      ],
+      "exclusives": [
+        "D"
+      ],
+      "text": "NEW Barrier and Shield destroying hero Furiluga appears! \u2605Tap banner for info!",
+      "printable": "- 24~26 Jan: Nekolugas [PS/D] (+ Furiluga)"
+    },
+    {
+      "ID": 611,
+      "dates": [
+        "2022-01-26T11:00:00",
+        "2022-01-28T10:59:00"
+      ],
+      "versions": [
+        "110100",
+        "999999"
+      ],
+      "name": "Galaxy Gals",
+      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "2",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [
+        "PS"
+      ],
+      "exclusives": [
+        "D"
+      ],
+      "text": "New Hero LILIN joins the fight to crush the Aku! \u2605 Tap for more info!",
+      "printable": "- 26~28 Jan: Galaxy Gals [PS/D]"
+    },
+    {
+      "ID": 594,
+      "dates": [
+        "2022-01-28T11:00:00",
+        "2022-01-31T23:59:00"
+      ],
+      "versions": [
+        "110100",
+        "999999"
+      ],
+      "name": "Best of the Best",
+      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "rates": [
+        0,
+        7000,
+        2500,
+        500,
+        0
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "1",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [],
+      "exclusives": [],
+      "text": "Limited Uber Set, with Li'l Valkyrie! \u2605 Tap banner for info!",
+      "printable": "- 28~31 Jan: Best of the Best"
+    },
+    {
+      "ID": 627,
+      "dates": [
+        "2022-01-28T11:00:00",
+        "2022-01-31T23:59:00"
+      ],
+      "versions": [
+        "110100",
         "999999"
       ],
       "name": "Dynamites",
+      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
       "rates": [
         0,
         6970,
@@ -26,7 +355,7 @@
         []
       ],
       "page": "Rare Capsule",
-      "slot": "3",
+      "slot": "2",
       "guarantee": [
         false,
         false,
@@ -41,232 +370,1050 @@
         "D"
       ],
       "text": "NEW hero Summoner Satoru, effective vs Aku! \u2605Tap banner for info!",
-      "printable": "- 6~8 Dec: Dynamites[PS/D] (+ Summoner Satoru)"
-    },
-    {
-      "ID": 475,
-      "dates": [
-        "2021-12-08T11:00:00",
-        "2021-12-10T10:59:00"
-      ],
-      "versions": [
-        "110000",
-        "999999"
-      ],
-      "name": "Ultra Souls",
-      "rates": [
-        0,
-        6970,
-        2500,
-        500,
-        30
-      ],
-      "rate_ups": {},
-      "diff": [
-        [],
-        []
-      ],
-      "page": "Rare Capsule",
-      "slot": "3",
-      "guarantee": [
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "extras": [
-        "PS"
-      ],
-      "exclusives": [
-        "D"
-      ],
-      "text": "Heroes of Japanese Fantasy:! \u2605 Tap banner for info!",
-      "printable": "- 8~10 Dec: Ultra Souls[PS/D]"
-    },
-    {
-      "ID": 572,
-      "dates": [
-        "2021-12-10T11:00:00",
-        "2021-12-13T10:59:00"
-      ],
-      "versions": [
-        "110000",
-        "999999"
-      ],
-      "name": "Iron Legion",
-      "rates": [
-        0,
-        6970,
-        2500,
-        500,
-        30
-      ],
-      "rate_ups": {},
-      "diff": [
-        [],
-        []
-      ],
-      "page": "Rare Capsule",
-      "slot": "3",
-      "guarantee": [
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "extras": [
-        "PS"
-      ],
-      "exclusives": [
-        "D"
-      ],
-      "text": "NEW Iron Legion Hero Mighty Aethur Ltd. \u2605 Tap banner for info!",
-      "printable": "- 10~13 Dec: Iron Legion[PS/D]"
+      "printable": "- 28~31 Jan: Dynamites [PS/D] (+ Summoner Satoru)"
     }
   ],
   "stages": [
     [
       {
-        "name": "Baron",
+        "name": "Citadel",
         "events": [
           {
-            "ID": 24027,
+            "ID": 7001,
             "dates": [
-              "2021-12-06T11:00:00",
-              "2021-12-13T10:59:00"
+              "2022-01-17T11:00:00",
+              "2022-02-14T10:59:00"
             ],
             "versions": [
-              "110000",
+              "110100",
               "999999"
             ],
-            "name": "Le'Grim Strikes (Baron)",
+            "name": "Red Citadel",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 6~13 Dec: : Le'Grim Strikes (Baron)"
+            "printable": "- 17 Jan~14 Feb: Red Citadel"
+          },
+          {
+            "ID": 7002,
+            "dates": [
+              "2022-01-20T00:00:00",
+              "2022-02-14T10:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Black Citadel",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 20 Jan~14 Feb: Black Citadel"
+          },
+          {
+            "ID": 7003,
+            "dates": [
+              "2022-01-23T00:00:00",
+              "2022-02-14T10:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Angel Citadel",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 23 Jan~14 Feb: Angel Citadel"
+          },
+          {
+            "ID": 7004,
+            "dates": [
+              "2022-01-26T00:00:00",
+              "2022-02-14T10:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Alien Citadel",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 26 Jan~14 Feb: Alien Citadel"
+          },
+          {
+            "ID": 7005,
+            "dates": [
+              "2022-01-29T00:00:00",
+              "2022-02-14T10:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Zombie Citadel",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 29 Jan~14 Feb: Zombie Citadel"
           }
         ],
         "dates": [
-          "2021-12-06T11:00:00",
-          "2021-12-13T10:59:00"
-        ],
-        "split": true,
-        "visible": true,
-        "printable": "- 6~13 Dec: : Le'Grim Strikes (Baron)"
-      },
-      {
-        "name": "Metal Festival",
-        "events": [
-          {
-            "ID": 1006,
-            "dates": [
-              "2021-12-08T00:00:00",
-              "2021-12-10T23:59:00"
-            ],
-            "versions": [
-              "110000",
-              "999999"
-            ],
-            "name": "Cat Ticket Chance!",
-            "sched": "daily",
-            "sched_data": [
-              {
-                "times": [
-                  {
-                    "start": "11:00:00",
-                    "end": "14:00:00"
-                  },
-                  {
-                    "start": "19:00:00",
-                    "end": "22:00:00"
-                  }
-                ]
-              }
-            ],
-            "printable": "- 8~10 Dec: : Cat Ticket Chance!"
-          },
-          {
-            "ID": 1007,
-            "dates": [
-              "2021-12-08T00:00:00",
-              "2021-12-10T23:59:00"
-            ],
-            "versions": [
-              "110000",
-              "999999"
-            ],
-            "name": "Siege of Hippoe!",
-            "sched": "daily",
-            "sched_data": [
-              {
-                "times": [
-                  {
-                    "start": "11:00:00",
-                    "end": "14:00:00"
-                  },
-                  {
-                    "start": "19:00:00",
-                    "end": "22:00:00"
-                  }
-                ]
-              }
-            ],
-            "printable": "- 8~10 Dec: : Siege of Hippoe!"
-          },
-          {
-            "ID": 1078,
-            "dates": [
-              "2021-12-08T00:00:00",
-              "2021-12-08T12:00:00"
-            ],
-            "versions": [
-              "110000",
-              "999999"
-            ],
-            "name": "Facing Danger",
-            "sched": "permanent",
-            "sched_data": null,
-            "printable": "- 8 Dec: : Facing Danger"
-          },
-          {
-            "ID": 1078,
-            "dates": [
-              "2021-12-09T12:00:00",
-              "2021-12-09T23:59:00"
-            ],
-            "versions": [
-              "110000",
-              "999999"
-            ],
-            "name": "Facing Danger",
-            "sched": "permanent",
-            "sched_data": null,
-            "printable": "- 9 Dec: : Facing Danger"
-          },
-          {
-            "ID": 1078,
-            "dates": [
-              "2021-12-10T00:00:00",
-              "2021-12-10T11:59:00"
-            ],
-            "versions": [
-              "110000",
-              "999999"
-            ],
-            "name": "Facing Danger",
-            "sched": "permanent",
-            "sched_data": null,
-            "printable": "- 10 Dec: : Facing Danger"
-          }
-        ],
-        "dates": [
-          "2021-12-08T00:00:00",
-          "2021-12-10T23:59:00"
+          "2022-01-17T11:00:00",
+          "2022-02-14T10:59:00"
         ],
         "split": false,
         "visible": true,
-        "printable": "- 8~10 Dec: : Metal Festival"
+        "printable": "- 17 Jan~14 Feb: Citadel"
+      },
+      {
+        "name": "Baron",
+        "events": [
+          {
+            "ID": 24020,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Baron Seal Strikes (Baron)",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 17~31 Jan: Baron Seal Strikes (Baron)"
+          }
+        ],
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "split": true,
+        "visible": true,
+        "printable": "- 17~31 Jan: Baron Seal Strikes (Baron)"
+      },
+      {
+        "name": "All-Stars Stages",
+        "events": [
+          {
+            "ID": 1033,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-20T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Monthly Event All-Stars Special Celebration!",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 17~20 Jan: Monthly Event All-Stars Special Celebration!"
+          },
+          {
+            "ID": 1034,
+            "dates": [
+              "2022-01-21T00:00:00",
+              "2022-01-22T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Monthly Event All-Stars Ultra Celebration!",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 21~22 Jan: Monthly Event All-Stars Ultra Celebration!"
+          },
+          {
+            "ID": 1035,
+            "dates": [
+              "2022-01-23T00:00:00",
+              "2022-01-24T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Monthly Event All-Stars Miracle Celebration!",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 23~24 Jan: Monthly Event All-Stars Miracle Celebration!"
+          },
+          {
+            "ID": 1070,
+            "dates": [
+              "2022-01-25T00:00:00",
+              "2022-01-26T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Monthly Event All-Stars Wonderful Celebration!",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 25~26 Jan: Monthly Event All-Stars Wonderful Celebration!"
+          },
+          {
+            "ID": 1079,
+            "dates": [
+              "2022-01-27T00:00:00",
+              "2022-01-28T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Event All-Stars Excellent Celebration!",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 27~28 Jan: Event All-Stars Excellent Celebration!"
+          },
+          {
+            "ID": 1146,
+            "dates": [
+              "2022-01-29T00:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Event All-Stars Grand Jubilee!",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 29~31 Jan: Event All-Stars Grand Jubilee!"
+          }
+        ],
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "split": false,
+        "visible": true,
+        "printable": "- 17~31 Jan: All-Stars Stages"
+      },
+      {
+        "name": "Tornado Festival",
+        "events": [
+          {
+            "ID": 1014,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Crimson Catastrophe",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17~31 Jan: Crimson Catastrophe"
+          },
+          {
+            "ID": 1016,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Peerless",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17~31 Jan: Peerless"
+          },
+          {
+            "ID": 1043,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Sweet Irony",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17~31 Jan: Sweet Irony"
+          },
+          {
+            "ID": 1096,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Red Sky at Morning",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17~31 Jan: Red Sky at Morning"
+          },
+          {
+            "ID": 1157,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "The 2nd Dimension",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17~31 Jan: The 2nd Dimension"
+          },
+          {
+            "ID": 1169,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Crimson Vengeance",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17~31 Jan: Crimson Vengeance"
+          },
+          {
+            "ID": 1176,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Peerless Too",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17~31 Jan: Peerless Too"
+          },
+          {
+            "ID": 1187,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Bitter Irony",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17~31 Jan: Bitter Irony"
+          },
+          {
+            "ID": 1195,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Red Sky at Night",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17~31 Jan: Red Sky at Night"
+          },
+          {
+            "ID": 1203,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-01-31T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "The 3rd Dimension",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17~31 Jan: The 3rd Dimension"
+          },
+          {
+            "ID": 1015,
+            "dates": [
+              "2022-01-18T00:00:00",
+              "2022-01-30T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Heaven of Darkness",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  18,
+                  20,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 18~30 Jan: Heaven of Darkness"
+          },
+          {
+            "ID": 1039,
+            "dates": [
+              "2022-01-18T00:00:00",
+              "2022-01-30T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Wrath of Heaven",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  18,
+                  20,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 18~30 Jan: Wrath of Heaven"
+          },
+          {
+            "ID": 1066,
+            "dates": [
+              "2022-01-18T00:00:00",
+              "2022-01-30T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Dimension of Despair",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  18,
+                  20,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 18~30 Jan: Dimension of Despair"
+          },
+          {
+            "ID": 1122,
+            "dates": [
+              "2022-01-18T00:00:00",
+              "2022-01-30T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "The Rolling Dead",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  18,
+                  20,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 18~30 Jan: The Rolling Dead"
+          },
+          {
+            "ID": 1172,
+            "dates": [
+              "2022-01-18T00:00:00",
+              "2022-01-30T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "NEO Darkness Heaven",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  18,
+                  20,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 18~30 Jan: NEO Darkness Heaven"
+          },
+          {
+            "ID": 1185,
+            "dates": [
+              "2022-01-18T00:00:00",
+              "2022-01-30T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Wrath of the Divine",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  18,
+                  20,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 18~30 Jan: Wrath of the Divine"
+          },
+          {
+            "ID": 1189,
+            "dates": [
+              "2022-01-18T00:00:00",
+              "2022-01-30T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Typhoon Nemo",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  18,
+                  20,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 18~30 Jan: Typhoon Nemo"
+          },
+          {
+            "ID": 1193,
+            "dates": [
+              "2022-01-18T00:00:00",
+              "2022-01-30T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "Dimension of Delirium",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  18,
+                  20,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 18~30 Jan: Dimension of Delirium"
+          },
+          {
+            "ID": 1198,
+            "dates": [
+              "2022-01-18T00:00:00",
+              "2022-01-30T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "The Dead Keep Rolling",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  18,
+                  20,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 18~30 Jan: The Dead Keep Rolling"
+          }
+        ],
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "split": false,
+        "visible": true,
+        "printable": "- 17~31 Jan: Tornado Festival"
+      },
+      {
+        "name": "Treasure Festival",
+        "events": [
+          {
+            "ID": 100,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-02-14T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "EoC Treasure Festival",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  2,
+                  4,
+                  6,
+                  8,
+                  10,
+                  12,
+                  14,
+                  18,
+                  20,
+                  22,
+                  24,
+                  26,
+                  28,
+                  30
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17 Jan~14 Feb: EoC Treasure Festival"
+          },
+          {
+            "ID": 101,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-02-14T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "ItF Treasure Festival",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  1,
+                  3,
+                  5,
+                  7,
+                  9,
+                  11,
+                  13,
+                  17,
+                  19,
+                  21,
+                  23,
+                  25,
+                  27,
+                  29,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17 Jan~14 Feb: ItF Treasure Festival"
+          },
+          {
+            "ID": 104,
+            "dates": [
+              "2022-01-17T11:00:00",
+              "2022-02-14T23:59:00"
+            ],
+            "versions": [
+              "110100",
+              "999999"
+            ],
+            "name": "CotC Treasure Festival",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "sched": "monthly",
+            "sched_data": [
+              {
+                "dates": [
+                  3,
+                  6,
+                  9,
+                  12,
+                  19,
+                  22,
+                  25,
+                  28,
+                  31
+                ],
+                "times": []
+              }
+            ],
+            "printable": "- 17 Jan~14 Feb: CotC Treasure Festival"
+          }
+        ],
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-02-14T23:59:00"
+        ],
+        "split": false,
+        "visible": true,
+        "printable": "- 17 Jan~14 Feb: Treasure Festival"
+      },
+      {
+        "ID": 1071,
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-02-14T10:59:00"
+        ],
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "name": "Minced Meet-Up",
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "sched": "permanent",
+        "sched_data": null,
+        "printable": "- 17 Jan~14 Feb: Minced Meet-Up"
+      },
+      {
+        "ID": 1153,
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-02-14T10:59:00"
+        ],
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "name": "Catburger Awakens!",
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "sched": "permanent",
+        "sched_data": null,
+        "printable": "- 17 Jan~14 Feb: Catburger Awakens!"
+      },
+      {
+        "ID": 18000,
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "name": "Anniversary Slots",
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "sched": "permanent",
+        "sched_data": null,
+        "printable": "- 17~31 Jan: Anniversary Slots"
+      },
+      {
+        "ID": 1224,
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-02-14T10:59:00"
+        ],
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "name": "Lunar New Year",
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "sched": "daily",
+        "sched_data": [
+          {
+            "times": [
+              {
+                "start": "00:00:00",
+                "end": "23:59:00"
+              }
+            ]
+          }
+        ],
+        "printable": "- 17 Jan~14 Feb: Lunar New Year"
+      },
+      {
+        "ID": 1225,
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-02-14T10:59:00"
+        ],
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "name": "Mystery Package",
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "sched": "permanent",
+        "sched_data": null,
+        "printable": "- 17 Jan~14 Feb: Mystery Package"
+      },
+      {
+        "ID": 1285,
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "name": "Top 5 Most Seen Enemies, 2021!",
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "sched": "permanent",
+        "sched_data": null,
+        "printable": "- 17~31 Jan: Top 5 Most Seen Enemies, 2021!"
+      },
+      {
+        "ID": 1173,
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-01-24T23:59:00",
+          "2022-01-25T00:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "name": "Cybear's Vengeance",
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "sched": "permanent",
+        "sched_data": null,
+        "printable": "- 17~24 Jan, 25~31 Jan: Cybear's Vengeance"
       },
       {
         "name": "Catfruit Festival",
@@ -274,104 +1421,253 @@
           {
             "ID": 1097,
             "dates": [
-              "2021-12-11T00:00:00",
-              "2021-12-12T23:59:00"
+              "2022-01-22T00:00:00",
+              "2022-01-23T23:59:00"
             ],
             "versions": [
-              "110000",
+              "110100",
               "999999"
             ],
             "name": "Growing Green",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 11~12 Dec: : Growing Green"
+            "printable": "- 22~23 Jan: Growing Green"
           },
           {
             "ID": 1098,
             "dates": [
-              "2021-12-11T00:00:00",
-              "2021-12-12T23:59:00"
+              "2022-01-22T00:00:00",
+              "2022-01-23T23:59:00"
             ],
             "versions": [
-              "110000",
+              "110100",
               "999999"
             ],
             "name": "Growing Purple",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 11~12 Dec: : Growing Purple"
+            "printable": "- 22~23 Jan: Growing Purple"
           },
           {
             "ID": 1099,
             "dates": [
-              "2021-12-11T00:00:00",
-              "2021-12-12T23:59:00"
+              "2022-01-22T00:00:00",
+              "2022-01-23T23:59:00"
             ],
             "versions": [
-              "110000",
+              "110100",
               "999999"
             ],
             "name": "Growing Red",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 11~12 Dec: : Growing Red"
+            "printable": "- 22~23 Jan: Growing Red"
           },
           {
             "ID": 1100,
             "dates": [
-              "2021-12-11T00:00:00",
-              "2021-12-12T23:59:00"
+              "2022-01-22T00:00:00",
+              "2022-01-23T23:59:00"
             ],
             "versions": [
-              "110000",
+              "110100",
               "999999"
             ],
             "name": "Growing Blue",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 11~12 Dec: : Growing Blue"
+            "printable": "- 22~23 Jan: Growing Blue"
           },
           {
             "ID": 1101,
             "dates": [
-              "2021-12-11T00:00:00",
-              "2021-12-12T23:59:00"
+              "2022-01-22T00:00:00",
+              "2022-01-23T23:59:00"
             ],
             "versions": [
-              "110000",
+              "110100",
               "999999"
             ],
             "name": "Growing Yellow",
+            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 11~12 Dec: : Growing Yellow"
+            "printable": "- 22~23 Jan: Growing Yellow"
           }
         ],
         "dates": [
-          "2021-12-11T00:00:00",
-          "2021-12-12T23:59:00"
+          "2022-01-22T00:00:00",
+          "2022-01-23T23:59:00"
         ],
         "split": false,
         "visible": true,
-        "printable": "- 11~12 Dec: : Catfruit Festival"
+        "printable": "- 22~23 Jan: Catfruit Festival"
+      },
+      {
+        "ID": 1118,
+        "dates": [
+          "2022-01-29T00:00:00",
+          "2022-01-30T23:59:00"
+        ],
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "name": "Catfruit Buffet",
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "sched": "daily",
+        "sched_data": [
+          {
+            "times": [
+              {
+                "start": "08:00:00",
+                "end": "10:00:00"
+              },
+              {
+                "start": "12:00:00",
+                "end": "14:00:00"
+              },
+              {
+                "start": "19:00:00",
+                "end": "21:00:00"
+              }
+            ]
+          }
+        ],
+        "printable": "- 29~30 Jan: Catfruit Buffet"
+      },
+      {
+        "ID": 2006,
+        "dates": [
+          "2022-01-31T00:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "name": "Lasvoss Strikes?!",
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "sched": "permanent",
+        "sched_data": null,
+        "printable": "- 31 Jan: Lasvoss Strikes?!"
+      },
+      {
+        "ID": 2037,
+        "dates": [
+          "2022-01-31T00:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "name": "Cabaret Cat Awakens!",
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "sched": "permanent",
+        "sched_data": null,
+        "printable": "- 31 Jan: Cabaret Cat Awakens!"
       }
     ],
     [
       {
-        "dates": [
-          "2021-12-10T00:00:00",
-          "2021-12-12T23:59:00"
-        ],
         "versions": [
-          "110000",
+          "110100",
           "999999"
         ],
-        "name": "Special Cats Half-Off Sale",
-        "ID": 51,
-        "printable": "- 10~12 Dec: : Special Cats Half-Off Sale"
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "name": "Thank-You Pack",
+        "ID": 812,
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "printable": "- 17~31 Jan: Thank-You Pack"
+      },
+      {
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "name": "Limited Sale",
+        "ID": 813,
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "printable": "- 17~31 Jan: Limited Sale"
       }
     ],
     []
   ],
-  "items": []
+  "items": [
+    {
+      "ID": 906,
+      "dates": [
+        "2022-01-17T11:00:00",
+        "2022-02-14T10:59:00"
+      ],
+      "versions": [
+        "110100",
+        "999999"
+      ],
+      "name": "Lunar New Year! (Login Stamp)",
+      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "recurring": false,
+      "qty": 0,
+      "text": "Lunar New Year!",
+      "printable": "- 17 Jan~14 Feb: Lunar New Year! (Login Stamp)"
+    },
+    {
+      "name": "Rare Ticket + Leadership (Meow Meow Day)",
+      "events": [
+        {
+          "ID": 203,
+          "dates": [
+            "2022-01-22T00:00:00",
+            "2022-01-22T23:59:00"
+          ],
+          "versions": [
+            "110100",
+            "999999"
+          ],
+          "name": "Rare Ticket",
+          "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+          "recurring": false,
+          "qty": 1,
+          "text": "Meow Meow Day!",
+          "printable": "- 22 Jan: Rare Ticket - Meow Meow Day!"
+        },
+        {
+          "ID": 220,
+          "dates": [
+            "2022-01-22T00:00:00",
+            "2022-01-22T23:59:00"
+          ],
+          "versions": [
+            "110100",
+            "999999"
+          ],
+          "name": "Leadership",
+          "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+          "recurring": false,
+          "qty": 1,
+          "text": "Meow Meow Day!",
+          "printable": "- 22 Jan: Leadership"
+        }
+      ],
+      "dates": [
+        "2022-01-22T00:00:00",
+        "2022-01-22T23:59:00"
+      ],
+      "split": false,
+      "visible": true,
+      "printable": "- 22 Jan: Rare Ticket + Leadership (Meow Meow Day)"
+    }
+  ]
 }

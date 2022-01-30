@@ -5,8 +5,8 @@ from itertools import groupby
 
 import pandas as pd
 
-from .containers import Gatya, Event, Stage, EventGroup, Mission, Sale, RawEventGroup, Item
-from .event_data_parsers import GatyaParsers, ItemParsers, StageParsers, Colourer
+from .containers import Gatya, Event, Stage, EventGroup, Mission, Sale, RawEventGroup, Item, Colourer
+from .event_data_parsers import GatyaParsers, ItemParsers, StageParsers
 from .local_readers import Readers
 
 groupable_events: list[str] = ['Seeing Red', 'Tag Arena', 'Dark', 'Duel', '(Baron)', 'Citadel']
@@ -24,12 +24,16 @@ with open(config['outputs']['groups'], encoding='utf-8') as f:
 class UniversalFetcher:
 	ver: str
 	filters: list[str]
+	clr: Colourer
+	date0: datetime.datetime
 	
-	def __init__(self, fls: list):
+	def __init__(self, d0: datetime.datetime = datetime.datetime.today(),
+	             fls: list = ['N'], coloured: Colourer = Colourer()):
 		self.filters = fls
+		self.clr = coloured
+		self.date0 = d0
 	
-	@staticmethod
-	def groupData(waitingqueue: list[RawEventGroup] | list[Event]) -> tuple[list[Event], list[EventGroup],
+	def groupData(self, waitingqueue: list[RawEventGroup] | list[Event]) -> tuple[list[Event], list[EventGroup],
 	                                                                        list[Sale], list[Mission]]:
 		# stage, festival, sale, mission
 		group_history_2: dict[str, EventGroup] = {}
@@ -158,8 +162,8 @@ class UniversalFetcher:
 					if eventname == 'Unknown':
 						continue
 					
-					curr0: Event = Stage(name=eventname, ID=ID, dates=grp0.dates, versions=grp0.versions, sched=grp0.sched,
-					                     sched_data=grp0.sched_data)
+					curr0: Event = Stage(name=eventname, ID=ID, dates=grp0.dates, versions=grp0.versions,
+					                     sched=grp0.sched, sched_data=grp0.sched_data, clr=self.clr)
 					newqueue.append(curr0)
 			return newqueue
 	
@@ -172,12 +176,11 @@ class UniversalFetcher:
 
 class GatyaFetcher(UniversalFetcher):
 	# SETUP
-	def __init__(self, fls=['M'], d0=datetime.datetime.today()):
-		UniversalFetcher.__init__(self, fls)
+	def __init__(self, **kwargs):
+		UniversalFetcher.__init__(self, **kwargs)
 		self.rawGatya: list[list[str]] = []
 		self.refinedGatya: list[Gatya] = []
 		self.rejectedGatya: list[Gatya] = []
-		self.date0 = d0
 	
 	# ACQUISITION TOOLS
 	def fetchRawData(self, data: str):
@@ -212,6 +215,7 @@ class GatyaFetcher(UniversalFetcher):
 			toput.guarantee = GatyaParsers.getGuarantees(banner)
 			toput.text = GatyaParsers.getValueAtOffset(banner, 24)
 			toput.extras = GatyaParsers.getExtras(banner)
+			toput.clr = self.clr
 			
 			if toput.page == "Cat Capsule":
 				goto = self.rejectedGatya
@@ -224,7 +228,7 @@ class GatyaFetcher(UniversalFetcher):
 	# OUTPUT TOOLS
 	def printGatya(self)->str:
 		toret = ""
-		toret +=(f'```ansi\n{Colourer.clc("Gatya", 32)}\n')
+		toret +=(f'```ansi\n{self.clr.clc("Gatya", 32)}\n')
 		for event in self.refinedGatya:
 			if not isinstance(event, EventGroup):
 				if event.rates[3] in (10000, 9500):  # Platinum / Legend Ticket Event
@@ -253,8 +257,8 @@ class StageFetcher(UniversalFetcher):
 	date0: datetime.datetime
 	
 	# SETUP
-	def __init__(self, fls=None, d0=datetime.datetime.today()):
-		UniversalFetcher.__init__(self, fls)
+	def __init__(self, **kwargs):
+		UniversalFetcher.__init__(self, **kwargs)
 		self.rawStages = []
 		self.refinedStages = []
 		self.rejectedStages = []
@@ -262,7 +266,6 @@ class StageFetcher(UniversalFetcher):
 		self.festivals = []
 		self.sales = []
 		self.missions = []
-		self.date0 = d0
 	
 	# ACQUISITION TOOLS
 	def fetchRawData(self, data: str) -> None:
@@ -332,14 +335,14 @@ class StageFetcher(UniversalFetcher):
 			if (check[0] <= tort < check[1]):
 				return tort
 			else:
-				return tort.replace(month=(tort.month) % 12 + 1, year=tort.year + (tort.month + 1) // 12)
+				return tort.replace(month=(tort.month) % 12 + 1, year=tort.year + (tort.month + 1) // 13)
 	
 		toret = "Festival Data:\n"
 		for festival in [X for X in self.festivals if not (X.split or not X.visible)]:
 			if not isinstance(festival.events[0], Stage) or festival.events[0].sched is None:
 				continue
 			
-			toret +=(f'```ansi\n{Colourer.clc(festival.name, 32)} {StageParsers.fancyDate(festival.dates)}\n\n')
+			toret +=(f'```ansi\n{self.clr.clc(festival.name, 32)} {StageParsers.fancyDate(festival.dates)}\n\n')
 			groups = []
 			if(festival.events[0].sched_data is not None):
 				obj = groupby(festival.events, lambda x: x.sched_data)
@@ -352,38 +355,36 @@ class StageFetcher(UniversalFetcher):
 			
 			for event_set in groups:
 				# Starts printing here
-				toret += Colourer.clc(f'{", ".join(unique([event.name for event in event_set]))}\n', 33)
+				toret += self.clr.clc(f'{", ".join(unique([event.name for event in event_set]))}\n', 33)
 				rep = event_set[0]  # representative event of the set
-				mstart = rep.dates[0].strftime("%b")
-				mend = rep.dates[-1].strftime("%b")
 				
 				if rep.sched == 'permanent':
-					toret +=(Colourer.clc(f"{rep.dates[0].day} {mstart}", 33) +
-					      f": {StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}\n")
+					toret += self.clr.clc(StageParsers.fancyDate(rep.dates), 34) +\
+					      f"{StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}\n"
 				
 				elif rep.sched == 'monthly':
 					for setting in rep.sched_data:
 						parsed = StageParsers.interpretDates(setting['dates'])
-						
+						dates = sorted([get_actual(rep.dates, x) for x in setting['dates']])
+						E = self.clr.clc(StageParsers.fancyDate([dates[0], dates[-1]]), 34)
 						match (parsed[0]):
 							case 0:
-								dates = sorted([get_actual(rep.dates, x) for x in setting['dates']])
 								E = f'- {", ".join([x.strftime("%d %b").lstrip("0") for x in dates])}'
 							case 2:
-								E = Colourer.clc(f'{parsed[1]} {mstart}~{parsed[2]} {mend}', 34) + ': Every Alternate Day'
+								E += 'Every Alternate Day'
 							case 3:
-								E = Colourer.clc(f'{parsed[1]} {mstart}~{parsed[2]} {mend}', 34) + ': Every Third Day'
+								E += 'Every Third Day'
 							case _:
-								E = Colourer.clc(f'{parsed[1]} {mstart}~{parsed[2]} {mend}', 34)+ f": Every {parsed[0]}th Day"
+								E += f"Every {parsed[0]}th Day"
 						# wont be above 10 so it's okay
 						if len(setting['times']) == 0:
-							toret +=(E)+"\n"
+							toret += f"{self.clr.clc(E, 34)} :: All Day\n"
 						else:
-							toret +=(f"{Colourer.clc(E, 34)}: {StageParsers.fancyTimes(setting['times'])}+\n")
+							toret += f"{self.clr.clc(E, 34)} :: {StageParsers.fancyTimes(setting['times'])}\n"
 				
 				elif rep.sched == 'daily':
 					for setting in rep.sched_data:
-						toret +=(f"{Colourer.clc(StageParsers.fancyDate(rep.dates), 34)}- {StageParsers.fancyTimes(setting['times'])}\n")
+						toret +=(f"{self.clr.clc(StageParsers.fancyDate(rep.dates), 34)} {StageParsers.fancyTimes(setting['times'])}\n")
 				
 				elif rep.sched == 'weekly':
 					dayscheds = [[], [], [], [], [], [], []]
@@ -401,10 +402,10 @@ class StageFetcher(UniversalFetcher):
 						if (set(day1) == set(day2)):
 							ignored.append(i + j + 1)
 						buf.append(weekdays[i + j + 1])
-						toret +=(f"{Colourer.clc('/'.join(buf), 34)}: {', '.join(day1)}\n")
+						toret +=(f"- {self.clr.clc('/'.join(buf), 34)}: {', '.join(day1)}\n")
 				
 				elif rep.sched == 'yearly':
-					toret +=(f"{Colourer.clc(StageParsers.fancyDate([rep.sched_data[0]['times'][0]['start'],        rep.sched_data[0]['times'][0]['end']])[:-2],34)}\n")
+					toret +=(f"- {self.clr.clc(StageParsers.fancyDate([rep.sched_data[0]['times'][0]['start'],        rep.sched_data[0]['times'][0]['end']])[:-2],34)}\n")
 				
 				# End printing
 			toret +=('```\n')
@@ -437,17 +438,17 @@ class StageFetcher(UniversalFetcher):
 	
 	def printStages(self) -> str:
 		toret = ""
-		toret +=(f'```ansi\n{Colourer.clc("Events", 32)}\n')
+		toret +=(f'```ansi\n{self.clr.clc("Events", 32)}\n')
 		for element in self.finalStages:
 			toret +=(element).__str__()+"\n"
 		toret +=('```\n')
 		
-		toret +=(f'```ansi\n{Colourer.clc("Sales", 32)}\n')
+		toret +=(f'```ansi\n{self.clr.clc("Sales", 32)}\n')
 		for element in self.sales:
 			toret +=(element).__str__()+"\n"
 		toret +=('```\n')
 		
-		toret +=(f'```ansi\n{Colourer.clc("Missions", 32)}\n')
+		toret +=(f'```ansi\n{self.clr.clc("Missions", 32)}\n')
 		for element in self.missions:
 			toret +=(element).__str__()+"\n"
 		toret +=('```\n')
@@ -457,12 +458,11 @@ class StageFetcher(UniversalFetcher):
 		return [[X.package() for X in Y] for Y in [self.finalStages, self.sales, self.missions]]
 	
 class ItemFetcher(UniversalFetcher):
-	def __init__(self, fls=['M'], d0=datetime.datetime.today()):
-		UniversalFetcher.__init__(self, fls)
+	def __init__(self, **kwargs):
+		UniversalFetcher.__init__(self, **kwargs)
 		self.rawData: list[list[str]] = []
 		self.refinedData: list[RawEventGroup] = []
 		self.finalItems: list[Item] = []
-		self.date0: datetime.datetime = d0
 	
 	def fetchRawData(self, data: str) -> None:
 		lines = data.split('\n')
@@ -483,6 +483,7 @@ class ItemFetcher(UniversalFetcher):
 				i.versions = ItemParsers.getversions(data)
 				i.ID = int(data[9])
 				i.text = data[11]
+				i.clr = self.clr
 				
 				if 900 <= i.ID < 1000:  # Login Stamp
 					i.name = i.text + ' (Login Stamp)'
@@ -508,7 +509,7 @@ class ItemFetcher(UniversalFetcher):
 	def printItemData(self) -> str:
 		toret = ""
 		self.finalItems.sort(key=lambda x: x.dates[0])
-		toret +=(f'```ansi\n{Colourer.clc("Items", 32)}\n')
+		toret +=(f'```ansi\n{self.clr.clc("Items", 32)}\n')
 		for item in self.finalItems:
 			toret +=(item).__str__()+"\n"
 		toret +=('```\n')
