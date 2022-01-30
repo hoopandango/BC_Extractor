@@ -14,6 +14,8 @@ import flask
 from flask_restful import Resource
 from flask_httpauth import HTTPBasicAuth
 
+from .event_data_parsers import Colourer
+
 CASE = 0
 LANG = 'jp'
 f = ['N']
@@ -45,17 +47,17 @@ def fetch_test(lang: str, num: int) -> dict[str, str]:
 			rows = fl0.read().split('\n')
 			for row in rows:
 				if row.startswith('+ '):
-					text+= row[2:]+'\n'
+					text += row[2:] + '\n'
 		toret[cat] = text
 	return toret
-	
+
 URLs = {"Gatya": "https://bc-seek.godfat.org/seek/%s/gatya.tsv",
-				"Sale": "https://bc-seek.godfat.org/seek/%s/sale.tsv",
-				"Item": "https://bc-seek.godfat.org/seek/%s/item.tsv"}
+        "Sale": "https://bc-seek.godfat.org/seek/%s/sale.tsv",
+        "Item": "https://bc-seek.godfat.org/seek/%s/item.tsv"}
 
 if platform.system() == "Windows":
 	asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-	
+
 async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 	toret = {}
 	async with aiohttp.ClientSession() as session:
@@ -70,77 +72,76 @@ class Funky(Resource):
 	def post(self) -> str:
 		start = time.time()
 		# print(f"started at {start}")
+		js = flask_restful.request.get_json()
+		texts = js["diffs"]
+		ver = "BC" + (js["version"][:2] if js.get("version") else "??").upper()
+		plain = js["plain"] if js.get("plain") == "False" else True
+		
+		if not plain:
+			Colourer.enable()
+		
+		for key in texts:
+			rows = texts[key].split("\n")
+			toput = ""
+			for row in rows:
+				if row.startswith('+ '):
+					toput += row[2:] + '\n'
+			texts[key] = toput
+		
 		gf = GatyaFetcher(fls=f)
 		sf = StageFetcher(fls=f)
 		itf = ItemFetcher(fls=f)
-
-		if CASE <= 0:
-			js = flask_restful.request.get_json()
-			texts = js["diffs"]
-			ver = "BC"+(js["version"][:2]).upper()
-			for key in texts:
-				rows = texts[key].split("\n")
-				toput = ""
-				for row in rows:
-					if row.startswith('+ '):
-						toput += row[2:]+'\n'
-				texts[key] = toput
-		else:
-			ver = ""
-			texts = fetch_test(LANG, CASE)
-		print(f"got at {time.time() - start}")
-
+		
 		gf.fetchRawData(texts["Gatya"])
 		sf.fetchRawData(texts["Sale"])
 		itf.fetchRawData(texts["Item"])
-
+		
 		# print(f"reading raw gatya - {time.time() - start}")
-
+		
 		gf.readRawData()
-
+		
 		# print(f"reading raw stages - {time.time() - start}")
 		sf.readRawData(storeRejects=True)
 		# print(f"reading raw items - {time.time() - start}")
 		itf.readRawData()
-
+		
 		# print(f"merging items and stages - {time.time() - start}")
 		sd0 = sf.refinedStages
 		sd1 = itf.refinedData
-
+		
 		sd0.extend(sd1)
-
+		
 		# print(f"grouping stages - {time.time() - start}")
 		sf.finalStages, sf.festivals, sf.sales, sf.missions = sf.groupData(sf.refinedStages.copy())
 		gf.refinedGatya = gf.groupData(gf.refinedGatya)[0]
 		itf.finalItems = gf.groupData(itf.finalItems)[0]
 		sf.sortAll()
 		# print(f"printing stuff - {time.time() - start}")
-
-		toprint = ver+" EVENT DATA\n"
+		
+		toprint = ver + " EVENT DATA\n"
 		toprint += gf.printGatya()
 		toprint += sf.printStages()
 		toprint += itf.printItemData()
-		print(sf.printFestivalData())
-		toprint += sf.printFestivalData() if sf.printFestivalData() else ""
-
-		with open(config["outputs"]["eventdata"]+"gatya_final.txt", "w", encoding='utf-8') as fl0:
+		toprint += sf.printFestivalData()
+		
+		with open(config["outputs"]["eventdata"] + "gatya_final.txt", "w", encoding='utf-8') as fl0:
 			fl0.write(toprint)
-
+		
 		# print(toprint)
-
+		
 		for_export = {"gatya": gf.package(),
-									"stages": sf.package(),
-									"items": itf.package()}
-
+		              "stages": sf.package(),
+		              "items": itf.package()}
+		
 		def unfuck_dates(obj):
 			if isinstance(obj, datetime.datetime):
 				return obj.isoformat()
 			else:
 				return str(obj)
-
-		with open(config["outputs"]["eventdata"]+"export.json", mode='w') as fl0:
+		
+		with open(config["outputs"]["eventdata"] + "export.json", mode='w') as fl0:
 			json.dump(for_export, fl0, indent=2, default=unfuck_dates)
-
+		
 		print(f"over - {time.time() - start}")
 		StageParsers.updateEventNames()
 		# gf.exportGatya()

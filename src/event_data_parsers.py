@@ -10,6 +10,21 @@ from .z_downloaders import Downloaders
 with open('_config.json') as fl:
 	config = json.load(fl)
 
+class Colourer:
+	ENABLED: bool = False
+	
+	@classmethod
+	def enable(cls):
+		Colourer.ENABLED = True
+	
+	@classmethod
+	def clc(cls, text: str, code: int) -> str:
+		if not cls.ENABLED:
+			return text
+		else:
+			return f"[0m[{code}m{text}[0m"
+
+
 class UniversalParsers:
 	with open(config['outputs']['stages'], encoding='utf-8', newline='') as csvfile:
 		autoEventNames = pd.read_csv(csvfile, delimiter='\t', index_col='ID', header=0)
