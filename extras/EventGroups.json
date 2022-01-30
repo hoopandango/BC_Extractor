@@ -132,7 +132,7 @@
       "Gamatoto XP Festival II",
       "Gamatoto XP Festival III"
     ],
-    "visible": true,
+    "visible": false,
     "split": false,
     "compare_mode": 0
   },
@@ -152,7 +152,7 @@
       "Strait of Wings",
       "Island of Ash"
     ],
-    "visible": true,
+    "visible": false,
     "split": false,
     "compare_mode": 0
   },
@@ -185,28 +185,46 @@
     "split": true,
     "compare_mode": 1
   },
-  "Duel": {
+  "Duel Stages": {
     "stages": [
       "Duel"
     ],
     "visible": true,
-    "split": true,
+    "split": false,
     "compare_mode": 1
   },
-  "Tag Arena": {
+  "Dark Descent": {
+    "stages": [
+      "Dark Descent"
+    ],
+    "visible": true,
+    "split": false,
+    "compare_mode": 1
+  },
+  "Deadly Carnival I/II/II": {
+    "stages": [
+      "Deadly Carnival",
+      "Deadly Carnival II",
+      "Deadly Carnival III"
+    ],
+    "visible": true,
+    "split": false,
+    "compare_mode": 0
+  },
+  "Tag Arena Stages": {
     "stages": [
       "Tag Arena"
     ],
     "visible": true,
-    "split": true,
+    "split": false,
     "compare_mode": 1
   },
   "Citadel": {
     "stages": [
-      "Citadel"
+      "Citadel Stages"
     ],
     "visible": true,
-    "split": true,
+    "split": false,
     "compare_mode": 1
   },
   "Catfood Discount Reset (30/750)": {

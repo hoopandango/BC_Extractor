@@ -8,13 +8,12 @@ import flask_restful
 import requests
 
 from .event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StageParsers
+from .containers import Colourer
 import asyncio
 import aiohttp
 import flask
 from flask_restful import Resource
 from flask_httpauth import HTTPBasicAuth
-
-from .event_data_parsers import Colourer
 
 CASE = 0
 LANG = 'jp'
@@ -29,7 +28,6 @@ with open("_config.json") as fl:
 """
 
 auth = HTTPBasicAuth()
-
 credentials = os.environ
 
 @auth.verify_password
@@ -74,11 +72,12 @@ class Funky(Resource):
 		# print(f"started at {start}")
 		js = flask_restful.request.get_json()
 		texts = js["diffs"]
-		ver = "BC" + (js["version"][:2] if js.get("version") else "??").upper()
-		plain = js["plain"] if js.get("plain") == "False" else True
-		
+		ver = "BC" + (js["version"][:2] if js.get("version") is not None else "??").upper()
+		plain = js.get("plain") if js.get("plain") is not None else True
+
+		clr = Colourer()
 		if not plain:
-			Colourer.enable()
+			clr.enable()
 		
 		for key in texts:
 			rows = texts[key].split("\n")
@@ -88,9 +87,9 @@ class Funky(Resource):
 					toput += row[2:] + '\n'
 			texts[key] = toput
 		
-		gf = GatyaFetcher(fls=f)
-		sf = StageFetcher(fls=f)
-		itf = ItemFetcher(fls=f)
+		gf = GatyaFetcher(fls=f, coloured=clr)
+		sf = StageFetcher(fls=f, coloured=clr)
+		itf = ItemFetcher(fls=f, coloured=clr)
 		
 		gf.fetchRawData(texts["Gatya"])
 		sf.fetchRawData(texts["Sale"])
@@ -114,7 +113,7 @@ class Funky(Resource):
 		# print(f"grouping stages - {time.time() - start}")
 		sf.finalStages, sf.festivals, sf.sales, sf.missions = sf.groupData(sf.refinedStages.copy())
 		gf.refinedGatya = gf.groupData(gf.refinedGatya)[0]
-		itf.finalItems = gf.groupData(itf.finalItems)[0]
+		itf.finalItems = itf.groupData(itf.finalItems)[0]
 		sf.sortAll()
 		# print(f"printing stuff - {time.time() - start}")
 		

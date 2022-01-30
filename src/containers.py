@@ -3,7 +3,19 @@ from __future__ import annotations
 import datetime
 from dataclasses import dataclass
 
-from .event_data_parsers import UniversalParsers, Colourer
+from .event_data_parsers import UniversalParsers
+
+class Colourer:
+	ENABLED: bool = False
+	
+	def enable(self):
+		self.ENABLED = True
+	
+	def clc(self, text: str, code: int) -> str:
+		if not self.ENABLED:
+			return text
+		else:
+			return f"[0m[{code}m{text}[0m"
 
 @dataclass
 class Event:
@@ -11,9 +23,10 @@ class Event:
 	dates: list[datetime.datetime] = None
 	versions: tuple[int] = None
 	name: str = None
+	clr: Colourer = Colourer()
 	
 	def __str__(self) -> str:
-		return Colourer.clc(UniversalParsers.fancyDate(self.dates), 34) + ": " + self.name
+		return self.clr.clc(UniversalParsers.fancyDate(self.dates), 34) + self.name
 	
 	def package(self):
 		toret = self.__dict__.copy()
@@ -36,7 +49,7 @@ class EventGroup:
 						self.events[i].dates[1] = self.events[i + 1].dates[0]
 			return '\n'.join([str(x) for x in self.events])
 		else:
-			return Colourer.clc(UniversalParsers.fancyDate(self.dates), 34) + ": " + self.name
+			return self.events[0].clr.clc(UniversalParsers.fancyDate(self.dates), 34) + self.name
 	
 	def package(self):
 		toret = self.__dict__.copy()
@@ -60,10 +73,10 @@ class Gatya(Event):
 		# tuple (datestring, reststring)
 		bonuses: list[str] = []
 		bonusesStr: str = ""
-		if self.guarantee[3] == 1:  bonusesStr += '(Guaranteed)'
+		if self.guarantee[3] == 1:  bonusesStr += ' (Guaranteed)'
 		bonuses.extend(self.extras)
 		bonuses.extend([x for x in self.exclusives])
-		bonusesStr += f"[{'/'.join(bonuses)}]" if len(bonuses) > 0 else ''
+		bonusesStr += f" [{'/'.join(bonuses)}]" if len(bonuses) > 0 else ''
 		
 		diff: str = f' (+ {", ".join(self.diff[0])})' if 5 > len(self.diff[0]) > 0 else ''
 		
@@ -75,7 +88,7 @@ class Gatya(Event):
 	
 	def __str__(self):
 		self.dates = [self.dates[0], self.dates[-1]]
-		return (f"{Colourer.clc('%s', 34)}%s" % self.__text_form()).format(oldyear=self.dates[0].year,
+		return (f"{self.clr.clc('%s', 34)}%s" % self.__text_form()).format(oldyear=self.dates[0].year,
 		                                                                  newyear=self.dates[-1].year)
 
 @dataclass
@@ -128,7 +141,7 @@ class Item(Event):
 			q += ' (Daily)' if self.recurring else ' (Only Once)'
 		if self.name == 'Rare Ticket':
 			q += " - " + self.text
-		return f"{Colourer.clc(UniversalParsers.fancyDate(self.dates), 34)}" + self.name + q
+		return f"{self.clr.clc(UniversalParsers.fancyDate(self.dates), 34)}" + self.name + q
 	
 @dataclass
 class RawEventGroup(Event):
