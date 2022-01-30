@@ -1,28 +1,40 @@
+BCEN EVENT DATA
 ```ansi
-[0m[32mGatya[0m
-[0m[34m- 4~11 Jan: [0mWelcome 2022![0m[33m [L][0m {5x rate on Years-End Neneko}
+Gatya
+- 6~8 Dec: Dynamites[PS/D] (+ Summoner Satoru)
+- 8~10 Dec: Ultra Souls[PS/D]
+- 10~13 Dec: Iron Legion[PS/D]
 ```
 Legend for Gatya:
 SU = Step-Up, PS = Platinum Shard, L = Lucky Ticket, N = Neneko and Friends, R = Reinforcement, D = Grandons
 ```ansi
-[0m[32mEvents[0m
-[0m[34m- 7~14 Jan: [0mLe'Grim Strikes (Baron)
-[0m[34m- 8 Jan: [0mCatfruit Festival
+"Events"
+- 6~13 Dec: : Le'Grim Strikes (Baron)
+- 8~10 Dec: : Metal Festival
+- 11~12 Dec: : Catfruit Festival
 ```
 ```ansi
-[0m[32mSales[0m
-[0m[34m- 27~31 Dec: [0mItem Bargain Sale
+"Sales"
+- 10~12 Dec: : Special Cats Half-Off Sale
 ```
 ```ansi
-[0m[32mMissions[0m
+"Missions"
 ```
 ```ansi
-[0m[32mItems[0m
-[0m[34m- 27 Dec~3 Jan: [0m年末年始イベント開催記念スタンプ (Login Stamp)
+Items
 ```
+Festival Data:
 ```ansi
-[0m[32mCatfruit Festival[0m - 8 Jan: 
+Metal Festival - 8~10 Dec: 
 
-[0m[33mGrowing Green, Growing Purple, Growing Red[0m
-[0m[34m- 8 Jan:[0m All Day
+Cat Ticket Chance!, Siege of Hippoe!
+- 8~10 Dec: - 11AM~2PM, 7PM~10PM
+Facing Danger
+8 Dec: 12AM~12PM
+```
+```ansi
+Catfruit Festival - 11~12 Dec: 
+
+Growing Green, Growing Purple, Growing Red, Growing Blue, Growing Yellow
+11 Dec: All Day
 ```

@@ -1,16 +1,16 @@
 {
   "gatya": [
     {
-      "ID": 680,
+      "ID": 627,
       "dates": [
-        "2022-01-04T11:00:00",
-        "2022-01-11T10:59:00"
+        "2021-12-06T11:00:00",
+        "2021-12-08T10:59:00"
       ],
       "versions": [
-        "110100",
+        "110000",
         "999999"
       ],
-      "name": "Welcome {newyear:d}!",
+      "name": "Dynamites",
       "rates": [
         0,
         6970,
@@ -18,43 +18,15 @@
         500,
         30
       ],
-      "rate_ups": {
-        "5": [
-          "Years-End Neneko"
-        ]
-      },
+      "rate_ups": {},
       "diff": [
         [
-          "Musashi Miyamoto",
-          "High Lord Babel",
-          "Nekoluga",
-          "Aer",
-          "Kai",
-          "Nurse Cat",
-          "Kamukura",
-          "Wrathful Poseidon",
-          "Mighty Deth-Troy-R",
-          "White Knight Cyclops",
-          "Date Masamune",
-          "Adventurer Kanna"
+          "Summoner Satoru"
         ],
-        [
-          "Kyosaka Nanaho",
-          "Mighty Thermae D-Lux",
-          "Papaluga",
-          "Lasvoss",
-          "Gaia the Creator",
-          "Hell Warden Emma",
-          "Narita Kaihime",
-          "Gravi",
-          "Sharpshooter Saki",
-          "Hades the Punisher",
-          "Myrcia",
-          "Relentless Gladios"
-        ]
+        []
       ],
       "page": "Rare Capsule",
-      "slot": "1",
+      "slot": "3",
       "guarantee": [
         false,
         false,
@@ -63,11 +35,95 @@
         false
       ],
       "extras": [
-        "L"
+        "PS"
       ],
-      "exclusives": [],
-      "text": "\u671f\u9593\u9650\u5b9a\u30ad\u30e3\u30e9\u3082\u767b\u5834\u3059\u308b\u3001\u7279\u5225\u4ed5\u69d8\u306e\u65b0\u5e74\u30ac\u30c1\u30e3\uff01\u2605\u8a73\u7d30\u306f\u30d0\u30ca\u30fc\u3092\u30bf\u30c3\u30d7!n+ 20220104",
-      "printable": "\u001b[0m\u001b[34m- 4~11 Jan: \u001b[0mWelcome 2022!\u001b[0m\u001b[33m [L]\u001b[0m {5x rate on Years-End Neneko}"
+      "exclusives": [
+        "D"
+      ],
+      "text": "NEW hero Summoner Satoru, effective vs Aku! \u2605Tap banner for info!",
+      "printable": "- 6~8 Dec: Dynamites[PS/D] (+ Summoner Satoru)"
+    },
+    {
+      "ID": 475,
+      "dates": [
+        "2021-12-08T11:00:00",
+        "2021-12-10T10:59:00"
+      ],
+      "versions": [
+        "110000",
+        "999999"
+      ],
+      "name": "Ultra Souls",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "3",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [
+        "PS"
+      ],
+      "exclusives": [
+        "D"
+      ],
+      "text": "Heroes of Japanese Fantasy:! \u2605 Tap banner for info!",
+      "printable": "- 8~10 Dec: Ultra Souls[PS/D]"
+    },
+    {
+      "ID": 572,
+      "dates": [
+        "2021-12-10T11:00:00",
+        "2021-12-13T10:59:00"
+      ],
+      "versions": [
+        "110000",
+        "999999"
+      ],
+      "name": "Iron Legion",
+      "rates": [
+        0,
+        6970,
+        2500,
+        500,
+        30
+      ],
+      "rate_ups": {},
+      "diff": [
+        [],
+        []
+      ],
+      "page": "Rare Capsule",
+      "slot": "3",
+      "guarantee": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "extras": [
+        "PS"
+      ],
+      "exclusives": [
+        "D"
+      ],
+      "text": "NEW Iron Legion Hero Mighty Aethur Ltd. \u2605 Tap banner for info!",
+      "printable": "- 10~13 Dec: Iron Legion[PS/D]"
     }
   ],
   "stages": [
@@ -78,26 +134,139 @@
           {
             "ID": 24027,
             "dates": [
-              "2022-01-07T11:00:00",
-              "2022-01-14T10:59:00"
+              "2021-12-06T11:00:00",
+              "2021-12-13T10:59:00"
             ],
             "versions": [
-              "110100",
+              "110000",
               "999999"
             ],
             "name": "Le'Grim Strikes (Baron)",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "\u001b[0m\u001b[34m- 7~14 Jan: \u001b[0mLe'Grim Strikes (Baron)"
+            "printable": "- 6~13 Dec: : Le'Grim Strikes (Baron)"
           }
         ],
         "dates": [
-          "2022-01-07T11:00:00",
-          "2022-01-14T10:59:00"
+          "2021-12-06T11:00:00",
+          "2021-12-13T10:59:00"
         ],
         "split": true,
         "visible": true,
-        "printable": "\u001b[0m\u001b[34m- 7~14 Jan: \u001b[0mLe'Grim Strikes (Baron)"
+        "printable": "- 6~13 Dec: : Le'Grim Strikes (Baron)"
+      },
+      {
+        "name": "Metal Festival",
+        "events": [
+          {
+            "ID": 1006,
+            "dates": [
+              "2021-12-08T00:00:00",
+              "2021-12-10T23:59:00"
+            ],
+            "versions": [
+              "110000",
+              "999999"
+            ],
+            "name": "Cat Ticket Chance!",
+            "sched": "daily",
+            "sched_data": [
+              {
+                "times": [
+                  {
+                    "start": "11:00:00",
+                    "end": "14:00:00"
+                  },
+                  {
+                    "start": "19:00:00",
+                    "end": "22:00:00"
+                  }
+                ]
+              }
+            ],
+            "printable": "- 8~10 Dec: : Cat Ticket Chance!"
+          },
+          {
+            "ID": 1007,
+            "dates": [
+              "2021-12-08T00:00:00",
+              "2021-12-10T23:59:00"
+            ],
+            "versions": [
+              "110000",
+              "999999"
+            ],
+            "name": "Siege of Hippoe!",
+            "sched": "daily",
+            "sched_data": [
+              {
+                "times": [
+                  {
+                    "start": "11:00:00",
+                    "end": "14:00:00"
+                  },
+                  {
+                    "start": "19:00:00",
+                    "end": "22:00:00"
+                  }
+                ]
+              }
+            ],
+            "printable": "- 8~10 Dec: : Siege of Hippoe!"
+          },
+          {
+            "ID": 1078,
+            "dates": [
+              "2021-12-08T00:00:00",
+              "2021-12-08T12:00:00"
+            ],
+            "versions": [
+              "110000",
+              "999999"
+            ],
+            "name": "Facing Danger",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 8 Dec: : Facing Danger"
+          },
+          {
+            "ID": 1078,
+            "dates": [
+              "2021-12-09T12:00:00",
+              "2021-12-09T23:59:00"
+            ],
+            "versions": [
+              "110000",
+              "999999"
+            ],
+            "name": "Facing Danger",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 9 Dec: : Facing Danger"
+          },
+          {
+            "ID": 1078,
+            "dates": [
+              "2021-12-10T00:00:00",
+              "2021-12-10T11:59:00"
+            ],
+            "versions": [
+              "110000",
+              "999999"
+            ],
+            "name": "Facing Danger",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 10 Dec: : Facing Danger"
+          }
+        ],
+        "dates": [
+          "2021-12-08T00:00:00",
+          "2021-12-10T23:59:00"
+        ],
+        "split": false,
+        "visible": true,
+        "printable": "- 8~10 Dec: : Metal Festival"
       },
       {
         "name": "Catfruit Festival",
@@ -105,91 +274,104 @@
           {
             "ID": 1097,
             "dates": [
-              "2022-01-08T00:00:00",
-              "2022-01-08T23:59:00"
+              "2021-12-11T00:00:00",
+              "2021-12-12T23:59:00"
             ],
             "versions": [
-              "110100",
+              "110000",
               "999999"
             ],
             "name": "Growing Green",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "\u001b[0m\u001b[34m- 8 Jan: \u001b[0mGrowing Green"
+            "printable": "- 11~12 Dec: : Growing Green"
           },
           {
             "ID": 1098,
             "dates": [
-              "2022-01-08T00:00:00",
-              "2022-01-08T23:59:00"
+              "2021-12-11T00:00:00",
+              "2021-12-12T23:59:00"
             ],
             "versions": [
-              "110100",
+              "110000",
               "999999"
             ],
             "name": "Growing Purple",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "\u001b[0m\u001b[34m- 8 Jan: \u001b[0mGrowing Purple"
+            "printable": "- 11~12 Dec: : Growing Purple"
           },
           {
             "ID": 1099,
             "dates": [
-              "2022-01-08T00:00:00",
-              "2022-01-08T23:59:00"
+              "2021-12-11T00:00:00",
+              "2021-12-12T23:59:00"
             ],
             "versions": [
-              "110100",
+              "110000",
               "999999"
             ],
             "name": "Growing Red",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "\u001b[0m\u001b[34m- 8 Jan: \u001b[0mGrowing Red"
+            "printable": "- 11~12 Dec: : Growing Red"
+          },
+          {
+            "ID": 1100,
+            "dates": [
+              "2021-12-11T00:00:00",
+              "2021-12-12T23:59:00"
+            ],
+            "versions": [
+              "110000",
+              "999999"
+            ],
+            "name": "Growing Blue",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 11~12 Dec: : Growing Blue"
+          },
+          {
+            "ID": 1101,
+            "dates": [
+              "2021-12-11T00:00:00",
+              "2021-12-12T23:59:00"
+            ],
+            "versions": [
+              "110000",
+              "999999"
+            ],
+            "name": "Growing Yellow",
+            "sched": "permanent",
+            "sched_data": null,
+            "printable": "- 11~12 Dec: : Growing Yellow"
           }
         ],
         "dates": [
-          "2022-01-08T00:00:00",
-          "2022-01-08T23:59:00"
+          "2021-12-11T00:00:00",
+          "2021-12-12T23:59:00"
         ],
         "split": false,
         "visible": true,
-        "printable": "\u001b[0m\u001b[34m- 8 Jan: \u001b[0mCatfruit Festival"
+        "printable": "- 11~12 Dec: : Catfruit Festival"
       }
     ],
     [
       {
-        "name": "Item Bargain Sale",
         "dates": [
-          "2021-12-27T11:00:00",
-          "2021-12-31T23:59:00"
+          "2021-12-10T00:00:00",
+          "2021-12-12T23:59:00"
         ],
-        "ID": 800,
         "versions": [
-          "110100",
+          "110000",
           "999999"
         ],
-        "printable": "\u001b[0m\u001b[34m- 27~31 Dec: \u001b[0mItem Bargain Sale"
+        "name": "Special Cats Half-Off Sale",
+        "ID": 51,
+        "printable": "- 10~12 Dec: : Special Cats Half-Off Sale"
       }
     ],
     []
   ],
-  "items": [
-    {
-      "ID": 905,
-      "dates": [
-        "2021-12-27T11:00:00",
-        "2022-01-03T10:59:00"
-      ],
-      "versions": [
-        "110100",
-        "999999"
-      ],
-      "name": "\u5e74\u672b\u5e74\u59cb\u30a4\u30d9\u30f3\u30c8\u958b\u50ac\u8a18\u5ff5\u30b9\u30bf\u30f3\u30d7 (Login Stamp)",
-      "recurring": false,
-      "qty": 0,
-      "text": "\u5e74\u672b\u5e74\u59cb\u30a4\u30d9\u30f3\u30c8\u958b\u50ac\u8a18\u5ff5\u30b9\u30bf\u30f3\u30d7",
-      "printable": "\u001b[0m\u001b[34m- 27 Dec~3 Jan: \u001b[0m\u5e74\u672b\u5e74\u59cb\u30a4\u30d9\u30f3\u30c8\u958b\u50ac\u8a18\u5ff5\u30b9\u30bf\u30f3\u30d7 (Login Stamp)"
-    }
-  ]
+  "items": []
 }

@@ -6,7 +6,7 @@ from itertools import groupby
 import pandas as pd
 
 from .containers import Gatya, Event, Stage, EventGroup, Mission, Sale, RawEventGroup, Item
-from .event_data_parsers import GatyaParsers, ItemParsers, StageParsers
+from .event_data_parsers import GatyaParsers, ItemParsers, StageParsers, Colourer
 from .local_readers import Readers
 
 groupable_events: list[str] = ['Seeing Red', 'Tag Arena', 'Dark', 'Duel', '(Baron)', 'Citadel']
@@ -224,7 +224,7 @@ class GatyaFetcher(UniversalFetcher):
 	# OUTPUT TOOLS
 	def printGatya(self)->str:
 		toret = ""
-		toret +=('```ansi\n[0m[32mGatya[0m\n')
+		toret +=(f'```ansi\n{Colourer.clc("Gatya", 32)}\n')
 		for event in self.refinedGatya:
 			if not isinstance(event, EventGroup):
 				if event.rates[3] in (10000, 9500):  # Platinum / Legend Ticket Event
@@ -239,63 +239,6 @@ class GatyaFetcher(UniversalFetcher):
 			" N = Neneko and Friends, R = Reinforcement, D = Grandons\n")
 		return toret
 	
-	"""
-	def printGatyaHTML(self):
-		toret +=('<h4>Gatya:</h4><ul>')
-		for event in self.refinedGatya:
-			if event.rates[3] in ('10000', '9500'):  # Platinum / Legend Ticket Event
-				continue
-			if event.page in ('Rare Capsule', 'Event Capsule') and event.ID > 0:
-				toret +=('<li><b>%s</b>%s</li>' % GatyaParsers.getString(event))
-		toret +=('</ul>')
-	
-	def storeGatyaUncut(self) -> None:
-		buf = ""
-		for event in self.refinedGatya:
-			if event.ID > 0:
-				buf += '%s%s\n' % GatyaParsers.getString(event)
-		
-		buf += '\n'
-		
-		for event in self.rejectedGatya:
-			if event.ID > 0:
-				buf += '%s%s\n' % GatyaParsers.getString(event)
-		
-		with open(inm_loc + "gatya_final.txt", "w", encoding='utf-8') as text_file:
-			text_file.write(buf)
-	
-	def exportGatya(self) -> None:
-		# 1) save uncut final data
-		self.storeGatyaUncut()
-		
-		# 2) save raw data in json for potential debugging
-		with open(inm_loc + 'gatya_raw.json', 'w', encoding='utf-8') as raw:
-			json.dump(self.rawGatya, raw, default=str)
-		
-		# 3) save it in db format for transcribers
-		df_ref = pd.DataFrame(self.refinedGatya)
-		df_rej = pd.DataFrame(self.rejectedGatya)
-		
-		try:
-			conn = sqlite3.connect(inm_loc + 'gatya_processed.db')
-		except sqlite3.OperationalError:
-			toret +=('Database for gatya not found')
-			return
-		
-		def process(df: pd.DataFrame):
-			df["dates"] = df["dates"].apply(lambda x: [d.strftime('%Y/%m/%d') for d in x])
-			df.insert(1, "start", df["dates"].str[0])
-			df.insert(2, "end", df["dates"].str[1])
-			df.drop(["dates", "versions", "slot"], axis=1, inplace=True)
-		
-		if len(df_ref) != 0:
-			process(df_ref)
-		if len(df_rej) != 0:
-			process(df_rej)
-		
-		df_ref.astype(str).to_sql('refined', conn, if_exists='replace')
-		df_rej.astype(str).to_sql('rejected', conn, if_exists='replace')
-	"""
 	def package(self):
 		return [X.package() for X in self.refinedGatya]
 
@@ -389,14 +332,14 @@ class StageFetcher(UniversalFetcher):
 			if (check[0] <= tort < check[1]):
 				return tort
 			else:
-				return tort.replace(month=(tort.month + 1) % 12, year=tort.year + (tort.month + 1) // 12)
+				return tort.replace(month=(tort.month) % 12 + 1, year=tort.year + (tort.month + 1) // 12)
 	
 		toret = "Festival Data:\n"
 		for festival in [X for X in self.festivals if not (X.split or not X.visible)]:
 			if not isinstance(festival.events[0], Stage) or festival.events[0].sched is None:
 				continue
 			
-			toret +=(f'```ansi\n[0m[32m{festival.name}[0m {StageParsers.fancyDate(festival.dates)}\n\n')
+			toret +=(f'```ansi\n{Colourer.clc(festival.name, 32)} {StageParsers.fancyDate(festival.dates)}\n\n')
 			groups = []
 			if(festival.events[0].sched_data is not None):
 				obj = groupby(festival.events, lambda x: x.sched_data)
@@ -409,14 +352,14 @@ class StageFetcher(UniversalFetcher):
 			
 			for event_set in groups:
 				# Starts printing here
-				toret +=(f'[0m[33m{", ".join(unique([event.name for event in event_set]))}[0m\n')
+				toret += Colourer.clc(f'{", ".join(unique([event.name for event in event_set]))}\n', 33)
 				rep = event_set[0]  # representative event of the set
 				mstart = rep.dates[0].strftime("%b")
 				mend = rep.dates[-1].strftime("%b")
 				
 				if rep.sched == 'permanent':
-					toret +=(f"[0m[34m- {rep.dates[0].day} {mstart}:[0m "
-					      f"{StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}\n")
+					toret +=(Colourer.clc(f"{rep.dates[0].day} {mstart}", 33) +
+					      f": {StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}\n")
 				
 				elif rep.sched == 'monthly':
 					for setting in rep.sched_data:
@@ -427,20 +370,20 @@ class StageFetcher(UniversalFetcher):
 								dates = sorted([get_actual(rep.dates, x) for x in setting['dates']])
 								E = f'- {", ".join([x.strftime("%d %b").lstrip("0") for x in dates])}'
 							case 2:
-								E = f'[0m[34m- {parsed[1]} {mstart}~{parsed[2]} {mend}[0m: Every Alternate Day'
+								E = Colourer.clc(f'{parsed[1]} {mstart}~{parsed[2]} {mend}', 34) + ': Every Alternate Day'
 							case 3:
-								E = f'[0m[34m- {parsed[1]} {mstart}~{parsed[2]} {mend}[0m: Every Third Day'
+								E = Colourer.clc(f'{parsed[1]} {mstart}~{parsed[2]} {mend}', 34) + ': Every Third Day'
 							case _:
-								E = f'[0m[34m- {parsed[1]} {mstart}~{parsed[2]} {mend}[0m: Every {parsed[0]}th Day'
+								E = Colourer.clc(f'{parsed[1]} {mstart}~{parsed[2]} {mend}', 34)+ f": Every {parsed[0]}th Day"
 						# wont be above 10 so it's okay
 						if len(setting['times']) == 0:
 							toret +=(E)+"\n"
 						else:
-							toret +=(f"[0m[34m{E}[0m: {StageParsers.fancyTimes(setting['times'])}+\n")
+							toret +=(f"{Colourer.clc(E, 34)}: {StageParsers.fancyTimes(setting['times'])}+\n")
 				
 				elif rep.sched == 'daily':
 					for setting in rep.sched_data:
-						toret +=(f"[0m[34m{StageParsers.fancyDate(rep.dates)}[0m{StageParsers.fancyTimes(setting['times'])}\n")
+						toret +=(f"{Colourer.clc(StageParsers.fancyDate(rep.dates), 34)}- {StageParsers.fancyTimes(setting['times'])}\n")
 				
 				elif rep.sched == 'weekly':
 					dayscheds = [[], [], [], [], [], [], []]
@@ -458,15 +401,14 @@ class StageFetcher(UniversalFetcher):
 						if (set(day1) == set(day2)):
 							ignored.append(i + j + 1)
 						buf.append(weekdays[i + j + 1])
-						toret +=(f"[0m[34m{'/'.join(buf)}:[0m {', '.join(day1)}\n")
+						toret +=(f"{Colourer.clc('/'.join(buf), 34)}: {', '.join(day1)}\n")
 				
 				elif rep.sched == 'yearly':
-					toret +=("[0m[34m"+StageParsers.fancyDate([rep.sched_data[0]['times'][0]['start']+"[0m"+
-					                              rep.sched_data[0]['times'][0]['end']])[:-2]+"\n")
+					toret +=(f"{Colourer.clc(StageParsers.fancyDate([rep.sched_data[0]['times'][0]['start'],        rep.sched_data[0]['times'][0]['end']])[:-2],34)}\n")
 				
 				# End printing
 			toret +=('```\n')
-		return toret if toret else "No Festivals available"
+		return toret
 	
 	def schedulingTable(self):
 		hashmap = {'yearly': 'Yearly', 'monthly': 'Monthly', 'weekly': 'Weekly', 'daily': 'Daily',
@@ -495,80 +437,25 @@ class StageFetcher(UniversalFetcher):
 	
 	def printStages(self) -> str:
 		toret = ""
-		toret +=('```ansi\n[0m[32mEvents[0m\n')
+		toret +=(f'```ansi\n{Colourer.clc("Events", 32)}\n')
 		for element in self.finalStages:
 			toret +=(element).__str__()+"\n"
 		toret +=('```\n')
 		
-		toret +=('```ansi\n[0m[32mSales[0m\n')
+		toret +=(f'```ansi\n{Colourer.clc("Sales", 32)}\n')
 		for element in self.sales:
 			toret +=(element).__str__()+"\n"
 		toret +=('```\n')
 		
-		toret +=('```ansi\n[0m[32mMissions[0m\n')
+		toret +=(f'```ansi\n{Colourer.clc("Missions", 32)}\n')
 		for element in self.missions:
 			toret +=(element).__str__()+"\n"
 		toret +=('```\n')
 		return toret
 	
-	"""
-	def printStagesHTML(self, stagedata=None, saledata=None):
-		if stagedata is None:
-			stagedata = self.finalStages
-		if saledata is None:
-			saledata = self.sales
-		
-		toret +=('<h4>Events:</h4><ul>')
-		for group in stagedata:
-			toret +=(f"<li><b>{StageParsers.fancyDate(group['dates'])[2:]}</b>{group['name']}</li>")
-		toret +=('</ul>')
-		
-		toret +=('<h4>Sales:</h4><ul>')
-		for group in saledata:
-			toret +=(f"<li><b>{StageParsers.fancyDate(group['dates'])[2:]}</b>{group['name']}</li>")
-		toret +=('</ul>')
-	"""
 	def package(self):
 		return [[X.package() for X in Y] for Y in [self.finalStages, self.sales, self.missions]]
-	"""
-	def exportStages(self):
-		grps = ["permanent", "yearly", "monthly", "weekly", "daily"]
-		with open(inm_loc + 'stages_raw.json', 'w', encoding='utf-8') as raw:
-			json.dump(self.rawStages, raw, default=str)
-		
-		df_fin = pd.DataFrame(self.finalStages)
-		df_ref = pd.DataFrame(self.refinedStages)
-		df_rej = pd.DataFrame(self.rejectedStages)
-		
-		try:
-			conn = sqlite3.connect(inm_loc + 'events_processed.db')
-		except sqlite3.OperationalError:
-			toret +=('Database for events / stages not found')
-			return
-		
-		df_fin["dates"] = df_ref["dates"].apply(lambda x: [d.strftime('%Y/%m/%d') for d in x])
-		df_ref["dates"] = df_ref["dates"].apply(lambda x: [d.strftime('%Y/%m/%d') for d in x])
-		df_rej["dates"] = df_rej["dates"].apply(lambda x: [d.strftime('%Y/%m/%d') for d in x])
-		
-		df_fin = df_fin.astype(str)
-		df_ref = df_ref.astype(str)
-		df_rej = df_rej.astype(str)
-		
-		ref_grpby = df_ref.groupby(["schedule"])
-		rej_grpby = df_rej.groupby(["schedule"])
-		
-		ref_groups = {x: df_ref.iloc[ref_grpby.groups.get(x, []), :] for x in grps}
-		rej_groups = {x: df_rej.iloc[rej_grpby.groups.get(x, []), :] for x in grps}
-		
-		df_fin.to_sql('final', conn, if_exists='replace')
-		df_ref.to_sql('refined', conn, if_exists='replace')
-		df_rej.to_sql('rejected', conn, if_exists='replace')
-		
-		for grp in ref_groups:
-			ref_groups[grp].to_sql('ref ' + grp, conn, if_exists='replace')
-		for grp in rej_groups:
-			rej_groups[grp].to_sql('rej ' + grp, conn, if_exists='replace')
-	"""
+	
 class ItemFetcher(UniversalFetcher):
 	def __init__(self, fls=['M'], d0=datetime.datetime.today()):
 		UniversalFetcher.__init__(self, fls)
@@ -621,7 +508,7 @@ class ItemFetcher(UniversalFetcher):
 	def printItemData(self) -> str:
 		toret = ""
 		self.finalItems.sort(key=lambda x: x.dates[0])
-		toret +=('```ansi\n[0m[32mItems[0m\n')
+		toret +=(f'```ansi\n{Colourer.clc("Items", 32)}\n')
 		for item in self.finalItems:
 			toret +=(item).__str__()+"\n"
 		toret +=('```\n')
