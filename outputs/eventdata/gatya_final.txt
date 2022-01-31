@@ -1,102 +1,100 @@
 **BCEN EVENT DATA**
 ```ansi
-[0m[32mGatya[0m
-[0m[34m- 17~21 Jan: [0mUltra Selection
-[0m[34m- 17~19 Jan: [0mVajiras [PS/D] (+ Shiro Amakusa)
-[0m[34m- 19~21 Jan: [0mAlmighties [PS/D]
-[0m[34m- 21~24 Jan: [0mIron Legion[0m[31m (Guaranteed)[0m [D] (+ Mighty Deth-Troy-R)
-[0m[34m- 24~28 Jan: [0mMiracle Chance
-[0m[34m- 24~26 Jan: [0mNekolugas [PS/D] (+ Furiluga)
-[0m[34m- 26~28 Jan: [0mGalaxy Gals [PS/D]
-[0m[34m- 28~31 Jan: [0mBest of the Best
-[0m[34m- 28~31 Jan: [0mDynamites [PS/D] (+ Summoner Satoru)
+Gatya:
+
+- 27~31 Dec: Royalfest [L]
+- 27~29 Dec: Nekolugas [PS/L/D] (+ Furiluga)
+- 29~31 Dec: Galaxy Gals [PS/L/D]
+- 1~4 Jan: Uberfest [L]
+- 4~6 Jan: Dark Heroes [PS/L/D]
+- 6~10 Jan: DynastyFest [L]
+- 6~8 Jan: Dynamites [PS/L/D] (+ Summoner Satoru)
+- 8~10 Jan: Ultra Souls [PS/L/D]
 ```
 Legend for Gatya:
 SU = Step-Up, PS = Platinum Shard, L = Lucky Ticket, N = Neneko and Friends, R = Reinforcement, D = Grandons
 ```ansi
-[0m[32mEvents[0m
-[0m[34m- 17 Jan~14 Feb: [0mCitadel Stages
-[0m[34m- 17~31 Jan: [0mBaron Seal Strikes
-[0m[34m- 17~31 Jan: [0mAll-Stars Stages
-[0m[34m- 17~31 Jan: [0mTornado Festival
-[0m[34m- 17 Jan~14 Feb: [0mTreasure Festival
-[0m[34m- 17 Jan~14 Feb: [0mMinced Meet-Up
-[0m[34m- 17 Jan~14 Feb: [0mCatburger Awakens!
-[0m[34m- 17~31 Jan: [0mAnniversary Slots
-[0m[34m- 17 Jan~14 Feb: [0mLunar New Year
-[0m[34m- 17 Jan~14 Feb: [0mMystery Package
-[0m[34m- 17~31 Jan: [0mTop 5 Most Seen Enemies, 2021!
-[0m[34m- 17~24 Jan, 25~31 Jan: [0mCybear's Vengeance
-[0m[34m- 22~23 Jan: [0mCatfruit Festival
-[0m[34m- 29~30 Jan: [0mCatfruit Buffet
-[0m[34m- 31 Jan: [0mLasvoss Strikes?!
-[0m[34m- 31 Jan: [0mCabaret Cat Awakens!
+Events:
+
+- 27 Dec~10 Jan: XP Festival
+- 27 Dec~10 Jan: Treasure Festival
+- 27 Dec~10 Jan: Cats in the Snow
+- 27 Dec~10 Jan: Heavenly Tower
+- 27 Dec~10 Jan: Infernal Tower
+- 1~16 Jan: January Gauntlet
+- 16 Jan~1 Feb: January Gauntlet II
+- 1~3 Jan: Li'l Festival
+- 1~2 Jan: Catfruit Buffet
+- 3~10 Jan: Rashomon
+- 8~9 Jan: Catfruit Festival
 ```
 ```ansi
-[0m[32mSales[0m
-[0m[34m- 17~31 Jan: [0mThank-You Pack
-[0m[34m- 17~31 Jan: [0mLimited Sale
+Sales:
+
+- 27~31 Dec, 1~10 Jan: Catfruit Bargain Sale
+- 27~31 Dec, 1~10 Jan: Beginner Sale
+- 31 Dec~2 Jan, 7~9 Jan: Special Cats Half-Off Sale
+- 1 Jan: Rare Ticket Sale
 ```
 ```ansi
-[0m[32mMissions[0m
+Missions:
+
+- 27 Dec~10 Jan: Beat "Cats in the Snow" stages 5 times -> Cat Ticket X 1
+- 27 Dec~10 Jan: Beat "Cats in the Snow" stages 10 times -> Cat Ticket X 1
+- 27 Dec~10 Jan: Beat "Cats in the Snow" stages 20 times -> Cat Ticket X 1
+- 27 Dec~10 Jan: Beat "Floor 30 [Heavenly Tower]" -> Hermit Cat X 1
+- 27 Dec~10 Jan: Beat "Floor 40 [Heavenly Tower]" -> Masked Yulala X 1
+- 27 Dec~10 Jan: Beat "Floor 50 [Heavenly Tower]" -> Master Uril X 1
+- 27 Dec~10 Jan: Beat "Floor 30 [Infernal Tower]" -> Masked Grandmaster Cat
 ```
 ```ansi
-[0m[32mItems[0m
-[0m[34m- 17 Jan~14 Feb: [0mLunar New Year! (Login Stamp)
-[0m[34m- 22 Jan: [0mRare Ticket + Leadership (Meow Meow Day)
+Items:
+
+- 27 Dec~10 Jan: Unknown
+- 1 Jan: Rare Ticket - Happy New Year!
 ```
 Festival Data:
 ```ansi
-[0m[32mCitadel Stages[0m - 17 Jan~14 Feb: 
+XP Festival - 27 Dec~10 Jan: 
 
-[0m[33mRed Citadel
-[0m[0m[34m- 17 Jan~14 Feb: [0m11AM~10AM
-[0m[33mBlack Citadel
-[0m[0m[34m- 20 Jan~14 Feb: [0m12AM~10AM
-[0m[33mAngel Citadel
-[0m[0m[34m- 23 Jan~14 Feb: [0m12AM~10AM
-[0m[33mAlien Citadel
-[0m[0m[34m- 26 Jan~14 Feb: [0m12AM~10AM
-[0m[33mZombie Citadel
-[0m[0m[34m- 29 Jan~14 Feb: [0m12AM~10AM
+XP Stage
+- 27 Dec~8 Jan: Every Alternate Day :: 7PM~10PM
+- 28 Dec~9 Jan: Every Alternate Day :: 11AM~2PM
+XP Megablitz!
+- 27 Dec~8 Jan: Every Alternate Day :: 11AM~2PM
+- 28 Dec~9 Jan: Every Alternate Day :: 7PM~10PM
+XP Colosseum
+- 28 Dec~9 Jan: Every Third Day :: 10PM~11PM
+- 29 Dec~10 Jan: Every Third Day :: 8AM~9AM
+- 27 Dec~8 Jan: Every Third Day :: 4PM~5PM
+Merciless XP!
+- 29 Dec, 7 Jan :: 4PM~5PM
+- 27 Dec, 5 Jan :: 10PM~11PM
+- 31 Dec, 3 Jan :: 8AM~9AM
 ```
 ```ansi
-[0m[32mAll-Stars Stages[0m - 17~31 Jan: 
+Treasure Festival - 27 Dec~10 Jan: 
 
-[0m[33mMonthly Event All-Stars Special Celebration!
-[0m[0m[34m- 17~20 Jan: [0m11AM~11PM
-[0m[33mMonthly Event All-Stars Ultra Celebration!
-[0m[0m[34m- 21~22 Jan: [0mAll Day
-[0m[33mMonthly Event All-Stars Miracle Celebration!
-[0m[0m[34m- 23~24 Jan: [0mAll Day
-[0m[33mMonthly Event All-Stars Wonderful Celebration!
-[0m[0m[34m- 25~26 Jan: [0mAll Day
-[0m[33mEvent All-Stars Excellent Celebration!
-[0m[0m[34m- 27~28 Jan: [0mAll Day
-[0m[33mEvent All-Stars Grand Jubilee!
-[0m[0m[34m- 29~31 Jan: [0mAll Day
+EoC Treasure Festival
+- 28 Dec~10 Jan: Every Alternate Day :: All Day
+ItF Treasure Festival
+- 27 Dec~9 Jan: Every Alternate Day :: All Day
+CotC Treasure Festival
+- 28 Dec~9 Jan: Every Third Day :: All Day
 ```
 ```ansi
-[0m[32mTornado Festival[0m - 17~31 Jan: 
+Li'l Festival - 1~3 Jan: 
 
-[0m[33mCrimson Catastrophe, Peerless, Sweet Irony, Red Sky at Morning, The 2nd Dimension, Crimson Vengeance, Peerless Too, Bitter Irony, Red Sky at Night, The 3rd Dimension
-[0m[0m[34m[0m[34m- 17~31 Jan: [0mEvery Alternate Day[0m :: All Day
-[0m[33mHeaven of Darkness, Wrath of Heaven, Dimension of Despair, The Rolling Dead, NEO Darkness Heaven, Wrath of the Divine, Typhoon Nemo, Dimension of Delirium, The Dead Keep Rolling
-[0m[0m[34m[0m[34m- 18~30 Jan: [0mEvery Alternate Day[0m :: All Day
+Li'l Cat Awakens!, Li'l Gross Awakens!, Li'l Fish Awakens!
+- 1 Jan: All Day
+Li'l Tank Awakens!, Li'l Cow Awakens!, Li'l Lizard Awakens!
+- 2 Jan: All Day
+Li'l Axe Awakens!, Li'l Bird Awakens!, Li'l Titan Awakens!
+- 3 Jan: All Day
 ```
 ```ansi
-[0m[32mTreasure Festival[0m - 17 Jan~14 Feb: 
+Catfruit Festival - 8~9 Jan: 
 
-[0m[33mEoC Treasure Festival
-[0m[0m[34m[0m[34m- 18 Jan~14 Feb: [0mEvery Alternate Day[0m :: All Day
-[0m[33mItF Treasure Festival
-[0m[0m[34m[0m[34m- 17 Jan~13 Feb: [0mEvery Alternate Day[0m :: All Day
-[0m[33mCotC Treasure Festival
-[0m[0m[34m[0m[34m- 19 Jan~12 Feb: [0mEvery Third Day[0m :: All Day
-```
-```ansi
-[0m[32mCatfruit Festival[0m - 22~23 Jan: 
-
-[0m[33mGrowing Green, Growing Purple, Growing Red, Growing Blue, Growing Yellow
-[0m[0m[34m- 22~23 Jan: [0mAll Day
+Growing Green, Growing Purple, Growing Red, Growing Blue, Growing Yellow
+- 8~9 Jan: All Day
 ```
