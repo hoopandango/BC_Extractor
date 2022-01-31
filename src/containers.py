@@ -73,7 +73,7 @@ class Gatya(Event):
 		# tuple (datestring, reststring)
 		bonuses: list[str] = []
 		bonusesStr: str = ""
-		if self.guarantee[3] == 1:  bonusesStr += ' (Guaranteed)'
+		if self.guarantee[3] == 1:  bonusesStr += self.clr.clc(' (Guaranteed)', 31)
 		bonuses.extend(self.extras)
 		bonuses.extend([x for x in self.exclusives])
 		bonusesStr += f" [{'/'.join(bonuses)}]" if len(bonuses) > 0 else ''
@@ -84,7 +84,12 @@ class Gatya(Event):
 			if len(self.rate_ups) > 0 else ''
 		
 		name = self.name if self.name != 'Unknown' else self.text
-		return (UniversalParsers.fancyDate(self.dates), '%s%s%s%s' % (name, bonusesStr, diff, rate_ups))
+		
+		if not self.clr.ENABLED and self.guarantee[3]:
+			pre = "--"
+		else:
+			pre = ""
+		return (pre+UniversalParsers.fancyDate(self.dates), '%s%s%s%s' % (name, bonusesStr, diff, rate_ups))
 	
 	def __str__(self):
 		self.dates = [self.dates[0], self.dates[-1]]
