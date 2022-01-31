@@ -98,7 +98,7 @@ class UniversalParsers:
 			eng = len([0 for x in name if x in string.ascii_letters])
 			full = len([0 for x in name if x.isalpha()])
 			if(full < 2*eng):
-				if (25000 > ID >= 24000 or 28000 > ID >= 27000):
+				if (25000 > ID >= 24000 or 28000 > ID >= 27000) and 'Baron' not in name and 'Gauntlet' not in name:
 					name += ' (Baron)'
 				return name
 		except KeyError:
@@ -112,7 +112,7 @@ class UniversalParsers:
 			# updates name
 			cls.autoEventNames.loc[ID, "name"] = name
 			
-		if (25000 > ID >= 24000 or 28000 > ID >= 27000):
+		if (25000 > ID >= 24000 or 28000 > ID >= 27000) and 'Baron' not in name and 'Gauntlet' not in name:
 			name += ' (Baron)'
 			
 		return name

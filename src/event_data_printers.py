@@ -24,7 +24,6 @@ with open("_config.json") as fl:
 
 """TODO:
 4 combos tsv
-10  all barons are grouped together
 """
 
 auth = HTTPBasicAuth()
@@ -117,14 +116,14 @@ class Funky(Resource):
 		sf.sortAll()
 		# print(f"printing stuff - {time.time() - start}")
 		
-		toprint = ver + " EVENT DATA\n"
-		toprint += gf.printGatya()
-		toprint += sf.printStages()
-		toprint += itf.printItemData()
-		toprint += sf.printFestivalData()
+		toprint: list[str] = [f"**{ver} EVENT DATA**\n"]
+		toprint[0] += gf.printGatya()
+		toprint[0] += sf.printStages()
+		toprint[0] += itf.printItemData()
+		toprint.append(sf.printFestivalData())
 		
 		with open(config["outputs"]["eventdata"] + "gatya_final.txt", "w", encoding='utf-8') as fl0:
-			fl0.write(toprint)
+			fl0.write("".join(toprint))
 		
 		# print(toprint)
 		
@@ -146,8 +145,16 @@ class Funky(Resource):
 		# gf.exportGatya()
 		# sf.exportStages()
 		if auth.username() == credentials["SUPERUSER"]:
-			requests.post(credentials["HOOKURL"], {"content": toprint})
-		return toprint
+			X = credentials.get("HOOKURL")
+			if X is None: X = '["test"]'
+			destinations = json.loads(X)
+			for dest in js["destinations"]:
+				if dest in destinations:
+					for i in toprint:
+						response = requests.post(destinations[dest], {"content": i})
+						if not 200 <= response.status_code < 300:
+							print("Webhook Write Failed: " + str(response.status_code) + ": " + response.text)
+		return "".join(toprint)
 
 app = flask.Flask(__name__)
 api = flask_restful.Api(app)

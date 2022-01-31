@@ -228,7 +228,7 @@ class GatyaFetcher(UniversalFetcher):
 	# OUTPUT TOOLS
 	def printGatya(self)->str:
 		toret = ""
-		toret +=(f'```ansi\n{self.clr.clc("Gatya", 32)}\n')
+		toret +=(f'```ansi\n{self.clr.clc("Gatya:", 32)}\n\n')
 		for event in self.refinedGatya:
 			if not isinstance(event, EventGroup):
 				if event.rates[3] in (10000, 9500):  # Platinum / Legend Ticket Event
@@ -438,17 +438,17 @@ class StageFetcher(UniversalFetcher):
 	
 	def printStages(self) -> str:
 		toret = ""
-		toret +=(f'```ansi\n{self.clr.clc("Events", 32)}\n')
+		toret +=(f'```ansi\n{self.clr.clc("Events:", 32)}\n\n')
 		for element in self.finalStages:
 			toret +=(element).__str__()+"\n"
 		toret +=('```\n')
 		
-		toret +=(f'```ansi\n{self.clr.clc("Sales", 32)}\n')
+		toret +=(f'```ansi\n{self.clr.clc("Sales:", 32)}\n\n')
 		for element in self.sales:
 			toret +=(element).__str__()+"\n"
 		toret +=('```\n')
 		
-		toret +=(f'```ansi\n{self.clr.clc("Missions", 32)}\n')
+		toret +=(f'```ansi\n{self.clr.clc("Missions:", 32)}\n\n')
 		for element in self.missions:
 			toret +=(element).__str__()+"\n"
 		toret +=('```\n')
@@ -485,7 +485,7 @@ class ItemFetcher(UniversalFetcher):
 				i.text = data[11]
 				i.clr = self.clr
 				
-				if 900 <= i.ID < 1000:  # Login Stamp
+				if 900 <= i.ID < 1000 and "Stamp" not in i.text:  # Login Stamp
 					i.name = i.text + ' (Login Stamp)'
 					self.finalItems.append(Item.fromEvent(i))
 				elif 800 <= i.ID < 900:
@@ -509,7 +509,7 @@ class ItemFetcher(UniversalFetcher):
 	def printItemData(self) -> str:
 		toret = ""
 		self.finalItems.sort(key=lambda x: x.dates[0])
-		toret +=(f'```ansi\n{self.clr.clc("Items", 32)}\n')
+		toret +=(f'```ansi\n{self.clr.clc("Items:", 32)}\n\n')
 		for item in self.finalItems:
 			toret +=(item).__str__()+"\n"
 		toret +=('```\n')

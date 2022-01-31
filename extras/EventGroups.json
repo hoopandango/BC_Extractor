@@ -179,7 +179,7 @@
   },
   "Baron": {
     "stages": [
-      "(Baron)"
+      "Baron", "Gauntlet"
     ],
     "visible": true,
     "split": true,
@@ -219,9 +219,9 @@
     "split": false,
     "compare_mode": 1
   },
-  "Citadel": {
+  "Citadel Stages": {
     "stages": [
-      "Citadel Stages"
+      "Citadel"
     ],
     "visible": true,
     "split": false,

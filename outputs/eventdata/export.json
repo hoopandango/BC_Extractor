@@ -11,7 +11,7 @@
         "999999"
       ],
       "name": "Ultra Selection",
-      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
       "rates": [
         0,
         6970,
@@ -36,7 +36,7 @@
       "extras": [],
       "exclusives": [],
       "text": "Ultra Selection! \u2605 Tap banner for info!",
-      "printable": "- 17~21 Jan: Ultra Selection"
+      "printable": "\u001b[0m\u001b[34m- 17~21 Jan: \u001b[0mUltra Selection"
     },
     {
       "ID": 608,
@@ -49,7 +49,7 @@
         "999999"
       ],
       "name": "Vajiras",
-      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
       "rates": [
         0,
         6970,
@@ -80,7 +80,7 @@
         "D"
       ],
       "text": "Mighty NEW hero Shiro Amakusa, good against Black & Aku! \u2605Tap banner for info!",
-      "printable": "- 17~19 Jan: Vajiras [PS/D] (+ Shiro Amakusa)"
+      "printable": "\u001b[0m\u001b[34m- 17~19 Jan: \u001b[0mVajiras [PS/D] (+ Shiro Amakusa)"
     },
     {
       "ID": 497,
@@ -93,7 +93,7 @@
         "999999"
       ],
       "name": "Almighties",
-      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
       "rates": [
         0,
         6970,
@@ -122,7 +122,7 @@
         "D"
       ],
       "text": "The Almighties, supreme beings of Catkind! \u2605 Tap banner for info!",
-      "printable": "- 19~21 Jan: Almighties [PS/D]"
+      "printable": "\u001b[0m\u001b[34m- 19~21 Jan: \u001b[0mAlmighties [PS/D]"
     },
     {
       "ID": 643,
@@ -135,7 +135,7 @@
         "999999"
       ],
       "name": "Iron Legion",
-      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
       "rates": [
         0,
         6970,
@@ -164,7 +164,7 @@
         "D"
       ],
       "text": "Tear through Zombies/Aku with Mighty Deth-Troy-R! \u2605 Tap banner for info!",
-      "printable": "- 21~24 Jan: Iron Legion (Guaranteed) [D] (+ Mighty Deth-Troy-R)"
+      "printable": "\u001b[0m\u001b[34m- 21~24 Jan: \u001b[0mIron Legion\u001b[0m\u001b[31m (Guaranteed)\u001b[0m [D] (+ Mighty Deth-Troy-R)"
     },
     {
       "ID": 600,
@@ -177,7 +177,7 @@
         "999999"
       ],
       "name": "Miracle Chance",
-      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
       "rates": [
         0,
         6970,
@@ -202,7 +202,7 @@
       "extras": [],
       "exclusives": [],
       "text": "Miracle Selection! \u2605 Tap banner for info!",
-      "printable": "- 24~28 Jan: Miracle Chance"
+      "printable": "\u001b[0m\u001b[34m- 24~28 Jan: \u001b[0mMiracle Chance"
     },
     {
       "ID": 624,
@@ -215,7 +215,7 @@
         "999999"
       ],
       "name": "Nekolugas",
-      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
       "rates": [
         0,
         6970,
@@ -246,7 +246,7 @@
         "D"
       ],
       "text": "NEW Barrier and Shield destroying hero Furiluga appears! \u2605Tap banner for info!",
-      "printable": "- 24~26 Jan: Nekolugas [PS/D] (+ Furiluga)"
+      "printable": "\u001b[0m\u001b[34m- 24~26 Jan: \u001b[0mNekolugas [PS/D] (+ Furiluga)"
     },
     {
       "ID": 611,
@@ -259,7 +259,7 @@
         "999999"
       ],
       "name": "Galaxy Gals",
-      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
       "rates": [
         0,
         6970,
@@ -288,7 +288,7 @@
         "D"
       ],
       "text": "New Hero LILIN joins the fight to crush the Aku! \u2605 Tap for more info!",
-      "printable": "- 26~28 Jan: Galaxy Gals [PS/D]"
+      "printable": "\u001b[0m\u001b[34m- 26~28 Jan: \u001b[0mGalaxy Gals [PS/D]"
     },
     {
       "ID": 594,
@@ -301,7 +301,7 @@
         "999999"
       ],
       "name": "Best of the Best",
-      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
       "rates": [
         0,
         7000,
@@ -326,7 +326,7 @@
       "extras": [],
       "exclusives": [],
       "text": "Limited Uber Set, with Li'l Valkyrie! \u2605 Tap banner for info!",
-      "printable": "- 28~31 Jan: Best of the Best"
+      "printable": "\u001b[0m\u001b[34m- 28~31 Jan: \u001b[0mBest of the Best"
     },
     {
       "ID": 627,
@@ -339,7 +339,7 @@
         "999999"
       ],
       "name": "Dynamites",
-      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
       "rates": [
         0,
         6970,
@@ -370,13 +370,13 @@
         "D"
       ],
       "text": "NEW hero Summoner Satoru, effective vs Aku! \u2605Tap banner for info!",
-      "printable": "- 28~31 Jan: Dynamites [PS/D] (+ Summoner Satoru)"
+      "printable": "\u001b[0m\u001b[34m- 28~31 Jan: \u001b[0mDynamites [PS/D] (+ Summoner Satoru)"
     }
   ],
   "stages": [
     [
       {
-        "name": "Citadel",
+        "name": "Citadel Stages",
         "events": [
           {
             "ID": 7001,
@@ -389,10 +389,10 @@
               "999999"
             ],
             "name": "Red Citadel",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 17 Jan~14 Feb: Red Citadel"
+            "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mRed Citadel"
           },
           {
             "ID": 7002,
@@ -405,10 +405,10 @@
               "999999"
             ],
             "name": "Black Citadel",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 20 Jan~14 Feb: Black Citadel"
+            "printable": "\u001b[0m\u001b[34m- 20 Jan~14 Feb: \u001b[0mBlack Citadel"
           },
           {
             "ID": 7003,
@@ -421,10 +421,10 @@
               "999999"
             ],
             "name": "Angel Citadel",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 23 Jan~14 Feb: Angel Citadel"
+            "printable": "\u001b[0m\u001b[34m- 23 Jan~14 Feb: \u001b[0mAngel Citadel"
           },
           {
             "ID": 7004,
@@ -437,10 +437,10 @@
               "999999"
             ],
             "name": "Alien Citadel",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 26 Jan~14 Feb: Alien Citadel"
+            "printable": "\u001b[0m\u001b[34m- 26 Jan~14 Feb: \u001b[0mAlien Citadel"
           },
           {
             "ID": 7005,
@@ -453,10 +453,10 @@
               "999999"
             ],
             "name": "Zombie Citadel",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 29 Jan~14 Feb: Zombie Citadel"
+            "printable": "\u001b[0m\u001b[34m- 29 Jan~14 Feb: \u001b[0mZombie Citadel"
           }
         ],
         "dates": [
@@ -465,7 +465,7 @@
         ],
         "split": false,
         "visible": true,
-        "printable": "- 17 Jan~14 Feb: Citadel"
+        "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mCitadel Stages"
       },
       {
         "name": "Baron",
@@ -480,11 +480,11 @@
               "110100",
               "999999"
             ],
-            "name": "Baron Seal Strikes (Baron)",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "name": "Baron Seal Strikes",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 17~31 Jan: Baron Seal Strikes (Baron)"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mBaron Seal Strikes"
           }
         ],
         "dates": [
@@ -493,7 +493,7 @@
         ],
         "split": true,
         "visible": true,
-        "printable": "- 17~31 Jan: Baron Seal Strikes (Baron)"
+        "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mBaron Seal Strikes"
       },
       {
         "name": "All-Stars Stages",
@@ -509,10 +509,10 @@
               "999999"
             ],
             "name": "Monthly Event All-Stars Special Celebration!",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 17~20 Jan: Monthly Event All-Stars Special Celebration!"
+            "printable": "\u001b[0m\u001b[34m- 17~20 Jan: \u001b[0mMonthly Event All-Stars Special Celebration!"
           },
           {
             "ID": 1034,
@@ -525,10 +525,10 @@
               "999999"
             ],
             "name": "Monthly Event All-Stars Ultra Celebration!",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 21~22 Jan: Monthly Event All-Stars Ultra Celebration!"
+            "printable": "\u001b[0m\u001b[34m- 21~22 Jan: \u001b[0mMonthly Event All-Stars Ultra Celebration!"
           },
           {
             "ID": 1035,
@@ -541,10 +541,10 @@
               "999999"
             ],
             "name": "Monthly Event All-Stars Miracle Celebration!",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 23~24 Jan: Monthly Event All-Stars Miracle Celebration!"
+            "printable": "\u001b[0m\u001b[34m- 23~24 Jan: \u001b[0mMonthly Event All-Stars Miracle Celebration!"
           },
           {
             "ID": 1070,
@@ -557,10 +557,10 @@
               "999999"
             ],
             "name": "Monthly Event All-Stars Wonderful Celebration!",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 25~26 Jan: Monthly Event All-Stars Wonderful Celebration!"
+            "printable": "\u001b[0m\u001b[34m- 25~26 Jan: \u001b[0mMonthly Event All-Stars Wonderful Celebration!"
           },
           {
             "ID": 1079,
@@ -573,10 +573,10 @@
               "999999"
             ],
             "name": "Event All-Stars Excellent Celebration!",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 27~28 Jan: Event All-Stars Excellent Celebration!"
+            "printable": "\u001b[0m\u001b[34m- 27~28 Jan: \u001b[0mEvent All-Stars Excellent Celebration!"
           },
           {
             "ID": 1146,
@@ -589,10 +589,10 @@
               "999999"
             ],
             "name": "Event All-Stars Grand Jubilee!",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 29~31 Jan: Event All-Stars Grand Jubilee!"
+            "printable": "\u001b[0m\u001b[34m- 29~31 Jan: \u001b[0mEvent All-Stars Grand Jubilee!"
           }
         ],
         "dates": [
@@ -601,7 +601,7 @@
         ],
         "split": false,
         "visible": true,
-        "printable": "- 17~31 Jan: All-Stars Stages"
+        "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mAll-Stars Stages"
       },
       {
         "name": "Tornado Festival",
@@ -617,7 +617,7 @@
               "999999"
             ],
             "name": "Crimson Catastrophe",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -634,7 +634,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17~31 Jan: Crimson Catastrophe"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mCrimson Catastrophe"
           },
           {
             "ID": 1016,
@@ -647,7 +647,7 @@
               "999999"
             ],
             "name": "Peerless",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -664,7 +664,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17~31 Jan: Peerless"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mPeerless"
           },
           {
             "ID": 1043,
@@ -677,7 +677,7 @@
               "999999"
             ],
             "name": "Sweet Irony",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -694,7 +694,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17~31 Jan: Sweet Irony"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mSweet Irony"
           },
           {
             "ID": 1096,
@@ -707,7 +707,7 @@
               "999999"
             ],
             "name": "Red Sky at Morning",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -724,7 +724,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17~31 Jan: Red Sky at Morning"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mRed Sky at Morning"
           },
           {
             "ID": 1157,
@@ -737,7 +737,7 @@
               "999999"
             ],
             "name": "The 2nd Dimension",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -754,7 +754,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17~31 Jan: The 2nd Dimension"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mThe 2nd Dimension"
           },
           {
             "ID": 1169,
@@ -767,7 +767,7 @@
               "999999"
             ],
             "name": "Crimson Vengeance",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -784,7 +784,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17~31 Jan: Crimson Vengeance"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mCrimson Vengeance"
           },
           {
             "ID": 1176,
@@ -797,7 +797,7 @@
               "999999"
             ],
             "name": "Peerless Too",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -814,7 +814,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17~31 Jan: Peerless Too"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mPeerless Too"
           },
           {
             "ID": 1187,
@@ -827,7 +827,7 @@
               "999999"
             ],
             "name": "Bitter Irony",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -844,7 +844,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17~31 Jan: Bitter Irony"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mBitter Irony"
           },
           {
             "ID": 1195,
@@ -857,7 +857,7 @@
               "999999"
             ],
             "name": "Red Sky at Night",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -874,7 +874,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17~31 Jan: Red Sky at Night"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mRed Sky at Night"
           },
           {
             "ID": 1203,
@@ -887,7 +887,7 @@
               "999999"
             ],
             "name": "The 3rd Dimension",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -904,7 +904,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17~31 Jan: The 3rd Dimension"
+            "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mThe 3rd Dimension"
           },
           {
             "ID": 1015,
@@ -917,7 +917,7 @@
               "999999"
             ],
             "name": "Heaven of Darkness",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -933,7 +933,7 @@
                 "times": []
               }
             ],
-            "printable": "- 18~30 Jan: Heaven of Darkness"
+            "printable": "\u001b[0m\u001b[34m- 18~30 Jan: \u001b[0mHeaven of Darkness"
           },
           {
             "ID": 1039,
@@ -946,7 +946,7 @@
               "999999"
             ],
             "name": "Wrath of Heaven",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -962,7 +962,7 @@
                 "times": []
               }
             ],
-            "printable": "- 18~30 Jan: Wrath of Heaven"
+            "printable": "\u001b[0m\u001b[34m- 18~30 Jan: \u001b[0mWrath of Heaven"
           },
           {
             "ID": 1066,
@@ -975,7 +975,7 @@
               "999999"
             ],
             "name": "Dimension of Despair",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -991,7 +991,7 @@
                 "times": []
               }
             ],
-            "printable": "- 18~30 Jan: Dimension of Despair"
+            "printable": "\u001b[0m\u001b[34m- 18~30 Jan: \u001b[0mDimension of Despair"
           },
           {
             "ID": 1122,
@@ -1004,7 +1004,7 @@
               "999999"
             ],
             "name": "The Rolling Dead",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -1020,7 +1020,7 @@
                 "times": []
               }
             ],
-            "printable": "- 18~30 Jan: The Rolling Dead"
+            "printable": "\u001b[0m\u001b[34m- 18~30 Jan: \u001b[0mThe Rolling Dead"
           },
           {
             "ID": 1172,
@@ -1033,7 +1033,7 @@
               "999999"
             ],
             "name": "NEO Darkness Heaven",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -1049,7 +1049,7 @@
                 "times": []
               }
             ],
-            "printable": "- 18~30 Jan: NEO Darkness Heaven"
+            "printable": "\u001b[0m\u001b[34m- 18~30 Jan: \u001b[0mNEO Darkness Heaven"
           },
           {
             "ID": 1185,
@@ -1062,7 +1062,7 @@
               "999999"
             ],
             "name": "Wrath of the Divine",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -1078,7 +1078,7 @@
                 "times": []
               }
             ],
-            "printable": "- 18~30 Jan: Wrath of the Divine"
+            "printable": "\u001b[0m\u001b[34m- 18~30 Jan: \u001b[0mWrath of the Divine"
           },
           {
             "ID": 1189,
@@ -1091,7 +1091,7 @@
               "999999"
             ],
             "name": "Typhoon Nemo",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -1107,7 +1107,7 @@
                 "times": []
               }
             ],
-            "printable": "- 18~30 Jan: Typhoon Nemo"
+            "printable": "\u001b[0m\u001b[34m- 18~30 Jan: \u001b[0mTyphoon Nemo"
           },
           {
             "ID": 1193,
@@ -1120,7 +1120,7 @@
               "999999"
             ],
             "name": "Dimension of Delirium",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -1136,7 +1136,7 @@
                 "times": []
               }
             ],
-            "printable": "- 18~30 Jan: Dimension of Delirium"
+            "printable": "\u001b[0m\u001b[34m- 18~30 Jan: \u001b[0mDimension of Delirium"
           },
           {
             "ID": 1198,
@@ -1149,7 +1149,7 @@
               "999999"
             ],
             "name": "The Dead Keep Rolling",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -1165,7 +1165,7 @@
                 "times": []
               }
             ],
-            "printable": "- 18~30 Jan: The Dead Keep Rolling"
+            "printable": "\u001b[0m\u001b[34m- 18~30 Jan: \u001b[0mThe Dead Keep Rolling"
           }
         ],
         "dates": [
@@ -1174,7 +1174,7 @@
         ],
         "split": false,
         "visible": true,
-        "printable": "- 17~31 Jan: Tornado Festival"
+        "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mTornado Festival"
       },
       {
         "name": "Treasure Festival",
@@ -1190,7 +1190,7 @@
               "999999"
             ],
             "name": "EoC Treasure Festival",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -1213,7 +1213,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17 Jan~14 Feb: EoC Treasure Festival"
+            "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mEoC Treasure Festival"
           },
           {
             "ID": 101,
@@ -1226,7 +1226,7 @@
               "999999"
             ],
             "name": "ItF Treasure Festival",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -1250,7 +1250,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17 Jan~14 Feb: ItF Treasure Festival"
+            "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mItF Treasure Festival"
           },
           {
             "ID": 104,
@@ -1263,7 +1263,7 @@
               "999999"
             ],
             "name": "CotC Treasure Festival",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "monthly",
             "sched_data": [
               {
@@ -1281,7 +1281,7 @@
                 "times": []
               }
             ],
-            "printable": "- 17 Jan~14 Feb: CotC Treasure Festival"
+            "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mCotC Treasure Festival"
           }
         ],
         "dates": [
@@ -1290,7 +1290,7 @@
         ],
         "split": false,
         "visible": true,
-        "printable": "- 17 Jan~14 Feb: Treasure Festival"
+        "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mTreasure Festival"
       },
       {
         "ID": 1071,
@@ -1303,10 +1303,10 @@
           "999999"
         ],
         "name": "Minced Meet-Up",
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "sched": "permanent",
         "sched_data": null,
-        "printable": "- 17 Jan~14 Feb: Minced Meet-Up"
+        "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mMinced Meet-Up"
       },
       {
         "ID": 1153,
@@ -1319,10 +1319,10 @@
           "999999"
         ],
         "name": "Catburger Awakens!",
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "sched": "permanent",
         "sched_data": null,
-        "printable": "- 17 Jan~14 Feb: Catburger Awakens!"
+        "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mCatburger Awakens!"
       },
       {
         "ID": 18000,
@@ -1335,10 +1335,10 @@
           "999999"
         ],
         "name": "Anniversary Slots",
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "sched": "permanent",
         "sched_data": null,
-        "printable": "- 17~31 Jan: Anniversary Slots"
+        "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mAnniversary Slots"
       },
       {
         "ID": 1224,
@@ -1351,7 +1351,7 @@
           "999999"
         ],
         "name": "Lunar New Year",
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "sched": "daily",
         "sched_data": [
           {
@@ -1363,7 +1363,7 @@
             ]
           }
         ],
-        "printable": "- 17 Jan~14 Feb: Lunar New Year"
+        "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mLunar New Year"
       },
       {
         "ID": 1225,
@@ -1376,10 +1376,10 @@
           "999999"
         ],
         "name": "Mystery Package",
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "sched": "permanent",
         "sched_data": null,
-        "printable": "- 17 Jan~14 Feb: Mystery Package"
+        "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mMystery Package"
       },
       {
         "ID": 1285,
@@ -1392,10 +1392,10 @@
           "999999"
         ],
         "name": "Top 5 Most Seen Enemies, 2021!",
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "sched": "permanent",
         "sched_data": null,
-        "printable": "- 17~31 Jan: Top 5 Most Seen Enemies, 2021!"
+        "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mTop 5 Most Seen Enemies, 2021!"
       },
       {
         "ID": 1173,
@@ -1410,10 +1410,10 @@
           "999999"
         ],
         "name": "Cybear's Vengeance",
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "sched": "permanent",
         "sched_data": null,
-        "printable": "- 17~24 Jan, 25~31 Jan: Cybear's Vengeance"
+        "printable": "\u001b[0m\u001b[34m- 17~24 Jan, 25~31 Jan: \u001b[0mCybear's Vengeance"
       },
       {
         "name": "Catfruit Festival",
@@ -1429,10 +1429,10 @@
               "999999"
             ],
             "name": "Growing Green",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 22~23 Jan: Growing Green"
+            "printable": "\u001b[0m\u001b[34m- 22~23 Jan: \u001b[0mGrowing Green"
           },
           {
             "ID": 1098,
@@ -1445,10 +1445,10 @@
               "999999"
             ],
             "name": "Growing Purple",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 22~23 Jan: Growing Purple"
+            "printable": "\u001b[0m\u001b[34m- 22~23 Jan: \u001b[0mGrowing Purple"
           },
           {
             "ID": 1099,
@@ -1461,10 +1461,10 @@
               "999999"
             ],
             "name": "Growing Red",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 22~23 Jan: Growing Red"
+            "printable": "\u001b[0m\u001b[34m- 22~23 Jan: \u001b[0mGrowing Red"
           },
           {
             "ID": 1100,
@@ -1477,10 +1477,10 @@
               "999999"
             ],
             "name": "Growing Blue",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 22~23 Jan: Growing Blue"
+            "printable": "\u001b[0m\u001b[34m- 22~23 Jan: \u001b[0mGrowing Blue"
           },
           {
             "ID": 1101,
@@ -1493,10 +1493,10 @@
               "999999"
             ],
             "name": "Growing Yellow",
-            "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+            "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
             "sched": "permanent",
             "sched_data": null,
-            "printable": "- 22~23 Jan: Growing Yellow"
+            "printable": "\u001b[0m\u001b[34m- 22~23 Jan: \u001b[0mGrowing Yellow"
           }
         ],
         "dates": [
@@ -1505,7 +1505,7 @@
         ],
         "split": false,
         "visible": true,
-        "printable": "- 22~23 Jan: Catfruit Festival"
+        "printable": "\u001b[0m\u001b[34m- 22~23 Jan: \u001b[0mCatfruit Festival"
       },
       {
         "ID": 1118,
@@ -1518,7 +1518,7 @@
           "999999"
         ],
         "name": "Catfruit Buffet",
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "sched": "daily",
         "sched_data": [
           {
@@ -1538,7 +1538,7 @@
             ]
           }
         ],
-        "printable": "- 29~30 Jan: Catfruit Buffet"
+        "printable": "\u001b[0m\u001b[34m- 29~30 Jan: \u001b[0mCatfruit Buffet"
       },
       {
         "ID": 2006,
@@ -1551,10 +1551,10 @@
           "999999"
         ],
         "name": "Lasvoss Strikes?!",
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "sched": "permanent",
         "sched_data": null,
-        "printable": "- 31 Jan: Lasvoss Strikes?!"
+        "printable": "\u001b[0m\u001b[34m- 31 Jan: \u001b[0mLasvoss Strikes?!"
       },
       {
         "ID": 2037,
@@ -1567,40 +1567,40 @@
           "999999"
         ],
         "name": "Cabaret Cat Awakens!",
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "sched": "permanent",
         "sched_data": null,
-        "printable": "- 31 Jan: Cabaret Cat Awakens!"
+        "printable": "\u001b[0m\u001b[34m- 31 Jan: \u001b[0mCabaret Cat Awakens!"
       }
     ],
     [
       {
-        "versions": [
-          "110100",
-          "999999"
-        ],
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
         "name": "Thank-You Pack",
         "ID": 812,
-        "dates": [
-          "2022-01-17T11:00:00",
-          "2022-01-31T23:59:00"
-        ],
-        "printable": "- 17~31 Jan: Thank-You Pack"
-      },
-      {
         "versions": [
           "110100",
           "999999"
         ],
-        "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
-        "name": "Limited Sale",
-        "ID": 813,
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
         "dates": [
           "2022-01-17T11:00:00",
           "2022-01-31T23:59:00"
         ],
-        "printable": "- 17~31 Jan: Limited Sale"
+        "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mThank-You Pack"
+      },
+      {
+        "name": "Limited Sale",
+        "ID": 813,
+        "versions": [
+          "110100",
+          "999999"
+        ],
+        "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
+        "dates": [
+          "2022-01-17T11:00:00",
+          "2022-01-31T23:59:00"
+        ],
+        "printable": "\u001b[0m\u001b[34m- 17~31 Jan: \u001b[0mLimited Sale"
       }
     ],
     []
@@ -1617,11 +1617,11 @@
         "999999"
       ],
       "name": "Lunar New Year! (Login Stamp)",
-      "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+      "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
       "recurring": false,
       "qty": 0,
       "text": "Lunar New Year!",
-      "printable": "- 17 Jan~14 Feb: Lunar New Year! (Login Stamp)"
+      "printable": "\u001b[0m\u001b[34m- 17 Jan~14 Feb: \u001b[0mLunar New Year! (Login Stamp)"
     },
     {
       "name": "Rare Ticket + Leadership (Meow Meow Day)",
@@ -1637,11 +1637,11 @@
             "999999"
           ],
           "name": "Rare Ticket",
-          "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+          "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
           "recurring": false,
           "qty": 1,
           "text": "Meow Meow Day!",
-          "printable": "- 22 Jan: Rare Ticket - Meow Meow Day!"
+          "printable": "\u001b[0m\u001b[34m- 22 Jan: \u001b[0mRare Ticket - Meow Meow Day!"
         },
         {
           "ID": 220,
@@ -1654,11 +1654,11 @@
             "999999"
           ],
           "name": "Leadership",
-          "clr": "<src.containers.Colourer object at 0x000001EA2DE0AEF0>",
+          "clr": "<src.containers.Colourer object at 0x0000029FC6C4B340>",
           "recurring": false,
           "qty": 1,
           "text": "Meow Meow Day!",
-          "printable": "- 22 Jan: Leadership"
+          "printable": "\u001b[0m\u001b[34m- 22 Jan: \u001b[0mLeadership"
         }
       ],
       "dates": [
@@ -1667,7 +1667,7 @@
       ],
       "split": false,
       "visible": true,
-      "printable": "- 22 Jan: Rare Ticket + Leadership (Meow Meow Day)"
+      "printable": "\u001b[0m\u001b[34m- 22 Jan: \u001b[0mRare Ticket + Leadership (Meow Meow Day)"
     }
   ]
 }
