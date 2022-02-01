@@ -1,6 +1,6 @@
 # BC Extractors
 
-## **v 0.5.1**
+## **v 1.4.1**
 
 This repository contains the files and code that I use to produce automated event data.
 
@@ -14,22 +14,28 @@ This repository contains the files and code that I use to produce automated even
  ┣ 📂out_intermediates
  ┣ 📂outputs
  ┣ 📂reusables
+ ┣ 📦src
+ ┃ ┣ 📂extractors
+ ┃ ┃ ┣ 📜combo_extractor.py
+ ┃ ┃ ┣ 📜gatya_extractor.py
+ ┃ ┃ ┣ 📜items_extractor.py
+ ┃ ┃ ┣ 📜mission_extractor.py
+ ┃ ┃ ┣ 📜sale_extractor.py
+ ┃ ┃ ┣ 📜talent_extractor.py
+ ┃ ┃ ┗ 📜units_extractor.py
+ ┃ ┣ 📜containers.py
+ ┃ ┣ 📜event_data_fetchers.py
+ ┃ ┣ 📜event_data_parsers.py
+ ┃ ┣ 📜event_data_printers.py
+ ┃ ┣ 📜local_readers.py
+ ┃ ┣ 📜utils.py
+ ┃ ┣ 📜z_downloaders.py
+ ┃ ┗ 📜__init__.py
  ┣ 📂tests
  ┣ 📜_config.json
  ┣ 📜_schemas.json
  ┣ 📜.gitignore
- ┣ 📜combo_extractor.py
- ┣ 📜event_data_fetchers.py
- ┣ 📜event_data_parsers.py
- ┣ 📜event_data_printers.py
- ┣ 📜gatya_extractor.py
- ┣ 📜items_extractor.py
  ┣ 📜README.md
- ┣ 📜sale_extractor.py
- ┣ 📜talent_extractor.py
- ┣ 📜units_extractor.py
- ┣ 📜utils.py
- ┗ 📜z_downloaders.py
  ```
 
 ## **Overview**
@@ -63,3 +69,11 @@ The rest should hopefully have self-explanatory titles.
 * **v 0.4.1** - bug fixes. added feature to API call for fetching name to not send a query to web if it's more appropriate that way.
 * **v 0.5.0** - implemented basic data exporting as JSON file. not ironed out yet.
 * **v 0.5.1** - improved festival data printing to rely on grouped festival data rather than guessing from refinedData.
+* **v 1.0.0** - set up migration to Heroku. 
+* **v 1.1.0** - configured authentication via environment variables.
+* **v 1.2.0** - completed accepting queries through POST requests.
+* **v 1.2.1** - started accepting text through diffs, refined query, minor bug fixes.
+* **v 1.3.0** - gave ability to return coloured output [broken].
+* **v 1.3.1** - fixed coloured output.
+* **v 1.4.0** - supports writing to multiple webhooks. some formatting alterations and bug fixes alongside this.
+* **v 1.4.1** - patched return message, had committed a test message into the repo because lul. updated project tree in README.

@@ -150,8 +150,8 @@ class Funky(Resource):
 			destinations = json.loads(X)
 			for dest in js["destinations"]:
 				if dest in destinations:
-					for i in range(1):
-						response = requests.post(destinations[dest], {"content": "Greetings, Fellow cats of fandom."})
+					for i in toprint:
+						response = requests.post(destinations[dest], {"content": i})
 						if not 200 <= response.status_code < 300:
 							print("Webhook Write Failed: " + str(response.status_code) + ": " + response.text)
 		return "".join(toprint)
