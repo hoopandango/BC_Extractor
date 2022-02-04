@@ -16,7 +16,7 @@ from flask_restful import Resource
 from flask_httpauth import HTTPBasicAuth
 
 CASE = 0
-LANG = 'jp'
+LANG = 'en'
 f = ['N']
 
 with open("_config.json") as fl:
@@ -147,6 +147,8 @@ class Funky(Resource):
 		if auth.username() == credentials["SUPERUSER"]:
 			X = credentials.get("HOOKURL")
 			if X is None: X = '["test"]'
+			if credentials.get("TESTING") == "True":
+				X = '["test"]'
 			destinations = json.loads(X)
 			for dest in js["destinations"]:
 				if dest in destinations:

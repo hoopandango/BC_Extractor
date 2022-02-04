@@ -228,6 +228,8 @@ class GatyaFetcher(UniversalFetcher):
 	# OUTPUT TOOLS
 	def printGatya(self)->str:
 		toret = ""
+		if len(self.refinedGatya) == 0:
+			return ""
 		toret +=(f'```ansi\n{self.clr.clc("Gatya:", 32)}\n\n')
 		for event in self.refinedGatya:
 			if not isinstance(event, EventGroup):
@@ -336,7 +338,9 @@ class StageFetcher(UniversalFetcher):
 				return tort
 			else:
 				return tort.replace(month=(tort.month) % 12 + 1, year=tort.year + (tort.month + 1) // 13)
-	
+
+		if len(self.festivals) == 0:
+			return ""
 		toret = "Festival Data:\n"
 		for festival in [X for X in self.festivals if not (X.split or not X.visible)]:
 			if not isinstance(festival.events[0], Stage) or festival.events[0].sched is None:
@@ -438,6 +442,8 @@ class StageFetcher(UniversalFetcher):
 	
 	def printStages(self) -> str:
 		toret = ""
+		if len(self.finalStages) == 0:
+			return ""
 		toret +=(f'```ansi\n{self.clr.clc("Events:", 32)}\n\n')
 		for element in self.finalStages:
 			toret +=(element).__str__()+"\n"
@@ -508,6 +514,8 @@ class ItemFetcher(UniversalFetcher):
 	
 	def printItemData(self) -> str:
 		toret = ""
+		if len(self.finalItems) == 0:
+			return ""
 		self.finalItems.sort(key=lambda x: x.dates[0])
 		toret +=(f'```ansi\n{self.clr.clc("Items:", 32)}\n\n')
 		for item in self.finalItems:
