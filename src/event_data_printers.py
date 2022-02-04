@@ -145,17 +145,19 @@ class Funky(Resource):
 		# gf.exportGatya()
 		# sf.exportStages()
 		if auth.username() == credentials["SUPERUSER"]:
-			X = credentials.get("HOOKURL")
+			X = js["destinations"]
 			if X is None: X = '["test"]'
 			if credentials.get("TESTING") == "True":
 				X = '["test"]'
 			destinations = json.loads(X)
-			for dest in js["destinations"]:
-				if dest in destinations:
+			hooks = json.loads(credentials.get("HOOKURL"))
+			for dest in destinations:
+				if dest in hooks:
 					for i in toprint:
-						response = requests.post(destinations[dest], {"content": i})
+						response = requests.post(hooks[dest], {"content": i})
 						if not 200 <= response.status_code < 300:
 							print("Webhook Write Failed: " + str(response.status_code) + ": " + response.text)
+							return "Webhook Write Failed"
 		return "".join(toprint)
 
 app = flask.Flask(__name__)
