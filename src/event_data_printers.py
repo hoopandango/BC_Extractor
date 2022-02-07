@@ -29,6 +29,14 @@ with open("_config.json") as fl:
 auth = HTTPBasicAuth()
 credentials = os.environ
 
+hooks = json.loads(credentials.get("HOOKURL"))
+LOGURL = credentials.get("LOGURL")
+
+TIMED = credentials.get("TIMING") == 'True'
+LOCAL = credentials.get("LOCAL") == 'True'
+LOGGING = credentials.get("LOGGING") == 'True'
+
+
 @auth.verify_password
 def verify_password(username, password):
 	if credentials["USER"] == username and credentials["PASS"] == password:
@@ -54,7 +62,7 @@ URLs = {"Gatya": "https://bc-seek.godfat.org/seek/%s/gatya.tsv",
 
 if platform.system() == "Windows":
 	asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-
+	
 async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 	toret = {}
 	async with aiohttp.ClientSession() as session:
@@ -64,11 +72,16 @@ async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 	
 	return toret
 
+def print_t(X: any) -> None:
+	if TIMED:
+		print(X)
+		
 class Funky(Resource):
 	@auth.login_required
 	def post(self) -> str:
 		start = time.time()
-		# print(f"started at {start}")
+		if TIMED: print_t(f"started at {start}")
+		
 		js = flask_restful.request.get_json()
 		texts = js["diffs"]
 		ver = "BC" + (js["version"][:2] if js.get("version") is not None else "??").upper()
@@ -94,42 +107,38 @@ class Funky(Resource):
 		sf.fetchRawData(texts["Sale"])
 		itf.fetchRawData(texts["Item"])
 		
-		hooks = json.loads(credentials.get("HOOKURL"))
-		requests.post(hooks["test"], {"content": "```\n"+str(js)+"\n```"})
-		requests.post(hooks["test"], {"content": "```\n"+str(texts)+"\n```"})
+		if LOGGING == 'True':
+			requests.post(LOGURL, {"content": "```\n"+str(js)+"\n```"})
 		
-		# print(f"reading raw gatya - {time.time() - start}")
+		print_t(f"reading raw gatya - {time.time() - start}")
 		
 		gf.readRawData()
 		
-		# print(f"reading raw stages - {time.time() - start}")
+		print_t(f"reading raw stages - {time.time() - start}")
 		sf.readRawData(storeRejects=True)
-		# print(f"reading raw items - {time.time() - start}")
+		print_t(f"reading raw items - {time.time() - start}")
 		itf.readRawData()
 		
-		# print(f"merging items and stages - {time.time() - start}")
+		print_t(f"merging items and stages - {time.time() - start}")
 		sd0 = sf.refinedStages
 		sd1 = itf.refinedData
 		
 		sd0.extend(sd1)
 		
-		# print(f"grouping stages - {time.time() - start}")
+		print_t(f"grouping stages - {time.time() - start}")
+		
 		sf.finalStages, sf.festivals, sf.sales, sf.missions = sf.groupData(sf.refinedStages.copy())
 		gf.refinedGatya = gf.groupData(gf.refinedGatya)[0]
 		itf.finalItems = itf.groupData(itf.finalItems)[0]
 		sf.sortAll()
-		# print(f"printing stuff - {time.time() - start}")
+		
+		print_t(f"printing stuff - {time.time() - start}")
 		
 		toprint: list[str] = [f"**{ver} EVENT DATA**\n"]
 		toprint[0] += gf.printGatya()
 		toprint[0] += sf.printStages()
 		toprint[0] += itf.printItemData()
 		toprint.append(sf.printFestivalData())
-		
-		# with open(config["outputs"]["eventdata"] + "gatya_final.txt", "w", encoding='utf-8') as fl0:
-		#	fl0.write("".join(toprint))
-		
-		# print(toprint)
 		
 		for_export = {"gatya": gf.package(),
 		              "stages": sf.package(),
@@ -141,8 +150,13 @@ class Funky(Resource):
 			else:
 				return str(obj)
 		
-		# with open(config["outputs"]["eventdata"] + "export.json", mode='w') as fl0:
-		# 	json.dump(for_export, fl0, indent=2, default=unfuck_dates)
+		with open(config["outputs"]["eventdata"] + "gatya_final.txt", "w+", encoding='utf-8') as fl0:
+			fl0.write("".join(toprint))
+		with open(config["outputs"]["eventdata"] + "export.json", mode='w+') as fl0:
+			json.dump(for_export, fl0, indent=2, default=unfuck_dates)
+		if credentials.get("LOCAL") == "FALSE":
+			if LOGGING == 'True':
+				requests.post(LOGURL, {"attachments": [{"filename": config['outputs']['eventdata'] + "export.json"}]})
 		
 		print(f"over - {time.time() - start}")
 		StageParsers.updateEventNames()
@@ -154,10 +168,11 @@ class Funky(Resource):
 			if credentials.get("TESTING") == "True":
 				X = '["test"]'
 			destinations = json.loads(X)
-			hooks = json.loads(credentials.get("HOOKURL"))
 			for dest in destinations:
 				if dest in hooks:
 					for i in toprint:
+						if i == "":
+							continue
 						response = requests.post(hooks[dest], {"content": i})
 						if not 200 <= response.status_code < 300:
 							print("Webhook Write Failed: " + str(response.status_code) + ": " + response.text)
