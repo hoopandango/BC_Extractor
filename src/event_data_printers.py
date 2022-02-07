@@ -158,7 +158,7 @@ class Funky(Resource):
 			if LOGGING:
 				response = requests.post(LOGURL, {"attachments": [{"filename": config['outputs']['eventdata'] + "export.json"}]})
 				if not 200 <= response.status_code < 300:
-					print(str(response))
+					print(response.json())
 		
 		print(f"over - {time.time() - start}")
 		StageParsers.updateEventNames()
