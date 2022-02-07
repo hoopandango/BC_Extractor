@@ -156,7 +156,9 @@ class Funky(Resource):
 			json.dump(for_export, fl0, indent=2, default=unfuck_dates)
 		if credentials.get("LOCAL") == "FALSE":
 			if LOGGING == 'True':
-				requests.post(LOGURL, {"attachments": [{"filename": config['outputs']['eventdata'] + "export.json"}]})
+				response = requests.post(LOGURL, {"attachments": [{"filename": config['outputs']['eventdata'] + "export.json"}]})
+				if not 200 <= response.status_code < 300:
+					print(str(response))
 		
 		print(f"over - {time.time() - start}")
 		StageParsers.updateEventNames()
