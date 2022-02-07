@@ -495,6 +495,9 @@ class ItemFetcher(UniversalFetcher):
 				i.text = data[11]
 				i.clr = self.clr
 				
+				if 11000 <= i.ID < 12000:  # ponos has dumb syndrome and puts ranked dojo stage and reward in different files
+					continue
+				
 				if 900 <= i.ID < 1000 and "Stamp" not in i.text:  # Login Stamp
 					i.name = i.text + ' (Login Stamp)'
 					self.finalItems.append(Item.fromEvent(i))
