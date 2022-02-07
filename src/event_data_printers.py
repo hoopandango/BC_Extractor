@@ -154,7 +154,7 @@ class Funky(Resource):
 			fl0.write("".join(toprint))
 		with open(config["outputs"]["eventdata"] + "export.json", mode='w+') as fl0:
 			json.dump(for_export, fl0, indent=2, default=unfuck_dates)
-		if credentials.get("LOCAL") == "FALSE":
+		if not LOCAL:
 			if LOGGING == 'True':
 				response = requests.post(LOGURL, {"attachments": [{"filename": config['outputs']['eventdata'] + "export.json"}]})
 				if not 200 <= response.status_code < 300:
