@@ -15,10 +15,6 @@ import flask
 from flask_restful import Resource
 from flask_httpauth import HTTPBasicAuth
 
-CASE = 0
-LANG = 'en'
-f = ['N']
-
 with open("_config.json") as fl:
 	config = json.load(fl)
 
@@ -35,6 +31,7 @@ LOGURL = credentials.get("LOGURL")
 TIMED = credentials.get("TIMING") == 'True'
 LOCAL = credentials.get("LOCAL") == 'True'
 LOGGING = credentials.get("LOGGING") == 'True'
+TESTING = credentials.get("TESTING") == 'True'
 
 
 @auth.verify_password
@@ -44,18 +41,7 @@ def verify_password(username, password):
 	elif credentials["SUPERUSER"] == username and credentials["SUPERPASS"] == password:
 		return username
 
-def fetch_test(lang: str, num: int) -> dict[str, str]:
-	toret = {}
-	for cat in ["Gatya", "Sale", "Item"]:
-		text = ""
-		with open(f"../tests/in/{lang}{num}{cat[0]}.tsv", encoding='utf-8') as fl0:
-			rows = fl0.read().split('\n')
-			for row in rows:
-				if row.startswith('+ '):
-					text += row[2:] + '\n'
-		toret[cat] = text
-	return toret
-
+# region fetching from godfat
 URLs = {"Gatya": "https://bc-seek.godfat.org/seek/%s/gatya.tsv",
         "Sale": "https://bc-seek.godfat.org/seek/%s/sale.tsv",
         "Item": "https://bc-seek.godfat.org/seek/%s/item.tsv"}
@@ -71,20 +57,24 @@ async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 				toret[U] = await response.text()
 	
 	return toret
+# endregion
 
 def print_t(X: any) -> None:
 	if TIMED:
 		print(X)
-		
+
 class Funky(Resource):
 	@auth.login_required
 	def post(self) -> str:
 		start = time.time()
-		if TIMED: print_t(f"started at {start}")
+		print_t(f"started at {start}")
 		
+		# read query
 		js = flask_restful.request.get_json()
 		texts = js["diffs"]
 		ver = "BC" + (js["version"][:2] if js.get("version") is not None else "??").upper()
+		if ver not in ["BCEN", "BCJP"]:
+			return "sorry we only take en/jp here"
 		plain = js.get("plain") if js.get("plain") is not None else True
 
 		clr = Colourer()
@@ -99,15 +89,16 @@ class Funky(Resource):
 					toput += row[2:] + '\n'
 			texts[key] = toput
 		
-		gf = GatyaFetcher(fls=f, coloured=clr)
-		sf = StageFetcher(fls=f, coloured=clr)
-		itf = ItemFetcher(fls=f, coloured=clr)
+		# process query
+		gf = GatyaFetcher(fls=['N'], coloured=clr)
+		sf = StageFetcher(fls=['N'], coloured=clr)
+		itf = ItemFetcher(fls=['N'], coloured=clr)
 		
 		gf.fetchRawData(texts["Gatya"])
 		sf.fetchRawData(texts["Sale"])
 		itf.fetchRawData(texts["Item"])
 		
-		if LOGGING == 'True':
+		if LOGGING:
 			requests.post(LOGURL, {"content": "```\n"+str(js)+"\n```"})
 		
 		print_t(f"reading raw gatya - {time.time() - start}")
@@ -134,6 +125,7 @@ class Funky(Resource):
 		
 		print_t(f"printing stuff - {time.time() - start}")
 		
+		# output query
 		toprint: list[str] = [f"**{ver} EVENT DATA**\n"]
 		toprint[0] += gf.printGatya()
 		toprint[0] += sf.printStages()
@@ -147,38 +139,52 @@ class Funky(Resource):
 		def unfuck_dates(obj):
 			if isinstance(obj, datetime.datetime):
 				return obj.isoformat()
+			elif isinstance(obj, Colourer):
+				return obj.ENABLED
 			else:
 				return str(obj)
 		
-		with open(config["outputs"]["eventdata"] + "gatya_final.txt", "w+", encoding='utf-8') as fl0:
+		with open(config["outputs"]["eventdata"] + "output.txt", "w+", encoding='utf-8') as fl0:
 			fl0.write("".join(toprint))
 		with open(config["outputs"]["eventdata"] + "export.json", mode='w+') as fl0:
 			json.dump(for_export, fl0, indent=2, default=unfuck_dates)
+			
 		if not LOCAL:
 			if LOGGING:
-				response = requests.post(LOGURL, {"attachments": [{"filename": config['outputs']['eventdata'] + "export.json"}]})
-				if not 200 <= response.status_code < 300:
-					print(response.json())
+				files = {"file1": open(config["outputs"]["eventdata"] + "export.json", mode="r", encoding='utf-8')}
+				requests.post(LOGURL, files=files)
+				
+				files = {"file2": open(config["outputs"]["eventdata"] + "output.txt", mode="r", encoding='utf-8')}
+				requests.post(LOGURL, files=files)
 		
 		print(f"over - {time.time() - start}")
 		StageParsers.updateEventNames()
 		# gf.exportGatya()
 		# sf.exportStages()
 		if auth.username() == credentials["SUPERUSER"]:
-			X = js["destinations"]
-			if X is None: X = '["test"]'
-			if credentials.get("TESTING") == "True":
-				X = '["test"]'
-			destinations = json.loads(X)
+			destinations = js["destinations"]
+			if destinations is None or TESTING:
+				destinations = ["test"]
+				
 			for dest in destinations:
 				if dest in hooks:
 					for i in toprint:
 						if i == "":
 							continue
-						response = requests.post(hooks[dest], {"content": i})
-						if not 200 <= response.status_code < 300:
-							print("Webhook Write Failed: " + str(response.status_code) + ": " + response.text)
-							return "Webhook Write Failed"
+						requests.post(hooks[dest], {"content": i})
+			
+			if "rbc" in destinations:
+				files = {"file1": open(config["outputs"]["eventdata"] + "output.txt", mode="r", encoding='utf-8')}
+				requests.post(hooks["rbc"], files=files)
+				
+			if "fandom" in destinations:
+				if ver == "BCEN":
+					role = 647882379184308254
+				else:
+					role = 654577263605710850
+				requests.post(hooks["fandom"], {"content": f"pinging <@&{role}>"})
+
+			# requests.post(hooks["test"], {"content": f"pinging <@&837036121628213249>"})
 		return "".join(toprint)
 
 app = flask.Flask(__name__)

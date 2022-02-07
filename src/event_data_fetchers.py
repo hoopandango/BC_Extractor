@@ -461,7 +461,11 @@ class StageFetcher(UniversalFetcher):
 		return toret
 	
 	def package(self):
-		return [[X.package() for X in Y] for Y in [self.finalStages, self.sales, self.missions]]
+		return {
+			"stages": self.finalStages,
+			"sales": self.sales,
+			"missions": self.missions
+		}
 	
 class ItemFetcher(UniversalFetcher):
 	def __init__(self, **kwargs):
