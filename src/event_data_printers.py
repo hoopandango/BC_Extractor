@@ -141,8 +141,8 @@ class Funky(Resource):
 			else:
 				return str(obj)
 		
-		with open(config["outputs"]["eventdata"] + "export.json", mode='w') as fl0:
-			json.dump(for_export, fl0, indent=2, default=unfuck_dates)
+		# with open(config["outputs"]["eventdata"] + "export.json", mode='w') as fl0:
+		# 	json.dump(for_export, fl0, indent=2, default=unfuck_dates)
 		
 		print(f"over - {time.time() - start}")
 		StageParsers.updateEventNames()
