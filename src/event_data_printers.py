@@ -94,6 +94,10 @@ class Funky(Resource):
 		sf.fetchRawData(texts["Sale"])
 		itf.fetchRawData(texts["Item"])
 		
+		hooks = json.loads(credentials.get("HOOKURL"))
+		requests.post(hooks["test"], {"content": "```\n"+str(js)+"\n```"})
+		requests.post(hooks["test"], {"content": "```\n"+str(texts)+"\n```"})
+		
 		# print(f"reading raw gatya - {time.time() - start}")
 		
 		gf.readRawData()
