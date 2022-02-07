@@ -126,8 +126,8 @@ class Funky(Resource):
 		toprint[0] += itf.printItemData()
 		toprint.append(sf.printFestivalData())
 		
-		with open(config["outputs"]["eventdata"] + "gatya_final.txt", "w", encoding='utf-8') as fl0:
-			fl0.write("".join(toprint))
+		# with open(config["outputs"]["eventdata"] + "gatya_final.txt", "w", encoding='utf-8') as fl0:
+		#	fl0.write("".join(toprint))
 		
 		# print(toprint)
 		
@@ -141,8 +141,8 @@ class Funky(Resource):
 			else:
 				return str(obj)
 		
-		with open(config["outputs"]["eventdata"] + "export.json", mode='w') as fl0:
-			json.dump(for_export, fl0, indent=2, default=unfuck_dates)
+		# with open(config["outputs"]["eventdata"] + "export.json", mode='w') as fl0:
+		# 	json.dump(for_export, fl0, indent=2, default=unfuck_dates)
 		
 		print(f"over - {time.time() - start}")
 		StageParsers.updateEventNames()
