@@ -205,7 +205,6 @@ def process_all():
 
 def extract():
 	process_all()
-
 	# Export management
 
 	conn1 = sqlite3.connect(fl_out)
