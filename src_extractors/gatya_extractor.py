@@ -218,6 +218,7 @@ def extract():
 	with open(config["outputs"]["gatya_json"], 'w', encoding='utf-8') as fl1:
 		json.dump(json_data, fl1, ensure_ascii=False, indent=2,
 							default=lambda x: int(x) if isinstance(x, np.integer) else x)
+		
 	df_units.to_sql('units', conn1, if_exists='replace', index=True)
 
 	sys.stdout.close()
