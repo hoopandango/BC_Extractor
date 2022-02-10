@@ -2,7 +2,7 @@ import json
 import pandas as pd
 import csv
 
-with open('../../_config.json') as fl:
+with open('_config.json') as fl:
 	config = json.load(fl)
 
 LNG = config['setup']['LNG']
@@ -68,5 +68,3 @@ def updateItems():
 			except KeyError:
 				writer.writerow({"ID": row, "name": out[row], "severID": -1})
 	print("done")
-
-updateItems()

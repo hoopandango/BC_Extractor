@@ -2,10 +2,10 @@ import json
 import pandas as pd
 
 # region setup
-with open('../../_config.json') as fl:
+with open('_config.json') as fl:
 	config = json.load(fl)
 
-with open('../../_schemas.json') as fl:
+with open('_schemas.json') as fl:
 	schemas = json.load(fl)["sales"]
 
 LNG = config['setup']['LNG']
@@ -48,11 +48,14 @@ def load_localisable():
 	df = df.dropna(axis='rows')
 	return df
 
-# Ungrouped Sales
-dt = pd.concat([load_item_pack(), load_localisable()], axis=1, join='inner')
+def extract():
+	# Ungrouped Sales
+	dt = pd.concat([load_item_pack(), load_localisable()], axis=1, join='inner')
 
-# Grouped Sales
-dt = dt.groupby('severID').agg(lambda x: x.tolist())
-dt = dt.applymap(lambda x: '|'.join(x))
+	# Grouped Sales
+	dt = dt.groupby('severID').agg(lambda x: x.tolist())
+	dt = dt.applymap(lambda x: '|'.join(x))
 
-dt.to_csv(fl_out, sep='\t')
+	dt.to_csv(fl_out, sep='\t')
+	
+	print("Extracted sales")

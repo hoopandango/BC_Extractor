@@ -2,10 +2,10 @@ import json
 import csv
 import os
 
-with open('../../_config.json') as fl:
+with open('_config.json') as fl:
 	config = json.load(fl)
 
-with open('../../_schemas.json') as fl:
+with open('_schemas.json') as fl:
 	schema = json.load(fl)['units']
 
 LNG = config['setup']['LNG']
@@ -44,13 +44,14 @@ def read_stuff(lng: str):
 		if (curr[1].strip() != "" and not curr[1][0:-2].isnumeric()):
 			names.append(curr)
 
-read_stuff('en')
-read_stuff('jp')
+def extract():
+	read_stuff('en')
+	read_stuff('jp')
 
-names[1:] = sorted(names[1:])
+	names[1:] = sorted(names[1:])
 
-with open(config['outputs']['units'], 'w', encoding='utf-8', newline='') as fl:
-	w = csv.writer(fl, delimiter='\t')
-	w.writerows(names)
+	with open(config['outputs']['units'], 'w', encoding='utf-8', newline='') as fl:
+		w = csv.writer(fl, delimiter='\t')
+		w.writerows(names)
 
-print("Finished Writing")
+	print("finished extracting units")

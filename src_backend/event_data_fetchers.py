@@ -498,8 +498,10 @@ class ItemFetcher(UniversalFetcher):
 				if 11000 <= i.ID < 12000:  # ponos has dumb syndrome and puts ranked dojo stage and reward in different files
 					continue
 				
-				if 900 <= i.ID < 1000 and "Stamp" not in i.text:  # Login Stamp
-					i.name = i.text + ' (Login Stamp)'
+				if 900 <= i.ID < 1000:  # Login Stamp
+					i.name = i.text
+					if 'Stamp' not in i.text:
+						i.name += ' (Login Stamp)'
 					self.finalItems.append(Item.fromEvent(i))
 				elif 800 <= i.ID < 900:
 					i.name = Readers.getSaleBySever(i.ID)

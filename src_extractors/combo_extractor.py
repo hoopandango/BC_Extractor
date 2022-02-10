@@ -6,10 +6,10 @@ import json
 sizes = ['UP Sm', 'UP M', 'UP L', 'UP XL']
 
 # region setup
-with open('../../_config.json') as fl:
+with open('_config.json') as fl:
 	config = json.load(fl)
 
-with open('../../_schemas.json') as fl:
+with open('_schemas.json') as fl:
 	schemas = json.load(fl)['combos']
 
 # Set true to save DB in CatBot format
@@ -39,7 +39,7 @@ interm = config['intermediates']['combos']
 
 def invert_imp():
 	config['setup']['combos']['loadmode'] = not LOADMODE
-	with open('../../_config.json', mode='w') as fl1:
+	with open('../_config.json', mode='w') as fl1:
 		json.dump(config, fl1, indent='\t')
 
 try:

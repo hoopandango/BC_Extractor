@@ -1,4 +1,6 @@
 import json
+
+import numpy as np
 import pandas as pd
 import csv
 import sqlite3
@@ -7,28 +9,41 @@ from collections import Counter, defaultdict
 import sys
 
 # region setup
-from local_readers import Readers
+from src_backend.local_readers import Readers
 
-with open('../../_config.json') as fl:
+with open('_config.json') as fl:
 	config = json.load(fl)
 
 sys.stdout = open(config["outputs"]["gatya_text"], 'w', encoding='utf-8')
 
-with open('../../_schemas.json') as fl:
+with open('_schemas.json') as fl:
 	schema = json.load(fl)['gatya']
 
 LNG = config['setup']['LNG']
 
 flnames_jp = config['inputs']['jp']['gatya']
+flnames_en = config['inputs']['en']['gatya']
 fl_out = config['outputs']['gatya']
 
 with open(flnames_jp["data"], encoding='utf-8') as fl:
 	rd = csv.reader(fl)
 	gatya_info = [[int(x) for x in row[0:row.index('-1')]] for row in rd if '-1' in row]
+	
+with open(flnames_en["data"], encoding='utf-8') as fl:
+	rd = csv.reader(fl)
+	temp = [[int(x) for x in row[0:row.index('-1')]] for row in rd if '-1' in row]
+	
 
 with open(flnames_jp["option"], encoding='utf-8') as fl:
 	options = pd.read_csv(fl, delimiter='\t', index_col=0)
-
+	
+with open(flnames_en["option"], encoding='utf-8') as fl:
+	temp2 = pd.read_csv(fl, delimiter='\t', index_col=0)
+	
+if len(temp) > len(gatya_info):
+	gatya_info = temp
+	options = temp2
+	
 try:
 	conn = sqlite3.connect(fl_out)
 except sqlite3.OperationalError:
@@ -190,19 +205,20 @@ def process_all():
 		row = str([Readers.getCat(x, 0) for x in gatya])
 		df_units.loc[ID] = row
 
-process_all()
+def extract():
+	process_all()
 
-# Export management
+	# Export management
 
-conn = sqlite3.connect(fl_out)
+	conn1 = sqlite3.connect(fl_out)
 
-series.to_sql('series', conn, if_exists='replace', index=True)
-df_main.to_sql('main', conn, if_exists='replace', index=True)
+	series.to_sql('series', conn1, if_exists='replace', index=True)
+	df_main.to_sql('main', conn1, if_exists='replace', index=True)
 
-with open(config["outputs"]["gatya_json"], 'w', encoding='utf-8') as fl:
-	json.dump(json_data, fl, ensure_ascii=False, indent=2)
-df_units.to_sql('units', conn, if_exists='replace', index=True)
+	with open(config["outputs"]["gatya_json"], 'w', encoding='utf-8') as fl1:
+		json.dump(json_data, fl1, ensure_ascii=False, indent=2,
+							default=lambda x: int(x) if isinstance(x, np.integer) else x)
+	df_units.to_sql('units', conn1, if_exists='replace', index=True)
 
-sys.stdout.close()
-conn.close()
-input()
+	sys.stdout.close()
+	conn1.close()

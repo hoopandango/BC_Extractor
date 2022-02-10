@@ -7,8 +7,8 @@ import os
 import flask_restful
 import requests
 
-from .event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StageParsers
-from .containers import Colourer
+from src_backend.event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StageParsers
+from src_backend.containers import Colourer
 import asyncio
 import aiohttp
 import flask
@@ -24,15 +24,16 @@ with open("_config.json") as fl:
 
 auth = HTTPBasicAuth()
 credentials = os.environ
+if credentials is None:
+	credentials = {}
 
-hooks = json.loads(credentials.get("HOOKURL"))
+hooks = json.loads(credentials.get("HOOKURL", "{}"))
 LOGURL = credentials.get("LOGURL")
 
 TIMED = credentials.get("TIMING") == 'True'
 LOCAL = credentials.get("LOCAL") == 'True'
 LOGGING = credentials.get("LOGGING") == 'True'
 TESTING = credentials.get("TESTING") == 'True'
-
 
 @auth.verify_password
 def verify_password(username, password):
