@@ -182,6 +182,8 @@ def process_all():
 		bonuses = {K: [Readers.getCat(X, 0) for X in V] for (K, V) in bonuses.items()}
 		if (len(bonuses) > 0):
 			print(" {" + ", ".join([f"{K}x rate on {', '.join(V)}" for (K, V) in bonuses.items()]) + "}", end='')
+			
+		print( )
 		
 		# END OF PRINTING
 		# "banner_ID" -> "banner_name","exclusives","rate_ups","diff+","diff-","enabled","series_ID"
