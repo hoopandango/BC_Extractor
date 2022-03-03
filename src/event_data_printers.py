@@ -183,7 +183,8 @@ class Funky(Resource):
 					role = 647882379184308254
 				else:
 					role = 654577263605710850
-				requests.post(hooks["fandom"], {"content": f"pinging <@&{role}>"})
+				if len(toprint[0]) > 800:
+					requests.post(hooks["fandom"], {"content": f"pinging <@&{role}>"})
 
 			# requests.post(hooks["test"], {"content": f"pinging <@&837036121628213249>"})
 		return "".join(toprint)

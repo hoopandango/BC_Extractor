@@ -27,7 +27,7 @@ class Downloaders:
 	
 	@staticmethod
 	def requestGatya(ID: int, lng: str, cat: str = 'R') -> str:
-		prefix = "http://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/gacha/"
+		prefix = "https://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/gacha/"
 		if lng != 'jp':
 			l = lng + '/'
 		else:

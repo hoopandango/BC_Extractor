@@ -39,7 +39,7 @@ interm = config['intermediates']['combos']
 
 def invert_imp():
 	config['setup']['combos']['loadmode'] = not LOADMODE
-	with open('../_config.json', mode='w') as fl1:
+	with open('_config.json', mode='w') as fl1:
 		json.dump(config, fl1, indent='\t')
 
 try:
@@ -47,7 +47,6 @@ try:
 	print("Database for CatCombos found")
 except sqlite3.OperationalError:  # database not found
 	print("Database for CatCombos not found")
-	input()
 
 if CBMODE:
 	try:
@@ -55,7 +54,6 @@ if CBMODE:
 		print("Intermediate Database for CatCombos found")
 	except sqlite3.OperationalError:  # database not found
 		print("Intermediate Database for CatCombos not found")
-		input()
 
 
 def get_combo_sizes_table() -> DataFrame:

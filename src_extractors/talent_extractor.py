@@ -35,7 +35,7 @@ def updateTalentsTable():
 	final = pd.DataFrame(columns=CatBotColumns)
 	
 	# Break table into 5 tables and merge them
-	for i in range(5):
+	for i in range(6):
 		s = df.iloc[:, [0] + list(range(l * i + 2, l * (i + 1) + 1))]
 		s.columns = CatBotColumns
 		final = final.append(s)
@@ -79,5 +79,3 @@ def updateDescriptionsTable():
 updateTalentsTable()
 updateLevelsTable()
 updateDescriptionsTable()
-
-input()

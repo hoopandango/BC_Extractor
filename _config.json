@@ -3,9 +3,9 @@
 		"LNG": "jp",
 		"combos": {
 			"catbotmode": true,
-			"loadmode": false
+			"loadmode": true
 		},
-        "credentials": "_credentials.json"
+		"credentials": "_credentials.json"
 	},
 	"inputs": {
 		"en": {
@@ -94,7 +94,7 @@
 		"substages": "reusables/substages.tsv",
 		"enemies": "reusables/enemies.tsv",
 		"combos2": "reusables/combos.tsv",
-        "extras": "extras/Events.tsv",
-        "groups": "extras/EventGroups.json"
+		"extras": "extras/Events.tsv",
+		"groups": "extras/EventGroups.json"
 	}
 }

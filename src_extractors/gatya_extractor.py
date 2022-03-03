@@ -14,8 +14,6 @@ from src_backend.local_readers import Readers
 with open('_config.json') as fl:
 	config = json.load(fl)
 
-sys.stdout = open(config["outputs"]["gatya_text"], 'w', encoding='utf-8')
-
 with open('_schemas.json') as fl:
 	schema = json.load(fl)['gatya']
 
@@ -101,7 +99,7 @@ def get_head(s_ID: int) -> int:
 	try:
 		return series.loc[s_ID, "head"]
 	except KeyError:
-		series.loc[s_ID] = ["Placeholder", -1]
+		series.loc[s_ID] = ["Unknown", -1]
 		return series.loc[s_ID, "head"]
 
 def diff_gatya(new: list, old: list) -> list:
@@ -122,8 +120,8 @@ df_units = pd.DataFrame(columns=schema['units']).set_index(schema['units'][0])
 row = [0, 0, 0, 0]
 # Processes all gatya
 
-
 def process_all():
+	toret = ""
 	for (ID, gatya) in enumerate(gatya_info):
 		s_ID = get_SID(ID)
 		prev = get_head(s_ID)
@@ -138,14 +136,14 @@ def process_all():
 			diff = diff_gatya(gatya, gatya_info[prev])
 		
 		# normal version
-		print(str(ID) + '\t', end='')
+		toret += str(ID) + '\t'
 		if (prev != -1):
 			if len(diff[0]) == len(diff[1]) == 0:
-				print(f"(≅ {prev})", end='')
+				toret += f"(≅ {prev})"
 			else:
 				json_data[prev]["diff"] = [[], []]
 				set_head(s_ID, ID)
-				print(f"(> {prev})", end='')
+				toret += f"(> {prev})"
 		
 		""" funky backchecker version
 		if(prev != -1):
@@ -157,33 +155,33 @@ def process_all():
 			print(f"(> {prev})",end='')
 		"""
 		
-		print(f"\t{serie}\t", end='')
+		toret += f"\t{serie}\t"
 		
 		# Get banner exclusives
 		if excl != []:
-			print(f" [{' + '.join(excl)}]", end='')
+			toret += f" [{' + '.join(excl)}]"
 		
 		# Diff from previous banner:
 		if (len(diff[0]) > 0):
 			diff[0] = [Readers.getCat(i, 0) for i in diff[0]]
 			if (len(diff[0]) < 6):
 				
-				print(f" (+ {', '.join(diff[0])})", end='')
+				toret += f" (+ {', '.join(diff[0])})"
 			else:
-				print(f" (+ a lot)", end='')
+				f" (+ a lot)"
 		if (len(diff[1]) > 0):
 			diff[1] = [Readers.getCat(i, 0) for i in diff[1]]
 			if (len(diff[1]) < 6):
-				print(f" (- {', '.join(diff[1])})", end='')
+				f" (- {', '.join(diff[1])})"
 			else:
-				print(f" (- a lot)", end='')
+				toret += f" (- a lot)"
 		
 		bonuses = bonus_check(gatya)
 		bonuses = {K: [Readers.getCat(X, 0) for X in V] for (K, V) in bonuses.items()}
 		if (len(bonuses) > 0):
-			print(" {" + ", ".join([f"{K}x rate on {', '.join(V)}" for (K, V) in bonuses.items()]) + "}", end='')
+			toret += " {" + ", ".join([f"{K}x rate on {', '.join(V)}" for (K, V) in bonuses.items()]) + "}"
 			
-		print( )
+		toret += "\n"
 		
 		# END OF PRINTING
 		# "banner_ID" -> "banner_name","exclusives","rate_ups","diff+","diff-","enabled","series_ID"
@@ -204,6 +202,9 @@ def process_all():
 		
 		row = str([Readers.getCat(x, 0) for x in gatya])
 		df_units.loc[ID] = row
+		
+		with open(config["outputs"]["gatya_text"], 'w', encoding='utf-8') as fl_out1:
+			fl_out1.write(toret)
 
 def extract():
 	process_all()
@@ -220,5 +221,4 @@ def extract():
 		
 	df_units.to_sql('units', conn1, if_exists='replace', index=True)
 
-	sys.stdout.close()
 	conn1.close()
