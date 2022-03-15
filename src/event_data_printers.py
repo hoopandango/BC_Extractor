@@ -51,7 +51,7 @@ URLs = {"Gatya": "https://bc-seek.godfat.org/seek/%s/gatya.tsv",
 
 if platform.system() == "Windows":
 	asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-	
+
 async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 	toret = {}
 	async with aiohttp.ClientSession() as session:
@@ -60,99 +60,120 @@ async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 				toret[U] = await response.text()
 	
 	return toret
+
 # endregion
 
 def print_t(X: any) -> None:
 	if TIMED:
 		print(X)
 
+def process(js):
+	start = time.time()
+	print_t(f"started at {start}")
+	texts = js["diffs"]
+	ver = "BC" + (js["version"][:2] if js.get("version") is not None else "??").upper()
+	if ver not in ["BCEN", "BCJP"]:
+		return "sorry we only take en/jp here"
+	plain = js.get("plain") if js.get("plain") is not None else True
+	
+	clr = Colourer()
+	if not plain:
+		clr.enable()
+	
+	dummy = js.copy()
+	dummy["diffs"] = {}
+	for key in texts:
+		rows = texts[key].split("\n")
+		toput = ""
+		tonotput = ""
+		for row in rows:
+			if row.startswith('- '):
+				tonotput += row[2:] + '\n'
+			elif row.startswith('+ '):
+				toput += row[2:] + '\n'
+			else:
+				toput += row + '\n'
+		texts[key] = toput
+		dummy["diffs"][key] = tonotput
+	
+	# sends a query to process the - rows
+	dummy["destinations"] = ["test"]
+	
+	# process query
+	gf = GatyaFetcher(fls=['N'], coloured=clr)
+	sf = StageFetcher(fls=['N'], coloured=clr)
+	itf = ItemFetcher(fls=['N'], coloured=clr)
+	
+	gf.fetchRawData(texts["Gatya"])
+	sf.fetchRawData(texts["Sale"])
+	itf.fetchRawData(texts["Item"])
+	
+	if LOGGING:
+		files = {"input.json": io.StringIO(ast.literal_eval(f'"{str(js)}"'))}
+		requests.post(LOGURL, files=files)
+	
+	print_t(f"reading raw gatya - {time.time() - start}")
+	
+	gf.readRawData()
+	
+	print_t(f"reading raw stages - {time.time() - start}")
+	sf.readRawData(storeRejects=True)
+	print_t(f"reading raw items - {time.time() - start}")
+	itf.readRawData()
+	
+	print_t(f"merging items and stages - {time.time() - start}")
+	sd0 = sf.refinedStages
+	sd1 = itf.refinedData
+	
+	sd0.extend(sd1)
+	
+	print_t(f"grouping stages - {time.time() - start}")
+	
+	sf.finalStages, sf.festivals, sf.sales, sf.missions = sf.groupData(sf.refinedStages.copy())
+	gf.refinedGatya = gf.groupData(gf.refinedGatya)[0]
+	itf.finalItems = itf.groupData(itf.finalItems)[0]
+	sf.sortAll()
+	
+	print_t(f"printing stuff - {time.time() - start}")
+	
+	# output query
+	toprint: list[str] = [f"**{ver} EVENT DATA**\n"]
+	toprint[0] += gf.printGatya()
+	toprint[0] += sf.printStages()
+	toprint[0] += itf.printItemData()
+	toprint.append(sf.printFestivalData())
+	
+	for_export = {"gatya": gf.package(),
+	              "stages": sf.package(),
+	              "items": itf.package()}
+	
+	def unfuck_dates(obj):
+		if isinstance(obj, datetime.datetime):
+			return obj.isoformat()
+		elif isinstance(obj, Colourer):
+			return obj.ENABLED
+		else:
+			return str(obj)
+	
+	with open(config["outputs"]["eventdata"] + "output.txt", "w+", encoding='utf-8') as fl0:
+		fl0.write("".join(toprint))
+	with open(config["outputs"]["eventdata"] + "export.json", mode='w+') as fl0:
+		json.dump(for_export, fl0, indent=2, default=unfuck_dates)
+	
+	print(f"over - {time.time() - start}")
+	StageParsers.updateEventNames()
+	return dummy, toprint
+
 class Funky(Resource):
 	@auth.login_required
 	def post(self) -> str:
-		start = time.time()
-		print_t(f"started at {start}")
-		
 		# read query
 		js = flask_restful.request.get_json()
-		texts = js["diffs"]
 		ver = "BC" + (js["version"][:2] if js.get("version") is not None else "??").upper()
 		if ver not in ["BCEN", "BCJP"]:
-			return "sorry we only take en/jp here"
-		plain = js.get("plain") if js.get("plain") is not None else True
-
-		clr = Colourer()
-		if not plain:
-			clr.enable()
+			return ("unsupported version")
+		dummy, toprint = process(js)
 		
-		for key in texts:
-			rows = texts[key].split("\n")
-			toput = ""
-			for row in rows:
-				if row.startswith('+ '):
-					toput += row[2:] + '\n'
-			texts[key] = toput
-		
-		# process query
-		gf = GatyaFetcher(fls=['N'], coloured=clr)
-		sf = StageFetcher(fls=['N'], coloured=clr)
-		itf = ItemFetcher(fls=['N'], coloured=clr)
-		
-		gf.fetchRawData(texts["Gatya"])
-		sf.fetchRawData(texts["Sale"])
-		itf.fetchRawData(texts["Item"])
-		
-		if LOGGING:
-			files = {"input.json": io.StringIO(ast.literal_eval(f'"{str(js)}"'))}
-			requests.post(LOGURL, files=files)
-		
-		print_t(f"reading raw gatya - {time.time() - start}")
-		
-		gf.readRawData()
-		
-		print_t(f"reading raw stages - {time.time() - start}")
-		sf.readRawData(storeRejects=True)
-		print_t(f"reading raw items - {time.time() - start}")
-		itf.readRawData()
-		
-		print_t(f"merging items and stages - {time.time() - start}")
-		sd0 = sf.refinedStages
-		sd1 = itf.refinedData
-		
-		sd0.extend(sd1)
-		
-		print_t(f"grouping stages - {time.time() - start}")
-		
-		sf.finalStages, sf.festivals, sf.sales, sf.missions = sf.groupData(sf.refinedStages.copy())
-		gf.refinedGatya = gf.groupData(gf.refinedGatya)[0]
-		itf.finalItems = itf.groupData(itf.finalItems)[0]
-		sf.sortAll()
-		
-		print_t(f"printing stuff - {time.time() - start}")
-		
-		# output query
-		toprint: list[str] = [f"**{ver} EVENT DATA**\n"]
-		toprint[0] += gf.printGatya()
-		toprint[0] += sf.printStages()
-		toprint[0] += itf.printItemData()
-		toprint.append(sf.printFestivalData())
-		
-		for_export = {"gatya": gf.package(),
-		              "stages": sf.package(),
-		              "items": itf.package()}
-		
-		def unfuck_dates(obj):
-			if isinstance(obj, datetime.datetime):
-				return obj.isoformat()
-			elif isinstance(obj, Colourer):
-				return obj.ENABLED
-			else:
-				return str(obj)
-		
-		with open(config["outputs"]["eventdata"] + "output.txt", "w+", encoding='utf-8') as fl0:
-			fl0.write("".join(toprint))
-		with open(config["outputs"]["eventdata"] + "export.json", mode='w+') as fl0:
-			json.dump(for_export, fl0, indent=2, default=unfuck_dates)
-			
 		if not LOCAL:
 			if LOGGING:
 				files = {"file1": open(config["outputs"]["eventdata"] + "export.json", mode="r", encoding='utf-8')}
@@ -161,15 +182,11 @@ class Funky(Resource):
 				files = {"file2": open(config["outputs"]["eventdata"] + "output.txt", mode="r", encoding='utf-8')}
 				requests.post(LOGURL, files=files)
 		
-		print(f"over - {time.time() - start}")
-		StageParsers.updateEventNames()
-		# gf.exportGatya()
-		# sf.exportStages()
 		if auth.username() == credentials["SUPERUSER"] and len(toprint[0]) + len(toprint[1]) > 30:
 			destinations = js["destinations"]
 			if destinations is None or TESTING:
 				destinations = ["test"]
-				
+			
 			for dest in destinations:
 				if dest in hooks:
 					for i in toprint:
@@ -180,7 +197,7 @@ class Funky(Resource):
 			if "rbc" in destinations:
 				files = {"file1": open(config["outputs"]["eventdata"] + "output.txt", mode="r", encoding='utf-8')}
 				requests.post(hooks["rbc"], files=files)
-				
+			
 			if "fandom" in destinations:
 				if ver == "BCEN":
 					role = 647882379184308254
@@ -188,8 +205,12 @@ class Funky(Resource):
 					role = 654577263605710850
 				if len(toprint[0]) > 800:
 					requests.post(hooks["fandom"], {"content": f"pinging <@&{role}>"})
-
-			# requests.post(hooks["test"], {"content": f"pinging <@&837036121628213249>"})
+			
+			tosend = process(dummy)[1][0]
+			files = {"removed_stuff.txt": io.StringIO(tosend)}
+			requests.post(hooks["test", "release"], files=files)
+		
+		# requests.post(hooks["test"], {"content": f"pinging <@&837036121628213249>"})
 		return "".join(toprint)
 
 app = flask.Flask(__name__)
