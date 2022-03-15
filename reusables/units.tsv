@@ -1,163 +1,163 @@
 unit_ID	name_f	name_c	name_s
-0	Cat	Macho Cat	Mohawk Cat
-1	Tank Cat	Wall Cat	Eraser Cat
-2	Axe Cat	Brave Cat	Dark Cat
-3	Gross Cat	Sexy Legs Cat	Macho Leg Cat
-4	Cow Cat	Giraffe Cat	Lion Cat
-5	Bird Cat	UFO Cat	The Flying Cat
-6	Fish Cat	Whale Cat	Island Cat
-7	Lizard Cat	Dragon Cat	King Dragon Cat
-8	Titan Cat	Mythical Titan Cat	Jamiera Cat
-9	Actress Cat	Mother Cat	Beefcake Cat
-10	Kung Fu Cat	Drunken Master Cat	Dancer Cat
+0	ネコ	ネコビルダー	ネコモヒカン
+1	タンクネコ	ネコカベ	ゴムネコ
+2	バトルネコ	勇者ネコ	暗黒ネコ
+3	キモネコ	美脚ネコ	ムキあしネコ
+4	ウシネコ	ネコキリン	ネコライオン
+5	ネコノトリ	ネコＵＦＯ	天空のネコ
+6	ネコフィッシュ	ネコクジラ	ネコ島
+7	ネコトカゲ	ネコドラゴン	ネコキングドラゴン
+8	巨神ネコ	ネコダラボッチ	ネコジャラミ
+9	ネコ女優	ネコ聖母	ネコマッチョ
+10	カンフーにゃんこ	酔拳にゃんこ	ネコダンサー
 11	Mr.	Super Mr.	Hyper Mr.
-12	Bondage Cat	Bondage CatNEO	Ultimate Bondage Cat
-13	Dom Cat	Executioner	Dark Lazer
-14	Cats in a Box	Cat Gang	Heavy Assault C.A.T.
-15	Panties Cat	Leaf Cat	Lollycat
-16	Moneko	Miss MONEKO	Superstar MONEKO
-17	Tricycle Cat	Biker Cat	Unicycle Cat
-18	Ninja Cat	Ninja Frog Cat	Flying Ninja Cat
-19	Zombie Cat	Devil Cat	Skelecat
-20	Samurai Cat	Knight Cat	Pastry Cat
-21	Sumo Cat	Madame Sumo	Riceball Cat
-22	Boogie Cat	Samba Cat	Gato Amigo
-23	Skirt Cat	Tights Cat	Loincloth Cat
-24	Valkyrie Cat	True Valkyrie Cat	Holy Valkyrie Cat
-25	Bahamut Cat	Crazed Bahamut Cat	Awakened Bahamut Cat
-26	Kerihime	Full color Kerihime	
-27	Cat Princess	Cat Princess beauty	
-28	Capsule Cat	Cramped Cats	
-29	Masked Cat	Luchador Cat	
-30	Bodhisattva Cat	Avalokitesvara Cat	Tathagata Cat
-31	Delinquent Cat	Angry Delinquent Cat	Ultra Delinquent Cat
-32	Hip Hop Cat	Dancing Flasher Cat	Can Can Cat
-33	Kotatsu Cat	Sadako Cat	Octopus Cat
-34	Nekoluga	Unknown Cat	Ultralan Pasalan
-35	Nerd Cat	Hacker Cat	Cyberpunk Cat
-36	Swimmer Cat	Butterfly Cat	Fishman Cat
-37	Pogo Cat	Masai Cat	Jiangshi Cat
-38	Wheel Cat	Solar Cat	Chill Cat
-39	Apple Cat	Face Cat	iCat
-40	Bath Cat	Sexy Bathtub Cat	Luxury Bath Cat
-41	Salon Cat	Paris Cat	Cyborg Cat
-42	Ice Cat	Ice Queen Cat	Ice Crystal Cat
-43	Cat Machine	Cat Machine Mk 2	Cat Machine Mk 3
-44	Lesser Demon Cat	Greater Demon Cat	Greater Balrog Cat
-45	Maiko Cat	Geisha Cat	
-46	Jurassic Cat	Jurassic Cat Sitter	Catasaurus
-47	Viking Cat	Thor Cat	Maximum the Fighter
-48	Pirate Cat	Captain Cat	Dread Pirate Catley
-49	Thief Cat	Phantom Thief Cat	Goemon Cat
-50	Bishop Cat	Monk Cat	Sanzo Cat
-51	Fortune Teller Cat	Fisherman Cat	Doctor Cat
-52	Shaman Cat	Necromancer Cat	Necro-Dancer Cat
-53	Evangelist Cat	Filibuster Cat	
+12	猫縛り	猫縛りNEO	猫縛り極上
+13	女王猫	処刑人	暗黒嬢
+14	ネコの箱詰め	ネコギャング	重機C・A・T
+15	ネコパンツ	ネコ葉っぱ	ネコぺろきゃん
+16	もねこ	スターもねこ	スーパースターもねこ
+17	ネコリンリン	ネコワイルド	イチリンリン
+18	ネコ忍者	ガマネコ忍者	ムササビネコ忍者
+19	ネコゾンビ	デビルネコ	ネコボーン
+20	ネコざむらい	ネコナイト	ネコパティシエ
+21	スモウネコ	マダム・ザ・スモウ	ネコにぎり
+22	ネコフィーバー	ネコカーニバル	ネコアミーゴ
+23	ネコスカート	ネコタイツ	ねこななふん
+24	ネコヴァルキリー	ネコヴァルキリー・真	ネコヴァルキリー・聖
+25	ネコムート	狂乱のネコムート	覚醒のネコムート
+26	ケリ姫	フルカラーケリ姫	ウェディングケリ姫
+27	ネコひめ	ネコひめビューティ	
+28	ネコカプセル	ねこ盛り	
+29	マスクオブネコ	ネコレスラー	
+30	ネコぼさつ	ネコせんじゅ	ネコにょらい
+31	ネコ番長	怒りのネコ番長	押忍！ネコ番長
+32	ネコザイル	ネコ裸踊り	ネコカンカン
+33	ねこタツ	ねこＴＶ	ねこタコつぼ
+34	ネコルガ	ケサランパサラン	ウルトラケサラン
+35	オタネコ	ネコハッカー	ネコスーパーハッカー
+36	ネコスイマー	ネコバタフライ	ネコ半魚人
+37	ネコホッピング	ネコマサイ	ネコキョンシー
+38	ネコ車輪	ネコ太陽	ネコクール
+39	ネコリンゴ	カオルくん	ネコアップル
+40	ネコバスたぶ	セクシーネコバスたぶ	ネコバスたぶゴールデン
+41	ネコエステ	ネコジェンヌ	ネコパーフェクト
+42	ネコアイス	ネコアイスクイーン	ネコアイスクリスタル
+43	ネコマシン	ネコマシン・破	ネコマシン・滅
+44	鬼にゃんま	鬼神にゃんま	獄炎鬼にゃんま
+45	芸者ねこ	ネコでありんした	
+46	ねこジュラ	ねこジュラシッター	ねこジュラザウルス
+47	ねこファイター	メガトンファイター	マキシマムファイター
+48	ねこ海賊	ニャーコック船長	ニャック・スパロウ
+49	ねこ泥棒	怪盗ニャコン	ネゴエモン
+50	ねこ僧侶	ねこ坊主	ねこ法師
+51	ねこ占い師	ねこふんど師	ねこ医師
+52	ネコシャーマン	ネコラマンサー	ネコオドラマンサー
+53	エヴァンジェリスト	フィリバスター	
 54	10式戦車	ネコ搭乗10式戦車	
-55	Witch Cat	Sorceress Cat	Enchantress Cat
-56	Archer Cat	Cupid Cat	Cataur
-57	Marauder Cat	Berserker Cat	Paladin Cat
-58	Swordsman Cat	Sword Master Cat	Elemental Duelist Cat
-59	Baby Cat	Baby Cats	Cats in the Cradle
-60	Bronze Cat	Michelangelo Cat	Quizmaster Cat
-61	Sushi Cat	Fried Shrimp Cat	Roe Cat
-62	Toy Machine Cat	Vendor Cat	
-63	Sports Day Cat	Kidnapper Cats	Rampage Cats
+55	ネコ魔女	ネコマージョ	ネコビマージョ
+56	ネコアーチャー	ネコキューピット	ネコいて座
+57	ネコシュバリエ	ネコベルセルク	ネコパラディン
+58	ネコ魔剣士	双剣ネコ魔剣士	双炎舞ネコ魔剣士
+59	ねこベビー	ねこベビーズ	ネコベビーカーズ
+60	ネコブ・ロンズ	芸術のネコスタチュ	ネコクイズ王
+61	ねこ寿司	ねこリーゼント	ネコ極上
+62	ネコポン	ネコポニョン	
+63	ネコ運動会	ネコラッチ	ネコ棒倒し
 64	剣士	剣士ジョニー	
 65	ウシ姫	キリン姫	
 66	KHM48	ダークKHM48	KHM46
 67	チビガウ	チビガウガウ	
 68	執行者	執行者999	ジャッジメント
 69	眠れるケリの美女	眠れるケリの美女Ⅱ	ひたすら眠れるケリの美女
-70	Salaryman Cat	Grudge Cat	Ritual Cat
-71	Sanada Yukimura	Wargod Yukimura	Immortal Yukimura
-72	Maeda Keiji	Wargod Keiji	Immortal Keiji
-73	Oda Nobunaga	Wargod Nobunaga	Immortal Nobunaga
-74	Reindeer Fish Cat	Sashimi Cat	Xmas Pudding Cat
-75	Windy	Windy, type α	Divine Windy
-76	Thundia	Thundia, type β	Divine Thundia
-77	Droid Cat	Droid Cat Mk 2	SpringDroid
-78	Space Cat	Major Space Cat	Space Marine Cat
-79	Adult Cat	Sick Cat	Prisoner Cat
-80	Evil Cat	Gentleman Cat	Gentleman Bros.
-81	Doll Cats	Cat-o-tron	Nyalladin
-82	Blue Shinobi	Orange Shinobi	
-83	Sodom	Earth King Sodom	God-Emperor Sodom
-84	Megidora	Holy Dragon Megidora	God-Emperor Megidora
-85	Vars	Dragon King Vars	God-Emperor Vars
-86	Kamukura	God Dragon Kamukura	God-Emperor Kamukura
-87	Raiden	Dragonslayer Raiden	God-Emperor Raiden
-88	Rope Jump Cat	Pair Rope Jump Cat	Noodle Cats
+70	ネコリーマン	ネコ怨み	ネコ火祭り
+71	真田幸村	武神・真田幸村	飛翔の武神・真田幸村
+72	前田慶次	武神・前田慶次	憤怒の武神・前田慶次
+73	織田信長	武神・織田信長	天魔・織田信長
+74	トナカイフィッシュ	ネコ魚のお造り	フィッシュ・ド・ノエル
+75	風神のウィンディ	風神のウィンディα	疾風神のウィンディα
+76	雷神のサンディア	雷神のサンディアβ	迅雷神のサンディアβ
+77	ドロイド	ニャンドロイド	ハルドロイド
+78	ネコと宇宙	ニャア少佐	駆動戦士ネコ
+79	にゃんこ成人	にゃんこ病人	にゃんこ囚人
+80	吾輩は鬼である	ネコ紳士	ネコ紳士同盟
+81	ひなにゃんこ	超号珍ニャジンガー	ニャラジン
+82	ネコ忍者～青～	ネコ忍者～橙～	
+83	地龍ソドム	地龍王ソドム	地龍皇帝ソドム
+84	聖龍メギドラ	聖龍王メギドラ	聖龍皇帝メギドラ
+85	竜騎士バルス	竜騎士王バルス	竜騎士皇帝バルス
+86	神龍かむくら	神龍王かむくら	神龍皇帝かむくら
+87	竜戦機ライデン	竜戦機王ライデン	竜戦機皇帝ライデン
+88	ネコなわとび	ネコネコなわとび	ネコ蕎麦屋
 89	ニムエ	帰化型ニムエ	
 90	猿王	SSS猿王	
-91	Crazed Cat	Crazed Macho Cat	Manic Mohawk Cat
-92	Crazed Tank Cat	Crazed Wall Cat	Manic Eraser Cat
-93	Crazed Axe Cat	Crazed Brave Cat	Manic Dark Cat
-94	Crazed Gross Cat	Crazed Sexy Legs Cat	Manic Macho Legs
-95	Crazed Cow Cat	Crazed Giraffe Cat	Manic Lion Cat
-96	Crazed Bird Cat	Crazed UFO Cat	Manic Flying Cat
-97	Crazed Fish Cat	Crazed Whale Cat	Manic Island Cat
-98	Crazed Lizard Cat	Crazed Dragon Cat	Manic King Dragon
-99	Crazed Titan Cat	Crazed M. Titan Cat	Manic Jamiera Cat
-100	Maiden Cat	Sportsgirl Cat	Wrestling Cat
+91	狂乱のネコ	狂乱のネコビルダー	大狂乱のネコモヒカン
+92	狂乱のタンクネコ	狂乱のネコカベ	大狂乱のゴムネコ
+93	狂乱のバトルネコ	狂乱の勇者ネコ	大狂乱の暗黒ネコ
+94	狂乱のキモネコ	狂乱の美脚ネコ	大狂乱のムキあしネコ
+95	狂乱のウシネコ	狂乱のキリンネコ	大狂乱のネコライオン
+96	狂乱のネコノトリ	狂乱のネコUFO	大狂乱の天空のネコ
+97	狂乱のネコフィッシュ	狂乱のネコクジラ	大狂乱のネコ島
+98	狂乱のネコトカゲ	狂乱のネコドラゴン	大狂乱のネコキングドラゴン
+99	狂乱の巨神ネコ	狂乱のネコダラボッチ	大狂乱のネコジャラミ
+100	ネコ乙女	モトコ	サホリ
 101	弱酸性エル	弱酸性エルCC	
 102	レッドマローン	レッドマローンCC	
-103	Cabaret Cat	Mega Cat	Mega Cat EX
-104	Koi Cat	Gross Koi Cat	Kiss and Koi
-105	Kuu	Kuu, type γ	Divine Kuu
-106	Kai	Kai, type μ	Divine Kai
-107	Coppermine	Coppermine, type κ	Divine Coppermine
-108	Cat Bros	Secret Base	
-109	Madam Bride	Madam King	Madam the Savannah
-110	Celesse	Celesse CC	
-111	Nono	Nono CC	
-112	Olga	Olga CC	
-113	Norn	Norn CC	
-114	Yoichi	Yoichi CC	
-115	Serum	Serum CC	
-116	Fuu	Fuu CC	
-117	Aura	Aura CC	
-118	Rei	Rei CC	
-119	Wyvern	Wyvern Cat	
-120	Healer	Healer CC	Healer Cat CC
-121	Merc	Merc CC	Merc & Cat CC
-122	Vacation Queen	Office Lady Cat	Call Center Cat
-123	Bean Cats	Brah Cats	
-124	Date Masamune	Wargod Masamune	Immortal Masamune
-125	Takeda Shingen	Wargod Shingen	Immortal Shingen
-126	Clockwork Cat	Puppetmaster Cat	Puppetmaster & Charley
-127	Flower Cat	Cooldown Cat	Bombercat
-128	Vengeful Cat	Groucho Cat	Kite Cat
-129	Gold Cat	Gold Macho Cat	
-130	Ururun Wolf	Ururun Cat	Awakened Ururun
-131	Neneko	Miss NENEKO	
-132	Kung Fu Cat X	Drunken Master Cat X	Iron Claw X
+103	歌謡にゃんこ	メガにゃんこ	メガにゃんこEX
+104	マジでコイしてる	コイ・the・Night	キスヨリ・ス・ゴイ
+105	猿帝のクウ	猿帝のクウγ	金猿帝のクウγ
+106	召し豚のカイ	召し豚のカイμ	召し猪のカイμ
+107	宝杖のカッパーマイン	宝杖のカッパーκ	光宝杖のカッパーκ
+108	にゃんこ３兄弟	秘密要塞ネコロス	
+109	マダム・ザ・花嫁	マダム・ザ・王様	マダム・ザ・サバンナ
+110	セレス	セレスCC	
+111	ノノ	ノノCC	
+112	オルガ	オルガCC	
+113	ノルン	ノルンCC	
+114	よいち	よいちCC	
+115	セラム	セラムCC	
+116	フウ	フウCC	
+117	アウラ	アウラCC	
+118	レイ	レイCC	
+119	ワイバーン	ニャイバーン	
+120	癒術士	癒術士CC	にゃんこ化癒術士ＣＣ
+121	メルク	メルクCC	にゃんことメルクCC
+122	女王様の休日	いつものＯＬ	コールセンターのＯＬ
+123	マメマメにゃんこ	ラブラブにゃんこ	
+124	伊達政宗	武神・伊達政宗	邪眼竜の武神・伊達政宗
+125	武田信玄	武神・武田信玄	猛牛の武神・武田信玄
+126	カラクリにゃんこ	ネコ人形師	ネコチャッピー
+127	ネコフラワー	にゃんこ扇風	ネコボンバー
+128	うらめしにゃん	ハナメガにゃん	凧にゃん
+129	金ネコ	金ネコビルダー	
+130	ウルフとウルルン	タマとウルルン	覚醒のタマとウルルン
+131	ねねこ	スターねねこ	
+132	カンフーにゃんこＧ	酔拳にゃんこＧ	剛拳にゃんこＧ
 133	ヒカキン	ビキャキン	ムキャキン
-134	Urashima Taro	Guardian Gamereon	King Gamereon
-135	The Grateful Crane	Super Galaxy Cosmo	Ultima Galaxy Cosmo
-136	Momotaro	The Peach Angels	The Peach Devils
-137	Kasa Jizo	Jizo's Moving Castle	Jizo's Mega-Castle
-138	Princess Kaguya	The Death Moon	The Chaos Moon
+134	うらしまタロウ	竜宮獣ガメレオン	竜宮超獣キングガメレオン
+135	ツルの恩返し	銀河戦士コスモ	究極戦士コズミックコスモ
+136	ももたろう	爆走兄弟ピーチスター	爆走兄弟ピーチジャスティス
+137	かさじぞう	地蔵要塞カムイ	地蔵要塞ゼロカムイ
+138	かぐやひめ	破壊衛星デスムーン	破壊衛星カオスムーン
 139	ネコンドー	ネコンドーＨＧ	ネコンドーＳＰ
-140	Squish Ball Cat	Muscleman Cat	
-141	God	Secret God	
+140	ふにゅふにゅネコ	むきゅむきゅネコ	
+141	神様	シークレット神様	
 142	ネコチュートリアル	裏チュートリアル	
-143	Nurse Cat	Heartful Nurse Cat	Joyful Nurse Cat
-144	Cat Base Mini	Cat Base Jr.	Cat Base Ultra
-145	Cat Gunslinger	Cat Eastwood	Rodeo Cat
-146	Stilts Cat	Totem Cat	Acrobat Cats
-147	Tin Cat	Plane Cat	Robocat
-148	Rocker Cat	Artist Cat	Ramen Cat
-149	Mer-Cat	Commando Cat	Cameraman Cat
-150	Juliet Cat	Princess Juliet Cat	Juliet the Maiko
-151	Weightlifter Cat	Ring Girl Cat	Pizza Cat
-152	Figure Skating Cats	Drama Cats	Slapstick Cats
-153	Cat Toaster	Cat Projector	Catophone
-154	Hoop Cat	Showoff Cat	Hoopmaster Cat
+143	ねこナース	ハートフルねこナース	ジョイフルねこナース
+144	にゃんこ城Mini	にゃんこ城Jr	にゃんこ城Max
+145	ねこガンマン	ねこウエスタン	ねこロデオ
+146	たけうまねこ	トーテムねこ	ねこ雑技団
+147	ブリキネコ	プレーンネコ	ネコロボット
+148	ねこロッカー	ねこアーティスト	ねこラーメン道
+149	ねこ人魚	ねこソルジャー	ネコカメラマン
+150	窓辺の乙女ネコ	窓辺の姫君ネコ	窓辺の舞妓にゃん
+151	ネコバーベル	ネコRG	ネコデリバリー
+152	ネコスケート	よいではにゃいか	にゃんでやねん
+153	ネコトースター	ネコ映写機	ネコクラシック
+154	ねこフープ	ねこトリプルフープ	ねこグルグルフープ
 156	ドラリー剣士	ドラリー魔法使い	
 157	ヌボボ	ゴールボ	
-158	Uesugi Kenshin	Wargod Kenshin	Immortal Kenshin
-159	Kalisa	Kalisa, type χ	Divine Kalisa
+158	上杉謙信	武神・上杉謙信	暴威の武神・上杉謙信
+159	冥界のカリファ	冥界のＸカリファ	冥界のＸＸカリファ
 160	ユーリンチー	転生霊鳥ユーリンチー	ゲキリンチー
 161	狂乱のケリ姫	狂乱のケリ姫CC	大狂乱のケリ姫
 162	綾小路 翔	翔やん＆にゃんこ	
@@ -166,86 +166,85 @@ unit_ID	name_f	name_c	name_s
 165	星グランマニエ	ランマ＆にゃんこ	
 166	白鳥松竹梅	松＆にゃんこ	
 167	ネコヤンキー	ネコスケバン	
-168	Asiluga	Asilan Pasalan	Assassinlan Pasalan
-169	Kubiluga	Kubilan Pasalan	E. Kubilan Pasalan
-170	Tecoluga	Tesalan Pasalan	Lufalan Pasalan
-171	Balaluga	Balalan Pasalan	Piccolan Pasalan
-172	Li'l Nyandam	Dark Emperor Catdam	Schoolbus Nyandam
-173	Baby Mola	Young Man Mola	Citizen Mola
-174	Mola King	Living Legend	Master of the Pacific
-175	Meowla Meowla	Catorpedo	
-176	Marshmallow Cat	Creepmallow	
-177	Dioramos	Archdragon Dioramos	God-Emperor Dioramos
+168	アシルガ	アシランパサラン	アタタタアシラン
+169	クビルガ	クビランパサラン	E・クビランパサラン
+170	テコルガ	テサランパサラン	ムギワラテサラン
+171	バララガ	バラランパサラン	ピカランバララン
+172	コニャンダム	ネコニャンダム	覚醒のネコニャンダム
+173	厨房マンボウ	工房マンボウ	社会の一員
+174	マンボ王	生ける伝説	太平洋の主
+175	にゃんぼう	ネコトーピード	
+176	マシュマロにゃん	キモマロにゃん	
+177	覇龍ディオラムス	覇龍王ディオラムス	覇龍皇帝ディオラムス
 178	極道にゃんこ	ヤクザヴァンパイア	
-179	Takuya ＆ Yuki	Takuya, Yuki ＆ Cat	Takuya＆ Lovely Yuki
-180	Mystery Girl Yuki	Mystery Yuki ＆ Cat	Mystery Catgirl Yuki
-181	Yuki Cat	Lovely Yuki Cat	
-183	Cat Kart R	Cat Kart G	Cat Kart P
-184	Mr. Ninja	Mint	
-185	Hearscht	Hearscht CC	Revolutionary Hearscht CC
-186	Cornelia	Cornelia CC	
-187	Juvens	Juvens CC	Holiday Juvens CC
-188	Mystica	Mystica CC	
-189	Alois	Alois CC	
-190	Citrouille	Citrouille CC	
-191	Titi	Titi CC	Titi Cat CC
+179	タクヤとユキ	タクヤとユキとネコ	タクヤとビューティユキ
+180	謎の少女ユキ	謎の少女ユキ＆ネコ	謎のネコ耳少女ユキ
+181	ゆきにゃん	ビューティゆきにゃん	
+183	にゃんこカートR	にゃんこカートG	にゃんこカートP
+184	ミスターニンジャ	タンタン	
+185	ハルシュト	ハルシュトCC	革命のハルシュトCC
+186	コーネリア	コーネリアCC	
+187	ユーヴェンス	ユーヴェンスCC	休日の騎士様ユーヴェンスCC
+188	ミスティカ	ミスティカCC	
+189	アロイス	アロイスCC	
+190	シトルイユ	シトルイユCC	
+191	ティティ	ティティCC	ネコティティCC
 192	山岡実乃里	クイーンみのりん	
 193	中村奏絵	クイーンかにー	
-194	Akira	Shadow Akira	Inferno Akira
-195	Mekako Saionji	Dr. Mekako	Mission Control Mekako
-196	Catman	Dark Catman	Ultimate Catman
-197	Psychocat	Neo Psychocat	Corrupted Psychocat
-198	Onmyoji Cat	Magica Cat	Thaumaturge Cat
-199	Surfer Cat	Castaway Cat	Seafarer Cat
-200	Metal Cat	Metal Macho	
-201	Drumcorps Cat	Banner Cat	Mochi Cat
-202	Baozi Cat	Big Baozi	
-203	Kachi-Kachi	Fire Squad Kachiyama	Kachiyama Assault Brigade
+194	アキラ	シャドウ・アキラ	インフェルノ・アキラ
+195	西園寺メカ子	ドクトルDr.メカ子	アストロDr.メカ子
+196	キャットマンダディ	キャットマンダーク	キャットマンライジング
+197	サイキックネコ	ネオサイキックネコ	デビルサイキックネコ
+198	ねこ陰陽師	魔法少女ねこ	ねこ大魔王
+199	ネコサーファー	ネコ漂流	ネコ漂流記
+200	メタルネコ	メタルネコビルダー	
+201	ドラムメニャー	プラカードにゃん	ネコぺったん
+202	ネコ小籠包	ネコ大籠包	大籠包にゃんこ
+203	カチカチヤマンズ	炎護射撃車ウーウー	豪炎狙撃車ウーウー
 204	アイルー	アイルー＆メラルー	
 205	シェリア【キリン】	シェリア【キリンX】	
 206	リオレウス	リオレウス＆にゃんこ	
 207	リオレイア	リオレイア＆にゃんこ	
 208	キリンネコ	キリンネコキリン	
-209	Li'l Cat	Li'l Macho Cat	Li'l Mohawk Cat
-210	Li'l Tank Cat	Li'l Wall Cat	Li'l Eraser Cat
-211	Li'l Axe Cat	Li'l Brave Cat	Li'l Dark Cat
-212	The White Rabbit	The Black Cat	The Grey Fox
-213	Catburger	Cat Royale	Value Meal Cat
-214	HYAKUTARO	HYAKUTARO CC	
-215	MARCO	MARCO CC	
-216	TARMA	TARMA CC	
-217	ERI	ERI CC	
-218	FIO	FIO CC	
-219	SV-001	SV-001 CC	
-220	ALLEN O'NEIL	ALLEN O'NEIL CC	
-221	MARS PEOPLE	MARS PEOPLE CC	
-222	HUGE HERMIT	HUGE HERMIT CC	
-223	JUPITER KING	JUPITER KING CC	
-224	DONALD MORDEN	GENERAL MORDEN	
-225	HI-DO	HI-DO CC	
-226	Warlock and Pierre	Dark Merchant Babil	Mad Doctor Klay
-227	Pumpcat	Cat O'Lantern	
-228	Gloomy Neneko	Witchy Neneko	
-229	Hallowindy	Hallowindy, type α	
-230	Spooky Thundia	Spooky Thundia, type β	
+209	ちびネコ	ちびネコビルダー	ちびネコモヒカン
+210	ちびタンクネコ	ちびネコカベ	ちびゴムネコ
+211	ちびバトルネコ	ちび勇者ネコ	ちび暗黒ネコ
+212	ホワイトラビット	ブラックキャット	グレーフォックス
+213	にゃんこバーガー	にゃんこキングバーガー	にゃんこバーガーセット
+215	マルコ	マルコCC	
+216	ターマ	ターマCC	
+217	エリ	エリCC	
+218	フィオ	フィオCC	
+219	SV-001	SV-001CC	
+220	アレン・オニール	アレン・オニールCC	
+221	マーズピープル	マーズピープルCC	
+222	ヒュージハーミット	ヒュージハーミットCC	
+223	ジュピターキング	ジュピターキングCC	
+224	モーデン元帥	モーデン元帥CC	
+225	ハイドゥ	ハイドゥCC	
+226	呪術師デスピエロ	闇商人バビル	奇術科学者クレイG
+227	にゃんぷきん	ねこランタン	
+228	ハロウィンねねこ	ハロウィン魔女ねねこ	
+229	ウィンディスイート	ウィンディスイートα	
+230	デビルサンディア	デビルサンディアβ	
 231	おでん	おでんCC	
 232	光の神徒ヴァルキリー	光の神徒ヴァルキリーCC	
 233	神徒ブリュンヒルデ	神徒ブリュンヒルデCC	
 234	神徒スルズ	神徒スルズCC	
 235	豊穣の女神フレイヤ	豊穣の女神フレイヤCC	
 236	軍神オーディン	軍神オーディンCC	
-237	Freshman Cat Jobs	Prof. Cat Jobs	Headmaster Cat Jobs
-238	Rich Cat III	Rich Cat Sr.	Richest Cat
-239	Sniper the Recruit	Sniper the Heavy	Sniper the Deadeye
-240	Togeluga	Togelan Pasalan	Shishilan Pasalan
-241	Frosty Kai	Frosty Kai, type μ	
-242	Santa Kuu	Santa Kuu, type γ	
-243	Holy Coppermine	Holy Coppermine, type κ	
-244	A Gift of Cats	Cat's Gift	
-245	Li'l Gross Cat	Li'l Sexy Legs Cat	Li'l Macho Legs Cat
-246	Li'l Cow Cat	Li'l Giraffe Cat	Li'l Lion Cat
-247	Li'l Bird Cat	Li'l UFO Cat	Li'l Flying Cat
-248	Undead Cat	Bake-Nyanko	
+237	おかめはちもくネコ	おかめの水博士	おかめ名誉客員教授
+238	ボンボンネコ	ネコボンのパパ	ネコボンのパパのパパ
+239	見習いスニャイパー	ネゴルゴ	ネゴルゴ３１
+240	トゲルガ	トゲランパサラン	デイダラトゲラン
+241	雪だるまのスノーカイ	雪だるまのスノーカイμ	
+242	サンタのメリークウ	サンタのメリークウγ	
+243	聖夜のシスターカッパー	聖夜のシスターカッパーκ	
+244	ネコのプレゼント	ネコプレゼント	
+245	ちびキモネコ	ちび美脚ネコ	ちびムキあしネコ
+246	ちびウシネコ	ちびネコキリン	ちびネコライオン
+247	ちびネコノトリ	ちびネコUFO	天空のちびネコ
+248	死にたてにゃんこ	化けにゃんこ	復活にゃんこ
 249	剣士	セーラー服剣士	明王の剣士
 250	騎馬兵	森の騎馬兵	迅雷の黒騎馬兵
 251	アシュラ	武者アシュラ	傾奇者アシュラ
@@ -254,393 +253,385 @@ unit_ID	name_f	name_c	name_s
 254	プリティキャット	ラブリープリティキャット	サイバープリティキャット
 255	サイクロプス	鋼鉄のサイクロプス	時空のサイクロプス
 256	ゴーレム	うさぎゴーレム	ボルケーノゴーレム
-257	Thunder God Zeus	The Majestic Zeus	Almighty Zeus
-258	Anubis the Protector	Anubis the Unblemished	Almighty Anubis
-259	Radiant Aphrodite	Megaphrodite	Almighty Aphrodite
-260	Catway	Drone Cat	Time Traveller Cat
-261	Hayabusa	Oni Hayabusa	Akuma Hayabusa
+257	天空神ゼウス	ギガントゼウス	Gギガントゼウス
+258	守護神アヌビス	パーフェクトアヌビス	Ｇパーフェクトアヌビス
+259	美女神アフロディーテ	メガロディーテ	Gメガロディーテ
+260	ネコウェイ	ネコドローン	ネコタイムマシン
+261	天誅ハヤブサ	斬魔ハヤブサ	滅殺ハヤブサ
 262	ニャームス	ネコニャームス	
 263	ポチ	タンクポチ	
 264	クロミ	クロミとにゃんこたち	
 265	せつ子	せつ子Love鯖	
 266	ねば～る君	ねば～る君とにゃんこ	
-267	Catornado	Hurricat	Catyphoon
-268	Red Riding Mina	Crimson Mina	Awakened Mina
-269	Baby Gao	Mighty Lord Gao	
-270	Crazed Yuki	Crazed Yuki ＆ Cat	Crazed Catgirl Yuki
-271	Shining Amaterasu	Glorious Amaterasu	Almighty Amaterasu
-272	Splendid Ganesha	Exalted Ganesha	Almighty Ganesha
-273	Cheerleader Cat	Waitress Cat	Soba Cat
-274	Tropical Kalisa	Tropical Kalisa, type X	
-275	Midsummer Rabbit	Midsummer Cat	
-276	Sunny Neneko	Seaside Neneko	
-277	Funghi	Funghi 'n' Cat	
-278	Tanky	Tanky 'n' Cat	
-279	White Cat	Gross White Cat	
-280	Fortressy	Castley	
+267	ネコタイフーン	ネコハリケーン	ネコあらし
+268	ネコずきんミーニャ	ラブリィずきんミーニャ	覚醒ラブずきんミーニャ
+269	幼獣ガオ	皇獣ガオウ	
+270	狂乱のユキ	狂乱のユキ＆ネコ	狂乱のネコ耳ユキ
+271	太陽神アマテラス	テラアマテラス	Gテラアマテラス
+272	繁栄神ガネーシャ	ガネーシャエクサ	Gガネーシャエクサ
+273	チアにゃんこ	ネコウエイトレス	にゃんこそば
+274	トロピカルカリファ	トロピカルXカリファ	
+275	真夏のホワイトラビット	真夏のブラックキャット	
+276	夏色ねねこ	海辺のねねこ	
+277	なめこ	なめこ＆にゃんこ	
+278	なめこタンク	なめこタンク＆にゃんこ	
+279	白ネコなめこ	キモ白ネコなめこ	
+280	要塞なめこ	なめこ＆要塞にゃんこ	
 281	ふてニャン	モミモミふてニャン	
-282	Awa-Odori Cat	So-Ran Cat	
-283	Pai-Pai	Pai-Pai Z	Pai-Pai DX
-284	Express Cat	Maglev Cat	Bullet Train Cat
-286	Strike Unit R.E.I.	Assault Unit R.E.I.	Flight Unit R.E.I.
-287	Little Leaguer Cat	Major Leaguer Cat	Golfer Cat
-288	Madoka Kaname	Madoka & Cat	
-289	Homura Akemi	Homura & Cat	
-290	Sayaka Miki	Sayaka & Cat	
-291	Mami Tomoe	Mami & Cat	
-292	Kyoko Sakura	Kyoko & Cat	
-293	Kyubey	Kyubey & Cat	
-294	Madoka Cat	Magical Girl Madoka Cat	
-295	Homura Cat	Magical Girl Homura Cat	
-296	Sayaka Cat	Magical Girl Sayaka Cat	
-297	Mami Cat	Magical Girl Mami Cat	
-298	Kyoko Cat	Magical Girl Kyoko Cat	
-299	Li'l Madoka	Li'l Magical Girl Madoka	Li'l Ultimate Madoka
-300	Li'l Homura	Li'l Magical Girl Homura	Li'l Devil Homura
-301	Kyubey Cat	Tank Kyubey Cat	
-302	Lilith Cat	Succubus Cat	Queen Succubus Cat
-303	Food Stall Cat	Delivery Cat	
-304	Mighty Kat-A-Pult	CAT-6 Siege Engine	CAT-8 Behemoth
-305	Mighty Drednot	B.C.S. Lionheart	B.C.S. Tigerclaw
-306	Mighty Bomburr	NEK-0 Sky Fortress	NEK-02 Air Citadel
-307	Vaulter Cat	Polevaulter Cat	Housewife Cat
-308	Gardener Cat	Lumbercat	Weedwacker Cat
+282	ネコ阿波踊り	ネコソーラン	
+283	猫飯拳パイパイ	猫飯拳パイパイZ	猫拳王パイパイDX
+284	ネコ特急	ネコ超特急	ネコエクスプレス
+286	閃雷機兵レイ	閃雷機兵プラズマレイ	閃雷輝兵ウイングレイ
+287	ネコ球児	ネコリーガー	ネコゴルファー
+288	鹿目まどか	まどか＆ネコ	
+289	暁美ほむら	ほむら＆ネコ	
+290	美樹さやか	さやか＆ネコ	
+291	巴マミ	マミ＆ネコ	
+292	佐倉杏子	杏子＆ネコ	
+293	キュゥべえ	キュゥべえ＆ネコ	
+294	ネコまどか	魔法少女ネコまどか	
+295	ネコほむら	魔法少女ネコほむら	
+296	ネコさやか	魔法少女ネコさやか	
+297	ネコマミ	魔法少女ネコマミ	
+298	ネコ杏子	魔法少女ネコ杏子	
+299	ちびまどか	ちび魔法少女まどか	ちびアルティメットまどか
+300	ちびほむら	ちび魔法少女ほむら	ちび悪魔ほむら
+301	ネコキュゥべえ	タンクキュゥべえ	
+302	ネコアイスゴースト	ネコアイスファントム	ネコアイスサキュバス
+303	ネコ屋台	ネコの宅配便	
+304	帝国陸軍カタパルズ	撃滅戦車ギガパルド	超撃滅戦車ギガパルド
+305	古代軍船ガレーズ	無敵艦隊シーガレオン	超無敵艦隊シーガレオン
+306	飛空襲撃ボンバーズ	飛行戦艦ボルボンバー	超飛行戦艦ボルボンバー
+307	ネコジャンパー	ネコボールター	ネコ奥様
+308	ネコバサミ	ネコチェーンソー	草刈りネコ
 309	ネコ博士	ネコ博士＆ネコ	
-310	Yuletide Nurse	Yule Knight Nurse	Xmas Spirit Nurse
-311	Li'l Fish Cat	Li'l Whale Cat	Li'l Island Cat
-312	Li'l Lizard Cat	Li'l Dragon Cat	Li'l King Dragon Cat
-313	Li'l Titan Cat	Li'l Mythical Titan	Li'l Jamiera Cat
-314	Years-End Neneko	New Year Neneko	Festive New Year Neneko
-315	PIKOTARO	NEKOTARO	
-316	Wrathful Poseidon	Valiant Poseidon	Almighty Poseidon
+310	ネコナースキャンドル	ネコナースマリア	ネコナースサンタマリア
+311	ちびネコフィッシュ	ちびネコクジラ	ちびネコ島
+312	ちびネコトカゲ	ちびネコドラゴン	ちびネコキングドラゴン
+313	ちび巨神ネコ	ちびネコダラボッチ	ちびネコジャラミ
+314	大掃除ねねこ	初詣ねねこ	新春・初詣ねねこ
+315	ピコ太郎	ネコ太郎	
+316	海王神ポセイドン	ポセイドラグーン	Gポセイドラグーン
 317	CPAC	PPAP	
-318	Miko Mitama	Mitama the Oracle	
-319	Killer Cat	True Killer Cat	
+318	巫女姫ミタマ	白無垢のミタマ	
+319	殺意のネコ	真・殺意のネコ	
 321	ナゾウサギ	兎宮王道	
-322	Sarukani	Rock Revengers	The One-Hit Wonders
-323	Miyamoku Musashi	Heroic Musashi	Awakened Musashi
-324	Curling Cat	Zamboney Cat	Green Shell Cat
-325	Welterweight Cat	Heavyweight Cat	Ectoweight Cat
-326	Mobius	Miraculous Mobius	
-327	Belial	Reckless Belial	
-328	Happy 100	Heartful Happy 100	
-329	Eggy Cat	Easter Cat	
-330	Springtime Kenshin	Full-Bloom Kenshin	
-331	Bunny & Canard	Disciple Psychoduck	
-332	Easter Neneko	Hoppity Neneko	
-333	Shadow Gao	Diabolic Gao	
-334	Trickster Himeyuri	Himeyuri Ninetails	Fox Queen Himeyuri
-335	Sea Maiden Ruri	Sea Mistress Ruri	Mer-Queen Ruri
-336	Queen Reika	Pharoah Reika	Eternal Reika
+322	さるかに合戦	爆音楽奏サルカニヘヴン	超音楽奏サルカニフェス
+323	宮木武蔵	主演 宮木武蔵	覚醒 宮木武蔵
+324	ネコストーン	ネコクリーナー	ネコカメカー
+325	ネコボクサー	ネコチャンピオン	ネコリベンジ
+326	メビウス	奇跡の調和メビウス	
+327	ベリアル	猛進の大逆者ベリアル	
+328	ハッピー100	幸せ連鎖子ハッピー100	
+329	ネコエッグ	ネコエッグ２	
+330	上杉謙信・春	上杉謙信・春爛漫	
+331	道化師エッグダック	闇道化サイコダック	
+332	イースターねねこ	イースターバニーねねこ	
+333	黒獣ガオウ	皇獣ガオウダーク	
+334	狐娘ヒメユリ	九尾の狐姫ヒメユリ	豊穣の狐姫ヒメユリ
+335	人魚娘ルリィ	宝玉の人魚姫ルリィ	竜宮の人魚姫ルリィ
+336	ミイラ娘レイカ	玉座のミイラ姫レイカ	黄金のミイラ姫レイカ
 337	プリンセスケリ姫号	プリンセスケリ姫号CC	プレミアムケリ姫号CC
-338	Imagawa Yoshimoto	Wargod Yoshimoto	Immortal Yoshimoto
-340	Redhead Yuki Cat	Redhead Lovely Yuki Cat	
-341	Lost World Yuki	Lost World Yuki ＆ Cat	Lost World Catgirl Yuki
-342	Maneki Cat	Neo Maneki Cat	
-343	Slug Jockey Cat	Slugcat	
-344	Orthos	Orthos CC	Artist Orthos CC
-345	Michelia	Michelia CC	Naptime Michelia CC
-346	Todomeki	Todomeki CC	
+338	今川義元	武神・今川義元	燐火の武神・今川義元
+340	赤髪のゆきにゃん	赤髪のビューティゆきにゃん	
+341	失われし世界のユキ	失われし世界のユキ＆ネコ	失われし世界のネコ耳ユキ
+342	ネコまねき	ネコまねき・寿	
+343	なめネコ	ネコなめ	
+344	オルトス	オルトスCC	彩色のオルトスCC
+345	ミシェリア	ミシェリアCC	午睡のミシェリアCC
+346	とどめき	とどめきCC	
 347	ぐでたまにゃんこ	ぐでオムにゃんこ	ぐでベネにゃんこ
 348	ぐでたまプレート	ぐでたまベーコンプレート	
 349	ぐでぐでプリン	ぐでぐでアラモード	
 350	ニセたま軍団	ネコニセたま軍団	
-351	Twinstars	Twinstars, type Φ	Divine Twinstars
-352	Hermit Cat	Grandmaster Cat	Masked Grandmaster Cat
+351	双掌星のシシル＆コマリ	双掌星のシシル＆コマリΦ	双輝星のシシル＆コマリΦ
+352	ネコ仙人	ネコ老師	仮面のネコ仙人
 353	チョコレート	チョコレート進化	354_3
-354	Seashore Kai	Seashore Kai, type μ	
-355	Mighty Rekon Korps	Orbital Platform Armageddon	Orbital Annihilator Ragnarok
+354	常夏の果実カイ	常夏の果実カイμ	
+355	観測兵器ガリレオ	時空基地アルマゲドン	超時空基地アルマゲドン
 356	ノラ	覚醒ノラ	
-357	Wolfchild Deale	Wolf Princess Deale	Jester Queen Deale
-358	Graveflower Verbena	Verbena the Bride	Opulent Verbena
-359	Bora	Bazibon	Bazibastra
-360	Mizli	Marinmizu	Mizuririn
-361	Aer	Erphuan	Aervanta
-362	Saber	Saber CC	Saber Alter CC
-363	Rin Tohsaka	Rin Tohsaka CC	
-364	Illyasviel	Illyasviel CC	
-365	Archer	Archer CC	
-366	Lancer	Lancer CC	
-367	Rider	Rider CC	
-368	Gilgamesh	Gilgamesh CC	
-369	Saber the Cat	Heroic Spirit Saber Cat	Saber Alter Cat
-370	Sakura the Cat	Apron Sakura Cat	Dreaming Sakura Cat
-371	Rin the Cat	Mage Rin Cat	
-372	Illya the Cat	Snow Faerie Illya	
-373	Li'l Shirou	Li'l Shirou CC	
-374	Li'l Sakura	Li'l Sakura CC	
-375	Coin Cat	Macho Coin Cat	
-376	Rover Cat	Rover Cat Mk II	Catellite
-377	Fencer Cat	Kendo Cat	The Kitty of Liberty
-378	Dark Mitama	Gothic Mitama	
-379	Volley Cat	Ballet Cat	Curry Cat
-380	D'artanyan	Meow-sketeer	
-381	Farmer Cat	Harvest Cat	
-382	Glass Cat	Macho Glass Cat	Macho Crystal Cat
-383	Masked Yulala	Mystic Yulala	
-384	Satori Hikami & Cat	Satori Hikami & Cat CC	
-385	Akio Yabe	Akio Yabe CC	Akio & Gunder CC
-386	Sairi Nijitani	Sairi Nijitani CC	
-387	Misaki Konno	Misaki Konno CC	
-388	Ren Katagiri	Ren Katagiri CC	
-389	Karin Nekozuka	Karin Nekozuka CC	
-390	Aoi Hayakawa	Aoi Hayakawa CC	Baseball Mask α
-391	Mizuki Tachibana	Mizuki Tachibana CC	Baseball Mask β
-392	Hijiri Rokudo	Hijiri Rokudo CC	Baseball Mask γ
-393	Saki Nijima	Saki Nijima CC	Samba Saki CC
-394	Subaru Hoshi	Subaru Hoshi CC	Dark Subaru CC
-395	Miyabi Oyama	Miyabi Oyama CC	Baseball Mask δ
-396	Ganglion	Ganglion the Ancient	Ganglion the Unleashed
-397	Sakura Sonic	Afterschool Sakura	Sacred Blade Sakura
+357	狼娘ディル	虚飾の狼姫ディル	道化の狼姫ディル
+358	ゾンビ娘ヴェルヴェーヌ	死霊の花嫁ヴェルヴェーヌ	満腹の花嫁ヴェルヴェーヌ
+359	火の精霊メララ	火炎の精霊メラバーン	火炎の精霊王メラバーニング
+360	水の精霊ミズリィ	流水の精霊ミズマリン	流水の精霊王ミズマリリン
+361	風の精霊エアル	嵐の精霊エアフワン	嵐の精霊王エアフワンテ
+362	セイバー	セイバーCC	セイバーオルタCC
+363	遠坂 凛	遠坂 凛CC	
+364	イリヤスフィール	イリヤスフィールCC	
+365	アーチャー	アーチャーCC	
+366	ランサー	ランサーCC	
+367	ライダー	ライダーCC	
+368	ギルガメッシュ	ギルガメッシュCC	
+369	ネコセイバー	英霊ネコセイバー	ネコセイバーオルタ
+370	ネコ桜	エプロンネコ桜	夢見るネコ桜
+371	ネコ凛	魔術師ネコ凛	
+372	ネコイリヤ	雪の妖精ネコイリヤ	
+373	ちび士郎	ちび士郎CC	
+374	ちび桜	ちび桜CC	
+375	記念ネコ	記念ネコビルダー	
+376	ネコ探査機	ネコサーチMkⅡ	ネコサテライト
+377	ネコフェンシング	ネコ剣道	自由のネコ
+378	黒無垢のミタマ	黒蝶のミタマダーク	
+379	ネコバレー	ネコバレエ	ネコカレー
+380	幼傑ダルターニャ	英傑ダルターニャ	
+381	ねこ農家	ねこカブ農家	
+382	ガラスネコ	ガラスネコビルダー	クリスタルネコビルダー
+383	謎仮面のウララー	ネコ仮面のウララー	
+384	氷上聡里＆ネコ	氷上聡里＆ネコCC	
+385	矢部明雄	矢部明雄CC	矢部＆ガンダーロボCC
+386	虹谷彩理	虹谷彩理CC	
+387	紺野美崎	紺野美崎CC	
+388	片桐恋	片桐恋CC	
+389	猫塚かりん	猫塚かりんCC	
+390	早川あおい	早川あおいCC	野球マン１号CC
+391	橘みずき	橘みずきCC	野球マン２号CC
+393	新島早紀	新島早紀CC	サンバ新島早紀CC
+394	星井スバル	星井スバルCC	暗黒スバルCC
+395	小山雅	小山雅CC	野球マン５号CC
+396	古龍ガングリオン	古龍王ガングリオン	古龍皇帝ガングリオン
+397	風隼さくら	JK風隼さくら	天誅・風隼さくら
 398	ハニトンくん	ハニトンくん＆にゃんこ	
-399	Mentori	Mentori CC	
-400	Imoto	Imoto CC	
-401	Voli	Volta	Gigavolta
-402	Shinji & Cat	Plug Suit Shinji	Plug Suit Shinji Black
-403	Gendo & Fuyutsuki Cats	Moon Gendo & Fuyutsuki Cats	
-404	Giraffe Unit-01	Giraffe Unit-02	
-405	Kaworu & Cat	Plug Suit Kaworu	Moon Kaworu
-406	Rei Cat	Ayanami Cat (TBC)	
-407	Asuka Cat	Apron Asuka	
-408	Mari Cat	Special Ops Mari	
-409	Rei Ayanami	Plug Suit Rei	
-410	Asuka Langley	Plug Suit Asuka	Eyepatch Li'l Asuka
-411	Mari Illustrious	Plug Suit Mari	
-412	Eva Unit-00	Eva Unit-00 & Cat	
-413	Eva Unit-01	Eva Unit-01 & Cat	
-414	Eva Unit-02	Eva Unit-02 & Cat	Unit-02, Code 777
-415	Shinji Cat	Toji & Kensuke Cats	
-416	Moon Operators	NERV Moon	
-417	Mighty Thermae D-Lux	Subterra Guardians	Subterra Sentinels
-418	Crazed Moneko	Corrupted Moneko	
-419	Pokota	Pokota CC	
-420	Ovis	Ovis CC	
-421	Coco	Coco CC	
+399	めんトリ	めんトリCC	
+400	イモウト	イモウトCC	
+401	雷の精霊ボルト	天雷の精霊ピカボルト	天雷の精霊王ギガボルト
+402	ちびシンジ	プラグスーツのちびシンジ	黒プラグスーツのちびシンジ
+403	ネコゲンドウ＆ネコ冬月	月のネコゲンドウ＆ネコ冬月	
+404	ネコキリン初号機	ネコキリン２号機	
+405	ちびカヲル	プラグスーツのちびカヲル	月の少年ちびカヲル
+406	ネコレイ	ネコアヤナミレイ（仮称）	
+407	ネコアスカ	エプロンネコアスカ	
+408	ネコマリ	極秘入国ネコマリ	
+409	ちびレイ	プラグスーツのちびレイ	
+410	ちびアスカ	プラグスーツのちびアスカ	眼帯のちびアスカ
+411	ちびマリ	プラグスーツのちびマリ	
+412	エヴァ零号機	エヴァ零号機＆ネコ	
+413	エヴァ初号機	エヴァ初号機＆ネコ	
+414	エヴァ２号機	エヴァ２号機＆ネコ	エヴァ改２号機コード７７７
+415	ネコシンジ	ネコトウジ＆ネコケンスケ	
+416	ゼロムーンオペレーターズ	ファーストムーンネルフ	
+417	温泉天国テルマエ	地底戦隊グランドン	超地底戦隊グランドン
+418	狂乱のもねこ	狂乱のスターもねこ	
+419	ポコタ	ポコタＣＣ	
+420	オビス	オビスＣＣ	
+421	ココ	ココＣＣ	
 422	太秦萌＆ネコ	太秦萌＆ネコＣＣ	
 423	松賀咲＆ネコ	松賀咲＆ネコＣＣ	
 424	小野ミサ＆ネコ	小野ミサ＆ネコＣＣ	
 425	太秦麗＆ネコ	太秦麗＆ネコＣＣ	
-426	Mecha-Bun	Mecha-Bun Mk II	Ultimate Mecha-Bun
-427	Cat Clan Heroes	Cat Guild Heroes	Cat Quest Heroes
-428	Souma Cat	Stylish Souma Cat	
-429	Otaku Geek Cat	Hacker Geek Cat	
+426	ぶんぶんネコライダー	ぶんぶんロボライダー	ぶんぶんネコライダーL
+427	ネコクエスト	ネコクエストXI	ネコクエストXI-2
+428	そうまにゃん	スマートそうまにゃん	
+429	オタネコギーク	ギークネコハッカー	
 430	ぐでネコマシン	ぐでネコマシン・卵	
-431	Detective Vigler	Inspector Gabriel	Section Chief Gravicci
-432	Betakkuma	Black Betakkuma	
-433	Nekokkuma	Killer Nekokkuma	
+431	亡者探偵ヴィグラー	魔界探偵グラヴィー	魔神探偵グラヴィティー
 434	白にゃんこ剣士	黒にゃんこ剣士	
-435	Li'l Valkyrie	Wind Dancer Valkyrie	
-436	Nobiluga	Nobilan Pasalan	Mystican Pasalan
-437	Cat God the Great	Cat God the Awesome	Cat God the Golden
-438	Waverider Kuu	Waverider Kuu, type γ	
-439	Empress Chronos	Chronos the Infinite	Almighty Chronos
-440	Bebe	Nagisa & Cat	
-441	D'arktanyan	Valiant D'arktanyan	
-442	Lone Cat and Kitten	Vendor Cat and Kitten	Tourist Cat
-443	Driller Cat	Power Driller Cat	Neo Driller Cat
-444	Piledriver Cat	Power Piledriver Cat	Neo Piledriver Cat
-445	Cutter Cat	Power Cutter Cat	Neo Cutter Cat
-446	Backhoe Cat	Power Backhoe Cat	Neo Backhoe Cat
-447	Miter Saw Cat	Power Saw Cat	Neo Saw Cat
-448	Musashi Miyamoto	Wargod Miyamoto	
-449	Headmistress Jeanne	Headmistress Jeanne ψ	
-450	High Lord Babel	Babel the Darkflame	
-451	Ushiwakamaru	Colossal Benkei	
-452	Primordial Cat	Modern Cat	Future Cat
+435	ちびネコヴァルキリー	ちびネコヴァルキリー・華	
+436	ノビルガ	ノビランパサラン	ノビランターバン
+437	激・神さま	超・神さま	超・神さまゴールデン
+438	灼熱のビーチクウ	灼熱のビーチクウγ	
+439	時空神クロノス	クロノストリガー	Gクロノストリガー
+440	ベベ	なぎさ&ネコ	
+441	影傑ダークダルターニャ	黒傑ダークダルターニャ	
+442	子連れにゃんこ	ネコワゴンサービス	ネコバケーション
+443	戦隊ドリラ	戦隊パワードリラ	シン・パワードリラ
+444	戦隊ウチコンガ	戦隊パワーウチコンガ	シン・パワーウチコンガ
+445	戦隊チョキンドス	戦隊パワーチョキンドス	シン・パワーチョキンドス
+446	戦隊ショベリン	戦隊パワーショベリン	シン・パワーショベリン
+447	戦隊チャッソ	戦隊パワーチャッソ	シン・パワーチャッソ
+448	宮本武蔵	剣神・宮本武蔵	
+449	聖会長ジャンヌダルク	聖会長ジャンヌダルクψ	
+450	天城龍バベル	魔城龍バベル	
+451	うしわか丸	巨大神兵ベンケイ	
+452	古代ネコ	現代ネコ	未来ネコ
 453	きたろう	ゲゲゲの鬼太郎	
 454	目玉おやじ	入浴おやじ	
-455	Wonder MOMOCO	Cutie MOMOCO	
-456	Sakura Matou	Sakura Matou CC	
-457	Shirou the Cat	Novice Mage Shirou Cat	
-458	Archer the Cat	Heroic Spirit Archer Cat	
-459	Rider the Cat	Heroic Spirit Rider Cat	
-460	Kotomine & Gilgamesh Cats	Gilgamesh & Kotomine Cats	
-461	Legeluga	Legelan Pasalan	
-462	Filibuster Cat X	Filibuster Cat Y	
-463	Mighty Kristul Muu	Doom Engine Pandora	
-464	Dogumaru	Doguemon	
+455	ワンダー・モモコ	キューティー・モモコ	
+456	間桐 桜	間桐 桜CC	
+457	ネコ士郎	魔術師見習いネコ士郎	
+458	アーチャーネコ	英霊アーチャーネコ	
+459	ネコライダー	英霊ネコライダー	
+460	ネコ言峰＆ネコギルガメッシュ	ネコギルガメッシュ＆ネコ言峰	
+461	レジェルガ	レジェランパサラン	
+462	フィリバスターX	フィリバスターY	
+463	終末兵器ムー	極秘研究機関パンドラ	
+464	土偶戦士ドグ丸	土偶戦士ドグえもん	
 465	majimeow（仮）	majimeow（仮）進化	
-466	Black Zeus	Dark Lord Zeus	
-467	Super Zeus	All-Powerful Super Zeus	Super S-Zeus
-468	Holy Phoenix	Holy Warrior Phoenix	Head Rococo
-469	Super Devil	Imposter Super Devil	Super D-Devil
-470	Satanmaria	Wondermaria	
-471	Heracrist	Perfect Heracrist	
-472	Fiendish Nero	Beastly Nero	
-473	Prince Yamato	Holy Yamato	Rampaging Yamato
-474	Rosary Angel	Cross Angel	Strike Angel
-475	Wakamiko Cat	Warrior King Cat	
-476	Cat Devil	Infernal Cat	
-477	Nekonosuke	Old Guardian Cat	
-478	Lumina	Luminalia	
+466	ブラックゼウス	闇次神子ブラックゼウス	
+467	スーパーゼウス	全能神スーパーゼウス	スーパーSゼウス
+468	聖フェニックス	聖戦衣化聖フェニックス	ヘッドロココ
+469	スーパーデビル	偽神スーパーデビル	スーパーDデビル
+470	サタンマリア	ワンダーマリア	
+471	ヘラクライスト	完璧ヘラクライスト	
+472	ネロ魔身	魔肖ネロ	
+473	ヤマト王子	ヤマト神帝	ヤマト爆神
+474	十字架天使	クロスエンジェル	ストライク天使
+475	ネコ若神子	ネコ神帝	
+476	ネコデビル	ネコ邪神	
+477	ネコの助	ネコ老守	
+478	幻の精霊ルミナ	夢幻の精霊ルミナリア	
 479	グミネコ	ラッキーネコ	
 480	ねこ娘	ネコねこ娘	
-481	Doktor Heaven	Professor Abyss	
-482	Benevolent Souma	Souma ＆ Cat	
-483	Kano ＆ Souma	Kano ＆ Souma ＆ Cat	
-484	Li'l Valkyrie Dark	Dark Rider Valkyrie	
+481	超越科学者ヘヴン博士	時空科学者アビス博士	
+482	幸せを願った少年ソウマ	幸せを願った少年ソウマ＆ネコ	
+483	カノとソウマ	カノとソウマとネコ	
+484	黒ちびネコヴァルキリー	黒ちびネコヴァルキリー・紅	
 485	カレット	カレットCC	
 486	ひな	剣士ひな	
-487	Eva Unit-08	Eva Unit-08 & Cat	
-488	AAA Wunder	NNN Wunder	
-489	Misato Katsuragi	Captain Misato	
-490	Ritsuko Akagi	First Officer Ritsuko	
-491	Rei Ayanami (???)	Awakened Ayanami	
-493	Gaia the Creator	Gaia the Supreme	
-494	Seabreeze Coppermine	Seabreeze Coppermine, type κ	
-495	Matador Cat	Flamenco Cat	Bellydance Cat
-496	Narita Kaihime	Wargod Kaihime	Immortal Kaihime
-497	Shakurel Cat	Shakurel Macho Cat	
-498	Shakurel Lion	Shakurel Lion CC	
-499	Shakurel Tiger	Shakurel Tiger CC	
-500	Shakurel Panda	Shakurel Panda CC	
-501	Cat Bros	Baka Cat Bros	
-502	Myrcia	Myrcia, type ξ	Divine Myrcia
+487	エヴァ８号機	エヴァ８号機＆ネコ	
+488	空中艦艇ネコヴンダー	希望の船NNNネコヴンダー	
+489	ちびミサト	ヴンダー艦長のちびミサト	
+490	ちびリツコ	ヴンダー副長のちびリツコ	
+491	ちびアヤナミレイ(仮称)	目覚めのちびアヤナミ	
+493	創造神ガイア	ゴッドガイア	
+494	潮風のセーラーカッパー	潮風のセーラーカッパーκ	
+495	ネコマタドール	ネコフラメンコ	ネコエキゾチック
+496	成田甲斐	武神・成田甲斐	豪炎姫の武神・成田甲斐
+501	ネコ兄弟S	ネコバカ兄弟S	
+502	英雄令嬢メルシュ	英雄令嬢メルシュξ	絢爛令嬢メルシュξ
 503	ネコ２Ｄ	ネコ３Ｄ	
 504	おやじネコ(店主)	おやじネコ(現役)	
-505	Relentless Gladios	Gladios the Annihilator	God-Emperor Gladios
-506	Eyewaltz	Eyewaltz CC	
-507	Mightycat	Supercat	
-508	Ryu Cat	Ryu Cat CC	
-509	Chun-Li Cat	Chun-Li Cat CC	
-510	Akuma	Akuma CC	
-511	Ryu	Ryu CC	Kage
-512	Chun-Li	Chun-Li CC	
-513	Guile	Guile CC	
-514	Zangief	Zangief CC	
-515	Blanka	Blanka CC	
-516	Dhalsim	Dhalsim CC	
-517	Ken	Ken CC	
-518	Akuma Giraffe	Akuma Lion	
-519	Lasvoss	Ultimate Lasvoss	Lasvoss Reborn
-520	Good-Luck Ebisu	Bad-Luck Ebisu	
-521	Medusa Cat	Twintail Medusa Cat	Naga Cat
-522	Nymph Cat	Medalist Cat	Fiend Cat
-523	Wushu Cat	Sifu Cat	Shigong Cat
+505	角龍グラディオス	角龍王グラディオス	角龍皇帝グラディオス
+506	アイウォルツ	アイウォルツCC	
+507	スーパーにゃん	ジャイにゃん	
+508	ネコリュウ	ネコリュウCC	
+509	ネコ春麗	ネコ春麗CC	
+510	豪鬼	豪鬼CC	
+511	リュウ	リュウCC	影ナル者
+512	春麗	春麗CC	
+513	ガイル	ガイルCC	
+514	ザンギエフ	ザンギエフCC	
+515	ブランカ	ブランカCC	
+516	ダルシム	ダルシムCC	
+517	ケン	ケンCC	
+518	ゴウキリン	ゴウキライオン	
+519	ラスヴォース	ファイナルラスヴォース	シン・ラスヴォース
+520	ネコ七福神	ネコ七福邪神	
+521	ネコメデューサ	ネコツインテール	ネコナーガ
+522	泉のネコ女神	ネコメダリスト	ネコ魔神
+523	ネコ武闘家	ネコ師範	ネコマスター
 524	ソラカラちゃん	ソラカラちゃん＆ネコ	
-525	Kintaro	Kinrangers RoboForce	Kinrangers GigaForce
-526	Snow Angel Twinstars	Snow Angel Twinstars, type Φ	
-527	Slime Cat	Jellycat	
-528	Cossack Cat	Vodka Cat	
-529	Kasli the Scourge	Ritual Saint Kasli	
+525	きんたろう	猛銃戦隊キンレンジャー	超銃戦隊キンレンジャー
+526	冬天使のシシル＆コマリ	冬天使のシシル＆コマリΦ	
+527	ネコスライム	ネコゼリーフィッシュ	
+528	ネコサック	ネコウォッカ	
+529	厄災の子キャスリィ	祝祭の聖女キャスリィ	
 530	エルメ	エルメCC	
-531	Teacher BearCat	Assassin BearCat	Cadaver BearCat
-532	Urs & Fenrir	Urs & Minka	
-533	Sharpshooter Saki	Nighthunter Saki	Bad Blaster Saki
-534	Hades the Punisher	Hades the Deathdealer	Almighty Hades
-535	Hatsune Miku	Hatsune Miku CC	
-536	Sakura Miku	Sakura Miku CC	
-537	Kagamine Rin & Len	Kagamine Rin & Len CC	
-538	Miku Cat	Miku Cat CC	
-539	Rugby Cat	Quarterback Cat	
+531	ネコックマ	ネコブラックマ	ネコックマンケン
+532	フェンリルとウルス	ミケとウルス	
+533	マッドシューター・サキ	ナイトバスター・サキ	バッドブラスター・サキ
+534	冥界神ハデス	デスハーデス	Gデスハーデス
+535	初音ミク	初音ミクCC	
+536	桜ミク	桜ミクCC	
+537	鏡音リン＆レン	鏡音リン＆レンCC	
+538	ネコミク	ネコミクCC	
+539	ラガーにゃん	ニャメフト	
 540	ネコU.F.O.	ネコ焼そばU.F.O.	
 541	ネコヤキソバン	うまい!太い!大きい!ネコ	
 542	ネコ少年	ネコ学生	
-543	Kasli the Bane	Kasli, Daughter of Chaos	
-544	Kyosaka Nanaho	True Kyosaka Nanaho	
-545	Phantom Cat	Miasma Cat	
-546	Papaluga	Papalan Pasalan	
-547	Night Oracle Rei	Heavenly Herald Rei	
-548	The 4th Angel	4th Angel Cat	
-549	The 6th Angel	6th Angel Cat	
-550	The 10th Angel	10th Angel Cat	
-551	The 9th Angel	9th Angel Cat	
-552	Kaworu Cat	Moon Kaworu Cat	
-553	Bakery Cat	Boomerang Cat	
-554	Master Uril	Mystic Uril	
-555	Shaman Khan	All-Loving Shaman Khan	
-556	Holy Knight Alibaba	Holy King Alibaba	Ghost Alibaba
-557	Heavenly Jack	Heavenly Lord Jack	
-558	Gacha Cat	Lucky Gacha Cat	
-559	Hell Warden Emma	Hell Sentinel Emma	
-560	Megurine Luka	Megurine Luka CC	
-561	MEIKO & Cat	MEIKO & Cat CC	
-562	Luka Cat	Luka Cat CC	
-563	Squirtgun Saki	Aquabuster Saki	
-564	Summerluga	Bikinilan Pasalan	
-565	Suntan Cat	Macho Suntan Cat	
-566	Lifeguard Cats	Sweet Bro Cats	
+543	禍根の魔女キャスリィ	漆黒の魔女ダークキャスリィ	
+544	京坂七穂	京坂七穂・真	
+545	ネコファントム	ケムリネコ	
+546	オイルガ	オイランパサラン	スケランカクラン
+547	白夜姫のレイ	白天姫のレイ	
+548	第４の使徒	第４のネコ使徒	
+549	第６の使徒	第６のネコ使徒	
+550	第１０の使徒	第１０のネコ使徒	
+551	第９の使徒	第９のネコ使徒	
+552	ネコカヲル	月面のネコカヲル	
+553	ネコベーカリー	ネコブーメラン	
+554	達人ウリル	ネコ仮面のウリル	
+555	シャーマンカーン	全情神シャーマンカーン	
+556	騎神アリババ	アリババ神帝	ゴーストアリババ
+557	天子男ジャック	神帝男ジャック	
+558	レアガチャネコ	福引ガチャネコ	
+559	地獄警官エマ	地獄軍曹エマ	
+560	巡音ルカ	巡音ルカCC	
+561	MEIKO＆ネコ	MEIKO＆ネコCC	
+562	ネコルカ	ネコルカCC	
+563	アクアシューター・サキ	アクアバスター・サキ	
+564	ネコルガの夏	ミワクノパサラン	
+565	日焼けネコ	日焼けネコビルダー	
+566	救命にゃんこ	ダンゴにゃん兄弟	
 567	チビクロプスネコタマゴ	チビクロプスネコ	雷電のチビクロプスネコ
-568	Idi:N	Idi:N2	
-569	Gravi	Gravolo	Gravolodon
-570	Skull Rider Vars	Nightmare King Vars	
-571	E. Honda	E. Honda CC	
-572	Balrog	Balrog CC	
-573	Vega	Vega CC	
-574	Sagat	Sagat CC	
-575	M. Bison	M. Bison CC	
-576	C. Honda	C. Honda CC	
-577	Balrog Cat	Balrog Cat CC	
-578	Vega Cat	Vega Cat CC	
-579	Sagat Cat	Sagat Cat CC	
-580	M. Bison Cat	M. Bison Cat CC	
-581	Stone Cat	Boulder Cat	
-582	Hatsune Miku: MM2020 Osaka	Hatsune Miku CC: MM2020 Osaka	
-583	Hatsune Miku: MM2020 Tokyo	Hatsune Miku CC: MM2020 Tokyo	
-584	Keiji Claus	Maeda Christmas	Maeda Christmas DX
-585	Baby Garu	Mighty Aegis Garu	
-586	Emperor Cat	Tyrant Cat	
-587	Sweet Aphrodite	Chocoladite	
-588	First-Love Myrcia	First-Love Myrcia ξ	
-589	Valentine's Neneko	Sweetheart Neneko	True Love Neneko
-590	Snow Miku 2021	Snow Miku CC 2021	
-591	Kaito & Cat	Kaito & Cat CC	
-592	Neko Rin	Neko Rin CC	
-593	Neko Len	Neko Len CC	
-594	Mighty Aethur Ltd.	Atlantis Logistix	Ultra Atlantis Logistix
-595	Blooming Kamukura	Everbloom Kamukura	
-596	Ranma Saotome (M)	Ranma Saotome (F)	
-597	Akane Tendo	Akane Tendo (Gi)	
-598	Ryoga Hibiki (Pig)	Ryoga Hibiki	
-599	Shampoo (Cat)	Shampoo	
-600	Mousse (Duck)	Mousse	
-601	Happosai	Happosai (Lewd)	
-602	Ukyo Kuonji (GR)	Ukyo Kuonji	
-603	Tatewaki Kuno (Gi)	Tatewaki Kuno	
-604	Ranma Cat (M)	Ranma Cat (F)	
-605	Akane Cat	Akane Cat (Gi)	
-606	Panda Cat	Genma Cat	
-607	Adventurer Kanna	Swashbuckler Kanna	
+568	イディ:N	イディ:N2	
+569	石の精霊ゴロー	岩石の精霊イワゴロー	岩石の精霊王ダイゴロー
+570	竜騎士スカルバルス	ナイトメアバルス	
+571	エドモンド本田	エドモンド本田CC	
+572	バイソン	バイソンCC	
+573	バルログ	バルログCC	
+574	サガット	サガットCC	
+575	ベガ	ベガCC	
+576	ネコモンド本田	ネコモンド本田CC	
+577	ネコバイソン	ネコバイソンCC	
+578	ネコバルログ	ネコバルログCC	
+579	ネコサガット	ネコサガットCC	
+580	ネコベガ	ネコベガCC	
+581	ごろにゃん	ごろにゃーん	
+582	初音ミク マジカルミライ2020大阪	初音ミクCC マジカルミライ2020大阪	
+583	初音ミク マジカルミライ2020東京	初音ミクCC マジカルミライ2020東京	
+584	前田サンタ慶次	前田クリス慶次	前田クリス慶次DX
+585	幼獣ガル	帝獣ガルディアン	
+586	ネコ王子	ネコ国王	
+587	恋女神ショコラディーテ	メガショコラディーテ	
+588	初恋令嬢メルシュ	初恋令嬢メルシュξ	
+589	バレンタインねねこ	バレンタインチョコねねこ	本命・バレンタインねねこ
+590	雪ミク 2021	雪ミクCC 2021	
+591	KAITO＆ネコ	KAITO＆ネコCC	
+592	ネコリン	ネコリンCC	
+593	ネコレン	ネコレンCC	
+594	空中商会コロンブス	輸送兵団アトランチス	超輸送兵団アトランチス
+595	春龍かむくら	神春龍かむくら	
+596	早乙女乱馬(男)	早乙女らんま(女)	
+597	天道あかね	天道あかね(道着)	
+598	響良牙(ブタ)	響良牙	
+599	シャンプー(猫)	シャンプー	
+600	ムース(アヒル)	ムース	
+602	久遠寺右京(男装)	久遠寺右京	
+603	九能帯刀(道着)	九能帯刀	
+604	ネコ乱馬(男)	ネコらんま(女)	
+605	ネコあかね	ネコあかね(道着)	
+606	ネコパンダ	ネコ玄馬	
+607	冒険家カンナ	大冒険少女カンナ	
 608	ネコウエハース	ネコウエハースBIG	
-609	Dark Aegis Garu	Dark Beastlord Garu	
-610	Gold Brick Cat	King Ingot Cat	King Nekokhamen
-611	Godzilla Cat	Shin Godzilla Cat	
-612	Princess Cat	Empress Cat	
-613	Elder Mask Doron	Cat Mask Doron	
-614	Kaguya of the Coast	The Southern Sun	
-615	Kabuto Cat	Golden Kabuto Cat	
-616	Kuwagata Cat	King Kuwagata Cat	
-617	Summoner Satoru	Dark Summoner Satoru	
-618	Shiro Amakusa	Wargod Amakusa	
-619	Lilin	Lilin π	
-620	Hevijak the Wicked	Wicked King Hevijak	
-621	Aku Researcher	Evil Aku Researcher	
-622	Jagando Jr.	Lord of Ruin Jagando Jr.	
-623	Pied Piper Cat	Komuso Cat	
-624	Kunio-kun	Dodgeball Kunio-kun	
-625	Furiluga	Furilan Pasalan	
+609	黒獣ガルディアン	帝獣ダークガルディアン	
+610	金塊ネコ	キングネコインゴット	キングネコカーメン
+611	ネコゴジラ	シン・ネコゴジラ	
+612	ネコ王女	ネコ女王	
+613	古神面ドロン	ネコ神面ドロン	
+614	渚のかぐやひめ	南国衛星サンシャイン	
+615	カブトネコ	ゴールデンオオカブトネコ	
+616	クワガタネコ	キングクワガタネコ	
+617	召喚少年サトル	悪魔召喚サトル	
+618	天草四郎	魔神・天草四郎	
+619	妖賢女リリン	妖賢女リリンπ	
+620	邪龍ヘヴィジャーク	邪龍王ヘヴィジャーク	
+621	悪魔研究家	邪悪な悪魔研究家	
+622	ジャガンドーJr	破壊神ジャガンドーJr	
+623	ネコハーメルン	虚無僧ネコ	
+624	熱血硬派くにおくん	ドッジボール部くにおくん	
+625	オコルガ	オコランパサラン	
 626	ネコキリンモドキ	駿馬ネコキリンモドキ	
 627	ネコノトリッキー	天馬ネコノトリッキー	
 628	ネコノドラゴーン	名馬ネコノドラゴーン	
-629	Brainwashed Cat	Brainwashed Macho Cat	
-630	Calligraphy Cat	Tea Master Cat	
-631	Yamii	Yaminoir	
-632	Mighty Deth-Troy-R	Siege Walker Diabolosa	
-633	Shitakiri Sparrow	Chunchun Haunters	
-634	White Knight Cyclops	Black Knight Kyklops	
+629	洗脳されしネコ	洗脳されしネコビルダー	
+630	ネコ書道	ネコ茶道	
+631	闇の精霊ヤミィ	暗黒の精霊ヤミノワール	
+632	超竜戦機デス・トロイ	電磁戦機ディア・ボロス	
+633	舌切りすずめ	妖怪結社チュンチュン	
+634	白騎士キュクロプス	黒騎士キュクロプス	
 635	100万ドルのネコ	1億ドルのネコ	
-636	Brainwashed Tank Cat	Brainwashed Wall Cat	
+636	洗脳されしタンクネコ	洗脳されしネコカベ	
 637	シャオチョン＆ネコ	シャオチョン＆ネコCC	
 638	ナナ＆ネコ	ナナ＆ネコCC	
 639	エミリア＆ネコ	エミリア&ネコCC	
 640	ジェアー＆ネコ	ジェアー＆ネコCC	
-641	Iz the Dancer	Iz the Alluring Dancer	
-642	Lucifer the Fallen	Grand Lucifer	
-643	Superfeline	Superfeline II	
-644	Sweet Love Mekako	Bittersweet Mekako	
-645	Brainwashed Axe Cat	Brainwashed Brave Cat	
+641	踊り子イズ	魅惑の舞姫イズ	
+642	堕天神ルシファー	グランドルシファー	
+643	ネコ超人	ネコ超人Ⅱ	
+644	白い恋人メカ子	ビタースイートメカ子	
+645	洗脳されしバトルネコ	洗脳されし勇者ネコ	
 646	爆竹ネコ	爆竹ネコビルダー	
-647	Huntress Terun	Huntress Terun ζ	
+647	狩猟娘テルン	狩猟娘テルンζ	
 648	恋番長・鬼にゃんま	恋愛番長・鬼神にゃんま	
 649	服部半蔵	忍神・服部半蔵	
 650	幼馴染にゃん子	彼女にゃん子	

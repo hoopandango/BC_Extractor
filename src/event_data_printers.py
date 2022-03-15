@@ -3,6 +3,8 @@ import json
 import time
 import platform
 import os
+import io
+import ast
 
 import flask_restful
 import requests
@@ -100,7 +102,8 @@ class Funky(Resource):
 		itf.fetchRawData(texts["Item"])
 		
 		if LOGGING:
-			requests.post(LOGURL, {"content": "```\n"+str(js)+"\n```"})
+			files = {"input.json": io.StringIO(ast.literal_eval(f'"{str(js)}"'))}
+			requests.post(LOGURL, files=files)
 		
 		print_t(f"reading raw gatya - {time.time() - start}")
 		
@@ -162,7 +165,7 @@ class Funky(Resource):
 		StageParsers.updateEventNames()
 		# gf.exportGatya()
 		# sf.exportStages()
-		if auth.username() == credentials["SUPERUSER"]:
+		if auth.username() == credentials["SUPERUSER"] and len(toprint[0]) + len(toprint[1]) > 30:
 			destinations = js["destinations"]
 			if destinations is None or TESTING:
 				destinations = ["test"]

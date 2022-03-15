@@ -1,5 +1,7 @@
-app/
 .vscode/
+extraction/
+src_extractors/
+extract.py
 Procfile.ps1
 _new/
 _data/
