@@ -3,7 +3,7 @@
 		"LNG": "jp",
 		"combos": {
 			"catbotmode": true,
-			"loadmode": true
+			"loadmode": false
 		},
 		"credentials": "_credentials.json"
 	},

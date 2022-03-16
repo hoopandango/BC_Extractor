@@ -3,6 +3,7 @@ import regex as re
 import atexit
 import json
 import csv
+from functools import lru_cache
 
 with open('_config.json') as fl:
 	config = json.load(fl)
@@ -15,8 +16,9 @@ def unload_changes():
 		for row in reader:
 			toput.append(row)
 	with open(config['outputs']['stages'], 'w', encoding='utf-8', newline='') as fil:
-		for row in Downloaders.buffer:
-			toput.append({"ID": row, "name": Downloaders.buffer[row]})
+		for row, value in Downloaders.buffer.items():
+			if value != "Unknown":
+				toput.append({"ID": row, "name": value})
 		writer = csv.DictWriter(fil, delimiter='\t', fieldnames=list(toput[0].keys()))
 		writer.writeheader()
 		writer.writerows(toput)
@@ -31,9 +33,9 @@ class Downloaders:
 		cls.buffer[ID] = name
 	
 	@classmethod
+	@lru_cache
 	def requestStage(cls, ID: int, lng: str):
-		if ID in cls.buffer:
-			return cls[ID]
+		# print(ID)
 		prefix = "https://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/stage/"
 		pre = Downloaders.prefixes.get(ID // 1000)
 		if pre is None:
@@ -54,6 +56,7 @@ class Downloaders:
 		return "Unknown"
 	
 	@staticmethod
+	@lru_cache
 	def requestGatya(ID: int, lng: str, cat: str = 'R') -> str:
 		prefix = "https://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/gacha/"
 		if lng != 'jp':

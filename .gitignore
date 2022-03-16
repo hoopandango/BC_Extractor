@@ -9,7 +9,7 @@ latest_en/
 latest_jp/
 archives/
 tests/
-outputs/
+eventdata/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
