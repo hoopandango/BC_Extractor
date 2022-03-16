@@ -323,138 +323,138 @@
 322	(≅ 321)	Crash Fever Collab	 [R] {7x rate on Belial}
 323	(≅ 318)	Puella Magi Madoka Magica Collab	 {3x rate on Bebe, Kyoko Sakura, Mami Tomoe, Sayaka Miki, Homura Akemi, 2x rate on Madoka Kaname, 6x rate on Kyubey, 4x rate on Madoka Cat, Homura Cat, Sayaka Cat, Mami Cat, Kyoko Cat}
 324	(≅ 304)	Nekolugas	 [D]
-325	(≅ 304)	Nekolugas	 [D + N]
-326	(≅ 304)	Nekolugas	 [D + R]
+325	(≅ 304)	Nekolugas	 [N + D]
+326	(≅ 304)	Nekolugas	 [R + D]
 327	(≅ 289)	Dynamites	 [D]
-328	(≅ 289)	Dynamites	 [D + N]
-329	(≅ 289)	Dynamites	 [D + R]
+328	(≅ 289)	Dynamites	 [N + D]
+329	(≅ 289)	Dynamites	 [R + D]
 330	(> 221)	Vajiras	 [D] (+ Musashi Miyamoto)
-331	(≅ 330)	Vajiras	 [D + N]
-332	(≅ 330)	Vajiras	 [D + R]
+331	(≅ 330)	Vajiras	 [N + D]
+332	(≅ 330)	Vajiras	 [R + D]
 333	(> 224)	Galaxy Gals	 [D] (+ Headmistress Jeanne)
-334	(≅ 333)	Galaxy Gals	 [D + N]
-335	(≅ 333)	Galaxy Gals	 [D + R]
+334	(≅ 333)	Galaxy Gals	 [N + D]
+335	(≅ 333)	Galaxy Gals	 [R + D]
 336	(> 266)	Dragon Emperors	 [D] (+ High Lord Babel)
-337	(≅ 336)	Dragon Emperors	 [D + N]
-338	(≅ 336)	Dragon Emperors	 [D + R]
+337	(≅ 336)	Dragon Emperors	 [N + D]
+338	(≅ 336)	Dragon Emperors	 [R + D]
 339	(≅ 230)	Ultra Souls	 [D]
-340	(≅ 230)	Ultra Souls	 [D + N]
-341	(≅ 230)	Ultra Souls	 [D + R]
+340	(≅ 230)	Ultra Souls	 [N + D]
+341	(≅ 230)	Ultra Souls	 [R + D]
 342	(≅ 298)	Dark Heroes	 [D]
-343	(≅ 298)	Dark Heroes	 [D + N]
-344	(≅ 298)	Dark Heroes	 [D + R]
+343	(≅ 298)	Dark Heroes	 [N + D]
+344	(≅ 298)	Dark Heroes	 [R + D]
 345	(≅ 311)	Almighties	 [D]
-346	(≅ 311)	Almighties	 [D + N]
-347	(≅ 311)	Almighties	 [D + R]
+346	(≅ 311)	Almighties	 [N + D]
+347	(≅ 311)	Almighties	 [R + D]
 348	(≅ 283)	Iron Legion	 [D]
-349	(≅ 283)	Iron Legion	 [D + N]
-350	(≅ 283)	Iron Legion	 [D + R]
+349	(≅ 283)	Iron Legion	 [N + D]
+350	(≅ 283)	Iron Legion	 [R + D]
 351	(≅ 276)	Elemental Pixies	 [D]
-352	(≅ 276)	Elemental Pixies	 [D + N]
-353	(≅ 276)	Elemental Pixies	 [D + R]
+352	(≅ 276)	Elemental Pixies	 [N + D]
+353	(≅ 276)	Elemental Pixies	 [R + D]
 354	(≅ 248)	Girls & Monsters	 [D]
-355	(≅ 248)	Girls & Monsters	 [D + N]
-356	(≅ 248)	Girls & Monsters	 [D + R]
+355	(≅ 248)	Girls & Monsters	 [N + D]
+356	(≅ 248)	Girls & Monsters	 [R + D]
 357	(> 307)	Best of the Best	 (+ Mizli)
 358	(> 251)	Ultra Selection	 (- a lot) {5x rate on Easter Neneko}
 359	(> 252)	Miracle Chance	 (- a lot) {5x rate on Sunny Neneko}
 360	(≅ 315)	Uberfest	
 361	(≅ 319)	Epicfest	
 362	(> 230)	Ultra Souls	 [D] (+ Ushiwakamaru)
-363	(≅ 362)	Ultra Souls	 [D + N]
-364	(≅ 362)	Ultra Souls	 [D + R]
+363	(≅ 362)	Ultra Souls	 [N + D]
+364	(≅ 362)	Ultra Souls	 [R + D]
 365	(> 262)	Goodbye {oldyear:d}!	 (- a lot) {5x rate on Years-End Neneko}
 366	(> 263)	Welcome {newyear:d}!	 (- a lot) {5x rate on Years-End Neneko}
 367	(> 315)	Uberfest	 (+ Li'l Valkyrie)
 368	(> 214)	Fate/Stay Night Collab	 (+ Sakura Matou, Archer the Cat, Rider the Cat, Kotomine & Gilgamesh Cats) {6x rate on Kotomine & Gilgamesh Cats, 3x rate on Rider the Cat, Archer the Cat, Sakura the Cat, Rin the Cat, Illya the Cat}
 369	(> 289)	Dynamites	 [D] (+ Wonder MOMOCO)
-370	(≅ 369)	Dynamites	 [D + N]
-371	(≅ 369)	Dynamites	 [D + R]
+370	(≅ 369)	Dynamites	 [N + D]
+371	(≅ 369)	Dynamites	 [R + D]
 372	(> 304)	Nekolugas	 [D] (+ Legeluga)
-373	(≅ 372)	Nekolugas	 [D + N]
-374	(≅ 372)	Nekolugas	 [D + R]
+373	(≅ 372)	Nekolugas	 [N + D]
+374	(≅ 372)	Nekolugas	 [R + D]
 375	(> 62)	Survive! Mola Mola! Collab	 [N] (+ Welterweight Cat, Vaulter Cat, Gardener Cat, Rover Cat, Fencer Cat) {6x rate on Baby Mola}
 376	(≅ 375)	Survive! Mola Mola! Collab	 [R] {6x rate on Baby Mola}
 377	(> 283)	Iron Legion	 [D] (+ Mighty Kristul Muu)
-378	(≅ 377)	Iron Legion	 [D + N]
-379	(≅ 377)	Iron Legion	 [D + R]
+378	(≅ 377)	Iron Legion	 [N + D]
+379	(≅ 377)	Iron Legion	 [R + D]
 380	(> 276)	Elemental Pixies	 [D] (+ Lumina)
-381	(≅ 380)	Elemental Pixies	 [D + N]
-382	(≅ 380)	Elemental Pixies	 [D + R]
+381	(≅ 380)	Elemental Pixies	 [N + D]
+382	(≅ 380)	Elemental Pixies	 [R + D]
 383		Bikkuriman Collab	 {6x rate on Fiendish Nero}
 384	(> 298)	Dark Heroes	 [D] (+ Doktor Heaven)
-385	(≅ 384)	Dark Heroes	 [D + N]
-386	(≅ 384)	Dark Heroes	 [D + R]
+385	(≅ 384)	Dark Heroes	 [N + D]
+386	(≅ 384)	Dark Heroes	 [R + D]
 387	(> 295)	Annihilation City Collab	 (+ Benevolent Souma) {8x rate on Otaku Geek Cat, 11x rate on Souma Cat}
 388		NEO Best of the Best	
 389	(> 357)	Best of the Best	 (+ Mighty Thermae D-Lux, The Grateful Crane, Windy, Vars, Empress Chronos)
 390	(> 176)	Princess Punt, Merc Storia, Million Arthur, Dragon Poker	 (+ カレット, ひな)
 391	(> 282)	Evangelion [Set 1]	 (+ Eva Unit-08, AAA Wunder, Misato Katsuragi, Ritsuko Akagi, Rei Ayanami (???)) {4x rate on Mari Cat, Asuka Cat, Rei Cat}
 392	(> 311)	Almighties	 [D] (+ Gaia the Creator)
-393	(≅ 392)	Almighties	 [D + N]
-394	(≅ 392)	Almighties	 [D + R]
+393	(≅ 392)	Almighties	 [N + D]
+394	(≅ 392)	Almighties	 [R + D]
 395	(> 314)	Gals of Summer	 (+ Seabreeze Coppermine) {4x rate on Sunny Neneko}
 396	(> 330)	Vajiras	 [D] (+ Narita Kaihime)
-397	(≅ 396)	Vajiras	 [D + N]
-398	(≅ 396)	Vajiras	 [D + R]
+397	(≅ 396)	Vajiras	 [N + D]
+398	(≅ 396)	Vajiras	 [R + D]
 399	(> 367)	Uberfest	 (+ Narita Kaihime)
 400	(> 319)	Epicfest	 (+ Narita Kaihime)
 401	(> 320)	Platinum Ticket Banner	 (+ Narita Kaihime)
 402	(> 333)	Galaxy Gals	 [D] (+ Myrcia)
-403	(≅ 402)	Galaxy Gals	 [D + N]
-404	(≅ 402)	Galaxy Gals	 [D + R]
+403	(≅ 402)	Galaxy Gals	 [N + D]
+404	(≅ 402)	Galaxy Gals	 [R + D]
 405	(> 399)	Uberfest	 (+ Myrcia)
 406	(> 400)	Epicfest	 (+ Myrcia)
 407	(> 401)	Platinum Ticket Banner	 (+ Myrcia)
 408	(> 336)	Dragon Emperors	 [D] (+ Relentless Gladios)
-409	(≅ 408)	Dragon Emperors	 [D + N]
-410	(≅ 408)	Dragon Emperors	 [D + R]
+409	(≅ 408)	Dragon Emperors	 [N + D]
+410	(≅ 408)	Dragon Emperors	 [R + D]
 411	(> 405)	Uberfest	 (+ Relentless Gladios)
 412	(> 406)	Epicfest	 (+ Relentless Gladios)
 413	(> 407)	Platinum Ticket Banner	 (+ Relentless Gladios)
 414	(> 185)	Merc Storia Collab	 (+ Eyewaltz)
 415		Street Fighter Collab	
 416	(> 369)	Dynamites	 [D] (+ Lasvoss)
-417	(≅ 416)	Dynamites	 [D + N]
-418	(≅ 416)	Dynamites	 [D + R]
+417	(≅ 416)	Dynamites	 [N + D]
+418	(≅ 416)	Dynamites	 [R + D]
 419	(> 411)	Uberfest	 (+ Lasvoss)
 420	(> 412)	Epicfest	 (+ Lasvoss)
 421	(> 372)	Nekolugas	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-422	(≅ 421)	Nekolugas	 [D + N]
-423	(≅ 421)	Nekolugas	 [D + R]
+422	(≅ 421)	Nekolugas	 [N + D]
+423	(≅ 421)	Nekolugas	 [R + D]
 424	(> 416)	Dynamites	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-425	(≅ 424)	Dynamites	 [D + N]
-426	(≅ 424)	Dynamites	 [D + R]
+425	(≅ 424)	Dynamites	 [N + D]
+426	(≅ 424)	Dynamites	 [R + D]
 427	(> 396)	Vajiras	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-428	(≅ 427)	Vajiras	 [D + N]
-429	(≅ 427)	Vajiras	 [D + R]
+428	(≅ 427)	Vajiras	 [N + D]
+429	(≅ 427)	Vajiras	 [R + D]
 430	(> 402)	Galaxy Gals	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-431	(≅ 430)	Galaxy Gals	 [D + N]
-432	(≅ 430)	Galaxy Gals	 [D + R]
+431	(≅ 430)	Galaxy Gals	 [N + D]
+432	(≅ 430)	Galaxy Gals	 [R + D]
 433	(> 408)	Dragon Emperors	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-434	(≅ 433)	Dragon Emperors	 [D + N]
-435	(≅ 433)	Dragon Emperors	 [D + R]
+434	(≅ 433)	Dragon Emperors	 [N + D]
+435	(≅ 433)	Dragon Emperors	 [R + D]
 436	(> 362)	Ultra Souls	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-437	(≅ 436)	Ultra Souls	 [D + N]
-438	(≅ 436)	Ultra Souls	 [D + R]
+437	(≅ 436)	Ultra Souls	 [N + D]
+438	(≅ 436)	Ultra Souls	 [R + D]
 439	(> 384)	Dark Heroes	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-440	(≅ 439)	Dark Heroes	 [D + N]
-441	(≅ 439)	Dark Heroes	 [D + R]
+440	(≅ 439)	Dark Heroes	 [N + D]
+441	(≅ 439)	Dark Heroes	 [R + D]
 442	(> 392)	Almighties	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-443	(≅ 442)	Almighties	 [D + N]
-444	(≅ 442)	Almighties	 [D + R]
+443	(≅ 442)	Almighties	 [N + D]
+444	(≅ 442)	Almighties	 [R + D]
 445	(> 377)	Iron Legion	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-446	(≅ 445)	Iron Legion	 [D + N]
-447	(≅ 445)	Iron Legion	 [D + R]
+446	(≅ 445)	Iron Legion	 [N + D]
+447	(≅ 445)	Iron Legion	 [R + D]
 448	(> 380)	Elemental Pixies	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-449	(≅ 448)	Elemental Pixies	 [D + N]
-450	(≅ 448)	Elemental Pixies	 [D + R]
+449	(≅ 448)	Elemental Pixies	 [N + D]
+450	(≅ 448)	Elemental Pixies	 [R + D]
 451	(> 245)	Red Busters	 [R + N] (+ Nymph Cat, Wushu Cat, Matador Cat)
 452	(> 246)	Air Busters	 [R + N] (+ Nymph Cat, Wushu Cat, Matador Cat)
 453	(> 269)	Metal Busters	 [R + N] (+ Nymph Cat, Wushu Cat, Matador Cat) {3x rate on Easter Neneko, Years-End Neneko, Sunny Neneko, Gloomy Neneko, Neneko}
 454	(> 248)	Girls & Monsters	 [D] (+ Nymph Cat, Wushu Cat, Matador Cat)
-455	(≅ 454)	Girls & Monsters	 [D + N]
-456	(≅ 454)	Girls & Monsters	 [D + R]
+455	(≅ 454)	Girls & Monsters	 [N + D]
+456	(≅ 454)	Girls & Monsters	 [R + D]
 457	(> 257)	Halloween Gatya	 (+ Nymph Cat, Wushu Cat, Matador Cat) {4x rate on Gloomy Neneko}
 458	(> 259)	Easter Carnival	 (+ Nymph Cat, Wushu Cat, Matador Cat) {4x rate on Easter Neneko}
 459	(> 395)	Gals of Summer	 (+ Nymph Cat, Wushu Cat, Matador Cat) {4x rate on Sunny Neneko}
@@ -474,8 +474,8 @@
 473	(> 365)	Goodbye {oldyear:d}!	 (- a lot) {5x rate on Years-End Neneko}
 474	(> 366)	Welcome {newyear:d}!	 (- a lot) {5x rate on Years-End Neneko}
 475	(> 436)	Ultra Souls	 [D] (+ Kintaro)
-476	(≅ 475)	Ultra Souls	 [D + N]
-477	(≅ 475)	Ultra Souls	 [D + R]
+476	(≅ 475)	Ultra Souls	 [N + D]
+477	(≅ 475)	Ultra Souls	 [R + D]
 478	(> 469)	Uberfest	 (+ Kintaro)
 479	(> 470)	Epicfest	 (+ Kintaro)
 480	(> 471)	Platinum Ticket Banner	 (+ Kintaro)
@@ -486,8 +486,8 @@
 485	(> 375)	Survive! Mola Mola! Collab	 [N] (+ Nymph Cat, Wushu Cat, Matador Cat)
 486	(≅ 485)	Survive! Mola Mola! Collab	 [R]
 487	(> 439)	Dark Heroes	 [D] (+ Sharpshooter Saki)
-488	(≅ 487)	Dark Heroes	 [D + N]
-489	(≅ 487)	Dark Heroes	 [D + R]
+488	(≅ 487)	Dark Heroes	 [N + D]
+489	(≅ 487)	Dark Heroes	 [R + D]
 490	(> 483)	Uberfest	 (+ Sharpshooter Saki)
 491	(> 479)	Epicfest	 (+ Sharpshooter Saki)
 492	(> 484)	Platinum Ticket Banner	 (+ Sharpshooter Saki)
@@ -496,8 +496,8 @@
 495	(≅ 485)	Survive! Mola Mola! Collab	 [N] {6x rate on Baby Mola}
 496	(≅ 485)	Survive! Mola Mola! Collab	 [R] {6x rate on Baby Mola}
 497	(> 442)	Almighties	 [D] (+ Hades the Punisher)
-498	(≅ 497)	Almighties	 [D + N]
-499	(≅ 497)	Almighties	 [D + R]
+498	(≅ 497)	Almighties	 [N + D]
+499	(≅ 497)	Almighties	 [R + D]
 500	(> 490)	Uberfest	 (+ Hades the Punisher)
 501	(> 491)	Epicfest	 (+ Hades the Punisher)
 502	(≅ 458)	Easter Carnival	
@@ -505,8 +505,8 @@
 504	(> 492)	Platinum Ticket Banner	 (+ Hades the Punisher)
 505	(> 387)	Annihilation City Collab	 (+ Nymph Cat, Wushu Cat, Matador Cat) {6x rate on Otaku Geek Cat, 10x rate on Souma Cat}
 506	(> 454)	Girls & Monsters	 [D] (+ Kyosaka Nanaho)
-507	(≅ 506)	Girls & Monsters	 [D + N]
-508	(≅ 506)	Girls & Monsters	 [D + R]
+507	(≅ 506)	Girls & Monsters	 [N + D]
+508	(≅ 506)	Girls & Monsters	 [R + D]
 509	(> 501)	Epicfest	 (+ Kasli the Bane)
 510	(> 504)	Platinum Ticket Banner	 (+ Kasli the Bane)
 511	(≅ 505)	Annihilation City Collab	
@@ -516,8 +516,8 @@
 515	(≅ 513)	Evangelion [Set 1]	
 516	(≅ 514)	Evangelion [Set 2]	
 517	(> 421)	Nekolugas	 [D] (+ Papaluga)
-518	(≅ 517)	Nekolugas	 [D + N]
-519	(≅ 517)	Nekolugas	 [D + R]
+518	(≅ 517)	Nekolugas	 [N + D]
+519	(≅ 517)	Nekolugas	 [R + D]
 520	(> 500)	Uberfest	 (+ Papaluga)
 521	(> 509)	Epicfest	 (+ Papaluga)
 522	(> 510)	Platinum Ticket Banner	 (+ Papaluga)
@@ -537,8 +537,8 @@
 536	(> 512)	Superfest	 (+ Papaluga)
 537	(≅ 524)	Bikkuriman Collab	
 538	(> 448)	Elemental Pixies	 [D] (+ Gravi)
-539	(≅ 538)	Elemental Pixies	 [D + N]
-540	(≅ 538)	Elemental Pixies	 [D + R]
+539	(≅ 538)	Elemental Pixies	 [N + D]
+540	(≅ 538)	Elemental Pixies	 [R + D]
 541	(> 520)	Uberfest	 (+ Gravi)
 542	(> 521)	Epicfest	 (+ Gravi)
 543	(> 525)	Platinum Ticket Banner	 (+ Gravi)
@@ -571,8 +571,8 @@
 570	(≅ 569)	Evangelion [Set 1]	
 571	(> 559)	Superfest	
 572	(> 445)	Iron Legion	 [D] (+ Mighty Aethur Ltd.)
-573	(≅ 572)	Iron Legion	 [D + N]
-574	(≅ 572)	Iron Legion	 [D + R]
+573	(≅ 572)	Iron Legion	 [N + D]
+574	(≅ 572)	Iron Legion	 [R + D]
 575	(> 555)	Uberfest	 (+ Mighty Aethur Ltd.)
 576	(> 542)	Epicfest	 (+ Mighty Aethur Ltd.)
 577	(> 556)	Platinum Ticket Banner	 (+ Mighty Aethur Ltd.)
@@ -584,8 +584,8 @@
 583	(> 563)	Hatsune Miku Collab	 (+ Neko Rin, Neko Len, Snow Miku 2021, Kaito & Cat) {3x rate on Neko Len, Neko Rin, Kaito & Cat, Luka Cat, MEIKO & Cat}
 584	(≅ 583)	Hatsune Miku Collab	
 585	(> 506)	Girls & Monsters	 [D] (+ Adventurer Kanna)
-586	(≅ 585)	Girls & Monsters	 [D + N]
-587	(≅ 585)	Girls & Monsters	 [D + R]
+586	(≅ 585)	Girls & Monsters	 [N + D]
+587	(≅ 585)	Girls & Monsters	 [R + D]
 588		Ranma 1/2 Collab	 {2x rate on Happosai, Ukyo Kuonji (GR), Tatewaki Kuno (Gi), 10x rate on Akane Cat}
 589	(≅ 588)	Ranma 1/2 Collab	
 590	(> 576)	Epicfest	 (+ Dark Aegis Garu)
@@ -607,11 +607,11 @@
 606	(≅ 582)	DynastyFest	
 607	(≅ 605)	Gals of Summer	
 608	(> 427)	Vajiras	 [D] (+ Shiro Amakusa)
-609	(≅ 608)	Vajiras	 [D + N]
-610	(≅ 608)	Vajiras	 [D + R]
+609	(≅ 608)	Vajiras	 [N + D]
+610	(≅ 608)	Vajiras	 [R + D]
 611	(> 430)	Galaxy Gals	 [D] (+ Lilin)
-612	(≅ 611)	Galaxy Gals	 [D + N]
-613	(≅ 611)	Galaxy Gals	 [D + R]
+612	(≅ 611)	Galaxy Gals	 [N + D]
+613	(≅ 611)	Galaxy Gals	 [R + D]
 614	(> 575)	Uberfest	 (+ Shiro Amakusa, Lilin)
 615	(> 590)	Epicfest	 (+ Lilin)
 616	(> 603)	Platinum Ticket Banner	 (+ Lilin)
@@ -623,14 +623,14 @@
 622	(> 591)	Superfest	 (+ Lilin)
 623	(> 582)	DynastyFest	 (+ Kaguya of the Coast)
 624	(> 517)	Nekolugas	 [D] (+ Furiluga)
-625	(≅ 624)	Nekolugas	 [D + N]
-626	(≅ 624)	Nekolugas	 [D + R]
+625	(≅ 624)	Nekolugas	 [N + D]
+626	(≅ 624)	Nekolugas	 [R + D]
 627	(> 424)	Dynamites	 [D] (+ Summoner Satoru)
-628	(≅ 627)	Dynamites	 [D + N]
-629	(≅ 627)	Dynamites	 [D + R]
+628	(≅ 627)	Dynamites	 [N + D]
+629	(≅ 627)	Dynamites	 [R + D]
 630	(> 433)	Dragon Emperors	 [D] (+ Hevijak the Wicked)
-631	(≅ 630)	Dragon Emperors	 [D + N]
-632	(≅ 630)	Dragon Emperors	 [D + R]
+631	(≅ 630)	Dragon Emperors	 [N + D]
+632	(≅ 630)	Dragon Emperors	 [R + D]
 633	(> 614)	Uberfest	 (+ Summoner Satoru, Hevijak the Wicked, Furiluga)
 634	(> 615)	Epicfest	 (+ Summoner Satoru, Shiro Amakusa, Hevijak the Wicked)
 635	(> 617)	Platinum Ticket Banner	 (+ Summoner Satoru)
@@ -642,11 +642,11 @@
 641	(> 634)	Epicfest	
 642	(≅ 621)	Puella Magi Madoka Magica Collab	
 643	(> 572)	Iron Legion	 [D] (+ Mighty Deth-Troy-R)
-644	(≅ 643)	Iron Legion	 [D + N]
-645	(≅ 643)	Iron Legion	 [D + R]
+644	(≅ 643)	Iron Legion	 [N + D]
+645	(≅ 643)	Iron Legion	 [R + D]
 646	(> 538)	Elemental Pixies	 [D] (+ Yamii)
-647	(≅ 646)	Elemental Pixies	 [D + N]
-648	(≅ 646)	Elemental Pixies	 [D + R]
+647	(≅ 646)	Elemental Pixies	 [N + D]
+648	(≅ 646)	Elemental Pixies	 [R + D]
 649	(> 544)	Halloween Gatya	 (+ Brainwashed Cat) {4x rate on Gloomy Neneko}
 650	(≅ 649)	Halloween Gatya	
 651	(> 633)	Uberfest	 (+ Mighty Deth-Troy-R, Yamii)
@@ -656,11 +656,11 @@
 655	(> 640)	Legend Ticket Banner	 (+ Yamii)
 656	(> 655)	Legend Ticket Banner	 (+ Mighty Deth-Troy-R)
 657	(> 475)	Ultra Souls	 [D] (+ Shitakiri Sparrow)
-658	(≅ 657)	Ultra Souls	 [D + N]
-659	(≅ 657)	Ultra Souls	 [D + R]
+658	(≅ 657)	Ultra Souls	 [N + D]
+659	(≅ 657)	Ultra Souls	 [R + D]
 660	(> 487)	Dark Heroes	 [D] (+ White Knight Cyclops)
-661	(≅ 660)	Dark Heroes	 [D + N]
-662	(≅ 660)	Dark Heroes	 [D + R]
+661	(≅ 660)	Dark Heroes	 [N + D]
+662	(≅ 660)	Dark Heroes	 [R + D]
 663	(> 596)	Ultra Selection	 (- a lot) {5x rate on Valentine's Neneko}
 664	(> 597)	Miracle Chance	 (- a lot) {5x rate on Sunny Neneko}
 665	(> 598)	Excellent Selection	 (- a lot) {5x rate on Easter Neneko}
@@ -676,8 +676,8 @@
 675	(> 669)	Uberfest	
 676	(> 670)	Epicfest	
 677	(> 497)	Almighties	 [D] (+ Lucifer the Fallen)
-678	(≅ 677)	Almighties	 [D + N]
-679	(≅ 677)	Almighties	 [D + R]
+678	(≅ 677)	Almighties	 [N + D]
+679	(≅ 677)	Almighties	 [R + D]
 680	(> 560)	Welcome {newyear:d}!	 (- a lot) {5x rate on Years-End Neneko}
 681	(> 622)	Superfest	
 682	(> 676)	Epicfest	 (+ Mighty Deth-Troy-R, Shitakiri Sparrow, White Knight Cyclops, Yamii)
@@ -692,8 +692,8 @@
 691	(> 689)	Platinum Ticket Banner	 (+ White Knight Cyclops)
 692	(> 690)	Legend Ticket Banner	 (+ White Knight Cyclops)
 693	(> 611)	Galaxy Gals	 [D] (+ Huntress Terun)
-694	(≅ 693)	Galaxy Gals	 [D + N]
-695	(≅ 693)	Galaxy Gals	 [D + R]
+694	(≅ 693)	Galaxy Gals	 [N + D]
+695	(≅ 693)	Galaxy Gals	 [R + D]
 696	(> 451)	Red Busters	 [R + N] (+ Hevijak the Wicked, Sharpshooter Saki)
 697	(> 623)	DynastyFest	 (+ Sweet Love Mekako)
 698	(> 567)	Valentine's Gals	 (+ Sweet Love Mekako, Brainwashed Axe Cat) {4x rate on Valentine's Neneko}
@@ -706,13 +706,22 @@
 705	(> 702)	Platinum Ticket Banner	
 706	(> 703)	Legend Ticket Banner	
 707	(≅ 698)	Valentine's Gals	
-708	(> 608)	Vajiras	 [D + N] (+ 服部半蔵)
-709	(≅ 708)	Vajiras	 [D + R]
+708	(> 608)	Vajiras	 [N + D] (+ Hattori Hanzo)
+709	(≅ 708)	Vajiras	 [R + D]
 710	(> 453)	Metal Busters	 [R + N] (+ Valentine's Neneko) {3x rate on Valentine's Neneko, Easter Neneko, Years-End Neneko, Sunny Neneko, Gloomy Neneko, Neneko}
 711		Placeholder	
-712	(> 700)	Uberfest	 (+ 服部半蔵)
-713	(> 704)	Epicfest	 (+ 服部半蔵, Huntress Terun)
-714	(> 705)	Platinum Ticket Banner	 (+ 服部半蔵, Lucifer the Fallen, Huntress Terun)
-715	(> 706)	Legend Ticket Banner	 (+ 服部半蔵, Lucifer the Fallen, Huntress Terun)
+712	(> 700)	Uberfest	 (+ Hattori Hanzo)
+713	(> 704)	Epicfest	 (+ Hattori Hanzo, Huntress Terun)
+714	(> 705)	Platinum Ticket Banner	 (+ Hattori Hanzo, Lucifer the Fallen, Huntress Terun)
+715	(> 706)	Legend Ticket Banner	 (+ Hattori Hanzo, Lucifer the Fallen, Huntress Terun)
 716	(> 712)	Uberfest	
 717	(≅ 710)	Metal Busters	 [R + N]
+718	(> 646)	Elemental Pixies	 [N + D] (+ 氷の精霊フリズ)
+719	(≅ 718)	Elemental Pixies	 [R + D]
+720	(> 716)	Uberfest	 (+ Huntress Terun, Hattori Hanzo, 氷の精霊フリズ)
+721	(> 713)	Epicfest	 (+ 氷の精霊フリズ)
+722	(> 714)	Platinum Ticket Banner	 (+ 氷の精霊フリズ)
+723	(> 715)	Legend Ticket Banner	 (+ 氷の精霊フリズ)
+724	(≅ 579)	Easter Carnival	
+725	(> 579)	Easter Carnival	 (+ 洗脳されしキモネコ) {4x rate on Easter Neneko}
+726	(> 697)	DynastyFest	 (+ Lovestruck Lesser Demon)

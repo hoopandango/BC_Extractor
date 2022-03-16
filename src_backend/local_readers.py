@@ -1,3 +1,4 @@
+import string
 import pandas as pd
 import json
 
@@ -8,6 +9,7 @@ with open('_config.json') as fl:
 
 enemydata = pd.read_csv(config['outputs']['enemies'], delimiter='\t', header=None, index_col=0)
 stagedata = pd.read_csv(config['outputs']['substages'], delimiter='\t', header=None, index_col=0)
+stagesold = pd.read_csv(config['outputs']['stages'], delimiter='\t', header=0, index_col=0)
 catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, index_col=0)
 combodata = pd.read_csv(config['outputs']['combos2'], delimiter='\t', header=0, index_col=0)
 itemdata = pd.read_csv(config['outputs']['items'], delimiter='\t', header=0, index_col=0)
@@ -71,6 +73,27 @@ class Readers:
 
 	@staticmethod
 	def getMap(ID: int) -> str:
+		def isEnglish(name: str)->bool:
+			eng = len([0 for x in name if x in string.ascii_letters])
+			full = len([0 for x in name if x.isalpha()])
+			return full < 2*eng
+		
+		def lookup(store_jp: bool, default: str)->str:
+			try:
+				bkp = stagedata.loc[f"{i[0:3]}-{i[3:6]}", 2]  # backup lookup
+				if not pd.isna(bkp):  # backup empty (miss)
+					if isEnglish(bkp) or store_jp:
+						Downloaders.stash_cache(ID, bkp)   # backup hit, copy to cache
+					return bkp
+			except KeyError:  # backup miss
+				pass
+			toret = Downloaders.requestStage(ID, 'en')  # online lookup
+			if toret != "Unknown":  # request cleared
+				if isEnglish(toret) or store_jp:  # desirable response
+					Downloaders.stash_cache(ID, toret)  # copy to cache
+				return toret  # return whatver you got here
+			return default  # settle for the default value
+				
 		match ID:
 			case 3000:
 				return "EoC Ch.1"
@@ -79,11 +102,16 @@ class Readers:
 			case 3002:
 				return "EoC Ch.3"
 		i = str(ID).zfill(6)
+		
 		try:
-			return stagedata.loc[f"{i[0:3]}-{i[3:6]}", 2]
-		except KeyError:
-			return Downloaders.requestStage(ID, 'en')
-
+			local = stagesold.loc[ID, "name"]
+			if isEnglish(local):  # cache hit - en
+				return local
+			else:  # cache hit-jp
+				return lookup(False, local)
+		except KeyError:  # cache miss
+			return lookup(True, "Unknown")
+			
 	@staticmethod
 	def getStage(ID: int) -> str:
 		if (ID == 300147):

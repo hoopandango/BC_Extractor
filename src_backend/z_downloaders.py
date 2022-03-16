@@ -1,11 +1,39 @@
 import requests
 import regex as re
+import atexit
+import json
+import csv
 
+with open('_config.json') as fl:
+	config = json.load(fl)
+	
+@atexit.register
+def unload_changes():
+	toput = []
+	with open(config['outputs']['stages'], encoding='utf-8', newline='') as csvfile:
+		reader = csv.DictReader(csvfile, delimiter='\t')
+		for row in reader:
+			toput.append(row)
+	with open(config['outputs']['stages'], 'w', encoding='utf-8', newline='') as fil:
+		for row in Downloaders.buffer:
+			toput.append({"ID": row, "name": Downloaders.buffer[row]})
+		writer = csv.DictWriter(fil, delimiter='\t', fieldnames=list(toput[0].keys()))
+		writer.writeheader()
+		writer.writerows(toput)
+		
 class Downloaders:
 	prefixes = {1: 'S', 2: 'C', 6: 'T', 7: 'V', 11: 'R', 12: 'M', 13: 'NA', 14: 'B', 24: 'A', 25: 'H', 27: 'CA'}
 	
-	@staticmethod
-	def requestStage(ID: int, lng: str):
+	buffer = {}
+	
+	@classmethod
+	def stash_cache(cls, ID: int, name: str):
+		cls.buffer[ID] = name
+	
+	@classmethod
+	def requestStage(cls, ID: int, lng: str):
+		if ID in cls.buffer:
+			return cls[ID]
 		prefix = "https://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/stage/"
 		pre = Downloaders.prefixes.get(ID // 1000)
 		if pre is None:

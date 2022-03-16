@@ -116,12 +116,6 @@ class UniversalParsers:
 			name += ' (Baron)'
 			
 		return name
-	
-	@classmethod
-	def updateEventNames(cls):
-		with open(config['outputs']['stages'], 'w', encoding='utf-8', newline='') as fil:
-			cls.autoEventNames.to_csv(fil, sep='\t', index=True)
-
 
 class GatyaParsers(UniversalParsers):
 	def __init__(self):

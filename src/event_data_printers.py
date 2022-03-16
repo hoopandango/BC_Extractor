@@ -9,7 +9,7 @@ import ast
 import flask_restful
 import requests
 
-from src_backend.event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher, StageParsers
+from src_backend.event_data_fetchers import GatyaFetcher, StageFetcher, ItemFetcher
 from src_backend.containers import Colourer
 import asyncio
 import aiohttp
@@ -161,7 +161,7 @@ def process(js):
 		json.dump(for_export, fl0, indent=2, default=unfuck_dates)
 	
 	print(f"over - {time.time() - start}")
-	StageParsers.updateEventNames()
+	# StageParsers.updateEventNames()
 	return dummy, toprint
 
 class Funky(Resource):
