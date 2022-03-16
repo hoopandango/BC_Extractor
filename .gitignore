@@ -1,7 +1,4 @@
 .vscode/
-extraction/
-src_extractors/
-extract.py
 Procfile.ps1
 _new/
 _data/
@@ -63,6 +60,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+decrypt.py
 
 # Translations
 *.mo
