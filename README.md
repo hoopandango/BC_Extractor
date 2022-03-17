@@ -1,41 +1,82 @@
 # BC Extractors
 
-## **v 1.4.1**
+## **v 2.0.2**
 
 This repository contains the files and code that I use to produce automated event data.
 
 ## Project Tree
 
+`*` means not included in the repository
+
 ```plaintext
-📦root
+📦BC_Extractor
+ ┣ 📂extraction
+ ┃ ┣ * 📜decrypt.py
+ ┃ ┗ 📜__init__.py
  ┣ 📂extras
- ┣ 📂latest_en
- ┣ 📂latest_jp
- ┣ 📂out_intermediates
+ ┃ ┣ 📜EventGroups.json
+ ┃ ┣ 📜Events.tsv
+ ┃ ┗ 📜Missions.tsv
  ┣ 📂outputs
+ ┃ ┣ *📂eventdata
+ ┃ ┃ ┣ 📜events_processed.db
+ ┃ ┃ ┣ 📜export.json
+ ┃ ┃ ┣ 📜gatya_final.txt
+ ┃ ┃ ┣ 📜gatya_processed.db
+ ┃ ┃ ┣ 📜gatya_raw.json
+ ┃ ┃ ┣ 📜output.txt
+ ┃ ┃ ┗ 📜stages_raw.json
+ ┃ ┣ 📜catcombos.db
+ ┃ ┣ 📜gatya.db
+ ┃ ┗ 📜talents.db
+ ┣ 📂out_intermediates
+ ┃ ┗ 📜catcombos.db
  ┣ 📂reusables
- ┣ 📦src
- ┃ ┣ 📂extractors
- ┃ ┃ ┣ 📜combo_extractor.py
- ┃ ┃ ┣ 📜gatya_extractor.py
- ┃ ┃ ┣ 📜items_extractor.py
- ┃ ┃ ┣ 📜mission_extractor.py
- ┃ ┃ ┣ 📜sale_extractor.py
- ┃ ┃ ┣ 📜talent_extractor.py
- ┃ ┃ ┗ 📜units_extractor.py
+ ┃ ┣ 📜combos.tsv
+ ┃ ┣ 📜enemies.tsv
+ ┃ ┣ 📜events.tsv
+ ┃ ┣ 📜gatya.json
+ ┃ ┣ 📜gatya.txt
+ ┃ ┣ 📜items.tsv
+ ┃ ┣ 📜missions.tsv
+ ┃ ┣ 📜sales.tsv
+ ┃ ┣ 📜series.tsv
+ ┃ ┣ 📜stages.tsv
+ ┃ ┣ 📜substages.tsv
+ ┃ ┗ 📜units.tsv
+ ┣ 📂src
+ ┃ ┣ 📜event_data_printers.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂src_backend
  ┃ ┣ 📜containers.py
  ┃ ┣ 📜event_data_fetchers.py
  ┃ ┣ 📜event_data_parsers.py
- ┃ ┣ 📜event_data_printers.py
  ┃ ┣ 📜local_readers.py
  ┃ ┣ 📜utils.py
  ┃ ┣ 📜z_downloaders.py
  ┃ ┗ 📜__init__.py
- ┣ 📂tests
- ┣ 📜_config.json
- ┣ 📜_schemas.json
+ ┣ 📂src_extractors
+ ┃ ┣ 📜combo_extractor.py
+ ┃ ┣ 📜gatya_extractor.py
+ ┃ ┣ 📜items_extractor.py
+ ┃ ┣ 📜mission_extractor.py
+ ┃ ┣ 📜sale_extractor.py
+ ┃ ┣ 📜talent_extractor.py
+ ┃ ┣ 📜units_extractor.py
+ ┃ ┗ 📜__init__.py
+ ┣ * 📂 tests - test cases that aren't used for anything
+ ┣ * 📂 venv - python virtual environment
  ┣ 📜.gitignore
- ┣ 📜README.md
+ ┣ 📜extract.py - calls all extracters internally
+ ┣ 📜Procfile - starts the server
+ ┣ * 📜Procfile.ps1 - starts the server [in windows]
+ ┣ 📜README.md - this file
+ ┣ 📜requirements.txt - tells python what modules are needed 
+ ┣ 📜runtime.txt - tell what version of python is used
+ ┣ 📜setup.py - same as above two files but like a bit different
+ ┣ 📜testserver.py - runs django testing server for debugging stuff
+ ┣ 📜_config.json - contains config information
+ ┗ 📜_schemas.json - contains schemas of talbes
  ```
 
 ## **Overview**
@@ -52,7 +93,7 @@ The rest should hopefully have self-explanatory titles.
 
 ## **Changelog**
 
-* **v 0.1** - just added the code here for the sake of it. Only a few TODOs in here. More will follow. Planning on a lot more comments too.
+* **v 0.1.0** - just added the code here for the sake of it. Only a few TODOs in here. More will follow. Planning on a lot more comments too.
 * **v 0.1.1** - added this README.
 * **v 0.1.2** - patched duplicate merging bug, caused by popping elements in the container that I'm iterating over.
 * **v 0.1.3** - fixed duplicate merging shenanigans for good. Added improved interpretation for monthly and weekly recurring events.
@@ -77,3 +118,18 @@ The rest should hopefully have self-explanatory titles.
 * **v 1.3.1** - fixed coloured output.
 * **v 1.4.0** - supports writing to multiple webhooks. some formatting alterations and bug fixes alongside this.
 * **v 1.4.1** - patched return message, had committed a test message into the repo because lul. updated project tree in README.
+* **v 1.4.2** - stopped sending gatya / item / sale blocks if they're empty
+* **v 1.5.0** - fixed how hooks are pulled out from env variables
+* **v 1.5.1** - moved outputs to gitignore
+* **v 1.6.0** - implemented logging
+* **v 1.7.0** - implemented pinging via roles + tons of bug fixes
+* **v 1.7.1** - fixed deadly carnival name, dojo bug
+* **v 1.7.2** - fixed missing stamp name bug, refactored folders, fixed gatya diff desync bug
+* **v 1.8.0** - added support for 6 talents
+* **v 1.8.1** - update-time bugs fall-over
+* **v 1.8.2** - updated en data, removed extractors
+* **v 1.9.0** - added removed event display feature. fixed substages.tsv
+* **v 1.10.0** - fixed caching to make it efficient, added two-layer-cache for stages that uses BCU information as a backup
+* **v 2.0.0** - fixed anomalous addition of placeholder sixth talents. put a bandage on floating points during catcombo extraction. standardised order for banner exclusives and diffs so we constructively infer information from gatya diffs. implemented LRU cache on web queries. fixed n * SoL mission detection bug. overhauled data extraction so that 90% of the process can be done with a single click.
+* **v 2.0.1** - re-added extraction files to the repository for better archival
+* **v 2.0.2** - updated README.
