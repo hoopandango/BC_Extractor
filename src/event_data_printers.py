@@ -54,7 +54,7 @@ if platform.system() == "Windows":
 
 async def fetch_all(ver: str, urls: dict[str, str] = URLs) -> dict[str, str]:
 	toret = {}
-	async with aiohttp.ClientSession() as session:
+	async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
 		for U in URLs:
 			async with session.get(urls[U] % ver, headers={'Referer': 'https://bc.godfat.org/logs'}) as response:
 				toret[U] = await response.text()
@@ -104,12 +104,16 @@ def process(js):
 	sf = StageFetcher(fls=['N'], coloured=clr)
 	itf = ItemFetcher(fls=['N'], coloured=clr)
 	
+	if js.get("fetch", False):
+		texts = asyncio.run(fetch_all(js["version"][:2].lower()))
+		
 	gf.fetchRawData(texts["Gatya"])
 	sf.fetchRawData(texts["Sale"])
 	itf.fetchRawData(texts["Item"])
 	
 	if LOGGING:
-		files = {"input.json": io.StringIO(ast.literal_eval(f'"{str(js)}"'))}
+		# files = {"input.json": io.StringIO(ast.literal_eval(f'"{str(js)}"'))}
+		files = {"input.json": io.StringIO("test")}
 		requests.post(LOGURL, files=files)
 	
 	print_t(f"reading raw gatya - {time.time() - start}")
@@ -208,7 +212,7 @@ class Funky(Resource):
 			
 			tosend = process(dummy)[1][0]
 			files = {"removed_stuff.txt": io.StringIO(tosend)}
-			requests.post(hooks["test", "release"], files=files)
+			requests.post(hooks["test"], files=files)
 		
 		# requests.post(hooks["test"], {"content": f"pinging <@&837036121628213249>"})
 		return "".join(toprint)
