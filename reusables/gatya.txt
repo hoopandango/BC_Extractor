@@ -716,12 +716,12 @@
 715	(> 706)	Legend Ticket Banner	 (+ Hattori Hanzo, Huntress Terun, Lucifer the Fallen)
 716	(> 712)	Uberfest	
 717	(≅ 710)	Metal Busters	 [R + N]
-718	(> 646)	Elemental Pixies	 [D + N] (+ 氷の精霊フリズ)
+718	(> 646)	Elemental Pixies	 [D + N] (+ Bliza)
 719	(≅ 718)	Elemental Pixies	 [D + R]
-720	(> 716)	Uberfest	 (+ Hattori Hanzo, Huntress Terun, 氷の精霊フリズ)
-721	(> 713)	Epicfest	 (+ 氷の精霊フリズ)
-722	(> 714)	Platinum Ticket Banner	 (+ 氷の精霊フリズ)
-723	(> 715)	Legend Ticket Banner	 (+ 氷の精霊フリズ)
+720	(> 716)	Uberfest	 (+ Bliza, Hattori Hanzo, Huntress Terun)
+721	(> 713)	Epicfest	 (+ Bliza)
+722	(> 714)	Platinum Ticket Banner	 (+ Bliza)
+723	(> 715)	Legend Ticket Banner	 (+ Bliza)
 724	(≅ 579)	Easter Carnival	
-725	(> 579)	Easter Carnival	 (+ 洗脳されしキモネコ) {4x rate on Easter Neneko}
+725	(> 579)	Easter Carnival	 (+ Brainwashed Gross Cat) {4x rate on Easter Neneko}
 726	(> 697)	DynastyFest	 (+ Lovestruck Lesser Demon)

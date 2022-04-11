@@ -35,6 +35,6 @@ def fetch():
 			shutil.move(src=f"extraction/temp/latest_{LNG}", dst=f"latest_{LNG}", copy_function=shutil.copytree)
 			shutil.rmtree("extraction/temp")
 			break
-
-# fetch()
+			
+fetch()
 src_extractors.run_all()

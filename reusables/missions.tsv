@@ -600,7 +600,7 @@ ID	mission_text
 37	Get all treasures from CotC Ch.2 -> XP X 4000000
 38	Get all treasures from CotC Ch.3 -> XP X 5000000
 9231	Clear "River Styx" 1 times using 8 or more Normal Cats. -> Catseye [Legend] X 3
-9232	Clear "Daboo of the Dead" 1 times using 8 or more Special Cats. -> Catseye [Legend] X 3
+9232	Clear "Dead on Debut" 1 times using 8 or more Special Cats. -> Catseye [Legend] X 3
 9233	Clear "King Wahwah's Revenge" 1 times using any 9 Normal Cats. -> Catseye [Legend] X 3
 9234	Clear "Blue Impact" 1 times using only 2nd Forms -> Catseye [Legend] X 3
 9235	Clear "Deeply Dreaming" 1 times using only unevolved 1st Forms -> Catseye [Legend] X 3
@@ -653,6 +653,11 @@ ID	mission_text
 45	Beat "The Aku Realms" stages 1 times -> Platinum Ticket X 1
 9305	Beat "Floor 30 [Infernal Tower]" -> Masked Grandmaster Cat
 47	Beat all of these stages: "Aku Studies 101: Inquiry [Empress' Report 1], Aku Studies 201: Inquiry [Empress' Report 2], Aku Studies 301: Inquiry [Empress' Report 3], Aku Studies 401: Inquiry [Empress' Report 4], Aku Studies 501: Inquiry [Empress' Report 5]" -> Platinum Shard X 3
+9321	1 times using 7 or more Special Cats. -> Catseye [Legend] X 3
+9322	1 times using 7 or more Normal Cats. -> Catseye [Legend] X 3
+9323	Beat "Unknown" stages 1 times -> Catseye [Legend] X 3
+9324	Beat "Unknown" stages 1 times -> Catseye [Legend] X 3
+9325	Beat "Unknown" stages 1 times -> Catseye [Legend] X 3
 9217	Beat "MIKU EXPO" stages 5 times -> Cat Ticket X 1
 9218	Beat "MIKU EXPO" stages 10 times -> Cat Ticket X 1
 9219	Beat "MIKU EXPO" stages 20 times -> Cat Ticket X 1
@@ -705,11 +710,6 @@ ID	mission_text
 9318	Beat "春節ハッピープレゼント！" stages 3 times -> XP X 15000
 9319	Beat "春節ハッピープレゼント！" stages 4 times -> XP X 20000
 9320	Beat "春節ハッピープレゼント！" stages 5 times -> Rare Ticket X 1
-9321	【降臨祭】イベント限定追加ミッション -> Catseye [Legend] X 3
-9322	【降臨祭】イベント限定追加ミッション -> Catseye [Legend] X 3
-9323	Beat "Unknown" stages 1 times -> Catseye [Legend] X 3
-9324	Beat "Unknown" stages 1 times -> Catseye [Legend] X 3
-9325	Beat "Unknown" stages 1 times -> Catseye [Legend] X 3
 9066	Level up 太秦萌＆ネコ to Level 10 -> Cat Food X 10
 9067	Level up 松賀咲＆ネコ to Level 10 -> Cat Food X 10
 9068	Level up 小野ミサ＆ネコ to Level 10 -> Cat Food X 10
