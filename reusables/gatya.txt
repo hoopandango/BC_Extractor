@@ -722,6 +722,10 @@
 721	(> 713)	Epicfest	 (+ Bliza)
 722	(> 714)	Platinum Ticket Banner	 (+ Bliza)
 723	(> 715)	Legend Ticket Banner	 (+ Bliza)
-724	(≅ 579)	Easter Carnival	
-725	(> 579)	Easter Carnival	 (+ Brainwashed Gross Cat) {4x rate on Easter Neneko}
+724	(> 579)	Easter Carnival	 (+ Brainwashed Gross Cat)
+725	(≅ 724)	Easter Carnival	 {4x rate on Easter Neneko}
 726	(> 697)	DynastyFest	 (+ Lovestruck Lesser Demon)
+727	(> 681)	Superfest	 (+ Bliza, Hattori Hanzo, Huntress Terun, 悲嘆の踊り子イズ)
+728	(> 721)	Epicfest	 (+ 悲嘆の踊り子イズ)
+729	(> 722)	Platinum Ticket Banner	 (+ 悲嘆の踊り子イズ)
+730	(> 723)	Legend Ticket Banner	 (+ 悲嘆の踊り子イズ)

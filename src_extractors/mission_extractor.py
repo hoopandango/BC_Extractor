@@ -83,7 +83,7 @@ def extract():
 		cat = data["category"]
 		template = mission_templates["template"][cat]
 		match cat:
-			case 0:  # one stage N times
+			case 0 | 28:  # one stage N times
 				stages = unique([Readers.getStageOrMap(x) for x in data["condition"]])
 				if (len(stages) == 1):
 					cat += 1000
@@ -157,7 +157,7 @@ def extract():
 				return template
 			case 27:  # beat all quiz missions
 				return template.format(data["condition"][0])
-		
+
 		return None
 		
 	print("Started extracting missions")

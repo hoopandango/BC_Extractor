@@ -9153,21 +9153,7 @@
     "series_ID": 42,
     "exclusives": [],
     "diff": [
-      [
-        "Iz the Dancer",
-        "Lucifer the Fallen",
-        "Li'l Valkyrie Dark",
-        "Good-Luck Ebisu",
-        "Summoner Satoru",
-        "Shiro Amakusa",
-        "Hevijak the Wicked",
-        "Furiluga",
-        "Li'l Valkyrie",
-        "Yamii",
-        "Mighty Deth-Troy-R",
-        "Shitakiri Sparrow",
-        "White Knight Cyclops"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9669,9 +9655,7 @@
     "series_ID": 27,
     "exclusives": [],
     "diff": [
-      [
-        "Bliza"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9682,9 +9666,7 @@
     "series_ID": 21,
     "exclusives": [],
     "diff": [
-      [
-        "Bliza"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9695,9 +9677,7 @@
     "series_ID": 46,
     "exclusives": [],
     "diff": [
-      [
-        "Bliza"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9708,7 +9688,9 @@
     "series_ID": 26,
     "exclusives": [],
     "diff": [
-      [],
+      [
+        "Brainwashed Gross Cat"
+      ],
       []
     ],
     "rate_ups": {}
@@ -9719,9 +9701,7 @@
     "series_ID": 26,
     "exclusives": [],
     "diff": [
-      [
-        "Brainwashed Gross Cat"
-      ],
+      [],
       []
     ],
     "rate_ups": {
@@ -9738,6 +9718,65 @@
     "diff": [
       [
         "Lovestruck Lesser Demon"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "727": {
+    "banner_name": "Superfest",
+    "enabled": true,
+    "series_ID": 42,
+    "exclusives": [],
+    "diff": [
+      [
+        "Huntress Terun",
+        "Hattori Hanzo",
+        "悲嘆の踊り子イズ",
+        "Bliza"
+      ],
+      [
+        "Good-Luck Ebisu",
+        "Li'l Valkyrie",
+        "Li'l Valkyrie Dark"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "728": {
+    "banner_name": "Epicfest",
+    "enabled": true,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "悲嘆の踊り子イズ"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "729": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "悲嘆の踊り子イズ"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "730": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "悲嘆の踊り子イズ"
       ],
       []
     ],

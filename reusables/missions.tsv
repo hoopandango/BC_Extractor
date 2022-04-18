@@ -666,6 +666,8 @@ ID	mission_text
 9225	Score 8888 or higher on the Dojo stage, "Unknown" -> Cat Food X 88
 29	Beat "Moon Ch.1 [EoC]" -> Platinum Ticket X 1
 46	Beat "Moon Ch.1 [EoC]" -> Platinum Ticket X 1
+48	Beat distinct stages in "Kombu Cape" 5 times -> 古びたタマゴ:N101 X 1
+49	Beat distinct stages in "Kombu Cape" 10 times -> 古びたタマゴ:N102 X 1
 9276	Beat "めざせＧＩ にゃんこ競馬" stages 1 times -> 伝説のにんじん X 1
 9277	Beat "めざせＧＩ にゃんこ競馬" stages 5 times -> 伝説のにんじん X 3
 9278	Beat "めざせＧＩ にゃんこ競馬" stages 10 times -> 伝説のにんじん X 5
@@ -710,6 +712,33 @@ ID	mission_text
 9318	Beat "春節ハッピープレゼント！" stages 3 times -> XP X 15000
 9319	Beat "春節ハッピープレゼント！" stages 4 times -> XP X 20000
 9320	Beat "春節ハッピープレゼント！" stages 5 times -> Rare Ticket X 1
+9326	Beat "Crimson Catastrophe" stages 1 times -> XP X 1000000
+9327	Beat "Heaven of Darkness" stages 1 times -> XP X 1000000
+9328	Beat "Peerless" stages 1 times -> XP X 1000000
+9329	Beat "Sweet Irony" stages 1 times -> XP X 1000000
+9330	Beat "Wrath of Heaven" stages 1 times -> XP X 1000000
+9331	Beat "Dimension of Despair" stages 1 times -> Cat Ticket X 1
+9332	Beat "Red Sky at Morning, 緊急爆風警報" stages 1 times -> Cat Ticket X 1
+9333	Beat "The Rolling Dead, ローリングデッド" stages 1 times -> Cat Ticket X 1
+9334	Beat "The 2nd Dimension, 絶望新次元" stages 1 times -> Cat Ticket X 1
+9335	Beat "Typhoon Nemo, 台風零号" stages 1 times -> Cat Ticket X 1
+9336	【サイクロン祭】イベント限定追加ミッション -> Catseye [Rare] X 3
+9337	【サイクロン祭】イベント限定追加ミッション -> Catseye [Rare] X 3
+9338	【サイクロン祭】イベント限定追加ミッション -> Catseye [Super Rare] X 3
+9339	【サイクロン祭】イベント限定追加ミッション -> Catseye [Super Rare] X 3
+9340	【サイクロン祭】イベント限定追加ミッション -> Catseye [Uber Rare] X 3
+9341	【サイクロン祭】イベント限定追加ミッション -> Catseye [Uber Rare] X 3
+9342	【サイクロン祭】イベント限定追加ミッション -> Catseye [Legend] X 3
+9343	【サイクロン祭】イベント限定追加ミッション -> Catseye [Legend] X 3
+9344	【サイクロン祭】イベント限定追加ミッション -> Catseye [Legend] X 3
+9345	「ゆきにゃん」を編成し「消滅都市 ～ロストへ～」ステージを1回クリアしよう -> Cat Food X 10
+9346	「タクヤとユキ」を編成し「消滅都市 ～ロストへ～」ステージを1回クリアしよう -> Cat Food X 10
+9347	「赤髪のゆきにゃん」を編成し「消滅都市 ～ロストへ～」ステージを1回クリアしよう -> Cat Food X 10
+9348	「カノとソウマ」を編成し「消滅都市 ～ロストへ～」ステージを1回クリアしよう -> Cat Food X 10
+9349	Beat "Annihilated City, Takuya & Yuki Awaken, The Lost World, City of Souls, The World Beyond, Messier's Assault" stages 5 times -> Cat Ticket X 1
+9350	Beat "Annihilated City, Takuya & Yuki Awaken, The Lost World, City of Souls, The World Beyond, Messier's Assault" stages 15 times -> Cat Ticket X 1
+9351	Beat "Annihilated City, Takuya & Yuki Awaken, The Lost World, City of Souls, The World Beyond, Messier's Assault" stages 30 times -> Cat Ticket X 1
+9352	Finish 5 Gamatoto Expeditions -> Cat Ticket X 1
 9066	Level up 太秦萌＆ネコ to Level 10 -> Cat Food X 10
 9067	Level up 松賀咲＆ネコ to Level 10 -> Cat Food X 10
 9068	Level up 小野ミサ＆ネコ to Level 10 -> Cat Food X 10

@@ -35,3 +35,7 @@ ID	template
 25	Get all treasures from {:s}
 26	Quiz Mission
 27	Clear all {:d} Quiz Missions
+28	Beat distinct stages in "{1:s}" {0:d} times
+1028	Beat "{1:s}"
+10028	Beat distinct stages in "{1:s}" {0:d} times
+11028	Beat distinct stages in "{1:s}" {0:d} times
