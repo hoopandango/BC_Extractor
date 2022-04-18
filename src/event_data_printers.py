@@ -99,10 +99,11 @@ def process(js):
 	# sends a query to process the - rows
 	dummy["destinations"] = ["test"]
 	
+	FL = ['N'] if js.get("fetch", False) else []
 	# process query
-	gf = GatyaFetcher(fls=['N'], coloured=clr)
-	sf = StageFetcher(fls=['N'], coloured=clr)
-	itf = ItemFetcher(fls=['N'], coloured=clr)
+	gf = GatyaFetcher(fls=FL, coloured=clr)
+	sf = StageFetcher(fls=FL, coloured=clr)
+	itf = ItemFetcher(fls=FL, coloured=clr)
 	
 	if js.get("fetch", False):
 		texts = asyncio.run(fetch_all(js["version"][:2].lower()))
@@ -143,8 +144,8 @@ def process(js):
 	# output query
 	toprint: list[str] = [f"**{ver} EVENT DATA**\n"]
 	toprint[0] += gf.printGatya()
-	toprint[0] += sf.printStages()
-	toprint[0] += itf.printItemData()
+	toprint.append(sf.printStages())
+	toprint.append(itf.printItemData())
 	toprint.append(sf.printFestivalData())
 	
 	for_export = {"gatya": gf.package(),

@@ -41,7 +41,7 @@ class UniversalFetcher:
 		finalEvents: list[Event | EventGroup] = []
 		finalEventGroups: list[EventGroup] = []
 		sales: list[Sale | EventGroup] = []
-		missions: list[Mission] = []
+		missions: list[Mission | EventGroup] = []
 		
 		flatqueue: list[Event] = []
 		
@@ -73,6 +73,8 @@ class UniversalFetcher:
 				
 				if 900 > e.events[0].ID > 799 or e.events[0].ID < 0:
 					sales.append(e)
+				elif 10000 > e.events[0].ID >= 9000:
+					missions.append(e)
 				else:
 					finalEvents.append(e)
 				return
@@ -462,9 +464,9 @@ class StageFetcher(UniversalFetcher):
 	
 	def package(self):
 		return {
-			"stages": self.finalStages,
-			"sales": self.sales,
-			"missions": self.missions
+			"stages": [x.package() for x in self.finalStages],
+			"sales": [x.package() for x in self.sales],
+			"missions": [x.package() for x in self.missions]
 		}
 	
 class ItemFetcher(UniversalFetcher):
