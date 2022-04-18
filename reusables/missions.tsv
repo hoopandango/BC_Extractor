@@ -160,7 +160,7 @@ ID	mission_text
 9142	Beat "Merc Storia: Attack" stages 5 times -> Cat Ticket X 1
 9143	Beat "Merc Storia: Attack" stages 10 times -> Cat Ticket X 1
 9144	Beat "Merc Storia: Attack" stages 20 times -> Cat Ticket X 1
-9145	Beat "Arena of Honor" stages 1 times -> Cat Ticket X 1
+9145	Beat "Arena of Honor" stages 1 time -> Cat Ticket X 1
 9146	Level up Healer to Level 10 -> Cat Food X 10
 9147	Beat "A Cultured Festival" stages 5 times -> Cat Ticket X 1
 9148	Beat "A Cultured Festival" stages 10 times -> Cat Ticket X 1
@@ -205,8 +205,8 @@ ID	mission_text
 9187	Level up Koi Cat to Level 10 -> Cat Food X 10
 9191	Level up Prince Yamato to Level 10 -> Bikkuriman Choco X 3
 9192	Level up Rosary Angel to Level 10 -> Bikkuriman Choco X 3
-9193	Beat "Devilish Illusion" stages 1 times -> Bikkuriman Choco X 3
-9194	Beat "Yamato Awakens!" stages 1 times -> Bikkuriman Choco X 3
+9193	Beat "Devilish Illusion" stages 1 time -> Bikkuriman Choco X 3
+9194	Beat "Yamato Awakens!" stages 1 time -> Bikkuriman Choco X 3
 9195	Beat "Bikkuriman Choco" stages 5 times -> Bikkuriman Choco X 3
 9196	Beat "Bikkuriman Choco" stages 10 times -> Bikkuriman Choco X 5
 9197	Beat "Bikkuriman Choco" stages 20 times -> Bikkuriman Choco X 7
@@ -605,9 +605,9 @@ ID	mission_text
 9234	Clear "Blue Impact" 1 times using only 2nd Forms -> Catseye [Legend] X 3
 9235	Clear "Deeply Dreaming" 1 times using only unevolved 1st Forms -> Catseye [Legend] X 3
 9236	Clear all 5 missions from the following: 9231, 9232, 9233, 9234, 9235 -> Rare Ticket X 1
-9237	Beat "The Angel & The Demon" stages 1 times -> Catseye [Legend] X 3
-9238	Beat "The Queen & The Dead" stages 1 times -> Catseye [Legend] X 3
-9239	Beat "The King & The Maiden" stages 1 times -> Catseye [Legend] X 3
+9237	Beat "The Angel & The Demon" stages 1 time -> Catseye [Legend] X 3
+9238	Beat "The Queen & The Dead" stages 1 time -> Catseye [Legend] X 3
+9239	Beat "The King & The Maiden" stages 1 time -> Catseye [Legend] X 3
 9240	Beat "Summer Break Cats" stages 5 times -> XP X 100000
 9241	Beat "Summer Break Cats" stages 10 times -> Legend Net X 2
 9242	Beat "Summer Break Cats" stages 30 times -> Rare Ticket X 1
@@ -635,7 +635,7 @@ ID	mission_text
 9262	Beat "Hotblooded Ball-Rolling" stages 5 times -> XP X 50000
 9263	Beat "Hotblooded Ball-Rolling" stages 10 times -> Cat Ticket X 1
 9264	Beat "Hotblooded Challenge Course" stages 5 times -> Sniper the Cat X 1
-9265	1 times using any 9 Normal Cats!  -> Cat Ticket X 1
+9265	Clear stages from "Hotblooded Challenge Course" 1 times using any 9 Normal Cats!  -> Cat Ticket X 1
 9266	Defeat Jackie Peng at Hotblooded Three-Leg Race ① -> Rich Cat X 1
 9267	Defeat Doge Dark at Hotblooded Three-Leg Race ① -> Cat Ticket X 1
 9268	Clear all 6 missions from the following: 9262, 9263, 9264, 9265, 9266, 9267 -> Rare Ticket X 1
@@ -649,15 +649,15 @@ ID	mission_text
 41	Beat all of these stages: "Otherworld Forest [Demon's Park], The Devil War [Wicked Axe]" -> Cat Food X 50
 42	Clear all 3 missions from the following: 39, 40, 41 -> Cat Food X 50
 43	Beat "The Gates of Aku [Unleashing the Cats]" -> Cat Food X 100
-44	Beat "The Aku Realms" stages 1 times -> Legend Ticket  X 1
-45	Beat "The Aku Realms" stages 1 times -> Platinum Ticket X 1
+44	Beat "The Aku Realms" stages 1 time -> Legend Ticket  X 1
+45	Beat "The Aku Realms" stages 1 time -> Platinum Ticket X 1
 9305	Beat "Floor 30 [Infernal Tower]" -> Masked Grandmaster Cat
 47	Beat all of these stages: "Aku Studies 101: Inquiry [Empress' Report 1], Aku Studies 201: Inquiry [Empress' Report 2], Aku Studies 301: Inquiry [Empress' Report 3], Aku Studies 401: Inquiry [Empress' Report 4], Aku Studies 501: Inquiry [Empress' Report 5]" -> Platinum Shard X 3
-9321	1 times using 7 or more Special Cats. -> Catseye [Legend] X 3
-9322	1 times using 7 or more Normal Cats. -> Catseye [Legend] X 3
-9323	Beat "The Dead & The Bloated" stages 1 times -> Catseye [Legend] X 3
-9324	Beat "The Queen & The Maiden" stages 1 times -> Catseye [Legend] X 3
-9325	Beat "The King & The Angel" stages 1 times -> Catseye [Legend] X 3
+9321	Clear "Clionel Ascendant" 1 times using 7 or more Special Cats. -> Catseye [Legend] X 3
+9322	Clear "Queen's Coronation" 1 times using 7 or more Normal Cats. -> Catseye [Legend] X 3
+9323	Beat "The Dead & The Bloated" stages 1 time -> Catseye [Legend] X 3
+9324	Beat "The Queen & The Maiden" stages 1 time -> Catseye [Legend] X 3
+9325	Beat "The King & The Angel" stages 1 time -> Catseye [Legend] X 3
 9217	Beat "MIKU EXPO" stages 5 times -> Cat Ticket X 1
 9218	Beat "MIKU EXPO" stages 10 times -> Cat Ticket X 1
 9219	Beat "MIKU EXPO" stages 20 times -> Cat Ticket X 1
@@ -666,9 +666,9 @@ ID	mission_text
 9225	Score 8888 or higher on the Dojo stage, "1101900" -> Cat Food X 88
 29	Beat "Moon Ch.1 [EoC]" -> Platinum Ticket X 1
 46	Beat "Moon Ch.1 [EoC]" -> Platinum Ticket X 1
-48	Beat distinct stages in "Kombu Cape" 5 times -> 古びたタマゴ:N101 X 1
-49	Beat distinct stages in "Kombu Cape" 10 times -> 古びたタマゴ:N102 X 1
-9276	Beat "めざせＧＩ にゃんこ競馬" stages 1 times -> 伝説のにんじん X 1
+48	Clear Super Beast Subjugation stages 5 times -> 古びたタマゴ:N101 X 1
+49	Clear Super Beast Subjugation stages 10 times -> 古びたタマゴ:N102 X 1
+9276	Beat "めざせＧＩ にゃんこ競馬" stages 1 time -> 伝説のにんじん X 1
 9277	Beat "めざせＧＩ にゃんこ競馬" stages 5 times -> 伝説のにんじん X 3
 9278	Beat "めざせＧＩ にゃんこ競馬" stages 10 times -> 伝説のにんじん X 5
 9279	Acquire the cat/s "ネコキリンモドキ" -> 伝説のにんじん X 5
@@ -693,13 +693,13 @@ ID	mission_text
 9298	Defeat One Horn in any EoC Ch.1 stage -> Cat Ticket X 1
 9299	Defeat The Face in any EoC Ch.1 stage -> Cat Ticket X 1
 9300	Clear all 5 missions from the following: 9295, 9296, 9297, 9298, 9299 -> Rare Ticket X 1
-9301	Beat "Unknown" stages 1 times -> Cat Ticket X 1
+9301	Beat "Unknown" stages 1 time -> Cat Ticket X 1
 9302	Beat "Unknown" stages 2 times -> Cat Ticket X 1
 9303	Beat "Unknown" stages 3 times -> Rare Ticket X 1
 9304	Clear all 18 missions from the following: 9283, 9284, 9285, 9286, 9288, 9289, 9290, 9291, 9292, 9294, 9295, 9296, 9297, 9298, 9299, 9301, 9302, 9303 -> 100万ドルのネコ X 1
-9306	Beat "高雄メトロ レッドライン" stages 1 times -> Cat Food X 10
+9306	Beat "高雄メトロ レッドライン" stages 1 time -> Cat Food X 10
 9307	Beat "高雄メトロ レッドライン" stages 5 times -> XP X 50000
-9308	Beat "高雄ライトレール" stages 1 times -> Cat Food X 10
+9308	Beat "高雄ライトレール" stages 1 time -> Cat Food X 10
 9309	Beat "高雄ライトレール" stages 5 times -> XP X 50000
 9310	Acquire the cat/s "ナナ＆ネコ,エミリア＆ネコ,ジェアー＆ネコ" -> シャオチョン＆ネコ X 1
 9311	Level up ナナ＆ネコ to Level 10 -> Cat Food X 10
@@ -707,21 +707,21 @@ ID	mission_text
 9313	Level up ジェアー＆ネコ to Level 10 -> Cat Food X 10
 9314	Level up シャオチョン＆ネコ to Level 10 -> Cat Food X 10
 9315	Clear all 9 missions from the following: 9306, 9307, 9308, 9309, 9310, 9311, 9312, 9313, 9314 -> Rare Ticket X 1
-9316	Beat "春節ハッピープレゼント！" stages 1 times -> XP X 5000
+9316	Beat "春節ハッピープレゼント！" stages 1 time -> XP X 5000
 9317	Beat "春節ハッピープレゼント！" stages 2 times -> XP X 10000
 9318	Beat "春節ハッピープレゼント！" stages 3 times -> XP X 15000
 9319	Beat "春節ハッピープレゼント！" stages 4 times -> XP X 20000
 9320	Beat "春節ハッピープレゼント！" stages 5 times -> Rare Ticket X 1
-9326	Beat "Crimson Catastrophe" stages 1 times -> XP X 1000000
-9327	Beat "Heaven of Darkness" stages 1 times -> XP X 1000000
-9328	Beat "Peerless" stages 1 times -> XP X 1000000
-9329	Beat "Sweet Irony" stages 1 times -> XP X 1000000
-9330	Beat "Wrath of Heaven" stages 1 times -> XP X 1000000
-9331	Beat "Dimension of Despair" stages 1 times -> Cat Ticket X 1
-9332	Beat "Red Sky at Morning, 緊急爆風警報" stages 1 times -> Cat Ticket X 1
-9333	Beat "The Rolling Dead, ローリングデッド" stages 1 times -> Cat Ticket X 1
-9334	Beat "The 2nd Dimension, 絶望新次元" stages 1 times -> Cat Ticket X 1
-9335	Beat "Typhoon Nemo, 台風零号" stages 1 times -> Cat Ticket X 1
+9326	Beat "Crimson Catastrophe" stages 1 time -> XP X 1000000
+9327	Beat "Heaven of Darkness" stages 1 time -> XP X 1000000
+9328	Beat "Peerless" stages 1 time -> XP X 1000000
+9329	Beat "Sweet Irony" stages 1 time -> XP X 1000000
+9330	Beat "Wrath of Heaven" stages 1 time -> XP X 1000000
+9331	Beat "Dimension of Despair" stages 1 time -> Cat Ticket X 1
+9332	Beat "Red Sky at Morning, 緊急爆風警報" stages 1 time -> Cat Ticket X 1
+9333	Beat "The Rolling Dead, ローリングデッド" stages 1 time -> Cat Ticket X 1
+9334	Beat "The 2nd Dimension, 絶望新次元" stages 1 time -> Cat Ticket X 1
+9335	Beat "Typhoon Nemo, 台風零号" stages 1 time -> Cat Ticket X 1
 9336	【サイクロン祭】イベント限定追加ミッション -> Catseye [Rare] X 3
 9337	【サイクロン祭】イベント限定追加ミッション -> Catseye [Rare] X 3
 9338	【サイクロン祭】イベント限定追加ミッション -> Catseye [Super Rare] X 3

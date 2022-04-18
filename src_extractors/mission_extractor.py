@@ -85,12 +85,22 @@ def extract():
 		
 		return toret
 	
+	def times_check(func):
+		def wrap(data: dict) -> str | None:
+			temp = func(data)
+			if temp is None:
+				return temp
+			else:
+				return func(data).replace("1 times", "1 time")
+		return wrap
+	
+	@times_check
 	def parseMission(data: dict) -> str | None:
 		# generates text for mission, returns None if not possible / supported
 		cat = data["category"]
 		template = mission_templates["template"][cat]
 		match cat:
-			case 0 | 28:  # one stage N times
+			case 0:  # one stage N times
 				stages = unique([Readers.getStageOrMap(x) for x in data["condition"]])
 				if (len(stages) == 1):
 					cat += 1000
@@ -164,6 +174,8 @@ def extract():
 				return template
 			case 27:  # beat all quiz missions
 				return template.format(data["condition"][0])
+			case 28:
+				return template.format(data["quantity"])
 
 		return None
 		
@@ -192,7 +204,7 @@ def extract():
 		if (name is None):  # do some shitty hard-coded processing
 			lines = text_en[t][1].split("<br>")
 			if fill_jp[t]["category"] == 24:  # process restricted challenge missions separately
-				lines = [text_en[t][1].split("<br>")[1].split("(")[0]]
+				lines = ["Clear"+text_en[t][1].partition("Clear")[2].replace("<br>", " ").split("(")[0]]
 			elif len(lines) > 1 and "%d" in lines[1]:
 				lines.pop(1)
 			lines[0] = lines[0].replace("%d", str(fill_jp[t]["quantity"]))
