@@ -442,24 +442,24 @@ class StageFetcher(UniversalFetcher):
 		
 		df.to_csv('scheduling.tsv', sep='\t')
 	
-	def printStages(self) -> str:
-		toret = ""
+	def printStages(self) -> list[str]:
+		toret = []
 		if len(self.finalStages) == 0:
-			return ""
-		toret +=(f'```ansi\n{self.clr.clc("Events:", 32)}\n\n')
+			return []
+		toret.append((f'```ansi\n{self.clr.clc("Events:", 32)}\n\n'))
 		for element in self.finalStages:
-			toret +=(element).__str__()+"\n"
-		toret +=('```\n')
+			toret[-1] +=(element).__str__()+"\n"
+		toret[-1] +=('```\n')
 		
-		toret +=(f'```ansi\n{self.clr.clc("Sales:", 32)}\n\n')
+		toret.append((f'```ansi\n{self.clr.clc("Sales:", 32)}\n\n'))
 		for element in self.sales:
-			toret +=(element).__str__()+"\n"
-		toret +=('```\n')
+			toret[-1] +=(element).__str__()+"\n"
+		toret[-1] +=('```\n')
 		
-		toret +=(f'```ansi\n{self.clr.clc("Missions:", 32)}\n\n')
+		toret[-1] += (f'```ansi\n{self.clr.clc("Missions:", 32)}\n\n')
 		for element in self.missions:
-			toret +=(element).__str__()+"\n"
-		toret +=('```\n')
+			toret[-1] +=(element).__str__()+"\n"
+		toret[-1] +=('```\n')
 		return toret
 	
 	def package(self):

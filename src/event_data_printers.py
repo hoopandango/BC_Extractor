@@ -144,7 +144,7 @@ def process(js):
 	# output query
 	toprint: list[str] = [f"**{ver} EVENT DATA**\n"]
 	toprint[0] += gf.printGatya()
-	toprint.append(sf.printStages())
+	toprint.extend(sf.printStages())
 	toprint.append(itf.printItemData())
 	toprint.append(sf.printFestivalData())
 	
