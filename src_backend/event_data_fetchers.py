@@ -34,7 +34,7 @@ class UniversalFetcher:
 		self.date0 = d0
 	
 	def groupData(self, waitingqueue: list[RawEventGroup] | list[Event]) -> tuple[list[Event], list[EventGroup],
-	                                                                        list[Sale], list[Mission]]:
+	                                                                              list[Sale], list[Mission]]:
 		# stage, festival, sale, mission
 		group_history_2: dict[str, EventGroup] = {}
 		ungrouped_history: dict[str, Event] = {}
@@ -168,7 +168,7 @@ class UniversalFetcher:
 					                     sched=grp0.sched, sched_data=grp0.sched_data, clr=self.clr)
 					newqueue.append(curr0)
 			return newqueue
-	
+		
 		flatqueue = waitingqueue
 		if len(waitingqueue) > 0:
 			if (isinstance(waitingqueue[0], RawEventGroup)):
@@ -228,21 +228,21 @@ class GatyaFetcher(UniversalFetcher):
 			goto.append(toput)
 	
 	# OUTPUT TOOLS
-	def printGatya(self)->str:
+	def printGatya(self) -> str:
 		toret = ""
 		if len(self.refinedGatya) == 0:
 			return ""
-		toret +=(f'```ansi\n{self.clr.clc("Gatya:", 32)}\n\n')
+		toret += (f'```ansi\n{self.clr.clc("Gatya:", 32)}\n\n')
 		for event in self.refinedGatya:
 			if not isinstance(event, EventGroup):
 				if event.rates[3] in (10000, 9500):  # Platinum / Legend Ticket Event
 					continue
 				if event.page in ('Rare Capsule', 'Event Capsule') and event.ID > 0:
-					toret += event.__str__()+"\n"
+					toret += event.__str__() + "\n"
 			else:
-				toret += event.__str__()+"\n"
-		toret +=('```\n')
-		toret +=(
+				toret += event.__str__() + "\n"
+		toret += ('```\n')
+		toret += (
 			"Legend for Gatya:\nSU = Step-Up, PS = Platinum Shard, L = Lucky Ticket,"
 			" N = Neneko and Friends, R = Reinforcement, D = Grandons\n")
 		return toret
@@ -331,7 +331,7 @@ class StageFetcher(UniversalFetcher):
 				if s not in seen:
 					tort.append(s)
 					seen.add(s)
-		
+			
 			return tort
 		
 		def get_actual(check: list[datetime.datetime], d: int) -> datetime.datetime:
@@ -340,7 +340,7 @@ class StageFetcher(UniversalFetcher):
 				return tort
 			else:
 				return tort.replace(month=(tort.month) % 12 + 1, year=tort.year + (tort.month + 1) // 13)
-
+		
 		if len(self.festivals) == 0:
 			return ""
 		toret = "Festival Data:\n"
@@ -348,9 +348,9 @@ class StageFetcher(UniversalFetcher):
 			if not isinstance(festival.events[0], Stage) or festival.events[0].sched is None:
 				continue
 			
-			toret +=(f'```ansi\n{self.clr.clc(festival.name, 32)} {StageParsers.fancyDate(festival.dates)}\n\n')
+			toret += (f'```ansi\n{self.clr.clc(festival.name, 32)} {StageParsers.fancyDate(festival.dates)}\n\n')
 			groups = []
-			if(festival.events[0].sched_data is not None):
+			if (festival.events[0].sched_data is not None):
 				obj = groupby(festival.events, lambda x: x.sched_data)
 				for k, group in obj:
 					groups.append(list(group))
@@ -365,8 +365,8 @@ class StageFetcher(UniversalFetcher):
 				rep = event_set[0]  # representative event of the set
 				
 				if rep.sched == 'permanent':
-					toret += self.clr.clc(StageParsers.fancyDate(rep.dates), 34) +\
-					      f"{StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}\n"
+					toret += self.clr.clc(StageParsers.fancyDate(rep.dates), 34) + \
+					         f"{StageParsers.fancyTimes([{'start': rep.dates[0], 'end': rep.dates[1]}])}\n"
 				
 				elif rep.sched == 'monthly':
 					for setting in rep.sched_data:
@@ -390,7 +390,8 @@ class StageFetcher(UniversalFetcher):
 				
 				elif rep.sched == 'daily':
 					for setting in rep.sched_data:
-						toret +=(f"{self.clr.clc(StageParsers.fancyDate(rep.dates), 34)} {StageParsers.fancyTimes(setting['times'])}\n")
+						toret += (
+							f"{self.clr.clc(StageParsers.fancyDate(rep.dates), 34)} {StageParsers.fancyTimes(setting['times'])}\n")
 				
 				elif rep.sched == 'weekly':
 					dayscheds = [[], [], [], [], [], [], []]
@@ -408,13 +409,14 @@ class StageFetcher(UniversalFetcher):
 						if (set(day1) == set(day2)):
 							ignored.append(i + j + 1)
 						buf.append(weekdays[i + j + 1])
-						toret +=(f"- {self.clr.clc('/'.join(buf), 34)}: {', '.join(day1)}\n")
+						toret += (f"- {self.clr.clc('/'.join(buf), 34)}: {', '.join(day1)}\n")
 				
 				elif rep.sched == 'yearly':
-					toret +=(f"- {self.clr.clc(StageParsers.fancyDate([rep.sched_data[0]['times'][0]['start'],        rep.sched_data[0]['times'][0]['end']])[:-2],34)}\n")
-				
-				# End printing
-			toret +=('```\n')
+					toprint = StageParsers.fancyDate([rep.sched_data[0]['times'][0]['start'], rep.sched_data[0]['times'][0]['end']])[:-2]
+					toret += f"- {self.clr.clc(toprint, 34)}\n)"
+			
+			# End printing
+			toret += ('```\n')
 		return toret
 	
 	def schedulingTable(self):
@@ -448,18 +450,18 @@ class StageFetcher(UniversalFetcher):
 			return []
 		toret.append((f'```ansi\n{self.clr.clc("Events:", 32)}\n\n'))
 		for element in self.finalStages:
-			toret[-1] +=(element).__str__()+"\n"
-		toret[-1] +=('```\n')
+			toret[-1] += (element).__str__() + "\n"
+		toret[-1] += ('```\n')
 		
 		toret.append((f'```ansi\n{self.clr.clc("Sales:", 32)}\n\n'))
 		for element in self.sales:
-			toret[-1] +=(element).__str__()+"\n"
-		toret[-1] +=('```\n')
+			toret[-1] += (element).__str__() + "\n"
+		toret[-1] += ('```\n')
 		
 		toret[-1] += (f'```ansi\n{self.clr.clc("Missions:", 32)}\n\n')
 		for element in self.missions:
-			toret[-1] +=(element).__str__()+"\n"
-		toret[-1] +=('```\n')
+			toret[-1] += (element).__str__() + "\n"
+		toret[-1] += ('```\n')
 		return toret
 	
 	def package(self):
@@ -468,7 +470,7 @@ class StageFetcher(UniversalFetcher):
 			"sales": [x.package() for x in self.sales],
 			"missions": [x.package() for x in self.missions]
 		}
-	
+
 class ItemFetcher(UniversalFetcher):
 	def __init__(self, **kwargs):
 		UniversalFetcher.__init__(self, **kwargs)
@@ -528,10 +530,10 @@ class ItemFetcher(UniversalFetcher):
 		if len(self.finalItems) == 0:
 			return ""
 		self.finalItems.sort(key=lambda x: x.dates[0])
-		toret +=(f'```ansi\n{self.clr.clc("Items:", 32)}\n\n')
+		toret += (f'```ansi\n{self.clr.clc("Items:", 32)}\n\n')
 		for item in self.finalItems:
-			toret +=(item).__str__()+"\n"
-		toret +=('```\n')
+			toret += (item).__str__() + "\n"
+		toret += ('```\n')
 		return toret
 	
 	def package(self) -> list[dict[str, any]]:

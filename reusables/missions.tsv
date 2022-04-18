@@ -178,7 +178,7 @@ ID	mission_text
 9160	Level up Adult Cat to Level 10 -> Cat Food X 10
 9161	Beat "No Plan A (Deadly) [Clionel Ascendant]" -> Cat Ticket X 1
 9162	Beat "Realm of Carnage (Deadly) [River Styx]" -> Cat Ticket X 1
-9163	Beat "Honey Trap (Deadly) [Queen’s Coronation]" -> Cat Ticket X 1
+9163	Beat "Honey Trap (Deadly)   [Queen’s Coronation]" -> Cat Ticket X 1
 9164	Beat "Parade of the Dead (Deadly) [Dead on Debut]" -> Cat Ticket X 1
 9165	Beat "N-1 Grand Prix (Deadly) [King Wahwah’s Revenge]" -> Cat Ticket X 1
 9166	Beat "Bombergirl (Deadly) [Deeply Dreaming]" -> Cat Ticket X 1
@@ -576,7 +576,7 @@ ID	mission_text
 9207	Level up Chun-Li Cat to Level 10 -> Cat Food X 10
 9208	Beat "B-Day Gifts" stages 7 times -> Cat Food X 77
 9209	Score 7777 or higher on the Dojo stage, "Lucky Number 7 [Arena of Honor]" -> Cat Food X 77
-9211	Beat all of these stages: "Puffer Planet (Merciless) [Blue Impact], Unknown" -> Cat Ticket X 1
+9211	Beat "Puffer Planet (Merciless) [Blue Impact]" -> Cat Ticket X 1
 9212	Clear all 7 missions from the following: 9161, 9162, 9163, 9164, 9165, 9166, 9211 -> Cat Ticket X 3
 9213	Level up Miku Cat to Level 10 -> Cat Food X 10
 9214	Beat "MIKU EXPO" stages 5 times -> Cat Ticket X 1
@@ -655,15 +655,15 @@ ID	mission_text
 47	Beat all of these stages: "Aku Studies 101: Inquiry [Empress' Report 1], Aku Studies 201: Inquiry [Empress' Report 2], Aku Studies 301: Inquiry [Empress' Report 3], Aku Studies 401: Inquiry [Empress' Report 4], Aku Studies 501: Inquiry [Empress' Report 5]" -> Platinum Shard X 3
 9321	1 times using 7 or more Special Cats. -> Catseye [Legend] X 3
 9322	1 times using 7 or more Normal Cats. -> Catseye [Legend] X 3
-9323	Beat "Unknown" stages 1 times -> Catseye [Legend] X 3
-9324	Beat "Unknown" stages 1 times -> Catseye [Legend] X 3
-9325	Beat "Unknown" stages 1 times -> Catseye [Legend] X 3
+9323	Beat "The Dead & The Bloated" stages 1 times -> Catseye [Legend] X 3
+9324	Beat "The Queen & The Maiden" stages 1 times -> Catseye [Legend] X 3
+9325	Beat "The King & The Angel" stages 1 times -> Catseye [Legend] X 3
 9217	Beat "MIKU EXPO" stages 5 times -> Cat Ticket X 1
 9218	Beat "MIKU EXPO" stages 10 times -> Cat Ticket X 1
 9219	Beat "MIKU EXPO" stages 20 times -> Cat Ticket X 1
 9220	Level up ネコU.F.O. to Level 10 -> Cat Food X 10
 9224	Beat "バースデープレゼント!" stages 8 times -> Cat Food X 88
-9225	Score 8888 or higher on the Dojo stage, "Unknown" -> Cat Food X 88
+9225	Score 8888 or higher on the Dojo stage, "1101900" -> Cat Food X 88
 29	Beat "Moon Ch.1 [EoC]" -> Platinum Ticket X 1
 46	Beat "Moon Ch.1 [EoC]" -> Platinum Ticket X 1
 48	Beat distinct stages in "Kombu Cape" 5 times -> 古びたタマゴ:N101 X 1
@@ -680,11 +680,11 @@ ID	mission_text
 9285	Quiz Mission -> Cat Ticket X 1
 9286	Quiz Mission -> Cat Ticket X 1
 9287	Clear all 4 missions from the following: 9283, 9284, 9285, 9286 -> Rare Ticket X 1
-9288	Beat all of these stages: "Japan [EoC], United Kingdom [ItF Ch.1 Zombie], Unknown" -> Cat Ticket X 1
-9289	Beat all of these stages: "Sahara [EoC], Thailand [ItF Ch.1 Zombie], Unknown" -> Cat Ticket X 1
-9290	Beat all of these stages: "Germany [EoC], Kenya [ItF Ch.1 Zombie], Unknown" -> Cat Ticket X 1
-9291	Beat all of these stages: "Bermuda [EoC], Colombia [ItF Ch.1 Zombie], Unknown" -> Cat Ticket X 1
-9292	Beat all of these stages: "Alaska [EoC], Brazil [ItF Ch.1 Zombie], Unknown" -> Cat Ticket X 1
+9288	Beat all of these stages: "Japan [EoC], United Kingdom [ItF Ch.1 Zombie], 300206" -> Cat Ticket X 1
+9289	Beat all of these stages: "Sahara [EoC], Thailand [ItF Ch.1 Zombie], 300218" -> Cat Ticket X 1
+9290	Beat all of these stages: "Germany [EoC], Kenya [ItF Ch.1 Zombie], 300225" -> Cat Ticket X 1
+9291	Beat all of these stages: "Bermuda [EoC], Colombia [ItF Ch.1 Zombie], 300234" -> Cat Ticket X 1
+9292	Beat all of these stages: "Alaska [EoC], Brazil [ItF Ch.1 Zombie], 300245" -> Cat Ticket X 1
 9293	Clear all 5 missions from the following: 9288, 9289, 9290, 9291, 9292 -> Rare Ticket X 1
 9294	Clear all 4 Quiz Missions -> Rare Ticket X 1
 9295	Defeat Doge in any EoC Ch.1 stage -> Cat Ticket X 1

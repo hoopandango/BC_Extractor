@@ -1,10 +1,10 @@
 import json
 import pandas as pd
 import csv
+from src_backend.local_readers import Readers
 
 def extract():
 	# region setup
-	from src_backend.local_readers import Readers
 	
 	with open('_config.json') as fl:
 		config = json.load(fl)
@@ -31,10 +31,17 @@ def extract():
 			return cats[catID]
 		except IndexError:
 			return "Unknown"
-	
+		
 	def getCombo(ID: int) -> str:
 		if (ID == -1): return "any"
 		return Readers.getCombo(ID)
+	
+	def getStageOrMap(ID: int) -> str:
+		temp = Readers.getStageOrMap(ID)
+		if temp == "Unknown":
+			return str(ID)
+		else:
+			return temp
 	
 	def getItem(cat: int, ID: int) -> str:
 		if cat == 0:
@@ -94,7 +101,7 @@ def extract():
 				return template.format(data["quantity"], ", ".join(stages))
 			
 			case 1:  # M stages N times
-				stages = unique([Readers.getStageOrMap(x) for x in data["condition"]])
+				stages = unique([getStageOrMap(x) for x in data["condition"]])
 				if (len(stages) == 1 and len(data["condition"]) < 4):  # I hate this so much please help
 					cat += 1000
 					template = mission_templates["template"][cat]
@@ -136,9 +143,9 @@ def extract():
 			case 20:  # clear an N stage [weeklies only]
 				return template.format(data["quantity"], ", ".join([getStageCat(x) for x in data["condition"]]))
 			case 21:  # score M or higher on N dojo
-				return template.format(data["quantity"], ", ".join([Readers.getStageOrMap(x) for x in data["condition"]]))
+				return template.format(data["quantity"], ", ".join([getStageOrMap(x) for x in data["condition"]]))
 			case 22:  # defeat M enemy in N category
-				stages = unique([Readers.getStageOrMap(x) for x in data["condition"][1:]])
+				stages = unique([getStageOrMap(x) for x in data["condition"][1:]])
 				if data["condition"][1] < 5:
 					return mission_templates["template"][1000 + cat].format(data["quantity"] + 1,
 					                                                        Readers.getEnemy(data["condition"][0]))
@@ -152,7 +159,7 @@ def extract():
 			case 24:  # clear M stage with N restriction
 				return None
 			case 25:  # get all treasures in chapter N
-				return template.format(Readers.getStageOrMap(data["condition"][0]))
+				return template.format(getStageOrMap(data["condition"][0]))
 			case 26:  # quiz mission
 				return template
 			case 27:  # beat all quiz missions
