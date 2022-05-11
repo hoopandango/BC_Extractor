@@ -36,5 +36,5 @@ def fetch():
 			shutil.rmtree("extraction/temp")
 			break
 			
-fetch()
+# fetch()
 src_extractors.run_all()
