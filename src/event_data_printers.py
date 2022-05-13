@@ -208,7 +208,7 @@ class Funky(Resource):
 					role = 647882379184308254
 				else:
 					role = 654577263605710850
-				if len(toprint[0]) > 800:
+				if len(toprint[0]) > 200:
 					requests.post(hooks["fandom"], {"content": f"pinging <@&{role}>"})
 			
 			tosend = process(dummy)[1][0]
