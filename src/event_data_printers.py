@@ -209,7 +209,9 @@ class Funky(Resource):
 				else:
 					role = 654577263605710850
 				if len(toprint[0]) > 200:
-					requests.post(hooks["fandom"], {"content": f"pinging <@&{role}>"})
+					response = requests.post(hooks["fandom"], {"content": f"pinging <@&{role}>"})
+					requests.post(hooks["test"], {"content": str(response.__dict__)})
+				requests.post(hooks["test"], {"content": len(toprint[0])})
 			
 			tosend = process(dummy)[1][0]
 			files = {"removed_stuff.txt": io.StringIO(tosend)}
