@@ -315,7 +315,7 @@ unit_ID	name_f	name_c	name_s
 316	Wrathful Poseidon	Valiant Poseidon	Almighty Poseidon
 317	CPAC	PPAP	
 318	Miko Mitama	Mitama the Oracle	
-319	Killer Cat	True Killer Cat	
+319	Killer Cat	True Killer Cat	Radical Cat
 321	ナゾウサギ	兎宮王道	
 322	Sarukani	Rock Revengers	The One-Hit Wonders
 323	Miyamoku Musashi	Heroic Musashi	Awakened Musashi
@@ -473,10 +473,10 @@ unit_ID	name_f	name_c	name_s
 476	Cat Devil	Infernal Cat	
 477	Nekonosuke	Old Guardian Cat	
 478	Lumina	Luminalia	
-479	グミネコ	ラッキーネコ	
+479	グミネコ	ラッキーネコ	グミネコソーダ
 480	ねこ娘	ネコねこ娘	
 481	Doktor Heaven	Professor Abyss	
-482	Benevolent Souma	Souma ＆ Cat	
+482	Benevolent Souma	Souma ＆ Cat	Cat-Eared Souma
 483	Kano ＆ Souma	Kano ＆ Souma ＆ Cat	
 484	Li'l Valkyrie Dark	Dark Rider Valkyrie	
 485	カレット	カレットCC	
@@ -600,7 +600,7 @@ unit_ID	name_f	name_c	name_s
 604	Ranma Cat (M)	Ranma Cat (F)	
 605	Akane Cat	Akane Cat (Gi)	
 606	Panda Cat	Genma Cat	
-607	Adventurer Kanna	Swashbuckler Kanna	
+607	Adventurer Kanna	Swashbuckler Kanna	Fabled Adventure Girl Kanna
 608	ネコウエハース	ネコウエハースBIG	
 609	Dark Aegis Garu	Dark Beastlord Garu	
 610	Gold Brick Cat	King Ingot Cat	King Nekokhamen
@@ -649,7 +649,13 @@ unit_ID	name_f	name_c	name_s
 653	Elder Beast Naala	Storm Beast Naala	
 654	Brainwashed Gross Cat	Brainwashed Sexy Legs Cat	
 655	Bliza	Blizana	
-656	Ancient Egg N001	Mystic Egg N001	
-657	悲嘆の踊り子イズ	哀悼の舞姫ダークイズ	
-658	古びたタマゴ:N101	赤いタマゴ:N101	飛脚ネコ
-659	古びたタマゴ:N102	青いタマゴ:N102	ネコターさん
+656	Ancient Egg N001	Mystic Egg N001	Haniwa Cat
+657	Iz the Dancer of Grief	Iz the Lady of Mourning	
+658	Ancient Egg: N101	Cinnabar Egg: N101	Courier Cat
+659	Ancient Egg: N102	Teal Egg: N102	Catarzan
+660	海龍ダライアサン	海龍王ダライアサン	
+661	祝福神クロノス	ウェディングクロノス	
+662	洗脳されしウシネコ	洗脳されしネコキリン	
+663	古びたタマゴ:N103	黒いタマゴ:N103	ネコガスマスク
+664	古びたタマゴ:N104	緑のタマゴ:N104	ネコオペ
+665	古びたタマゴ:N201	悪のタマゴ:N201	ネコソシスト

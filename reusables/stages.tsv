@@ -1,4 +1,15 @@
 ID	name
+0	Speed Up Sale
+1	Treasure Radar Sale
+2	Rich Cat Sale
+3	Cat CPU Sale
+4	Cat Jobs Sale
+5	Sniper Cat Sale
+6	XP Pack A Sale
+7	XP Pack B Sale
+8	XP Pack C Sale
+9	XP Pack D Sale
+10	XP Pack E Sale
 11	Castle of Fish
 12	Sushi Island
 13	The Scratching Post
@@ -282,6 +293,7 @@ ID	name
 1242	Tag Arena: Expert
 1243	Top of the Bog
 1244	バースデープレゼント!
+1244	バースデープレゼント!
 1245	Most Appearances 2020
 1246	Prelude to Ruin
 1247	Typhoon Nihil
@@ -297,6 +309,11 @@ ID	name
 1257	Wicked Cat
 1258	Wicked Tank
 1259	The Great Diablo
+1260	Hotblooded Ball-Rolling
+1261	Hotblooded Challenge Course
+1262	Hotblooded Three-Leg Race ①
+1263	Hotblooded Three-Leg Race ②
+1264	Hotblooded Three-Leg Race ③
 1265	Demon's Park
 1266	Wicked Axe
 1268	Unleashing the Cats
@@ -308,12 +325,38 @@ ID	name
 1274	Growing Evil
 1275	Empress' Report 4
 1276	Empress' Report 5
+1277	Empress' Excavation 1
 1282	Q1.箱の中身クイズ
 1283	Q5.時の運クイズ
 1284	バースデープレゼント！
 1285	Top 5 Most Seen Enemies, 2021!
 1286	New Year's Bling
 1287	Cover of Darkness
+1288	春節ハッピープレゼント！
+1288	春節ハッピープレゼント！
+1289	The March of Flames
+1290	From Your Junior
+1291	From Your Senpai
+1292	From A Childhood Friend
+1296	Courts of Agony
+1297	War on Valentines
+1298	Season 2: Heartbeat Festival
+1299	Season 3: Field Trip
+1300	Weekend～告白～
+1301	Weekend: Confession
+1302	Weekend: Confession
+1303	Season 4: Graduation Day
+1304	70M Celebration Gifts Galore!
+1305	The Dead & The Bloated
+1306	The Queen & The Maiden
+1307	The King & The Angel
+1308	#02「13日は何曜日」
+1309	#03「ネコ鳴村」
+1310	決闘チャレンジ
+1311	タッグ闘技チャレンジ
+1312	密林の異変
+1313	砂漠の怪異
+1314	火山の脅威
 2000	ふるさと自衛隊
 2001	魅惑のプリンセス
 2002	ケリ姫ステージ
@@ -389,11 +432,15 @@ ID	name
 2072	松賀咲の通学
 2073	小野ミサの通学
 2074	地下鉄に乗るっ
+2074	地下鉄に乗るっ
 2075	City of Souls
+2076	ぐでぐでしてて忙しい
 2076	ぐでぐでしてて忙しい
 2077	開眼のぐでたまにゃんこ襲来！
 2078	城ドラ VS 城ドラ
+2078	城ドラ VS 城ドラ
 2079	Groove Like A Bear
+2080	ケットバス王国の教え
 2080	ケットバス王国の教え
 2081	A Fake Mitakihara
 2082	Queen Rampant
@@ -444,6 +491,7 @@ ID	name
 2127	MIKU EXPO
 2128	MIKU CHERRY
 2129	ハマンボ崎あゆみ 強襲！
+2129	Manbosaki Strikes!
 2130	MIKU EXPO
 2131	MIKU CHERRY
 2132	にゃんこ大泥棒
@@ -493,7 +541,20 @@ ID	name
 2176	Witch's Labyrinth: Dessert Witch
 2177	Witch's Labyrinth: Box Witch
 2178	Nutcracker Witch
+2179	秋華賞（ＧⅠ）
+2180	菊花賞（ＧⅠ）
+2181	天皇賞（秋）（ＧⅠ）
 2182	有馬記念（ＧⅠ）
+2183	高雄メトロ レッドライン
+2183	高雄メトロ レッドライン
+2184	高雄ライトレール
+2184	高雄ライトレール
+3003	ItF Ch.1
+3004	ItF Ch.2
+3005	ItF Ch.3
+3006	CotC Ch.1
+3007	CotC Ch.2
+3008	CotC Ch.3
 4000	Growing Green
 4001	Growing Purple
 4002	Growing Red
@@ -535,6 +596,11 @@ ID	name
 4039	The Angel & The Demon
 4040	The Queen & The Dead
 4041	The King & The Maiden
+4042	The Aku Realms
+4052	The Dead & The Bloated
+4053	The Queen & The Maiden
+4054	The King & The Angel
+6000	Hall of Initiates
 7000	Heavenly Tower
 7001	Red Citadel
 7002	Black Citadel
@@ -543,7 +609,19 @@ ID	name
 7005	Zombie Citadel
 7006	Infernal Tower
 7007	Traitless Citadel
+11000	Arena of Honor
+11001	Arena of Honor
+11002	Arena of Honor
+11003	Arena of Honor
+11004	Arena of Honor
 11005	Arena of Honor
+11006	Arena of Honor
+11007	Arena of Honor
+11010	Arena of Honor
+11011	Arena of Honor
+11012	Arena of Honor
+11013	Arena of Honor
+11014	Arena of Honor
 11015	Arena of Honor
 11016	Arena of Honor
 11017	Arena of Power
@@ -590,6 +668,14 @@ ID	name
 13035	Ancient Forest Labyrinth
 13036	Castle of the Sentinels
 13037	時空のゆがみ
+13037	Spacetime Distortion
+13038	Imminent Disaster
+13039	Bikura, Harbor of Evil
+13040	Dead Heat Land
+13041	Rose-Colored Road
+13042	Behemoth's Peak
+13043	Moodist Beach
+13044	猫追いしふるさと
 14000	Growing Yellow
 14001	Growing Blue
 14002	Growing Red
@@ -623,6 +709,35 @@ ID	name
 14030	The Crazed Fish
 14031	The Crazed Lizard
 14032	The Crazed Titan
+14033	Blue Impact
+14034	Crazed Moneko Strikes
+14035	Red Sky at Morning
+14035	Red Sky at Morning
+14035	Red Sky at Morning
+14035	緊急爆風警報
+14036	Rolling Dead
+14036	Rolling Dead
+14036	Rolling Dead
+14036	ローリングデッド
+14037	Typhoon Nemo
+14037	Typhoon Nemo
+14037	台風零号
+14037	Typhoon Nemo
+14038	The Great Diablo
+14039	Bottom of the Swamp
+14040	Cat Maniac
+14041	Tank Maniac
+14042	Axe Maniac
+14043	Gross Maniac
+14044	Cow Maniac
+14045	Bird Maniac
+14046	Fish Maniac
+14047	Lizard Maniac
+14048	Titan Maniac
+14049	The 2nd Dimension
+14049	The 2nd Dimension
+14049	絶望新次元
+14049	The 2nd Dimension
 16000	Legend Quest
 24000	Baron Seal Strikes!
 24001	Baron Seal Strikes!!
@@ -647,18 +762,42 @@ ID	name
 24020	Baron Seal Strikes
 24021	August Gauntlet
 24022	August Gauntlet II
+24023	September Gauntlet
 24023	9月強襲！
+24024	September Gauntlet II
 24024	続・9月強襲！
+24025	October Gauntlet
+24026	October Gauntlet II
 24027	Le'Grim Strikes
+24028	November Gauntlet
 24029	November Gauntlet II
 24030	December Gauntlet
 24031	December Gauntlet II
 24032	January Gauntlet
 24033	January Gauntlet II
 24034	Mega Menace
+24035	Horrorpotamus
 24036	A Colossal New Year!
+24037	Divine Archangel Strikes
 24037	大天使エクスエル強襲
+24038	Big Peng Z Strikes
 24038	ビッグペンZ強襲
+24039	February Gauntlet
+24040	February Gauntlet II
+24041	お祭りにゃんこ ～春節編～
+24042	Horde of Cats
+24043	March Gauntlet
+24044	March Gauntlet II
+24045	Attack of the Lonely Hearts
+24046	April Gauntlet
+24047	April Gauntlet II
+24048	Season1 ～学園生活～
+24049	Monthly Event All-Stars  Grateful Gathering
+24050	May Gauntlet
+24051	May Gauntlet II
+24052	#01「悪霊の式場」
+24053	決闘チャレンジ
+24054	タッグ闘技チャレンジ
 25000	Aitum Fields
 25001	Vitamin Valley
 25002	Ticket Hunter
@@ -675,6 +814,7 @@ ID	name
 25013	Sky Summit
 25014	Sky Frontier
 25015	Black Cradle
+25016	Black Summit
 25017	Black Frontier
 25018	Holy Cradle
 25019	Holy Summit
@@ -692,7 +832,10 @@ ID	name
 25031	Stylish Hideout
 25032	Perfect Hideout
 25033	紅き本能の起源
+25033	Red Cradle
+25034	Red Summit
 25034	紅き本能の頂
+25035	Red Frontier
 25035	紅き本能の秘境
 25036	浮ける本能の起源
 25037	浮ける本能の頂
@@ -710,14 +853,26 @@ ID	name
 25049	蒼き本能の頂
 25050	蒼き本能の秘境
 25051	おんぼろ秘密基地
+25051	Rundown Hideout
 25052	おんぼろ秘密基地
+25052	Rundown Hideout
 25053	おんぼろ秘密基地
+25053	Rundown Hideout
 25054	イケてる秘密基地
+25054	Stylish Hideout
 25055	イケてる秘密基地
+25055	Stylish Hideout
 25056	イケてる秘密基地
+25056	Stylish Hideout
+25057	Perfect Hideout
 25057	かんぺきな秘密基地
 25058	かんぺきな秘密基地
+25058	Perfect Hideout
 25059	かんぺきな秘密基地
+25059	Perfect Hideout
+25060	Hunter's Map I
+25061	Hunter's Map II
+25062	Hunter's Map III
 27000	Messier's Assault
 27001	U.F.O.軍団 強襲！
 27002	The Devils Strike!
@@ -729,61 +884,5 @@ ID	name
 27008	Test of Might: Ranma 1/2
 27009	Horrorpotamus!
 27010	めざせＧＩ にゃんこ競馬
-24035	Horrorpotamus
-27011	強襲！城とドラゴン
-1296	Courts of Agony
-24045	Attack of the Lonely Hearts
-1290	From Your Junior
-1297	War on Valentines
-1291	From Your Senpai
-1292	From A Childhood Friend
-24042	Horde of Cats
-24043	March Gauntlet
-24044	March Gauntlet II
-24048	Season1 ～学園生活～
-1298	Season 2: Heartbeat Festival
-1300	Weekend～告白～
-2183	高雄メトロ レッドライン
-2184	高雄ライトレール
-24041	お祭りにゃんこ ～春節編～
-1288	春節ハッピープレゼント！
-1289	The March of Flames
-24039	February Gauntlet
-1260	Hotblooded Ball-Rolling
-1261	Hotblooded Challenge Course
-1262	Hotblooded Three-Leg Race ①
-1244	バースデープレゼント!
 27010	めざせＧＩ にゃんこ競馬
-2183	高雄メトロ レッドライン
-2184	高雄ライトレール
-1288	春節ハッピープレゼント！
-2074	地下鉄に乗るっ
-2076	ぐでぐでしてて忙しい
-2078	城ドラ VS 城ドラ
-2080	ケットバス王国の教え
-11004	Arena of Honor
-3003	ItF Ch.1
-3004	ItF Ch.2
-0	Speed Up Sale
-1	Treasure Radar Sale
-2	Rich Cat Sale
-3	Cat CPU Sale
-4	Cat Jobs Sale
-5	Sniper Cat Sale
-6	XP Pack A Sale
-7	XP Pack B Sale
-8	XP Pack C Sale
-9	XP Pack D Sale
-10	XP Pack E Sale
-3005	ItF Ch.3
-3006	CotC Ch.1
-3007	CotC Ch.2
-3008	CotC Ch.3
-4042	The Aku Realms
-14035	緊急爆風警報
-14036	ローリングデッド
-14049	絶望新次元
-14037	台風零号
-4052	The Dead & The Bloated
-4053	The Queen & The Maiden
-4054	The King & The Angel
+27011	強襲！城とドラゴン

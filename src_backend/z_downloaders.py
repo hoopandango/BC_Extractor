@@ -81,7 +81,7 @@ class Downloaders:
 		if b"<Code>AccessDenied</Code>" not in c and b'<h2><span' not in c and b'NoSuchKey' not in c:
 			try:
 				title = re.search(b'<h2>(.*)</h2>', c).group(1)
-				title = re.sub(b'<span.*?</span>', '', title, flags=re.DOTALL).decode('utf-8')
+				title = re.sub(b'<span.*?</span>', b'', title, flags=re.DOTALL).decode('utf-8')
 				return title
 			except IndexError:
 				pass

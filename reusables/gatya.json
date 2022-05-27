@@ -8380,9 +8380,7 @@
       "D"
     ],
     "diff": [
-      [
-        "Hevijak the Wicked"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9732,7 +9730,7 @@
       [
         "Huntress Terun",
         "Hattori Hanzo",
-        "悲嘆の踊り子イズ",
+        "Iz the Dancer of Grief",
         "Bliza"
       ],
       [
@@ -9749,9 +9747,7 @@
     "series_ID": 27,
     "exclusives": [],
     "diff": [
-      [
-        "悲嘆の踊り子イズ"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9762,9 +9758,7 @@
     "series_ID": 21,
     "exclusives": [],
     "diff": [
-      [
-        "悲嘆の踊り子イズ"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9775,8 +9769,86 @@
     "series_ID": 46,
     "exclusives": [],
     "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "731": {
+    "banner_name": "Bridal Gacha",
+    "enabled": true,
+    "series_ID": 53,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "732": {
+    "banner_name": "Dragon Emperors",
+    "enabled": true,
+    "series_ID": 4,
+    "exclusives": [
+      "D",
+      "N"
+    ],
+    "diff": [
       [
-        "悲嘆の踊り子イズ"
+        "海龍ダライアサン"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "733": {
+    "banner_name": "Dragon Emperors",
+    "enabled": true,
+    "series_ID": 4,
+    "exclusives": [
+      "D",
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "734": {
+    "banner_name": "Epicfest",
+    "enabled": true,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "海龍ダライアサン"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "735": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "海龍ダライアサン"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "736": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "海龍ダライアサン"
       ],
       []
     ],

@@ -725,7 +725,13 @@
 724	(> 579)	Easter Carnival	 (+ Brainwashed Gross Cat)
 725	(≅ 724)	Easter Carnival	 {4x rate on Easter Neneko}
 726	(> 697)	DynastyFest	 (+ Lovestruck Lesser Demon)
-727	(> 681)	Superfest	 (+ Bliza, Hattori Hanzo, Huntress Terun, 悲嘆の踊り子イズ)
-728	(> 721)	Epicfest	 (+ 悲嘆の踊り子イズ)
-729	(> 722)	Platinum Ticket Banner	 (+ 悲嘆の踊り子イズ)
-730	(> 723)	Legend Ticket Banner	 (+ 悲嘆の踊り子イズ)
+727	(> 681)	Superfest	 (+ Bliza, Hattori Hanzo, Huntress Terun, Iz the Dancer of Grief)
+728	(> 721)	Epicfest	 (+ Iz the Dancer of Grief)
+729	(> 722)	Platinum Ticket Banner	 (+ Iz the Dancer of Grief)
+730	(> 723)	Legend Ticket Banner	 (+ Iz the Dancer of Grief)
+731		Bridal Gacha	
+732	(> 630)	Dragon Emperors	 [D + N] (+ 海龍ダライアサン)
+733	(≅ 732)	Dragon Emperors	 [D + R]
+734	(> 728)	Epicfest	 (+ 海龍ダライアサン)
+735	(> 729)	Platinum Ticket Banner	 (+ 海龍ダライアサン)
+736	(> 730)	Legend Ticket Banner	 (+ 海龍ダライアサン)
