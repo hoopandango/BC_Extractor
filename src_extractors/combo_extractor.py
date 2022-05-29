@@ -2,6 +2,7 @@ import pandas as pd
 import sqlite3
 from pandas.core.frame import DataFrame
 from base import config, schemas
+from src_backend.local_readers import Readers
 
 gaps = None
 def extract():
@@ -30,7 +31,7 @@ def extract():
 		return pd.read_csv(flnames_en["effects"], header=None, delimiter='|', names=schema_effects[1:], usecols=[0])
 	
 	def get_combo_units_table() -> DataFrame:
-		df = pd.read_csv(flnames_jp['data'], header=None, delimiter=',', usecols=range(0, 14), skipfooter=1, engine='python').dropna()
+		df = pd.read_csv(flnames_jp['data'], header=None, delimiter=',', usecols=range(0, 14), skipfooter=1, engine='python', index_col=0).dropna()
 		
 		df = df[df[1] != -1]  # filter unused combos
 		tunt = pd.DataFrame(columns=schema_units[1:])
@@ -43,22 +44,25 @@ def extract():
 		return tunt
 	
 	def get_combo_table() -> DataFrame:
+		
+		# footer row has garbage value in data table
+		data = pd.read_csv(flnames_jp['data'], header=None, delimiter=',', usecols=range(0, 14), skipfooter=1, engine='python', index_col=None)
+		data = data[data[1] != -1]
+		data = data.rename(columns={0: 'ID'}).iloc[:, [0, 12, 13]]
+
 		names_en = pd.read_csv(flnames_en['names'], header=None, delimiter='|', usecols=[0])
 		names_jp = pd.read_csv(flnames_jp['names'], header=None, delimiter=',', usecols=[0])
-
+		
 		names = names_jp.copy()
 		temp = names_en.dropna()
 		names.loc[temp.index] = temp
+		
 		names = pd.concat([names, names[names[0] == names_jp[0]]], axis=0)
 		
-		# footer row has garbage value in data table
-		data = pd.read_csv(flnames_jp['data'], header=None, delimiter=',', usecols=range(0, 14), skipfooter=1, engine='python')
-		
 		# Removes unused combos
-		data = data[data[1] != -1]
-		data = data.iloc[:, 12:]
-		
 		tcmb = names.join(data, how='inner')
+		tcmb.index = tcmb["ID"]
+		tcmb = tcmb.drop(columns=["ID"])
 		tcmb.columns = schema_main[1:]
 		
 		return tcmb
@@ -107,6 +111,11 @@ def extract():
 	table_effects = get_combo_effects_table()
 	table_combos = get_combo_table()
 	table_units = get_combo_units_table()
+	
+	temp = table_combos.join(table_effects, on='combo_effect_ID').join(table_sizes, on='combo_size_ID').join(table_units)
+	temp.iloc[:, 5:] = temp.iloc[:, 5:].applymap(lambda X: Readers.getCat(X // 3, X % 3) if X != -1 else '')
+	temp.drop(columns=['combo_effect_ID', 'combo_size_ID'])
+	temp.to_csv(config['outputs']['combos2'], sep='\t')
 	
 	table_sizes.to_sql('combo_sizes', conn2, if_exists='replace', index=True, index_label=schema_sizes[0])
 	table_effects.to_sql('combo_effects', conn2, if_exists='replace', index=True, index_label=schema_effects[0])

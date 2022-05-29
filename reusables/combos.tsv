@@ -1,210 +1,220 @@
-0	Cat Army
-1	Behind Closed Doors
-2	Cap'n Ahab
-3	Deathrock
-4	Cool Japan
-5	Sunbathers
-6	Sound of Wings
-7	Choppers
-8	Apples and Oranges
-9	Take a Bow
-10	Sister Act
-11	Hecks Angels
-12	Lingerie Special
-13	In Bloom
-14	Childhood Friends
-15	Rawhide
-16	Puppeteers Guild
-17	Pyon Pyon for Two
-18	Helping Hand
-19	Fall in Love
-20	Frog Prince
-21	Treasured Grandchild
-22	No Stage Fright
-23	Biohazard
-24	Midsummer Sun
-25	Reindeer's Gift
-26	Silver Screen
-27	Long-Legged
-28	Life of the Party
-29	Good Jobs!
-30	Thirteen
-31	Itchy Riches
-100	Attack of the Li'ls
-101	X-Files
-102	Legs for Days
-103	Art History
-104	Moby Dick
-105	Back to School
-106	Eye of the Storm
-107	Mo' Hawks
-108	Saucers
-109	Mecha
-110	Macho Man
-111	Bouncing Four
-112	Pulling Strings
-113	King and Queen
-114	Enter The Ninja
-115	Troubled Youth
-116	Duet
-117	Firewatch
-118	Pork on Rice
-119	Smiles at Cats
-120	Lion King
-121	Peach 'n Banana
-122	Honnoji's Curse
-123	Cool in the Heat
-124	Apollo Mission
-125	Bony Bone
-126	Chivalry and Candy
-127	Ratings Competition
-128	Cats 'n Tanks
-129	Headband
-130	Watch Me Whip
-131	Masquerade
-200	Crazy Hearts
-201	Power of Darkness
-202	Gross!!!
-203	Nyanko, Inc.
-204	Seasons of Love
-205	Flash in the Pan
-206	Blossoming
-207	Bento Special
-208	Speak of the Devil
-209	Classical Arts
-210	Sportswoman
-211	Gentlemen
-212	Spinners
-213	Longnecks
-214	Feel the Dance
-215	Special Treatment
-216	Horror Movies
-217	Cat High
-218	Spearfight
-219	Heart Beat
-300	Lolly Fanciers
-301	Master-Apprentice
-302	Three Kings
-303	Girlish Innocents
-304	Headbanger's Ball
-305	Showoffs
-306	Sweets
-307	Pointy Bits
-308	Yesterday's Enemy
-309	Punchpunchpunch!
-310	Lust for Battle
-311	Punish the Lewd
-312	Team of Two
-313	Double Typhoon
-314	Trick of the Wind
-315	IT Crowd
-316	Aerial Recon
-317	Under Arrest
-318	Cat Circus
-319	Checkered Skirt
-1000	Double Date
-1001	Lazing About
-1002	Curses!!!
-1003	Immodest Modesty
-1004	Jibbly Studio
-1005	Pumpkinpants
-1006	Paranormal Activity
-1007	Liver Trouble
-1008	Age of Dinosaurs
-32	Toying Around
-33	Rich and Poor
-34	Koi And Dragon
-35	Playing Slayer
-132	As Above, So Below
-320	Future of War
-321	Bazooka Bros.
-322	Rivalry
-323	Heavenly Kings
-36	Sweep the Area
-37	Steel Saviors
-38	Galactic Travel
-133	Struck by Lightning
-134	Neckless Chic
-135	Blue Lagoon
-220	Dog Gods
-324	Volcanic Fury
-39	Cursed Strength
-40	Secret Agency
-41	Living in Love
-136	Jungle Women
-137	Dreams of Flying
-138	Offering to the Gods
-221	Blessed Strength
-325	Gang of Killers
-42	Classic Headwear
-139	Arm Day Everyday
-222	Like a Record, Baby
-326	Blessed Business
-43	My Very Best Friend
-44	Hot, Fresh 'n' Fast
-327	Commuter Life
-328	Take Me Out
-45	Green Thumb
-46	Purple Heart
-47	Marine Tours
-48	Pedal Powered
-140	Nationals
-141	Trainspotting
-223	Brunch Rush
-49	Black & White
-50	Royal Submariner
-224	Cutting Edge
-225	Contest of Champs
-329	Put On Ice
-330	Greatswords
-51	Thanks for All
-52	You Will Find Happiness
-53	Miracle Performance
-54	Roasted Marshmallow
-55	Meowin' in the Rain
-142	Chance of Tornado
-226	High Voltage
-56	Two As One
-57	Boiled Egg
-58	Cheating Heart?
-227	Part-Time Coworkers
-59	Imperial Court
-60	Soft and Flexible
-61	Power in Numbers
-143	Scantily Clad
-144	Cosplay Fans
-62	Post-Apocalypse
-63	Kimono Champs
-64	Growth Spurt
-65	Dragons Old and Young
-66	Wheels of Fate
-67	Independence Day
-68	Fresh Catch
-69	Shields of all Sizes
-70	Co-op Mode
-331	Bad Guys
-332	Cat Ears
-72	Spinning Out
-73	Offshore Accounts
-74	Ninjutsu Cute
-333	Clear Skies
-334	Drinking Age
-75	Witch Trial
-76	Breakfast in Undies
-77	Street Bazaar
-145	Working Vacation
-78	Dragon Driller
-79	Mythic Driver
-80	Brave Cutter
-81	Whale Digger
-82	Sexy Sawer
-83	Mini-Saurus
-84	Little Warriors
-85	Micro Fighters
-86	Minicyclone
-87	Big Game Hunter
-88	Mystery Club
-89	Don't Mess With Me!
-91	Dance a Little, Eat a Little
-92	Tiny Ancient Hunt
-93	Étoile minimum
+	combo_name	combo_effect_ID	combo_size_ID	combo_effect	combo_size	cat_1	cat_2	cat_3	cat_4	cat_5
+0	Cat Army	4	0	Worker Cat Start Level 	UP (Sm)	Cat	Tank Cat	Axe Cat	Gross Cat	Cow Cat
+1	Behind Closed Doors	6	0	Cat Cannon Power 	UP (Sm)	Dom Cat	Bondage Cat			
+2	Cap'n Ahab	10	0	Cat Base Defense 	UP (Sm)	Fisherman Cat	Whale Cat			
+3	Deathrock	3	0	Cannon Start Level 	UP (Sm)	Zombie Cat	Rocker Cat			
+4	Cool Japan	0	1	Unit Attack 	UP (M)	Ninja Cat	Sumo Cat	Samurai Cat	Sushi Cat	
+5	Sunbathers	4	0	Worker Cat Start Level 	UP (Sm)	Island Cat	Castaway Cat			
+6	Sound of Wings	7	0	Cat Cannon Recharge 	UP (Sm)	Cupid Cat	Bird Cat			
+7	Choppers	0	0	Unit Attack 	UP (Sm)	Executioner	Axe Cat	Wargod Keiji		
+8	Apples and Oranges	10	0	Cat Base Defense 	UP (Sm)	Cat Gang	Apple Cat			
+9	Take a Bow	17	0	Knockback Effect 	UP (Sm)	Tank Cat	Kubilan Pasalan			
+10	Sister Act	0	0	Unit Attack 	UP (Sm)	Moneko	Neneko			
+11	Hecks Angels	2	0	Unit Speed 	UP (Sm)	Biker Cat	Uesugi Kenshin			
+12	Lingerie Special	4	0	Worker Cat Start Level 	UP (Sm)	Brah Cats	Panties Cat			
+13	In Bloom	19	0	Freeze Effect 	UP (Sm)	Wargod Keiji	Flower Cat			
+14	Childhood Friends	7	0	Cat Cannon Recharge 	UP (Sm)	Baby Gao	Li'l Cat			
+15	Rawhide	2	0	Unit Speed 	UP (Sm)	Cow Cat	Cat Eastwood			
+16	Puppeteers Guild	3	1	Cannon Start Level 	UP (M)	Warlock and Pierre	Puppetmaster Cat			
+17	Pyon Pyon for Two	9	0	Worker Cat Max 	UP (Sm)	Pogo Cat	Rope Jump Cat			
+18	Helping Hand	18	0	Slow Effect 	UP (Sm)	Bodhisattva Cat	Mother Cat			
+19	Fall in Love	15	0	Massive Damage Effect 	UP (Sm)	Cupid Cat	Madam Bride			
+20	Frog Prince	14	0	Strong Effect 	UP (Sm)	Princess Juliet Cat	Ninja Frog Cat			
+21	Treasured Grandchild	3	1	Cannon Start Level 	UP (M)	Baby Cat	Kung Fu Cat X			
+22	No Stage Fright	16	0	Resistant Effect 	UP (Sm)	Actress Cat	Paris Cat			
+23	Biohazard	11	0	Research Power 	UP (Sm)	Zombie Cat	Mr.			
+24	Midsummer Sun	15	0	Massive Damage Effect 	UP (Sm)	Cooldown Cat	Solar Cat			
+25	Reindeer's Gift	5	0	Starting Money 	UP (Sm)	Reindeer Fish Cat	A Gift of Cats			
+26	Silver Screen	12	0	Accounting Power 	UP (Sm)	Cat Projector	Actress Cat			
+27	Long-Legged	18	1	Slow Effect 	UP (M)	Gross Cat	Asilan Pasalan			
+28	Life of the Party	10	0	Cat Base Defense 	UP (Sm)	Groucho Cat	Dancing Flasher Cat			
+29	Good Jobs!	13	0	Study Power 	UP (Sm)	Prof. Cat Jobs				
+30	Thirteen	17	0	Knockback Effect 	UP (Sm)	Sniper the Heavy				
+31	Itchy Riches	4	0	Worker Cat Start Level 	UP (Sm)	Rich Cat Sr.				
+32	Toying Around	12	0	Accounting Power 	UP (Sm)	Tin Cat	Flower Cat	Cat-o-tron		
+33	Rich and Poor	5	0	Starting Money 	UP (Sm)	Cat	Gold Cat			
+34	Koi And Dragon	7	1	Cat Cannon Recharge 	UP (M)	Koi Cat	Kamukura			
+35	Playing Slayer	14	0	Strong Effect 	UP (Sm)	Brave Cat	Dioramos			
+36	Sweep the Area	7	0	Cat Cannon Recharge 	UP (Sm)	Mr.	Raiden			
+37	Steel Saviors	16	0	Resistant Effect 	UP (Sm)	Cat-o-tron	Cat Machine			
+38	Galactic Travel	2	0	Unit Speed 	UP (Sm)	Space Cat	Super Galaxy Cosmo			
+39	Cursed Strength	7	1	Cat Cannon Recharge 	UP (M)	Grudge Cat	Marauder Cat			
+40	Secret Agency	9	0	Worker Cat Max 	UP (Sm)	Ninja Cat	Urashima Taro			
+41	Living in Love	6	0	Cat Cannon Power 	UP (Sm)	Maiden Cat	Radiant Aphrodite			
+42	Classic Headwear	3	1	Cannon Start Level 	UP (M)	Awa-Odori Cat	Kasa Jizo			
+43	My Very Best Friend	22	3	Witch Killer Effect	UP (XL)	Li'l Madoka	Li'l Homura			
+44	Hot, Fresh 'n' Fast	12	1	Accounting Power 	UP (M)	Food Stall Cat	Pai-Pai			
+45	Green Thumb	5	0	Starting Money 	UP (Sm)	Gardener Cat	Flower Cat			
+46	Purple Heart	20	0	Weaken Effect 	UP (Sm)	Mighty Kat-A-Pult	Sick Cat			
+47	Marine Tours	15	0	Massive Damage Effect 	UP (Sm)	B.C.S. Lionheart	Fish Cat	Li'l Fish Cat		
+48	Pedal Powered	17	0	Knockback Effect 	UP (Sm)	Mighty Bomburr	Tricycle Cat			
+49	Black & White	9	0	Worker Cat Max 	UP (Sm)	Killer Cat	Cat			
+50	Royal Submariner	4	0	Worker Cat Start Level 	UP (Sm)	Wrathful Poseidon	Madam King			
+51	Thanks for All	12	0	Accounting Power 	UP (Sm)	Maneki Cat				
+52	You Will Find Happiness	23	3	Eva Angel Killer Effect	UP (XL)	Shinji & Cat	Kaworu & Cat			
+53	Miracle Performance	24	1	Critical Rate 	UP (M)	Moneko	Crazed Moneko			
+54	Roasted Marshmallow	12	0	Accounting Power 	UP (Sm)	Bora	Marshmallow Cat			
+55	Meowin' in the Rain	18	0	Slow Effect 	UP (Sm)	Mizli	Slug Jockey Cat			
+56	Two As One	7	1	Cat Cannon Recharge 	UP (M)	Twinstars	Bean Cats			
+57	Boiled Egg	19	0	Freeze Effect 	UP (Sm)	Mighty Thermae D-Lux	Eggy Cat			
+58	Cheating Heart?	11	1	Research Power 	UP (M)	Detective Vigler	Madame Sumo			
+59	Imperial Court	14	0	Strong Effect 	UP (Sm)	Imagawa Yoshimoto	Doll Cats			
+60	Soft and Flexible	10	1	Cat Base Defense 	UP (M)	Nobiluga	Creepmallow			
+61	Power in Numbers	20	0	Weaken Effect 	UP (Sm)	Cat Clan Heroes	Sports Day Cat			
+62	Post-Apocalypse	0	0	Unit Attack 	UP (Sm)	Rock Revengers	Biker Cat	Cat Gang		
+63	Kimono Champs	11	2	Research Power 	UP (L)	Trickster Himeyuri	Vengeful Cat	Awa-Odori Cat		
+64	Growth Spurt	9	1	Worker Cat Max 	UP (M)	Graveflower Verbena	Sumo Cat			
+65	Dragons Old and Young	14	0	Strong Effect 	UP (Sm)	Ganglion	Li'l Dragon Cat			
+66	Wheels of Fate	7	1	Cat Cannon Recharge 	UP (M)	Empress Chronos	Tricycle Cat	Cat Gang		
+67	Independence Day	0	0	Unit Attack 	UP (Sm)	Orbital Platform Armageddon	UFO Cat	Li'l UFO Cat		
+68	Fresh Catch	16	2	Resistant Effect 	UP (L)	Sea Maiden Ruri	Fish Cat	Li'l Fish Cat	Sashimi Cat	
+69	Shields of all Sizes	12	0	Accounting Power 	UP (Sm)	Relentless Gladios	Li'l Tank Cat			
+70	Co-op Mode	0	0	Unit Attack 	UP (Sm)	Myrcia	Reindeer Fish Cat	Koi Cat		
+71	先生になりたいでにゃ～る	7	0	Cat Cannon Recharge 	UP (Sm)	ネコ少年				
+71	先生になりたいでにゃ～る	7	0	Cat Cannon Recharge 	UP (Sm)	ネコ少年				
+72	Spinning Out	5	0	Starting Money 	UP (Sm)	Gacha Cat				
+73	Offshore Accounts	5	1	Starting Money 	UP (M)	Richest Cat				
+74	Ninjutsu Cute	24	0	Critical Rate 	UP (Sm)	Sacred Blade Sakura				
+75	Witch Trial	18	0	Slow Effect 	UP (Sm)	Witch Cat	Bondage Cat			
+76	Breakfast in Undies	18	0	Slow Effect 	UP (Sm)	Cat Toaster	Panties Cat			
+77	Street Bazaar	17	0	Knockback Effect 	UP (Sm)	Stilts Cat	Food Stall Cat			
+78	Dragon Driller	20	0	Weaken Effect 	UP (Sm)	Power Driller Cat	Li'l Dragon Cat			
+79	Mythic Driver	17	0	Knockback Effect 	UP (Sm)	Power Piledriver Cat	Li'l Mythical Titan			
+80	Brave Cutter	0	0	Unit Attack 	UP (Sm)	Power Cutter Cat	Li'l Brave Cat			
+81	Whale Digger	24	0	Critical Rate 	UP (Sm)	Power Backhoe Cat	Li'l Whale Cat			
+82	Sexy Sawer	16	0	Resistant Effect 	UP (Sm)	Power Saw Cat	Li'l Sexy Legs Cat			
+83	Mini-Saurus	11	0	Research Power 	UP (Sm)	Li'l Macho Cat	Jurassic Cat Sitter			
+84	Little Warriors	1	0	Unit Defense 	UP (Sm)	Li'l Wall Cat	Commando Cat			
+85	Micro Fighters	14	0	Strong Effect 	UP (Sm)	Li'l Brave Cat	Thor Cat			
+86	Minicyclone	17	0	Knockback Effect 	UP (Sm)	Li'l Sexy Legs Cat	Solar Cat			
+87	Big Game Hunter	2	0	Unit Speed 	UP (Sm)	Li'l Giraffe Cat	Phantom Thief Cat			
+88	Mystery Club	19	0	Freeze Effect 	UP (Sm)	Li'l UFO Cat	Lumbercat			
+89	Don't Mess With Me!	4	1	Worker Cat Start Level 	UP (M)	Kunio-kun				
+90	３連単	2	1	Unit Speed 	UP (M)	ネコキリンモドキ	ネコノトリッキー	ネコノドラゴーン		
+90	３連単	2	1	Unit Speed 	UP (M)	ネコキリンモドキ	ネコノトリッキー	ネコノドラゴーン		
+91	Dance a Little, Eat a Little	18	0	Slow Effect 	UP (Sm)	Li'l Whale Cat	Flamenco Cat			
+92	Tiny Ancient Hunt	0	0	Unit Attack 	UP (Sm)	Li'l Dragon Cat	Masai Cat			
+93	Étoile minimum	1	0	Unit Defense 	UP (Sm)	Li'l Mythical Titan	Paris Cat			
+94	Sacrifice	1	0	Unit Defense 	UP (Sm)	Summoner Satoru	Bondage Cat			
+95	One-Way Ticket to Hell	14	0	Strong Effect 	UP (Sm)	Hades the Deathdealer	Executioner			
+100	Attack of the Li'ls	2	1	Unit Speed 	UP (M)	Li'l Cat	Li'l Tank Cat	Li'l Axe Cat	Li'l Gross Cat	Li'l Cow Cat
+101	X-Files	6	0	Cat Cannon Power 	UP (Sm)	Neo Psychocat	UFO Cat			
+102	Legs for Days	17	0	Knockback Effect 	UP (Sm)	Sexy Legs Cat	Crazed Sexy Legs Cat			
+103	Art History	16	0	Resistant Effect 	UP (Sm)	Artist Cat	Michelangelo Cat			
+104	Moby Dick	1	0	Unit Defense 	UP (Sm)	Fisherman Cat	Whale Cat	Crazed Whale Cat		
+105	Back to School	9	0	Worker Cat Max 	UP (Sm)	Fish Cat	Crazed Fish Cat	Reindeer Fish Cat		
+106	Eye of the Storm	1	1	Unit Defense 	UP (M)	Bronze Cat	Rope Jump Cat	Space Cat	Clockwork Cat	Hoop Cat
+107	Mo' Hawks	17	0	Knockback Effect 	UP (Sm)	Mohawk Cat	Crazed Dragon Cat			
+108	Saucers	15	0	Massive Damage Effect 	UP (Sm)	UFO Cat	Crazed UFO Cat			
+109	Mecha	18	0	Slow Effect 	UP (Sm)	Major Space Cat	Cat-o-tron			
+110	Macho Man	21	0	Strengthen Effect 	UP (Sm)	Macho Leg Cat	Beefcake Cat			
+111	Bouncing Four	5	1	Starting Money 	UP (M)	Brah Cats	Pair Rope Jump Cat			
+112	Pulling Strings	5	0	Starting Money 	UP (Sm)	Necromancer Cat	Puppetmaster Cat			
+113	King and Queen	4	0	Worker Cat Start Level 	UP (Sm)	King Dragon Cat	Ice Queen Cat			
+114	Enter The Ninja	2	1	Unit Speed 	UP (M)	Ninja Cat	Hayabusa			
+115	Troubled Youth	21	0	Strengthen Effect 	UP (Sm)	Ururun Wolf	Akira			
+116	Duet	4	0	Worker Cat Start Level 	UP (Sm)	Moneko	Rocker Cat			
+117	Firewatch	20	0	Weaken Effect 	UP (Sm)	Lizard Cat	Crazed Lizard Cat	Fire Squad Kachiyama		
+118	Pork on Rice	1	0	Unit Defense 	UP (Sm)	Kai	Riceball Cat			
+119	Smiles at Cats	19	0	Freeze Effect 	UP (Sm)	Cat	Coppermine, type κ			
+120	Lion King	14	0	Strong Effect 	UP (Sm)	Lion Cat	Madam King			
+121	Peach 'n Banana	2	0	Unit Speed 	UP (Sm)	Momotaro	Cats in a Box			
+122	Honnoji's Curse	19	0	Freeze Effect 	UP (Sm)	Vengeful Cat	Oda Nobunaga			
+123	Cool in the Heat	19	0	Freeze Effect 	UP (Sm)	Ice Cat	Cooldown Cat			
+124	Apollo Mission	7	0	Cat Cannon Recharge 	UP (Sm)	Space Cat	The Death Moon			
+125	Bony Bone	11	0	Research Power 	UP (Sm)	Necromancer Cat	Skelecat			
+126	Chivalry and Candy	18	1	Slow Effect 	UP (M)	Vars	Pastry Cat			
+127	Ratings Competition	12	0	Accounting Power 	UP (Sm)	Catman	Actress Cat			
+128	Cats 'n Tanks	7	0	Cat Cannon Recharge 	UP (Sm)	Sports Day Cat	Doll Cats	Gentleman Bros.		
+129	Headband	6	0	Cat Cannon Power 	UP (Sm)	Sports Day Cat	Grudge Cat	Momotaro		
+130	Watch Me Whip	3	0	Cannon Start Level 	UP (Sm)	Dom Cat	Office Lady Cat			
+131	Masquerade	17	1	Knockback Effect 	UP (M)	Ururun Wolf	Executioner	Evil Cat		
+132	As Above, So Below	20	0	Weaken Effect 	UP (Sm)	The Flying Cat	Sodom			
+133	Struck by Lightning	15	0	Massive Damage Effect 	UP (Sm)	Thundia	Skelecat			
+134	Neckless Chic	17	0	Knockback Effect 	UP (Sm)	Jamiera Cat	Balalan Pasalan			
+135	Blue Lagoon	12	0	Accounting Power 	UP (Sm)	Guardian Gamereon	Island Cat			
+136	Jungle Women	14	0	Strong Effect 	UP (Sm)	Ururun Wolf	Kuu			
+137	Dreams of Flying	17	0	Knockback Effect 	UP (Sm)	The Grateful Crane	Flying Ninja Cat			
+138	Offering to the Gods	10	1	Cat Base Defense 	UP (M)	Shining Amaterasu	Sashimi Cat			
+139	Arm Day Everyday	1	1	Unit Defense 	UP (M)	Titan Cat	Kung Fu Cat	Beefcake Cat	Tesalan Pasalan	
+140	Nationals	18	0	Slow Effect 	UP (Sm)	Banner Cat	Vaulter Cat			
+141	Trainspotting	3	0	Cannon Start Level 	UP (Sm)	Express Cat	Cameraman Cat			
+142	Chance of Tornado	16	0	Resistant Effect 	UP (Sm)	Aer	Catornado			
+143	Scantily Clad	15	1	Massive Damage Effect 	UP (M)	Pharoah Reika	Skirt Cat	Panties Cat		
+144	Cosplay Fans	21	1	Strengthen Effect 	UP (M)	Wolf Princess Deale	Ritual Cat			
+145	Working Vacation	15	0	Massive Damage Effect 	UP (Sm)	Bath Cat	Heavy Assault C.A.T.			
+146	ゴーイングストーンズ	1	0	Unit Defense 	UP (Sm)	Gravi	Curling Cat			
+146	ゴーイングストーンズ	1	0	Unit Defense 	UP (Sm)	Gravi	Curling Cat			
+200	Crazy Hearts	5	2	Starting Money 	UP (L)	Crazed Cat	Crazed Tank Cat	Crazed Axe Cat	Crazed Gross Cat	Crazed Cow Cat
+201	Power of Darkness	20	1	Weaken Effect 	UP (M)	Dark Cat	Dark Lazer			
+202	Gross!!!	19	1	Freeze Effect 	UP (M)	Gross Cat	Crazed Gross Cat	Creepmallow		
+203	Nyanko, Inc.	4	0	Worker Cat Start Level 	UP (Sm)	Salaryman Cat	Office Lady Cat			
+204	Seasons of Love	14	1	Strong Effect 	UP (M)	Maiden Cat	Koi Cat	Madam Bride		
+205	Flash in the Pan	17	0	Knockback Effect 	UP (Sm)	Dancing Flasher Cat	Gentleman Cat			
+206	Blossoming	16	0	Resistant Effect 	UP (Sm)	Wargod Keiji	Adult Cat			
+207	Bento Special	5	1	Starting Money 	UP (M)	Sashimi Cat	Sushi Cat			
+208	Speak of the Devil	12	1	Accounting Power 	UP (M)	Lesser Demon Cat	Evil Cat			
+209	Classical Arts	18	0	Slow Effect 	UP (Sm)	Puppetmaster Cat	Drama Cats			
+210	Sportswoman	1	0	Unit Defense 	UP (Sm)	Sportsgirl Cat	Butterfly Cat			
+211	Gentlemen	9	0	Worker Cat Max 	UP (Sm)	Gentleman Cat	Phantom Thief Cat			
+212	Spinners	2	0	Unit Speed 	UP (Sm)	Tricycle Cat	Koi Cat			
+213	Longnecks	4	1	Worker Cat Start Level 	UP (M)	Giraffe Cat	Kubilan Pasalan			
+214	Feel the Dance	1	0	Unit Defense 	UP (Sm)	Samba Cat	Hip Hop Cat	Dancer Cat		
+215	Special Treatment	17	1	Knockback Effect 	UP (M)	Nurse Cat	Sick Cat			
+216	Horror Movies	16	1	Resistant Effect 	UP (M)	Zombie Cat	Vengeful Cat	Sadako Cat		
+217	Cat High	20	0	Weaken Effect 	UP (Sm)	Banner Cat	Delinquent Cat	Maiden Cat		
+218	Spearfight	19	0	Freeze Effect 	UP (Sm)	Princess Kaguya	Valkyrie Cat			
+219	Heart Beat	18	0	Slow Effect 	UP (Sm)	The White Rabbit	Rope Jump Cat			
+220	Dog Gods	6	0	Cat Cannon Power 	UP (Sm)	Ururun Wolf	Anubis the Protector			
+221	Blessed Strength	3	1	Cannon Start Level 	UP (M)	Holy Valkyrie Cat	Megidora			
+222	Like a Record, Baby	6	1	Cat Cannon Power 	UP (M)	Wargod Masamune	Catornado	Rope Jump Cat		
+223	Brunch Rush	7	0	Cat Cannon Recharge 	UP (Sm)	Waitress Cat	Cat Toaster			
+224	Cutting Edge	2	0	Unit Speed 	UP (Sm)	Strike Unit R.E.I.	Drone Cat			
+225	Contest of Champs	0	0	Unit Attack 	UP (Sm)	Welterweight Cat	Sumo Cat	Kung Fu Cat	Wrestling Cat	
+226	High Voltage	2	0	Unit Speed 	UP (Sm)	Voli	Catway			
+227	Part-Time Coworkers	1	0	Unit Defense 	UP (Sm)	Afterschool Sakura	Waitress Cat			
+300	Lolly Fanciers	18	0	Slow Effect 	UP (Sm)	Lollycat	Li'l Nyandam			
+301	Master-Apprentice	19	0	Freeze Effect 	UP (Sm)	Kung Fu Cat	Kung Fu Cat X			
+302	Three Kings	1	0	Unit Defense 	UP (Sm)	Madam King	King Dragon Cat	Lion Cat		
+303	Girlish Innocents	10	1	Cat Base Defense 	UP (M)	Maiden Cat	Juliet Cat			
+304	Headbanger's Ball	5	1	Starting Money 	UP (M)	Cow Cat	Crazed Cow Cat	Rocker Cat		
+305	Showoffs	9	0	Worker Cat Max 	UP (Sm)	Unicycle Cat	Showoff Cat			
+306	Sweets	7	1	Cat Cannon Recharge 	UP (M)	Lollycat	Pastry Cat	Marshmallow Cat		
+307	Pointy Bits	21	0	Strengthen Effect 	UP (Sm)	Togelan Pasalan	King Dragon Cat			
+308	Yesterday's Enemy	3	1	Cannon Start Level 	UP (M)	Ururun Wolf	Li'l Nyandam	Red Riding Mina		
+309	Punchpunchpunch!	0	1	Unit Attack 	UP (M)	Titan Cat	Crazed Titan Cat	Maiden Cat	Unknown Cat	
+310	Lust for Battle	0	0	Unit Attack 	UP (Sm)	Axe Cat	Ururun Wolf	Lesser Demon Cat		
+311	Punish the Lewd	16	0	Resistant Effect 	UP (Sm)	Gentleman Cat	Thunder God Zeus			
+312	Team of Two	1	1	Unit Defense 	UP (M)	Figure Skating Cats	Doll Cats	Bean Cats	Koi Cat	Pair Rope Jump Cat
+313	Double Typhoon	15	0	Massive Damage Effect 	UP (Sm)	Windy	Catornado			
+314	Trick of the Wind	17	0	Knockback Effect 	UP (Sm)	Catornado	Skirt Cat			
+315	IT Crowd	12	0	Accounting Power 	UP (Sm)	Catway	Nerd Cat			
+316	Aerial Recon	11	1	Research Power 	UP (M)	Bird Cat	Crazed Bird Cat	Flying Ninja Cat	Drone Cat	
+317	Under Arrest	18	0	Slow Effect 	UP (Sm)	The White Rabbit	Prisoner Cat			
+318	Cat Circus	5	1	Starting Money 	UP (M)	Lion Cat	Ururun Wolf	Warlock and Pierre		
+319	Checkered Skirt	11	0	Research Power 	UP (Sm)	Skirt Cat	Kalisa, type χ			
+320	Future of War	14	0	Strong Effect 	UP (Sm)	Mekako Saionji	Drone Cat			
+321	Bazooka Bros.	6	0	Cat Cannon Power 	UP (Sm)	Super Mr.	Red Riding Mina			
+322	Rivalry	4	0	Worker Cat Start Level 	UP (Sm)	Red Riding Mina	Valkyrie Cat			
+323	Heavenly Kings	15	0	Massive Damage Effect 	UP (Sm)	Immortal Yukimura	Awakened Bahamut Cat	Manic Lion Cat		
+324	Volcanic Fury	3	1	Cannon Start Level 	UP (M)	Takeda Shingen	Manic Island Cat			
+325	Gang of Killers	12	0	Accounting Power 	UP (Sm)	The Black Cat	Red Riding Mina			
+326	Blessed Business	9	1	Worker Cat Max 	UP (M)	Splendid Ganesha	Catway			
+327	Commuter Life	9	0	Worker Cat Max 	UP (Sm)	Salaryman Cat	Express Cat			
+328	Take Me Out	1	0	Unit Defense 	UP (Sm)	Banner Cat	Little Leaguer Cat	Solar Cat		
+329	Put On Ice	2	0	Unit Speed 	UP (Sm)	Figure Skating Cats	Curling Cat			
+330	Greatswords	6	1	Cat Cannon Power 	UP (M)	Miyamoku Musashi	Takeda Shingen			
+331	Bad Guys	11	2	Research Power 	UP (L)	Lasvoss	Li'l Nyandam	Killer Cat		
+332	Cat Ears	18	1	Slow Effect 	UP (M)	Narita Kaihime	Red Riding Mina	Moneko		
+333	Clear Skies	14	0	Strong Effect 	UP (Sm)	Golfer Cat	Catellite			
+334	Drinking Age	2	0	Unit Speed 	UP (Sm)	Vodka Cat	Future Cat			
+335	Warriors of Justice	7	2	Cat Cannon Recharge 	UP (L)	Kinrangers RoboForce	Space Marine Cat	Brave Cat		
+1000	Double Date	15	0	Massive Damage Effect 	UP (Sm)	Figure Skating Cats	Doll Cats			
+1001	Lazing About	14	0	Strong Effect 	UP (Sm)	Kotatsu Cat	Adult Cat			
+1002	Curses!!!	19	0	Freeze Effect 	UP (Sm)	Vengeful Cat	Grudge Cat			
+1003	Immodest Modesty	9	0	Worker Cat Max 	UP (Sm)	Loincloth Cat	Fisherman Cat			
+1004	Jibbly Studio	6	1	Cat Cannon Power 	UP (M)	The Flying Cat	Mythical Titan Cat	Witch Cat		
+1005	Pumpkinpants	19	0	Freeze Effect 	UP (Sm)	Sexy Legs Cat	Cat O'Lantern			
+1006	Paranormal Activity	4	1	Worker Cat Start Level 	UP (M)	Wheel Cat	Vengeful Cat	Evil Cat		
+1007	Liver Trouble	6	0	Cat Cannon Power 	UP (Sm)	Adult Cat	Drunken Master Cat			
+1008	Age of Dinosaurs	10	0	Cat Base Defense 	UP (Sm)	Lizard Cat	Jurassic Cat			
