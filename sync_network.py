@@ -2,7 +2,6 @@ import asyncio
 import json
 import pandas as pd
 
-from csv import DictReader, DictWriter
 from src_backend.z_downloaders import Downloaders
 from src_backend.local_readers import Readers
 
@@ -27,5 +26,5 @@ def sort_file():
 	temp.to_csv(config["outputs"]["stages"], sep='\t', index=False)
 
 if __name__ == "__main__":
-	# asyncio.run(update_stages())
+	asyncio.run(update_stages())
 	sort_file()
