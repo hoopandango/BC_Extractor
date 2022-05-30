@@ -1,3 +1,4 @@
+import pandas as pd
 import requests
 import regex as re
 import atexit
@@ -10,19 +11,12 @@ with open('_config.json') as fl:
 	
 @atexit.register
 def unload_changes():
-	toput = []
-	with open(config['outputs']['stages'], encoding='utf-8', newline='') as csvfile:
-		reader = csv.DictReader(csvfile, delimiter='\t')
-		for row in reader:
-			toput.append(row)
-	with open(config['outputs']['stages'], 'w', encoding='utf-8', newline='') as fil:
-		for row, value in Downloaders.buffer.items():
-			if value != "Unknown":
-				toput.append({"ID": row, "name": value})
-		writer = csv.DictWriter(fil, delimiter='\t', fieldnames=list(toput[0].keys()))
-		writer.writeheader()
-		writer.writerows(toput)
-		
+	inp = pd.read_csv(config['outputs']['stages'], sep='\t', index_col=0)
+	buf_entries = pd.DataFrame.from_dict(Downloaders.buffer, orient='index')
+	toput = pd.concat([inp, buf_entries], axis=0)
+	toput = toput[~toput.index.duplicated(keep='last')]  # retains last one in final
+	toput.to_csv(config['outputs']['stages'], sep='\t')
+	
 class Downloaders:
 	prefixes = {1: 'S', 2: 'C', 6: 'T', 7: 'V', 11: 'R', 12: 'M', 13: 'NA', 14: 'B', 24: 'A', 25: 'H', 27: 'CA'}
 	

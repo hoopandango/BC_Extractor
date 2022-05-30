@@ -1,16 +1,9 @@
-import json
 import csv
 import os
+from src_extractors.base import config, schemas
 
 def extract():
-	with open('_config.json') as fl:
-		config = json.load(fl)
-
-	with open('_schemas.json') as fl:
-		schema = json.load(fl)['units']
-
-	LNG = config['setup']['LNG']
-
+	schema = schemas['units']
 	flnames_en = config['inputs']['en']['units']
 	flnames_jp = config['inputs']['jp']['units']
 

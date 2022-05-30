@@ -293,7 +293,6 @@ ID	name
 1242	Tag Arena: Expert
 1243	Top of the Bog
 1244	バースデープレゼント!
-1244	バースデープレゼント!
 1245	Most Appearances 2020
 1246	Prelude to Ruin
 1247	Typhoon Nihil
@@ -332,7 +331,6 @@ ID	name
 1285	Top 5 Most Seen Enemies, 2021!
 1286	New Year's Bling
 1287	Cover of Darkness
-1288	春節ハッピープレゼント！
 1288	春節ハッピープレゼント！
 1289	The March of Flames
 1290	From Your Junior
@@ -432,15 +430,11 @@ ID	name
 2072	松賀咲の通学
 2073	小野ミサの通学
 2074	地下鉄に乗るっ
-2074	地下鉄に乗るっ
 2075	City of Souls
-2076	ぐでぐでしてて忙しい
 2076	ぐでぐでしてて忙しい
 2077	開眼のぐでたまにゃんこ襲来！
 2078	城ドラ VS 城ドラ
-2078	城ドラ VS 城ドラ
 2079	Groove Like A Bear
-2080	ケットバス王国の教え
 2080	ケットバス王国の教え
 2081	A Fake Mitakihara
 2082	Queen Rampant
@@ -490,7 +484,6 @@ ID	name
 2126	Hatsune Miku
 2127	MIKU EXPO
 2128	MIKU CHERRY
-2129	ハマンボ崎あゆみ 強襲！
 2129	Manbosaki Strikes!
 2130	MIKU EXPO
 2131	MIKU CHERRY
@@ -546,8 +539,6 @@ ID	name
 2181	天皇賞（秋）（ＧⅠ）
 2182	有馬記念（ＧⅠ）
 2183	高雄メトロ レッドライン
-2183	高雄メトロ レッドライン
-2184	高雄ライトレール
 2184	高雄ライトレール
 3003	ItF Ch.1
 3004	ItF Ch.2
@@ -667,7 +658,6 @@ ID	name
 13034	DNA Plantation
 13035	Ancient Forest Labyrinth
 13036	Castle of the Sentinels
-13037	時空のゆがみ
 13037	Spacetime Distortion
 13038	Imminent Disaster
 13039	Bikura, Harbor of Evil
@@ -712,16 +702,7 @@ ID	name
 14033	Blue Impact
 14034	Crazed Moneko Strikes
 14035	Red Sky at Morning
-14035	Red Sky at Morning
-14035	Red Sky at Morning
-14035	緊急爆風警報
 14036	Rolling Dead
-14036	Rolling Dead
-14036	Rolling Dead
-14036	ローリングデッド
-14037	Typhoon Nemo
-14037	Typhoon Nemo
-14037	台風零号
 14037	Typhoon Nemo
 14038	The Great Diablo
 14039	Bottom of the Swamp
@@ -734,9 +715,6 @@ ID	name
 14046	Fish Maniac
 14047	Lizard Maniac
 14048	Titan Maniac
-14049	The 2nd Dimension
-14049	The 2nd Dimension
-14049	絶望新次元
 14049	The 2nd Dimension
 16000	Legend Quest
 24000	Baron Seal Strikes!
@@ -763,9 +741,7 @@ ID	name
 24021	August Gauntlet
 24022	August Gauntlet II
 24023	September Gauntlet
-24023	9月強襲！
 24024	September Gauntlet II
-24024	続・9月強襲！
 24025	October Gauntlet
 24026	October Gauntlet II
 24027	Le'Grim Strikes
@@ -779,9 +755,7 @@ ID	name
 24035	Horrorpotamus
 24036	A Colossal New Year!
 24037	Divine Archangel Strikes
-24037	大天使エクスエル強襲
 24038	Big Peng Z Strikes
-24038	ビッグペンZ強襲
 24039	February Gauntlet
 24040	February Gauntlet II
 24041	お祭りにゃんこ ～春節編～
@@ -831,11 +805,8 @@ ID	name
 25030	Rundown Hideout
 25031	Stylish Hideout
 25032	Perfect Hideout
-25033	紅き本能の起源
 25033	Red Cradle
-25034	Red Summit
 25034	紅き本能の頂
-25035	Red Frontier
 25035	紅き本能の秘境
 25036	浮ける本能の起源
 25037	浮ける本能の頂
@@ -852,23 +823,14 @@ ID	name
 25048	蒼き本能の起源
 25049	蒼き本能の頂
 25050	蒼き本能の秘境
-25051	おんぼろ秘密基地
 25051	Rundown Hideout
-25052	おんぼろ秘密基地
 25052	Rundown Hideout
-25053	おんぼろ秘密基地
 25053	Rundown Hideout
-25054	イケてる秘密基地
 25054	Stylish Hideout
-25055	イケてる秘密基地
 25055	Stylish Hideout
-25056	イケてる秘密基地
 25056	Stylish Hideout
 25057	Perfect Hideout
-25057	かんぺきな秘密基地
-25058	かんぺきな秘密基地
 25058	Perfect Hideout
-25059	かんぺきな秘密基地
 25059	Perfect Hideout
 25060	Hunter's Map I
 25061	Hunter's Map II
@@ -883,6 +845,5 @@ ID	name
 27007	Heralds of The End
 27008	Test of Might: Ranma 1/2
 27009	Horrorpotamus!
-27010	めざせＧＩ にゃんこ競馬
 27010	めざせＧＩ にゃんこ競馬
 27011	強襲！城とドラゴン

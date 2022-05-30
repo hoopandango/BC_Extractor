@@ -1,6 +1,6 @@
 import pandas as pd
 import sqlite3
-from base import config, schemas
+from .base import config, schemas
 
 def extract():
 	schema = schemas['talents']
@@ -24,7 +24,7 @@ def extract():
 		for i in range(6):
 			s = df.iloc[:, [0] + list(range(l * i + 2, l * (i + 1) + 1))]
 			s.columns = CatBotColumns
-			final = final.concat(s, axis=0)
+			final = pd.concat([final, s], axis=0)
 		
 		final.sort_values(by=['unit_id'], inplace=True,
 											kind='mergesort')  # Sort table into readable order, needs to be stable

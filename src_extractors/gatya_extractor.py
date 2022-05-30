@@ -6,7 +6,7 @@ import csv
 import sqlite3
 from collections import Counter, defaultdict
 from src_backend.local_readers import Readers
-from base import config, schemas
+from .base import config, schemas
 
 def extract():
 	schema = schemas['gatya']
@@ -169,7 +169,7 @@ def extract():
 			# END OF PRINTING
 			# "banner_ID" -> "banner_name","exclusives","rate_ups","diff+","diff-","enabled","series_ID"
 			# "banner_ID" -> "units_in_banner"
-			row = [serie, str(excl), str(dict(bonuses)), diff_text, is_enabled(ID), s_ID]
+			row = [serie, str(excl), str(dict(bonuses)), str(diff_text), is_enabled(ID), s_ID]
 			row_comp = {"banner_name": str(serie), "enabled": bool(is_enabled(ID)), "series_ID": s_ID,
 			            "exclusives": excl, "diff": diff_text, "rate_ups": bonuses}
 			

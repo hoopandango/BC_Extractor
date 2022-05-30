@@ -81,21 +81,13 @@ class Readers:
 
 	@staticmethod
 	@lru_cache
-	def getMap(ID: int) -> str:
+	def getMap(ID: int, check_online: bool = True) -> str:
 		def isEnglish(name: str)->bool:
 			eng = len([0 for x in name if x in string.ascii_letters])
 			full = len([0 for x in name if x.isalpha()])
 			return full < 2*eng
 		
 		def lookup(store_jp: bool, default: str)->str:
-			try:
-				bkp = stagedata.loc[f"{i[0:3]}-{i[3:6]}", 2]  # backup lookup
-				if not pd.isna(bkp):  # backup empty (miss)
-					if isEnglish(bkp) or store_jp:
-						Downloaders.stash_cache(ID, bkp)   # backup hit, copy to cache
-					return bkp
-			except KeyError:  # backup miss
-				pass
 			toret = Downloaders.requestStage(ID, 'en')  # online lookup
 			if toret != "Unknown":  # request cleared
 				if isEnglish(toret) or store_jp:  # desirable response
@@ -110,17 +102,21 @@ class Readers:
 				return "EoC Ch.2"
 			case 3002:
 				return "EoC Ch.3"
-		i = str(ID).zfill(6)
 		
 		try:
 			local = stagesold.loc[ID, "name"]
 			if isEnglish(local):  # cache hit - en
 				return local
 			else:  # cache hit-jp
-				return lookup(False, local)
+				if check_online:
+					return lookup(False, local)
+				return local
 		except KeyError:  # cache miss
-			return lookup(True, "Unknown")
+			if check_online:
+				return lookup(True, "Unknown")
 			
+		return ("Unknown")
+		
 	@staticmethod
 	@lru_cache
 	def getStage(ID: int) -> str:
@@ -143,6 +139,7 @@ class Readers:
 			return "Unknown"
 	
 	@classmethod
-	def getStageOrMap(cls, ID: int) -> str:
+	def getStageOrMap(cls, ID: int, check_online=True) -> str:
+		# Does not look up online if check misses
 		if (ID >= 100000): return cls.getStage(ID)
-		else: return cls.getMap(ID)
+		else: return cls.getMap(ID, check_online=check_online)

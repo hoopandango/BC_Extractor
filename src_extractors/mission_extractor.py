@@ -1,16 +1,10 @@
-import json
 import pandas as pd
 import csv
 from src_backend.local_readers import Readers
+from src_extractors.base import config
 
 def extract():
 	# region setup
-	
-	with open('_config.json') as fl:
-		config = json.load(fl)
-	
-	# LNG = config['setup']['LNG']
-	
 	flnames_jp = config['inputs']['jp']['missions']
 	flnames_en = config['inputs']['en']['missions']
 	fl_out = config['outputs']['missions']
@@ -35,7 +29,7 @@ def extract():
 		return Readers.getCombo(ID)
 	
 	def getStageOrMap(ID: int) -> str:
-		temp = Readers.getStageOrMap(ID)
+		temp = Readers.getStageOrMap(ID, check_online=False)
 		if temp == "Unknown":
 			return str(ID)
 		else:
@@ -89,7 +83,7 @@ def extract():
 			if temp is None:
 				return temp
 			else:
-				return func(data).replace("1 times", "1 time")
+				return temp.replace("1 times", "1 time")
 		return wrap
 	
 	@times_check
@@ -99,7 +93,7 @@ def extract():
 		template = mission_templates["template"][cat]
 		match cat:
 			case 0:  # one stage N times
-				stages = unique([Readers.getStageOrMap(x) for x in data["condition"]])
+				stages = unique([getStageOrMap(x) for x in data["condition"]])
 				if (len(stages) == 1):
 					cat += 1000
 					template = mission_templates["template"][cat]
@@ -238,3 +232,6 @@ def extract():
 		for row in decoded:
 			writer.writerow({"ID": row, "mission_text": decoded[row]})
 	print("Finished extracting missions")
+
+if __name__ == "__main__":
+	extract()

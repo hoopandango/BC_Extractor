@@ -12,6 +12,4 @@ def run_all():
 	mission_extractor.extract()
 	talent_extractor.extract()
 	combo_extractor.extract()
-	input()
-	combo_extractor.extract()
 	

@@ -658,8 +658,8 @@ ID	mission_text
 9323	Beat "The Dead & The Bloated" stages 1 time -> Catseye [Legend] X 3
 9324	Beat "The Queen & The Maiden" stages 1 time -> Catseye [Legend] X 3
 9325	Beat "The King & The Angel" stages 1 time -> Catseye [Legend] X 3
-48	Clear Super Beast Subjugation stages 5 times -> 古びたタマゴ:N101 X 1
-49	Clear Super Beast Subjugation stages 10 times -> 古びたタマゴ:N102 X 1
+48	Clear Super Beast Subjugation stages 5 times -> Ancient Egg: N101 X 1
+49	Clear Super Beast Subjugation stages 10 times -> Ancient Egg: N102 X 1
 9326	Beat "Crimson Catastrophe" stages 1 time -> XP X 1000000
 9327	Beat "Heaven of Darkness" stages 1 time -> XP X 1000000
 9328	Beat "Peerless" stages 1 time -> XP X 1000000
@@ -722,9 +722,9 @@ ID	mission_text
 9298	Defeat One Horn in any EoC Ch.1 stage -> Cat Ticket X 1
 9299	Defeat The Face in any EoC Ch.1 stage -> Cat Ticket X 1
 9300	Clear all 5 missions from the following: 9295, 9296, 9297, 9298, 9299 -> Rare Ticket X 1
-9301	Beat "Unknown" stages 1 time -> Cat Ticket X 1
-9302	Beat "Unknown" stages 2 times -> Cat Ticket X 1
-9303	Beat "Unknown" stages 3 times -> Rare Ticket X 1
+9301	Beat "4047" stages 1 time -> Cat Ticket X 1
+9302	Beat "4047" stages 2 times -> Cat Ticket X 1
+9303	Beat "4047" stages 3 times -> Rare Ticket X 1
 9304	Clear all 18 missions from the following: 9283, 9284, 9285, 9286, 9288, 9289, 9290, 9291, 9292, 9294, 9295, 9296, 9297, 9298, 9299, 9301, 9302, 9303 -> 100万ドルのネコ X 1
 9306	Beat "高雄メトロ レッドライン" stages 1 time -> Cat Food X 10
 9307	Beat "高雄メトロ レッドライン" stages 5 times -> XP X 50000
@@ -742,16 +742,16 @@ ID	mission_text
 9319	Beat "春節ハッピープレゼント！" stages 4 times -> XP X 20000
 9320	Beat "春節ハッピープレゼント！" stages 5 times -> Rare Ticket X 1
 9353	Quiz Mission -> Rare Ticket X 1
-9354	Beat "#01「悪霊の式場」" stages 5 times -> 紅獣石 X 1
-9355	Beat "#01「悪霊の式場」" stages 10 times -> 紫獣石 X 1
-9356	Beat "#01「悪霊の式場」" stages 15 times -> 紅獣石 X 1
-9357	Beat "#01「悪霊の式場」" stages 20 times -> 紫獣石 X 1
-9358	Beat "#02「13日は何曜日」" stages 3 times -> 紅獣石 X 1
-9359	Beat "#02「13日は何曜日」" stages 5 times -> 紫獣石 X 1
-9360	Beat "Unknown" stages 1 time -> 紅獣石 X 1
-9361	Beat "#03「ネコ鳴村」" stages 3 times -> 紫獣石 X 1
-9362	Beat "#03「ネコ鳴村」" stages 5 times -> 紅獣石 X 1
-9363	Beat "#03「ネコ鳴村」" stages 10 times -> 紫獣石 X 1
+9354	Beat "#01「悪霊の式場」" stages 5 times -> Red Behemoth Stone X 1
+9355	Beat "#01「悪霊の式場」" stages 10 times -> Purple Behemoth Stone X 1
+9356	Beat "#01「悪霊の式場」" stages 15 times -> Red Behemoth Stone X 1
+9357	Beat "#01「悪霊の式場」" stages 20 times -> Purple Behemoth Stone X 1
+9358	Beat "#02「13日は何曜日」" stages 3 times -> Red Behemoth Stone X 1
+9359	Beat "#02「13日は何曜日」" stages 5 times -> Purple Behemoth Stone X 1
+9360	Beat "4056" stages 1 time -> Red Behemoth Stone X 1
+9361	Beat "#03「ネコ鳴村」" stages 3 times -> Purple Behemoth Stone X 1
+9362	Beat "#03「ネコ鳴村」" stages 5 times -> Red Behemoth Stone X 1
+9363	Beat "#03「ネコ鳴村」" stages 10 times -> Purple Behemoth Stone X 1
 9066	Level up 太秦萌＆ネコ to Level 10 -> Cat Food X 10
 9067	Level up 松賀咲＆ネコ to Level 10 -> Cat Food X 10
 9068	Level up 小野ミサ＆ネコ to Level 10 -> Cat Food X 10
