@@ -1,4 +1,6 @@
 import string
+from functools import lru_cache
+
 import pandas as pd
 import json
 
@@ -20,6 +22,7 @@ forms = ['name_f', 'name_c', 'name_s']
 
 class Readers:
 	@staticmethod
+	@lru_cache
 	def getCat(ID: int, form: int) -> str:
 		try:
 			return catdata.loc[ID, forms[form]]
@@ -29,6 +32,7 @@ class Readers:
 			return 'Unknown'
 		
 	@staticmethod
+	@lru_cache
 	def getItem(ID: int) -> str:
 		try:
 			return itemdata.loc[ID, "name"]
@@ -36,6 +40,7 @@ class Readers:
 			return 'Unknown'
 	
 	@staticmethod
+	@lru_cache
 	def getItemBySever(ID: int) -> str:
 		try:
 			item = itemdata.loc[itemdata["severID"] == ID, "name"]
@@ -51,6 +56,7 @@ class Readers:
 			return 'Unknown'
 
 	@staticmethod
+	@lru_cache
 	def getEnemy(ID: int) -> str:
 		try:
 			return enemydata.loc[ID, 1]
@@ -58,13 +64,15 @@ class Readers:
 			return 'Unknown'
 
 	@staticmethod
+	@lru_cache
 	def getCombo(ID: int) -> str:
 		try:
-			return combodata.loc[ID, 1]
+			return combodata.loc[ID, "combo_name"]
 		except KeyError:
 			return 'Unknown'
 	
 	@staticmethod
+	@lru_cache
 	def getMission(ID: int) -> str:
 		try:
 			return missiondata.loc[ID, 'mission_text']
@@ -72,6 +80,7 @@ class Readers:
 			return 'Unknown'
 
 	@staticmethod
+	@lru_cache
 	def getMap(ID: int) -> str:
 		def isEnglish(name: str)->bool:
 			eng = len([0 for x in name if x in string.ascii_letters])
@@ -113,6 +122,7 @@ class Readers:
 			return lookup(True, "Unknown")
 			
 	@staticmethod
+	@lru_cache
 	def getStage(ID: int) -> str:
 		if (ID == 300147):
 			ID = 300949

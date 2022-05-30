@@ -19,8 +19,6 @@ def extract():
 	with open("extras/Missions.tsv", encoding='utf-8', newline='') as csvfile:
 		mission_templates = pd.read_csv(csvfile, delimiter='\t', index_col=0)
 	
-	# TODO: generate combodata table myself
-	
 	def getCat(ID: int) -> str:
 		if (ID == -1): return "any cat"
 		return Readers.getCat(ID, 0)

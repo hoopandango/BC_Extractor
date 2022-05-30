@@ -5,19 +5,11 @@ import pandas as pd
 import csv
 import sqlite3
 from collections import Counter, defaultdict
+from src_backend.local_readers import Readers
+from base import config, schemas
 
 def extract():
-	# region setup
-	from src_backend.local_readers import Readers
-	
-	with open('_config.json') as fl:
-		config = json.load(fl)
-	
-	with open('_schemas.json') as fl:
-		schema = json.load(fl)['gatya']
-	
-	# LNG = config['setup']['LNG']
-	
+	schema = schemas['gatya']
 	flnames_jp = config['inputs']['jp']['gatya']
 	flnames_en = config['inputs']['en']['gatya']
 	fl_out = config['outputs']['gatya']
@@ -36,36 +28,30 @@ def extract():
 	with open(flnames_en["option"], encoding='utf-8') as fl:
 		temp2 = pd.read_csv(fl, delimiter='\t', index_col=0)
 	
-	if len(temp) > len(gatya_info):
+	if len(temp) > len(gatya_info):  # sometimes ponos adds stuff to en before jp
 		gatya_info = temp
 		options = temp2
 	
 	try:
 		conn = sqlite3.connect(fl_out)
 	except sqlite3.OperationalError:
-		print("db not found")
+		print("Gatya db not found")
 		raise Exception
 	
 	series = pd.read_sql('SELECT * FROM series', conn, index_col='series_ID')
+	conn.close()
 	
 	series["head"] = [-1] * len(series)
 	
-	conn.close()
-	
-	"""
-	def lookup(searched:str)->int:
-		for unit in unit_names.iterrows():
-			if searched in list(unit[1]):
-				return unit[0]  # unit ID
-		return -1
-	"""
 	"""
 	default_units = {"Cutter Cat":"Grandon","Neneko":"Neneko&Friends","Freshman Cat Jobs":"Reinforcements"}
 	blacklist = {"Freshman Cat Jobs", "Rich Cat III", "Sniper the Recruit", "Cat Base Mini", "Gold Cat", "Neneko",
 	"Metal Cat", "Driller Cat", "Piledriver Cat", "Cutter Cat", "Backhoe Cat", "Miter Saw Cat"}
 	"""
+	
 	default_units = {445: 'D', 131: 'N', 237: 'R'}
-	blacklist = {129, 131, 200, 237, 238, 239, 144, 443, 444, 445, 446, 447}
+	blacklist = {129, 131, 200, 237, 238, 239, 144, 443, 444, 445, 446, 447}  # ignored from gatya diffs
+	
 	# headbackups = [-1] * len(series)
 	
 	def get_SID(ID: int) -> int:
@@ -99,7 +85,7 @@ def extract():
 			series.loc[s_ID] = ["Unknown", -1]
 			return series.loc[s_ID, "head"]
 	
-	def diff_gatya(new: list, old: list) -> list[set[int]]:
+	def diff_gatya(new: list[int], old: list[int]) -> list[set[int]]:
 		return [set(new) - set(old) - blacklist, set(old) - set(new) - blacklist]
 	
 	def bonus_check(gatya: list):
@@ -110,27 +96,25 @@ def extract():
 		del (toret[1])
 		return toret
 	
-	df_main = pd.DataFrame(columns=schema['main']).set_index(schema['main'][0])
 	json_data = {}
-	df_units = pd.DataFrame(columns=schema['units']).set_index(schema['units'][0])
 	
 	# row = [0, 0, 0, 0]
 	
 	# Processes all gatya
 	
-	# noinspection PyTypeChecker
-	def process_all():
+	def process_all() -> (pd.DataFrame, pd.DataFrame):
 		toret = ""
+		main_dict = {}
+		units_dict = {}
 		for (ID, gatya) in enumerate(gatya_info):
 			s_ID = get_SID(ID)
 			prev = get_head(s_ID)
 			serie = get_series(s_ID)
 			excl = get_exclusives(gatya)
-			
 			# Print previous banner in the series, if existent
 			if (prev == -1):
 				set_head(s_ID, ID)
-				diff = [[], []]
+				diff = [set(), set()]
 			else:
 				diff = diff_gatya(gatya, gatya_info[prev])
 			
@@ -160,17 +144,18 @@ def extract():
 			if excl != []:
 				toret += f" [{' + '.join(excl)}]"
 			
+			diff_text: list[list[str]] = [[], []]
 			# Diff from previous banner:
 			if (len(diff[0]) > 0):
-				diff[0] = [Readers.getCat(i, 0) for i in diff[0]]
-				if (len(diff[0]) < 6):
-					toret += f" (+ {', '.join(sorted(diff[0]))})"
+				diff_text[0] = [Readers.getCat(i, 0) for i in diff[0]]
+				if (len(diff_text[0]) < 6):
+					toret += f" (+ {', '.join(sorted(diff_text[0]))})"
 				else:
 					f" (+ a lot)"
 			if (len(diff[1]) > 0):
-				diff[1] = [Readers.getCat(i, 0) for i in diff[1]]
-				if (len(diff[1]) < 6):
-					f" (- {', '.join(sorted(diff[1]))})"
+				diff_text[1] = [Readers.getCat(i, 0) for i in diff[1]]
+				if (len(diff_text[1]) < 6):
+					f" (- {', '.join(sorted(diff_text[1]))})"
 				else:
 					toret += f" (- a lot)"
 			
@@ -184,40 +169,43 @@ def extract():
 			# END OF PRINTING
 			# "banner_ID" -> "banner_name","exclusives","rate_ups","diff+","diff-","enabled","series_ID"
 			# "banner_ID" -> "units_in_banner"
-			row = [serie, str(excl), str(dict(bonuses)), str([list(diff[0]), list(diff[1])]), is_enabled(ID), s_ID]
-			
-			df_main.loc[ID] = row
-			
-			row_comp = {"banner_name": str(serie), "enabled": bool(is_enabled(ID)), "series_ID": s_ID}
-			if (len(excl) | 1):
-				row_comp["exclusives"] = excl
-			if (len(diff) | 1):
-				row_comp["diff"] = [list(diff[0]), list(diff[1])]
-			if (len(bonuses) | 1):
-				row_comp["rate_ups"] = bonuses
+			row = [serie, str(excl), str(dict(bonuses)), diff_text, is_enabled(ID), s_ID]
+			row_comp = {"banner_name": str(serie), "enabled": bool(is_enabled(ID)), "series_ID": s_ID,
+			            "exclusives": excl, "diff": diff_text, "rate_ups": bonuses}
 			
 			json_data[ID] = row_comp
+			row2 = str([Readers.getCat(x, 0) for x in gatya])
 			
-			row = str([Readers.getCat(x, 0) for x in gatya])
-			df_units.loc[ID] = row
-			
-			with open(config["outputs"]["gatya_text"], 'w', encoding='utf-8') as fl_out1:
-				fl_out1.write(toret)
+			main_dict[ID] = row
+			units_dict[ID] = row2
+		
+		df_main = pd.DataFrame.from_dict(main_dict, orient='index')
+		df_units = pd.DataFrame.from_dict(units_dict, orient='index')
+		
+		df_main.columns = schema['main'][1:]
+		df_units.columns = schema['units'][1:]
+		
+		with open(config["outputs"]["gatya_text"], 'w', encoding='utf-8') as fl_out1:
+			fl_out1.write(toret)
+		
+		return df_main, df_units
 	
 	print("Started extracting Gatya")
-	process_all()
+	main, units = process_all()
 	# Export management
 	
 	conn1 = sqlite3.connect(fl_out)
 	
 	series.to_sql('series', conn1, if_exists='replace', index=True)
-	df_main.to_sql('main', conn1, if_exists='replace', index=True)
+	main.to_sql('main', conn1, if_exists='replace', index=True)
+	units.to_sql('units', conn1, if_exists='replace', index=True)
 	
 	with open(config["outputs"]["gatya_json"], 'w', encoding='utf-8') as fl1:
 		json.dump(json_data, fl1, ensure_ascii=False, indent=2,
 		          default=lambda x: int(x) if isinstance(x, np.integer) else x)
 	
-	df_units.to_sql('units', conn1, if_exists='replace', index=True)
-	
 	conn1.close()
 	print("Finished extracting Gatya")
+
+if __name__ == "__main__":
+	extract()
