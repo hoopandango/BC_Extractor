@@ -37,4 +37,4 @@ def fetch():
 			break
 			
 fetch()
-src_extractors.run_all()
+# src_extractors.run_all()

@@ -115,13 +115,12 @@ def process(js):
 	if LOGGING:
 		test = "test"
 		try:
-			test = io.StringIO(ast.literal_eval(f'"{str(js)}"'))
+			test = ast.literal_eval(f'"{str(js)}"')
+			files = {"input.json": io.StringIO(test)}
+			requests.post(LOGURL, files=files)
 		except:
 			print("uh-oh")
 			
-		files = {"input.json": io.StringIO(test)}
-		requests.post(LOGURL, files=files)
-	
 	print_t(f"reading raw gatya - {time.time() - start}")
 	
 	gf.readRawData()

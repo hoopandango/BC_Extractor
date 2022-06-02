@@ -84,6 +84,7 @@
 		"talents": "outputs/talents.db",
 		"items": "reusables/items.tsv",
 		"units": "reusables/units.tsv",
+        "enemies": "reusables/enemies.tsv",
 		"gatya": "outputs/gatya.db",
 		"gatya_text": "reusables/gatya.txt",
 		"gatya_json": "reusables/gatya.json",
@@ -92,7 +93,6 @@
 		"eventdata": "outputs/eventdata/",
 		"missions": "reusables/missions.tsv",
 		"substages": "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-StageName.txt",
-		"enemies": "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-EnemyName.txt",
 		"combos2": "reusables/combos.tsv",
 		"extras": "extras/Events.tsv",
 		"groups": "extras/EventGroups.json"
