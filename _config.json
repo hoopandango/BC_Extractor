@@ -31,6 +31,9 @@
 			"units": {
 				"name": "latest_en/resLocal/"
 			},
+            "enemies": {
+                "name": "latest_en/resLocal/Enemyname.tsv"
+            },
 			"sales": {
 				"itempack": "latest_en/DataLocal/itemPack.tsv",
 				"localisable": "latest_en/resLocal/localizable.tsv"
@@ -65,6 +68,9 @@
 			"units": {
 				"name": "latest_jp/resLocal/"
 			},
+            "enemies": {
+                "name": "latest_jp/resLocal/Enemyname.tsv"
+            },
 			"sales": {
 				"itempack": "latest_jp/DataLocal/itemPack.tsv",
 				"localisable": "latest_jp/resLocal/localizable.tsv"

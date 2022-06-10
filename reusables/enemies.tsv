@@ -1,103 +1,104 @@
-000	Doge
-001	Snache
-002	Those Guys
-003	Hippoe
-004	Pigge
-005	Jackie Peng
-006	Gory
-007	Baa Baa
-008	Sir Seal
-009	Le'boin
-010	Kang Roo
-011	One Horn
-012	Teacher Bear
-013	Croco
-014	B.B.Bunny
-015	Squire Rel
-016	Assassin Bear
-017	Shy Boy
-018	The Face
-019
-020
-021	Ms. Sign
-022	Mooth
-023	Dark Emperor Nyandam
-024	Teacher Bun Bun
-025	Swordsman v1
-026	Chibigau v1
-027	Princess Punt v1
-028	Swordsman v2
-029	Chibigau v2
-030	Princess Punt v2
-031	Master A.
-032	R.Ost
-033	Otta-smack-u
-034	Kory
-035	Camelle
-036	Duche
-037	Owlbrow
-038	Bore
-039	THE SLOTH
-040	Rain D.
-041	Dagshund
-042	Celeboodle
-043	H. Nah
-044	Dober P.D
-045	Ururun Wolf
-046	Doge Dark
-047	Metal Hippoe
-048	St. Pigge the 2nd
-049	J.K Bun Bun
-050	Bun Bun Black
-051	Gory Black
-052	Shadow Boxer K
-053	Director Kurosawah
-054	Super Metal Hippoe
-055	Type 10
-056	Metal One Horn
-057	Teacher Cybear
-058	CyberFace
-059	Sir Metal Seal
-060	Burning Phoenix
-061	Princess Head
-062	Chief Peng
-063	Dark Emperor Santa
-064	Red Cyclone
-065	Lione Hippoe
-066	Lucky Sloth
-067	Audience Bears
-068	Monkey King v1
-069	White Cyclone
-070	Black Cyclone
-071	Metal Cyclone
-072	Nimue v1
-073	Nimue v2
-074	Monkey King v2
-075	Crazed Cat
-076	Crazed Tank Cat
-077	Crazed Axe Cat
-078	Crazed Gross Cat
-079	Crazed Cow Cat
-080	Crazed Bird Cat
-081	Crazed Fish Cat
-082	Crazed Lizard Cat
-083	Crazed Titan Cat
-084	Teacher A.
-085	Samurai Doggy
-086	Mega Cat
-087	Gory Groom
-088	Celesse
-089	Nono
-090	Olga
-091	Norn
-092	Yoichi
-093	Serum
-094	Fuu
-095	Aura
-096	Rei
-097	Wyvern
-098	Healer
-099	Sunny Celeboodle
+enemy_ID	enemy_name
+0	Doge
+1	Snache
+2	Those Guys
+3	Hippoe
+4	Pigge
+5	Jackie Peng
+6	Gory
+7	Baa Baa
+8	Sir Seal
+9	Le'boin
+10	Kang Roo
+11	One Horn
+12	Teacher Bear
+13	Croco
+14	B.B.Bunny
+15	Squire Rel
+16	Assassin Bear
+17	Shy Boy
+18	The Face
+19	nan
+20	nan
+21	Ms. Sign
+22	Mooth
+23	Dark Emperor Nyandam
+24	Teacher Bun Bun
+25	Swordsman v1
+26	Chibigau v1
+27	Princess Punt v1
+28	Swordsman v2
+29	Chibigau v2
+30	Princess Punt v2
+31	Master A.
+32	R.Ost
+33	Otta-smack-u
+34	Kory
+35	Camelle
+36	Duche
+37	Owlbrow
+38	Bore
+39	THE SLOTH
+40	Rain D.
+41	Dagshund
+42	Celeboodle
+43	H. Nah
+44	Dober P.D
+45	Ururun Wolf
+46	Doge Dark
+47	Metal Hippoe
+48	St. Pigge the 2nd
+49	J.K Bun Bun
+50	Bun Bun Black
+51	Gory Black
+52	Shadow Boxer K
+53	Director Kurosawah
+54	Super Metal Hippoe
+55	Type 10
+56	Metal One Horn
+57	Teacher Cybear
+58	CyberFace
+59	Sir Metal Seal
+60	Burning Phoenix
+61	Princess Head
+62	Chief Peng
+63	Dark Emperor Santa
+64	Red Cyclone
+65	Lione Hippoe
+66	Lucky Sloth
+67	Audience Bears
+68	Monkey King v1
+69	White Cyclone
+70	Black Cyclone
+71	Metal Cyclone
+72	Nimue v1
+73	Nimue v2
+74	Monkey King v2
+75	Crazed Cat
+76	Crazed Tank Cat
+77	Crazed Axe Cat
+78	Crazed Gross Cat
+79	Crazed Cow Cat
+80	Crazed Bird Cat
+81	Crazed Fish Cat
+82	Crazed Lizard Cat
+83	Crazed Titan Cat
+84	Teacher A.
+85	Samurai Doggy
+86	Mega Cat
+87	Gory Groom
+88	Celesse
+89	Nono
+90	Olga
+91	Norn
+92	Yoichi
+93	Serum
+94	Fuu
+95	Aura
+96	Rei
+97	Wyvern
+98	Healer
+99	Sunny Celeboodle
 100	Bearkini
 101	Lord Enma
 102	Leggsy
@@ -547,7 +548,7 @@
 546	Mousse
 547	Mr. Mer
 548	Wafer Wall
-549	Ragin' Gory (Black)
+549	Ragin' Gory
 550	Shin Godzilla
 551	Elder Flame Doron
 552	Aku Doge
@@ -562,12 +563,12 @@
 561	Wicked Cat
 562	Wicked Tank Cat
 563	Wicked Axe Cat
-564
-565
-566
-567
-568
-569
+564	
+565	
+566	
+567	
+568	
+569	
 570	Dark Priest Mamon
 571	High Priest Mamon
 572	Lord of Ruin Jagando
@@ -591,8 +592,20 @@
 590	9th Anniversary Cake
 591	9th Anniversary Dojo Base
 592	Red EnerG
-593	Archangel Excel
+593	Archangel Exiel
 594	Big Peng Z
 595	Tiger Doge
 596	Nana
 597	Emelia
+598	Unknown
+599	Ultima Beast Naala
+600	Zapy
+601	Unknown
+602	Unknown
+603	Wild Doge
+604	Casaurian Ahirujo
+605	Pterowl Hazuku
+606	Crustaceous Scissorex
+607	J.J. Jackrabbit
+608	Li'l Doge
+609	Golem Sunfish

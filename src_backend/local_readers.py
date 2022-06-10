@@ -9,79 +9,91 @@ from .z_downloaders import Downloaders
 with open('_config.json') as fl:
 	config = json.load(fl)
 
-enemydata = pd.read_csv(config['outputs']['enemies'], delimiter='\t', header=None, index_col=0)
-stagedata = pd.read_csv(config['outputs']['substages'], delimiter='\t', header=None, index_col=0)
-stagesold = pd.read_csv(config['outputs']['stages'], delimiter='\t', header=0, index_col=0)
-catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, index_col=0)
-combodata = pd.read_csv(config['outputs']['combos2'], delimiter='\t', header=0, index_col=0)
-itemdata = pd.read_csv(config['outputs']['items'], delimiter='\t', header=0, index_col=0)
-missiondata = pd.read_csv(config['outputs']['missions'], delimiter='\t', header=0, index_col=0)
-saledata = pd.read_csv(config['outputs']['extras'], delimiter='\t', header=0, index_col=0)
 
 forms = ['name_f', 'name_c', 'name_s']
 
 class Readers:
-	@staticmethod
+	enemydata = pd.read_csv(config['outputs']['enemies'], delimiter='\t', header=None, index_col=0)
+	stagedata = pd.read_csv(config['outputs']['substages'], delimiter='\t', header=None, index_col=0)
+	stagesold = pd.read_csv(config['outputs']['stages'], delimiter='\t', header=0, index_col=0)
+	catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, index_col=0)
+	combodata = pd.read_csv(config['outputs']['combos2'], delimiter='\t', header=0, index_col=0)
+	itemdata = pd.read_csv(config['outputs']['items'], delimiter='\t', header=0, index_col=0)
+	missiondata = pd.read_csv(config['outputs']['missions'], delimiter='\t', header=0, index_col=0)
+	saledata = pd.read_csv(config['outputs']['extras'], delimiter='\t', header=0, index_col=0)
+	
+	@classmethod
+	def reload(cls):
+		cls.enemydata = pd.read_csv(config['outputs']['enemies'], delimiter='\t', header=None, index_col=0)
+		cls.stagedata = pd.read_csv(config['outputs']['substages'], delimiter='\t', header=None, index_col=0)
+		cls.stagesold = pd.read_csv(config['outputs']['stages'], delimiter='\t', header=0, index_col=0)
+		cls.catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, index_col=0)
+		cls.combodata = pd.read_csv(config['outputs']['combos2'], delimiter='\t', header=0, index_col=0)
+		cls.itemdata = pd.read_csv(config['outputs']['items'], delimiter='\t', header=0, index_col=0)
+		cls.missiondata = pd.read_csv(config['outputs']['missions'], delimiter='\t', header=0, index_col=0)
+		cls.saledata = pd.read_csv(config['outputs']['extras'], delimiter='\t', header=0, index_col=0)
+	
+	@classmethod
 	@lru_cache
-	def getCat(ID: int, form: int) -> str:
+	def getCat(cls, ID: int, form: int) -> str:
 		try:
-			return catdata.loc[ID, forms[form]]
+			return cls.catdata.loc[ID, forms[form]]
 		except IndexError:
 			return 'Invalid form'
 		except KeyError:
 			return 'Unknown'
 		
-	@staticmethod
+	@classmethod
 	@lru_cache
-	def getItem(ID: int) -> str:
+	def getItem(cls, ID: int) -> str:
 		try:
-			return itemdata.loc[ID, "name"]
+			return cls.itemdata.loc[ID, "name"]
 		except KeyError:
 			return 'Unknown'
 	
-	@staticmethod
+	@classmethod
 	@lru_cache
-	def getItemBySever(ID: int) -> str:
+	def getItemBySever(cls, ID: int) -> str:
 		try:
-			item = itemdata.loc[itemdata["severID"] == ID, "name"]
+			item = cls.itemdata.loc[cls.itemdata["severID"] == ID, "name"]
 			return item.to_list()[0]
 		except IndexError:
 			return 'Unknown'
 
-	@staticmethod
-	def getSaleBySever(ID: int) -> str:
+	@classmethod
+	def getSaleBySever(cls, ID: int) -> str:
 		try:
-			return saledata.loc[ID, "name"]
+			return cls.saledata.loc[ID, "name"]
 		except KeyError:
 			return 'Unknown'
 
-	@staticmethod
+	@classmethod
 	@lru_cache
-	def getEnemy(ID: int) -> str:
+	def getEnemy(cls, ID: int) -> str:
 		try:
-			return enemydata.loc[ID, 1]
+			return cls.enemydata.loc[ID, 1]
 		except KeyError:
 			return 'Unknown'
 
-	@staticmethod
+	@classmethod
 	@lru_cache
-	def getCombo(ID: int) -> str:
+	def getCombo(cls, ID: int) -> str:
 		try:
-			return combodata.loc[ID, "combo_name"]
+			return cls.combodata.loc[ID, "combo_name"]
 		except KeyError:
 			return 'Unknown'
 	
-	@staticmethod
+	@classmethod
 	@lru_cache
-	def getMission(ID: int) -> str:
+	def getMission(cls, ID: int) -> str:
 		try:
-			return missiondata.loc[ID, 'mission_text']
+			return cls.missiondata.loc[ID, 'mission_text']
 		except KeyError:
 			return 'Unknown'
 
-	@staticmethod
+	@classmethod
 	@lru_cache
-	def getMap(ID: int, check_online: bool = True) -> str:
+	def getMap(cls, ID: int, check_online: bool = True) -> str:
 		def isEnglish(name: str)->bool:
 			eng = len([0 for x in name if x in string.ascii_letters])
 			full = len([0 for x in name if x.isalpha()])
@@ -104,7 +116,7 @@ class Readers:
 				return "EoC Ch.3"
 		
 		try:
-			local = stagesold.loc[ID, "name"]
+			local = cls.stagesold.loc[ID, "name"]
 			if isEnglish(local):  # cache hit - en
 				return local
 			else:  # cache hit-jp
@@ -117,9 +129,9 @@ class Readers:
 			
 		return ("Unknown")
 		
-	@staticmethod
+	@classmethod
 	@lru_cache
-	def getStage(ID: int) -> str:
+	def getStage(cls, ID: int) -> str:
 		if (ID == 300147):
 			ID = 300949
 		elif (ID == 300247):
@@ -134,7 +146,7 @@ class Readers:
 		i3 = i[-2:].zfill(3)
 		
 		try:
-			return f"{stagedata.loc[f'{i1}-{i2}-{i3}', 1]} [{stagedata.loc[f'{i1}-{i2}', 2]}]"
+			return f"{cls.stagedata.loc[f'{i1}-{i2}-{i3}', 1]} [{cls.stagedata.loc[f'{i1}-{i2}', 2]}]"
 		except KeyError:
 			return "Unknown"
 	

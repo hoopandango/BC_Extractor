@@ -125,7 +125,7 @@ def extract():
 	table_combos.to_sql('combos', conn2, if_exists='replace', index=True, index_label=schema_main[0])
 	
 	if CBMODE:
-		# input("Waiting for user to update Combos intermediate table")
+		input("Waiting for user to update Combos intermediate table")
 		
 		table_combos = pd.read_sql('SELECT ID,combo_name, combo_effect_ID, combo_size_ID FROM combos', conn2,
 		                           index_col='ID')
