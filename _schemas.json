@@ -16,7 +16,8 @@
 		"descriptions":["description_id","description_text"]
 	},
 	"units":{
-		"name":["unit_ID","name_f","name_c","name_s"]
+		"name":["unit_ID","name_f","name_c","name_s"],
+        "desc":["unit_ID","form_ID","desc"]
 	},
 	"gatya":{
 		"main":["banner_ID","banner_name","exclusives","rate_ups","diff","enabled","series_ID"],

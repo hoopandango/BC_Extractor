@@ -1,7 +1,7 @@
 import pandas as pd
 import sqlite3
 from pandas.core.frame import DataFrame
-from .base import config, schemas
+from src_extractors.base import config, schemas
 from src_backend.local_readers import Readers
 
 def extract():
@@ -115,7 +115,7 @@ def extract():
 	
 	dump = table_combos.join(table_effects, on='combo_effect_ID').join(table_sizes, on='combo_size_ID').join(table_units)
 	dump.iloc[:, 5:] = dump.iloc[:, 5:].applymap(lambda X: Readers.getCat(X // 3, X % 3) if X != -1 else '')
-	dump.drop(columns=['combo_effect_ID', 'combo_size_ID'])
+	dump = dump.drop(columns=['combo_effect_ID', 'combo_size_ID'])
 	dump.to_csv(config['outputs']['combos2'], sep='\t')
 	
 	table_sizes.to_sql('combo_sizes', conn2, if_exists='replace', index=True, index_label=schema_sizes[0])
