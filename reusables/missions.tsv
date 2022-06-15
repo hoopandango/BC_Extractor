@@ -7,24 +7,24 @@ ID	mission_text
 5	Clear a stage using any CatCombo -> Cat Food X 20
 6	Clear any Dojo stage -> Cat Food X 20
 7	Acquire the True Form of any normal cat -> Cat Food X 20
-8	Beat "Japan [EoC]" -> Cat Food X 20
-9	Beat "India [EoC]" -> Cat Food X 20
-10	Beat "Madagascar [EoC]" -> Cat Food X 20
-11	Beat "Greece [EoC]" -> Cat Food X 20
-12	Beat "Greenland [EoC]" -> Cat Food X 20
-13	Beat "Argentina [EoC]" -> Cat Food X 20
-14	Beat "Hollywood [EoC]" -> Cat Food X 20
-15	Beat "Moon Ch.1 [EoC]" -> Cat Food X 50
-16	Beat "Moon Ch.2 [EoC]" -> Cat Food X 50
-17	Beat "Moon Ch.3 [EoC]" -> Cat Food X 100
+8	Beat "Japan [EoC Ch.1]" -> Cat Food X 20
+9	Beat "India [EoC Ch.1]" -> Cat Food X 20
+10	Beat "Madagascar [EoC Ch.1]" -> Cat Food X 20
+11	Beat "Greece [EoC Ch.1]" -> Cat Food X 20
+12	Beat "Greenland [EoC Ch.1]" -> Cat Food X 20
+13	Beat "Argentina [EoC Ch.1]" -> Cat Food X 20
+14	Beat "Hollywood [EoC Ch.1]" -> Cat Food X 20
+15	Beat "Moon [EoC Ch.1]" -> Cat Food X 50
+16	Beat "Moon [EoC Ch.2]" -> Cat Food X 50
+17	Beat "Moon [EoC Ch.3]" -> Cat Food X 100
 18	Beat "Moon [ItF Ch.1]" -> Cat Food X 50
 19	Beat "Moon [ItF Ch.2]" -> Cat Food X 50
 20	Beat "Moon [ItF Ch.3]" -> Cat Food X 100
 22	Beat "The Big Bang [CotC Ch.1]" -> Cat Food X 100
 23	Beat "The Big Bang [CotC Ch.2]" -> Cat Food X 100
-24	Beat "Moon Ch.1 [EoC]" -> Platinum Ticket X 1
+24	Beat "Moon [EoC Ch.1]" -> Platinum Ticket X 1
 25	Beat "The Big Bang [CotC Ch.3]" -> Cat Food X 150
-26	Beat "Moon Ch.1 [EoC]" -> Platinum Ticket X 1
+26	Beat "Moon [EoC Ch.1]" -> Platinum Ticket X 1
 27	Clear all Level 1 SoL stages -> Platinum Ticket X 1
 28	Clear all Level 2 SoL stages -> Platinum Ticket X 1
 8000	Clear any Cat Ticket stage 3 times -> XP X 100000
@@ -178,9 +178,9 @@ ID	mission_text
 9160	Level up Adult Cat to Level 10 -> Cat Food X 10
 9161	Beat "No Plan A (Deadly) [Clionel Ascendant]" -> Cat Ticket X 1
 9162	Beat "Realm of Carnage (Deadly) [River Styx]" -> Cat Ticket X 1
-9163	Beat "Honey Trap (Deadly)   [Queen’s Coronation]" -> Cat Ticket X 1
+9163	Beat "Honey Trap (Deadly) [Queen's Coronation]" -> Cat Ticket X 1
 9164	Beat "Parade of the Dead (Deadly) [Dead on Debut]" -> Cat Ticket X 1
-9165	Beat "N-1 Grand Prix (Deadly) [King Wahwah’s Revenge]" -> Cat Ticket X 1
+9165	Beat "N-1 Grand Prix (Deadly) [King Wahwah's Revenge]" -> Cat Ticket X 1
 9166	Beat "Bombergirl (Deadly) [Deeply Dreaming]" -> Cat Ticket X 1
 9167	Clear all 6 missions from the following: 9161, 9162, 9163, 9164, 9165, 9166 -> Cat Ticket X 3
 9168	Beat "B-Day Gifts" stages 6 times -> Cat Food X 66
@@ -692,9 +692,9 @@ ID	mission_text
 9219	Beat "MIKU EXPO" stages 20 times -> Cat Ticket X 1
 9220	Level up ネコU.F.O. to Level 10 -> Cat Food X 10
 9224	Beat "バースデープレゼント!" stages 8 times -> Cat Food X 88
-9225	Score 8888 or higher on the Dojo stage, "1101900" -> Cat Food X 88
-29	Beat "Moon Ch.1 [EoC]" -> Platinum Ticket X 1
-46	Beat "Moon Ch.1 [EoC]" -> Platinum Ticket X 1
+9225	Score 8888 or higher on the Dojo stage, "8周年記念大会 [Unknown]" -> Cat Food X 88
+29	Beat "Moon [EoC Ch.1]" -> Platinum Ticket X 1
+46	Beat "Moon [EoC Ch.1]" -> Platinum Ticket X 1
 50	Clear Super Beast Subjugation stages 15 times -> 古びたタマゴ:N103 X 1
 51	Clear Super Beast Subjugation stages 20 times -> 古びたタマゴ:N104 X 1
 9276	Beat "めざせＧＩ にゃんこ競馬" stages 1 time -> 伝説のにんじん X 1
@@ -709,11 +709,11 @@ ID	mission_text
 9285	Quiz Mission -> Cat Ticket X 1
 9286	Quiz Mission -> Cat Ticket X 1
 9287	Clear all 4 missions from the following: 9283, 9284, 9285, 9286 -> Rare Ticket X 1
-9288	Beat all of these stages: "Japan [EoC], United Kingdom [ItF Ch.1 Zombie], 300206" -> Cat Ticket X 1
-9289	Beat all of these stages: "Sahara [EoC], Thailand [ItF Ch.1 Zombie], 300218" -> Cat Ticket X 1
-9290	Beat all of these stages: "Germany [EoC], Kenya [ItF Ch.1 Zombie], 300225" -> Cat Ticket X 1
-9291	Beat all of these stages: "Bermuda [EoC], Colombia [ItF Ch.1 Zombie], 300234" -> Cat Ticket X 1
-9292	Beat all of these stages: "Alaska [EoC], Brazil [ItF Ch.1 Zombie], 300245" -> Cat Ticket X 1
+9288	Beat all of these stages: "Japan [EoC Ch.1], Japan [EoC Ch.2], Japan [EoC Ch.3]" -> Cat Ticket X 1
+9289	Beat all of these stages: "Sahara [EoC Ch.1], Sahara [EoC Ch.2], Sahara [EoC Ch.3]" -> Cat Ticket X 1
+9290	Beat all of these stages: "Spain [EoC Ch.1], Spain [EoC Ch.2], Spain [EoC Ch.3]" -> Cat Ticket X 1
+9291	Beat all of these stages: "Bermuda [EoC Ch.1], Bermuda [EoC Ch.2], Bermuda [EoC Ch.3]" -> Cat Ticket X 1
+9292	Beat all of these stages: "Alaska [EoC Ch.1], Alaska [EoC Ch.2], Alaska [EoC Ch.3]" -> Cat Ticket X 1
 9293	Clear all 5 missions from the following: 9288, 9289, 9290, 9291, 9292 -> Rare Ticket X 1
 9294	Clear all 4 Quiz Missions -> Rare Ticket X 1
 9295	Defeat Doge in any EoC Ch.1 stage -> Cat Ticket X 1

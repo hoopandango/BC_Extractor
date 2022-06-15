@@ -29,8 +29,12 @@
 				"data": "latest_en/DataLocal/GatyaDataSetR1.csv"
 			},
 			"units": {
-				"name": "latest_en/resLocal/"
+				"name": "latest_en/resLocal/units/"
 			},
+            "substages": {
+				"name": "latest_en/resLocal/stages/"
+			},
+
             "enemies": {
                 "name": "latest_en/resLocal/Enemyname.tsv"
             },
@@ -66,8 +70,11 @@
 				"data": "latest_jp/DataLocal/GatyaDataSetR1.csv"
 			},
 			"units": {
-				"name": "latest_jp/resLocal/"
+				"name": "latest_jp/resLocal/units/"
 			},
+            "substages": {
+                "name": "latest_jp/resLocal/stages/"
+            },
             "enemies": {
                 "name": "latest_jp/resLocal/Enemyname.tsv"
             },
@@ -99,7 +106,7 @@
 		"stages": "reusables/stages.tsv",
 		"eventdata": "outputs/eventdata/",
 		"missions": "reusables/missions.tsv",
-		"substages": "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-StageName.txt",
+        "substages": "reusables/substages.tsv",
 		"combos2": "reusables/combos.tsv",
         "talents2": "reusables/talents.tsv",
 		"extras": "extras/Events.tsv",

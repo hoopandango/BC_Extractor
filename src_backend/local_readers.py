@@ -14,7 +14,7 @@ forms = ['name_f', 'name_c', 'name_s']
 
 class Readers:
 	enemydata = pd.read_csv(config['outputs']['enemies'], delimiter='\t', index_col=0)
-	stagedata = pd.read_csv(config['outputs']['substages'], delimiter='\t', header=None, index_col=0)
+	stagedata = pd.read_csv(config['outputs']['substages'], delimiter='\t', index_col=0)
 	stagesold = pd.read_csv(config['outputs']['stages'], delimiter='\t', header=0, index_col=0)
 	catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, index_col=0)
 	combodata = pd.read_csv(config['outputs']['combos2'], delimiter='\t', header=0, index_col=0)
@@ -24,8 +24,8 @@ class Readers:
 	
 	@classmethod
 	def reload(cls):
-		cls.enemydata = pd.read_csv(config['outputs']['enemies'], delimiter='\t', header=None, index_col=0)
-		cls.stagedata = pd.read_csv(config['outputs']['substages'], delimiter='\t', header=None, index_col=0)
+		cls.enemydata = pd.read_csv(config['outputs']['enemies'], delimiter='\t', index_col=0)
+		cls.stagedata = pd.read_csv(config['outputs']['substages'], delimiter='\t', index_col=0)
 		cls.stagesold = pd.read_csv(config['outputs']['stages'], delimiter='\t', header=0, index_col=0)
 		cls.catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, index_col=0)
 		cls.combodata = pd.read_csv(config['outputs']['combos2'], delimiter='\t', header=0, index_col=0)
@@ -106,14 +106,6 @@ class Readers:
 					Downloaders.stash_cache(ID, toret)  # copy to cache
 				return toret  # return whatver you got here
 			return default  # settle for the default value
-				
-		match ID:
-			case 3000:
-				return "EoC Ch.1"
-			case 3001:
-				return "EoC Ch.2"
-			case 3002:
-				return "EoC Ch.3"
 		
 		try:
 			local = cls.stagesold.loc[ID, "name"]
@@ -132,21 +124,8 @@ class Readers:
 	@classmethod
 	@lru_cache
 	def getStage(cls, ID: int) -> str:
-		if (ID == 300147):
-			ID = 300949
-		elif (ID == 300247):
-			ID = 300950
-		elif (300300 > ID >= 300000):
-			ID += 900
-		
-		i = str(ID).zfill(6)
-		
-		i1 = i[:-5].zfill(3)
-		i2 = i[-5:-2]
-		i3 = i[-2:].zfill(3)
-		
 		try:
-			return f"{cls.stagedata.loc[f'{i1}-{i2}-{i3}', 1]} [{cls.stagedata.loc[f'{i1}-{i2}', 2]}]"
+			return f"{cls.stagedata.loc[ID, 'substage_name']} [{cls.getMap(ID//100)}]"
 		except KeyError:
 			return "Unknown"
 	

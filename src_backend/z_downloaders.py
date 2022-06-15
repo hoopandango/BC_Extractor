@@ -3,7 +3,6 @@ import requests
 import regex as re
 import atexit
 import json
-import csv
 from functools import lru_cache
 
 with open('_config.json') as fl:

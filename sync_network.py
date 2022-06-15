@@ -9,7 +9,8 @@ async def scan(ID):
 	return Readers.getMap(ID)
 
 async def update_stages():
-	for prefix in Downloaders.prefixes.keys():
+	# for prefix in Downloaders.prefixes.keys():
+	for prefix in range(25, 26):
 		base = 1000*prefix
 		for offset in range(0, 1000, 10):
 			print(f"Scanning from {base+offset}")
@@ -27,4 +28,4 @@ def sort_file():
 
 if __name__ == "__main__":
 	asyncio.run(update_stages())
-	sort_file()
+	# sort_file()
