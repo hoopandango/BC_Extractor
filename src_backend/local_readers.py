@@ -13,7 +13,7 @@ with open('_config.json') as fl:
 forms = ['name_f', 'name_c', 'name_s']
 
 class Readers:
-	enemydata = pd.read_csv(config['outputs']['enemies'], delimiter='\t', header=None, index_col=0)
+	enemydata = pd.read_csv(config['outputs']['enemies'], delimiter='\t', index_col=0)
 	stagedata = pd.read_csv(config['outputs']['substages'], delimiter='\t', header=None, index_col=0)
 	stagesold = pd.read_csv(config['outputs']['stages'], delimiter='\t', header=0, index_col=0)
 	catdata = pd.read_csv(config['outputs']['units'], delimiter='\t', header=0, index_col=0)
@@ -71,7 +71,7 @@ class Readers:
 	@lru_cache
 	def getEnemy(cls, ID: int) -> str:
 		try:
-			return cls.enemydata.loc[ID, 1]
+			return cls.enemydata.loc[ID, "enemy_name"]
 		except KeyError:
 			return 'Unknown'
 

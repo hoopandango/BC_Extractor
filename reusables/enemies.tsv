@@ -18,8 +18,8 @@ enemy_ID	enemy_name
 16	Assassin Bear
 17	Shy Boy
 18	The Face
-19	nan
-20	nan
+19
+20
 21	Ms. Sign
 22	Mooth
 23	Dark Emperor Nyandam
@@ -597,11 +597,11 @@ enemy_ID	enemy_name
 595	Tiger Doge
 596	Nana
 597	Emelia
-598	Unknown
+598
 599	Ultima Beast Naala
 600	Zapy
-601	Unknown
-602	Unknown
+601
+602
 603	Wild Doge
 604	Casaurian Ahirujo
 605	Pterowl Hazuku
