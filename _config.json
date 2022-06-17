@@ -34,7 +34,9 @@
             "substages": {
 				"name": "latest_en/resLocal/stages/"
 			},
-
+            "stamps": {
+                "data": "latest_en/DataLocal/DailyLoginEventData.csv"
+            },
             "enemies": {
                 "name": "latest_en/resLocal/Enemyname.tsv"
             },
@@ -78,6 +80,9 @@
             "enemies": {
                 "name": "latest_jp/resLocal/Enemyname.tsv"
             },
+            "stamps": {
+                "data": "latest_jp/DataLocal/DailyLoginEventData.csv"
+            },
 			"sales": {
 				"itempack": "latest_jp/DataLocal/itemPack.tsv",
 				"localisable": "latest_jp/resLocal/localizable.tsv"
@@ -106,6 +111,7 @@
 		"stages": "reusables/stages.tsv",
 		"eventdata": "outputs/eventdata/",
 		"missions": "reusables/missions.tsv",
+        "stamps": "reusables/stamps.tsv",
         "substages": "reusables/substages.tsv",
 		"combos2": "reusables/combos.tsv",
         "talents2": "reusables/talents.tsv",

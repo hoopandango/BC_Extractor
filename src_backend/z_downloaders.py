@@ -11,10 +11,10 @@ with open('_config.json') as fl:
 @atexit.register
 def unload_changes():
 	inp = pd.read_csv(config['outputs']['stages'], sep='\t', index_col=0)
-	buf_entries = pd.DataFrame.from_dict(Downloaders.buffer, orient='index')
+	buf_entries = pd.DataFrame.from_dict(Downloaders.buffer, orient='index', columns=['name'])
 	toput = pd.concat([inp, buf_entries], axis=0)
 	toput = toput[~toput.index.duplicated(keep='last')]  # retains last one in final
-	toput.to_csv(config['outputs']['stages'], sep='\t')
+	toput.to_csv(config['outputs']['stages'], sep='\t', index_label="ID")
 	
 class Downloaders:
 	prefixes = {1: 'S', 2: 'C', 6: 'T', 7: 'V', 11: 'R', 12: 'M', 13: 'NA', 14: 'B', 24: 'A', 25: 'H', 27: 'CA'}
