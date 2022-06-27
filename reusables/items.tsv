@@ -171,7 +171,8 @@ ID	name	severID
 169	Blue Behemoth Stone	520
 170	Green Behemoth Stone	521
 171	Yellow Behemoth Stone	522
-172	伝説の聖水	419
+172	Holy Water	419
+173	伝説の虫取り網	420
 1000	10式戦車	-1
 1001	Sports Day Cat	-1
 1003	Salaryman Cat	-1
@@ -230,6 +231,7 @@ ID	name	severID
 1057	Calligraphy Cat	-1
 1058	Unknown	-1
 1059	Unknown	-1
+1060	Unknown	-1
 1100	Bronze Cat	-1
 1101	Space Cat	-1
 1102	Rope Jump Cat	-1

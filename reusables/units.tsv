@@ -245,7 +245,7 @@ unit_ID	name_f	name_c	name_s
 245	Li'l Gross Cat	Li'l Sexy Legs Cat	Li'l Macho Legs Cat
 246	Li'l Cow Cat	Li'l Giraffe Cat	Li'l Lion Cat
 247	Li'l Bird Cat	Li'l UFO Cat	Li'l Flying Cat
-248	Undead Cat	Bake-Nyanko	
+248	Undead Cat	Bake-Nyanko	Extra-Life Cat
 249	剣士	セーラー服剣士	明王の剣士
 250	騎馬兵	森の騎馬兵	迅雷の黒騎馬兵
 251	アシュラ	武者アシュラ	傾奇者アシュラ
@@ -653,9 +653,17 @@ unit_ID	name_f	name_c	name_s
 657	Iz the Dancer of Grief	Iz the Lady of Mourning	
 658	Ancient Egg: N101	Cinnabar Egg: N101	Courier Cat
 659	Ancient Egg: N102	Teal Egg: N102	Catarzan
-660	海龍ダライアサン	海龍王ダライアサン	
-661	祝福神クロノス	ウェディングクロノス	
-662	洗脳されしウシネコ	洗脳されしネコキリン	
-663	古びたタマゴ:N103	黒いタマゴ:N103	ネコガスマスク
-664	古びたタマゴ:N104	緑のタマゴ:N104	ネコオペ
-665	古びたタマゴ:N201	悪のタマゴ:N201	ネコソシスト
+660	Sea Serpent Daliasan	Sea King Daliasan	
+661	Chronos the Bride	Wedding Chronos	
+662	Brainwashed Cow Cat	Brainwashed Giraffe Cat	
+663	Ancient Egg: N103	Black Egg: N103	Gas Mask Cat
+664	Ancient Egg: N104	Green Egg: N104	Surgeon Cat
+665	Ancient Egg: N201	Dark Egg: N201	Exorcist Cat
+666	ナイトビーチリリン	ナイトビーチリリンπ	
+667	洗脳されしネコノトリ	洗脳されしネコUFO	
+668	ネコ天狗	大妖怪ネコ天狗	
+669	古びたタマゴ:N003	悪のタマゴ:N003	ネコサボテン
+670	古びたタマゴ:N202	赤いタマゴ:N202	アーマードホタルネコ
+671	早乙女らんま(レオタード)	早乙女らんま(チアガール)	
+672	早乙女玄馬(パンダ)	早乙女玄馬	
+673	ネコチーター		

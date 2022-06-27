@@ -730,8 +730,21 @@
 729	(> 722)	Platinum Ticket Banner	 (+ Iz the Dancer of Grief)
 730	(> 723)	Legend Ticket Banner	 (+ Iz the Dancer of Grief)
 731		Bridal Gacha	
-732	(> 630)	Dragon Emperors	 [D + N] (+ 海龍ダライアサン)
+732	(> 630)	Dragon Emperors	 [D + N] (+ Sea Serpent Daliasan)
 733	(≅ 732)	Dragon Emperors	 [D + R]
-734	(> 728)	Epicfest	 (+ 海龍ダライアサン)
-735	(> 729)	Platinum Ticket Banner	 (+ 海龍ダライアサン)
-736	(> 730)	Legend Ticket Banner	 (+ 海龍ダライアサン)
+734	(> 728)	Epicfest	 (+ Sea Serpent Daliasan)
+735	(> 729)	Platinum Ticket Banner	 (+ Sea Serpent Daliasan)
+736	(> 730)	Legend Ticket Banner	 (+ Sea Serpent Daliasan)
+737	(≅ 663)	Ultra Selection	
+738	(≅ 664)	Miracle Chance	
+739	(≅ 665)	Excellent Selection	
+740	(> 605)	Gals of Summer	 (+ ナイトビーチリリン, 洗脳されしネコノトリ) {3x rate on Lifeguard Cats, Suntan Cat, Sunny Neneko}
+741	(> 627)	Dynamites	 [D + N] (+ ネコ天狗)
+742	(≅ 741)	Dynamites	 [D + R]
+743	(> 720)	Uberfest	 (+ Sea Serpent Daliasan)
+744	(> 734)	Epicfest	 (+ ネコ天狗)
+745	(> 735)	Platinum Ticket Banner	 (+ ネコ天狗)
+746	(> 736)	Legend Ticket Banner	 (+ ネコ天狗)
+747	(> 699)	Royalfest	 (- a lot)
+748	(> 588)	Ranma 1/2 Collab	 (+ 早乙女らんま(レオタード), 早乙女玄馬(パンダ)) {2x rate on 早乙女玄馬(パンダ), Happosai, Ukyo Kuonji (GR), Tatewaki Kuno (Gi), 10x rate on Akane Cat}
+749	(> 743)	Uberfest	 (+ ネコ天狗)

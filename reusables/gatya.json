@@ -8034,9 +8034,7 @@
     "series_ID": 20,
     "exclusives": [],
     "diff": [
-      [
-        "Kaguya of the Coast"
-      ],
+      [],
       []
     ],
     "rate_ups": {
@@ -8337,9 +8335,7 @@
       "D"
     ],
     "diff": [
-      [
-        "Summoner Satoru"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9372,9 +9368,7 @@
     "series_ID": 50,
     "exclusives": [],
     "diff": [
-      [
-        "Sweet Love Mekako"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9638,11 +9632,7 @@
     "series_ID": 19,
     "exclusives": [],
     "diff": [
-      [
-        "Huntress Terun",
-        "Hattori Hanzo",
-        "Bliza"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9795,7 +9785,7 @@
     ],
     "diff": [
       [
-        "海龍ダライアサン"
+        "Sea Serpent Daliasan"
       ],
       []
     ],
@@ -9821,9 +9811,7 @@
     "series_ID": 27,
     "exclusives": [],
     "diff": [
-      [
-        "海龍ダライアサン"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9834,9 +9822,7 @@
     "series_ID": 21,
     "exclusives": [],
     "diff": [
-      [
-        "海龍ダライアサン"
-      ],
+      [],
       []
     ],
     "rate_ups": {}
@@ -9847,8 +9833,211 @@
     "series_ID": 46,
     "exclusives": [],
     "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "737": {
+    "banner_name": "Ultra Selection",
+    "enabled": false,
+    "series_ID": 30,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "738": {
+    "banner_name": "Miracle Chance",
+    "enabled": false,
+    "series_ID": 31,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "739": {
+    "banner_name": "Excellent Selection",
+    "enabled": false,
+    "series_ID": 41,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "740": {
+    "banner_name": "Gals of Summer",
+    "enabled": true,
+    "series_ID": 20,
+    "exclusives": [],
+    "diff": [
       [
-        "海龍ダライアサン"
+        "ナイトビーチリリン",
+        "洗脳されしネコノトリ"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "3": [
+        "Lifeguard Cats",
+        "Suntan Cat",
+        "Sunny Neneko"
+      ]
+    }
+  },
+  "741": {
+    "banner_name": "Dynamites",
+    "enabled": true,
+    "series_ID": 1,
+    "exclusives": [
+      "D",
+      "N"
+    ],
+    "diff": [
+      [
+        "ネコ天狗"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "742": {
+    "banner_name": "Dynamites",
+    "enabled": true,
+    "series_ID": 1,
+    "exclusives": [
+      "D",
+      "R"
+    ],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "743": {
+    "banner_name": "Uberfest",
+    "enabled": true,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "744": {
+    "banner_name": "Epicfest",
+    "enabled": true,
+    "series_ID": 27,
+    "exclusives": [],
+    "diff": [
+      [
+        "ネコ天狗"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "745": {
+    "banner_name": "Platinum Ticket Banner",
+    "enabled": true,
+    "series_ID": 21,
+    "exclusives": [],
+    "diff": [
+      [
+        "ネコ天狗"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "746": {
+    "banner_name": "Legend Ticket Banner",
+    "enabled": true,
+    "series_ID": 46,
+    "exclusives": [],
+    "diff": [
+      [
+        "ネコ天狗"
+      ],
+      []
+    ],
+    "rate_ups": {}
+  },
+  "747": {
+    "banner_name": "Royalfest",
+    "enabled": true,
+    "series_ID": 50,
+    "exclusives": [],
+    "diff": [
+      [
+        "Spooky Thundia",
+        "Huntress Terun",
+        "First-Love Myrcia",
+        "Nurse Cat",
+        "Queen Reika",
+        "Santa Kuu",
+        "Squirtgun Saki",
+        "The White Rabbit",
+        "Chronos the Bride",
+        "Shitakiri Sparrow"
+      ],
+      [
+        "Mekako Saionji",
+        "Sweet Love Mekako",
+        "Hallowindy",
+        "Graveflower Verbena",
+        "Princess Kaguya",
+        "Ice Cat",
+        "Kai",
+        "Snow Angel Twinstars",
+        "Shining Amaterasu",
+        "Summerluga",
+        "Sharpshooter Saki",
+        "Myrcia"
+      ]
+    ],
+    "rate_ups": {}
+  },
+  "748": {
+    "banner_name": "Ranma 1/2 Collab",
+    "enabled": true,
+    "series_ID": 49,
+    "exclusives": [],
+    "diff": [
+      [
+        "早乙女玄馬(パンダ)",
+        "早乙女らんま(レオタード)"
+      ],
+      []
+    ],
+    "rate_ups": {
+      "2": [
+        "早乙女玄馬(パンダ)",
+        "Happosai",
+        "Ukyo Kuonji (GR)",
+        "Tatewaki Kuno (Gi)"
+      ],
+      "10": [
+        "Akane Cat"
+      ]
+    }
+  },
+  "749": {
+    "banner_name": "Uberfest",
+    "enabled": true,
+    "series_ID": 19,
+    "exclusives": [],
+    "diff": [
+      [
+        "ネコ天狗"
       ],
       []
     ],

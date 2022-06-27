@@ -7,6 +7,7 @@ import src_extractors.combo_extractor
 import src_extractors.enemy_extractor
 import src_extractors.sale_extractor
 import src_extractors.substage_extractor
+import src_extractors.stamp_extractor
 from src_backend.local_readers import Readers
 
 def run_all():
@@ -15,6 +16,7 @@ def run_all():
 	items_extractor.extract()
 	substage_extractor.extract()
 	Readers.reload()
+	stamp_extractor.extract()
 	sale_extractor.extract()
 	gatya_extractor.extract()
 	mission_extractor.extract()

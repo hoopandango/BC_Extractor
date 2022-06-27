@@ -904,7 +904,7 @@ substage_ID	substage_name
 124202	Finals (Deadly)
 124300	Guided by Currents (Merciless)
 124301	Water Conservancy (Merciless)
-124400	祝！８周年！！
+124400	8 Years of Fun!
 124500	Congrats on #5
 124501	#4 As Expected
 124502	Somehow #3
@@ -1129,30 +1129,34 @@ substage_ID	substage_name
 130500	Parade of the Dead (Deadly)
 130600	Honey Trap (Deadly)
 130700	N-1 Grand Prix (Deadly)
-130800	ハネムーンは濃霧の湖
-130801	祝福する大量のカラス
-130802	建付けの悪いコテージ
-130803	尽きる薪、途絶える明かり
-130804	全員無事帰還
-130900	ハネムーンは秘境の村
-130901	コノ先、電波通用セズ
-130902	死霊と記念撮影
-130903	軋む畳と四十肩
-130904	霊と無邪気に鬼ごっこ
-130905	ツーブロック市松人形
-130906	命がけのかくれんぼ
-130907	盛り塩をつまみ食い
-130908	井戸の底はぬか床
-130909	お土産抱えて無事帰宅
+130800	Foggy Lake Honeymoon
+130801	Crow Murder's Blessing
+130802	Dilapidated Cottage
+130803	Dying Embers
+130804	All Home Safe
+130900	Hidden Village Honeymoon
+130901	No Reception Ahead
+130902	Post-Mortem Portrait
+130903	Creaking Tatami
+130904	Playtime with the Spirits
+130905	Dolly With a Fade
+130906	Life, Death, Hide, Seek
+130907	Salt by the Mouthful
+130908	The Pickling Well
+130909	Home Bearing Gifts
 131000	310-00
 131001	310-01
 131002	310-02
 131100	311-00
 131101	311-01
 131102	311-02
-131200	最強の猛獣
-131300	猛毒怪鳥
-131400	2つの巨影
+131200	The Strongest Behemoth
+131300	Venomous Duck
+131400	Two Great Shadows
+131500	挑戦！序ノ口
+131600	挑戦！十両
+131700	挑戦！大関
+131800	挑戦！横綱
 200000	いきなり２等兵
 200001	ピリカラ伍長
 200002	ちゃっかり軍曹
@@ -2287,7 +2291,7 @@ substage_ID	substage_name
 405300	Bombergirl (Deadly)
 405400	No Plan A (Deadly)
 405500	in THE MOON
-405600	霧の教会に眠るモノ
+405600	In the Mist-Shrouded Church
 600000	Wanderer's Trial (Stage 1)
 600100	ニコ修行 やわめ
 700000	Floor 1
@@ -2449,7 +2453,7 @@ substage_ID	substage_name
 1101600	MikuMiku Music Fest
 1101700	Tearful Tournament
 1101800	I Seek the Strongest
-1101900	8周年記念大会
+1101900	8 Ain't Enough
 1102000	Crimson Trial
 1102100	Shadow Trial
 1102200	Phoenix Trial
@@ -2709,12 +2713,12 @@ substage_ID	substage_name
 1304303	Tear-Soaked Puppy
 1304304	Shinobi Showdown
 1304305	Ancient Sea Blues
-1304400	竪穴式校舎
-1304401	収穫量を占う地方放送
-1304402	火焔型土器でおふくろの味
-1304403	豪族の集う喫煙所
-1304404	生贄探して道の駅
-1304405	おらこんな故郷出るだ
+1304400	Pithouse Academy
+1304401	Local Harvest Forecast
+1304402	Clay Pot Soul Food
+1304403	Chiefs' Smoking Area
+1304404	Rest Stop Sacrifice
+1304405	Outta This Village
 1400000	Rays of Gold (Hard)
 1400001	Rays of Gold (Expert)
 1400002	Rays of Gold (Insane)
@@ -4021,52 +4025,52 @@ substage_ID	substage_name
 2405107	Again Lv.18
 2405108	Again Lv.19
 2405109	Again Lv.MAX
-2405200	新郎に憑りついた悪霊
-2405201	噛み噛み新人神父
-2405202	スケスケ参列者
-2405203	ノイズまみれのスピーチ
-2405204	呪われた聖歌隊
-2405205	ベジタリアンゾンビ
-2405206	ひとりでに鳴るオルガン
-2405207	飛び交う引き出物
-2405208	聖水の中身は水道水
-2405209	みんなで仲良く成仏
-2405300	草原の決闘 先鋒
-2405301	草原の決闘 中堅
-2405302	草原の決闘 大将
-2405303	夕焼けの決闘 先鋒
-2405304	夕焼けの決闘 中堅
-2405305	夕焼けの決闘 大将
-2405306	星空の決闘 先鋒
-2405307	星空の決闘 中堅
-2405308	星空の決闘 大将
-2405309	砂浜の決闘 先鋒
-2405310	砂浜の決闘 中堅
-2405311	砂浜の決闘 大将
-2405312	火口の決闘 先鋒
-2405313	火口の決闘 中堅
-2405314	火口の決闘 大将
-2405315	海底の決闘 先鋒
-2405316	海底の決闘 中堅
-2405317	海底の決闘 大将
-2405400	ルーキー 準々決勝
-2405401	ルーキー 準決勝
-2405402	ルーキー 決勝
-2405403	ビギナー 準々決勝
-2405404	ビギナー 準決勝
-2405405	ビギナー 決勝
-2405406	ベテラン 準々決勝
-2405407	ベテラン 準決勝
-2405408	ベテラン 決勝
-2405409	プロ 準々決勝
-2405410	プロ 準決勝
-2405411	プロ 決勝
-2405412	エキスパート 準々決勝
-2405413	エキスパート 準決勝
-2405414	エキスパート 決勝
-2405415	マスター 準々決勝
-2405416	マスター 準決勝
-2405417	マスター 決勝
+2405200	Haunted by the Groom
+2405201	The Biting Priest
+2405202	Transparent Attendant
+2405203	A Drowned-Out Speech
+2405204	Cursed Choir
+2405205	Vegetarian Zombie
+2405206	Self-Playing Organ
+2405207	Poltergeist Gift Exchange
+2405208	Holy Water from the Tap
+2405209	Laid to Friendly Rest
+2405300	Duel on the Prarie (Vanguard)
+2405301	Duel on the Prarie (Elite)
+2405302	Duel on the Prarie (Commander)
+2405303	Duel at Sunset (Vanguard)
+2405304	Duel at Sunset (Elite)
+2405305	Duel at Sunset (Commander)
+2405306	Duel Under the Stars (Vanguard)
+2405307	Duel Under the Stars (Elite)
+2405308	Duel Under the Stars (Commander)
+2405309	Duel on the Dunes (Vanguard)
+2405310	Duel on the Dunes (Elite)
+2405311	Duel on the Dunes (Commander)
+2405312	Duel at the Lava Fields (Vanguard)
+2405313	Duel at the Lava Fields (Elite)
+2405314	Duel at the Lava Fields (Commander)
+2405315	Duel Under the Sea (Vanguard)
+2405316	Duel Under the Sea (Elite)
+2405317	Duel Under the Sea (Commander)
+2405400	Rookie Quarterfinals
+2405401	Rookie Semifinals
+2405402	Rookie Finals
+2405403	Beginner Quarterfinals
+2405404	Beginner Semifinals
+2405405	Beginner Finals
+2405406	Adept Quarterfinals
+2405407	Adept Semifinals
+2405408	Adept Finals
+2405409	Pro Quarterfinals
+2405410	Pro Semifinals
+2405411	Pro Finals
+2405412	Expert Quarterfinals
+2405413	Expert Semifinals
+2405414	Expert Finals
+2405415	Master Quarterfinals
+2405416	Master Semifinals
+2405417	Master Finals
 2500000	Trench Warfare (Insane)
 2500100	The Precipice (Insane)
 2500200	Beastly Roost (Deadly)
@@ -4368,6 +4372,56 @@ substage_ID	substage_name
 2701117	攻城戦 Lv.18
 2701118	攻城戦 Lv.19
 2701119	攻城戦 Lv.MAX
+2701200	対決！PART.1
+2701201	対決！PART.2
+2701202	対決！PART.3
+2701203	対決！PART.4
+2701204	対決！PART.5
+2701205	対決！PART.6
+2701206	対決！PART.7
+2701207	対決！PART.8
+2701208	対決！PART.9
+2701209	対決！PART.10
+2701210	対決！PART.11
+2701211	対決！PART.12
+2701212	対決！PART.13
+2701213	対決！PART.14
+2701214	対決！PART.15
+2701215	対決！PART.16
+2701216	対決！PART.17
+2701217	対決！PART.18
+2701218	対決！PART.19
+2701219	対決！PART.20
+2701220	対決！PART.21
+2701221	対決！PART.22
+2701222	対決！PART.23
+2701223	対決！PART.24
+2701224	対決！PART.25
+2701225	対決！PART.26
+2701226	対決！PART.27
+2701227	対決！PART.28
+2701228	対決！PART.29
+2701229	対決！LAST PART
+2701300	突然の死 Lv.1
+2701301	突然の死 Lv.2
+2701302	突然の死 Lv.3
+2701303	突然の死 Lv.4
+2701304	突然の死 Lv.5
+2701305	突然の死 Lv.6
+2701306	突然の死 Lv.7
+2701307	突然の死 Lv.8
+2701308	突然の死 Lv.9
+2701309	突然の死 Lv.10
+2701310	突然の死 Lv.11
+2701311	突然の死 Lv.12
+2701312	突然の死 Lv.13
+2701313	突然の死 Lv.14
+2701314	突然の死 Lv.15
+2701315	突然の死 Lv.16
+2701316	突然の死 Lv.17
+2701317	突然の死 Lv.18
+2701318	突然の死 Lv.19
+2701319	突然の死 Lv.MAX
 3000000	Korea
 3000001	Mongolia
 3000002	China
@@ -4421,23 +4475,23 @@ substage_ID	substage_name
 3100001	Woodlands Area 2
 3100002	Woodlands Area 3
 3100003	Woodlands Area 4
-3100004	Woodlands Area 5
-3100005	大熱森林 エリア6
-3100006	大熱森林 エリア7
-3100007	大熱森林 エリア8
+3100004	Deep Jungle Area 5
+3100005	Deep Jungle Area 6
+3100006	Deep Jungle Area 7
+3100007	Deep Jungle Area 8
 3100100	Badlands Area 1
 3100101	Badlands Area 2
 3100102	Badlands Area 3
 3100103	Badlands Area 4
-3100104	Badlands Area 5
-3100105	酷暑砂丘 エリア6
-3100106	酷暑砂丘 エリア7
-3100107	酷暑砂丘 エリア8
+3100104	Burning Sands Area 5
+3100105	Burning Sands Area 6
+3100106	Burning Sands Area 7
+3100107	Burning Sands Area 8
 3100200	Magma Tunnel Area 1
 3100201	Magma Tunnel Area 2
 3100202	Magma Tunnel Area 3
 3100203	Magma Tunnel Area 4
-3100204	Magma Tunnel Area 5
-3100205	熱風山道 エリア6
-3100206	熱風山道 エリア7
-3100207	熱風山道 エリア8
+3100204	Lava Caves Area 5
+3100205	Lava Caves Area 6
+3100206	Lava Caves Area 7
+3100207	Lava Caves Area 8

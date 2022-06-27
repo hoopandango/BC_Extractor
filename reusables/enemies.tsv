@@ -18,8 +18,8 @@ enemy_ID	enemy_name
 16	Assassin Bear
 17	Shy Boy
 18	The Face
-19
-20
+19	
+20	
 21	Ms. Sign
 22	Mooth
 23	Dark Emperor Nyandam
@@ -597,11 +597,11 @@ enemy_ID	enemy_name
 595	Tiger Doge
 596	Nana
 597	Emelia
-598
+598	
 599	Ultima Beast Naala
 600	Zapy
-601
-602
+601	
+602	
 603	Wild Doge
 604	Casaurian Ahirujo
 605	Pterowl Hazuku
@@ -609,3 +609,6 @@ enemy_ID	enemy_name
 607	J.J. Jackrabbit
 608	Li'l Doge
 609	Golem Sunfish
+610	THE FOLIVOREAN
+611	Casaurian Darkjo
+612	Haniwanwan
