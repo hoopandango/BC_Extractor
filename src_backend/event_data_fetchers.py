@@ -244,7 +244,7 @@ class GatyaFetcher(UniversalFetcher):
 		toret += ('```\n')
 		toret += (
 			"Legend for Gatya:\nSU = Step-Up, PS = Platinum Shard, L = Lucky Ticket,"
-			" N = Neneko and Friends, R = Reinforcement, D = Grandons\n")
+			" N = Neneko and Friends, R = Reinforcement, D = Grandons, + = Double Rate (10% for Ubers, 0.6% for LRs)\n")
 		return toret
 	
 	def package(self):

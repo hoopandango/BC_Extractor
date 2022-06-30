@@ -59,7 +59,7 @@ class EventGroup:
 
 @dataclass
 class Gatya(Event):
-	rates: list[float] = None
+	rates: list[int] = None
 	rate_ups: dict[str, int] = None
 	diff: list[list[str]] = None
 	page: str = None
@@ -76,6 +76,7 @@ class Gatya(Event):
 		if self.guarantee[3] == 1:  bonusesStr += self.clr.clc(' (Guaranteed)', 31)
 		bonuses.extend(self.extras)
 		bonuses.extend([x for x in self.exclusives])
+		if self.rates[3] == 1000:  bonuses.append('+')
 		bonusesStr += f" [{'/'.join(bonuses)}]" if len(bonuses) > 0 else ''
 		
 		diff: str = f' (+ {", ".join(self.diff[0])})' if 5 > len(self.diff[0]) > 0 else ''
