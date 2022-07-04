@@ -196,13 +196,6 @@ class Funky(Resource):
 			if destinations is None or TESTING:
 				destinations = ["test"]
 			
-			for dest in destinations:
-				if dest in hooks:
-					for i in toprint:
-						if i == "":
-							continue
-						requests.post(hooks[dest], {"content": i})
-			
 			if "rbc" in destinations:
 				files = {"file1": open(config["outputs"]["eventdata"] + "output.txt", mode="r", encoding='utf-8')}
 				requests.post(hooks["rbc"], files=files)
@@ -213,12 +206,35 @@ class Funky(Resource):
 				else:
 					role = 654577263605710850
 				if len(toprint[0]) > 200:
-					try:
-						response = requests.post(hooks["fandom"], {"content": f"pinging <@&{role}>"})
-						requests.post(hooks["test"], {"content": str(response.reason)})
-					except:
-						requests.post(hooks["test"], {"content": "runtime error"})
-				requests.post(hooks["test"], {"content": len(toprint[0])})
+					toprint.append(f"pinging <@&{role}>")
+			
+			for dest in destinations:
+				if dest not in hooks:
+					continue
+				for i in toprint:
+					if i == "":
+						continue
+					temp = 429
+					while True:
+						response = requests.post(hooks[dest], {"content": i})
+						temp = response.status_code
+						if response.ok:  # sent message successfully
+							break
+						elif response.status_code != 429:
+							print("Weird Error - "+str(response.status_code))
+							break
+						else:  # Hit rate limit
+							waitTime = int(response.headers.get("Retry-After"))//1000+1
+							"""
+							print(f"Retry-After: {response.headers.get('Retry-After')}")
+							print(f"retry-after: {json.loads(response.content.decode('utf-8')).get('retry_after')}")
+							print(f"X-RateLimit-Reset-After: {response.headers.get('X-RateLimit-Reset-After')}")
+							print(f"X-RateLimit-Scope: {response.headers.get('X-RateLimit-Scope')}")
+							"""
+							if waitTime >= 10000:
+								break
+							else:
+								time.sleep(waitTime)
 			
 			tosend = process(dummy)[1][0]
 			files = {"removed_stuff.txt": io.StringIO(tosend)}
