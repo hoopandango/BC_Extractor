@@ -612,10 +612,10 @@ ID	mission_text
 9238	Beat "The Queen & The Dead" stages 1 time -> Catseye [Legend] X 3
 9239	Beat "The King & The Maiden" stages 1 time -> Catseye [Legend] X 3
 9240	Beat "Summer Break Cats" stages 5 times -> XP X 100000
-9241	Beat "Summer Break Cats" stages 10 times -> 伝説の虫取り網 X 2
+9241	Beat "Summer Break Cats" stages 10 times -> Legend Net X 2
 9242	Beat "Summer Break Cats" stages 30 times -> Rare Ticket X 1
 9243	Beat any of these stages 5 times: Afternoon Bug Hunt [Rundown Hideout] -> XP X 200000
-9244	Beat any of these stages 5 times: Evening Bug Hunt [Stylish Hideout] -> 伝説の虫取り網 X 2
+9244	Beat any of these stages 5 times: Evening Bug Hunt [Stylish Hideout] -> Legend Net X 2
 9245	Beat any of these stages 5 times: Midnight Bug Hunt [Perfect Hideout] -> Rare Ticket X 1
 9246	Level up Kabuto Cat to Level 10 -> Cat Ticket X 1
 9247	Level up Kuwagata Cat to Level 10 -> Cat Ticket X 1
@@ -625,9 +625,9 @@ ID	mission_text
 9251	Clear "Summer Diary" Stage 2 with Kuwagata Cat -> Cat Ticket X 1
 9252	Clear "Summer Diary" Stage 4 with Kabuto Cat -> Cat Ticket X 1
 9253	Clear "Summer Diary" Stage 6 with Kuwagata Cat -> Cat Ticket X 1
-9254	Beat "Summer Lesson" stages 5 times -> 伝説の虫取り網 X 1
-9255	Beat "Summer Lesson" stages 10 times -> 伝説の虫取り網 X 2
-9256	Beat "Summer Lesson" stages 15 times -> 伝説の虫取り網 X 3
+9254	Beat "Summer Lesson" stages 5 times -> Legend Net X 1
+9255	Beat "Summer Lesson" stages 10 times -> Legend Net X 2
+9256	Beat "Summer Lesson" stages 15 times -> Legend Net X 3
 9257	Beat "Summer Lesson" stages 20 times -> Rare Ticket X 1
 9258	Clear "Survive! Mola Mola!" Stage 1 with Kabuto Cat -> Cat Ticket X 1
 9259	Clear "Survive! Mola Mola!" Stage 3 with Kuwagata Cat -> Cat Ticket X 1
@@ -703,6 +703,15 @@ ID	mission_text
 9361	Beat "#03「ネコ鳴村」" stages 3 times -> Purple Behemoth Stone X 1
 9362	Beat "#03「ネコ鳴村」" stages 5 times -> Red Behemoth Stone X 1
 9363	Beat "#03「ネコ鳴村」" stages 10 times -> Purple Behemoth Stone X 1
+9364	Quiz Mission -> XP X 50000
+9365	Quiz Mission -> XP X 50000
+9366	Quiz Mission -> XP X 50000
+9367	Quiz Mission -> Cat Ticket X 1
+9368	Quiz Mission -> Cat Ticket X 1
+9369	Quiz Mission -> Cat Ticket X 1
+9370	Quiz Mission -> Cat Ticket X 1
+9371	Quiz Mission -> Cat Ticket X 1
+9372	Quiz Mission -> Cat Ticket X 1
 9217	Beat "MIKU EXPO" stages 5 times -> Cat Ticket X 1
 9218	Beat "MIKU EXPO" stages 10 times -> Cat Ticket X 1
 9219	Beat "MIKU EXPO" stages 20 times -> Cat Ticket X 1
@@ -752,15 +761,6 @@ ID	mission_text
 9318	Beat "春節ハッピープレゼント！" stages 3 times -> XP X 15000
 9319	Beat "春節ハッピープレゼント！" stages 4 times -> XP X 20000
 9320	Beat "春節ハッピープレゼント！" stages 5 times -> Rare Ticket X 1
-9364	Quiz Mission -> XP X 50000
-9365	Quiz Mission -> XP X 50000
-9366	Quiz Mission -> XP X 50000
-9367	Quiz Mission -> Cat Ticket X 1
-9368	Quiz Mission -> Cat Ticket X 1
-9369	Quiz Mission -> Cat Ticket X 1
-9370	Quiz Mission -> Cat Ticket X 1
-9371	Quiz Mission -> Cat Ticket X 1
-9372	Quiz Mission -> Cat Ticket X 1
 9373	Beat "Rumble in the Tendo Dojo, The Cursed Springs, 27012" stages 15 times -> Cat Ticket X 1
 9374	Beat "Rumble in the Tendo Dojo, The Cursed Springs, 27012" stages 30 times -> Cat Ticket X 1
 9375	Beat "Rumble in the Tendo Dojo, The Cursed Springs, 27012" stages 50 times -> Cat Ticket X 1

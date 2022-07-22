@@ -738,13 +738,14 @@
 737	(≅ 663)	Ultra Selection	
 738	(≅ 664)	Miracle Chance	
 739	(≅ 665)	Excellent Selection	
-740	(> 605)	Gals of Summer	 (+ ナイトビーチリリン, 洗脳されしネコノトリ) {3x rate on Lifeguard Cats, Suntan Cat, Sunny Neneko}
-741	(> 627)	Dynamites	 [D + N] (+ ネコ天狗)
+740	(> 605)	Gals of Summer	 (+ Brainwashed Bird Cat, Night Beach Lilin) {3x rate on Lifeguard Cats, Suntan Cat, Sunny Neneko}
+741	(> 627)	Dynamites	 [D + N] (+ Cat Tengu)
 742	(≅ 741)	Dynamites	 [D + R]
 743	(> 720)	Uberfest	 (+ Sea Serpent Daliasan)
-744	(> 734)	Epicfest	 (+ ネコ天狗)
-745	(> 735)	Platinum Ticket Banner	 (+ ネコ天狗)
-746	(> 736)	Legend Ticket Banner	 (+ ネコ天狗)
+744	(> 734)	Epicfest	 (+ Cat Tengu)
+745	(> 735)	Platinum Ticket Banner	 (+ Cat Tengu)
+746	(> 736)	Legend Ticket Banner	 (+ Cat Tengu)
 747	(> 699)	Royalfest	 (- a lot)
 748	(> 588)	Ranma 1/2 Collab	 (+ 早乙女らんま(レオタード), 早乙女玄馬(パンダ)) {2x rate on 早乙女玄馬(パンダ), Happosai, Ukyo Kuonji (GR), Tatewaki Kuno (Gi), 10x rate on Akane Cat}
-749	(> 743)	Uberfest	 (+ ネコ天狗)
+749	(> 743)	Uberfest	 (+ Cat Tengu)
+750	(≅ 740)	Gals of Summer	

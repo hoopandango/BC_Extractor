@@ -3495,6 +3495,10 @@ the gloves off. 100% Critical attack chance.
 Everyone's favorite pure idol is ready to overcome
 her anxiety of being seen in a swimsuit. You can do
 it, Neneko! 100% Critical attack chance.
+[Early Summer Neneko]
+Bathing in the blinding rays of the summer sun,
+new summer memories are a day of fun away.
+100% Critical attack chance.
 
 277
 [Funghi]
@@ -6751,6 +6755,10 @@ Long-Range Area attacks only hit Floating/Black
 Watches over the starlit beaches, protecting sea
  turtles from rowdy partiers with illegal fireworks.
 Long-Range Area attacks only hit Floating/Angels
+[Aquablaster Saki]
+Prances about beaches, guarding them from danger.
+Cleanses the hearts of poachers with her water gun.
+Strong attacks only hit Floating/Angels.
 
 564
 [Summerluga]
@@ -6760,6 +6768,10 @@ that taste in swimwear...
 [Bikinilan Pasalan]
 Blistering barnacles! Seems like
 this bodacious beach babe has
+100% chance of Area Surge attacks
+[Fabulous Pasalan]
+Is it a Cat or a fabulous celebrity?
+Curious gal whose true identity remains a mystery.
 100% chance of Area Surge attacks
 
 565
@@ -6771,6 +6783,10 @@ Chance to Dodge Traitless attacks
 Bronzed to perfection while doing pull-ups
 at the beachside gym. Sun's out, guns out!
 Chance to Dodge Traitless attacks
+[Permed Suntan Cat]
+Bronzed to perfection, reflective as the summer sun.
+Runs the beaches having his heart stolen by girls.
+Chance to Dodge Traitless attacks
 
 566
 [Lifeguard Cats]
@@ -6781,6 +6797,10 @@ Long-range Area attacks have chance to Slow Traitless
 Three loyal brothers who resemble a sugary
 treat. The one on top is surprisingly not the oldest.
 Long-range Area attacks have chance to Slow Traitless
+[Gelato Bro Cats]
+Three loyal brothers who are completely in sync.
+Their names are Strawberry, Vanilla, and Wasabi.
+Behemoth Slayer, Long-range Area atk. Slow Traitless
 
 567
 [チビクロプスネコタマゴ]
@@ -7293,6 +7313,10 @@ Area attacks might Slow Black/Alien enemies.
 Ancient superweapon built to defend a
 tropical paradise by blasting coconuts at invaders.
 Area attacks 100% Slow Black/Alien enemies.
+[The Southern Sunflare]
+Ancient superweapon overlooking all beaches.
+Advertised as a grand moving tourist destination.
+100% chance to Slow Black/Alien/Aku enemies.
 
 615
 [Kabuto Cat]
@@ -7475,6 +7499,10 @@ Massive Area damage to Zombies/Angels/Aku
 Top-of-the-line weaponry built using stolen Aku tech.
 Its railgun obliterates all before it, to the very horizon.
 Massive Area damage to Zombies/Angels/Aku
+[Obliterator Diabolosa]
+A weapon of mass destruction built with Aku tech.
+No weapon on the planet can stop its advance.
+Deals Massive damage to Zombies, Angels, and Aku.
 
 633
 [Shitakiri Sparrow]
@@ -7835,71 +7863,62 @@ Even the most stubborn spirit can't resist its garlic stench.
 Behemoth Slayer, small chance to Freeze Aku enemies.
 
 666
-[ナイトビーチリリン]
-夜のビーチで魅惑のオーラを放つクレイジー美女
-特製カクテルを提供し実験台にふさわしい逸材を探す
-属性を持たない敵とエイリアンにめっぽう強い(範囲攻撃)
-[ナイトビーチリリンπ]
-夜のビーチで恋の駆け引きを楽しむクレイジー美女
-安易に近付く者は特製調合のカクテルでノックダウン
-属性を持たない敵とエイリアンにめっぽう強い(範囲攻撃)
-ナイトビーチリリンパイ
+[Night Beach Lilin]
+Beauty with an aura of crazy. Stalks beaches for fun.
+Lures in victims for experimentation with cocktails.
+Strong against Traitless and Aliens (Area Attack)
+[Night Beach Lilinπ]
+Beauty stalking beaches for a chance at true love.
+Poisons unknowing victims with mixed cocktails.
+Strong against Traitless and Aliens (Area Attack)
 
 667
-[洗脳されしネコノトリ]
-体力は少ないが敵をまとめて一掃する
-超破壊力を持ったキャラ。悪の洗脳により
-属性を持たない敵に超ダメージを与える(範囲攻撃)
-センノウサレシネコノトリ
-[洗脳されしネコUFO]
-重力を超越した改造にゃんこ
-敵をまとめてお仕置き可能。悪の洗脳によって
-属性を持たない敵に超ダメージを与える(範囲攻撃)
-センノウサレシネコユーフォー
+[Brainwashed Bird Cat]
+Cat with the health of a pea who has been
+programmed through mind control to deal
+Massive damage to Traitless (Area Attack)
+[Brainwashed UFO Cat]
+Engineered to overcome gravity, programmed
+through mind control to deal Massive damage
+to multiple Traitless enemies (Area Attack)
 
 668
-[ネコ天狗]
-自然界の霊力を求め、山奥で千年の苦行を積み
-妖怪と化したキャラクター。超生命体特効を持ち
-赤い敵と天使にめっぽう強く、たまにふっとばす
-ネコテング
-[大妖怪ネコ天狗]
-厳しい修行で神通力に目覚めた神秘のキャラクター
-黒い翼で宙を舞い炎と風を操る。超生命体特効を持ち
-赤い敵と天使にめっぽう強く、たまにふっとばす
-ダイヨウカイネコテング
+[Cat Tengu]
+Cat that endured all manner of difficult training in the 
+mountains to become a yokai. Colossus Slayer, 
+strong against Red/Angels, sometimes Knockback.
+[Grand Yokai Tengu]
+Mysterious Cat that awoke its deepest mental faculties
+with harsh training. Wields fire & wind. Colossus Slayer
+strong against Red/Angels, sometimes Knockback.
 
 669
-[古びたタマゴ:N003]
-タマゴのような形をした謎の物体
-長い歳月を経て土がこびりつき風化している
-「N003」と小さく刻まれているように見えるが…
-フルビタタマゴ
-[悪のタマゴ:N003]
-悪のボディを現したタマゴのような物体
-内部に微かな生命反応があるようだ
-悪魔にめっぽう強い
-アクノタマゴ
-[ネコサボテン]
-ホームセンターで売られているトゲトゲにゃんこ
-グサッとくる発言でいつも誰かを傷つけている
-悪魔にめっぽう強く、烈波ダメージを無効にする
+[Ancient Egg: N003]
+An otherworldly artifact in the shape of an egg,
+coated in the grime of countless centuries.
+A small inscription reads "N003".
+[Evil Egg: N003]
+Mysterious lifeform that takes the form of an evil egg.
+There appears to be faint signs of life inside.
+Strong against Aku enemies.
+[Cat Cactus]
+Thorny Cat sold at hardware stores. Tends to cause
+harm with its pointed words. Strong against Aku,
+Immune to Surge Attacks.
 
 670
-[古びたタマゴ:N202]
-タマゴのような形をした謎の物体
-長い歳月を経て土がこびりつき風化している
-「N202」と小さく刻まれているように見えるが…
-フルビタタマゴ
-[赤いタマゴ:N202]
-赤いボディを現したタマゴのような物体
-内部に微かな生命反応があるようだ
-たまに赤、エイリアンの攻撃力を下げる
-アカイタマゴ
-[アーマードホタルネコ]
-お尻の光で恋を育む夏の風物詩ネコ
-綺麗な川にしか住めない潔癖症。超獣特効を持ち
-たまに赤、エイリアンの攻撃力を下げる(範囲攻撃)
+[Ancient Egg: N202]
+Otherworldly artifact in the shape of an egg,
+coated in the grime of countless centuries.
+A small inscription reads "N202".
+[Cinnabar Egg: N202]
+Mysterious lifeform that takes the form of a red egg.
+There appears to be faint signs of life inside.
+Sometimes Weakens Red/Aliens.
+[Armored Firefly Cat]
+Its shining posterior brings to mind love-filled summers.
+Clean freak who only lives in rivers. Behemoth Slayer,
+sometimes Weakens Red/Aliens (Area attack).
 
 671
 [早乙女らんま(レオタード)]

@@ -1009,10 +1009,10 @@ substage_ID	substage_name
 127701	Archaeology 101: Methods
 127702	Archaeology 101: Results
 127703	Archaeology 101: Analysis
-127800	278-00
-127801	278-01
-127802	278-02
-127803	278-03
+127800	Archaeology 201: Planning
+127801	Archaeology 201: Methods
+127802	Archaeology 201: Results
+127803	Archaeology 201: Analysis
 127900	279-00
 127901	279-01
 127902	279-02
@@ -1153,10 +1153,10 @@ substage_ID	substage_name
 131200	The Strongest Behemoth
 131300	Venomous Duck
 131400	Two Great Shadows
-131500	挑戦！序ノ口
-131600	挑戦！十両
-131700	挑戦！大関
-131800	挑戦！横綱
+131500	Match: Jonokuchi
+131600	Match: Juuryou
+131700	Match: Ozeki
+131800	Match: Yokozuna
 200000	いきなり２等兵
 200001	ピリカラ伍長
 200002	ちゃっかり軍曹
@@ -4402,26 +4402,26 @@ substage_ID	substage_name
 2701227	対決！PART.28
 2701228	対決！PART.29
 2701229	対決！LAST PART
-2701300	突然の死 Lv.1
-2701301	突然の死 Lv.2
-2701302	突然の死 Lv.3
-2701303	突然の死 Lv.4
-2701304	突然の死 Lv.5
-2701305	突然の死 Lv.6
-2701306	突然の死 Lv.7
-2701307	突然の死 Lv.8
-2701308	突然の死 Lv.9
-2701309	突然の死 Lv.10
-2701310	突然の死 Lv.11
-2701311	突然の死 Lv.12
-2701312	突然の死 Lv.13
-2701313	突然の死 Lv.14
-2701314	突然の死 Lv.15
-2701315	突然の死 Lv.16
-2701316	突然の死 Lv.17
-2701317	突然の死 Lv.18
-2701318	突然の死 Lv.19
-2701319	突然の死 Lv.MAX
+2701300	Sudden Death Lv.1
+2701301	Sudden Death Lv.2
+2701302	Sudden Death Lv.3
+2701303	Sudden Death Lv.4
+2701304	Sudden Death Lv.5
+2701305	Sudden Death Lv.6
+2701306	Sudden Death Lv.7
+2701307	Sudden Death Lv.8
+2701308	Sudden Death Lv.9
+2701309	Sudden Death Lv.10
+2701310	Sudden Death Lv.11
+2701311	Sudden Death Lv.12
+2701312	Sudden Death Lv.13
+2701313	Sudden Death Lv.14
+2701314	Sudden Death Lv.15
+2701315	Sudden Death Lv.16
+2701316	Sudden Death Lv.17
+2701317	Sudden Death Lv.18
+2701318	Sudden Death Lv.19
+2701319	Sudden Death Lv.MAX
 3000000	Korea
 3000001	Mongolia
 3000002	China
